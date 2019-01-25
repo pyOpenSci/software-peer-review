@@ -6,8 +6,8 @@ prev_page:
   url: 
   title: ''
 next_page:
-  url: /collaboration
-  title: 'Collaboration'
+  url: /packaging/packaging_guide
+  title: 'Before Review - Packaging Guide'
 comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /content***"
 ---
 # The pyOpenSci Dev Guide
