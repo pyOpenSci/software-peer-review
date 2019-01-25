@@ -1,11 +1,11 @@
 ---
 title: 'Collaboration'
 prev_page:
-  url: /intro
-  title: 'Home'
+  url: /maintenance/maintenance_intro
+  title: 'After Review - Maintenance'
 next_page:
-  url: 
-  title: ''
+  url: /appendices/templates
+  title: 'Appendices - Templates'
 comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /content***"
 ---
 # Collaboration Guide {#collaboration}

@@ -18,7 +18,7 @@
   url: /intro
   not_numbered: true
 
-- title: Before Review: Packaging Guide
+- title: Before Review - Packaging Guide
   url: /packaging/packaging_guide
 
 - title: Peer Review Process
@@ -34,14 +34,14 @@
   - title: Guide for Editors
     url: /peer_review/editor_guide
 
-- title: After Review: Maintenance 
+- title: After Review - Maintenance 
   url: /maintenance/maintenance_intro
   expand_sections: true
   sections: 
   - title: Collaboration
-  url: /maintenance/collaboration
+    url: /maintenance/collaboration
 
-- title: Appendices: Templates
-  url: /appendices/templates.md
+- title: Appendices - Templates
+  url: /appendices/templates
   not_numbered: true
 
