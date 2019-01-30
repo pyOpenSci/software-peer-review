@@ -148,6 +148,9 @@ if __name__ == '__main__':
     for ix_file, page in enumerate(tqdm(list(toc))):
         url_page = page.get('url', None)
         title = page.get('title', None)
+        if page.get('external', None):
+            # If its an external link, just pass
+            continue
 
         # Make sure URLs (file paths) have correct structure
         _check_url_page(url_page, CONTENT_FOLDER_NAME)
@@ -271,12 +274,8 @@ if __name__ == '__main__':
                     'sensitive FS, e.g. case-sensitive disk image on Mac')
             yaml_fm += ['redirect_from:']
             yaml_fm += ['  - "{}"'.format(sanitized)]
-        if ix_file == 0:
-            if not sanitized != url_page:
-                yaml_fm += ['redirect_from:']
-            yaml_fm += ['  - "/"']
         if path_url_page.endswith('.ipynb'):
-            interact_path = 'content/' + path_url_page.split('content/')[-1]
+            interact_path = CONTENT_FOLDER_NAME + '/' + path_url_page.split(CONTENT_FOLDER_NAME+'/')[-1]
             yaml_fm += ['interact_link: {}'.format(interact_path)]
         yaml_fm += ["title: '{}'".format(title)]
         yaml_fm += ['prev_page:']
@@ -314,4 +313,3 @@ if __name__ == '__main__':
     print("\nDemo your Jupyter book with `make serve` or push to GitHub!")
 
     print('===========\n')
-
