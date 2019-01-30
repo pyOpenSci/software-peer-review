@@ -20,6 +20,7 @@
 
 - title: Search
   search: true
+  not_numbered: true
 
 - title: Before Review - Packaging Guide
   url: /packaging/packaging_guide
