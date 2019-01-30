@@ -18,6 +18,9 @@
   url: /intro
   not_numbered: true
 
+- title: Search
+  search: true
+
 - title: Before Review - Packaging Guide
   url: /packaging/packaging_guide
 
