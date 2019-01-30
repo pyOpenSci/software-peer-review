@@ -17,7 +17,6 @@
 - title: Home
   url: /intro
   not_numbered: true
-
 - title: Search
   search: true
   not_numbered: true
