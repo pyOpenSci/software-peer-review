@@ -1,5 +1,7 @@
 # <img src="content/images/logo/logo.png" width=40 /> pyOpenSci Guidebook
 
+https://pyopensci.github.io/dev_guide/
+
 pyOpenSci's guide for developing, reviewing, and maintaining packages. 
 
 ## Acknowledgements
