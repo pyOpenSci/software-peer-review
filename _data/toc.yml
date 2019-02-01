@@ -28,6 +28,8 @@
   url: /peer_review/review_intro
   expand_sections: true
   sections:
+  - title: Aims and Scope
+    url: peer_review/aims_scope
   - title: Review Process and Guidelines
     url: /peer_review/peer_review_proc
   - title: Guide for Authors
@@ -36,6 +38,8 @@
     url: /peer_review/reviewer_guide
   - title: Guide for Editors
     url: /peer_review/editor_guide
+  - title: Community Code of Conduct
+    url: peer_review/coc
 
 - title: After Review - Maintenance 
   url: /maintenance/maintenance_intro
