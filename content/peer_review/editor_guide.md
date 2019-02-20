@@ -64,7 +64,7 @@ Here are criteria to keep in mind when choosing a reviewer. You might need to pi
 * Has not reviewed a package for us within the last 6 months.
 * Some package development experience.
 * Some domain experience in the field of the package or data source
-* No [conflicts of interest](peer_review_proc.html#conflict-of-interest).
+* No [conflicts of interest](peer_review_proc#conflict-of-interest).
 * Try to balance your sense of the potential reviewer’s experience against the complexity of the package.
 * Diversity - with two reviewers both shouldn’t be cis white males.
 * Some evidence that they are interested in openness or Python community activities, although blind emailing is fine.
