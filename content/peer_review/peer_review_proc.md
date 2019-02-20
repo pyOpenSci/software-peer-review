@@ -16,6 +16,18 @@
 - If the author hasn’t requested a holding label, but is simply not responding, we should close the issue within one month after the last contact intent. This intent will include a comment tagging the author, but also an email using the email address listed in the DESCRIPTION of the package which is one of the rare cases where the editor will try to contact the author by email.
 - If a submission is closed and the author wishes to re-submit, they’ll have to start a new submission. If the package is still in scope, the author will have to respond to the initial reviews before the editor starts looking for new reviewers.
 
+### Conflict of interest
+Following criteria are meant to be a guide for what constitutes a conflict of interest for an editor or reviewer. The potential editor or reviewer has a conflict of interest if:
+
+- The authors with a major role are from the potential reviewer/editor’s institution or institutional component (e.g., department)
+- Within in the past three years, the potential reviewer/editor has been a collaborator or has had any other professional relationship with any person on the package who has a major role
+- The potential reviewer/editor serves as a member of the advisory board for the project under review
+- The potential reviewer/editor would receive a direct or indirect financial benefit if the package is accepted
+- The potential reviewer/editor has significantly contributed to a competitor project.
+- There is also a lifetime COI for the family members, business partners, and thesis student/advisor or mentor.
+
+In the case where none of the associate editors can serve as editor, an external guest editor will be recruited.
+
 ## After Acceptance: Package Ownership and Maintenance
 
 Authors of contributed packages essentially maintain the same ownership they had prior to their package joining the pyOpenSci suite. Package authors will continue to maintain and develop their software after acceptance into pyOpenSci. Unless explicitly added as collaborators, the pyOpenSci team will not interfere much with day to day operations. However, the team may intervene with critical bug fixes, or address urgent issues if package authors do not respond in a timely manner (see the section about maintainer responsiveness).
