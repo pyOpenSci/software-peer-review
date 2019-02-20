@@ -1,4 +1,5 @@
 # <img src="content/images/logo/logo.png" width=40 /> pyOpenSci Guidebook
+[![CircleCI](https://circleci.com/gh/pyOpenSci/dev_guide.svg?style=svg)](https://circleci.com/gh/pyOpenSci/dev_guide)
 
 https://pyopensci.github.io/dev_guide/
 
