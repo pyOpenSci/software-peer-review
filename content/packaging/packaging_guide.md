@@ -59,14 +59,10 @@ All external package functions, classes, and methods should be fully documented 
 
 ### Testing
 - All packages should have a test suite that covers major functionality of the package. The tests should also cover the behavior of the package in case of errors.
-
 - It is good practice to write unit tests for all functions, and all package code in general, ensuring key functionality is covered. Test coverage below 75% will likely require additional tests or explanation before being sent for review.
-
 - We recommend using pytest for writing tests, but you can use other tools. Strive to write tests as you write each new function. This serves the obvious need to have proper testing for the package, but allows you to think about various ways in which a function can fail, and to defensively code against those.
-
 - Consider using tox to test your package with multiple versions of Python 2 and 3.
-
-* Once you've set up CI, use your package's code coverage report (cf [this section of our book](https://ropensci.github.io/dev_guide/ci.html#coverage)) to identify untested lines, and to add further tests.
+- Once you've set up CI, use your package's code coverage report (cf [this section of our book](https://ropensci.github.io/dev_guide/ci.html#coverage)) to identify untested lines, and to add further tests.
 
 #### Good/Better/Best
 - **Good:** A test suite that covers major functionality of the package.
@@ -79,19 +75,12 @@ All pyOpenSci packages must use some form of continuous integration.
 - For Linux and Mac OSX, we suggest Travis CI.
 - For Windows, we suggest AppVeyor CI.
 - In many cases, you will want CI for all platforms. Different continuous integration services will support builds on different operating systems. Packages should have CI for all platforms when they contain:
-
     - Compiled code
-
     - Java dependencies
-
     - Dependencies on other languages
-
     - Packages with system calls
-
     - Text munging such as getting people’s names (in order to find encoding issues).
-
     - Anything with file system / path calls
-
     - In case of any doubt regarding the applicability of these criteria to your package, it’s better to add CI for all platforms, and most often not too much hassle.
 
 #### Good/Better/Best
