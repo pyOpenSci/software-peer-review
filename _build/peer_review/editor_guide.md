@@ -44,7 +44,7 @@ The EiC serves for 3 months or a time agreed to by all members of the editorial 
 
 
 -   Use the [email template](../appendices/templates#review-request-template) if needed for inviting reviewers
-    -   When inviting reviewers, include something like "if I don't hear from you in a week, I'll assume you are unable to review," so as to give a clear deadline when you'll move on to looking for someone else.
+-   When inviting reviewers, include something like "if I don't hear from you in a week, I'll assume you are unable to review," so as to give a clear deadline when you'll move on to looking for someone else.
 -   Assign a due date 3 weeks after all reviewers have been found.
 -   Once two or more reviewers are found, assign reviewers by tagging in the issue with the following format:
  
@@ -89,6 +89,7 @@ Each submission should be reviewed by _two_ package reviewers. Although it is fi
 -   In general aim for 3 weeks for review, 2 weeks for subsequent changes, and 1 week for reviewer approval of changes.
 -   Upon all reviews being submitted, change the review status tag to `4/review-in-awaiting-changes` to update the reminder bot.
 -   If the author stops responding, refer to [the policies](peer_review_proc#review-process-guidelines) and/or ping the other editors in the Slack channel for discussion. Importantly, if a reviewer was assigned to a closed issue, contact them when closing the issue to explain the decision, thank them once again for their work, and make a note in our database to assign them to a submission with high chances of smooth software review next time (e.g. a package author who has already submitted packages to us).
+-   If the author stops responding, refer to [the policies](peer_review/peer_review_proc#review-process-guidelines) and/or ping the other editors in the Slack channel for discussion. Importantly, if a reviewer was assigned to a closed issue, contact them when closing the issue to explain the decision, thank them once again for their work, and make a note in our database to assign them to a submission with high chances of smooth software review next time (e.g. a package author who has already submitted packages to us).
 -   Upon changes being made, change the review status tag to `5/awaiting-reviewer-response`.
     
 ### After review:

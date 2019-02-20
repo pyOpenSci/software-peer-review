@@ -74,11 +74,11 @@ All external package functions, classes, and methods should be fully documented 
 - It is good practice to write unit tests for all functions, and all package code in general, ensuring key functionality is covered. Test coverage below 75% will likely require additional tests or explanation before being sent for review.
 - We recommend using pytest for writing tests, but you can use other tools. Strive to write tests as you write each new function. This serves the obvious need to have proper testing for the package, but allows you to think about various ways in which a function can fail, and to defensively code against those.
 - Consider using tox to test your package with multiple versions of Python 2 and 3.
-- Once you've set up CI, use your package's code coverage report (cf [this section of our book](https://ropensci.github.io/dev_guide/ci.html#coverage)) to identify untested lines, and to add further tests.
+- If you set up CI with code coverage, use your package's code coverage report to identify untested lines, and to add further tests.
 
 **Good/Better/Best:**
 - **Good:** A test suite that covers major functionality of the package.
-- **Better:** The above, plus code coverage and linting integrated with testing.
+- **Better:** The above, with high code coverage.
 - **Best:** All of the above, plus using tox to test multiple versions of Python.
 
 ### Continuous Integration
@@ -97,7 +97,8 @@ All pyOpenSci packages must use some form of continuous integration.
 
 **Good/Better/Best:**
 - **Good:** Some sort of CI service with status badge in your README.
-- **Better/Best:** Continuous integration for all platforms: Linux, Mac OSX, and Windows. 
+- **Better:** The above plus integrated code coverage and linting.
+- **Best:** Continuous integration for all platforms: Linux, Mac OSX, and Windows. 
 
 ### License
 pyOpenSci projects should use an open source software license that is approved by the Open Software Initiative (OSI). OSI's website has a [list of popular licenses](https://opensource.org/licenses), and GitHub has a [handy tool](https://choosealicense.com/) for choosing a license. 
