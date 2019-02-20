@@ -16,7 +16,7 @@ These are templates to be used by editors and reviewers. When a package is submi
 ```
 ### Editor checks:
 
-- [ ] **Fit**: The package meets criteria for [fit](policies.md#fit) and [overlap](policies.md#fit)
+- [ ] **Fit**: The package meets criteria for [fit](https://pyopensci.github.io/dev_guide/peer_review/aims_scope.html#package-categories) and [overlap](https://pyopensci.github.io/dev_guide/peer_review/aims_scope.html#package-categories).
 - [ ] **Automated tests:** Package has a testing suite and is tested via Travis-CI or another CI service.
 - [ ] **License:** The package has an OSI accepted license
 - [ ] **Repository:** The repository link resolves correctly
@@ -40,7 +40,7 @@ Due date:
 
 *Please check off boxes as applicable, and elaborate in comments below.  Your review is not limited to these topics, as described in the reviewer guide*
 
-- [ ] As the reviewer I confirm that there are no [conflicts of interest](#coi) for me to review this work (If you are unsure whether you are in conflict, please speak to your editor _before_ starting your review).
+- [ ] As the reviewer I confirm that there are no conflicts of interest for me to review this work (If you are unsure whether you are in conflict, please speak to your editor _before_ starting your review).
 
 #### Documentation
 
@@ -97,7 +97,7 @@ The package, [PACKAGE] by [AUTHOR(S)], does [FUNCTION]. You can find it on GitHu
 
 If you accept, note that we ask reviewers to complete reviews in three weeks. (We’ve found it takes a similar amount of time to review a package as an academic paper.)
 
-Our [reviewers guide] details what we look for in a package review, and includes links to example reviews. Our standards are detailed in our [packaging guide], and we provide reviewer [template] for you to use. Please make sure you do not have a [conflict of interest](placeholder_link) preventing you from reviewing this package. If you have questions or feedback, feel free to ask me or post to the [rOpenSci forum].
+Our [reviewers guide] details what we look for in a package review, and includes links to example reviews. Our standards are detailed in our [packaging guide], and we provide reviewer [template] for you to use. Please make sure you do not have a conflict of interest preventing you from reviewing this package. If you have questions or feedback, feel free to ask me.
 
 {IF APPLICABLE: The authors have also chosen to jointly submit their package to the Journal of Open Source Software, so this package includes a short `paper.md` manuscript describing the software that we ask you include in your review.}
 
@@ -110,10 +110,9 @@ Sincerely,
 
 [EDITOR]
 
-[reviewers guide]: https://ropensci.github.io/dev_guide/reviewerguide.html
-[packaging guide]: https://ropensci.github.io/dev_guide/building.html
-[template]: https://ropensci.github.io/dev_guide/reviewtemplate.html
-[rOpenSci forum]: https://discuss.ropensci.org/
+[reviewers guide]: https://pyopensci.github.io/dev_guide/peer_review/reviewer_guide.html
+[packaging guide]: https://pyopensci.github.io/dev_guide/packaging/packaging_guide.html
+[template]: https://pyopensci.github.io/dev_guide/appendices/templates.html#review-template
 
 
 ## Approval Comment Template
@@ -130,5 +129,5 @@ To-dos:
 - [ ] Submit to JOSS using the Zenodo DOI.  We will tag it for expedited review.
 <IF JOSS/>
 
-We've started putting together a gitbook with our best practice and tips, [this chapter](placeholder_link) starts the 3rd section that's about guidance for after onboarding. Please tell us what could be improved, the corresponding repo is [here](https://github.com/pyOpenSci/dev_guide).
+We've started putting together a gitbook with our best practice and tips, [this chapter](https://pyopensci.github.io/dev_guide/maintenance/maintenance_intro.html) starts the 3rd section that's about guidance for after onboarding. Please tell us what could be improved, the corresponding repo is [here](https://github.com/pyOpenSci/dev_guide).
 ```
