@@ -13,15 +13,15 @@ comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /con
 # Peer Review Process and Policies
 
 ## Review Timeline
-- *Pre-submission:* If you are unsure if your package fits within the scope of the pyOpenSci suite, create a pre-submission inquiry issue on the pyopensci/software-review repository. An editor will respond within a few days to let you know if we can review your package at this time. For more info, see "Aims and Scope" below. 
-- To submit a package for review, the author must initiate a review request in the pyopensci/software-review repo. 
+- *Pre-submission:* If you are unsure if your package fits within the scope of the pyOpenSci suite, create a pre-submission inquiry issue on the [pyopensci/software-review repository](https://github.com/pyOpenSci/software-review/issues/new/choose). An editor will respond within a few days to let you know if we can review your package at this time. For more info, see the ["Aims and Scope"](aims_scope) section of this guide.
+- To submit a package for review, the author must initiate a review request in the [pyopensci/software-review repo](https://github.com/pyOpenSci/software-review). 
 - An editor will review your submission within **1 week** and respond with next steps. The editor may assign the package to reviewers, request that the package be updated to meet minimal criteria before review, or reject the package due to lack of fit or overlap.
 - If your package meets minimal criteria, the editor will assign 1-3 reviewers. They will be asked to provide reviews as comments on your issue within **3 weeks**.
 - We ask that you respond to reviewers’ comments within **2 weeks** of the last-submitted review, but you may make updates to your package or respond at any time. Here is an author response example. We encourage ongoing conversations between authors and reviewers. See the reviewing guide for more details.
 - Once your package is approved, we will provide further instructions about the transfer of your repository to the pyOpenSci repository.
 
 ## Review Process Guidelines
-- Packages are reviewed for quality, fit, documentation, clarity and the review process is quite similar to a manuscript review (see our packaging guide and reviewing guide for more details). Unlike a manuscript review, this process will be an ongoing conversation.
+- Packages are reviewed for quality, fit, documentation, clarity and the review process is quite similar to a manuscript review (see our [packaging guide](../packaging/packaging_guide) and [reviewing guide](reviewer_guide) for more details). Unlike a manuscript review, this process will be an ongoing conversation.
 - Once all major issues and questions, and those addressable with reasonable effort, are resolved, the editor assigned to a package will make a decision (accept, hold, or reject). Rejections are usually done early (before the review process begins, see the aims and scope section), but in rare cases a package may also be not onboarded after review & revision. It is ultimately editor’s decision on whether or not to reject the package based on how the reviews are addressed.
 - Communication between authors, reviewers and editors will first and foremost take place on GitHub, although you can choose to contact the editor by email. When submitting a package, please make sure your GitHub notification settings make it unlikely you will miss a comment.
 - The author can choose to have their submission put on hold (editor applies the holding label). The holding status will be revisited every 3 months, and after one year the issue will be closed.
