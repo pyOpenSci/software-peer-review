@@ -1,0 +1,888 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,minimum-scale=1">
+
+  <title>Before Review - Packaging Guide</title>
+  <meta name="description" content="Packaging Guide">
+
+  <link rel="canonical" href="https://pyopensci.github.io/dev_guide/packaging/packaging_guide.html">
+  <link rel="alternate" type="application/rss+xml" title="The pyOpenSci Developer Guide" href="https://pyopensci.github.io/dev_guide/feed.xml">
+
+  <meta property="og:url"         content="https://pyopensci.github.io/dev_guide/packaging/packaging_guide.html" />
+<meta property="og:type"        content="article" />
+<meta property="og:title"       content="Before Review - Packaging Guide" />
+<meta property="og:description" content="Packaging Guide" />
+<meta property="og:image"       content="" />
+
+
+  <script type="application/ld+json">
+  {
+  "@context": "http://schema.org",
+  "@type": "NewsArticle",
+  "mainEntityOfPage":
+    "https://pyopensci.github.io/dev_guide/packaging/packaging_guide.html",
+  "headline":
+    "Before Review - Packaging Guide",
+  "datePublished":
+    "2019-02-20T17:49:06+00:00",
+  "dateModified":
+    "2019-02-20T17:49:06+00:00",
+  "description":
+    "Packaging Guide",
+  "author": {
+    "@type": "Person",
+    "name": "The pyOpenSci Community"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Data 100 at UC Berkeley",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://pyopensci.github.io/dev_guide",
+      "width": 60,
+      "height": 60
+    }
+  },
+  "image": {
+    "@type": "ImageObject",
+    "url": "https://pyopensci.github.io/dev_guide",
+    "height": 60,
+    "width": 60
+  }
+}
+
+  </script>
+  <link rel="stylesheet" href="/dev_guide/assets/css/styles.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css ">
+  <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
+
+  <!-- <link rel="manifest" href="/manifest.json"> -->
+  <!-- <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#efae0a"> -->
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="msapplication-TileImage" content="/mstile-144x144.png">
+  <meta name="theme-color" content="#233947">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" type="image/x-icon" href="/dev_guide/images/logo/favicon.ico">
+
+  <!-- MathJax Config -->
+  <!-- Allow inline math using $ and automatically break long math lines -->
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+        displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+        processEscapes: true,
+        processEnvironments: true
+    },
+    CommonHTML: {
+        linebreaks: {
+            automatic: true,
+        },
+    },
+});
+</script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML' async></script>
+
+  <!-- DOM updating function -->
+  <script>
+const runWhenDOMLoaded = cb => {
+  if (document.readyState != 'loading') {
+    cb()
+  } else if (document.addEventListener) {
+    document.addEventListener('DOMContentLoaded', cb)
+  } else {
+    document.attachEvent('onreadystatechange', function() {
+      if (document.readyState == 'complete') cb()
+    })
+  }
+}
+
+// Helper function to init things quickly
+initFunction = function(myfunc) {
+  runWhenDOMLoaded(myfunc);
+  document.addEventListener('turbolinks:load', myfunc);
+};
+</script>
+
+  <!-- Define some javascript variables that will be useful in other javascript -->
+  <script>
+    const site_basename = '/dev_guide';
+  </script>
+
+  <!-- Add AnchorJS to let headers be linked -->
+  <script src="/dev_guide/assets/js/anchor.min.js"  type="text/javascript"></script>
+  <script>
+
+initFunction(function () {
+    anchors.add("main h1, main h2, main h3, main h4")
+});
+
+</script>
+
+  <!-- Include Turbolinks to make page loads fast -->
+  <!-- https://github.com/turbolinks/turbolinks -->
+  <script src="/dev_guide/assets/js/turbolinks.js" async></script>
+  <meta name="turbolinks-cache-control" content="no-cache">
+
+  <!-- Load nbinteract for widgets -->
+  <script src="https://unpkg.com/nbinteract-core" async></script>
+
+  <!-- Load Thebelab for interactive widgets -->
+  <!-- Include Thebelab for interactive code if it's enabled -->
+
+
+  <!-- Google analytics -->
+  <script src="/dev_guide/assets/js/ga.js" async></script>
+
+  <!-- Clipboard copy button -->
+  <script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js" async></script>
+
+  <!-- Load JS that depends on site variables -->
+  <script>
+/**
+ * Set up copy/paste for code blocks
+ */
+const codeCellId = index => `codecell${index}`
+
+const clipboardButton = id =>
+  `<a class="btn copybtn o-tooltip--left" data-tooltip="Copy" data-clipboard-target="#${id}">
+    <img src="/dev_guide/assets/images/copy-button.svg" alt="Copy to clipboard">
+  </a>`
+
+// Clears selected text since ClipboardJS will select the text when copying
+const clearSelection = () => {
+  if (window.getSelection) {
+    window.getSelection().removeAllRanges()
+  } else if (document.selection) {
+    document.selection.empty()
+  }
+}
+
+// Changes tooltip text for two seconds, then changes it back
+const temporarilyChangeTooltip = (el, newText) => {
+  const oldText = el.getAttribute('data-tooltip')
+  el.setAttribute('data-tooltip', newText)
+  setTimeout(() => el.setAttribute('data-tooltip', oldText), 2000)
+}
+
+const addCopyButtonToCodeCells = () => {
+  // If ClipboardJS hasn't loaded, wait a bit and try again. This
+  // happens because we load ClipboardJS asynchronously.
+  if (window.ClipboardJS === undefined) {
+    setTimeout(addCopyButtonToCodeCells, 250)
+    return
+  }
+
+  const codeCells = document.querySelectorAll('.input_area pre')
+  codeCells.forEach((codeCell, index) => {
+    const id = codeCellId(index)
+    codeCell.setAttribute('id', id)
+    if (document.querySelector(`pre#${id} + a`) == null) {
+      codeCell.insertAdjacentHTML('afterend', clipboardButton(id));
+    }
+  })
+
+  const clipboard = new ClipboardJS('.copybtn')
+  clipboard.on('success', event => {
+    clearSelection()
+    temporarilyChangeTooltip(event.trigger, 'Copied!')
+  })
+
+  clipboard.on('error', event => {
+    temporarilyChangeTooltip(event.trigger, 'Failed to copy')
+  })
+
+  // Get rid of clipboard before the next page visit to avoid memory leak
+  document.addEventListener('turbolinks:before-visit', () =>
+    clipboard.destroy()
+  )
+}
+
+initFunction(addCopyButtonToCodeCells);
+</script>
+
+  <!-- Hide cell code -->
+  
+<script>
+/**
+Add buttons to hide code cells
+*/
+
+
+var setCodeCellVisibility = function(inputField, kind) {
+    // Update the image and class for hidden
+    var id = inputField.getAttribute('data-id');
+    var codeCell = document.querySelector(`#${id}`);
+
+    if (kind === "visible") {
+        codeCell.classList.remove('hidden');
+        inputField.checked = true;
+    } else {
+        codeCell.classList.add('hidden');
+        inputField.checked = false;
+    }
+}
+
+var toggleCodeCellVisibility = function (event) {
+    // The label is clicked, and now we decide what to do based on the input field's clicked status
+    if (event.target.tagName === "LABEL") {
+        var inputField = event.target.previousElementSibling;
+    } else {
+        // It is the span inside the target
+        var inputField = event.target.parentElement.previousElementSibling;
+    }
+
+    if (inputField.checked === true) {
+        setCodeCellVisibility(inputField, "visible");
+    } else {
+        setCodeCellVisibility(inputField, "hidden");
+    }
+}
+
+
+// Button constructor
+const hideCodeButton = id => `<input class="hidebtn" type="checkbox" id="hidebtn${id}" data-id="${id}"><label title="Toggle cell" for="hidebtn${id}" class="plusminus"><span class="pm_h"></span><span class="pm_v"></span></label>`
+
+var addHideButton = function () {
+  // If a hide button is already added, don't add another
+  if (document.querySelector('div.hidecode input') !== null) {
+      return;
+  }
+
+  // Find the input cells and add a hide button
+  document.querySelectorAll('div.input_area div.highlight').forEach(function (item, index) {
+    if (!item.parentElement.classList.contains("hidecode")) {
+        // Skip the cell if it doesn't have a hidecode class
+        return;
+    }
+
+    const id = codeCellId(index)
+    item.setAttribute('id', id);
+    item.insertAdjacentHTML('afterend', hideCodeButton(id))
+
+    // Set up the visibility toggle
+    hideLink = document.querySelector(`#${id} + input + label`);
+    hideLink.addEventListener('click', toggleCodeCellVisibility)
+  });
+}
+
+
+// Initialize the hide buttos
+var initHiddenCells = function () {
+    // Add hide buttons to the cells
+    addHideButton();
+
+    // Toggle the code cells that should be hidden
+    document.querySelectorAll('div.hidecode input').forEach(function (item) {
+        setCodeCellVisibility(item, 'hidden');
+        item.checked = true;
+    })
+}
+
+initFunction(initHiddenCells);
+
+</script>
+
+
+  <!-- Load custom website scripts -->
+  <script src="/dev_guide/assets/js/scripts.js" async></script>
+
+  <!-- Load custom user CSS and JS  -->
+  <script src="/dev_guide/assets/custom/custom.js" async></script>
+  <link rel="stylesheet" href="/dev_guide/assets/custom/custom.css">
+
+  <!-- Update interact links w/ REST param, is defined in includes so we can use templates -->
+  
+
+  <!-- Lunr search code - will only be executed on the /search page -->
+  <script src="/dev_guide/assets/js/lunr/lunr.min.js" type="text/javascript"></script>
+  <script>var initQuery = function() {
+  // See if we have a search box
+  var searchInput = document.querySelector('input#lunr_search');
+  if (searchInput === null) {
+    return;
+  }
+
+  // Function to parse our lunr cache
+  var idx = lunr(function () {
+    this.field('title')
+    this.field('excerpt')
+    this.field('categories')
+    this.field('tags')
+    this.ref('id')
+
+    this.pipeline.remove(lunr.trimmer)
+
+    for (var item in store) {
+      this.add({
+        title: store[item].title,
+        excerpt: store[item].excerpt,
+        categories: store[item].categories,
+        tags: store[item].tags,
+        id: item
+      })
+    }
+  });
+
+  // Run search upon keyup
+  searchInput.addEventListener('keyup', function () {
+    var resultdiv = document.querySelector('#results');
+    var query = document.querySelector("input#lunr_search").value.toLowerCase();
+    var result =
+      idx.query(function (q) {
+        query.split(lunr.tokenizer.separator).forEach(function (term) {
+          q.term(term, { boost: 100 })
+          if(query.lastIndexOf(" ") != query.length-1){
+            q.term(term, {  usePipeline: false, wildcard: lunr.Query.wildcard.TRAILING, boost: 10 })
+          }
+          if (term != ""){
+            q.term(term, {  usePipeline: false, editDistance: 1, boost: 1 })
+          }
+        })
+      });
+
+      // Empty the results div
+      while (resultdiv.firstChild) {
+        resultdiv.removeChild(resultdiv.firstChild);
+      }
+
+    resultdiv.insertAdjacentHTML('afterbegin', '<p class="results__found">'+result.length+' Result(s) found</p>');
+    for (var item in result) {
+      var ref = result[item].ref;
+      if(store[ref].teaser){
+        var searchitem =
+          '<div class="list__item">'+
+            '<article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">'+
+              '<h2 class="archive__item-title" itemprop="headline">'+
+                '<a href="'+store[ref].url+'" rel="permalink">'+store[ref].title+'</a>'+
+              '</h2>'+
+              '<div class="archive__item-teaser">'+
+                '<img src="'+store[ref].teaser+'" alt="">'+
+              '</div>'+
+              '<p class="archive__item-excerpt" itemprop="description">'+store[ref].excerpt.split(" ").splice(0,20).join(" ")+'...</p>'+
+            '</article>'+
+          '</div>';
+      }
+      else{
+    	  var searchitem =
+          '<div class="list__item">'+
+            '<article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">'+
+              '<h2 class="archive__item-title" itemprop="headline">'+
+                '<a href="'+store[ref].url+'" rel="permalink">'+store[ref].title+'</a>'+
+              '</h2>'+
+              '<p class="archive__item-excerpt" itemprop="description">'+store[ref].excerpt.split(" ").splice(0,20).join(" ")+'...</p>'+
+            '</article>'+
+          '</div>';
+      }
+      resultdiv.insertAdjacentHTML('beforeend', searchitem);
+    }
+  });
+};
+
+initFunction(initQuery);
+</script>
+</head>
+
+  <body>
+    <!-- .js-show-sidebar shows sidebar by default -->
+    <div id="js-textbook" class="c-textbook js-show-sidebar">
+      
+
+
+
+<nav id="js-sidebar" class="c-textbook__sidebar">
+  <a href="https://pyopensci.github.io/dev_guide"><img src="/dev_guide/images/logo/logo.png" class="textbook_logo" id="sidebar-logo" data-turbolinks-permanent/></a>
+  <h2 class="c-sidebar__title">The pyOpenSci Developer Guide</h2>
+  <ul class="c-sidebar__chapters">
+    
+      
+      
+
+      
+      
+
+      
+      
+      <li class="c-sidebar__chapter">
+        <a class="c-sidebar__entry "
+          href="/dev_guide/intro.html"
+        >
+          
+          Home
+        </a>
+
+        
+      </li>
+
+      
+    
+      
+      
+        <li class="c-sidebar__chapter"><a class="c-sidebar__entry" href="/dev_guide/search.html">Search</a></li>
+        
+      
+      
+
+      
+      
+
+      
+      
+      <li class="c-sidebar__chapter">
+        <a class="c-sidebar__entry c-sidebar__entry--active"
+          href="/dev_guide/packaging/packaging_guide.html"
+        >
+          
+            1.
+          
+          Before Review - Packaging Guide
+        </a>
+
+        
+      </li>
+
+      
+    
+      
+      
+
+      
+      
+
+      
+      
+      <li class="c-sidebar__chapter">
+        <a class="c-sidebar__entry "
+          href="/dev_guide/peer_review/review_intro.html"
+        >
+          
+            2.
+          
+          Peer Review Process
+        </a>
+
+        
+
+          
+          
+          
+          
+
+          
+
+          <ul class="c-sidebar__sections ">
+            
+              
+              
+
+              <li class="c-sidebar__section">
+                <a class="c-sidebar__entry "
+                  href="/dev_guide/peer_review/aims_scope.html"
+                >
+                  
+                    2.1
+                  
+                  Aims and Scope
+                </a>
+
+                
+                
+
+              </li>
+              
+            
+              
+              
+
+              <li class="c-sidebar__section">
+                <a class="c-sidebar__entry "
+                  href="/dev_guide/peer_review/peer_review_proc.html"
+                >
+                  
+                    2.2
+                  
+                  Review Process and Guidelines
+                </a>
+
+                
+                
+
+              </li>
+              
+            
+              
+              
+
+              <li class="c-sidebar__section">
+                <a class="c-sidebar__entry "
+                  href="/dev_guide/peer_review/author_guide.html"
+                >
+                  
+                    2.3
+                  
+                  Guide for Authors
+                </a>
+
+                
+                
+
+              </li>
+              
+            
+              
+              
+
+              <li class="c-sidebar__section">
+                <a class="c-sidebar__entry "
+                  href="/dev_guide/peer_review/reviewer_guide.html"
+                >
+                  
+                    2.4
+                  
+                  Guide for Reviewers
+                </a>
+
+                
+                
+
+              </li>
+              
+            
+              
+              
+
+              <li class="c-sidebar__section">
+                <a class="c-sidebar__entry "
+                  href="/dev_guide/peer_review/editor_guide.html"
+                >
+                  
+                    2.5
+                  
+                  Guide for Editors
+                </a>
+
+                
+                
+
+              </li>
+              
+            
+              
+              
+
+              <li class="c-sidebar__section">
+                <a class="c-sidebar__entry "
+                  href="/dev_guide/peer_review/coc.html"
+                >
+                  
+                    2.6
+                  
+                  Community Code of Conduct
+                </a>
+
+                
+                
+
+              </li>
+              
+            
+          </ul>
+        
+      </li>
+
+      
+    
+      
+      
+
+      
+      
+
+      
+      
+      <li class="c-sidebar__chapter">
+        <a class="c-sidebar__entry "
+          href="/dev_guide/maintenance/maintenance_intro.html"
+        >
+          
+            3.
+          
+          After Review - Maintenance
+        </a>
+
+        
+
+          
+          
+          
+          
+
+          
+
+          <ul class="c-sidebar__sections ">
+            
+              
+              
+
+              <li class="c-sidebar__section">
+                <a class="c-sidebar__entry "
+                  href="/dev_guide/maintenance/collaboration.html"
+                >
+                  
+                    3.1
+                  
+                  Collaboration
+                </a>
+
+                
+                
+
+              </li>
+              
+            
+          </ul>
+        
+      </li>
+
+      
+    
+      
+      
+
+      
+      
+
+      
+      
+      <li class="c-sidebar__chapter">
+        <a class="c-sidebar__entry "
+          href="/dev_guide/appendices/templates.html"
+        >
+          
+          Appendices - Templates
+        </a>
+
+        
+      </li>
+
+      
+    
+  </ul>
+  <p class="sidebar_footer">Powered by <a href="https://github.com/jupyter/jupyter-book">Jupyter Book</a></p>
+</nav>
+
+      
+      <!-- Shamelessly copied from minimal mistakes -->
+
+
+<!-- TOC will only show up if it has at least one item -->
+
+
+  <aside class="sidebar__right">
+    <nav class="onthispage">
+      <header><h4 class="nav__title"><i class="fa fa-list"></i>   On this page</h4></header>
+      <ul class="toc__menu">
+  <li><a href="#overview">Overview</a></li>
+  <li><a href="#project-template">Project Template</a>
+    <ul>
+      <li><a href="#template-instructions">Template Instructions</a></li>
+    </ul>
+  </li>
+  <li><a href="#requirements">Requirements</a>
+    <ul>
+      <li><a href="#readme">README</a></li>
+      <li><a href="#documentation">Documentation</a></li>
+      <li><a href="#testing">Testing</a></li>
+      <li><a href="#continuous-integration">Continuous Integration</a></li>
+      <li><a href="#license">License</a></li>
+    </ul>
+  </li>
+  <li><a href="#other-recommendations">Other recommendations</a>
+    <ul>
+      <li><a href="#code-style">Code Style</a></li>
+      <li><a href="#linting">Linting</a></li>
+    </ul>
+  </li>
+</ul>
+    </nav>
+  </aside>
+
+
+      
+      <main class="c-textbook__page" tabindex="-1">
+          <div class="o-wrapper">
+            <div class="c-sidebar-toggle">
+  <!-- We show the sidebar by default so we use .is-active -->
+  <button
+    id="js-sidebar-toggle"
+    class="hamburger hamburger--arrowalt is-active"
+  >
+    <span class="hamburger-box">
+      <span class="hamburger-inner"></span>
+    </span>
+    <span class="c-sidebar-toggle__label">Toggle Sidebar</span>
+  </button>
+</div>
+
+            
+
+            <div class="c-textbook__content">
+              <h1 id="packaging-guide">Packaging Guide</h1>
+
+<p>This section provides guidelines and tips for creating a Python package to submit for peer-review.</p>
+
+<h2 id="overview">Overview</h2>
+<p>pyOpenSci packages must:</p>
+<ul>
+  <li>Have a clear README.</li>
+  <li>Contain full documentation for any user-facing functions.</li>
+  <li>Have a test suite that covers the major functionality of the package.</li>
+  <li>Use continuous integration.</li>
+  <li>Use an OSI approved software license.</li>
+</ul>
+
+<p>Do not be intimidated if you haven’t created a Python package before. We have a template and guidelines to help you meet all of these requirements! Below, we’ll also go into more detail on each of the requirements.</p>
+
+<h2 id="project-template">Project Template</h2>
+<p>To help you package your project, we provide a template <a href="https://github.com/pyOpenSci/cookiecutter-pyopensci">“cookiecutter” repository</a>. The cookiecutter allows you to start a project with continuous integration, testing, and auto-documentation already in place, but with your project’s details already filled in. You don’t have to use the template as a starting point, but it may help if you are not experienced with setting up tests, continuous integration, etc.</p>
+
+<h3 id="template-instructions">Template Instructions</h3>
+<p>To get started, just run the following commands and fill in the info:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>pip install cookiecutter
+
+cookiecutter https://github.com/pyOpenSci/cookiecutter-pyopensci.git
+</code></pre></div></div>
+
+<p>For more detailed instructions, see the <a href="https://cookiecutter-pyopensci.readthedocs.io/en/latest/tutorial.html">cookiecutter-pyopensci tutorial</a>.</p>
+
+<p>For info on what comes with our cookiecutter, check out the rest of the <a href="https://cookiecutter-pyopensci.readthedocs.io/en/latest/">docs</a>. The <a href="https://cookiecutter-pyopensci.readthedocs.io/en/latest/cookiecutter_contents.html">Template Contents page</a> explains the purpose of each file that ships with the template.</p>
+
+<h2 id="requirements">Requirements</h2>
+<p>This section has descriptions of all the packaging requirements for pyOpenSci. Most of the sections also include Good/Better/Best recommendations. Good meets the requirements, but going beyond the minimum can make package maintenance easier.</p>
+
+<h3 id="readme">README</h3>
+<p>All packages should have a README.md in their root directory. The README should include, from top to bottom:</p>
+
+<ul>
+  <li>The package name</li>
+  <li>Badges for continuous integration and test coverage, the badge for pyOpenSci peer-review once it has started (see below), a repostatus.org badge, and any other badges. If the README has many more badges, you might want to consider using a table for badges, see this example, that one and that one. Such a table shoud be more wide than high.</li>
+  <li>Short description of goals of package, with descriptive links to all vignettes (rendered, i.e. readable, cf the documentation website section) unless the package is small and there’s only one vignette repeating the README.</li>
+  <li>Installation instructions</li>
+  <li>Any additional setup required (authentication tokens, etc)</li>
+  <li>Brief demonstration usage</li>
+  <li>Direction to more detailed documentation (e.g. your documentation files or website).</li>
+  <li>If applicable, how the package compares to other similar packages and/or how it relates to other packages</li>
+  <li>Citation information</li>
+</ul>
+
+<p><strong>Good/Better/Best Recommendations:</strong></p>
+<ul>
+  <li><strong>Good:</strong> README with name, description, installation instructions, and direction to further documentation.</li>
+  <li><strong>Better/Best:</strong> All the above plus usage examples, citation information, and CI and/or test coverage badges.</li>
+</ul>
+
+<h3 id="documentation">Documentation</h3>
+<p>All external package functions, classes, and methods should be fully documented with examples.</p>
+
+<p><strong>Good/Better/Best:</strong></p>
+<ul>
+  <li><strong>Good:</strong> Manually updated documentation as text files that ship with your package.</li>
+  <li><strong>Better:</strong> A documentation website using Sphinx to convert rst files to HTML and Read the Docs to host your site.</li>
+  <li><strong>Best (optional):</strong> Also consider automatically generated documentation from docstrings using autodoc</li>
+</ul>
+
+<h3 id="testing">Testing</h3>
+<ul>
+  <li>All packages should have a test suite that covers major functionality of the package. The tests should also cover the behavior of the package in case of errors.</li>
+  <li>It is good practice to write unit tests for all functions, and all package code in general, ensuring key functionality is covered. Test coverage below 75% will likely require additional tests or explanation before being sent for review.</li>
+  <li>We recommend using pytest for writing tests, but you can use other tools. Strive to write tests as you write each new function. This serves the obvious need to have proper testing for the package, but allows you to think about various ways in which a function can fail, and to defensively code against those.</li>
+  <li>Consider using tox to test your package with multiple versions of Python 2 and 3.</li>
+  <li>Once you’ve set up CI, use your package’s code coverage report (cf <a href="https://ropensci.github.io/dev_guide/ci.html#coverage">this section of our book</a>) to identify untested lines, and to add further tests.</li>
+</ul>
+
+<p><strong>Good/Better/Best:</strong></p>
+<ul>
+  <li><strong>Good:</strong> A test suite that covers major functionality of the package.</li>
+  <li><strong>Better:</strong> The above, plus code coverage and linting integrated with testing.</li>
+  <li><strong>Best:</strong> All of the above, plus using tox to test multiple versions of Python.</li>
+</ul>
+
+<h3 id="continuous-integration">Continuous Integration</h3>
+<p>All pyOpenSci packages must use some form of continuous integration.</p>
+
+<ul>
+  <li>For Linux and Mac OSX, we suggest Travis CI.</li>
+  <li>For Windows, we suggest AppVeyor CI.</li>
+  <li>In many cases, you will want CI for all platforms. Different continuous integration services will support builds on different operating systems. Packages should have CI for all platforms when they contain:
+    <ul>
+      <li>Compiled code</li>
+      <li>Java dependencies</li>
+      <li>Dependencies on other languages</li>
+      <li>Packages with system calls</li>
+      <li>Text munging such as getting people’s names (in order to find encoding issues).</li>
+      <li>Anything with file system / path calls</li>
+      <li>In case of any doubt regarding the applicability of these criteria to your package, it’s better to add CI for all platforms, and most often not too much hassle.</li>
+    </ul>
+  </li>
+</ul>
+
+<p><strong>Good/Better/Best:</strong></p>
+<ul>
+  <li><strong>Good:</strong> Some sort of CI service with status badge in your README.</li>
+  <li><strong>Better/Best:</strong> Continuous integration for all platforms: Linux, Mac OSX, and Windows.</li>
+</ul>
+
+<h3 id="license">License</h3>
+<p>pyOpenSci projects should use an open source software license that is approved by the Open Software Initiative (OSI). OSI’s website has a <a href="https://opensource.org/licenses">list of popular licenses</a>, and GitHub has a <a href="https://choosealicense.com/">handy tool</a> for choosing a license.</p>
+
+<p><strong>Good/Better/Best:</strong></p>
+<ul>
+  <li><strong>Good:</strong> Include a open source software license with your package.</li>
+  <li><strong>Better/Best:</strong> Choose a license based on your needs and future use of package, plus explain your choice in your submission for review.</li>
+</ul>
+
+<h2 id="other-recommendations">Other recommendations</h2>
+<h3 id="code-style">Code Style</h3>
+<p>pyOpenSci encourages authors to consult <a href="https://www.python.org/dev/peps/pep-0008/">PEP 8</a> for information on how to style your code.</p>
+
+<h3 id="linting">Linting</h3>
+<p>An automatic linter (e.g. flake8) can help ensure your code is clean and free of syntax errors. These can be integrated with your CI.</p>
+
+
+              <nav class="c-page__nav">
+  
+    
+    <a id="js-page__nav__prev" class="c-page__nav__prev" href="/dev_guide/intro">
+      〈 <span class="u-margin-right-tiny"></span> Home
+    </a>
+  
+
+  
+    
+    <a id="js-page__nav__next" class="c-page__nav__next" href="/dev_guide/peer_review/review_intro">
+      Peer Review Process <span class="u-margin-right-tiny"></span> 〉
+    </a>
+  
+</nav>
+
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+  </body>
+</html>
