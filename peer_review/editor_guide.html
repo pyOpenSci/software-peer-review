@@ -27,9 +27,9 @@
   "headline":
     "Guide for Editors",
   "datePublished":
-    "2019-02-20T22:14:10+00:00",
+    "2019-02-20T22:19:18+00:00",
   "dateModified":
-    "2019-02-20T22:14:10+00:00",
+    "2019-02-20T22:19:18+00:00",
   "description":
     "Guide for Editors",
   "author": {
@@ -762,8 +762,11 @@ initFunction(initQuery);
 <h4 id="tasks">Tasks</h4>
 
 <ul>
-  <li>Use the <a href="../appendices/templates#review-request-template">email template</a> if needed for inviting reviewers</li>
-  <li>When inviting reviewers, include something like “if I don’t hear from you in a week, I’ll assume you are unable to review,” so as to give a clear deadline when you’ll move on to looking for someone else.</li>
+  <li>Use the <a href="../appendices/templates#review-request-template">email template</a> if needed for inviting reviewers
+    <ul>
+      <li>When inviting reviewers, include something like “if I don’t hear from you in a week, I’ll assume you are unable to review,” so as to give a clear deadline when you’ll move on to looking for someone else.</li>
+    </ul>
+  </li>
   <li>Assign a due date 3 weeks after all reviewers have been found.</li>
   <li>Once two or more reviewers are found, assign reviewers by tagging in the issue with the following format:</li>
 </ul>
@@ -802,7 +805,7 @@ Due date: YYYY-MM-DD
   <li>Has not reviewed a package for us within the last 6 months.</li>
   <li>Some package development experience.</li>
   <li>Some domain experience in the field of the package or data source</li>
-  <li>No <a href="peer_review_proc.html#conflict-of-interest">conflicts of interest</a>.</li>
+  <li>No <a href="peer_review_proc#conflict-of-interest">conflicts of interest</a>.</li>
   <li>Try to balance your sense of the potential reviewer’s experience against the complexity of the package.</li>
   <li>Diversity - with two reviewers both shouldn’t be cis white males.</li>
   <li>Some evidence that they are interested in openness or Python community activities, although blind emailing is fine.</li>
@@ -817,7 +820,6 @@ Due date: YYYY-MM-DD
   <li>In general aim for 3 weeks for review, 2 weeks for subsequent changes, and 1 week for reviewer approval of changes.</li>
   <li>Upon all reviews being submitted, change the review status tag to <code class="highlighter-rouge">4/review-in-awaiting-changes</code> to update the reminder bot.</li>
   <li>If the author stops responding, refer to <a href="peer_review_proc#review-process-guidelines">the policies</a> and/or ping the other editors in the Slack channel for discussion. Importantly, if a reviewer was assigned to a closed issue, contact them when closing the issue to explain the decision, thank them once again for their work, and make a note in our database to assign them to a submission with high chances of smooth software review next time (e.g. a package author who has already submitted packages to us).</li>
-  <li>If the author stops responding, refer to <a href="peer_review/peer_review_proc#review-process-guidelines">the policies</a> and/or ping the other editors in the Slack channel for discussion. Importantly, if a reviewer was assigned to a closed issue, contact them when closing the issue to explain the decision, thank them once again for their work, and make a note in our database to assign them to a submission with high chances of smooth software review next time (e.g. a package author who has already submitted packages to us).</li>
   <li>Upon changes being made, change the review status tag to <code class="highlighter-rouge">5/awaiting-reviewer-response</code>.</li>
 </ul>
 
