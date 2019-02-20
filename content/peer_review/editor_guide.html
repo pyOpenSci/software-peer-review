@@ -27,9 +27,9 @@
   "headline":
     "Guide for Editors",
   "datePublished":
-    "2019-02-20T21:39:56+00:00",
+    "2019-02-20T22:03:07+00:00",
   "dateModified":
-    "2019-02-20T21:39:56+00:00",
+    "2019-02-20T22:03:07+00:00",
   "description":
     "",
   "author": {
@@ -746,12 +746,12 @@ initFunction(initQuery);
 
 <ul>
   <li>Tag issue with <code class="highlighter-rouge">1/editor-checks</code> tag and assign a main editor. Please strive to finish the checks and start looking for reviewers within 1 week.</li>
-  <li>Use the <a href="appendices/templates#editors-template">editor template</a> to guide initial checks and record your response to the submission.</li>
+  <li>Use the <a href="../appendices/templates#editors-template">editor template</a> to guide initial checks and record your response to the submission.</li>
   <li>Check that template has been properly filled out.</li>
-  <li>Check against policies for <a href="peer_review/aims_scope#package-categories">fit</a> and <a href="peer_review/aims_scope#package-overlap">overlap</a>. If reject, see <a href="#responding-to-out-of-scope-submissions">this section</a> about how to respond.</li>
+  <li>Check against policies for <a href="aims_scope#package-categories">fit</a> and <a href="aims_scope#package-overlap">overlap</a>. If reject, see <a href="#responding-to-out-of-scope-submissions">this section</a> about how to respond.</li>
   <li>Check that mandatory parts of template are complete.  If not, direct authors toward appropriate instructions.</li>
   <li>Run automated tests: spelling, linting, etc … will be filled in later.</li>
-  <li>For packages needing continuous integration on multiple platforms (<a href="packaging/packaging_guide#continuous-integration">criteria in this section of the packaging chapter</a>) make sure the package gets tested on multiple platforms (having the package built on both Travis and AppVeyor for instance).</li>
+  <li>For packages needing continuous integration on multiple platforms (<a href="../packaging/packaging_guide#continuous-integration">criteria in this section of the packaging chapter</a>) make sure the package gets tested on multiple platforms (having the package built on both Travis and AppVeyor for instance).</li>
   <li>Wherever possible when asking for changes, direct authors to automatic tools and online resources.</li>
   <li>If initial checks show major gaps, request changes before assigning reviewers.</li>
   <li>If the package raises a new issue for pyOpenSci policy, create an issue on <a href="https://github.com/pyOpenSci/governance">pyOpenSci’s governance repo</a></li>
@@ -762,7 +762,7 @@ initFunction(initQuery);
 <h4 id="tasks">Tasks</h4>
 
 <ul>
-  <li>Use the <a href="dev_guide/appendices/templates#review-request-template">email template</a> if needed for inviting reviewers
+  <li>Use the <a href="../appendices/templates#review-request-template">email template</a> if needed for inviting reviewers
     <ul>
       <li>When inviting reviewers, include something like “if I don’t hear from you in a week, I’ll assume you are unable to review,” so as to give a clear deadline when you’ll move on to looking for someone else.</li>
     </ul>
@@ -805,7 +805,7 @@ Due date: YYYY-MM-DD
   <li>Has not reviewed a package for us within the last 6 months.</li>
   <li>Some package development experience.</li>
   <li>Some domain experience in the field of the package or data source</li>
-  <li>No <a href="peer_review/peer_review_proc.html#conflict-of-interest">conflicts of interest</a>.</li>
+  <li>No <a href="peer_review_proc.html#conflict-of-interest">conflicts of interest</a>.</li>
   <li>Try to balance your sense of the potential reviewer’s experience against the complexity of the package.</li>
   <li>Diversity - with two reviewers both shouldn’t be cis white males.</li>
   <li>Some evidence that they are interested in openness or Python community activities, although blind emailing is fine.</li>
@@ -819,7 +819,7 @@ Due date: YYYY-MM-DD
   <li>Check in with reviewers and authors occasionally. Offer clarification and help as needed.</li>
   <li>In general aim for 3 weeks for review, 2 weeks for subsequent changes, and 1 week for reviewer approval of changes.</li>
   <li>Upon all reviews being submitted, change the review status tag to <code class="highlighter-rouge">4/review-in-awaiting-changes</code> to update the reminder bot.</li>
-  <li>If the author stops responding, refer to <a href="peer_review/peer_review_proc#review-process-guidelines">the policies</a> and/or ping the other editors in the Slack channel for discussion. Importantly, if a reviewer was assigned to a closed issue, contact them when closing the issue to explain the decision, thank them once again for their work, and make a note in our database to assign them to a submission with high chances of smooth software review next time (e.g. a package author who has already submitted packages to us).</li>
+  <li>If the author stops responding, refer to <a href="peer_review_proc#review-process-guidelines">the policies</a> and/or ping the other editors in the Slack channel for discussion. Importantly, if a reviewer was assigned to a closed issue, contact them when closing the issue to explain the decision, thank them once again for their work, and make a note in our database to assign them to a submission with high chances of smooth software review next time (e.g. a package author who has already submitted packages to us).</li>
   <li>Upon changes being made, change the review status tag to <code class="highlighter-rouge">5/awaiting-reviewer-response</code>.</li>
 </ul>
 
@@ -827,7 +827,7 @@ Due date: YYYY-MM-DD
 
 <ul>
   <li>Change the status tag to <code class="highlighter-rouge">6/approved</code>.</li>
-  <li>You can use the <a href="appendices/templates#approval-comment-template">approval comment template</a>.</li>
+  <li>You can use the <a href="../appendices/templates#approval-comment-template">approval comment template</a>.</li>
   <li>Add review/er information to the review database.</li>
   <li>Ask authors to migrate to <code class="highlighter-rouge">pyOpenSci</code>
     <ul>
