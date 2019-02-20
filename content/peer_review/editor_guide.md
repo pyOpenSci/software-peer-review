@@ -6,8 +6,8 @@ The EiC serves for 3 months or a time agreed to by all members of the editorial 
 
 - Watches all issues posted to the software-review repo.
 -  Assigns package submissions to other editors, including self, to handle. Mostly this just rotates among editors, unless the EiC thinks an editor is particularly suited to a package, or an editor rejects due to being too busy or because of conflicting interests.
-- Raises scope/overlap issue with all editors if they see an ambiguous case.  This may also be done by handling editors (see below). To initiate discussion, this is posted to the rOpenSci Slack software review channel, tagging all editors.
- - Responds to pre-submission inquiries and `meta` issues posted to the software-review and software-review-meta repos, similarly pinging channel if discussion is needed. Any editor should feel free to step in on these. See [this section](https://ropensci.github.io/dev_guide/editorguide.html#outofscoperesponse) about how to respond to out-of-scope (pre-) submissions.
+- Raises scope/overlap issue with all editors if they see an ambiguous case.  This may also be done by handling editors (see below). To initiate discussion, this is posted to the pyOpenSci Slack software review channel, tagging all editors.
+ - Responds to pre-submission inquiries and `meta` issues posted to the software-review and software-review-meta repos, similarly pinging channel if discussion is needed. Any editor should feel free to step in on these. See [this section](#responding-to-out-of-scope-submissions) about how to respond to out-of-scope (pre-) submissions.
  - Responds to referrals from JOSS or other publication partners.
  - Monitors pace of review process and reminds other editors to move packages along as needed.
  
@@ -16,13 +16,12 @@ The EiC serves for 3 months or a time agreed to by all members of the editorial 
 
 
 -   Tag issue with `1/editor-checks` tag and assign a main editor. Please strive to finish the checks and start looking for reviewers within 1 week.
--   Use the [editor template](placeholder_link) to guide initial checks and record your response to the submission. 
+-   Use the [editor template](appendices/templates#editors-template) to guide initial checks and record your response to the submission. 
 -   Check that template has been properly filled out.
--   Check against policies for [fit](placeholder_link) and [overlap](placeholder_link).
-    If reject, see [this section](placeholder_link) about how to respond.
+-   Check against policies for [fit](peer_review/aims_scope#package-categories) and [overlap](peer_review/aims_scope#package-overlap). If reject, see [this section](#responding-to-out-of-scope-submissions) about how to respond.
 -   Check that mandatory parts of template are complete.  If not, direct authors toward appropriate instructions.
 -   Run automated tests: spelling, linting, etc ... will be filled in later. 
--   For packages needing continuous integration on multiple platforms (cf [criteria in this section of the CI chapter](https://ropensci.github.io/dev_guide/ci.html#whichci)) make sure the package gets tested on multiple platforms (having the package built on both Travis and AppVeyor for instance).
+-   For packages needing continuous integration on multiple platforms ([criteria in this section of the packaging chapter](packaging/packaging_guide#continuous-integration)) make sure the package gets tested on multiple platforms (having the package built on both Travis and AppVeyor for instance).
 -   Wherever possible when asking for changes, direct authors to automatic tools and online resources.
 -   If initial checks show major gaps, request changes before assigning reviewers.
 -   If the package raises a new issue for pyOpenSci policy, create an issue on [pyOpenSci's governance repo](https://github.com/pyOpenSci/governance)
@@ -32,7 +31,7 @@ The EiC serves for 3 months or a time agreed to by all members of the editorial 
 #### Tasks
 
 
--   Use the [email template](https://ropensci.github.io/dev_guide/reviewrequesttemplate.html) if needed for inviting reviewers
+-   Use the [email template](dev_guide/appendices/templates#review-request-template) if needed for inviting reviewers
     -   When inviting reviewers, include something like "if I don't hear from you in a week, I'll assume you are unable to review," so as to give a clear deadline when you'll move on to looking for someone else.
 -   Assign a due date 3 weeks after all reviewers have been found.
 -   Once two or more reviewers are found, assign reviewers by tagging in the issue with the following format:
@@ -65,7 +64,7 @@ Here are criteria to keep in mind when choosing a reviewer. You might need to pi
 * Has not reviewed a package for us within the last 6 months.
 * Some package development experience.
 * Some domain experience in the field of the package or data source
-* No [conflicts of interest](https://ropensci.github.io/dev_guide/policies.html#coi).
+* No [conflicts of interest]().
 * Try to balance your sense of the potential reviewer’s experience against the complexity of the package.
 * Diversity - with two reviewers both shouldn’t be cis white males.
 * Some evidence that they are interested in openness or Python community activities, although blind emailing is fine.
@@ -77,13 +76,13 @@ Each submission should be reviewed by _two_ package reviewers. Although it is fi
 -   Check in with reviewers and authors occasionally. Offer clarification and help as needed.
 -   In general aim for 3 weeks for review, 2 weeks for subsequent changes, and 1 week for reviewer approval of changes.
 -   Upon all reviews being submitted, change the review status tag to `4/review-in-awaiting-changes` to update the reminder bot.
--   If the author stops responding, refer to [the policies](https://ropensci.github.io/dev_guide/policies.html#review-process) and/or ping the other editors in the Slack channel for discussion. Importantly, if a reviewer was assigned to a closed issue, contact them when closing the issue to explain the decision, thank them once again for their work, and make a note in our database to assign them to a submission with high chances of smooth software review next time (e.g. a package author who has already submitted packages to us).
+-   If the author stops responding, refer to [the policies](peer_review/peer_review_proc#review-process-guidelines) and/or ping the other editors in the Slack channel for discussion. Importantly, if a reviewer was assigned to a closed issue, contact them when closing the issue to explain the decision, thank them once again for their work, and make a note in our database to assign them to a submission with high chances of smooth software review next time (e.g. a package author who has already submitted packages to us).
 -   Upon changes being made, change the review status tag to `5/awaiting-reviewer-response`.
     
 ### After review:
 
 -   Change the status tag to `6/approved`.
--   You can use the [comment template](https://ropensci.github.io/dev_guide/approvaltemplate.html).
+-   You can use the [approval comment template](appendices/templates#approval-comment-template).
 -   Add review/er information to the review database.
 -   Ask authors to migrate to `pyOpenSci`
     -   Create a two-person team in pyOpenSci's "pyOpenSci" GitHub organization, named for the package, with yourself and the package author as members.
@@ -92,8 +91,12 @@ Each submission should be reviewed by _two_ package reviewers. Although it is fi
 -   Ask author to:
     -   Change any needed links, such those for CI badges
     -   Re-activate CI services
-        -  For Travis, activating the project in the ropensci account should be sufficient
+        -  For Travis, activating the project in the pyOpenSci account should be sufficient
         -  For AppVeyor, tell the author to update the GitHub link in their badge, but do not transfer the project: AppVeyor projects should remain under the authors' account. The badge is `[![AppVeyor Build Status](https://ci.appveyor.com/api/projects/status/github/pyOpenSci/pkgname?branch=master&svg=true)](https://ci.appveyor.com/project/individualaccount/pkgname)`.
         -  For Codecov, the webhook may need to be reset by the author.
 -   Add a "peer-reviewed" topic to the repo.
 -   Close the software-review issue. 
+
+
+### Responding to out-of-scope submissions
+Thank authors for their submission, explain the reasons for the decision, and direct them to other publication venues if relevant, and to the pyOpenSci governance repo issues for discussion. Use wording from Aims and scope in particular regarding the evolution of scope over time, and the overlap and differences between unconf/staff/software-review development.
