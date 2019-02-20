@@ -27,9 +27,9 @@
   "headline":
     "Before Review - Packaging Guide",
   "datePublished":
-    "2019-02-20T21:35:36+00:00",
+    "2019-02-20T21:39:56+00:00",
   "dateModified":
-    "2019-02-20T21:35:36+00:00",
+    "2019-02-20T21:39:56+00:00",
   "description":
     "Packaging Guide",
   "author": {
@@ -810,13 +810,13 @@ cookiecutter https://github.com/pyOpenSci/cookiecutter-pyopensci.git
   <li>It is good practice to write unit tests for all functions, and all package code in general, ensuring key functionality is covered. Test coverage below 75% will likely require additional tests or explanation before being sent for review.</li>
   <li>We recommend using pytest for writing tests, but you can use other tools. Strive to write tests as you write each new function. This serves the obvious need to have proper testing for the package, but allows you to think about various ways in which a function can fail, and to defensively code against those.</li>
   <li>Consider using tox to test your package with multiple versions of Python 2 and 3.</li>
-  <li>Once you’ve set up CI, use your package’s code coverage report (cf <a href="https://ropensci.github.io/dev_guide/ci.html#coverage">this section of our book</a>) to identify untested lines, and to add further tests.</li>
+  <li>If you set up CI with code coverage, use your package’s code coverage report to identify untested lines, and to add further tests.</li>
 </ul>
 
 <p><strong>Good/Better/Best:</strong></p>
 <ul>
   <li><strong>Good:</strong> A test suite that covers major functionality of the package.</li>
-  <li><strong>Better:</strong> The above, plus code coverage and linting integrated with testing.</li>
+  <li><strong>Better:</strong> The above, with high code coverage.</li>
   <li><strong>Best:</strong> All of the above, plus using tox to test multiple versions of Python.</li>
 </ul>
 
@@ -842,7 +842,8 @@ cookiecutter https://github.com/pyOpenSci/cookiecutter-pyopensci.git
 <p><strong>Good/Better/Best:</strong></p>
 <ul>
   <li><strong>Good:</strong> Some sort of CI service with status badge in your README.</li>
-  <li><strong>Better/Best:</strong> Continuous integration for all platforms: Linux, Mac OSX, and Windows.</li>
+  <li><strong>Better:</strong> The above plus integrated code coverage and linting.</li>
+  <li><strong>Best:</strong> Continuous integration for all platforms: Linux, Mac OSX, and Windows.</li>
 </ul>
 
 <h3 id="license">License</h3>
