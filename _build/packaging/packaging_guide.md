@@ -57,30 +57,26 @@ All packages should have a README.md in their root directory. The README should 
 - If applicable, how the package compares to other similar packages and/or how it relates to other packages
 - Citation information
 
-#### Good/Better/Best Recommendations
+**Good/Better/Best Recommendations:**
 - **Good:** README with name, description, installation instructions, and direction to further documentation.
 - **Better/Best:** All the above plus usage examples, citation information, and CI and/or test coverage badges.
 
 ### Documentation
 All external package functions, classes, and methods should be fully documented with examples. 
 
-#### Good/Better/Best
+**Good/Better/Best:**
 - **Good:** Manually updated documentation as text files that ship with your package.
 - **Better:** A documentation website using Sphinx to convert rst files to HTML and Read the Docs to host your site.
 - **Best (optional):** Also consider automatically generated documentation from docstrings using autodoc
 
 ### Testing
 - All packages should have a test suite that covers major functionality of the package. The tests should also cover the behavior of the package in case of errors.
-
 - It is good practice to write unit tests for all functions, and all package code in general, ensuring key functionality is covered. Test coverage below 75% will likely require additional tests or explanation before being sent for review.
-
 - We recommend using pytest for writing tests, but you can use other tools. Strive to write tests as you write each new function. This serves the obvious need to have proper testing for the package, but allows you to think about various ways in which a function can fail, and to defensively code against those.
-
 - Consider using tox to test your package with multiple versions of Python 2 and 3.
+- Once you've set up CI, use your package's code coverage report (cf [this section of our book](https://ropensci.github.io/dev_guide/ci.html#coverage)) to identify untested lines, and to add further tests.
 
-* Once you've set up CI, use your package's code coverage report (cf [this section of our book](https://ropensci.github.io/dev_guide/ci.html#coverage)) to identify untested lines, and to add further tests.
-
-#### Good/Better/Best
+**Good/Better/Best:**
 - **Good:** A test suite that covers major functionality of the package.
 - **Better:** The above, plus code coverage and linting integrated with testing.
 - **Best:** All of the above, plus using tox to test multiple versions of Python.
@@ -91,29 +87,22 @@ All pyOpenSci packages must use some form of continuous integration.
 - For Linux and Mac OSX, we suggest Travis CI.
 - For Windows, we suggest AppVeyor CI.
 - In many cases, you will want CI for all platforms. Different continuous integration services will support builds on different operating systems. Packages should have CI for all platforms when they contain:
-
     - Compiled code
-
     - Java dependencies
-
     - Dependencies on other languages
-
     - Packages with system calls
-
     - Text munging such as getting people’s names (in order to find encoding issues).
-
     - Anything with file system / path calls
-
     - In case of any doubt regarding the applicability of these criteria to your package, it’s better to add CI for all platforms, and most often not too much hassle.
 
-#### Good/Better/Best
+**Good/Better/Best:**
 - **Good:** Some sort of CI service with status badge in your README.
 - **Better/Best:** Continuous integration for all platforms: Linux, Mac OSX, and Windows. 
 
 ### License
 pyOpenSci projects should use an open source software license that is approved by the Open Software Initiative (OSI). OSI's website has a [list of popular licenses](https://opensource.org/licenses), and GitHub has a [handy tool](https://choosealicense.com/) for choosing a license. 
 
-#### Good/Better/Best
+**Good/Better/Best:**
 - **Good:** Include a open source software license with your package. 
 - **Better/Best:** Choose a license based on your needs and future use of package, plus explain your choice in your submission for review.
 
