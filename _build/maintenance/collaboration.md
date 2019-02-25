@@ -8,63 +8,53 @@ next_page:
   title: 'Appendices - Templates'
 comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /content***"
 ---
-# Collaboration Guide {#collaboration}
+# Collaboration Guide 
 
-## Make your repo contribution and collaboration friendly {#friendlyfiles}
+Note: pyOpenSci is still building out this section of our guidebook. Many of the examples come from rOpenSci. If you have suggestions for changes, check out the [GitHub repo](https://github.com/pyOpenSci/dev_guide).
+
+## Make your repo contribution and collaboration friendly
 
 ### Code of conduct
 
-We require that you use a code of conduct such as the [Contributor Covenant](http://contributor-covenant.org/) in developing your package.  You should document your code of conduct in a `CODE_OF_CONDUCT.md` file in the package root directory, and link to this file from the `README.md` file.  `usethis::use_code_of_conduct()` will add the Contributor Covenant template to your package. Use `usethis` > 1.3.1.
+We require that you use a code of conduct such as the [Contributor Covenant](http://contributor-covenant.org/) in developing your package.  You should document your code of conduct in a `CODE_OF_CONDUCT` file in the package root directory, and link to this file from the `README` file.
 
 ### Contributing guide
 
-We have templates for issue, pull request and contributing guidelines that you can find [in this GitHub repository](https://github.com/ropensci/dotgithubfiles#ropensci-github-files) along with some instructions to insert them into your repository.
+We have a template contributing guidelines in our [cookiecutter repository](https://github.com/pyOpenSci/cookiecutter-pyopensci/blob/master/%7B%7Bcookiecutter.project_slug%7D%7D/CONTRIBUTING.rst). Even if you're not using cookiecutter to build your project, you can download our CONTRIBUTING.rst as a starting point.
 
-You can tweak them a bit depending on your workflow and package. For example, make sure contributors have instructions in CONTRIBUTING.md for running local tests if not trivial. CONTRIBUTING.md can also contain some details about how you acknowledge contributions (see [this section](#attributions)) and the roadmap of your package (cf [this example](https://github.com/ecohealthalliance/fasterize/blob/master/CONTRIBUTING.md)).
-
-You can use the `lintr` package's own bot, lintr-bot, via continuous integration, to get comments if a commit or PR deteriorates the code style of your package. See [this link for guidance](https://github.com/jimhester/lintr#continuous-integration).
+You can tweak it a bit depending on your workflow and package. For example, make sure contributors have instructions in your CONTRIBUTING file for running local tests if not trivial. CONTRIBUTING can also contain some details about how you acknowledge contributions (see [this section](#attributions)) and the roadmap of your package (cf [this example](https://github.com/ecohealthalliance/fasterize/blob/master/CONTRIBUTING.md)).
 
 ### Issue labelling
 
-You can use labels such as "help wanted" and "good first issue" to help potential collaborators, including newbies, find your repo. [Cf GitHub article](https://help.github.com/articles/helping-new-contributors-find-your-project-with-labels/). You can also use the "Beginner" label. See [examples of beginner issues over all ropensci repos](https://github.com/search?q=user%3Aropensci+user%3Aropenscilabs+label%3ABeginner+state%3Aopen&type=Issues).
+You can use labels such as "help wanted", "good first issue", or "beginner" to help potential collaborators, including newbies, find your repo. For more info, see this [GitHub article](https://help.github.com/articles/helping-new-contributors-find-your-project-with-labels/). 
 
-## Working with collaborators {#workingcollaborators}
+## Working with collaborators
 
 ### Onboarding collaborators
 
-There's no general rOpenSci rule as to how you should onboard collaborators. You should increase their rights to the repo as you gain trust, and you should definitely acknowledge contributions (see [this section](#attributions)).
+There's no general pyOpenSci rule as to how you should onboard collaborators. You should increase their rights to the repo as you gain trust, and you should definitely acknowledge contributions (see [this section](#attributions)).
 
 You can ask a new collaborator to make PRs (see following section for assessing a PR locally, i.e. beyond CI checks) to dev/master and assess them before merging, and after a while let them push to master, although you might want to keep a system of PR reviews... even for yourself once you have team mates!
 
 A possible model for onboarding collaborators is provided by Jim Hester in [his `lintr` repo](https://github.com/jimhester/lintr/issues/318).
 
-If your problem is _recruiting_ collaborators, you can post an open call like Jim Hester's [on Twitter](https://twitter.com/jimhester_/status/997109466674819074), [GitHub]((https://github.com/jimhester/lintr/issues/318)), and as an rOpenSci package author, you can ask for help in rOpenSci slack and ask rOpenSci team for ideas for recruiting new collaborators.
+If your problem is _recruiting_ collaborators, you can post an open call like Jim Hester's [on Twitter](https://twitter.com/jimhester_/status/997109466674819074), [GitHub]((https://github.com/jimhester/lintr/issues/318)). As an pyOpenSci package author, you can also ask for help from pyOpenSci. 
 
 ### Working with collaborators (including yourself)
 
-You could implement the "[gitflow](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow)" philosophy as explained by Amanda Dobbyn in [this blog post](https://ropensci.org/blog/2018/04/20/monkeydo/).
+You could implement the "[gitflow](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow)" philosophy as explained by Amanda Dobbyn in [this rOpenSci blog post](https://ropensci.org/blog/2018/04/20/monkeydo/).
 
-One particular aspect of working with collaborators is reviewing pull requests. Even if not adopting gitflow it might make sense for repo collaborators to make PRs and have them reviewed, and in general PRs by external developers will need to be assessed Sometimes you'll be fine just reading the changes and trusting [Continuous integration](#ci). Sometimes you'll need more exploration and even extension of the PR in which case we recommend reading ["Explore and extend a pull request" in happygitwithr.com](http://happygitwithr.com/pr-extend.html).
+One particular aspect of working with collaborators is reviewing pull requests. Even if not adopting gitflow it might make sense for repo collaborators to make PRs and have them reviewed, and in general PRs by external developers will need to be assessed Sometimes you'll be fine just reading the changes and trusting [Continuous integration](../packaging/packaging_guide#continuous-integration). Sometimes you'll need more exploration and even extension of the PR in which case we recommend reading ["Explore and extend a pull request" in happygitwithr.com](http://happygitwithr.com/pr-extend.html).
 
 ### Be generous with attributions {#attributions}
 
-If someone contributes to your repository consider adding them in DESCRIPTION, as contributor ("ctb") for small contributions, author ("aut") for bigger contributions. Also consider adding their name near the feature/bug fix line in [NEWS.md](#news) We recommend your being generous with such acknowledgements.
+If someone contributes to your repository consider adding them in CONTRIBUTORS, as contributor for small contributions, author for bigger contributions. Also consider adding their name near the feature/bug fix line in HISTORY We recommend your being generous with such acknowledgements.
 
-As a reminder from [our packaging guidelines](#building) if your package was reviewed and you feel that your reviewers have made a substantial contribution to the development of your package, you may list them in the `Authors@R` field with a Reviewer contributor type (`"rev"`), like so:
+If your package was reviewed by pyOpenSci and you feel that your reviewers have made a substantial contribution to the development of your package, you may list them in CONTRIBUTORS as a reviewer. Only include reviewers after asking for their consent. 
 
-```
-    person("Bea", "Hernández", role = "rev",
-    comment = "Bea reviewed the package for ropensci, see <https://github.com/ropensci/software-review/issues/116>"),
-```
+Please do not list editors as contributors. Your participation in and contribution to pyOpenSci is thanks enough!
 
-Only include reviewers after asking for their consent. Read more in [this blog post "Thanking Your Reviewers: Gratitude through Semantic Metadata"](https://ropensci.org/blog/2018/03/16/thanking-reviewers-in-metadata/). Note that 'rev' will raise a CRAN NOTE unless the package is built using R v3.5. As of June 2018 you need to use [`roxygen2` dev version](https://github.com/klutometis/roxygen#installation) for the list of authors in the package-level documentation to be compiled properly with the "rev" role (because this is a MARC role not included yet in [`royxgen2` CRAN version from February 2017](https://cran.r-project.org/web/packages/roxygen2/index.html)).
+### Welcoming collaborators to pyOpenSci
 
-Please do not list editors as contributors. Your participation in and contribution to rOpenSci is thanks enough!
+If you give someone write permissions to the repository, please contact one of [the editors]() so that this new contributor can get invited to pyOpenSci's GitHub organization. 
 
-### Welcoming collaborators to rOpenSci
-
-If you give someone write permissions to the repository, please contact one of [the editors](#associateditors) or [Stefanie Butland](github.com/stefaniebutland) so that this new contributor might
-
-* get invited to rOpenSci's "ropensci" GitHub organization (instead of being [outside collaborators](https://help.github.com/articles/repository-permission-levels-for-an-organization/#outside-collaborators))
-
-* get invited to rOpenSci Slack workspace.
