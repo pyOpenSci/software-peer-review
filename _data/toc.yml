@@ -47,6 +47,8 @@
   sections: 
   - title: Collaboration
     url: /maintenance/collaboration
+  - title: Release
+    url: /maintenance/release
 
 - title: Appendices - Templates
   url: /appendices/templates

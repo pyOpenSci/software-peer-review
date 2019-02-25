@@ -4,8 +4,8 @@ prev_page:
   url: /maintenance/maintenance_intro
   title: 'After Review - Maintenance'
 next_page:
-  url: /appendices/templates
-  title: 'Appendices - Templates'
+  url: /maintenance/release
+  title: 'Release'
 comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /content***"
 ---
 # Collaboration Guide 
