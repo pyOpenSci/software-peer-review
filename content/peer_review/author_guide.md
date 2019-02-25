@@ -6,7 +6,11 @@ pyOpenSci encourages authors to consult [PEP 8](https://www.python.org/dev/peps/
 
 ## Packaging Guide
 
-PyPI has a [short tutorial](https://packaging.python.org/tutorials/packaging-projects/) on how to package a Python project for easy installation. Note that the tutorial includes uploading your project to PyPI. We encourage you to submit to pyOpenSci for review before uploading to PyPI.
+The [first section of this guidebook](../packaging/packaging_guide) has info for creating and packaging your Python project for review and release. The guide also includes info on the basic requirements for pyOpenSci: testing, continuous integration, documentation, etc.
+
+We also have a [section](../maintenance/release) about releasing your package on PyPI, but we encourage you to wait until after the pyOpenSci review process has finished before uploading to PyPI. This makes it easier to incorporate changes/suggestions from the reviews.
+
+PyPI also has a [short tutorial](https://packaging.python.org/tutorials/packaging-projects/) on how to package a Python project for easy installation.  
 
 ## Presubmission 
 If you are unsure if your package fits within pyOpenSci's [scope](aims_scope), you're encouraged to open a presubmission inquiry issue on the [software-review](https://github.com/pyOpenSci/software-review) repository.
