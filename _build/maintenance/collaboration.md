@@ -20,9 +20,9 @@ We require that you use a code of conduct such as the [Contributor Covenant](htt
 
 ### Contributing guide
 
-We have a template contributing guidelines in our [cookiecutter repository](https://github.com/pyOpenSci/cookiecutter-pyopensci/blob/master/%7B%7Bcookiecutter.project_slug%7D%7D/CONTRIBUTING.rst). Even if you're not using cookiecutter to build your project, you can download our CONTRIBUTING.rst as a starting point.
+We have a [template for contributing guidelines](https://github.com/pyOpenSci/cookiecutter-pyopensci/blob/master/%7B%7Bcookiecutter.project_slug%7D%7D/CONTRIBUTING.rst) in our cookiecutter repository. Even if you're not using cookiecutter to build your project (see our [packaging guide](../packaging/#project-template) for info), you can download our CONTRIBUTING.rst as a starting point.
 
-You can tweak it a bit depending on your workflow and package. For example, make sure contributors have instructions in your CONTRIBUTING file for running local tests if not trivial. CONTRIBUTING can also contain some details about how you acknowledge contributions (see [this section](#attributions)) and the roadmap of your package (cf [this example](https://github.com/ecohealthalliance/fasterize/blob/master/CONTRIBUTING.md)).
+You can tweak it a bit depending on your workflow and package. For example, make sure contributors have instructions in your CONTRIBUTING file for running local tests if not trivial. CONTRIBUTING can also contain some details about how you acknowledge contributions (see [this section](#attributions)) and the roadmap of your package (cf [this example for R](https://github.com/ecohealthalliance/fasterize/blob/master/CONTRIBUTING.md)).
 
 ### Issue labelling
 
@@ -44,7 +44,7 @@ If your problem is _recruiting_ collaborators, you can post an open call like Ji
 
 You could implement the "[gitflow](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow)" philosophy as explained by Amanda Dobbyn in [this rOpenSci blog post](https://ropensci.org/blog/2018/04/20/monkeydo/).
 
-One particular aspect of working with collaborators is reviewing pull requests. Even if not adopting gitflow it might make sense for repo collaborators to make PRs and have them reviewed, and in general PRs by external developers will need to be assessed Sometimes you'll be fine just reading the changes and trusting [Continuous integration](../packaging/packaging_guide#continuous-integration). Sometimes you'll need more exploration and even extension of the PR in which case we recommend reading ["Explore and extend a pull request" in happygitwithr.com](http://happygitwithr.com/pr-extend.html).
+One particular aspect of working with collaborators is reviewing pull requests. Even if not adopting gitflow it might make sense for repo collaborators to make PRs and have them reviewed, and in general PRs by external developers will need to be assessed. Sometimes you'll be fine just reading the changes and trusting [Continuous integration](../packaging/packaging_guide#continuous-integration). Sometimes you'll need to dive deeper, e.g. by downloading a copy of the branch that the PR was created from.
 
 ### Be generous with attributions {#attributions}
 
@@ -56,5 +56,5 @@ Please do not list editors as contributors. Your participation in and contributi
 
 ### Welcoming collaborators to pyOpenSci
 
-If you give someone write permissions to the repository, please contact one of [the editors]() so that this new contributor can get invited to pyOpenSci's GitHub organization. 
+If you give someone write permissions to the repository, please contact us at earth.lab@colorado.edu so that this new contributor can get invited to pyOpenSci's GitHub organization. 
 

@@ -41,7 +41,7 @@ bumpversion minor
 
 A HISTORY (or NEWS or CHANGELOG) file describing changes associated with each version makes it easier for users to see what's changing in the package and how it might impact their workflow. You must add one for your package, and make it easy to read.
 
-* It is mandatory to use a `HISTORY` file in the root of your package. It can also be called NEWS or CHANGELOG We recommend using `[NAME].md` or `[NAME].rst` to make the file [more browsable](http://happygitwithr.com/repo-browsability.html).
+* It is mandatory to use a `HISTORY` file in the root of your package. It can also be called NEWS or CHANGELOG We recommend using `[NAME].md` or `[NAME].rst` to make the file more browsing-friendly on GitHub (GitHub renders certain file types, including Markdown and reStructured text).
 
 * Update the history file before every PyPI release, with a section with the package name, version and date of release.
 
@@ -50,9 +50,7 @@ foobar 0.2.0 (2016-04-01)
 =========================
 ```
 
-* Under that header, put in sections as needed, including: `NEW FEATURES`, `MINOR IMPROVEMENTS`, `BUG FIXES`, `DEPRECATED AND DEFUNCT`, `DOCUMENTATION FIXES` and any special heading grouping a large number of changes. Under each header, list items as needed (as seen in our example [NEWS file](#newstemplate)). For each item give
-a description of the new feature, improvement, bug fix, or deprecated function/feature. Link
-to any related GitHub issue like `(#12)`. The `(#12)` will resolve on GitHub in Releases to a link to that issue in the repo.
+* Under that header, put in sections as needed, including: `NEW FEATURES`, `MINOR IMPROVEMENTS`, `BUG FIXES`, `DEPRECATED AND DEFUNCT`, `DOCUMENTATION FIXES` and any special heading grouping a large number of changes. Under each header, list items as needed. For each item give a description of the new feature, improvement, bug fix, or deprecated function/feature. Link to any related GitHub issue like `(#12)`. The `(#12)` will resolve on GitHub in Releases to a link to that issue in the repo.
 
 * After you have added a `git tag` and pushed up to GitHub, add the news items for that tagged version to the Release notes of a release in your GitHub repo with a title like `pkgname v0.1.0`. See [GitHub docs about creating a release](https://help.github.com/articles/creating-releases/).
 
@@ -75,5 +73,5 @@ Instead of manually uploading new package versions, Travis can be configured to 
  
 * The pyOpenSci cookiecutter comes with this option mostly set up. For details on how to finish the set up, see [this guide](https://cookiecutter-pyopensci.readthedocs.io/en/latest/travis_pypi_setup.html).
 
-* Also, be sure to check out the [PyPI release checklist](https://cookiecutter-pyopensci.readthedocs.io/en/latest/pypi_release_checklist.html).
+* Also, be sure to check out this [PyPI release checklist](https://cookiecutter-pyopensci.readthedocs.io/en/latest/pypi_release_checklist.html).
 

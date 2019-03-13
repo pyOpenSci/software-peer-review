@@ -2,8 +2,6 @@
 
 This is the development guide for pyOpenSci!
 
-If you've found this, please note that it is still an early draft. There may be mistakes. pyOpenSci is not yet operational, but hopefully will be ready to accept submissions soon.
-
 ## Why pyOpenSci?
 pyOpenSci promotes open and reproducible research through peer-review of scientific Python packages. We also build technical capacity by providing a curated repository of high-quality packages and enabling scientists to write and share their own software. We hope to foster a greater sense of community among scientific Python users so that we can help each other become better programmers and researchers.
 
