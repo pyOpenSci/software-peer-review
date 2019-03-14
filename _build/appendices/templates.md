@@ -55,7 +55,9 @@ The package includes all the following forms of documentation:
 
 #### For packages co-submitting to JOSS
 
-- [ ] The package has an **obvious research application** according to JOSS's definition in their [submission requirements](http://joss.theoj.org/about#submission_requirements). Be sure to check this carefully, as JOSS's submission requirements and scope differ from pyOpenSci's in terms of what types of packages are accepted.
+- [ ] The package has an **obvious research application** according to JOSS's definition in their [submission requirements](http://joss.theoj.org/about#submission_requirements). 
+
+*Note:* Be sure to check this carefully, as JOSS's submission requirements and scope differ from pyOpenSci's in terms of what types of packages are accepted.
 
 The package contains a `paper.md` matching [JOSS's requirements](http://joss.theoj.org/about#paper_structure) with:
 
