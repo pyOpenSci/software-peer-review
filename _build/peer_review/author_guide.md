@@ -30,3 +30,8 @@ If you are unsure if your package fits within pyOpenSci's [scope](aims_scope), y
 ## Submission for Peer Review
 To request peer review, start a new issue in the [pyOpenSci/software-review](https://github.com/pyOpenSci/software-review) repository and fill out the "Submit Software for Review" issue template. For more information on the process and timeline for review, see our [section on the review process](peer_review_proc).
 
+### JOSS Submission
+- If you would like, your package can be submitted to the Journal of Open-Source Software (JOSS) after passing pyOpenSci review. In this case, the package will evaluated by JOSS based on the pyOpenSci review and the paper accompanying your package (see below).
+- If you choose to have your package submitted to JOSS after review, it should include a paper.md file describing the package. More detail on JOSS’s requirements can be found at [their website](https://joss.readthedocs.io/en/latest/submitting.html#what-should-my-paper-contain).
+- **Important note:** Acceptance to pyOpenSci does not guarantee acceptance to JOSS. In particular, JOSS doesn't accept all the types of packages that pyOpenSci does. For example, thin API wrappers fall within pyOpenSci's [scope](aims_scope) but are usually not accepted by JOSS. Be sure to review JOSS's [submission requirements](https://joss.readthedocs.io/en/latest/submitting.html#submission-requirements) before writing up a paper about your package.
+- If you choose this option you should not submit your package to JOSS separately. 
