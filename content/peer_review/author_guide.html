@@ -27,9 +27,9 @@
   "headline":
     "Guide for Authors",
   "datePublished":
-    "2019-03-14T22:35:12+00:00",
+    "2019-03-14T22:53:01+00:00",
   "dateModified":
-    "2019-03-14T22:35:12+00:00",
+    "2019-03-14T22:53:01+00:00",
   "description":
     "",
   "author": {
@@ -716,7 +716,11 @@ initFunction(initQuery);
   <li><a href="#code-style">Code Style</a></li>
   <li><a href="#packaging-guide">Packaging Guide</a></li>
   <li><a href="#presubmission">Presubmission</a></li>
-  <li><a href="#submission-for-peer-review">Submission for Peer Review</a></li>
+  <li><a href="#submission-for-peer-review">Submission for Peer Review</a>
+    <ul>
+      <li><a href="#joss-submission">JOSS Submission</a></li>
+    </ul>
+  </li>
 </ul>
     </nav>
   </aside>
@@ -761,6 +765,13 @@ initFunction(initQuery);
 <h2 id="submission-for-peer-review">Submission for Peer Review</h2>
 <p>To request peer review, start a new issue in the <a href="https://github.com/pyOpenSci/software-review">pyOpenSci/software-review</a> repository and fill out the “Submit Software for Review” issue template. For more information on the process and timeline for review, see our <a href="peer_review_proc">section on the review process</a>.</p>
 
+<h3 id="joss-submission">JOSS Submission</h3>
+<ul>
+  <li>If you would like, your package can be submitted to the Journal of Open-Source Software (JOSS) after passing pyOpenSci review. In this case, the package will evaluated by JOSS based on the pyOpenSci review and the paper accompanying your package (see below).</li>
+  <li>If you choose to have your package submitted to JOSS after review, it should include a paper.md file describing the package. More detail on JOSS’s requirements can be found at <a href="https://joss.readthedocs.io/en/latest/submitting.html#what-should-my-paper-contain">their website</a>.</li>
+  <li><strong>Important note:</strong> Acceptance to pyOpenSci does not guarantee acceptance to JOSS. In particular, JOSS doesn’t accept all the types of packages that pyOpenSci does. For example, thin API wrappers fall within pyOpenSci’s <a href="aims_scope">scope</a> but are usually not accepted by JOSS. Be sure to review JOSS’s <a href="https://joss.readthedocs.io/en/latest/submitting.html#submission-requirements">submission requirements</a> before writing up a paper about your package.</li>
+  <li>If you choose this option you should not submit your package to JOSS separately.</li>
+</ul>
 
               <nav class="c-page__nav">
   
