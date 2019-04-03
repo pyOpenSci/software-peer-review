@@ -23,6 +23,10 @@
 
 - title: Before Review - Packaging Guide
   url: /packaging/packaging_guide
+  expand_sections: true
+  sections:
+  - title: Presubmission Questions and Help
+    url: /packaging/presub_qs_help
 
 - title: Peer Review Process
   url: /peer_review/review_intro
