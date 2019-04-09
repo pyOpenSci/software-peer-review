@@ -29,7 +29,7 @@ pyOpenSci aims to support Python packages that enable reproducible research and 
 ### Notes on Categories
 - pyOpenSci is young and this list is tentative. If your scientific Python package does not fit into one of the categories or if you have any other questions, we'd encourage you to open a pre-submission inquiry. We're happy to help.
 - Data visualization packages come in many varieties, ranging from small hyper-specific methods for one type of data to general, do-it-all packages (e.g. matplotlib). pyOpenSci accepts packages that are somewhere in between the two. If you're interested in submitting your data visualization package, please open a pre-submission inquiry on first.
-- Note that we cannot currently accept statistics and/or machine learning packages. We don't feel that we can give these the deep, thorough review that they require. 
+- Note that we cannot currently accept statistics and/or machine learning packages. We don't feel that we can give these the deep, thorough review that they require.
 
 ## Package Overlap
 pyOpenSci encourages competition among packages, forking and re-implementation as they improve options of users overall. However, as we want packages in the pyOpenSci suite to be our top recommendations for the tasks they perform, we aim to avoid duplication of functionality of existing Python packages in any repo without significant improvements. A Python package that replicates the functionality of an existing package may be considered for inclusion in the pyOpenSci suite if it significantly improves on alternatives by being:

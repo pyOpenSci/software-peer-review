@@ -17,7 +17,7 @@ If you have questions about whether your package fits with pyOpenSci or would li
 
 ## Presubmission Questions
 
-If your package does not clearly fit within one of the categories outlined in our [scope](../peer_review/aims_scope), create a [Presubmission Inquiry issue](https://github.com/pyOpenSci/software-review/issues/new/choose) in our software-review repo. You can use the same issue template if you have other questions. An editor will get back to you in a few days to answer your questions. 
+If your package does not clearly fit within one of the categories outlined in our [scope](../peer_review/aims_scope), create a [Presubmission Inquiry issue](https://github.com/pyOpenSci/software-review/issues/new/choose) in our software-review repo. You can use the same issue template if you have other questions. An editor will get back to you in a few days to answer your questions.
 
 ## Package Prep Help
 

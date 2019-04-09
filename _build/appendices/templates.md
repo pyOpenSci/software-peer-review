@@ -13,8 +13,9 @@ comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /con
 These are templates to be used by editors and reviewers. When a package is submitted, the assigned editor fills out the Editor's Template and posts it in the submission's issue thread on GitHub.
 
 ## Editor's Template
+
 ```
-### Editor checks:
+## Editor checks:
 
 - [ ] **Fit**: The package meets criteria for [fit](https://pyopensci.github.io/dev_guide/peer_review/aims_scope.html#package-categories) and [overlap](https://pyopensci.github.io/dev_guide/peer_review/aims_scope.html#package-categories).
 - [ ] **Automated tests:** Package has a testing suite and is tested via Travis-CI or another CI service.
@@ -25,7 +26,7 @@ These are templates to be used by editors and reviewers. When a package is submi
 
 ---
 
-#### Editor comments
+## Editor comments
 
 ---
 
@@ -33,12 +34,12 @@ Reviewers:
 Due date:
 ```
 
-
 ## Review Template
-```
-### Package Review
 
-*Please check off boxes as applicable, and elaborate in comments below.  Your review is not limited to these topics, as described in the reviewer guide*
+```
+## Package Review
+
+*Please check off boxes as applicable, and elaborate in comments below. Your review is not limited to these topics, as described in the reviewer guide*
 
 - [ ] As the reviewer I confirm that there are no conflicts of interest for me to review this work (If you are unsure whether you are in conflict, please speak to your editor _before_ starting your review).
 
@@ -55,14 +56,14 @@ The package includes all the following forms of documentation:
 
 #### For packages co-submitting to JOSS
 
-- [ ] The package has an **obvious research application** according to JOSS's definition in their [submission requirements](http://joss.theoj.org/about#submission_requirements). 
+- [ ] The package has an **obvious research application** according to JOSS's definition in their [submission requirements](http://joss.theoj.org/about#submission_requirements).
 
 *Note:* Be sure to check this carefully, as JOSS's submission requirements and scope differ from pyOpenSci's in terms of what types of packages are accepted.
 
 The package contains a `paper.md` matching [JOSS's requirements](http://joss.theoj.org/about#paper_structure) with:
 
 - [ ] **A short summary** describing the high-level functionality of the software
-- [ ] **Authors:**  A list of authors with their affiliations
+- [ ] **Authors:** A list of authors with their affiliations
 - [ ] **A statement of need** clearly stating problems the software is designed to solve and its target audience.
 - [ ] **References:** with DOIs for all those that have one (e.g. papers, datasets, software).
 
@@ -123,13 +124,13 @@ Sincerely,
 Approved! Thanks <author(s) GitHub username(s)> for submitting and <reviewers' GithHub usernames> for your reviews! <optional: smiling cat emoji à la Scott>
 
 To-dos:
-- [ ] Transfer the repo to our "pyOpenSci" GitHub organization under "Settings" in your repo.  I have invited you to a team that should allow you to do so.  You'll be made admin once you do.
+- [ ] Transfer the repo to our "pyOpenSci" GitHub organization under "Settings" in your repo. I have invited you to a team that should allow you to do so. You'll be made admin once you do.
 - [ ] Fix any links in badges for CI and coverage to point to the pyOpenSci URL. For Appveryor projects, you should still use your personal Appveyor account. After transfer of your repo to the "pyOpenSci" GitHub organization the badge should be `[![AppVeyor Build Status](https://ci.appveyor.com/api/projects/status/github/pyOpenSci/pkgname?branch=master&svg=true)](https://ci.appveyor.com/project/individualaccount/pkgname)`.
 
 <IF JOSS>
 - [ ] Activate Zenodo watching the repo
 - [ ] Tag and create a release so as to create a Zenodo version and DOI
-- [ ] Submit to JOSS using the Zenodo DOI.  We will tag it for expedited review.
+- [ ] Submit to JOSS using the Zenodo DOI. We will tag it for expedited review.
 <IF JOSS/>
 
 We've started putting together a gitbook with our best practice and tips, [this chapter](https://pyopensci.github.io/dev_guide/maintenance/maintenance_intro.html) starts the 3rd section that's about guidance for after onboarding. Please tell us what could be improved, the corresponding repo is [here](https://github.com/pyOpenSci/dev_guide).

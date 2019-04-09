@@ -8,7 +8,7 @@ next_page:
   title: 'Release'
 comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /content***"
 ---
-# Collaboration Guide 
+# Collaboration Guide
 
 Note: pyOpenSci is still building out this section of our guidebook. Many of the examples come from rOpenSci. If you have suggestions for changes, check out the [GitHub repo](https://github.com/pyOpenSci/dev_guide).
 
@@ -16,7 +16,7 @@ Note: pyOpenSci is still building out this section of our guidebook. Many of the
 
 ### Code of conduct
 
-We require that you use a code of conduct such as the [Contributor Covenant](http://contributor-covenant.org/) in developing your package.  You should document your code of conduct in a `CODE_OF_CONDUCT` file in the package root directory, and link to this file from the `README` file.
+We require that you use a code of conduct such as the [Contributor Covenant](http://contributor-covenant.org/) in developing your package. You should document your code of conduct in a `CODE_OF_CONDUCT` file in the package root directory, and link to this file from the `README` file.
 
 ### Contributing guide
 
@@ -26,7 +26,7 @@ You can tweak it a bit depending on your workflow and package. For example, make
 
 ### Issue labelling
 
-You can use labels such as "help wanted", "good first issue", or "beginner" to help potential collaborators, including newbies, find your repo. For more info, see this [GitHub article](https://help.github.com/articles/helping-new-contributors-find-your-project-with-labels/). 
+You can use labels such as "help wanted", "good first issue", or "beginner" to help potential collaborators, including newbies, find your repo. For more info, see this [GitHub article](https://help.github.com/articles/helping-new-contributors-find-your-project-with-labels/).
 
 ## Working with collaborators
 
@@ -38,7 +38,7 @@ You can ask a new collaborator to make PRs (see following section for assessing 
 
 A possible model for onboarding collaborators is provided by Jim Hester in [his `lintr` repo](https://github.com/jimhester/lintr/issues/318).
 
-If your problem is _recruiting_ collaborators, you can post an open call like Jim Hester's [on Twitter](https://twitter.com/jimhester_/status/997109466674819074), [GitHub]((https://github.com/jimhester/lintr/issues/318)). As an pyOpenSci package author, you can also ask for help from pyOpenSci. 
+If your problem is _recruiting_ collaborators, you can post an open call like Jim Hester's [on Twitter](https://twitter.com/jimhester_/status/997109466674819074), [GitHub]((https://github.com/jimhester/lintr/issues/318)). As an pyOpenSci package author, you can also ask for help from pyOpenSci.
 
 ### Working with collaborators (including yourself)
 
@@ -50,11 +50,11 @@ One particular aspect of working with collaborators is reviewing pull requests. 
 
 If someone contributes to your repository consider adding them in CONTRIBUTORS, as contributor for small contributions, author for bigger contributions. Also consider adding their name near the feature/bug fix line in HISTORY We recommend your being generous with such acknowledgements.
 
-If your package was reviewed by pyOpenSci and you feel that your reviewers have made a substantial contribution to the development of your package, you may list them in CONTRIBUTORS as a reviewer. Only include reviewers after asking for their consent. 
+If your package was reviewed by pyOpenSci and you feel that your reviewers have made a substantial contribution to the development of your package, you may list them in CONTRIBUTORS as a reviewer. Only include reviewers after asking for their consent.
 
 Please do not list editors as contributors. Your participation in and contribution to pyOpenSci is thanks enough!
 
 ### Welcoming collaborators to pyOpenSci
 
-If you give someone write permissions to the repository, please contact us at earth.lab@colorado.edu so that this new contributor can get invited to pyOpenSci's GitHub organization. 
+If you give someone write permissions to the repository, please contact us at earth.lab@colorado.edu so that this new contributor can get invited to pyOpenSci's GitHub organization.
 
