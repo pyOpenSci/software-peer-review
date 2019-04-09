@@ -13,7 +13,7 @@ python setup.py register
 
 ## Releasing Updated Versions
 
-When you update your package, you release a new version to PyPI. Fortunately, this is easy!  First, we'll talk about the metadata you'll need to update for each version. Then we'll cover how to release your updated version to PyPI [manually via the command line](#manual-release) or [automatically via Travis CI](#travis-release).
+When you update your package, you release a new version to PyPI. Fortunately, this is easy! First, we'll talk about the metadata you'll need to update for each version. Then we'll cover how to release your updated version to PyPI [manually via the command line](#manual-release) or [automatically via Travis CI](#travis-release).
 
 ### Version Naming
 
@@ -59,8 +59,8 @@ To manually upload a new package version to PyPI, follow these steps:
 That's it!
 
 ### Releasing via Travis CI {#travis-release}
-Instead of manually uploading new package versions, Travis can be configured to automatically upload new versions. If you use this, each time you tag a new release and push it to GitHub, Travis will release it to PyPI (assuming it passes testing). 
- 
+Instead of manually uploading new package versions, Travis can be configured to automatically upload new versions. If you use this, each time you tag a new release and push it to GitHub, Travis will release it to PyPI (assuming it passes testing).
+
 * The pyOpenSci cookiecutter comes with this option mostly set up. For details on how to finish the set up, see [this guide](https://cookiecutter-pyopensci.readthedocs.io/en/latest/travis_pypi_setup.html).
 
 * Also, be sure to check out this [PyPI release checklist](https://cookiecutter-pyopensci.readthedocs.io/en/latest/pypi_release_checklist.html).

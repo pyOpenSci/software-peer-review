@@ -42,15 +42,13 @@ Due date: YYYY-MM-DD
 
 -   Switch numbered tag `to 3/reviewers-assigned` once reviewers are assigned.
 
-#### How to look for reviewers
+#### Where to look for reviewers?
 
-##### Where to look for reviewers?
-
-As a (guest) editor, use
+As a (guest) editor, use:
 * the potential suggestions made by the submitter(s), (although submitters may have a narrow view of the types of expertise needed.  We suggest not using more than one of suggested reviewers).
 * the authors of [pyOpenSci packages](https://github.com/pyOpenSci/).
 
-When these sources of information are not enough,
+When these sources of information are not enough:
 * ping other editors for ideas.
 * look for users of the package or of the data source/upstream service the package connects to (via their opening issues in the repository, starring it, citing it in papers, talking about it on Twitter).
 * You can also search for authors/maintainers of related packages on [PyPI](https://pypi.org/search/).
@@ -61,7 +59,7 @@ Here are criteria to keep in mind when choosing a reviewer. You might need to pi
 
 * Has not reviewed a package for us within the last 6 months.
 * Some package development experience.
-* Some domain experience in the field of the package or data source
+* Some domain experience in the field of the package or data source.
 * No [conflicts of interest](peer_review_proc#conflict-of-interest).
 * Try to balance your sense of the potential reviewer’s experience against the complexity of the package.
 * Diversity - with two reviewers both shouldn’t be cis white males.

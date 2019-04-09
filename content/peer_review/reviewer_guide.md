@@ -6,7 +6,7 @@ Please be respectful and kind to the authors in your reviews. Our [code of condu
 
 ### General Guidelines
 
-When you are assigned to review a package, you are expected to submit your review within 3 weeks. Please contact the editor directly or in the submission thread to inform them about possible delays. 
+When you are assigned to review a package, you are expected to submit your review within 3 weeks. Please contact the editor directly or in the submission thread to inform them about possible delays.
 
 To review a package, please begin by copying our [review template](../appendices/templates#review-template) and using it as a high-level checklist. In addition to checking off the minimum criteria, we ask that you provide general comments addressing the following:
 - Does the code comply with general principles in the [Mozilla reviewing guide](https://mozillascience.github.io/codeReview/review.html)?
@@ -50,5 +50,5 @@ We welcome any feedback and/or questions about the review process! We encourage 
 - Please include an estimate of how many hours you spent on your review afterwards.
 
 ## Review Follow-Up
-Authors should respond within 2 weeks with their changes to the package in response to your review.  At this stage, we ask that you respond as to whether the changes sufficiently address any issues raised in your review. We encourage ongoing discussion between package authors and reviewers, and you may ask editors to clarify issues in the review thread as well.
+Authors should respond within 2 weeks with their changes to the package in response to your review. At this stage, we ask that you respond as to whether the changes sufficiently address any issues raised in your review. We encourage ongoing discussion between package authors and reviewers, and you may ask editors to clarify issues in the review thread as well.
 

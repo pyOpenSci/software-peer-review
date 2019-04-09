@@ -27,9 +27,9 @@
   "headline":
     "Guide for Editors",
   "datePublished":
-    "2019-04-09T21:42:27+00:00",
+    "2019-04-09T23:13:55+00:00",
   "dateModified":
-    "2019-04-09T21:42:27+00:00",
+    "2019-04-09T23:13:55+00:00",
   "description":
     "Guide for Editors",
   "author": {
@@ -781,15 +781,16 @@ initFunction(initQuery);
 
 <h2 id="editor-in-chief">Editor in Chief</h2>
 
-<p>The EiC serves for 3 months or a time agreed to by all members of the editorial board. The EiC fulfills the following roles:</p>
+<p>The Editor in Chief serves for 3 months or a time agreed to by all members of
+the editorial board. The Editor in Chief fulfills the following roles:</p>
 
 <ul>
   <li>Watches all issues posted to the software-review repo.</li>
-  <li>Assigns package submissions to other editors, including self, to handle. Mostly this just rotates among editors, unless the EiC thinks an editor is particularly suited to a package, or an editor rejects due to being too busy or because of conflicting interests.</li>
-  <li>Raises scope/overlap issue with all editors if they see an ambiguous case.  This may also be done by handling editors (see below). To initiate discussion, this is posted to the pyOpenSci Slack software review channel, tagging all editors.</li>
+  <li>Assigns package submissions to other editors, including self, to handle. For the most part, this position rotates among pyOpenSci editors. However, in some cases, an editor may be assigned if the Editor in Chief thinks someone is particularly well-suited to the contents of a package, or if an editor is not able to support the review process at that time due to time or other conflicts.</li>
+  <li>Raises scope/overlap issue with all editors if they see an ambiguous case. This may also be done by handling editors (see below). To initiate discussion, this is posted to the pyOpenSci Slack software review channel, tagging all editors.</li>
   <li>Responds to pre-submission inquiries and <code class="highlighter-rouge">meta</code> issues posted to the software-review and software-review-meta repos, similarly pinging channel if discussion is needed. Any editor should feel free to step in on these. See <a href="#responding-to-out-of-scope-submissions">this section</a> about how to respond to out-of-scope (pre-) submissions.</li>
   <li>Responds to referrals from JOSS or other publication partners.</li>
-  <li>Monitors pace of review process and reminds other editors to move packages along as needed.</li>
+  <li>Monitors the review process pace and reminds other editors to move packages along as needed.</li>
 </ul>
 
 <h2 id="editor-checklist">Editor Checklist</h2>
@@ -821,7 +822,7 @@ initFunction(initQuery);
   <li>Once two or more reviewers are found, assign reviewers by tagging in the issue with the following format:</li>
 </ul>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Reviewer: @githubname1 
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Reviewer: @githubname1
 Reviewer: @githubname2
 Due date: YYYY-MM-DD
 </code></pre></div></div>
@@ -830,17 +831,15 @@ Due date: YYYY-MM-DD
   <li>Switch numbered tag <code class="highlighter-rouge">to 3/reviewers-assigned</code> once reviewers are assigned.</li>
 </ul>
 
-<h4 id="how-to-look-for-reviewers">How to look for reviewers</h4>
+<h4 id="where-to-look-for-reviewers">Where to look for reviewers?</h4>
 
-<h5 id="where-to-look-for-reviewers">Where to look for reviewers?</h5>
-
-<p>As a (guest) editor, use</p>
+<p>As a (guest) editor, use:</p>
 <ul>
   <li>the potential suggestions made by the submitter(s), (although submitters may have a narrow view of the types of expertise needed.  We suggest not using more than one of suggested reviewers).</li>
   <li>the authors of <a href="https://github.com/pyOpenSci/">pyOpenSci packages</a>.</li>
 </ul>
 
-<p>When these sources of information are not enough,</p>
+<p>When these sources of information are not enough:</p>
 <ul>
   <li>ping other editors for ideas.</li>
   <li>look for users of the package or of the data source/upstream service the package connects to (via their opening issues in the repository, starring it, citing it in papers, talking about it on Twitter).</li>
@@ -854,9 +853,7 @@ Due date: YYYY-MM-DD
 <ul>
   <li>Has not reviewed a package for us within the last 6 months.</li>
   <li>Some package development experience.</li>
-  <li>
-    <p>Some domain experience in the field of the package or data source</p>
-  </li>
+  <li>Some domain experience in the field of the package or data source.</li>
   <li>No <a href="peer_review_proc#conflict-of-interest">conflicts of interest</a>.</li>
   <li>Try to balance your sense of the potential reviewer’s experience against the complexity of the package.</li>
   <li>Diversity - with two reviewers both shouldn’t be cis white males.</li>
