@@ -3,8 +3,9 @@
 These are templates to be used by editors and reviewers. When a package is submitted, the assigned editor fills out the Editor's Template and posts it in the submission's issue thread on GitHub.
 
 ## Editor's Template
+
 ```
-### Editor checks:
+## Editor checks:
 
 - [ ] **Fit**: The package meets criteria for [fit](https://pyopensci.github.io/dev_guide/peer_review/aims_scope.html#package-categories) and [overlap](https://pyopensci.github.io/dev_guide/peer_review/aims_scope.html#package-categories).
 - [ ] **Automated tests:** Package has a testing suite and is tested via Travis-CI or another CI service.
@@ -15,7 +16,7 @@ These are templates to be used by editors and reviewers. When a package is submi
 
 ---
 
-#### Editor comments
+## Editor comments
 
 ---
 
@@ -23,10 +24,10 @@ Reviewers:
 Due date:
 ```
 
-
 ## Review Template
+
 ```
-### Package Review
+## Package Review
 
 *Please check off boxes as applicable, and elaborate in comments below.  Your review is not limited to these topics, as described in the reviewer guide*
 
@@ -45,7 +46,7 @@ The package includes all the following forms of documentation:
 
 #### For packages co-submitting to JOSS
 
-- [ ] The package has an **obvious research application** according to JOSS's definition in their [submission requirements](http://joss.theoj.org/about#submission_requirements). 
+- [ ] The package has an **obvious research application** according to JOSS's definition in their [submission requirements](http://joss.theoj.org/about#submission_requirements).
 
 *Note:* Be sure to check this carefully, as JOSS's submission requirements and scope differ from pyOpenSci's in terms of what types of packages are accepted.
 
