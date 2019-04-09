@@ -33,13 +33,11 @@ the editorial board. The Editor in Chief fulfills the following roles:
     -  When inviting reviewers, include something like "if I don't hear from you in a week, I'll assume you are unable to review," so as to give a clear deadline when you'll move on to looking for someone else.
 - Assign a due date 3 weeks after all reviewers have been found.
 - Once two or more reviewers are found, assign reviewers by tagging in the issue with the following format:
-
 ```  
 Reviewer: @githubname1
 Reviewer: @githubname2
 Due date: YYYY-MM-DD
 ```
-
 -   Switch numbered tag `to 3/reviewers-assigned` once reviewers are assigned.
 
 #### Where to look for reviewers?
