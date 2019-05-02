@@ -55,8 +55,8 @@ jobs:
           command: |
             git config --global user.email "kysolvik@gmail.com"
             git config --global user.name "Kylen Solvik"
-            git add ./.nojekyll
-            git add ./* && git commit -m "jekyll book web deploy"
+            git add -A
+            git commit -m "jekyll book web deploy"
             git push -f origin gh-pages:gh-pages
 
   build_book:
