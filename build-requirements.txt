@@ -3,3 +3,4 @@ numpy
 pyyaml
 nbformat
 nbclean
+git+https://github.com/jupyter/jupyter-book
