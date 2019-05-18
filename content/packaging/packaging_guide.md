@@ -4,7 +4,7 @@ This section provides guidelines and tips for creating a Python package to submi
 
 ## Overview
 pyOpenSci packages must:
-- Have a clear README.
+- Have a clear README _including_ installation instructions.
 - Contain full documentation for any user-facing functions.
 - Have a test suite that covers the major functionality of the package.
 - Use continuous integration.
