@@ -55,11 +55,11 @@ jobs:
           command: |
             git config --global user.email "kysolvik@gmail.com"
             git config --global user.name "Kylen Solvik"
-            git add ./.nojekyll
-            git add ./* && git commit -m "jekyll book web deploy"
-            git push -f origin gh-pages:gh-pages      
+            git add -A
+            git commit -m "jekyll book web deploy"
+            git push -f origin gh-pages:gh-pages
 
-  run_tests:
+  build_book:
     docker:
       - image: circleci/python:3.6-stretch
     steps:
@@ -75,22 +75,17 @@ jobs:
       # Install the packages needed to build our documentation
       # This will depend on your particular package!
       - run: pip install --user -r build-requirements.txt
-      - run: pip install --user pytest
+
       # Cache some files for a speedup in subsequent builds
       - save_cache:
           key: cache-pip
           paths:
             - ~/.cache/pip
-      # Run tests
-      - run:
-          name: Tests
-          command: |
-            pytest scripts/tests/test_build.py  
 
-      # If tests pass, build the site itself
+      # Build the book
       - run:
           name: Build site markdown
-          command: python scripts/generate_book.py
+          command: jupyter-book build .
 
       # Persist the specified paths (see https://circleci.com/docs/2.0/workflows/#using-workspaces-to-share-data-among-jobs)
       - persist_to_workspace:
@@ -98,14 +93,14 @@ jobs:
           paths:
             - _build/
 
-      
+
 
 # Tell CircleCI to use this workflow when it builds the site
 workflows:
   version: 2
   default:
     jobs:
-      - run_tests:
+      - build_book:
           filters:
             branches:
               ignore:
@@ -117,7 +112,7 @@ workflows:
                 - gh-pages
       - deploy:
           requires:
-            - run_tests
+            - build_book
           filters:
               branches:
                 only:
@@ -138,7 +133,7 @@ commands:
           keys:
             - rails-demo-bundle-v2-{{ checksum "Gemfile.lock" }}
             - rails-demo-bundle-v2-
-      
+
       - run: gem install bundler
       - run: bundle install
 
@@ -151,4 +146,3 @@ commands:
       - run:
           name: Build the website
           command: bundle exec jekyll build << parameters.build_args >>
-      

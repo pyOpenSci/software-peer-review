@@ -1,10 +1,10 @@
-# Packaging Guide 
+# Packaging Guide
 
 This section provides guidelines and tips for creating a Python package to submit for peer-review.
 
 ## Overview
 pyOpenSci packages must:
-- Have a clear README.
+- Have a clear README _including_ installation instructions.
 - Contain full documentation for any user-facing functions.
 - Have a test suite that covers the major functionality of the package.
 - Use continuous integration.
@@ -50,7 +50,7 @@ All packages should have a README.md in their root directory. The README should 
 - **Better/Best:** All the above plus usage examples, citation information, and CI and/or test coverage badges.
 
 ### Documentation
-All external package functions, classes, and methods should be fully documented with examples. 
+All external package functions, classes, and methods should be fully documented with examples.
 
 **Good/Better/Best:**
 - **Good:** Manually updated documentation as text files that ship with your package.
@@ -86,13 +86,13 @@ All pyOpenSci packages must use some form of continuous integration.
 **Good/Better/Best:**
 - **Good:** Some sort of CI service with status badge in your README.
 - **Better:** The above plus integrated code coverage and linting.
-- **Best:** Continuous integration for all platforms: Linux, Mac OSX, and Windows. 
+- **Best:** Continuous integration for all platforms: Linux, Mac OSX, and Windows.
 
 ### License
-pyOpenSci projects should use an open source software license that is approved by the Open Software Initiative (OSI). OSI's website has a [list of popular licenses](https://opensource.org/licenses), and GitHub has a [handy tool](https://choosealicense.com/) for choosing a license. 
+pyOpenSci projects should use an open source software license that is approved by the Open Software Initiative (OSI). OSI's website has a [list of popular licenses](https://opensource.org/licenses), and GitHub has a [handy tool](https://choosealicense.com/) for choosing a license.
 
 **Good/Better/Best:**
-- **Good:** Include a open source software license with your package. 
+- **Good:** Include a open source software license with your package.
 - **Better/Best:** Choose a license based on your needs and future use of package, plus explain your choice in your submission for review.
 
 ## Other recommendations

@@ -33,24 +33,20 @@ the editorial board. The Editor in Chief fulfills the following roles:
     -  When inviting reviewers, include something like "if I don't hear from you in a week, I'll assume you are unable to review," so as to give a clear deadline when you'll move on to looking for someone else.
 - Assign a due date 3 weeks after all reviewers have been found.
 - Once two or more reviewers are found, assign reviewers by tagging in the issue with the following format:
-
 ```  
 Reviewer: @githubname1
 Reviewer: @githubname2
 Due date: YYYY-MM-DD
 ```
-
 -   Switch numbered tag `to 3/reviewers-assigned` once reviewers are assigned.
 
-#### How to look for reviewers
+#### Where to look for reviewers?
 
-##### Where to look for reviewers?
-
-As a (guest) editor, use
+As a (guest) editor, use:
 * the potential suggestions made by the submitter(s), (although submitters may have a narrow view of the types of expertise needed.  We suggest not using more than one of suggested reviewers).
 * the authors of [pyOpenSci packages](https://github.com/pyOpenSci/).
 
-When these sources of information are not enough,
+When these sources of information are not enough:
 * ping other editors for ideas.
 * look for users of the package or of the data source/upstream service the package connects to (via their opening issues in the repository, starring it, citing it in papers, talking about it on Twitter).
 * You can also search for authors/maintainers of related packages on [PyPI](https://pypi.org/search/).
@@ -61,7 +57,7 @@ Here are criteria to keep in mind when choosing a reviewer. You might need to pi
 
 * Has not reviewed a package for us within the last 6 months.
 * Some package development experience.
-* Some domain experience in the field of the package or data source
+* Some domain experience in the field of the package or data source.
 * No [conflicts of interest](peer_review_proc#conflict-of-interest).
 * Try to balance your sense of the potential reviewer’s experience against the complexity of the package.
 * Diversity - with two reviewers both shouldn’t be cis white males.
