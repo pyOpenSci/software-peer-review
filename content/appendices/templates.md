@@ -54,7 +54,7 @@ The README should include, from top to bottom:
 - [ ] The package name
 - [ ] Badges for continuous integration and test coverage, the badge for pyOpenSci peer-review once it has started (see below), a repostatus.org badge, and any other badges. If the README has many more badges, you might want to consider using a table for badges, see this example, that one and that one. Such a table should be more wide than high.
 - [ ] Short description of goals of package
-- [ ] Dscriptive links to all vignettes (rendered, i.e. readable, cf the documentation website section) unless the package is small and there’s only one vignette repeating the README.
+- [ ] Descriptive links to all vignettes (rendered, i.e. readable, cf the documentation website section) unless the package is small and there’s only one vignette repeating the README.
 - [ ] Installation instructions
 - [ ] Any additional setup required (authentication tokens, etc)
 - [ ] Brief demonstration usage
