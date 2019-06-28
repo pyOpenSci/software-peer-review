@@ -47,7 +47,7 @@ The package includes all the following forms of documentation:
 Readme requirements
 The package meets the readme requirements below:
 
-- [ ] Package has a user-friendly README.md file in the root directory. 
+- [ ] Package has a README.md file in the root directory. 
 
 The README should include, from top to bottom:
 
