@@ -43,7 +43,7 @@ The package includes all the following forms of documentation:
 - [ ] **Function Documentation:** for all user-facing functions
 - [ ] **Examples** for all user-facing functions
 - [ ] **Community guidelines** including contribution guidelines in the README or CONTRIBUTING.
-- [ ] **Metadata** including author(s), author e-mail(s), and a url, e.g., in a `setup.py` file or elsewhere.
+- [ ] **Metadata** including author(s), author e-mail(s), a url, and any other relevant metadata e.g., in a `setup.py` file or elsewhere.
 
 Readme requirements
 The package meets the readme requirements below:
