@@ -42,12 +42,13 @@ The package includes all the following forms of documentation:
 - [ ] **Vignette(s)** demonstrating major functionality that runs successfully locally
 - [ ] **Function Documentation:** for all user-facing functions
 - [ ] **Examples** for all user-facing functions
-- [ ] **Community guidelines** including contribution guidelines in the README or CONTRIBUTING, and DESCRIPTION with `URL`, `BugReports` and `Maintainer`.
+- [ ] **Community guidelines** including contribution guidelines in the README or CONTRIBUTING.
+- [ ] **Metadata** including author(s), author e-mail(s), and a url, e.g., in a `setup.py` file or elsewhere.
 
 Readme requirements
 The package meets the readme requirements below:
 
-- [ ] Package has a README.md file in the root directory. 
+- [ ] Package has a README.md file in the root directory.
 
 The README should include, from top to bottom:
 
