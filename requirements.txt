@@ -5,3 +5,4 @@ numpy
 datascience
 folium
 matplotlib
+git+https://github.com/jupyter/jupyter-book
