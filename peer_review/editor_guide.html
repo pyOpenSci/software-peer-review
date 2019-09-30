@@ -1,39 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-  
-
   <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width,minimum-scale=1">
 
-  <title>Guide for Editors</title>
-  <meta name="description" content="Guide for Editors">
+  <title>The pyOpenSci Developer Guide</title>
+  <meta name="description" content="        Reviewer: @githubname1Reviewer: @githubname2Due date: YYYY-MM-DDSwitch numbered tag to 3/reviewers-assigned once reviewers are assigned.Where to look...">
 
   <link rel="canonical" href="https://pyopensci.github.io/dev_guide/peer_review/editor_guide.html">
   <link rel="alternate" type="application/rss+xml" title="The pyOpenSci Developer Guide" href="https://pyopensci.github.io/dev_guide/feed.xml">
 
   <meta property="og:url"         content="https://pyopensci.github.io/dev_guide/peer_review/editor_guide.html" />
 <meta property="og:type"        content="article" />
-<meta property="og:title"       content="Guide for Editors" />
-<meta property="og:description" content="Guide for Editors" />
-<meta property="og:image"       content="" />
+<meta property="og:title"       content="The pyOpenSci Developer Guide" />
+<meta property="og:description" content="        Reviewer: @githubname1Reviewer: @githubname2Due date: YYYY-MM-DDSwitch numbered tag to 3/reviewers-assigned once reviewers are assigned.Where to look..." />
+<meta property="og:image"       content="https://pyopensci.github.io/dev_guide/images/logo/logo.png" />
+
+<meta name="twitter:card" content="summary">
 
 
   <script type="application/ld+json">
   {
   "@context": "http://schema.org",
   "@type": "NewsArticle",
-  "mainEntityOfPage":
-    "https://pyopensci.github.io/dev_guide/peer_review/editor_guide.html",
-  "headline":
-    "Guide for Editors",
-  "datePublished":
-    "2019-06-06T22:53:50+00:00",
-  "dateModified":
-    "2019-06-06T22:53:50+00:00",
-  "description":
-    "Guide for Editors",
+  "mainEntityOfPage": "https://pyopensci.github.io/dev_guide/peer_review/editor_guide.html",
+  "headline": "The pyOpenSci Developer Guide",
+  "datePublished": "2019-09-30T21:03:25+00:00",
+  "dateModified": "2019-09-30T21:03:25+00:00",
+  "description": "        Reviewer: @githubname1Reviewer: @githubname2Due date: YYYY-MM-DDSwitch numbered tag to 3/reviewers-assigned once reviewers are assigned.Where to look...",
   "author": {
     "@type": "Person",
     "name": "The pyOpenSci Community"
@@ -58,16 +53,6 @@
 
   </script>
   <link rel="stylesheet" href="/dev_guide/assets/css/styles.css">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css ">
-  <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
-  <link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
-  <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
-  <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
-  <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
-  <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
-  <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
-  <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
 
   <!-- <link rel="manifest" href="/manifest.json"> -->
   <!-- <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#efae0a"> -->
@@ -80,6 +65,8 @@
 
   <!-- MathJax Config -->
   <!-- Allow inline math using $ and automatically break long math lines -->
+<!-- (mostly) copied from nbconvert configuration -->
+<!-- https://github.com/jupyter/nbconvert/blob/master/nbconvert/templates/html/mathjax.tpl -->
 <script type="text/x-mathjax-config">
 MathJax.Hub.Config({
     tex2jax: {
@@ -88,35 +75,23 @@ MathJax.Hub.Config({
         processEscapes: true,
         processEnvironments: true
     },
-    CommonHTML: {
-        linebreaks: {
-            automatic: true,
-        },
-    },
+    // Center justify equations in code and markdown cells. Elsewhere
+    // we use CSS to left justify single line equations in code cells.
+    displayAlign: 'center',
+    "HTML-CSS": {
+        styles: {'.MathJax_Display': {"margin": 0}},
+        linebreaks: { automatic: true },
+    }
 });
 </script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML' async></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS_HTML' async></script>
+
 
   <!-- DOM updating function -->
-  <script>
-const runWhenDOMLoaded = cb => {
-  if (document.readyState != 'loading') {
-    cb()
-  } else if (document.addEventListener) {
-    document.addEventListener('DOMContentLoaded', cb)
-  } else {
-    document.attachEvent('onreadystatechange', function() {
-      if (document.readyState == 'complete') cb()
-    })
-  }
-}
+  <script src="/dev_guide/assets/js/page/dom-update.js"></script>
 
-// Helper function to init things quickly
-initFunction = function(myfunc) {
-  runWhenDOMLoaded(myfunc);
-  document.addEventListener('turbolinks:load', myfunc);
-};
-</script>
+  <!-- Selectors for elements on the page -->
+  <script src="/dev_guide/assets/js/page/documentSelectors.js"></script>
 
   <!-- Define some javascript variables that will be useful in other javascript -->
   <script>
@@ -124,18 +99,12 @@ initFunction = function(myfunc) {
   </script>
 
   <!-- Add AnchorJS to let headers be linked -->
-  <script src="/dev_guide/assets/js/anchor.min.js"  type="text/javascript"></script>
-  <script>
-
-initFunction(function () {
-    anchors.add("main h1, main h2, main h3, main h4")
-});
-
-</script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js" async></script>
+  <script src="/dev_guide/assets/js/page/anchors.js" async></script>
 
   <!-- Include Turbolinks to make page loads fast -->
   <!-- https://github.com/turbolinks/turbolinks -->
-  <script src="/dev_guide/assets/js/turbolinks.js" async></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/turbolinks/5.2.0/turbolinks.js" async></script>
   <meta name="turbolinks-cache-control" content="no-cache">
 
   <!-- Load nbinteract for widgets -->
@@ -146,179 +115,26 @@ initFunction(function () {
 
 
 
-  <!-- Load the auto-generating TOC -->
-  <script src="/dev_guide/assets/js/tocbot.min.js"  type="text/javascript"></script>
-  <script>
-var initToc = function () {
-  tocbot.init({
-    tocSelector: 'nav.onthispage',
-    contentSelector: '.c-textbook__content',
-    headingSelector: 'h2, h3',
-    orderedList: false,
-    collapseDepth: 6,
-    listClass: 'toc__menu',
-    activeListItemClass: "",  // Not using
-    activeLinkClass: "", // Not using
-  });
-  tocbot.refresh();
-}
-initFunction(initToc);
-</script>
+  <!-- Load the auto-generating TOC (non-async otherwise the TOC won't load w/ turbolinks) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.min.js" async></script>
+  <script src="/dev_guide/assets/js/page/tocbot.js"></script>
 
   <!-- Google analytics -->
-  <script src="/dev_guide/assets/js/ga.js" async></script>
+  
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id="></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', '');
+</script>
+
+
 
   <!-- Clipboard copy button -->
-  <script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js" async></script>
-
-  <!-- Load JS that depends on site variables -->
-  <script>
-/**
- * Set up copy/paste for code blocks
- */
-const codeCellId = index => `codecell${index}`
-
-const clipboardButton = id =>
-  `<a id="copy-button-${id}" class="btn copybtn o-tooltip--left" data-tooltip="Copy" data-clipboard-target="#${id}">
-    <img src="/dev_guide/assets/images/copy-button.svg" alt="Copy to clipboard">
-  </a>`
-
-// Clears selected text since ClipboardJS will select the text when copying
-const clearSelection = () => {
-  if (window.getSelection) {
-    window.getSelection().removeAllRanges()
-  } else if (document.selection) {
-    document.selection.empty()
-  }
-}
-
-// Changes tooltip text for two seconds, then changes it back
-const temporarilyChangeTooltip = (el, newText) => {
-  const oldText = el.getAttribute('data-tooltip')
-  el.setAttribute('data-tooltip', newText)
-  setTimeout(() => el.setAttribute('data-tooltip', oldText), 2000)
-}
-
-const addCopyButtonToCodeCells = () => {
-  // If ClipboardJS hasn't loaded, wait a bit and try again. This
-  // happens because we load ClipboardJS asynchronously.
-  if (window.ClipboardJS === undefined) {
-    setTimeout(addCopyButtonToCodeCells, 250)
-    return
-  }
-
-  const codeCells = document.querySelectorAll('div.c-textbook__content > div.highlighter-rouge > div.highlight > pre, div.input_area pre')
-  codeCells.forEach((codeCell, index) => {
-    const id = codeCellId(index)
-    codeCell.setAttribute('id', id)
-    if (document.getElementById("copy-button" + id) == null) {
-      codeCell.insertAdjacentHTML('afterend', clipboardButton(id));
-    }
-  })
-
-  const clipboard = new ClipboardJS('.copybtn')
-  clipboard.on('success', event => {
-    clearSelection()
-    temporarilyChangeTooltip(event.trigger, 'Copied!')
-  })
-
-  clipboard.on('error', event => {
-    temporarilyChangeTooltip(event.trigger, 'Failed to copy')
-  })
-
-  // Get rid of clipboard before the next page visit to avoid memory leak
-  document.addEventListener('turbolinks:before-visit', () =>
-    clipboard.destroy()
-  )
-}
-
-initFunction(addCopyButtonToCodeCells);
-</script>
-
-
-  <!-- Hide cell code -->
-  
-<script>
-/**
-Add buttons to hide code cells
-*/
-
-
-var setCodeCellVisibility = function(inputField, kind) {
-    // Update the image and class for hidden
-    var id = inputField.getAttribute('data-id');
-    var codeCell = document.querySelector(`#${id} div.highlight`);
-
-    if (kind === "visible") {
-        codeCell.classList.remove('hidden');
-        inputField.checked = true;
-    } else {
-        codeCell.classList.add('hidden');
-        inputField.checked = false;
-    }
-}
-
-var toggleCodeCellVisibility = function (event) {
-    // The label is clicked, and now we decide what to do based on the input field's clicked status
-    if (event.target.tagName === "LABEL") {
-        var inputField = event.target.previousElementSibling;
-    } else {
-        // It is the span inside the target
-        var inputField = event.target.parentElement.previousElementSibling;
-    }
-
-    if (inputField.checked === true) {
-        setCodeCellVisibility(inputField, "visible");
-    } else {
-        setCodeCellVisibility(inputField, "hidden");
-    }
-}
-
-
-// Button constructor
-const hideCodeButton = id => `<input class="hidebtn" type="checkbox" id="hidebtn${id}" data-id="${id}"><label title="Toggle cell" for="hidebtn${id}" class="plusminus"><span class="pm_h"></span><span class="pm_v"></span></label>`
-
-var addHideButton = function () {
-  // If a hide button is already added, don't add another
-  if (document.querySelector('div.hidecode input') !== null) {
-      return;
-  }
-
-  // Find the input cells and add a hide button
-  document.querySelectorAll('div.input_area').forEach(function (item, index) {
-    if (!item.classList.contains("hidecode")) {
-        // Skip the cell if it doesn't have a hidecode class
-        return;
-    }
-
-    const id = codeCellId(index)
-    item.setAttribute('id', id);
-    // Insert the button just inside the end of the next div
-    item.querySelector('div').insertAdjacentHTML('beforeend', hideCodeButton(id))
-
-    // Set up the visibility toggle
-    hideLink = document.querySelector(`#${id} div.highlight + input + label`);
-    hideLink.addEventListener('click', toggleCodeCellVisibility)
-  });
-}
-
-
-// Initialize the hide buttos
-var initHiddenCells = function () {
-    // Add hide buttons to the cells
-    addHideButton();
-
-    // Toggle the code cells that should be hidden
-    document.querySelectorAll('div.hidecode input').forEach(function (item) {
-        setCodeCellVisibility(item, 'hidden');
-        item.checked = true;
-    })
-}
-
-initFunction(initHiddenCells);
-
-</script>
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.4/clipboard.min.js" async></script>
 
   <!-- Load custom website scripts -->
   <script src="/dev_guide/assets/js/scripts.js" async></script>
@@ -331,7 +147,7 @@ initFunction(initHiddenCells);
   
 
   <!-- Lunr search code - will only be executed on the /search page -->
-  <script src="/dev_guide/assets/js/lunr/lunr.min.js" type="text/javascript"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.6/lunr.min.js" async></script>
   <script>var initQuery = function() {
   // See if we have a search box
   var searchInput = document.querySelector('input#lunr_search');
@@ -417,6 +233,45 @@ initFunction(initHiddenCells);
 
 initFunction(initQuery);
 </script>
+
+  <!-- Load JS that depends on site variables -->
+  <script src="/dev_guide/assets/js/page/copy-button.js" async></script>
+
+  <!-- Hide cell code -->
+  <script src="/dev_guide/assets/js/page/hide-cell.js" async></script>
+
+  <!-- Printing the screen -->
+  <!-- Include nbinteract for interactive widgets -->
+<script src="https://printjs-4de6.kxcdn.com/print.min.js" async></script>
+<script>
+printContent = () => {
+    // MathJax displays a second version of any math for assistive devices etc.
+    // This prevents double-rendering in the PDF output.
+    var ignoreAssistList = [];
+    assistives = document.querySelectorAll('.MathJax_Display span.MJX_Assistive_MathML').forEach((element, index) => {
+        var thisId = 'MathJax-assistive-' + index.toString();
+        element.setAttribute('id', thisId);
+        ignoreAssistList.push(thisId)
+    });
+
+    // Print the actual content object
+    printJS({
+        printable: 'textbook_content',
+        type: 'html',
+        css: "/dev_guide/assets/css/styles.css",
+        scanStyles: false,
+        targetStyles: ["*"],
+        ignoreElements: ignoreAssistList
+    })
+};
+
+initPrint = () => {
+    document.querySelector('#interact-button-print').addEventListener('click', printContent)
+}
+
+initFunction(initPrint)
+</script>
+
 </head>
 
   <body>
@@ -427,7 +282,7 @@ initFunction(initQuery);
 
 
 <nav id="js-sidebar" class="c-textbook__sidebar">
-  <a href="https://pyopensci.github.io/dev_guide"><img src="/dev_guide/images/logo/logo.png" class="textbook_logo" id="sidebar-logo" data-turbolinks-permanent/></a>
+  <a href="https://pyopensci.github.io/dev_guide"><img src="/dev_guide/images/logo/logo.png" class="textbook_logo" id="sidebar-logo" alt="textbook logo" data-turbolinks-permanent/></a>
   <h2 class="c-sidebar__title">The pyOpenSci Developer Guide</h2>
   <ul class="c-sidebar__chapters">
     
@@ -454,8 +309,25 @@ initFunction(initQuery);
     
       
       
-        <li class="c-sidebar__chapter"><a class="c-sidebar__entry" href="/dev_guide/search.html">Search</a></li>
+
+      
+      
+
+      
+      
+      <li class="c-sidebar__chapter">
+        <a class="c-sidebar__entry "
+          href=".html"
+        >
+          
+          Search
+        </a>
+
         
+      </li>
+
+      
+    
       
       
 
@@ -754,180 +626,135 @@ initFunction(initQuery);
       
     
   </ul>
-  <p class="sidebar_footer">Powered by <a href="https://github.com/jupyter/jupyter-book">Jupyter Book</a></p>
+  <p class="sidebar_footer">Powered by <a href="https:jupyterbook.org">Jupyter Book</a></p>
 </nav>
 
       
-      <!-- Empty sidebar placeholder that we'll auto-fill with javascript -->
-      <aside class="sidebar__right">
-          <header><h4 class="nav__title"><i class="fa fa-list"></i>   On this page</h4></header>
-          <nav class="onthispage">
-          </nav>
-      </aside>
-      
-      <main class="c-textbook__page" tabindex="-1">
-          <div class="o-wrapper">
-            <div class="c-sidebar-toggle">
+      <div class="c-topbar" id="top-navbar">
   <!-- We show the sidebar by default so we use .is-active -->
-  <button
-    id="js-sidebar-toggle"
-    class="hamburger hamburger--arrowalt is-active"
-  >
-    <span class="hamburger-box">
-      <span class="hamburger-inner"></span>
-    </span>
-    <span class="c-sidebar-toggle__label">Toggle Sidebar</span>
-  </button>
+  <div class="c-topbar__buttons">
+    <button
+      id="js-sidebar-toggle"
+      class="hamburger hamburger--arrowalt is-active"
+    >
+      <span class="hamburger-box">
+        <span class="hamburger-inner"></span>
+      </span>
+    </button>
+    <div class="buttons">
+<div class="download-buttons-dropdown">
+    <button id="dropdown-button-trigger" class="interact-button"><img src="/dev_guide/assets/images/download-solid.svg" alt="Download" /></button>
+    <div class="download-buttons">
+        
+        <a id="interact-button-print"><button id="interact-button-download" class="interact-button">.pdf</button></a>
+    </div>
 </div>
 
-            
+</div>
 
-            <div class="c-textbook__content">
-              <h1 id="guide-for-editors">Guide for Editors</h1>
+  </div>
+  <!-- Empty sidebar placeholder that we'll auto-fill with javascript -->
+  <aside class="sidebar__right">
+    <header><h4 class="nav__title"><img src="/dev_guide/assets/images/list-solid.svg" alt="Search" />   On this page</h4></header>
+    <nav class="onthispage">
+    </nav>
+  </aside>
+  <a href="/dev_guide/search.html" class="topbar-right-button" id="search-button">
+    <img src="/dev_guide/assets/images/search-solid.svg" alt="Search" />
+  </a>
+</div>
 
-<h2 id="editor-in-chief">Editor in Chief</h2>
+      <main class="c-textbook__page" tabindex="-1">
+            <div class="c-textbook__content" id="textbook_content">
+                  <main class="jupyter-page">
+    <div class="jb_cell">
 
-<p>The Editor in Chief serves for 3 months or a time agreed to by all members of
-the editorial board. The Editor in Chief fulfills the following roles:</p>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 
-<ul>
-  <li>Watches all issues posted to the software-review repo.</li>
-  <li>Assigns package submissions to other editors, including self, to handle. For the most part, this position rotates among pyOpenSci editors. However, in some cases, an editor may be assigned if the Editor in Chief thinks someone is particularly well-suited to the contents of a package, or if an editor is not able to support the review process at that time due to time or other conflicts.</li>
-  <li>Raises scope/overlap issue with all editors if they see an ambiguous case. This may also be done by handling editors (see below). To initiate discussion, this is posted to the pyOpenSci Slack software review channel, tagging all editors.</li>
-  <li>Responds to pre-submission inquiries and <code class="highlighter-rouge">meta</code> issues posted to the software-review and software-review-meta repos, similarly pinging channel if discussion is needed. Any editor should feel free to step in on these. See <a href="#responding-to-out-of-scope-submissions">this section</a> about how to respond to out-of-scope (pre-) submissions.</li>
-  <li>Responds to referrals from JOSS or other publication partners.</li>
-  <li>Monitors the review process pace and reminds other editors to move packages along as needed.</li>
-</ul>
-
-<h2 id="editor-checklist">Editor Checklist</h2>
-
-<ul>
-  <li>Tag issue with <code class="highlighter-rouge">1/editor-checks</code> tag and assign a main editor. Please strive to finish the checks and start looking for reviewers within 1 week.</li>
-  <li>Use the <a href="../appendices/templates#editors-template">editor template</a> to guide initial checks and record your response to the submission.</li>
-  <li>Check that template has been properly filled out.</li>
-  <li>Check against policies for <a href="aims_scope#package-categories">fit</a> and <a href="aims_scope#package-overlap">overlap</a>. If reject, see <a href="#responding-to-out-of-scope-submissions">this section</a> about how to respond.</li>
-  <li>Check that mandatory parts of template are complete.  If not, direct authors toward appropriate instructions.</li>
-  <li>Run automated tests: spelling, linting, etc … will be filled in later.</li>
-  <li>For packages needing continuous integration on multiple platforms (<a href="../packaging/packaging_guide#continuous-integration">criteria in this section of the packaging chapter</a>) make sure the package gets tested on multiple platforms (having the package built on both Travis and AppVeyor for instance).</li>
-  <li>Wherever possible when asking for changes, direct authors to automatic tools and online resources.</li>
-  <li>If initial checks show major gaps, request changes before assigning reviewers.</li>
-  <li>If the package raises a new issue for pyOpenSci policy, create an issue on <a href="https://github.com/pyOpenSci/governance">pyOpenSci’s governance repo</a></li>
-</ul>
-
-<h3 id="look-for-and-assign-reviewers">Look for and assign reviewers:</h3>
-
-<h4 id="tasks">Tasks</h4>
-
-<ul>
-  <li>Use the <a href="../appendices/templates#review-request-template">email template</a> if needed for inviting reviewers
-    <ul>
-      <li>When inviting reviewers, include something like “if I don’t hear from you in a week, I’ll assume you are unable to review,” so as to give a clear deadline when you’ll move on to looking for someone else.</li>
-    </ul>
-  </li>
-  <li>Assign a due date 3 weeks after all reviewers have been found.</li>
-  <li>Once two or more reviewers are found, assign reviewers by tagging in the issue with the following format:
-    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Reviewer: @githubname1
+<pre><code>Reviewer: @githubname1
 Reviewer: @githubname2
-Due date: YYYY-MM-DD
-</code></pre></div>    </div>
-  </li>
-  <li>Switch numbered tag <code class="highlighter-rouge">to 3/reviewers-assigned</code> once reviewers are assigned.</li>
-</ul>
-
-<h4 id="where-to-look-for-reviewers">Where to look for reviewers?</h4>
-
-<p>As a (guest) editor, use:</p>
+Due date: YYYY-MM-DD</code></pre>
 <ul>
-  <li>the potential suggestions made by the submitter(s), (although submitters may have a narrow view of the types of expertise needed.  We suggest not using more than one of suggested reviewers).</li>
-  <li>the authors of <a href="https://github.com/pyOpenSci/">pyOpenSci packages</a>.</li>
+<li>Switch numbered tag <code>to 3/reviewers-assigned</code> once reviewers are assigned.</li>
 </ul>
-
+<h4 id="Where-to-look-for-reviewers?">Where to look for reviewers?<a class="anchor-link" href="#Where-to-look-for-reviewers?"> </a></h4><p>As a (guest) editor, use:</p>
+<ul>
+<li>the potential suggestions made by the submitter(s), (although submitters may have a narrow view of the types of expertise needed.  We suggest not using more than one of suggested reviewers).</li>
+<li>the authors of <a href="https://github.com/pyOpenSci/">pyOpenSci packages</a>.</li>
+</ul>
 <p>When these sources of information are not enough:</p>
 <ul>
-  <li>ping other editors for ideas.</li>
-  <li>look for users of the package or of the data source/upstream service the package connects to (via their opening issues in the repository, starring it, citing it in papers, talking about it on Twitter).</li>
-  <li>You can also search for authors/maintainers of related packages on <a href="https://pypi.org/search/">PyPI</a>.</li>
+<li>ping other editors for ideas.</li>
+<li>look for users of the package or of the data source/upstream service the package connects to (via their opening issues in the repository, starring it, citing it in papers, talking about it on Twitter).</li>
+<li>You can also search for authors/maintainers of related packages on <a href="https://pypi.org/search/">PyPI</a>.</li>
 </ul>
-
-<h4 id="criteria-for-choosing-a-reviewer">Criteria for choosing a reviewer</h4>
-
-<p>Here are criteria to keep in mind when choosing a reviewer. You might need to piece this information together by searching CRAN and the potential reviewer’s GitHub page and general online presence (personal website, Twitter).</p>
-
+<h4 id="Criteria-for-choosing-a-reviewer">Criteria for choosing a reviewer<a class="anchor-link" href="#Criteria-for-choosing-a-reviewer"> </a></h4><p>Here are criteria to keep in mind when choosing a reviewer. You might need to piece this information together by searching CRAN and the potential reviewer’s GitHub page and general online presence (personal website, Twitter).</p>
 <ul>
-  <li>Has not reviewed a package for us within the last 6 months.</li>
-  <li>Some package development experience.</li>
-  <li>Some domain experience in the field of the package or data source.</li>
-  <li>No <a href="peer_review_proc#conflict-of-interest">conflicts of interest</a>.</li>
-  <li>Try to balance your sense of the potential reviewer’s experience against the complexity of the package.</li>
-  <li>Diversity - with two reviewers both shouldn’t be cis white males.</li>
-  <li>Some evidence that they are interested in openness or Python community activities, although blind emailing is fine.</li>
+<li>Has not reviewed a package for us within the last 6 months.</li>
+<li>Some package development experience.</li>
+<li>Some domain experience in the field of the package or data source.</li>
+<li>No <a href="peer_review_proc#conflict-of-interest">conflicts of interest</a>.</li>
+<li>Try to balance your sense of the potential reviewer’s experience against the complexity of the package.</li>
+<li>Diversity - with two reviewers both shouldn’t be cis white males.</li>
+<li>Some evidence that they are interested in openness or Python community activities, although blind emailing is fine.</li>
 </ul>
-
 <p>Each submission should be reviewed by <em>two</em> package reviewers. Although it is fine for one of them to have less package development experience and more domain knowledge, the review should not be split in two.  Both reviewers need to review the package comprehensively, though from their particular perspective.  In general, at least one reviewer should have prior reviewing experience, and of course inviting one new reviewer expands our pool of reviewers.</p>
-
-<h3 id="during-review">During review:</h3>
-
-<ul>
-  <li>Check in with reviewers and authors occasionally. Offer clarification and help as needed.</li>
-  <li>In general aim for 3 weeks for review, 2 weeks for subsequent changes, and 1 week for reviewer approval of changes.</li>
-  <li>Upon all reviews being submitted, change the review status tag to <code class="highlighter-rouge">4/review-in-awaiting-changes</code> to update the reminder bot.</li>
-  <li>If the author stops responding, refer to <a href="peer_review_proc#review-process-guidelines">the policies</a> and/or ping the other editors in the Slack channel for discussion. Importantly, if a reviewer was assigned to a closed issue, contact them when closing the issue to explain the decision, thank them once again for their work, and make a note in our database to assign them to a submission with high chances of smooth software review next time (e.g. a package author who has already submitted packages to us).</li>
-  <li>Upon changes being made, change the review status tag to <code class="highlighter-rouge">5/awaiting-reviewer-response</code>.</li>
+<h3 id="During-review:">During review:<a class="anchor-link" href="#During-review:"> </a></h3><ul>
+<li>Check in with reviewers and authors occasionally. Offer clarification and help as needed.</li>
+<li>In general aim for 3 weeks for review, 2 weeks for subsequent changes, and 1 week for reviewer approval of changes.</li>
+<li>Upon all reviews being submitted, change the review status tag to <code>4/review-in-awaiting-changes</code> to update the reminder bot.</li>
+<li>If the author stops responding, refer to <a href="peer_review_proc#review-process-guidelines">the policies</a> and/or ping the other editors in the Slack channel for discussion. Importantly, if a reviewer was assigned to a closed issue, contact them when closing the issue to explain the decision, thank them once again for their work, and make a note in our database to assign them to a submission with high chances of smooth software review next time (e.g. a package author who has already submitted packages to us).</li>
+<li>Upon changes being made, change the review status tag to <code>5/awaiting-reviewer-response</code>.</li>
 </ul>
-
-<h3 id="after-review">After review:</h3>
-
-<ul>
-  <li>Change the status tag to <code class="highlighter-rouge">6/approved</code>.</li>
-  <li>You can use the <a href="../appendices/templates#approval-comment-template">approval comment template</a>.</li>
-  <li>Add review/er information to the review database.</li>
-  <li>Ask authors to migrate to <code class="highlighter-rouge">pyOpenSci</code>
-    <ul>
-      <li>Create a two-person team in pyOpenSci’s “pyOpenSci” GitHub organization, named for the package, with yourself and the package author as members.</li>
-      <li>Have the author transfer the repository to <code class="highlighter-rouge">pyOpenSci</code></li>
-      <li>Go to the repository settings in the “pyOpenSci” GitHub organization and give the author “Admin” access to the repository.</li>
-    </ul>
-  </li>
-  <li>Ask author to:
-    <ul>
-      <li>Change any needed links, such those for CI badges</li>
-      <li>Re-activate CI services
-        <ul>
-          <li>For Travis, activating the project in the pyOpenSci account should be sufficient</li>
-          <li>For AppVeyor, tell the author to update the GitHub link in their badge, but do not transfer the project: AppVeyor projects should remain under the authors’ account. The badge is <code class="highlighter-rouge">[![AppVeyor Build Status](https://ci.appveyor.com/api/projects/status/github/pyOpenSci/pkgname?branch=master&amp;svg=true)](https://ci.appveyor.com/project/individualaccount/pkgname)</code>.</li>
-          <li>For Codecov, the webhook may need to be reset by the author.</li>
-        </ul>
-      </li>
-    </ul>
-  </li>
-  <li>Add a “peer-reviewed” topic to the repo.</li>
-  <li>Close the software-review issue.</li>
+<h3 id="After-review:">After review:<a class="anchor-link" href="#After-review:"> </a></h3><ul>
+<li>Change the status tag to <code>6/approved</code>.</li>
+<li>You can use the <a href="../appendices/templates#approval-comment-template">approval comment template</a>.</li>
+<li>Add review/er information to the review database.</li>
+<li>Ask authors to migrate to <code>pyOpenSci</code><ul>
+<li>Create a two-person team in pyOpenSci's "pyOpenSci" GitHub organization, named for the package, with yourself and the package author as members.</li>
+<li>Have the author transfer the repository to <code>pyOpenSci</code></li>
+<li>Go to the repository settings in the "pyOpenSci" GitHub organization and give the author "Admin" access to the repository.</li>
 </ul>
+</li>
+<li>Ask author to:<ul>
+<li>Change any needed links, such those for CI badges</li>
+<li>Re-activate CI services<ul>
+<li>For Travis, activating the project in the pyOpenSci account should be sufficient</li>
+<li>For AppVeyor, tell the author to update the GitHub link in their badge, but do not transfer the project: AppVeyor projects should remain under the authors' account. The badge is <code>[![AppVeyor Build Status](https://ci.appveyor.com/api/projects/status/github/pyOpenSci/pkgname?branch=master&amp;svg=true)](https://ci.appveyor.com/project/individualaccount/pkgname)</code>.</li>
+<li>For Codecov, the webhook may need to be reset by the author.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Add a "peer-reviewed" topic to the repo.</li>
+<li>Close the software-review issue.</li>
+</ul>
+<h3 id="Responding-to-out-of-scope-submissions">Responding to out-of-scope submissions<a class="anchor-link" href="#Responding-to-out-of-scope-submissions"> </a></h3><p>Thank authors for their submission, explain the reasons for the decision, and direct them to other publication venues if relevant, and to the pyOpenSci governance repo issues for discussion. Use wording from Aims and scope in particular regarding the evolution of scope over time, and the overlap and differences between unconf/staff/software-review development.</p>
 
-<h3 id="responding-to-out-of-scope-submissions">Responding to out-of-scope submissions</h3>
-<p>Thank authors for their submission, explain the reasons for the decision, and direct them to other publication venues if relevant, and to the pyOpenSci governance repo issues for discussion. Use wording from Aims and scope in particular regarding the evolution of scope over time, and the overlap and differences between unconf/staff/software-review development.</p>
+</div>
+</div>
+</div>
+</div>
 
-              <nav class="c-page__nav">
-  
+ 
+
+
+    </main>
     
-    <a id="js-page__nav__prev" class="c-page__nav__prev" href="/dev_guide/peer_review/reviewer_guide">
-      〈 <span class="u-margin-right-tiny"></span> Guide for Reviewers
-    </a>
+            </div>
+            <nav class="c-page__nav">
   
 
-  
-    
-    <a id="js-page__nav__next" class="c-page__nav__next" href="/dev_guide/peer_review/coc">
-      Community Code of Conduct <span class="u-margin-right-tiny"></span> 〉
-    </a>
   
 </nav>
 
-            </div>
-          </div>
+            <footer>
+  <p class="footer"></p>
+</footer>
+
         </div>
       </main>
     </div>
-
   </body>
 </html>

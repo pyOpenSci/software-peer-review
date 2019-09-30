@@ -1,14 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-  
-
   <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width,minimum-scale=1">
 
   <title>Aims and Scope</title>
-  <meta name="description" content="Aims and ScopepyOpenSci aims to support Python packages that enable reproducible research and managing the data lifecycle for scientists. Packages submitted ...">
+  <meta name="description" content="        Aims and Scope pyOpenSci aims to support Python packages that enable reproducible research and managing the data lifecycle for scientists. Packages s...">
 
   <link rel="canonical" href="https://pyopensci.github.io/dev_guide/peer_review/aims_scope.html">
   <link rel="alternate" type="application/rss+xml" title="The pyOpenSci Developer Guide" href="https://pyopensci.github.io/dev_guide/feed.xml">
@@ -16,24 +14,21 @@
   <meta property="og:url"         content="https://pyopensci.github.io/dev_guide/peer_review/aims_scope.html" />
 <meta property="og:type"        content="article" />
 <meta property="og:title"       content="Aims and Scope" />
-<meta property="og:description" content="Aims and ScopepyOpenSci aims to support Python packages that enable reproducible research and managing the data lifecycle for scientists. Packages submitted ..." />
-<meta property="og:image"       content="" />
+<meta property="og:description" content="        Aims and Scope pyOpenSci aims to support Python packages that enable reproducible research and managing the data lifecycle for scientists. Packages s..." />
+<meta property="og:image"       content="https://pyopensci.github.io/dev_guide/images/logo/logo.png" />
+
+<meta name="twitter:card" content="summary">
 
 
   <script type="application/ld+json">
   {
   "@context": "http://schema.org",
   "@type": "NewsArticle",
-  "mainEntityOfPage":
-    "https://pyopensci.github.io/dev_guide/peer_review/aims_scope.html",
-  "headline":
-    "Aims and Scope",
-  "datePublished":
-    "2019-06-06T22:53:50+00:00",
-  "dateModified":
-    "2019-06-06T22:53:50+00:00",
-  "description":
-    "Aims and ScopepyOpenSci aims to support Python packages that enable reproducible research and managing the data lifecycle for scientists. Packages submitted ...",
+  "mainEntityOfPage": "https://pyopensci.github.io/dev_guide/peer_review/aims_scope.html",
+  "headline": "Aims and Scope",
+  "datePublished": "2019-09-30T21:03:25+00:00",
+  "dateModified": "2019-09-30T21:03:25+00:00",
+  "description": "        Aims and Scope pyOpenSci aims to support Python packages that enable reproducible research and managing the data lifecycle for scientists. Packages s...",
   "author": {
     "@type": "Person",
     "name": "The pyOpenSci Community"
@@ -58,16 +53,6 @@
 
   </script>
   <link rel="stylesheet" href="/dev_guide/assets/css/styles.css">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css ">
-  <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
-  <link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
-  <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
-  <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
-  <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
-  <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
-  <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
-  <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
 
   <!-- <link rel="manifest" href="/manifest.json"> -->
   <!-- <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#efae0a"> -->
@@ -80,6 +65,8 @@
 
   <!-- MathJax Config -->
   <!-- Allow inline math using $ and automatically break long math lines -->
+<!-- (mostly) copied from nbconvert configuration -->
+<!-- https://github.com/jupyter/nbconvert/blob/master/nbconvert/templates/html/mathjax.tpl -->
 <script type="text/x-mathjax-config">
 MathJax.Hub.Config({
     tex2jax: {
@@ -88,35 +75,23 @@ MathJax.Hub.Config({
         processEscapes: true,
         processEnvironments: true
     },
-    CommonHTML: {
-        linebreaks: {
-            automatic: true,
-        },
-    },
+    // Center justify equations in code and markdown cells. Elsewhere
+    // we use CSS to left justify single line equations in code cells.
+    displayAlign: 'center',
+    "HTML-CSS": {
+        styles: {'.MathJax_Display': {"margin": 0}},
+        linebreaks: { automatic: true },
+    }
 });
 </script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML' async></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS_HTML' async></script>
+
 
   <!-- DOM updating function -->
-  <script>
-const runWhenDOMLoaded = cb => {
-  if (document.readyState != 'loading') {
-    cb()
-  } else if (document.addEventListener) {
-    document.addEventListener('DOMContentLoaded', cb)
-  } else {
-    document.attachEvent('onreadystatechange', function() {
-      if (document.readyState == 'complete') cb()
-    })
-  }
-}
+  <script src="/dev_guide/assets/js/page/dom-update.js"></script>
 
-// Helper function to init things quickly
-initFunction = function(myfunc) {
-  runWhenDOMLoaded(myfunc);
-  document.addEventListener('turbolinks:load', myfunc);
-};
-</script>
+  <!-- Selectors for elements on the page -->
+  <script src="/dev_guide/assets/js/page/documentSelectors.js"></script>
 
   <!-- Define some javascript variables that will be useful in other javascript -->
   <script>
@@ -124,18 +99,12 @@ initFunction = function(myfunc) {
   </script>
 
   <!-- Add AnchorJS to let headers be linked -->
-  <script src="/dev_guide/assets/js/anchor.min.js"  type="text/javascript"></script>
-  <script>
-
-initFunction(function () {
-    anchors.add("main h1, main h2, main h3, main h4")
-});
-
-</script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js" async></script>
+  <script src="/dev_guide/assets/js/page/anchors.js" async></script>
 
   <!-- Include Turbolinks to make page loads fast -->
   <!-- https://github.com/turbolinks/turbolinks -->
-  <script src="/dev_guide/assets/js/turbolinks.js" async></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/turbolinks/5.2.0/turbolinks.js" async></script>
   <meta name="turbolinks-cache-control" content="no-cache">
 
   <!-- Load nbinteract for widgets -->
@@ -146,179 +115,26 @@ initFunction(function () {
 
 
 
-  <!-- Load the auto-generating TOC -->
-  <script src="/dev_guide/assets/js/tocbot.min.js"  type="text/javascript"></script>
-  <script>
-var initToc = function () {
-  tocbot.init({
-    tocSelector: 'nav.onthispage',
-    contentSelector: '.c-textbook__content',
-    headingSelector: 'h2, h3',
-    orderedList: false,
-    collapseDepth: 6,
-    listClass: 'toc__menu',
-    activeListItemClass: "",  // Not using
-    activeLinkClass: "", // Not using
-  });
-  tocbot.refresh();
-}
-initFunction(initToc);
-</script>
+  <!-- Load the auto-generating TOC (non-async otherwise the TOC won't load w/ turbolinks) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.min.js" async></script>
+  <script src="/dev_guide/assets/js/page/tocbot.js"></script>
 
   <!-- Google analytics -->
-  <script src="/dev_guide/assets/js/ga.js" async></script>
+  
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id="></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', '');
+</script>
+
+
 
   <!-- Clipboard copy button -->
-  <script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js" async></script>
-
-  <!-- Load JS that depends on site variables -->
-  <script>
-/**
- * Set up copy/paste for code blocks
- */
-const codeCellId = index => `codecell${index}`
-
-const clipboardButton = id =>
-  `<a id="copy-button-${id}" class="btn copybtn o-tooltip--left" data-tooltip="Copy" data-clipboard-target="#${id}">
-    <img src="/dev_guide/assets/images/copy-button.svg" alt="Copy to clipboard">
-  </a>`
-
-// Clears selected text since ClipboardJS will select the text when copying
-const clearSelection = () => {
-  if (window.getSelection) {
-    window.getSelection().removeAllRanges()
-  } else if (document.selection) {
-    document.selection.empty()
-  }
-}
-
-// Changes tooltip text for two seconds, then changes it back
-const temporarilyChangeTooltip = (el, newText) => {
-  const oldText = el.getAttribute('data-tooltip')
-  el.setAttribute('data-tooltip', newText)
-  setTimeout(() => el.setAttribute('data-tooltip', oldText), 2000)
-}
-
-const addCopyButtonToCodeCells = () => {
-  // If ClipboardJS hasn't loaded, wait a bit and try again. This
-  // happens because we load ClipboardJS asynchronously.
-  if (window.ClipboardJS === undefined) {
-    setTimeout(addCopyButtonToCodeCells, 250)
-    return
-  }
-
-  const codeCells = document.querySelectorAll('div.c-textbook__content > div.highlighter-rouge > div.highlight > pre, div.input_area pre')
-  codeCells.forEach((codeCell, index) => {
-    const id = codeCellId(index)
-    codeCell.setAttribute('id', id)
-    if (document.getElementById("copy-button" + id) == null) {
-      codeCell.insertAdjacentHTML('afterend', clipboardButton(id));
-    }
-  })
-
-  const clipboard = new ClipboardJS('.copybtn')
-  clipboard.on('success', event => {
-    clearSelection()
-    temporarilyChangeTooltip(event.trigger, 'Copied!')
-  })
-
-  clipboard.on('error', event => {
-    temporarilyChangeTooltip(event.trigger, 'Failed to copy')
-  })
-
-  // Get rid of clipboard before the next page visit to avoid memory leak
-  document.addEventListener('turbolinks:before-visit', () =>
-    clipboard.destroy()
-  )
-}
-
-initFunction(addCopyButtonToCodeCells);
-</script>
-
-
-  <!-- Hide cell code -->
-  
-<script>
-/**
-Add buttons to hide code cells
-*/
-
-
-var setCodeCellVisibility = function(inputField, kind) {
-    // Update the image and class for hidden
-    var id = inputField.getAttribute('data-id');
-    var codeCell = document.querySelector(`#${id} div.highlight`);
-
-    if (kind === "visible") {
-        codeCell.classList.remove('hidden');
-        inputField.checked = true;
-    } else {
-        codeCell.classList.add('hidden');
-        inputField.checked = false;
-    }
-}
-
-var toggleCodeCellVisibility = function (event) {
-    // The label is clicked, and now we decide what to do based on the input field's clicked status
-    if (event.target.tagName === "LABEL") {
-        var inputField = event.target.previousElementSibling;
-    } else {
-        // It is the span inside the target
-        var inputField = event.target.parentElement.previousElementSibling;
-    }
-
-    if (inputField.checked === true) {
-        setCodeCellVisibility(inputField, "visible");
-    } else {
-        setCodeCellVisibility(inputField, "hidden");
-    }
-}
-
-
-// Button constructor
-const hideCodeButton = id => `<input class="hidebtn" type="checkbox" id="hidebtn${id}" data-id="${id}"><label title="Toggle cell" for="hidebtn${id}" class="plusminus"><span class="pm_h"></span><span class="pm_v"></span></label>`
-
-var addHideButton = function () {
-  // If a hide button is already added, don't add another
-  if (document.querySelector('div.hidecode input') !== null) {
-      return;
-  }
-
-  // Find the input cells and add a hide button
-  document.querySelectorAll('div.input_area').forEach(function (item, index) {
-    if (!item.classList.contains("hidecode")) {
-        // Skip the cell if it doesn't have a hidecode class
-        return;
-    }
-
-    const id = codeCellId(index)
-    item.setAttribute('id', id);
-    // Insert the button just inside the end of the next div
-    item.querySelector('div').insertAdjacentHTML('beforeend', hideCodeButton(id))
-
-    // Set up the visibility toggle
-    hideLink = document.querySelector(`#${id} div.highlight + input + label`);
-    hideLink.addEventListener('click', toggleCodeCellVisibility)
-  });
-}
-
-
-// Initialize the hide buttos
-var initHiddenCells = function () {
-    // Add hide buttons to the cells
-    addHideButton();
-
-    // Toggle the code cells that should be hidden
-    document.querySelectorAll('div.hidecode input').forEach(function (item) {
-        setCodeCellVisibility(item, 'hidden');
-        item.checked = true;
-    })
-}
-
-initFunction(initHiddenCells);
-
-</script>
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.4/clipboard.min.js" async></script>
 
   <!-- Load custom website scripts -->
   <script src="/dev_guide/assets/js/scripts.js" async></script>
@@ -331,7 +147,7 @@ initFunction(initHiddenCells);
   
 
   <!-- Lunr search code - will only be executed on the /search page -->
-  <script src="/dev_guide/assets/js/lunr/lunr.min.js" type="text/javascript"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.6/lunr.min.js" async></script>
   <script>var initQuery = function() {
   // See if we have a search box
   var searchInput = document.querySelector('input#lunr_search');
@@ -417,6 +233,45 @@ initFunction(initHiddenCells);
 
 initFunction(initQuery);
 </script>
+
+  <!-- Load JS that depends on site variables -->
+  <script src="/dev_guide/assets/js/page/copy-button.js" async></script>
+
+  <!-- Hide cell code -->
+  <script src="/dev_guide/assets/js/page/hide-cell.js" async></script>
+
+  <!-- Printing the screen -->
+  <!-- Include nbinteract for interactive widgets -->
+<script src="https://printjs-4de6.kxcdn.com/print.min.js" async></script>
+<script>
+printContent = () => {
+    // MathJax displays a second version of any math for assistive devices etc.
+    // This prevents double-rendering in the PDF output.
+    var ignoreAssistList = [];
+    assistives = document.querySelectorAll('.MathJax_Display span.MJX_Assistive_MathML').forEach((element, index) => {
+        var thisId = 'MathJax-assistive-' + index.toString();
+        element.setAttribute('id', thisId);
+        ignoreAssistList.push(thisId)
+    });
+
+    // Print the actual content object
+    printJS({
+        printable: 'textbook_content',
+        type: 'html',
+        css: "/dev_guide/assets/css/styles.css",
+        scanStyles: false,
+        targetStyles: ["*"],
+        ignoreElements: ignoreAssistList
+    })
+};
+
+initPrint = () => {
+    document.querySelector('#interact-button-print').addEventListener('click', printContent)
+}
+
+initFunction(initPrint)
+</script>
+
 </head>
 
   <body>
@@ -427,7 +282,7 @@ initFunction(initQuery);
 
 
 <nav id="js-sidebar" class="c-textbook__sidebar">
-  <a href="https://pyopensci.github.io/dev_guide"><img src="/dev_guide/images/logo/logo.png" class="textbook_logo" id="sidebar-logo" data-turbolinks-permanent/></a>
+  <a href="https://pyopensci.github.io/dev_guide"><img src="/dev_guide/images/logo/logo.png" class="textbook_logo" id="sidebar-logo" alt="textbook logo" data-turbolinks-permanent/></a>
   <h2 class="c-sidebar__title">The pyOpenSci Developer Guide</h2>
   <ul class="c-sidebar__chapters">
     
@@ -454,8 +309,25 @@ initFunction(initQuery);
     
       
       
-        <li class="c-sidebar__chapter"><a class="c-sidebar__entry" href="/dev_guide/search.html">Search</a></li>
+
+      
+      
+
+      
+      
+      <li class="c-sidebar__chapter">
+        <a class="c-sidebar__entry "
+          href=".html"
+        >
+          
+          Search
+        </a>
+
         
+      </li>
+
+      
+    
       
       
 
@@ -754,96 +626,112 @@ initFunction(initQuery);
       
     
   </ul>
-  <p class="sidebar_footer">Powered by <a href="https://github.com/jupyter/jupyter-book">Jupyter Book</a></p>
+  <p class="sidebar_footer">Powered by <a href="https:jupyterbook.org">Jupyter Book</a></p>
 </nav>
 
       
-      <!-- Empty sidebar placeholder that we'll auto-fill with javascript -->
-      <aside class="sidebar__right">
-          <header><h4 class="nav__title"><i class="fa fa-list"></i>   On this page</h4></header>
-          <nav class="onthispage">
-          </nav>
-      </aside>
-      
-      <main class="c-textbook__page" tabindex="-1">
-          <div class="o-wrapper">
-            <div class="c-sidebar-toggle">
+      <div class="c-topbar" id="top-navbar">
   <!-- We show the sidebar by default so we use .is-active -->
-  <button
-    id="js-sidebar-toggle"
-    class="hamburger hamburger--arrowalt is-active"
-  >
-    <span class="hamburger-box">
-      <span class="hamburger-inner"></span>
-    </span>
-    <span class="c-sidebar-toggle__label">Toggle Sidebar</span>
-  </button>
+  <div class="c-topbar__buttons">
+    <button
+      id="js-sidebar-toggle"
+      class="hamburger hamburger--arrowalt is-active"
+    >
+      <span class="hamburger-box">
+        <span class="hamburger-inner"></span>
+      </span>
+    </button>
+    <div class="buttons">
+<div class="download-buttons-dropdown">
+    <button id="dropdown-button-trigger" class="interact-button"><img src="/dev_guide/assets/images/download-solid.svg" alt="Download" /></button>
+    <div class="download-buttons">
+        
+        <a id="interact-button-print"><button id="interact-button-download" class="interact-button">.pdf</button></a>
+    </div>
 </div>
 
-            
+</div>
 
-            <div class="c-textbook__content">
-              <h1 id="aims-and-scope">Aims and Scope</h1>
-<p>pyOpenSci aims to support Python packages that enable reproducible research and managing the data lifecycle for scientists. Packages submitted to pyOpenSci should fit into one or more of the categories outlined below. If you are unsure whether your package fits into one of these categories, please open an issue as a pre-submission inquiry. We will let you know if we are able to review it at this time.</p>
+  </div>
+  <!-- Empty sidebar placeholder that we'll auto-fill with javascript -->
+  <aside class="sidebar__right">
+    <header><h4 class="nav__title"><img src="/dev_guide/assets/images/list-solid.svg" alt="Search" />   On this page</h4></header>
+    <nav class="onthispage">
+    </nav>
+  </aside>
+  <a href="/dev_guide/search.html" class="topbar-right-button" id="search-button">
+    <img src="/dev_guide/assets/images/search-solid.svg" alt="Search" />
+  </a>
+</div>
 
-<h2 id="package-categories">Package Categories</h2>
-<ul>
-  <li><strong>Data retrieval:</strong> Packages for accessing and downloading data from online sources. Includes wrappers for accessing APIs.</li>
-  <li><strong>Data extraction:</strong> Packages that aid in retrieving data from unstructured sources such as text, images and PDFs.</li>
-  <li><strong>Data munging:</strong> Tools for processing data from scientific data formats.</li>
-  <li><strong>Data deposition:</strong> Tools for depositing data in scientific research repositories.</li>
-  <li><strong>Reproducibility:</strong> Tools to scientists ensure that their research is reproducible. E.g. version control, automated testing, or citation tools.</li>
-  <li><strong>Geospatial:</strong> Packages focused on the retrieval, manipulation, and analysis of spatial data.</li>
-  <li><strong>Education:</strong> Packages to aid with instruction.</li>
-  <li><strong>Data visualization:</strong>* Packages for visualizing and analyzing data.</li>
+      <main class="c-textbook__page" tabindex="-1">
+            <div class="c-textbook__content" id="textbook_content">
+                  <main class="jupyter-page">
+    <div class="jb_cell">
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Aims-and-Scope">Aims and Scope<a class="anchor-link" href="#Aims-and-Scope"> </a></h1><p>pyOpenSci aims to support Python packages that enable reproducible research and managing the data lifecycle for scientists. Packages submitted to pyOpenSci should fit into one or more of the categories outlined below. If you are unsure whether your package fits into one of these categories, please open an issue as a pre-submission inquiry. We will let you know if we are able to review it at this time.</p>
+<h2 id="Package-Categories">Package Categories<a class="anchor-link" href="#Package-Categories"> </a></h2><ul>
+<li><strong>Data retrieval:</strong> Packages for accessing and downloading data from online sources. Includes wrappers for accessing APIs.</li>
+<li><strong>Data extraction:</strong> Packages that aid in retrieving data from unstructured sources such as text, images and PDFs.</li>
+<li><strong>Data munging:</strong> Tools for processing data from scientific data formats.</li>
+<li><strong>Data deposition:</strong> Tools for depositing data in scientific research repositories.</li>
+<li><strong>Reproducibility:</strong> Tools to scientists ensure that their research is reproducible. E.g. version control, automated testing, or citation tools.</li>
+<li><strong>Geospatial:</strong> Packages focused on the retrieval, manipulation, and analysis of spatial data.</li>
+<li><strong>Education:</strong> Packages to aid with instruction.</li>
+<li><strong>Data visualization:</strong>* Packages for visualizing and analyzing data.</li>
 </ul>
-
 <p>* Please fill out a pre-submission inquiry before submitting a data visualization package. See the notes below.</p>
-
-<h3 id="notes-on-categories">Notes on Categories</h3>
-<ul>
-  <li>pyOpenSci is young and this list is tentative. If your scientific Python package does not fit into one of the categories or if you have any other questions, we’d encourage you to open a pre-submission inquiry. We’re happy to help.</li>
-  <li>Data visualization packages come in many varieties, ranging from small hyper-specific methods for one type of data to general, do-it-all packages (e.g. matplotlib). pyOpenSci accepts packages that are somewhere in between the two. If you’re interested in submitting your data visualization package, please open a pre-submission inquiry on first.</li>
-  <li>Note that we cannot currently accept statistics and/or machine learning packages. We don’t feel that we can give these the deep, thorough review that they require.</li>
+<h3 id="Notes-on-Categories">Notes on Categories<a class="anchor-link" href="#Notes-on-Categories"> </a></h3><ul>
+<li>pyOpenSci is young and this list is tentative. If your scientific Python package does not fit into one of the categories or if you have any other questions, we'd encourage you to open a pre-submission inquiry. We're happy to help.</li>
+<li>Data visualization packages come in many varieties, ranging from small hyper-specific methods for one type of data to general, do-it-all packages (e.g. matplotlib). pyOpenSci accepts packages that are somewhere in between the two. If you're interested in submitting your data visualization package, please open a pre-submission inquiry on first.</li>
+<li>Note that we cannot currently accept statistics and/or machine learning packages. We don't feel that we can give these the deep, thorough review that they require.</li>
 </ul>
-
-<h2 id="package-overlap">Package Overlap</h2>
-<p>pyOpenSci encourages competition among packages, forking and re-implementation as they improve options of users overall. However, as we want packages in the pyOpenSci suite to be our top recommendations for the tasks they perform, we aim to avoid duplication of functionality of existing Python packages in any repo without significant improvements. A Python package that replicates the functionality of an existing package may be considered for inclusion in the pyOpenSci suite if it significantly improves on alternatives by being:</p>
-
+<h2 id="Package-Overlap">Package Overlap<a class="anchor-link" href="#Package-Overlap"> </a></h2><p>pyOpenSci encourages competition among packages, forking and re-implementation as they improve options of users overall. However, as we want packages in the pyOpenSci suite to be our top recommendations for the tasks they perform, we aim to avoid duplication of functionality of existing Python packages in any repo without significant improvements. A Python package that replicates the functionality of an existing package may be considered for inclusion in the pyOpenSci suite if it significantly improves on alternatives by being:</p>
 <ul>
-  <li>More open in licensing or development practices</li>
-  <li>Broader in functionality (e.g., providing access to more data sets, providing a greater suite of functions), but not only by duplicating additional packages</li>
-  <li>Better in usability and performance</li>
-  <li>Actively maintained while alternatives are poorly or no longer actively maintained</li>
+<li>More open in licensing or development practices</li>
+<li>Broader in functionality (e.g., providing access to more data sets, providing a greater suite of functions), but not only by duplicating additional packages</li>
+<li>Better in usability and performance</li>
+<li>Actively maintained while alternatives are poorly or no longer actively maintained</li>
 </ul>
-
 <p>These factors should be considered as a whole to determine if the package is a significant improvement. A new package would not meet this standard only by following our package guidelines while others do not, unless this leads to a significant difference in the areas above.</p>
-
 <p>We recommend that packages highlight differences from and improvements over overlapping packages in their README and/or vignettes.</p>
-
 <p>We encourage developers whose packages are not accepted due to overlap to still consider submittal to other repositories or journals.</p>
 
-              <nav class="c-page__nav">
+</div>
+</div>
+</div>
+</div>
+
+ 
+
+
+    </main>
+    
+            </div>
+            <nav class="c-page__nav">
   
     
-    <a id="js-page__nav__prev" class="c-page__nav__prev" href="/dev_guide/peer_review/review_intro">
+    <a id="js-page__nav__prev" class="c-page__nav__prev" href="/dev_guide/peer_review/review_intro.html">
       〈 <span class="u-margin-right-tiny"></span> Peer Review Process
     </a>
   
 
   
     
-    <a id="js-page__nav__next" class="c-page__nav__next" href="/dev_guide/peer_review/peer_review_proc">
+    <a id="js-page__nav__next" class="c-page__nav__next" href="/dev_guide/peer_review/peer_review_proc.html">
       Review Process and Guidelines <span class="u-margin-right-tiny"></span> 〉
     </a>
   
 </nav>
 
-            </div>
-          </div>
+            <footer>
+  <p class="footer"></p>
+</footer>
+
         </div>
       </main>
     </div>
-
   </body>
 </html>
