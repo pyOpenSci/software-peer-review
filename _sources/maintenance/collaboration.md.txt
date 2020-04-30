@@ -28,7 +28,7 @@ You can ask a new collaborator to make PRs (see following section for assessing 
 
 A possible model for onboarding collaborators is provided by Jim Hester in [his `lintr` repo](https://github.com/jimhester/lintr/issues/318).
 
-If your problem is _recruiting_ collaborators, you can post an open call like Jim Hester's [on Twitter](https://twitter.com/jimhester_/status/997109466674819074), [GitHub]((https://github.com/jimhester/lintr/issues/318)). As an pyOpenSci package author, you can also ask for help from pyOpenSci.
+If your problem is _recruiting_ collaborators, you can post an open call like Jim Hester's [on Twitter](https://twitter.com/jimhester_/status/997109466674819074), ([GitHub](https://github.com/jimhester/lintr/issues/318)). As an pyOpenSci package author, you can also ask for help from pyOpenSci.
 
 ### Working with collaborators (including yourself)
 
