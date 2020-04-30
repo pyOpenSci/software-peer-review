@@ -1,758 +1,302 @@
+
+
 <!DOCTYPE html>
-<html lang="en">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
   <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width,minimum-scale=1">
-
-  <title>Release</title>
-  <meta name="description" content="        Releasing a package {#releasing} This section covers releasing your package to PyPI as well as releasing future versions. Your package should have di...">
-
-  <link rel="canonical" href="https://pyopensci.github.io/dev_guide/maintenance/release.html">
-  <link rel="alternate" type="application/rss+xml" title="The pyOpenSci Developer Guide" href="https://pyopensci.github.io/dev_guide/feed.xml">
-
-  <meta property="og:url"         content="https://pyopensci.github.io/dev_guide/maintenance/release.html" />
-<meta property="og:type"        content="article" />
-<meta property="og:title"       content="Release" />
-<meta property="og:description" content="        Releasing a package {#releasing} This section covers releasing your package to PyPI as well as releasing future versions. Your package should have di..." />
-<meta property="og:image"       content="https://pyopensci.github.io/dev_guide/images/logo/logo.png" />
-
-<meta name="twitter:card" content="summary">
-
-
-  <script type="application/ld+json">
-  {
-  "@context": "http://schema.org",
-  "@type": "NewsArticle",
-  "mainEntityOfPage": "https://pyopensci.github.io/dev_guide/maintenance/release.html",
-  "headline": "Release",
-  "datePublished": "2019-09-30T23:12:50+00:00",
-  "dateModified": "2019-09-30T23:12:50+00:00",
-  "description": "        Releasing a package {#releasing} This section covers releasing your package to PyPI as well as releasing future versions. Your package should have di...",
-  "author": {
-    "@type": "Person",
-    "name": "The pyOpenSci Community"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "Data 100 at UC Berkeley",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://pyopensci.github.io/dev_guide",
-      "width": 60,
-      "height": 60
-    }
-  },
-  "image": {
-    "@type": "ImageObject",
-    "url": "https://pyopensci.github.io/dev_guide",
-    "height": 60,
-    "width": 60
-  }
-}
-
-  </script>
-  <link rel="stylesheet" href="/dev_guide/assets/css/styles.css">
-
-  <!-- <link rel="manifest" href="/manifest.json"> -->
-  <!-- <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#efae0a"> -->
-  <meta name="msapplication-TileColor" content="#da532c">
-  <meta name="msapplication-TileImage" content="/mstile-144x144.png">
-  <meta name="theme-color" content="#233947">
-
-  <!-- Favicon -->
-  <link rel="shortcut icon" type="image/x-icon" href="/dev_guide/images/logo/favicon.ico">
-
-  <!-- MathJax Config -->
-  <!-- Allow inline math using $ and automatically break long math lines -->
-<!-- (mostly) copied from nbconvert configuration -->
-<!-- https://github.com/jupyter/nbconvert/blob/master/nbconvert/templates/html/mathjax.tpl -->
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-    tex2jax: {
-        inlineMath: [ ['$','$'], ["\\(","\\)"] ],
-        displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
-        processEscapes: true,
-        processEnvironments: true
-    },
-    // Center justify equations in code and markdown cells. Elsewhere
-    // we use CSS to left justify single line equations in code cells.
-    displayAlign: 'center',
-    "HTML-CSS": {
-        styles: {'.MathJax_Display': {"margin": 0}},
-        linebreaks: { automatic: true },
-    }
-});
-</script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS_HTML' async></script>
+    <meta charset="utf-8" />
+    <title>Releasing a package &#8212; The pyOpenSci Developer Guide</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
+    <link href="../_static/css/index.css" rel="stylesheet">
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/jupyter-sphinx.css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/sphinx-book-theme.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/language_data.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/mystnb.js"></script>
+    <script src="../_static/sphinx-book-theme.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .secondtoggle, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.0-alpha.0/dist/embed.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Appendix: Templates" href="../appendices/templates.html" />
+    <link rel="prev" title="Collaboration Guide" href="collaboration.html" />
 
 
-  <!-- DOM updating function -->
-  <script src="/dev_guide/assets/js/page/dom-update.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="docsearch:language" content="en">
 
-  <!-- Selectors for elements on the page -->
-  <script src="/dev_guide/assets/js/page/documentSelectors.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<!-- Put requirejs at the end so it's always after bootstrap -->
+<!-- TODO: remove this once https://github.com/pandas-dev/pydata-sphinx-theme/pull/149 is merged -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js"></script>
 
-  <!-- Define some javascript variables that will be useful in other javascript -->
-  <script>
-    const site_basename = '/dev_guide';
-  </script>
 
-  <!-- Add AnchorJS to let headers be linked -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.2.0/anchor.min.js" async></script>
-  <script src="/dev_guide/assets/js/page/anchors.js" async></script>
 
-  <!-- Include Turbolinks to make page loads fast -->
-  <!-- https://github.com/turbolinks/turbolinks -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/turbolinks/5.2.0/turbolinks.js" async></script>
-  <meta name="turbolinks-cache-control" content="no-cache">
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
 
-  <!-- Load nbinteract for widgets -->
+    <div class="container-xl">
+      <div class="row">
+          
+
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    <div class="navbar-brand-box">
+<a class="navbar-brand text-wrap" href="../index.html">
   
-
-  <!-- Load Thebelab for interactive widgets -->
-  <!-- Include Thebelab for interactive code if it's enabled -->
-
-
-
-  <!-- Load the auto-generating TOC (non-async otherwise the TOC won't load w/ turbolinks) -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.min.js" async></script>
-  <script src="/dev_guide/assets/js/page/tocbot.js"></script>
-
-  <!-- Google analytics -->
+  <img src="../_static/logo.png" class="logo" alt="logo">
   
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id="></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', '');
-</script>
-
-
-
-  <!-- Clipboard copy button -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.4/clipboard.min.js" async></script>
-
-  <!-- Load custom website scripts -->
-  <script src="/dev_guide/assets/js/scripts.js" async></script>
-
-  <!-- Load custom user CSS and JS  -->
-  <script src="/dev_guide/assets/custom/custom.js" async></script>
-  <link rel="stylesheet" href="/dev_guide/assets/custom/custom.css">
-
-  <!-- Update interact links w/ REST param, is defined in includes so we can use templates -->
   
-
-  <!-- Lunr search code - will only be executed on the /search page -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.6/lunr.min.js" async></script>
-  <script>var initQuery = function() {
-  // See if we have a search box
-  var searchInput = document.querySelector('input#lunr_search');
-  if (searchInput === null) {
-    return;
-  }
-
-  // Function to parse our lunr cache
-  var idx = lunr(function () {
-    this.field('title')
-    this.field('excerpt')
-    this.field('categories')
-    this.field('tags')
-    this.ref('id')
-
-    this.pipeline.remove(lunr.trimmer)
-
-    for (var item in store) {
-      this.add({
-        title: store[item].title,
-        excerpt: store[item].excerpt,
-        categories: store[item].categories,
-        tags: store[item].tags,
-        id: item
-      })
-    }
-  });
-
-  // Run search upon keyup
-  searchInput.addEventListener('keyup', function () {
-    var resultdiv = document.querySelector('#results');
-    var query = document.querySelector("input#lunr_search").value.toLowerCase();
-    var result =
-      idx.query(function (q) {
-        query.split(lunr.tokenizer.separator).forEach(function (term) {
-          q.term(term, { boost: 100 })
-          if(query.lastIndexOf(" ") != query.length-1){
-            q.term(term, {  usePipeline: false, wildcard: lunr.Query.wildcard.TRAILING, boost: 10 })
-          }
-          if (term != ""){
-            q.term(term, {  usePipeline: false, editDistance: 1, boost: 1 })
-          }
-        })
-      });
-
-      // Empty the results div
-      while (resultdiv.firstChild) {
-        resultdiv.removeChild(resultdiv.firstChild);
-      }
-
-    resultdiv.insertAdjacentHTML('afterbegin', '<p class="results__found">'+result.length+' Result(s) found</p>');
-    for (var item in result) {
-      var ref = result[item].ref;
-      if(store[ref].teaser){
-        var searchitem =
-          '<div class="list__item">'+
-            '<article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">'+
-              '<h2 class="archive__item-title" itemprop="headline">'+
-                '<a href="'+store[ref].url+'" rel="permalink">'+store[ref].title+'</a>'+
-              '</h2>'+
-              '<div class="archive__item-teaser">'+
-                '<img src="'+store[ref].teaser+'" alt="">'+
-              '</div>'+
-              '<p class="archive__item-excerpt" itemprop="description">'+store[ref].excerpt.split(" ").splice(0,20).join(" ")+'...</p>'+
-            '</article>'+
-          '</div>';
-      }
-      else{
-    	  var searchitem =
-          '<div class="list__item">'+
-            '<article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">'+
-              '<h2 class="archive__item-title" itemprop="headline">'+
-                '<a href="'+store[ref].url+'" rel="permalink">'+store[ref].title+'</a>'+
-              '</h2>'+
-              '<p class="archive__item-excerpt" itemprop="description">'+store[ref].excerpt.split(" ").splice(0,20).join(" ")+'...</p>'+
-            '</article>'+
-          '</div>';
-      }
-      resultdiv.insertAdjacentHTML('beforeend', searchitem);
-    }
-  });
-};
-
-initFunction(initQuery);
-</script>
-
-  <!-- Load JS that depends on site variables -->
-  <script src="/dev_guide/assets/js/page/copy-button.js" async></script>
-
-  <!-- Hide cell code -->
-  <script src="/dev_guide/assets/js/page/hide-cell.js" async></script>
-
-  <!-- Printing the screen -->
-  <!-- Include nbinteract for interactive widgets -->
-<script src="https://printjs-4de6.kxcdn.com/print.min.js" async></script>
-<script>
-printContent = () => {
-    // MathJax displays a second version of any math for assistive devices etc.
-    // This prevents double-rendering in the PDF output.
-    var ignoreAssistList = [];
-    assistives = document.querySelectorAll('.MathJax_Display span.MJX_Assistive_MathML').forEach((element, index) => {
-        var thisId = 'MathJax-assistive-' + index.toString();
-        element.setAttribute('id', thisId);
-        ignoreAssistList.push(thisId)
-    });
-
-    // Print the actual content object
-    printJS({
-        printable: 'textbook_content',
-        type: 'html',
-        css: "/dev_guide/assets/css/styles.css",
-        scanStyles: false,
-        targetStyles: ["*"],
-        ignoreElements: ignoreAssistList
-    })
-};
-
-initPrint = () => {
-    document.querySelector('#interact-button-print').addEventListener('click', printContent)
-}
-
-initFunction(initPrint)
-</script>
-
-</head>
-
-  <body>
-    <!-- .js-show-sidebar shows sidebar by default -->
-    <div id="js-textbook" class="c-textbook js-show-sidebar">
-      
-
-
-
-<nav id="js-sidebar" class="c-textbook__sidebar">
-  <a href="https://pyopensci.github.io/dev_guide"><img src="/dev_guide/images/logo/logo.png" class="textbook_logo" id="sidebar-logo" alt="textbook logo" data-turbolinks-permanent/></a>
-  <h2 class="c-sidebar__title">The pyOpenSci Developer Guide</h2>
-  <ul class="c-sidebar__chapters">
-    
-      
-      
-
-      
-      
-
-      
-      
-      <li class="c-sidebar__chapter">
-        <a class="c-sidebar__entry "
-          href="/dev_guide/intro.html"
-        >
-          
-          Home
-        </a>
-
-        
-      </li>
-
-      
-    
-      
-      
-
-      
-      
-
-      
-      
-      <li class="c-sidebar__chapter">
-        <a class="c-sidebar__entry "
-          href=".html"
-        >
-          
-          Search
-        </a>
-
-        
-      </li>
-
-      
-    
-      
-      
-
-      
-      
-
-      
-      
-      <li class="c-sidebar__chapter">
-        <a class="c-sidebar__entry "
-          href="/dev_guide/packaging/packaging_guide.html"
-        >
-          
-            1.
-          
-          Before Review - Packaging Guide
-        </a>
-
-        
-
-          
-          
-          
-          
-
-          
-
-          <ul class="c-sidebar__sections ">
-            
-              
-              
-
-              <li class="c-sidebar__section">
-                <a class="c-sidebar__entry "
-                  href="/dev_guide/packaging/presub_qs_help.html"
-                >
-                  
-                    1.1
-                  
-                  Questions and Help
-                </a>
-
-                
-                
-
-              </li>
-              
-            
-          </ul>
-        
-      </li>
-
-      
-    
-      
-      
-
-      
-      
-
-      
-      
-      <li class="c-sidebar__chapter">
-        <a class="c-sidebar__entry "
-          href="/dev_guide/peer_review/review_intro.html"
-        >
-          
-            2.
-          
-          Peer Review Process
-        </a>
-
-        
-
-          
-          
-          
-          
-
-          
-
-          <ul class="c-sidebar__sections ">
-            
-              
-              
-
-              <li class="c-sidebar__section">
-                <a class="c-sidebar__entry "
-                  href="/dev_guide/peer_review/aims_scope.html"
-                >
-                  
-                    2.1
-                  
-                  Aims and Scope
-                </a>
-
-                
-                
-
-              </li>
-              
-            
-              
-              
-
-              <li class="c-sidebar__section">
-                <a class="c-sidebar__entry "
-                  href="/dev_guide/peer_review/peer_review_proc.html"
-                >
-                  
-                    2.2
-                  
-                  Review Process and Guidelines
-                </a>
-
-                
-                
-
-              </li>
-              
-            
-              
-              
-
-              <li class="c-sidebar__section">
-                <a class="c-sidebar__entry "
-                  href="/dev_guide/peer_review/author_guide.html"
-                >
-                  
-                    2.3
-                  
-                  Guide for Authors
-                </a>
-
-                
-                
-
-              </li>
-              
-            
-              
-              
-
-              <li class="c-sidebar__section">
-                <a class="c-sidebar__entry "
-                  href="/dev_guide/peer_review/reviewer_guide.html"
-                >
-                  
-                    2.4
-                  
-                  Guide for Reviewers
-                </a>
-
-                
-                
-
-              </li>
-              
-            
-              
-              
-
-              <li class="c-sidebar__section">
-                <a class="c-sidebar__entry "
-                  href="/dev_guide/peer_review/editor_guide.html"
-                >
-                  
-                    2.5
-                  
-                  Guide for Editors
-                </a>
-
-                
-                
-
-              </li>
-              
-            
-              
-              
-
-              <li class="c-sidebar__section">
-                <a class="c-sidebar__entry "
-                  href="/dev_guide/peer_review/coc.html"
-                >
-                  
-                    2.6
-                  
-                  Community Code of Conduct
-                </a>
-
-                
-                
-
-              </li>
-              
-            
-          </ul>
-        
-      </li>
-
-      
-    
-      
-      
-
-      
-      
-
-      
-      
-      <li class="c-sidebar__chapter">
-        <a class="c-sidebar__entry "
-          href="/dev_guide/maintenance/maintenance_intro.html"
-        >
-          
-            3.
-          
-          After Review - Maintenance
-        </a>
-
-        
-
-          
-          
-          
-          
-
-          
-
-          <ul class="c-sidebar__sections ">
-            
-              
-              
-
-              <li class="c-sidebar__section">
-                <a class="c-sidebar__entry "
-                  href="/dev_guide/maintenance/collaboration.html"
-                >
-                  
-                    3.1
-                  
-                  Collaboration
-                </a>
-
-                
-                
-
-              </li>
-              
-            
-              
-              
-
-              <li class="c-sidebar__section">
-                <a class="c-sidebar__entry c-sidebar__entry--active"
-                  href="/dev_guide/maintenance/release.html"
-                >
-                  
-                    3.2
-                  
-                  Release
-                </a>
-
-                
-                
-
-              </li>
-              
-            
-          </ul>
-        
-      </li>
-
-      
-    
-      
-      
-
-      
-      
-
-      
-      
-      <li class="c-sidebar__chapter">
-        <a class="c-sidebar__entry "
-          href="/dev_guide/appendices/templates.html"
-        >
-          
-          Appendices - Templates
-        </a>
-
-        
-      </li>
-
-      
-    
+  <h1 class="site-logo" id="site-title">The pyOpenSci Developer Guide</h1>
+  
+</a>
+</div>
+
+<form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form>
+
+<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+  
+  <ul class="nav sidenav_l1">
+  <li class="">
+    <a href="../intro.html">The pyOpenSci Dev Guide</a>
+  </li>
+  <li class="">
+    <a href="../packaging/packaging_guide.html">Before Review - Packaging Guide</a>
+  <ul class="nav sidenav_l2">
+    <li class="">
+      <a href="../packaging/presub_qs_help.html">Questions and Help</a>
+    </li>
   </ul>
-  <p class="sidebar_footer">Powered by <a href="https:jupyterbook.org">Jupyter Book</a></p>
+  </li>
+  <li class="">
+    <a href="../peer_review/aims_scope.html">Aims and Scope</a>
+  </li>
+  <li class="">
+    <a href="../peer_review/peer_review_proc.html">Review Process and Guidelines</a>
+  </li>
+  <li class="">
+    <a href="../peer_review/author_guide.html">Guide for Authors</a>
+  </li>
+  <li class="">
+    <a href="../peer_review/reviewer_guide.html">Guide for Reviewers</a>
+  </li>
+  <li class="">
+    <a href="../peer_review/editor_guide.html">Guide for Editors</a>
+  </li>
+  <li class="">
+    <a href="../peer_review/coc.html">Community Code of Conduct</a>
+  </li>
+  <li class="">
+    <a href="collaboration.html">Collaboration</a>
+  </li>
+  <li class="active">
+    <a href="">Release</a>
+  </li>
+  <li class="">
+    <a href="../appendices/templates.html">Appendices - Templates</a>
+  </li>
+</ul>
 </nav>
+<p class="navbar_footer">Powered by <a href="https://jupyterbook.org">Jupyter Book</a></p>
+</div>
 
-      
-      <div class="c-topbar" id="top-navbar">
-  <!-- We show the sidebar by default so we use .is-active -->
-  <div class="c-topbar__buttons">
-    <button
-      id="js-sidebar-toggle"
-      class="hamburger hamburger--arrowalt is-active"
-    >
-      <span class="hamburger-box">
-        <span class="hamburger-inner"></span>
-      </span>
-    </button>
-    <div class="buttons">
-<div class="download-buttons-dropdown">
-    <button id="dropdown-button-trigger" class="interact-button"><img src="/dev_guide/assets/images/download-solid.svg" alt="Download" /></button>
-    <div class="download-buttons">
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="row topbar fixed-top container-xl">
+    <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show">
+    </div>
+    <div class="col pl-2 topbar-main">
         
-        <a id="interact-button-print"><button id="interact-button-download" class="interact-button">.pdf</button></a>
-    </div>
-</div>
+        <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse" data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu" aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation" title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-arrow-left"></i>
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        <div class="dropdown-buttons-trigger">
+            <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i class="fas fa-download"></i></button>
 
-</div>
-
-  </div>
-  <!-- Empty sidebar placeholder that we'll auto-fill with javascript -->
-  <aside class="sidebar__right">
-    <header><h4 class="nav__title"><img src="/dev_guide/assets/images/list-solid.svg" alt="Search" />   On this page</h4></header>
-    <nav class="onthispage">
-    </nav>
-  </aside>
-  <a href="/dev_guide/search.html" class="topbar-right-button" id="search-button">
-    <img src="/dev_guide/assets/images/search-solid.svg" alt="Search" />
-  </a>
-</div>
-
-      <main class="c-textbook__page" tabindex="-1">
-            <div class="c-textbook__content" id="textbook_content">
-                  <main class="jupyter-page">
-    <div class="jb_cell">
-
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Releasing-a-package-{#releasing}">Releasing a package {#releasing}<a class="anchor-link" href="#Releasing-a-package-{#releasing}"> </a></h1><p>This section covers releasing your package to PyPI as well as releasing future versions. Your package should have different versions over time: snapshots of a state of the package that you can release to PyPI for instance. These versions should be properly <em>numbered</em>, <em>released</em> and <em>described in a NEWS file</em>. More details below.</p>
-<h2 id="Original-Release">Original Release<a class="anchor-link" href="#Original-Release"> </a></h2><p>After the review process has finished, you're ready to release your package to PyPI so others can find and use your awesome package! Releasing to PyPI is easy. Once your package is ready, register it on PyPI by running:</p>
-
-<pre><code>python setup.py register</code></pre>
-<h2 id="Releasing-Updated-Versions">Releasing Updated Versions<a class="anchor-link" href="#Releasing-Updated-Versions"> </a></h2><p>When you update your package, you release a new version to PyPI. Fortunately, this is easy! First, we'll talk about the metadata you'll need to update for each version. Then we'll cover how to release your updated version to PyPI <a href="#manual-release">manually via the command line</a> or <a href="#travis-release">automatically via Travis CI</a>.</p>
-<h3 id="Version-Naming">Version Naming<a class="anchor-link" href="#Version-Naming"> </a></h3><ul>
-<li><p>We recommend that pyOpenSci packages use <a href="https://www.python.org/dev/peps/pep-0440/#semantic-versioning">semantic versioning</a>. In addition to the <a href="https://www.python.org/dev/peps/pep-0440/#semantic-versioning">PEP section on it</a>, semver.org has more <a href="https://semver.org/">detail</a>.</p>
-</li>
-<li><p>Versioning can be done using <a href="https://github.com/peritus/bumpversion">bumpversion</a>, e.g. for a minor update:</p>
-</li>
-</ul>
-
-<pre><code>bumpversion minor</code></pre>
-<p>"minor" can be replaced with "major" or "patch" depending on the level of update.</p>
-<h3 id="History/News/Changelog-file-{#history}">History/News/Changelog file {#history}<a class="anchor-link" href="#History/News/Changelog-file-{#history}"> </a></h3><p>A HISTORY (or NEWS or CHANGELOG) file describing changes associated with each version makes it easier for users to see what's changing in the package and how it might impact their workflow. You must add one for your package, and make it easy to read.</p>
-<ul>
-<li><p>It is mandatory to use a <code>HISTORY</code> file in the root of your package. It can also be called NEWS or CHANGELOG We recommend using <code>[NAME].md</code> or <code>[NAME].rst</code> to make the file more browsing-friendly on GitHub (GitHub renders certain file types, including Markdown and reStructured text).</p>
-</li>
-<li><p>Update the history file before every PyPI release, with a section with the package name, version and date of release.</p>
-</li>
-</ul>
-
-<pre><code>foobar 0.2.0 (2016-04-01)
-=========================</code></pre>
-<ul>
-<li><p>Under that header, put in sections as needed, including: <code>NEW FEATURES</code>, <code>MINOR IMPROVEMENTS</code>, <code>BUG FIXES</code>, <code>DEPRECATED AND DEFUNCT</code>, <code>DOCUMENTATION FIXES</code> and any special heading grouping a large number of changes. Under each header, list items as needed. For each item give a description of the new feature, improvement, bug fix, or deprecated function/feature. Link to any related GitHub issue like <code>(#12)</code>. The <code>(#12)</code> will resolve on GitHub in Releases to a link to that issue in the repo.</p>
-</li>
-<li><p>After you have added a <code>git tag</code> and pushed up to GitHub, add the news items for that tagged version to the Release notes of a release in your GitHub repo with a title like <code>pkgname v0.1.0</code>. See <a href="https://help.github.com/articles/creating-releases/">GitHub docs about creating a release</a>.</p>
-</li>
-</ul>
-<h3 id="Releasing-Versions:-Manual-{#manual-release}">Releasing Versions: Manual {#manual-release}<a class="anchor-link" href="#Releasing-Versions:-Manual-{#manual-release}"> </a></h3><p>To manually upload a new package version to PyPI, follow these steps:</p>
-<ol>
-<li>Update your HISTORY file as described <a href="#history">above</a></li>
-<li>Open setup.py and change the version, e.g., version='1.0.3'</li>
-<li>If you added new, non-Python files to the project that need to be distributed as well, e.g., configuration files, add them to MANIFEST.in. This does not need to be done for Python code files ending in .py.</li>
-<li>Open a terminal and go into the parent of the project's root dir</li>
-<li>python setup.py sdist</li>
-<li>Check the resulting files, especially the egg file: are all the files contained?</li>
-<li>If everything is ok, upload the new version to PyPI: python setup.py sdist upload</li>
-</ol>
-<p>That's it!</p>
-<h3 id="Releasing-via-Travis-CI-{#travis-release}">Releasing via Travis CI {#travis-release}<a class="anchor-link" href="#Releasing-via-Travis-CI-{#travis-release}"> </a></h3><p>Instead of manually uploading new package versions, Travis can be configured to automatically upload new versions. If you use this, each time you tag a new release and push it to GitHub, Travis will release it to PyPI (assuming it passes testing).</p>
-<ul>
-<li><p>The pyOpenSci cookiecutter comes with this option mostly set up. For details on how to finish the set up, see <a href="https://cookiecutter-pyopensci.readthedocs.io/en/latest/travis_pypi_setup.html">this guide</a>.</p>
-</li>
-<li><p>Also, be sure to check out this <a href="https://cookiecutter-pyopensci.readthedocs.io/en/latest/pypi_release_checklist.html">PyPI release checklist</a>.</p>
-</li>
-</ul>
-
-</div>
-</div>
-</div>
-</div>
-
- 
-
-
-    </main>
-    
+            
+            <div class="dropdown-buttons">
+                <!-- ipynb file if we had a myst markdown file -->
+                
+                <!-- Download raw file -->
+                <a class="dropdown-buttons" href="../_sources/maintenance/release.md.txt"><button type="button" class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip" data-placement="left">.md</button></a>
+                <!-- Download PDF via print -->
+                <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF" onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
             </div>
-            <nav class="c-page__nav">
-  
-    
-    <a id="js-page__nav__prev" class="c-page__nav__prev" href="/dev_guide/maintenance/collaboration.html">
-      〈 <span class="u-margin-right-tiny"></span> Collaboration
-    </a>
-  
+            
+        </div>
 
-  
+        <!-- Edit this page -->
+        
+
+        <!-- Full screen (wrap in <a> to have style consistency -->
+        <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="bottom" onclick="toggleFullScreen()" title="Fullscreen mode"><i class="fas fa-expand"></i></button></a>
+
+        <!-- Launch buttons -->
+        
+
+        
+    </div>
+    <div class="d-none d-md-block col-md-2 bd-toc show">
+<div class="tocsection onthispage pt-5 pb-3">
+    <i class="fas fa-list"></i> On this page
+</div>
+
+<nav id="bd-toc-nav">
+    <ul class="nav section-nav flex-column">
     
-    <a id="js-page__nav__next" class="c-page__nav__next" href="/dev_guide/appendices/templates.html">
-      Appendices - Templates <span class="u-margin-right-tiny"></span> 〉
-    </a>
-  
+        <li class="nav-item toc-entry toc-h2">
+            <a href="#original-release" class="nav-link">Original Release</a>
+        </li>
+    
+        <li class="nav-item toc-entry toc-h2">
+            <a href="#releasing-updated-versions" class="nav-link">Releasing Updated Versions</a><ul class="nav section-nav flex-column">
+                
+        <li class="nav-item toc-entry toc-h3">
+            <a href="#version-naming" class="nav-link">Version Naming</a>
+        </li>
+    
+        <li class="nav-item toc-entry toc-h3">
+            <a href="#history-news-changelog-file" class="nav-link">History/News/Changelog file</a>
+        </li>
+    
+        <li class="nav-item toc-entry toc-h3">
+            <a href="#releasing-versions-manual" class="nav-link">Releasing Versions: Manual</a>
+        </li>
+    
+        <li class="nav-item toc-entry toc-h3">
+            <a href="#releasing-via-travis-ci" class="nav-link">Releasing via Travis CI</a>
+        </li>
+    
+            </ul>
+        </li>
+    
+    </ul>
 </nav>
 
-            <footer>
-  <p class="footer"></p>
-</footer>
 
-        </div>
-      </main>
     </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 col-xxl-7 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <p>(releasing=)</p>
+<div class="section" id="releasing-a-package">
+<h1>Releasing a package<a class="headerlink" href="#releasing-a-package" title="Permalink to this headline">¶</a></h1>
+<p>This section covers releasing your package to PyPI as well as releasing future versions. Your package should have different versions over time: snapshots of a state of the package that you can release to PyPI for instance. These versions should be properly <em>numbered</em>, <em>released</em> and <em>described in a NEWS file</em>. More details below.</p>
+<div class="section" id="original-release">
+<h2>Original Release<a class="headerlink" href="#original-release" title="Permalink to this headline">¶</a></h2>
+<p>After the review process has finished, you’re ready to release your package to PyPI so others can find and use your awesome package! Releasing to PyPI is easy. Once your package is ready, register it on PyPI by running:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">python</span> <span class="n">setup</span><span class="o">.</span><span class="n">py</span> <span class="n">register</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="releasing-updated-versions">
+<h2>Releasing Updated Versions<a class="headerlink" href="#releasing-updated-versions" title="Permalink to this headline">¶</a></h2>
+<p>When you update your package, you release a new version to PyPI. Fortunately, this is easy! First, we’ll talk about the metadata you’ll need to update for each version. Then we’ll cover how to release your updated version to PyPI <a class="reference internal" href="#manual-release"><span class="std std-ref">manually via the command line</span></a> or <a class="reference internal" href="#travis-release"><span class="std std-ref">automatically via Travis CI</span></a>.</p>
+<div class="section" id="version-naming">
+<h3>Version Naming<a class="headerlink" href="#version-naming" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>We recommend that pyOpenSci packages use <a class="reference external" href="https://www.python.org/dev/peps/pep-0440/#semantic-versioning">semantic versioning</a>. In addition to the <a class="reference external" href="https://www.python.org/dev/peps/pep-0440/#semantic-versioning">PEP section on it</a>, semver.org has more <a class="reference external" href="https://semver.org/">detail</a>.</p></li>
+<li><p>Versioning can be done using <a class="reference external" href="https://github.com/peritus/bumpversion">bumpversion</a>, e.g. for a minor update:</p></li>
+</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">bumpversion</span> <span class="n">minor</span>
+</pre></div>
+</div>
+<p>“minor” can be replaced with “major” or “patch” depending on the level of update.</p>
+</div>
+<div class="section" id="history-news-changelog-file">
+<span id="history"></span><h3>History/News/Changelog file<a class="headerlink" href="#history-news-changelog-file" title="Permalink to this headline">¶</a></h3>
+<p>A HISTORY (or NEWS or CHANGELOG) file describing changes associated with each version makes it easier for users to see what’s changing in the package and how it might impact their workflow. You must add one for your package, and make it easy to read.</p>
+<ul class="simple">
+<li><p>It is mandatory to use a <code class="docutils literal notranslate"><span class="pre">HISTORY</span></code> file in the root of your package. It can also be called NEWS or CHANGELOG We recommend using <code class="docutils literal notranslate"><span class="pre">[NAME].md</span></code> or <code class="docutils literal notranslate"><span class="pre">[NAME].rst</span></code> to make the file more browsing-friendly on GitHub (GitHub renders certain file types, including Markdown and reStructured text).</p></li>
+<li><p>Update the history file before every PyPI release, with a section with the package name, version and date of release.</p></li>
+</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">foobar</span> <span class="mf">0.2</span><span class="o">.</span><span class="mi">0</span> <span class="p">(</span><span class="mi">2016</span><span class="o">-</span><span class="mi">04</span><span class="o">-</span><span class="mi">01</span><span class="p">)</span>
+<span class="o">=========================</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>Under that header, put in sections as needed, including: <code class="docutils literal notranslate"><span class="pre">NEW</span> <span class="pre">FEATURES</span></code>, <code class="docutils literal notranslate"><span class="pre">MINOR</span> <span class="pre">IMPROVEMENTS</span></code>, <code class="docutils literal notranslate"><span class="pre">BUG</span> <span class="pre">FIXES</span></code>, <code class="docutils literal notranslate"><span class="pre">DEPRECATED</span> <span class="pre">AND</span> <span class="pre">DEFUNCT</span></code>, <code class="docutils literal notranslate"><span class="pre">DOCUMENTATION</span> <span class="pre">FIXES</span></code> and any special heading grouping a large number of changes. Under each header, list items as needed. For each item give a description of the new feature, improvement, bug fix, or deprecated function/feature. Link to any related GitHub issue like <code class="docutils literal notranslate"><span class="pre">(#12)</span></code>. The <code class="docutils literal notranslate"><span class="pre">(#12)</span></code> will resolve on GitHub in Releases to a link to that issue in the repo.</p></li>
+<li><p>After you have added a <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">tag</span></code> and pushed up to GitHub, add the news items for that tagged version to the Release notes of a release in your GitHub repo with a title like <code class="docutils literal notranslate"><span class="pre">pkgname</span> <span class="pre">v0.1.0</span></code>. See <a class="reference external" href="https://help.github.com/articles/creating-releases/">GitHub docs about creating a release</a>.</p></li>
+</ul>
+</div>
+<div class="section" id="releasing-versions-manual">
+<span id="manual-release"></span><h3>Releasing Versions: Manual<a class="headerlink" href="#releasing-versions-manual" title="Permalink to this headline">¶</a></h3>
+<p>To manually upload a new package version to PyPI, follow these steps:</p>
+<ol class="simple">
+<li><p>Update your HISTORY file as described <a class="reference external" href="#history">above</a></p></li>
+<li><p>Open setup.py and change the version, e.g., version=’1.0.3’</p></li>
+<li><p>If you added new, non-Python files to the project that need to be distributed as well, e.g., configuration files, add them to MANIFEST.in. This does not need to be done for Python code files ending in .py.</p></li>
+<li><p>Open a terminal and go into the parent of the project’s root dir</p></li>
+<li><p>python setup.py sdist</p></li>
+<li><p>Check the resulting files, especially the egg file: are all the files contained?</p></li>
+<li><p>If everything is ok, upload the new version to PyPI: python setup.py sdist upload</p></li>
+</ol>
+<p>That’s it!</p>
+</div>
+<div class="section" id="releasing-via-travis-ci">
+<span id="travis-release"></span><h3>Releasing via Travis CI<a class="headerlink" href="#releasing-via-travis-ci" title="Permalink to this headline">¶</a></h3>
+<p>Instead of manually uploading new package versions, Travis can be configured to automatically upload new versions. If you use this, each time you tag a new release and push it to GitHub, Travis will release it to PyPI (assuming it passes testing).</p>
+<ul class="simple">
+<li><p>The pyOpenSci cookiecutter comes with this option mostly set up. For details on how to finish the set up, see <a class="reference external" href="https://cookiecutter-pyopensci.readthedocs.io/en/latest/travis_pypi_setup.html">this guide</a>.</p></li>
+<li><p>Also, be sure to check out this <a class="reference external" href="https://cookiecutter-pyopensci.readthedocs.io/en/latest/pypi_release_checklist.html">PyPI release checklist</a>.</p></li>
+</ul>
+</div>
+</div>
+</div>
+
+
+              </div>
+              
+        </div>
+    </div>
+    
+    
+    <div class='prev-next-bottom'>
+        
+    <a class='left-prev' id="prev-link" href="collaboration.html" title="previous page">Collaboration Guide</a>
+    <a class='right-next' id="next-link" href="../appendices/templates.html" title="next page">Appendix: Templates</a>
+
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+  <div class="container">
+    <p>
+          &copy; Copyright .<br/>
+        Created using <a href="http://sphinx-doc.org/">Sphinx</a> 2.4.4.<br/>
+    </p>
+  </div>
+</footer>
+</main>
+
+
+      </div>
+    </div>
+
+    <script src="../_static/js/index.js"></script>
+    
   </body>
 </html>
