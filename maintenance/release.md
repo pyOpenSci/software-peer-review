@@ -1,4 +1,5 @@
-# Releasing a package {#releasing}
+(releasing=)
+# Releasing a package
 
 This section covers releasing your package to PyPI as well as releasing future versions. Your package should have different versions over time: snapshots of a state of the package that you can release to PyPI for instance. These versions should be properly _numbered_, _released_ and _described in a NEWS file_. More details below.
 
@@ -13,7 +14,7 @@ python setup.py register
 
 ## Releasing Updated Versions
 
-When you update your package, you release a new version to PyPI. Fortunately, this is easy! First, we'll talk about the metadata you'll need to update for each version. Then we'll cover how to release your updated version to PyPI [manually via the command line](#manual-release) or [automatically via Travis CI](#travis-release).
+When you update your package, you release a new version to PyPI. Fortunately, this is easy! First, we'll talk about the metadata you'll need to update for each version. Then we'll cover how to release your updated version to PyPI [manually via the command line](manual-release) or [automatically via Travis CI](travis-release).
 
 ### Version Naming
 
@@ -27,7 +28,8 @@ bumpversion minor
 
 "minor" can be replaced with "major" or "patch" depending on the level of update.
 
-### History/News/Changelog file {#history}
+(history)=
+### History/News/Changelog file
 
 A HISTORY (or NEWS or CHANGELOG) file describing changes associated with each version makes it easier for users to see what's changing in the package and how it might impact their workflow. You must add one for your package, and make it easy to read.
 
@@ -44,7 +46,8 @@ foobar 0.2.0 (2016-04-01)
 
 * After you have added a `git tag` and pushed up to GitHub, add the news items for that tagged version to the Release notes of a release in your GitHub repo with a title like `pkgname v0.1.0`. See [GitHub docs about creating a release](https://help.github.com/articles/creating-releases/).
 
-### Releasing Versions: Manual {#manual-release}
+(manual-release)=
+### Releasing Versions: Manual
 
 To manually upload a new package version to PyPI, follow these steps:
 
@@ -58,7 +61,8 @@ To manually upload a new package version to PyPI, follow these steps:
 
 That's it!
 
-### Releasing via Travis CI {#travis-release}
+(travis-release)=
+### Releasing via Travis CI
 Instead of manually uploading new package versions, Travis can be configured to automatically upload new versions. If you use this, each time you tag a new release and push it to GitHub, Travis will release it to PyPI (assuming it passes testing).
 
 * The pyOpenSci cookiecutter comes with this option mostly set up. For details on how to finish the set up, see [this guide](https://cookiecutter-pyopensci.readthedocs.io/en/latest/travis_pypi_setup.html).
