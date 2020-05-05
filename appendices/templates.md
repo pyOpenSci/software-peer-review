@@ -69,7 +69,7 @@ The README should include, from top to bottom:
 - [ ] **Performance:** Any performance claims of the software been confirmed.
 - [ ] **Automated tests:** Tests cover essential functions of the package and a reasonable range of inputs and conditions. All tests pass on the local machine.
 - [ ] **Continuous Integration:** Has continuous integration, such as Travis CI, AppVeyor, CircleCI, and/or others.
-- [ ] **Packaging guidelines**: The package conforms to the pyOpenSci [packaging guidelines](https://www.pyopensci.org/dev_guide/packaging/packaging_guide.html).
+- [ ] **Packaging guidelines**: The package conforms to the pyOpenSci [packaging guidelines](https://www.pyopensci.org/dev_guide/authoring/packaging_guide.html).
 
 #### For packages co-submitting to JOSS
 
@@ -123,7 +123,7 @@ Sincerely,
 [EDITOR]
 
 [reviewers guide]: https://pyopensci.github.io/dev_guide/peer_review/reviewer_guide.html
-[packaging guide]: https://pyopensci.github.io/dev_guide/packaging/packaging_guide.html
+[packaging guide]: https://pyopensci.github.io/dev_guide/authoring/packaging_guide.html
 [template]: https://pyopensci.github.io/dev_guide/appendices/templates.html#review-template
 
 

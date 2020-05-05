@@ -1,4 +1,4 @@
-# Packaging Guide
+# Packaging
 
 This section provides guidelines and tips for creating a Python package to submit for peer-review.
 

@@ -20,7 +20,7 @@ the editorial board. The Editor in Chief fulfills the following roles:
 - Check against policies for [fit](aims_scope#package-categories) and [overlap](aims_scope#package-overlap). If reject, see [this section](#responding-to-out-of-scope-submissions) about how to respond.
 - Check that mandatory parts of template are complete.  If not, direct authors toward appropriate instructions.
 - Run automated tests: spelling, linting, etc ... will be filled in later.
-- For packages needing continuous integration on multiple platforms ([criteria in this section of the packaging chapter](../packaging/packaging_guide#continuous-integration)) make sure the package gets tested on multiple platforms (having the package built on both Travis and AppVeyor for instance).
+- For packages needing continuous integration on multiple platforms ([criteria in this section of the packaging chapter](../authoring/packaging_guide#continuous-integration)) make sure the package gets tested on multiple platforms (having the package built on both Travis and AppVeyor for instance).
 - Wherever possible when asking for changes, direct authors to automatic tools and online resources.
 - If initial checks show major gaps, request changes before assigning reviewers.
 - If the package raises a new issue for pyOpenSci policy, create an issue on [pyOpenSci's governance repo](https://github.com/pyOpenSci/governance)

@@ -1,39 +1,26 @@
 - title: Home
   file: intro
 
-- title: Before Review - Packaging Guide
-  file: packaging/packaging_guide
+- file: authoring/index
+  expand_sections: true  
+  sections:
+    - file: authoring/packaging_guide
+    - file: authoring/collaboration
+    - file: authoring/release
+
+- file: process/intro
   expand_sections: true
   sections:
-  - title: Questions and Help
-    file: packaging/presub_qs_help
+    - file: process/aims_scope
+    - file: process/guidelines
+    - file: process/coc
 
-- title: Peer Review Process
-  file: peer_review/review_intro
+- file: submissions/intro
   expand_sections: true
   sections:
-  - title: Aims and Scope
-    file: peer_review/aims_scope
-  - title: Review Process and Guidelines
-    file: peer_review/peer_review_proc
-  - title: Guide for Authors
-    file: peer_review/author_guide
-  - title: Guide for Reviewers
-    file: peer_review/reviewer_guide
-  - title: Guide for Editors
-    file: peer_review/editor_guide
-  - title: Community Code of Conduct
-    file: peer_review/coc
+  - file: submissions/author_guide
+  - file: submissions/reviewer_guide
+  - file: submissions/editor_guide
 
-- title: After Review - Maintenance 
-  file: maintenance/maintenance_intro
-  expand_sections: true
-  sections: 
-  - title: Collaboration
-    file: maintenance/collaboration
-  - title: Release
-    file: maintenance/release
-
-- title: Appendices - Templates
-  file: appendices/templates
+- file: appendices/templates
 
