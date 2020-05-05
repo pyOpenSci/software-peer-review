@@ -5,7 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta charset="utf-8" />
-    <title>The pyOpenSci Dev Guide &#8212; The pyOpenSci Developer Guide</title>
+    <title>The pyOpenSci Guide &#8212; The pyOpenSci Developer Guide</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
     <link href="_static/css/index.css" rel="stylesheet">
     <link rel="stylesheet" href="_static/sphinx-book-theme.css" type="text/css" />
@@ -30,14 +30,10 @@
     <link rel="shortcut icon" href="_static/logo.png"/>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Packaging Guide" href="packaging/packaging_guide.html" />
-
+    <link rel="next" title="Author’s Guide" href="authoring/index.html" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="docsearch:language" content="en">
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 <!-- Put requirejs at the end so it's always after bootstrap -->
 <!-- TODO: remove this once https://github.com/pandas-dev/pydata-sphinx-theme/pull/149 is merged -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js"></script>
@@ -72,43 +68,50 @@
 <nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
   
   <ul class="nav sidenav_l1">
-  <li class="active">
-    <a href="#">The pyOpenSci Dev Guide</a>
-  </li>
   <li class="">
-    <a href="packaging/packaging_guide.html">Before Review - Packaging Guide</a>
+    <a href="authoring/index.html">Author’s Guide</a>
   <ul class="nav sidenav_l2">
     <li class="">
-      <a href="packaging/presub_qs_help.html">Questions and Help</a>
+      <a href="authoring/packaging_guide.html">Packaging</a>
+    </li>
+    <li class="">
+      <a href="authoring/collaboration.html">Collaboration Guide</a>
+    </li>
+    <li class="">
+      <a href="authoring/release.html">Releasing a package</a>
     </li>
   </ul>
   </li>
   <li class="">
-    <a href="peer_review/aims_scope.html">Aims and Scope</a>
+    <a href="process/intro.html">The Peer Review Process</a>
+  <ul class="nav sidenav_l2">
+    <li class="">
+      <a href="process/aims_scope.html">Aims and Scope</a>
+    </li>
+    <li class="">
+      <a href="process/guidelines.html">Peer Review Policies</a>
+    </li>
+    <li class="">
+      <a href="process/coc.html">Community Code of Conduct</a>
+    </li>
+  </ul>
   </li>
   <li class="">
-    <a href="peer_review/peer_review_proc.html">Review Process and Guidelines</a>
+    <a href="submissions/intro.html">Submission Guides</a>
+  <ul class="nav sidenav_l2">
+    <li class="">
+      <a href="submissions/author_guide.html">Guide for Authors</a>
+    </li>
+    <li class="">
+      <a href="submissions/reviewer_guide.html">Guide for Reviewers</a>
+    </li>
+    <li class="">
+      <a href="submissions/editor_guide.html">Guide for Editors</a>
+    </li>
+  </ul>
   </li>
   <li class="">
-    <a href="peer_review/author_guide.html">Guide for Authors</a>
-  </li>
-  <li class="">
-    <a href="peer_review/reviewer_guide.html">Guide for Reviewers</a>
-  </li>
-  <li class="">
-    <a href="peer_review/editor_guide.html">Guide for Editors</a>
-  </li>
-  <li class="">
-    <a href="peer_review/coc.html">Community Code of Conduct</a>
-  </li>
-  <li class="">
-    <a href="maintenance/collaboration.html">Collaboration</a>
-  </li>
-  <li class="">
-    <a href="maintenance/release.html">Release</a>
-  </li>
-  <li class="">
-    <a href="appendices/templates.html">Appendices - Templates</a>
+    <a href="appendices/templates.html">Appendix: Templates</a>
   </li>
 </ul>
 </nav>
@@ -210,9 +213,11 @@
         
               <div>
                 
-  <div class="section" id="the-pyopensci-dev-guide">
-<h1>The pyOpenSci Dev Guide<a class="headerlink" href="#the-pyopensci-dev-guide" title="Permalink to this headline">¶</a></h1>
-<p>This is the development guide for pyOpenSci!</p>
+  <div class="section" id="the-pyopensci-guide">
+<h1>The pyOpenSci Guide<a class="headerlink" href="#the-pyopensci-guide" title="Permalink to this headline">¶</a></h1>
+<p>This is the guide for pyOpenSci! It contains information for authors looking for
+guidance in creating their packages, as well as information about the pyOpenSci review
+and editing process.</p>
 <div class="section" id="why-pyopensci">
 <h2>Why pyOpenSci?<a class="headerlink" href="#why-pyopensci" title="Permalink to this headline">¶</a></h2>
 <p>pyOpenSci promotes open and reproducible research through peer-review of scientific Python packages. We also build technical capacity by providing a curated repository of high-quality packages and enabling scientists to write and share their own software. We hope to foster a greater sense of community among scientific Python users so that we can help each other become better programmers and researchers.</p>
@@ -222,11 +227,11 @@
 <p>This guidebook contains information for pyOpenSci package authors, reviewers, and editors. It is organized into three sections:</p>
 <div class="section" id="before-review-packaging-guide">
 <h3>1. Before Review - Packaging Guide<a class="headerlink" href="#before-review-packaging-guide" title="Permalink to this headline">¶</a></h3>
-<p>Contains our guidelines for creating and testing scientific python packages. Before submitting a package for review, check to be sure that your software meets the basic <a class="reference external" href="packaging/packaging_guide#overview">requirements</a>. The section also contains recommendations and best practices that might be helpful as you are writing and preparing your package.</p>
+<p>Contains our guidelines for creating and testing scientific python packages. Before submitting a package for review, check to be sure that your software meets the basic <a class="reference external" href="authoring/packaging_guide#overview">requirements</a>. The section also contains recommendations and best practices that might be helpful as you are writing and preparing your package.</p>
 </div>
 <div class="section" id="peer-review-process">
 <h3>2. Peer Review Process<a class="headerlink" href="#peer-review-process" title="Permalink to this headline">¶</a></h3>
-<p>Outlines the pyOpenSci peer review process. This includes guidelines for submitting and reviewing packages, as well as our <a class="reference internal" href="peer_review/coc.html"><span class="doc">Code of Conduct</span></a>. The <a class="reference internal" href="peer_review/aims_scope.html"><span class="doc">Aims and Scope</span></a> section lays out what types of packages we are able to review. If you are unsure whether your package fits, we encourage you to submit a <a class="reference external" href="peer_review/author_guide#presubmission">presubmission inquiry</a></p>
+<p>Outlines the pyOpenSci peer review process. This includes guidelines for submitting and reviewing packages, as well as our <a class="reference internal" href="process/coc.html"><span class="doc">Code of Conduct</span></a>. The <a class="reference internal" href="process/aims_scope.html"><span class="doc">Aims and Scope</span></a> section lays out what types of packages we are able to review. If you are unsure whether your package fits, we encourage you to submit a <a class="reference external" href="submissions/author_guide#presubmission">presubmission inquiry</a></p>
 </div>
 <div class="section" id="after-review-maintenance">
 <h3>3. After Review - Maintenance<a class="headerlink" href="#after-review-maintenance" title="Permalink to this headline">¶</a></h3>
@@ -250,13 +255,13 @@
     
     <div class='prev-next-bottom'>
         
-    <a class='right-next' id="next-link" href="packaging/packaging_guide.html" title="next page">Packaging Guide</a>
+    <a class='right-next' id="next-link" href="authoring/index.html" title="next page">Author’s Guide</a>
 
     </div>
     <footer class="footer mt-5 mt-md-0">
   <div class="container">
     <p>
-          &copy; Copyright .<br/>
+          &copy; Copyright 2020.<br/>
         Created using <a href="http://sphinx-doc.org/">Sphinx</a> 2.4.4.<br/>
     </p>
   </div>
@@ -268,6 +273,16 @@
     </div>
 
     <script src="_static/js/index.js"></script>
+    
+    <!-- Google Analytics -->
+    <script>
+      window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+      ga('create', 'UA-165151943-1', 'auto');
+      ga('set', 'anonymizeIp', true);
+      ga('send', 'pageview');
+    </script>
+    <script async src='https://www.google-analytics.com/analytics.js'></script>
+    <!-- End Google Analytics -->
     
   </body>
 </html>

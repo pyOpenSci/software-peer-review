@@ -5,7 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta charset="utf-8" />
-    <title>Packaging Guide &#8212; The pyOpenSci Developer Guide</title>
+    <title>Packaging &#8212; The pyOpenSci Developer Guide</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
     <link href="../_static/css/index.css" rel="stylesheet">
     <link rel="stylesheet" href="../_static/sphinx-book-theme.css" type="text/css" />
@@ -30,15 +30,11 @@
     <link rel="shortcut icon" href="../_static/logo.png"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Presubmission Questions and Help" href="presub_qs_help.html" />
-    <link rel="prev" title="The pyOpenSci Dev Guide" href="../intro.html" />
-
+    <link rel="next" title="Collaboration Guide" href="collaboration.html" />
+    <link rel="prev" title="Author’s Guide" href="index.html" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="docsearch:language" content="en">
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 <!-- Put requirejs at the end so it's always after bootstrap -->
 <!-- TODO: remove this once https://github.com/pandas-dev/pydata-sphinx-theme/pull/149 is merged -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js"></script>
@@ -73,43 +69,50 @@
 <nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
   
   <ul class="nav sidenav_l1">
-  <li class="">
-    <a href="../intro.html">The pyOpenSci Dev Guide</a>
-  </li>
   <li class="active">
-    <a href="">Before Review - Packaging Guide</a>
+    <a href="index.html">Author’s Guide</a>
   <ul class="nav sidenav_l2">
+    <li class="active">
+      <a href="">Packaging</a>
+    </li>
     <li class="">
-      <a href="presub_qs_help.html">Questions and Help</a>
+      <a href="collaboration.html">Collaboration Guide</a>
+    </li>
+    <li class="">
+      <a href="release.html">Releasing a package</a>
     </li>
   </ul>
   </li>
   <li class="">
-    <a href="../peer_review/aims_scope.html">Aims and Scope</a>
+    <a href="../process/intro.html">The Peer Review Process</a>
+  <ul class="nav sidenav_l2">
+    <li class="">
+      <a href="../process/aims_scope.html">Aims and Scope</a>
+    </li>
+    <li class="">
+      <a href="../process/guidelines.html">Peer Review Policies</a>
+    </li>
+    <li class="">
+      <a href="../process/coc.html">Community Code of Conduct</a>
+    </li>
+  </ul>
   </li>
   <li class="">
-    <a href="../peer_review/peer_review_proc.html">Review Process and Guidelines</a>
+    <a href="../submissions/intro.html">Submission Guides</a>
+  <ul class="nav sidenav_l2">
+    <li class="">
+      <a href="../submissions/author_guide.html">Guide for Authors</a>
+    </li>
+    <li class="">
+      <a href="../submissions/reviewer_guide.html">Guide for Reviewers</a>
+    </li>
+    <li class="">
+      <a href="../submissions/editor_guide.html">Guide for Editors</a>
+    </li>
+  </ul>
   </li>
   <li class="">
-    <a href="../peer_review/author_guide.html">Guide for Authors</a>
-  </li>
-  <li class="">
-    <a href="../peer_review/reviewer_guide.html">Guide for Reviewers</a>
-  </li>
-  <li class="">
-    <a href="../peer_review/editor_guide.html">Guide for Editors</a>
-  </li>
-  <li class="">
-    <a href="../peer_review/coc.html">Community Code of Conduct</a>
-  </li>
-  <li class="">
-    <a href="../maintenance/collaboration.html">Collaboration</a>
-  </li>
-  <li class="">
-    <a href="../maintenance/release.html">Release</a>
-  </li>
-  <li class="">
-    <a href="../appendices/templates.html">Appendices - Templates</a>
+    <a href="../appendices/templates.html">Appendix: Templates</a>
   </li>
 </ul>
 </nav>
@@ -141,7 +144,7 @@
                 <!-- ipynb file if we had a myst markdown file -->
                 
                 <!-- Download raw file -->
-                <a class="dropdown-buttons" href="../_sources/packaging/packaging_guide.md.txt"><button type="button" class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip" data-placement="left">.md</button></a>
+                <a class="dropdown-buttons" href="../_sources/authoring/packaging_guide.md.txt"><button type="button" class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip" data-placement="left">.md</button></a>
                 <!-- Download PDF via print -->
                 <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF" onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
             </div>
@@ -149,7 +152,7 @@
         </div>
 
         <!-- Edit this page -->
-        <a class="edit-button" href="https://github.com/pyOpenSci/dev_guide/edit/master/packaging/packaging_guide.md"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="bottom" title="Edit this page"><i class="fas fa-pencil-alt"></i></button></a>
+        <a class="edit-button" href="https://github.com/pyOpenSci/dev_guide/edit/master/authoring/packaging_guide.md"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="bottom" title="Edit this page"><i class="fas fa-pencil-alt"></i></button></a>
 
         <!-- Full screen (wrap in <a> to have style consistency -->
         <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="bottom" onclick="toggleFullScreen()" title="Fullscreen mode"><i class="fas fa-expand"></i></button></a>
@@ -227,7 +230,7 @@
 
 
 <div class="tocsection editthispage">
-    <a href="https://github.com/pyOpenSci/dev_guide/edit/master/packaging/packaging_guide.md">
+    <a href="https://github.com/pyOpenSci/dev_guide/edit/master/authoring/packaging_guide.md">
         <i class="fas fa-pencil-alt"></i> Edit this page
     </a>
 </div>
@@ -239,8 +242,8 @@
         
               <div>
                 
-  <div class="section" id="packaging-guide">
-<h1>Packaging Guide<a class="headerlink" href="#packaging-guide" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="packaging">
+<h1>Packaging<a class="headerlink" href="#packaging" title="Permalink to this headline">¶</a></h1>
 <p>This section provides guidelines and tips for creating a Python package to submit for peer-review.</p>
 <div class="section" id="overview">
 <h2>Overview<a class="headerlink" href="#overview" title="Permalink to this headline">¶</a></h2>
@@ -362,8 +365,6 @@
 <div class="section" id="linting">
 <h3>Linting<a class="headerlink" href="#linting" title="Permalink to this headline">¶</a></h3>
 <p>An automatic linter (e.g. flake8) can help ensure your code is clean and free of syntax errors. These can be integrated with your CI.</p>
-<div class="toctree-wrapper compound">
-</div>
 </div>
 </div>
 </div>
@@ -377,14 +378,14 @@
     
     <div class='prev-next-bottom'>
         
-    <a class='left-prev' id="prev-link" href="../intro.html" title="previous page">The pyOpenSci Dev Guide</a>
-    <a class='right-next' id="next-link" href="presub_qs_help.html" title="next page">Presubmission Questions and Help</a>
+    <a class='left-prev' id="prev-link" href="index.html" title="previous page">Author’s Guide</a>
+    <a class='right-next' id="next-link" href="collaboration.html" title="next page">Collaboration Guide</a>
 
     </div>
     <footer class="footer mt-5 mt-md-0">
   <div class="container">
     <p>
-          &copy; Copyright .<br/>
+          &copy; Copyright 2020.<br/>
         Created using <a href="http://sphinx-doc.org/">Sphinx</a> 2.4.4.<br/>
     </p>
   </div>
@@ -396,6 +397,16 @@
     </div>
 
     <script src="../_static/js/index.js"></script>
+    
+    <!-- Google Analytics -->
+    <script>
+      window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+      ga('create', 'UA-165151943-1', 'auto');
+      ga('set', 'anonymizeIp', true);
+      ga('send', 'pageview');
+    </script>
+    <script async src='https://www.google-analytics.com/analytics.js'></script>
+    <!-- End Google Analytics -->
     
   </body>
 </html>

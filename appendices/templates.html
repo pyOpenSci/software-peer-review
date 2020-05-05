@@ -30,14 +30,10 @@
     <link rel="shortcut icon" href="../_static/logo.png"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="prev" title="Releasing a package" href="../maintenance/release.html" />
-
+    <link rel="prev" title="Guide for Editors" href="../submissions/editor_guide.html" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="docsearch:language" content="en">
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 <!-- Put requirejs at the end so it's always after bootstrap -->
 <!-- TODO: remove this once https://github.com/pandas-dev/pydata-sphinx-theme/pull/149 is merged -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js"></script>
@@ -73,42 +69,49 @@
   
   <ul class="nav sidenav_l1">
   <li class="">
-    <a href="../intro.html">The pyOpenSci Dev Guide</a>
-  </li>
-  <li class="">
-    <a href="../packaging/packaging_guide.html">Before Review - Packaging Guide</a>
+    <a href="../authoring/index.html">Author’s Guide</a>
   <ul class="nav sidenav_l2">
     <li class="">
-      <a href="../packaging/presub_qs_help.html">Questions and Help</a>
+      <a href="../authoring/packaging_guide.html">Packaging</a>
+    </li>
+    <li class="">
+      <a href="../authoring/collaboration.html">Collaboration Guide</a>
+    </li>
+    <li class="">
+      <a href="../authoring/release.html">Releasing a package</a>
     </li>
   </ul>
   </li>
   <li class="">
-    <a href="../peer_review/aims_scope.html">Aims and Scope</a>
+    <a href="../process/intro.html">The Peer Review Process</a>
+  <ul class="nav sidenav_l2">
+    <li class="">
+      <a href="../process/aims_scope.html">Aims and Scope</a>
+    </li>
+    <li class="">
+      <a href="../process/guidelines.html">Peer Review Policies</a>
+    </li>
+    <li class="">
+      <a href="../process/coc.html">Community Code of Conduct</a>
+    </li>
+  </ul>
   </li>
   <li class="">
-    <a href="../peer_review/peer_review_proc.html">Review Process and Guidelines</a>
-  </li>
-  <li class="">
-    <a href="../peer_review/author_guide.html">Guide for Authors</a>
-  </li>
-  <li class="">
-    <a href="../peer_review/reviewer_guide.html">Guide for Reviewers</a>
-  </li>
-  <li class="">
-    <a href="../peer_review/editor_guide.html">Guide for Editors</a>
-  </li>
-  <li class="">
-    <a href="../peer_review/coc.html">Community Code of Conduct</a>
-  </li>
-  <li class="">
-    <a href="../maintenance/collaboration.html">Collaboration</a>
-  </li>
-  <li class="">
-    <a href="../maintenance/release.html">Release</a>
+    <a href="../submissions/intro.html">Submission Guides</a>
+  <ul class="nav sidenav_l2">
+    <li class="">
+      <a href="../submissions/author_guide.html">Guide for Authors</a>
+    </li>
+    <li class="">
+      <a href="../submissions/reviewer_guide.html">Guide for Reviewers</a>
+    </li>
+    <li class="">
+      <a href="../submissions/editor_guide.html">Guide for Editors</a>
+    </li>
+  </ul>
   </li>
   <li class="active">
-    <a href="">Appendices - Templates</a>
+    <a href="">Appendix: Templates</a>
   </li>
 </ul>
 </nav>
@@ -269,7 +272,7 @@ The README should include, from top to bottom:
 - [ ] **Performance:** Any performance claims of the software been confirmed.
 - [ ] **Automated tests:** Tests cover essential functions of the package and a reasonable range of inputs and conditions. All tests pass on the local machine.
 - [ ] **Continuous Integration:** Has continuous integration, such as Travis CI, AppVeyor, CircleCI, and/or others.
-- [ ] **Packaging guidelines**: The package conforms to the pyOpenSci [packaging guidelines](https://www.pyopensci.org/dev_guide/packaging/packaging_guide.html).
+- [ ] **Packaging guidelines**: The package conforms to the pyOpenSci [packaging guidelines](https://www.pyopensci.org/dev_guide/authoring/packaging_guide.html).
 
 #### For packages co-submitting to JOSS
 
@@ -305,7 +308,7 @@ Estimated hours spent reviewing:
 <p>Hi, this is [EDITOR]. [FRIENDLY BANTER]. I’m writing to ask if you would be willing to review a package for pyOpenSci. As you probably know, pyOpenSci conducts peer review of Python packages contributed to our collection in a manner similar to journals.</p>
 <p>The package, [PACKAGE] by [AUTHOR(S)], does [FUNCTION]. You can find it on GitHub here: [REPO LINK]. We conduct our open review process via GitHub as well, here: [ONBOARDING ISSUE]</p>
 <p>If you accept, note that we ask reviewers to complete reviews in three weeks. (We’ve found it takes a similar amount of time to review a package as an academic paper.)</p>
-<p>Our <a class="reference external" href="https://pyopensci.github.io/dev_guide/peer_review/reviewer_guide.html">reviewers guide</a> details what we look for in a package review, and includes links to example reviews. Our standards are detailed in our <a class="reference external" href="https://pyopensci.github.io/dev_guide/packaging/packaging_guide.html">packaging guide</a>, and we provide reviewer <a class="reference external" href="https://pyopensci.github.io/dev_guide/appendices/templates.html#review-template">template</a> for you to use. Please make sure you do not have a conflict of interest preventing you from reviewing this package. If you have questions or feedback, feel free to ask me.</p>
+<p>Our <a class="reference external" href="https://pyopensci.github.io/dev_guide/peer_review/reviewer_guide.html">reviewers guide</a> details what we look for in a package review, and includes links to example reviews. Our standards are detailed in our <a class="reference external" href="https://pyopensci.github.io/dev_guide/authoring/packaging_guide.html">packaging guide</a>, and we provide reviewer <a class="reference external" href="https://pyopensci.github.io/dev_guide/appendices/templates.html#review-template">template</a> for you to use. Please make sure you do not have a conflict of interest preventing you from reviewing this package. If you have questions or feedback, feel free to ask me.</p>
 <p>{IF APPLICABLE: The authors have also chosen to jointly submit their package to the Journal of Open Source Software, so this package includes a short <code class="docutils literal notranslate"><span class="pre">paper.md</span></code> manuscript describing the software that we ask you include in your review.}</p>
 <p>Are you able to review? If you can not, suggestions for alternate reviewers are always helpful. If I don’t hear from you within a week, I will assume you are unable to
 review at this time.</p>
@@ -342,13 +345,13 @@ We&#39;ve started putting together a gitbook with our best practice and tips, [t
     
     <div class='prev-next-bottom'>
         
-    <a class='left-prev' id="prev-link" href="../maintenance/release.html" title="previous page">Releasing a package</a>
+    <a class='left-prev' id="prev-link" href="../submissions/editor_guide.html" title="previous page">Guide for Editors</a>
 
     </div>
     <footer class="footer mt-5 mt-md-0">
   <div class="container">
     <p>
-          &copy; Copyright .<br/>
+          &copy; Copyright 2020.<br/>
         Created using <a href="http://sphinx-doc.org/">Sphinx</a> 2.4.4.<br/>
     </p>
   </div>
@@ -360,6 +363,16 @@ We&#39;ve started putting together a gitbook with our best practice and tips, [t
     </div>
 
     <script src="../_static/js/index.js"></script>
+    
+    <!-- Google Analytics -->
+    <script>
+      window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+      ga('create', 'UA-165151943-1', 'auto');
+      ga('set', 'anonymizeIp', true);
+      ga('send', 'pageview');
+    </script>
+    <script async src='https://www.google-analytics.com/analytics.js'></script>
+    <!-- End Google Analytics -->
     
   </body>
 </html>

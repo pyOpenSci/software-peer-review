@@ -1,6 +1,6 @@
 # Guide for Reviewers
 
-Please be respectful and kind to the authors in your reviews. Our [code of conduct](coc) is mandatory for everyone involved in our review process.
+Please be respectful and kind to the authors in your reviews. Our [code of conduct](../process/coc) is mandatory for everyone involved in our review process.
 
 ## Preparing Your Review
 
@@ -10,7 +10,7 @@ When you are assigned to review a package, you are expected to submit your revie
 
 To review a package, please begin by copying our [review template](../appendices/templates#review-template) and using it as a high-level checklist. In addition to checking off the minimum criteria, we ask that you provide general comments addressing the following:
 - Does the code comply with general principles in the [Mozilla reviewing guide](https://mozillascience.github.io/codeReview/review.html)?
-- Does the package comply with the [pyOpenSci packaging guide](../packaging/packaging_guide)?
+- Does the package comply with the [pyOpenSci packaging guide](../authoring/packaging_guide)?
 - Are there improvements that could be made to the code style?
 - Is there code duplication in the package that should be reduced?
 - Are there user interface improvements that could be made?

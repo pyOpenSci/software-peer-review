@@ -32,12 +32,8 @@
     <link rel="index" title="Index" href="#" />
     <link rel="search" title="Search" href="search.html" />
 
-
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="docsearch:language" content="en">
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 <!-- Put requirejs at the end so it's always after bootstrap -->
 <!-- TODO: remove this once https://github.com/pandas-dev/pydata-sphinx-theme/pull/149 is merged -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js"></script>
@@ -73,42 +69,49 @@
   
   <ul class="nav sidenav_l1">
   <li class="">
-    <a href="intro.html">The pyOpenSci Dev Guide</a>
-  </li>
-  <li class="">
-    <a href="packaging/packaging_guide.html">Before Review - Packaging Guide</a>
+    <a href="authoring/index.html">Author’s Guide</a>
   <ul class="nav sidenav_l2">
     <li class="">
-      <a href="packaging/presub_qs_help.html">Questions and Help</a>
+      <a href="authoring/packaging_guide.html">Packaging</a>
+    </li>
+    <li class="">
+      <a href="authoring/collaboration.html">Collaboration Guide</a>
+    </li>
+    <li class="">
+      <a href="authoring/release.html">Releasing a package</a>
     </li>
   </ul>
   </li>
   <li class="">
-    <a href="peer_review/aims_scope.html">Aims and Scope</a>
+    <a href="process/intro.html">The Peer Review Process</a>
+  <ul class="nav sidenav_l2">
+    <li class="">
+      <a href="process/aims_scope.html">Aims and Scope</a>
+    </li>
+    <li class="">
+      <a href="process/guidelines.html">Peer Review Policies</a>
+    </li>
+    <li class="">
+      <a href="process/coc.html">Community Code of Conduct</a>
+    </li>
+  </ul>
   </li>
   <li class="">
-    <a href="peer_review/peer_review_proc.html">Review Process and Guidelines</a>
+    <a href="submissions/intro.html">Submission Guides</a>
+  <ul class="nav sidenav_l2">
+    <li class="">
+      <a href="submissions/author_guide.html">Guide for Authors</a>
+    </li>
+    <li class="">
+      <a href="submissions/reviewer_guide.html">Guide for Reviewers</a>
+    </li>
+    <li class="">
+      <a href="submissions/editor_guide.html">Guide for Editors</a>
+    </li>
+  </ul>
   </li>
   <li class="">
-    <a href="peer_review/author_guide.html">Guide for Authors</a>
-  </li>
-  <li class="">
-    <a href="peer_review/reviewer_guide.html">Guide for Reviewers</a>
-  </li>
-  <li class="">
-    <a href="peer_review/editor_guide.html">Guide for Editors</a>
-  </li>
-  <li class="">
-    <a href="peer_review/coc.html">Community Code of Conduct</a>
-  </li>
-  <li class="">
-    <a href="maintenance/collaboration.html">Collaboration</a>
-  </li>
-  <li class="">
-    <a href="maintenance/release.html">Release</a>
-  </li>
-  <li class="">
-    <a href="appendices/templates.html">Appendices - Templates</a>
+    <a href="appendices/templates.html">Appendix: Templates</a>
   </li>
 </ul>
 </nav>
@@ -186,7 +189,7 @@
     <footer class="footer mt-5 mt-md-0">
   <div class="container">
     <p>
-          &copy; Copyright .<br/>
+          &copy; Copyright 2020.<br/>
         Created using <a href="http://sphinx-doc.org/">Sphinx</a> 2.4.4.<br/>
     </p>
   </div>
@@ -198,6 +201,16 @@
     </div>
 
     <script src="_static/js/index.js"></script>
+    
+    <!-- Google Analytics -->
+    <script>
+      window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+      ga('create', 'UA-165151943-1', 'auto');
+      ga('set', 'anonymizeIp', true);
+      ga('send', 'pageview');
+    </script>
+    <script async src='https://www.google-analytics.com/analytics.js'></script>
+    <!-- End Google Analytics -->
     
   </body>
 </html>

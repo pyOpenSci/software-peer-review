@@ -30,15 +30,11 @@
     <link rel="shortcut icon" href="../_static/logo.png"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Community Code of Conduct" href="coc.html" />
+    <link rel="next" title="Appendix: Templates" href="../appendices/templates.html" />
     <link rel="prev" title="Guide for Reviewers" href="reviewer_guide.html" />
-
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="docsearch:language" content="en">
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 <!-- Put requirejs at the end so it's always after bootstrap -->
 <!-- TODO: remove this once https://github.com/pandas-dev/pydata-sphinx-theme/pull/149 is merged -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js"></script>
@@ -74,42 +70,49 @@
   
   <ul class="nav sidenav_l1">
   <li class="">
-    <a href="../intro.html">The pyOpenSci Dev Guide</a>
-  </li>
-  <li class="">
-    <a href="../packaging/packaging_guide.html">Before Review - Packaging Guide</a>
+    <a href="../authoring/index.html">Author’s Guide</a>
   <ul class="nav sidenav_l2">
     <li class="">
-      <a href="../packaging/presub_qs_help.html">Questions and Help</a>
+      <a href="../authoring/packaging_guide.html">Packaging</a>
+    </li>
+    <li class="">
+      <a href="../authoring/collaboration.html">Collaboration Guide</a>
+    </li>
+    <li class="">
+      <a href="../authoring/release.html">Releasing a package</a>
     </li>
   </ul>
   </li>
   <li class="">
-    <a href="aims_scope.html">Aims and Scope</a>
-  </li>
-  <li class="">
-    <a href="peer_review_proc.html">Review Process and Guidelines</a>
-  </li>
-  <li class="">
-    <a href="author_guide.html">Guide for Authors</a>
-  </li>
-  <li class="">
-    <a href="reviewer_guide.html">Guide for Reviewers</a>
+    <a href="../process/intro.html">The Peer Review Process</a>
+  <ul class="nav sidenav_l2">
+    <li class="">
+      <a href="../process/aims_scope.html">Aims and Scope</a>
+    </li>
+    <li class="">
+      <a href="../process/guidelines.html">Peer Review Policies</a>
+    </li>
+    <li class="">
+      <a href="../process/coc.html">Community Code of Conduct</a>
+    </li>
+  </ul>
   </li>
   <li class="active">
-    <a href="">Guide for Editors</a>
+    <a href="intro.html">Submission Guides</a>
+  <ul class="nav sidenav_l2">
+    <li class="">
+      <a href="author_guide.html">Guide for Authors</a>
+    </li>
+    <li class="">
+      <a href="reviewer_guide.html">Guide for Reviewers</a>
+    </li>
+    <li class="active">
+      <a href="">Guide for Editors</a>
+    </li>
+  </ul>
   </li>
   <li class="">
-    <a href="coc.html">Community Code of Conduct</a>
-  </li>
-  <li class="">
-    <a href="../maintenance/collaboration.html">Collaboration</a>
-  </li>
-  <li class="">
-    <a href="../maintenance/release.html">Release</a>
-  </li>
-  <li class="">
-    <a href="../appendices/templates.html">Appendices - Templates</a>
+    <a href="../appendices/templates.html">Appendix: Templates</a>
   </li>
 </ul>
 </nav>
@@ -141,7 +144,7 @@
                 <!-- ipynb file if we had a myst markdown file -->
                 
                 <!-- Download raw file -->
-                <a class="dropdown-buttons" href="../_sources/peer_review/editor_guide.md.txt"><button type="button" class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip" data-placement="left">.md</button></a>
+                <a class="dropdown-buttons" href="../_sources/submissions/editor_guide.md.txt"><button type="button" class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip" data-placement="left">.md</button></a>
                 <!-- Download PDF via print -->
                 <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF" onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
             </div>
@@ -149,7 +152,7 @@
         </div>
 
         <!-- Edit this page -->
-        <a class="edit-button" href="https://github.com/pyOpenSci/dev_guide/edit/master/peer_review/editor_guide.md"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="bottom" title="Edit this page"><i class="fas fa-pencil-alt"></i></button></a>
+        <a class="edit-button" href="https://github.com/pyOpenSci/dev_guide/edit/master/submissions/editor_guide.md"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="bottom" title="Edit this page"><i class="fas fa-pencil-alt"></i></button></a>
 
         <!-- Full screen (wrap in <a> to have style consistency -->
         <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="bottom" onclick="toggleFullScreen()" title="Fullscreen mode"><i class="fas fa-expand"></i></button></a>
@@ -213,7 +216,7 @@
 
 
 <div class="tocsection editthispage">
-    <a href="https://github.com/pyOpenSci/dev_guide/edit/master/peer_review/editor_guide.md">
+    <a href="https://github.com/pyOpenSci/dev_guide/edit/master/submissions/editor_guide.md">
         <i class="fas fa-pencil-alt"></i> Edit this page
     </a>
 </div>
@@ -249,7 +252,7 @@ the editorial board. The Editor in Chief fulfills the following roles:</p>
 <li><p>Check against policies for <a class="reference external" href="aims_scope#package-categories">fit</a> and <a class="reference external" href="aims_scope#package-overlap">overlap</a>. If reject, see <a class="reference external" href="#responding-to-out-of-scope-submissions">this section</a> about how to respond.</p></li>
 <li><p>Check that mandatory parts of template are complete.  If not, direct authors toward appropriate instructions.</p></li>
 <li><p>Run automated tests: spelling, linting, etc … will be filled in later.</p></li>
-<li><p>For packages needing continuous integration on multiple platforms (<a class="reference external" href="../packaging/packaging_guide#continuous-integration">criteria in this section of the packaging chapter</a>) make sure the package gets tested on multiple platforms (having the package built on both Travis and AppVeyor for instance).</p></li>
+<li><p>For packages needing continuous integration on multiple platforms (<a class="reference external" href="../authoring/packaging_guide#continuous-integration">criteria in this section of the packaging chapter</a>) make sure the package gets tested on multiple platforms (having the package built on both Travis and AppVeyor for instance).</p></li>
 <li><p>Wherever possible when asking for changes, direct authors to automatic tools and online resources.</p></li>
 <li><p>If initial checks show major gaps, request changes before assigning reviewers.</p></li>
 <li><p>If the package raises a new issue for pyOpenSci policy, create an issue on <a class="reference external" href="https://github.com/pyOpenSci/governance">pyOpenSci’s governance repo</a></p></li>
@@ -361,13 +364,13 @@ issue with the following format:</p>
     <div class='prev-next-bottom'>
         
     <a class='left-prev' id="prev-link" href="reviewer_guide.html" title="previous page">Guide for Reviewers</a>
-    <a class='right-next' id="next-link" href="coc.html" title="next page">Community Code of Conduct</a>
+    <a class='right-next' id="next-link" href="../appendices/templates.html" title="next page">Appendix: Templates</a>
 
     </div>
     <footer class="footer mt-5 mt-md-0">
   <div class="container">
     <p>
-          &copy; Copyright .<br/>
+          &copy; Copyright 2020.<br/>
         Created using <a href="http://sphinx-doc.org/">Sphinx</a> 2.4.4.<br/>
     </p>
   </div>
@@ -379,6 +382,16 @@ issue with the following format:</p>
     </div>
 
     <script src="../_static/js/index.js"></script>
+    
+    <!-- Google Analytics -->
+    <script>
+      window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+      ga('create', 'UA-165151943-1', 'auto');
+      ga('set', 'anonymizeIp', true);
+      ga('send', 'pageview');
+    </script>
+    <script async src='https://www.google-analytics.com/analytics.js'></script>
+    <!-- End Google Analytics -->
     
   </body>
 </html>

@@ -176,6 +176,14 @@ dl.footnote dt.label {
 dl.footnote dd p {
   padding-left: 1.5em; }
 
+dl.citation {
+  margin-left: 5%; }
+
+a.bibtex.internal {
+  /* margin-bottom: .1em; */
+  font-size: .8em;
+  vertical-align: top; }
+
 /*********************************************
 * Top Bar *
 *********************************************/
@@ -280,7 +288,7 @@ button.topbarbtn img {
 *********************************************/
 .bd-toc {
   padding: 0px !important;
-  overflow-y: hidden !important;
+  overflow-y: hidden;
   background: white;
   right: 0;
   z-index: 999;
@@ -300,7 +308,8 @@ button.topbarbtn img {
       .bd-toc nav {
         opacity: 1; } }
   .bd-toc:hover, .bd-toc.show {
-    height: auto !important; }
+    overflow-y: visible;
+    height: auto; }
     .bd-toc:hover nav, .bd-toc.show nav {
       opacity: 1; }
   .bd-toc .tocsection {
