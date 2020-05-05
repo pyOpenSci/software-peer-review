@@ -143,3 +143,20 @@ To-dos:
 
 We've started putting together a gitbook with our best practice and tips, [this chapter](https://pyopensci.github.io/dev_guide/maintenance/maintenance_intro.html) starts the 3rd section that's about guidance for after onboarding. Please tell us what could be improved, the corresponding repo is [here](https://github.com/pyOpenSci/dev_guide).
 ```
+
+## Generic new member template
+
+A template for inviting others to join the pyOpenSci community calls and otherwise
+get engaged.
+
+```
+< short greeting />
+
+I'm writing to see if you'd be interested in participating with pyOpenSci, a new community around improving the quality of software in the scientific python stack.
+
+pyOpenSci provides resources, mentoring, and documentation for making scientific python packages more useful and maintainable. It builds off of the successful rOpenSci model, with a Python flavor. It primarily coordinates a review process by which experienced developers in the scientific python ecosystem can provide feedback and suggestions to other (usually fairly small) packages.
+
+You've been in the scientific Python community for some time now, and I think you'd be a great part of the pyOpenSci community. Would you be interested in joining us? Participation can be as small or large as you wish - for example, you could submit your own package for review in pyOpenSci, offer to be a reviewer of someone else's package, or begin attending pyOpenSci planning meetings as we build and refine our processes. We'd just be happy to have you around :-)
+
+< short goodbye />
+```

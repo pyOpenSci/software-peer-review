@@ -30,13 +30,15 @@ For info on what comes with our cookiecutter, check out the rest of the [docs](h
 
 
 ## Requirements
-This section has descriptions of all the packaging requirements for pyOpenSci. Most of the sections also include Good/Better/Best recommendations. Good meets the requirements, but going beyond the minimum can make package maintenance easier.
+This section has descriptions of all the packaging requirements for pyOpenSci.
+Most of the sections also include Good/Better/Best recommendations.
+Good meets the requirements, but going beyond the minimum can make package maintenance easier.
 
 ### README
 All packages should have a README.md in their root directory. The README should include, from top to bottom:
 
 - The package name
-- Badges for continuous integration and test coverage, the badge for pyOpenSci peer-review once it has started (see below), a repostatus.org badge, and any other badges. If the README has many more badges, you might want to consider using a table for badges, see this example, that one and that one. Such a table shoud be more wide than high.
+- Badges for continuous integration and test coverage. See [the badges section](badges) for more information.
 - Short description of goals of package, with descriptive links to all vignettes (rendered, i.e. readable, cf the documentation website section) unless the package is small and there’s only one vignette repeating the README.
 - Installation instructions
 - Any additional setup required (authentication tokens, etc)
@@ -102,5 +104,15 @@ pyOpenSci encourages authors to consult [PEP 8](https://www.python.org/dev/peps/
 ### Linting
 An automatic linter (e.g. flake8) can help ensure your code is clean and free of syntax errors. These can be integrated with your CI.
 
+### Badges
 
+Badges are a useful way to draw attention to the quality of your project and to
+assure users that it is well-designed, tested, and maintained. Here are several
+badges that you may wish to include in your repository:
 
+* [pyOpenSci](https://github.com/pyOpenSci/software-review/issues/issue-number): [![pyOpenSci](https://tinyurl.com/y22nb8up)](https://github.com/pyOpenSci/software-review/issues/issue-number)
+* [travis-ci](https://docs.travis-ci.com/user/status-images/): ![](https://travis-ci.com/travis-ci/travis-web.svg?branch=master)
+* [AppVeyor](https://www.appveyor.com/docs/status-badges/): ![](https://ci.appveyor.com/api/projects/status/32r7s2skrgm9ubva?svg=true)
+
+If you'd like to add more badges and links to this guide, please
+open an issue.
