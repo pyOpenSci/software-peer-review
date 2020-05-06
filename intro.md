@@ -11,7 +11,7 @@ pyOpenSci promotes open and reproducible research through peer-review of scienti
 This guidebook contains information for pyOpenSci package authors, reviewers, and editors. It is organized into three sections:
 
 ### 1. Before Review - Packaging Guide
-Contains our guidelines for creating and testing scientific python packages. Before submitting a package for review, check to be sure that your software meets the basic [requirements](authoring/packaging_guide#overview). The section also contains recommendations and best practices that might be helpful as you are writing and preparing your package.
+Contains our guidelines for creating and testing scientific python packages. Before submitting a package for review, check to be sure that your software meets the basic [requirements](authoring/overview#overview). The section also contains recommendations and best practices that might be helpful as you are writing and preparing your package.
 
 ### 2. Peer Review Process
 Outlines the pyOpenSci peer review process. This includes guidelines for submitting and reviewing packages, as well as our [Code of Conduct](process/coc). The [Aims and Scope](process/aims_scope) section lays out what types of packages we are able to review. If you are unsure whether your package fits, we encourage you to submit a [presubmission inquiry](submissions/author_guide#presubmission)

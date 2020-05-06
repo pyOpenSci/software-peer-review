@@ -11,7 +11,7 @@ pyOpenSci encourages authors to consult [PEP 8](https://www.python.org/dev/peps/
 
 ## Packaging Guide
 
-The [first section of this guidebook](packaging_guide) has info for creating and packaging your Python project for review and release. The guide also includes info on the basic requirements for pyOpenSci: testing, continuous integration, documentation, etc.
+The [first section of this guidebook](overview) has info for creating and packaging your Python project for review and release. The guide also includes info on the basic requirements for pyOpenSci: testing, continuous integration, documentation, etc.
 
 We also have a [section](release) about releasing your package on PyPI, but we encourage you to wait until after the pyOpenSci review process has finished before uploading to PyPI. This makes it easier to incorporate changes/suggestions from the reviews.
 

@@ -1,7 +1,7 @@
 # Peer Review Policies
 
 ## Review Process Guidelines
-- Packages are reviewed for quality, fit, documentation, clarity and the review process is quite similar to a manuscript review (see our [packaging guide](../authoring/packaging_guide) and [reviewing guide](../submissions/reviewer_guide) for more details). Unlike a manuscript review, this process will be an ongoing conversation.
+- Packages are reviewed for quality, fit, documentation, clarity and the review process is quite similar to a manuscript review (see our [packaging guide](../authoring/overview) and [reviewing guide](../submissions/reviewer_guide) for more details). Unlike a manuscript review, this process will be an ongoing conversation.
 - Once all major issues and questions, and those addressable with reasonable effort, are resolved, the editor assigned to a package will make a decision (accept, hold, or reject). Rejections are usually done early (before the review process begins, see the aims and scope section), but in rare cases a package may also be not onboarded after review & revision. It is ultimately editor’s decision on whether or not to reject the package based on how the reviews are addressed.
 - Communication between authors, reviewers and editors will first and foremost take place on GitHub, although you can choose to contact the editor by email. When submitting a package, please make sure your GitHub notification settings make it unlikely you will miss a comment.
 - The author can choose to have their submission put on hold (editor applies the holding label). The holding status will be revisited every 3 months, and after one year the issue will be closed.

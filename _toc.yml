@@ -2,9 +2,10 @@
   file: intro
 
 - file: authoring/index
-  expand_sections: true  
+  expand_sections: true
   sections:
-    - file: authoring/packaging_guide
+    - file: authoring/overview
+    - file: authoring/testing
     - file: authoring/collaboration
     - file: authoring/release
 
@@ -23,4 +24,5 @@
   - file: submissions/editor_guide
 
 - file: appendices/templates
+- file: appendices/glossary
 
