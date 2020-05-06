@@ -34,7 +34,7 @@ If your problem is _recruiting_ collaborators, you can post an open call like Ji
 
 You could implement the "[gitflow](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow)" philosophy as explained by Amanda Dobbyn in [this rOpenSci blog post](https://ropensci.org/blog/2018/04/20/monkeydo/).
 
-One particular aspect of working with collaborators is reviewing pull requests. Even if not adopting gitflow it might make sense for repo collaborators to make PRs and have them reviewed, and in general PRs by external developers will need to be assessed. Sometimes you'll be fine just reading the changes and trusting [Continuous integration](../authoring/packaging_guide#continuous-integration). Sometimes you'll need to dive deeper, e.g. by downloading a copy of the branch that the PR was created from.
+One particular aspect of working with collaborators is reviewing pull requests. Even if not adopting gitflow it might make sense for repo collaborators to make PRs and have them reviewed, and in general PRs by external developers will need to be assessed. Sometimes you'll be fine just reading the changes and trusting [Continuous integration](../authoring/overview#continuous-integration). Sometimes you'll need to dive deeper, e.g. by downloading a copy of the branch that the PR was created from.
 
 (attributions=)
 ### Be generous with attributions

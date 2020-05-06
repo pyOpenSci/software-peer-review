@@ -1,8 +1,7 @@
-# Packaging
+# Overview
 
 This section provides guidelines and tips for creating a Python package to submit for peer-review.
 
-## Overview
 pyOpenSci packages must:
 - Have a clear README _including_ installation instructions.
 - Contain full documentation for any user-facing functions.
@@ -10,7 +9,9 @@ pyOpenSci packages must:
 - Use continuous integration.
 - Use an OSI approved software license.
 
-Do not be intimidated if you haven't created a Python package before. We have a template and guidelines to help you meet all of these requirements! Below, we'll also go into more detail on each of the requirements.
+Do not be intimidated if you haven't created a Python package before. We have a template
+and guidelines to help you meet all of these requirements! Below, we'll also go into
+more detail on each of the requirements.
 
 ## Project Template
 To help you package your project, we provide a template ["cookiecutter" repository](https://github.com/pyOpenSci/cookiecutter-pyopensci). The cookiecutter allows you to start a project with continuous integration, testing, and auto-documentation already in place, but with your project's details already filled in. You don't have to use the template as a starting point, but it may help if you are not experienced with setting up tests, continuous integration, etc.
@@ -38,7 +39,7 @@ Good meets the requirements, but going beyond the minimum can make package maint
 All packages should have a README.md in their root directory. The README should include, from top to bottom:
 
 - The package name
-- Badges for continuous integration and test coverage. See [the badges section](badges) for more information.
+- Badges for continuous integration and test coverage. See [the badges section](#badges) for more information.
 - Short description of goals of package, with descriptive links to all vignettes (rendered, i.e. readable, cf the documentation website section) unless the package is small and there’s only one vignette repeating the README.
 - Installation instructions
 - Any additional setup required (authentication tokens, etc)
@@ -107,12 +108,8 @@ An automatic linter (e.g. flake8) can help ensure your code is clean and free of
 ### Badges
 
 Badges are a useful way to draw attention to the quality of your project and to
-assure users that it is well-designed, tested, and maintained. Here are several
-badges that you may wish to include in your repository:
+assure users that it is well-designed, tested, and maintained.
+It is common to provide a collection of badges in a table for others
+to quickly browse.
 
-* [pyOpenSci](https://github.com/pyOpenSci/software-review/issues/issue-number): [![pyOpenSci](https://tinyurl.com/y22nb8up)](https://github.com/pyOpenSci/software-review/issues/issue-number)
-* [travis-ci](https://docs.travis-ci.com/user/status-images/): ![](https://travis-ci.com/travis-ci/travis-web.svg?branch=master)
-* [AppVeyor](https://www.appveyor.com/docs/status-badges/): ![](https://ci.appveyor.com/api/projects/status/32r7s2skrgm9ubva?svg=true)
-
-If you'd like to add more badges and links to this guide, please
-open an issue.
+[See this example of a badge table](https://github.com/ropensci/drake). Such a table should be more wide than high. (Note that the badge for pyOpenSci peer-review will be provided upon acceptance.)

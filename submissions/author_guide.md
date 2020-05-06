@@ -21,4 +21,4 @@ If your package does not clearly fit within one of the categories outlined in ou
 
 ## Package Prep Help
 
-If you would like help preparing your package for review, create a [Help Request issue](https://github.com/pyOpenSci/software-review/issues/new/choose) in the software-review repo. We can assign someone to help you prep your code and add things like testing, documentation, and/or continuous integration. We're happy to help. Also check out the rest of our [Packaging Guide](../authoring/packaging_guide), which may help answer some of your questions about packaging your code.
+If you would like help preparing your package for review, create a [Help Request issue](https://github.com/pyOpenSci/software-review/issues/new/choose) in the software-review repo. We can assign someone to help you prep your code and add things like testing, documentation, and/or continuous integration. We're happy to help. Also check out the rest of our [Packaging Guide](../authoring/overview), which may help answer some of your questions about packaging your code.

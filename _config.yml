@@ -2,7 +2,7 @@
 title: The pyOpenSci Developer Guide
 author: The pyOpenSci Community
 logo: images/logo/logo.png
-exclude_patterns: "README.md"
+exclude_patterns: ["README.md"]
 
 repository:
   url: https://github.com/pyOpenSci/dev_guide
