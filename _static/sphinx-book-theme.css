@@ -88,9 +88,11 @@ main.bd-content {
       font-size: .9em; }
   main.bd-content #main-content div.alert {
     padding-bottom: .75em; }
+    main.bd-content #main-content div.alert p:last-child {
+      margin-bottom: 0; }
     main.bd-content #main-content div.alert p.admonition-title {
       margin-bottom: .2em;
-      font-size: 1.1em; }
+      font-weight: bold; }
       main.bd-content #main-content div.alert p.admonition-title::after {
         font-family: "Font Awesome 5 Free";
         margin-left: 0.5em;

@@ -35,9 +35,6 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="docsearch:language" content="en">
-<!-- Put requirejs at the end so it's always after bootstrap -->
-<!-- TODO: remove this once https://github.com/pandas-dev/pydata-sphinx-theme/pull/149 is merged -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js"></script>
 
 
 
@@ -73,7 +70,10 @@
     <a href="../authoring/index.html">Author’s Guide</a>
   <ul class="nav sidenav_l2">
     <li class="">
-      <a href="../authoring/packaging_guide.html">Packaging</a>
+      <a href="../authoring/overview.html">Overview</a>
+    </li>
+    <li class="">
+      <a href="../authoring/testing.html">Testing your package</a>
     </li>
     <li class="">
       <a href="../authoring/collaboration.html">Collaboration Guide</a>
@@ -113,6 +113,9 @@
   </li>
   <li class="">
     <a href="../appendices/templates.html">Appendix: Templates</a>
+  </li>
+  <li class="">
+    <a href="../appendices/glossary.html">Glossary</a>
   </li>
 </ul>
 </nav>
@@ -225,7 +228,7 @@
 <p>To review a package, please begin by copying our <a class="reference external" href="../appendices/templates#review-template">review template</a> and using it as a high-level checklist. In addition to checking off the minimum criteria, we ask that you provide general comments addressing the following:</p>
 <ul class="simple">
 <li><p>Does the code comply with general principles in the <a class="reference external" href="https://mozillascience.github.io/codeReview/review.html">Mozilla reviewing guide</a>?</p></li>
-<li><p>Does the package comply with the <a class="reference internal" href="../authoring/packaging_guide.html"><span class="doc">pyOpenSci packaging guide</span></a>?</p></li>
+<li><p>Does the package comply with the <a class="reference internal" href="../authoring/overview.html"><span class="doc">pyOpenSci packaging guide</span></a>?</p></li>
 <li><p>Are there improvements that could be made to the code style?</p></li>
 <li><p>Is there code duplication in the package that should be reduced?</p></li>
 <li><p>Are there user interface improvements that could be made?</p></li>

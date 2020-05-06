@@ -5,7 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta charset="utf-8" />
-    <title>Packaging &#8212; The pyOpenSci Developer Guide</title>
+    <title>Overview &#8212; The pyOpenSci Developer Guide</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
     <link href="../_static/css/index.css" rel="stylesheet">
     <link rel="stylesheet" href="../_static/sphinx-book-theme.css" type="text/css" />
@@ -30,14 +30,11 @@
     <link rel="shortcut icon" href="../_static/logo.png"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Collaboration Guide" href="collaboration.html" />
+    <link rel="next" title="Testing your package" href="testing.html" />
     <link rel="prev" title="Author’s Guide" href="index.html" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="docsearch:language" content="en">
-<!-- Put requirejs at the end so it's always after bootstrap -->
-<!-- TODO: remove this once https://github.com/pandas-dev/pydata-sphinx-theme/pull/149 is merged -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js"></script>
 
 
 
@@ -73,7 +70,10 @@
     <a href="index.html">Author’s Guide</a>
   <ul class="nav sidenav_l2">
     <li class="active">
-      <a href="">Packaging</a>
+      <a href="">Overview</a>
+    </li>
+    <li class="">
+      <a href="testing.html">Testing your package</a>
     </li>
     <li class="">
       <a href="collaboration.html">Collaboration Guide</a>
@@ -114,6 +114,9 @@
   <li class="">
     <a href="../appendices/templates.html">Appendix: Templates</a>
   </li>
+  <li class="">
+    <a href="../appendices/glossary.html">Glossary</a>
+  </li>
 </ul>
 </nav>
 <p class="navbar_footer">Powered by <a href="https://jupyterbook.org">Jupyter Book</a></p>
@@ -144,7 +147,7 @@
                 <!-- ipynb file if we had a myst markdown file -->
                 
                 <!-- Download raw file -->
-                <a class="dropdown-buttons" href="../_sources/authoring/packaging_guide.md.txt"><button type="button" class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip" data-placement="left">.md</button></a>
+                <a class="dropdown-buttons" href="../_sources/authoring/overview.md.txt"><button type="button" class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip" data-placement="left">.md</button></a>
                 <!-- Download PDF via print -->
                 <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF" onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
             </div>
@@ -152,7 +155,7 @@
         </div>
 
         <!-- Edit this page -->
-        <a class="edit-button" href="https://github.com/pyOpenSci/dev_guide/edit/master/authoring/packaging_guide.md"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="bottom" title="Edit this page"><i class="fas fa-pencil-alt"></i></button></a>
+        <a class="edit-button" href="https://github.com/pyOpenSci/dev_guide/edit/master/authoring/overview.md"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="bottom" title="Edit this page"><i class="fas fa-pencil-alt"></i></button></a>
 
         <!-- Full screen (wrap in <a> to have style consistency -->
         <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="bottom" onclick="toggleFullScreen()" title="Fullscreen mode"><i class="fas fa-expand"></i></button></a>
@@ -169,10 +172,6 @@
 
 <nav id="bd-toc-nav">
     <ul class="nav section-nav flex-column">
-    
-        <li class="nav-item toc-entry toc-h2">
-            <a href="#overview" class="nav-link">Overview</a>
-        </li>
     
         <li class="nav-item toc-entry toc-h2">
             <a href="#project-template" class="nav-link">Project Template</a><ul class="nav section-nav flex-column">
@@ -221,6 +220,10 @@
             <a href="#linting" class="nav-link">Linting</a>
         </li>
     
+        <li class="nav-item toc-entry toc-h3">
+            <a href="#badges" class="nav-link">Badges</a>
+        </li>
+    
             </ul>
         </li>
     
@@ -230,7 +233,7 @@
 
 
 <div class="tocsection editthispage">
-    <a href="https://github.com/pyOpenSci/dev_guide/edit/master/authoring/packaging_guide.md">
+    <a href="https://github.com/pyOpenSci/dev_guide/edit/master/authoring/overview.md">
         <i class="fas fa-pencil-alt"></i> Edit this page
     </a>
 </div>
@@ -242,11 +245,9 @@
         
               <div>
                 
-  <div class="section" id="packaging">
-<h1>Packaging<a class="headerlink" href="#packaging" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="overview">
+<h1>Overview<a class="headerlink" href="#overview" title="Permalink to this headline">¶</a></h1>
 <p>This section provides guidelines and tips for creating a Python package to submit for peer-review.</p>
-<div class="section" id="overview">
-<h2>Overview<a class="headerlink" href="#overview" title="Permalink to this headline">¶</a></h2>
 <p>pyOpenSci packages must:</p>
 <ul class="simple">
 <li><p>Have a clear README <em>including</em> installation instructions.</p></li>
@@ -255,8 +256,9 @@
 <li><p>Use continuous integration.</p></li>
 <li><p>Use an OSI approved software license.</p></li>
 </ul>
-<p>Do not be intimidated if you haven’t created a Python package before. We have a template and guidelines to help you meet all of these requirements! Below, we’ll also go into more detail on each of the requirements.</p>
-</div>
+<p>Do not be intimidated if you haven’t created a Python package before. We have a template
+and guidelines to help you meet all of these requirements! Below, we’ll also go into
+more detail on each of the requirements.</p>
 <div class="section" id="project-template">
 <h2>Project Template<a class="headerlink" href="#project-template" title="Permalink to this headline">¶</a></h2>
 <p>To help you package your project, we provide a template <a class="reference external" href="https://github.com/pyOpenSci/cookiecutter-pyopensci">“cookiecutter” repository</a>. The cookiecutter allows you to start a project with continuous integration, testing, and auto-documentation already in place, but with your project’s details already filled in. You don’t have to use the template as a starting point, but it may help if you are not experienced with setting up tests, continuous integration, etc.</p>
@@ -274,13 +276,15 @@
 </div>
 <div class="section" id="requirements">
 <h2>Requirements<a class="headerlink" href="#requirements" title="Permalink to this headline">¶</a></h2>
-<p>This section has descriptions of all the packaging requirements for pyOpenSci. Most of the sections also include Good/Better/Best recommendations. Good meets the requirements, but going beyond the minimum can make package maintenance easier.</p>
+<p>This section has descriptions of all the packaging requirements for pyOpenSci.
+Most of the sections also include Good/Better/Best recommendations.
+Good meets the requirements, but going beyond the minimum can make package maintenance easier.</p>
 <div class="section" id="readme">
 <h3>README<a class="headerlink" href="#readme" title="Permalink to this headline">¶</a></h3>
 <p>All packages should have a README.md in their root directory. The README should include, from top to bottom:</p>
 <ul class="simple">
 <li><p>The package name</p></li>
-<li><p>Badges for continuous integration and test coverage, the badge for pyOpenSci peer-review once it has started (see below), a repostatus.org badge, and any other badges. If the README has many more badges, you might want to consider using a table for badges, see this example, that one and that one. Such a table shoud be more wide than high.</p></li>
+<li><p>Badges for continuous integration and test coverage. See <a class="reference external" href="#badges">the badges section</a> for more information.</p></li>
 <li><p>Short description of goals of package, with descriptive links to all vignettes (rendered, i.e. readable, cf the documentation website section) unless the package is small and there’s only one vignette repeating the README.</p></li>
 <li><p>Installation instructions</p></li>
 <li><p>Any additional setup required (authentication tokens, etc)</p></li>
@@ -366,6 +370,14 @@
 <h3>Linting<a class="headerlink" href="#linting" title="Permalink to this headline">¶</a></h3>
 <p>An automatic linter (e.g. flake8) can help ensure your code is clean and free of syntax errors. These can be integrated with your CI.</p>
 </div>
+<div class="section" id="badges">
+<h3>Badges<a class="headerlink" href="#badges" title="Permalink to this headline">¶</a></h3>
+<p>Badges are a useful way to draw attention to the quality of your project and to
+assure users that it is well-designed, tested, and maintained.
+It is common to provide a collection of badges in a table for others
+to quickly browse.</p>
+<p><a class="reference external" href="https://github.com/ropensci/drake">See this example of a badge table</a>. Such a table should be more wide than high. (Note that the badge for pyOpenSci peer-review will be provided upon acceptance.)</p>
+</div>
 </div>
 </div>
 
@@ -379,7 +391,7 @@
     <div class='prev-next-bottom'>
         
     <a class='left-prev' id="prev-link" href="index.html" title="previous page">Author’s Guide</a>
-    <a class='right-next' id="next-link" href="collaboration.html" title="next page">Collaboration Guide</a>
+    <a class='right-next' id="next-link" href="testing.html" title="next page">Testing your package</a>
 
     </div>
     <footer class="footer mt-5 mt-md-0">

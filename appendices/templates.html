@@ -30,13 +30,11 @@
     <link rel="shortcut icon" href="../_static/logo.png"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Glossary" href="glossary.html" />
     <link rel="prev" title="Guide for Editors" href="../submissions/editor_guide.html" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="docsearch:language" content="en">
-<!-- Put requirejs at the end so it's always after bootstrap -->
-<!-- TODO: remove this once https://github.com/pandas-dev/pydata-sphinx-theme/pull/149 is merged -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js"></script>
 
 
 
@@ -72,7 +70,10 @@
     <a href="../authoring/index.html">Author’s Guide</a>
   <ul class="nav sidenav_l2">
     <li class="">
-      <a href="../authoring/packaging_guide.html">Packaging</a>
+      <a href="../authoring/overview.html">Overview</a>
+    </li>
+    <li class="">
+      <a href="../authoring/testing.html">Testing your package</a>
     </li>
     <li class="">
       <a href="../authoring/collaboration.html">Collaboration Guide</a>
@@ -112,6 +113,9 @@
   </li>
   <li class="active">
     <a href="">Appendix: Templates</a>
+  </li>
+  <li class="">
+    <a href="glossary.html">Glossary</a>
   </li>
 </ul>
 </nav>
@@ -185,6 +189,10 @@
             <a href="#approval-comment-template" class="nav-link">Approval Comment Template</a>
         </li>
     
+        <li class="nav-item toc-entry toc-h2">
+            <a href="#generic-new-member-template" class="nav-link">Generic new member template</a>
+        </li>
+    
     </ul>
 </nav>
 
@@ -256,7 +264,7 @@ The package meets the readme requirements below:
 The README should include, from top to bottom:
 
 - [ ] The package name
-- [ ] Badges for continuous integration and test coverage, the badge for pyOpenSci peer-review once it has started (see below), a repostatus.org badge, and any other badges. If the README has many more badges, you might want to consider using a table for badges, see this example, that one and that one. Such a table should be more wide than high.
+- [ ] Badges for continuous integration and test coverage, a repostatus.org badge, and any other badges. If the README has many more badges, you might want to consider using a table for badges: [see this example](https://github.com/ropensci/drake). Such a table should be more wide than high. (Note that the badge for pyOpenSci peer-review will be provided upon acceptance.)
 - [ ] Short description of goals of package, with descriptive links to all vignettes (rendered, i.e. readable, cf the documentation website section) unless the package is small and there’s only one vignette repeating the README.
 - [ ] Installation instructions
 - [ ] Any additional setup required (authentication tokens, etc)
@@ -272,7 +280,7 @@ The README should include, from top to bottom:
 - [ ] **Performance:** Any performance claims of the software been confirmed.
 - [ ] **Automated tests:** Tests cover essential functions of the package and a reasonable range of inputs and conditions. All tests pass on the local machine.
 - [ ] **Continuous Integration:** Has continuous integration, such as Travis CI, AppVeyor, CircleCI, and/or others.
-- [ ] **Packaging guidelines**: The package conforms to the pyOpenSci [packaging guidelines](https://www.pyopensci.org/dev_guide/authoring/packaging_guide.html).
+- [ ] **Packaging guidelines**: The package conforms to the pyOpenSci [packaging guidelines](https://www.pyopensci.org/dev_guide/authoring/overview.html).
 
 #### For packages co-submitting to JOSS
 
@@ -308,7 +316,7 @@ Estimated hours spent reviewing:
 <p>Hi, this is [EDITOR]. [FRIENDLY BANTER]. I’m writing to ask if you would be willing to review a package for pyOpenSci. As you probably know, pyOpenSci conducts peer review of Python packages contributed to our collection in a manner similar to journals.</p>
 <p>The package, [PACKAGE] by [AUTHOR(S)], does [FUNCTION]. You can find it on GitHub here: [REPO LINK]. We conduct our open review process via GitHub as well, here: [ONBOARDING ISSUE]</p>
 <p>If you accept, note that we ask reviewers to complete reviews in three weeks. (We’ve found it takes a similar amount of time to review a package as an academic paper.)</p>
-<p>Our <a class="reference external" href="https://pyopensci.github.io/dev_guide/peer_review/reviewer_guide.html">reviewers guide</a> details what we look for in a package review, and includes links to example reviews. Our standards are detailed in our <a class="reference external" href="https://pyopensci.github.io/dev_guide/authoring/packaging_guide.html">packaging guide</a>, and we provide reviewer <a class="reference external" href="https://pyopensci.github.io/dev_guide/appendices/templates.html#review-template">template</a> for you to use. Please make sure you do not have a conflict of interest preventing you from reviewing this package. If you have questions or feedback, feel free to ask me.</p>
+<p>Our <a class="reference external" href="https://pyopensci.github.io/dev_guide/peer_review/reviewer_guide.html">reviewers guide</a> details what we look for in a package review, and includes links to example reviews. Our standards are detailed in our <a class="reference external" href="https://pyopensci.github.io/dev_guide/authoring/overview.html">packaging guide</a>, and we provide reviewer <a class="reference external" href="https://pyopensci.github.io/dev_guide/appendices/templates.html#review-template">template</a> for you to use. Please make sure you do not have a conflict of interest preventing you from reviewing this package. If you have questions or feedback, feel free to ask me.</p>
 <p>{IF APPLICABLE: The authors have also chosen to jointly submit their package to the Journal of Open Source Software, so this package includes a short <code class="docutils literal notranslate"><span class="pre">paper.md</span></code> manuscript describing the software that we ask you include in your review.}</p>
 <p>Are you able to review? If you can not, suggestions for alternate reviewers are always helpful. If I don’t hear from you within a week, I will assume you are unable to
 review at this time.</p>
@@ -323,6 +331,7 @@ review at this time.</p>
 To-dos:
 - [ ] Transfer the repo to our &quot;pyOpenSci&quot; GitHub organization under &quot;Settings&quot; in your repo. I have invited you to a team that should allow you to do so. You&#39;ll be made admin once you do.
 - [ ] Fix any links in badges for CI and coverage to point to the pyOpenSci URL. For Appveryor projects, you should still use your personal Appveyor account. After transfer of your repo to the &quot;pyOpenSci&quot; GitHub organization the badge should be `[![AppVeyor Build Status](https://ci.appveyor.com/api/projects/status/github/pyOpenSci/pkgname?branch=master&amp;svg=true)](https://ci.appveyor.com/project/individualaccount/pkgname)`.
+- [ ] Add the badge for pyOpenSci peer-review to README.md. The badge should be `[![pyOpenSci](https://tinyurl.com/y22nb8up)](https://github.com/pyOpenSci/software-review/issues/issue-number)`
 
 &lt;IF JOSS&gt;
 - [ ] Activate Zenodo watching the repo
@@ -331,6 +340,22 @@ To-dos:
 &lt;IF JOSS/&gt;
 
 We&#39;ve started putting together a gitbook with our best practice and tips, [this chapter](https://pyopensci.github.io/dev_guide/maintenance/maintenance_intro.html) starts the 3rd section that&#39;s about guidance for after onboarding. Please tell us what could be improved, the corresponding repo is [here](https://github.com/pyOpenSci/dev_guide).
+</pre></div>
+</div>
+</div>
+<div class="section" id="generic-new-member-template">
+<h2>Generic new member template<a class="headerlink" href="#generic-new-member-template" title="Permalink to this headline">¶</a></h2>
+<p>A template for inviting others to join the pyOpenSci community calls and otherwise
+get engaged.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>&lt; short greeting /&gt;
+
+I&#39;m writing to see if you&#39;d be interested in participating with pyOpenSci, a new community around improving the quality of software in the scientific python stack.
+
+pyOpenSci provides resources, mentoring, and documentation for making scientific python packages more useful and maintainable. It builds off of the successful rOpenSci model, with a Python flavor. It primarily coordinates a review process by which experienced developers in the scientific python ecosystem can provide feedback and suggestions to other (usually fairly small) packages.
+
+You&#39;ve been in the scientific Python community for some time now, and I think you&#39;d be a great part of the pyOpenSci community. Would you be interested in joining us? Participation can be as small or large as you wish - for example, you could submit your own package for review in pyOpenSci, offer to be a reviewer of someone else&#39;s package, or begin attending pyOpenSci planning meetings as we build and refine our processes. We&#39;d just be happy to have you around :-)
+
+&lt; short goodbye /&gt;
 </pre></div>
 </div>
 </div>
@@ -346,6 +371,7 @@ We&#39;ve started putting together a gitbook with our best practice and tips, [t
     <div class='prev-next-bottom'>
         
     <a class='left-prev' id="prev-link" href="../submissions/editor_guide.html" title="previous page">Guide for Editors</a>
+    <a class='right-next' id="next-link" href="glossary.html" title="next page">Glossary</a>
 
     </div>
     <footer class="footer mt-5 mt-md-0">

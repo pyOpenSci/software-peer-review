@@ -35,9 +35,6 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="docsearch:language" content="en">
-<!-- Put requirejs at the end so it's always after bootstrap -->
-<!-- TODO: remove this once https://github.com/pandas-dev/pydata-sphinx-theme/pull/149 is merged -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js"></script>
 
 
 
@@ -73,7 +70,10 @@
     <a href="../authoring/index.html">Author’s Guide</a>
   <ul class="nav sidenav_l2">
     <li class="">
-      <a href="../authoring/packaging_guide.html">Packaging</a>
+      <a href="../authoring/overview.html">Overview</a>
+    </li>
+    <li class="">
+      <a href="../authoring/testing.html">Testing your package</a>
     </li>
     <li class="">
       <a href="../authoring/collaboration.html">Collaboration Guide</a>
@@ -113,6 +113,9 @@
   </li>
   <li class="">
     <a href="../appendices/templates.html">Appendix: Templates</a>
+  </li>
+  <li class="">
+    <a href="../appendices/glossary.html">Glossary</a>
   </li>
 </ul>
 </nav>
@@ -252,7 +255,7 @@ the editorial board. The Editor in Chief fulfills the following roles:</p>
 <li><p>Check against policies for <a class="reference external" href="aims_scope#package-categories">fit</a> and <a class="reference external" href="aims_scope#package-overlap">overlap</a>. If reject, see <a class="reference external" href="#responding-to-out-of-scope-submissions">this section</a> about how to respond.</p></li>
 <li><p>Check that mandatory parts of template are complete.  If not, direct authors toward appropriate instructions.</p></li>
 <li><p>Run automated tests: spelling, linting, etc … will be filled in later.</p></li>
-<li><p>For packages needing continuous integration on multiple platforms (<a class="reference external" href="../authoring/packaging_guide#continuous-integration">criteria in this section of the packaging chapter</a>) make sure the package gets tested on multiple platforms (having the package built on both Travis and AppVeyor for instance).</p></li>
+<li><p>For packages needing continuous integration on multiple platforms (<a class="reference external" href="../authoring/overview#continuous-integration">criteria in this section of the packaging chapter</a>) make sure the package gets tested on multiple platforms (having the package built on both Travis and AppVeyor for instance).</p></li>
 <li><p>Wherever possible when asking for changes, direct authors to automatic tools and online resources.</p></li>
 <li><p>If initial checks show major gaps, request changes before assigning reviewers.</p></li>
 <li><p>If the package raises a new issue for pyOpenSci policy, create an issue on <a class="reference external" href="https://github.com/pyOpenSci/governance">pyOpenSci’s governance repo</a></p></li>

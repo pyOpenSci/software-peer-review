@@ -35,9 +35,6 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="docsearch:language" content="en">
-<!-- Put requirejs at the end so it's always after bootstrap -->
-<!-- TODO: remove this once https://github.com/pandas-dev/pydata-sphinx-theme/pull/149 is merged -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js"></script>
 
 
 
@@ -73,7 +70,10 @@
     <a href="../authoring/index.html">Author’s Guide</a>
   <ul class="nav sidenav_l2">
     <li class="">
-      <a href="../authoring/packaging_guide.html">Packaging</a>
+      <a href="../authoring/overview.html">Overview</a>
+    </li>
+    <li class="">
+      <a href="../authoring/testing.html">Testing your package</a>
     </li>
     <li class="">
       <a href="../authoring/collaboration.html">Collaboration Guide</a>
@@ -113,6 +113,9 @@
   </li>
   <li class="">
     <a href="../appendices/templates.html">Appendix: Templates</a>
+  </li>
+  <li class="">
+    <a href="../appendices/glossary.html">Glossary</a>
   </li>
 </ul>
 </nav>
@@ -221,7 +224,7 @@
 <div class="section" id="review-process-guidelines">
 <h2>Review Process Guidelines<a class="headerlink" href="#review-process-guidelines" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li><p>Packages are reviewed for quality, fit, documentation, clarity and the review process is quite similar to a manuscript review (see our <a class="reference internal" href="../authoring/packaging_guide.html"><span class="doc">packaging guide</span></a> and <a class="reference internal" href="../submissions/reviewer_guide.html"><span class="doc">reviewing guide</span></a> for more details). Unlike a manuscript review, this process will be an ongoing conversation.</p></li>
+<li><p>Packages are reviewed for quality, fit, documentation, clarity and the review process is quite similar to a manuscript review (see our <a class="reference internal" href="../authoring/overview.html"><span class="doc">packaging guide</span></a> and <a class="reference internal" href="../submissions/reviewer_guide.html"><span class="doc">reviewing guide</span></a> for more details). Unlike a manuscript review, this process will be an ongoing conversation.</p></li>
 <li><p>Once all major issues and questions, and those addressable with reasonable effort, are resolved, the editor assigned to a package will make a decision (accept, hold, or reject). Rejections are usually done early (before the review process begins, see the aims and scope section), but in rare cases a package may also be not onboarded after review &amp; revision. It is ultimately editor’s decision on whether or not to reject the package based on how the reviews are addressed.</p></li>
 <li><p>Communication between authors, reviewers and editors will first and foremost take place on GitHub, although you can choose to contact the editor by email. When submitting a package, please make sure your GitHub notification settings make it unlikely you will miss a comment.</p></li>
 <li><p>The author can choose to have their submission put on hold (editor applies the holding label). The holding status will be revisited every 3 months, and after one year the issue will be closed.</p></li>

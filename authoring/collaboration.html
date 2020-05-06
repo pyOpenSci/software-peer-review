@@ -31,13 +31,10 @@
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Releasing a package" href="release.html" />
-    <link rel="prev" title="Packaging" href="packaging_guide.html" />
+    <link rel="prev" title="Testing your package" href="testing.html" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="docsearch:language" content="en">
-<!-- Put requirejs at the end so it's always after bootstrap -->
-<!-- TODO: remove this once https://github.com/pandas-dev/pydata-sphinx-theme/pull/149 is merged -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js"></script>
 
 
 
@@ -73,7 +70,10 @@
     <a href="index.html">Author’s Guide</a>
   <ul class="nav sidenav_l2">
     <li class="">
-      <a href="packaging_guide.html">Packaging</a>
+      <a href="overview.html">Overview</a>
+    </li>
+    <li class="">
+      <a href="testing.html">Testing your package</a>
     </li>
     <li class="active">
       <a href="">Collaboration Guide</a>
@@ -113,6 +113,9 @@
   </li>
   <li class="">
     <a href="../appendices/templates.html">Appendix: Templates</a>
+  </li>
+  <li class="">
+    <a href="../appendices/glossary.html">Glossary</a>
   </li>
 </ul>
 </nav>
@@ -259,7 +262,7 @@
 <div class="section" id="working-with-collaborators-including-yourself">
 <h3>Working with collaborators (including yourself)<a class="headerlink" href="#working-with-collaborators-including-yourself" title="Permalink to this headline">¶</a></h3>
 <p>You could implement the “<a class="reference external" href="https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow">gitflow</a>” philosophy as explained by Amanda Dobbyn in <a class="reference external" href="https://ropensci.org/blog/2018/04/20/monkeydo/">this rOpenSci blog post</a>.</p>
-<p>One particular aspect of working with collaborators is reviewing pull requests. Even if not adopting gitflow it might make sense for repo collaborators to make PRs and have them reviewed, and in general PRs by external developers will need to be assessed. Sometimes you’ll be fine just reading the changes and trusting <a class="reference external" href="../authoring/packaging_guide#continuous-integration">Continuous integration</a>. Sometimes you’ll need to dive deeper, e.g. by downloading a copy of the branch that the PR was created from.</p>
+<p>One particular aspect of working with collaborators is reviewing pull requests. Even if not adopting gitflow it might make sense for repo collaborators to make PRs and have them reviewed, and in general PRs by external developers will need to be assessed. Sometimes you’ll be fine just reading the changes and trusting <a class="reference external" href="../authoring/overview#continuous-integration">Continuous integration</a>. Sometimes you’ll need to dive deeper, e.g. by downloading a copy of the branch that the PR was created from.</p>
 <p>(attributions=)</p>
 </div>
 <div class="section" id="be-generous-with-attributions">
@@ -284,7 +287,7 @@
     
     <div class='prev-next-bottom'>
         
-    <a class='left-prev' id="prev-link" href="packaging_guide.html" title="previous page">Packaging</a>
+    <a class='left-prev' id="prev-link" href="testing.html" title="previous page">Testing your package</a>
     <a class='right-next' id="next-link" href="release.html" title="next page">Releasing a package</a>
 
     </div>
