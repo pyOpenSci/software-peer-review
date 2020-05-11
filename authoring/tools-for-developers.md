@@ -8,6 +8,10 @@ This section presents some useful tools that can be very helpful for the develop
 Code linters are tools that analyze source code and identify programming errors, stylistic errors,
 invalid typing, wrong or missing docstrings, etc.
 
+Linters are often either run directly from the command-line, or they can be run as
+a part of many modern code editors to give you automatic feedback about your code
+structure as you write it.
+
 Some linters that could help you to keep your code in good shape are:
 
 - [flake8](https://flake8.pycqa.org/en/latest/)
