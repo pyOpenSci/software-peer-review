@@ -39,7 +39,9 @@ Some popular code stylers are:
 ## Git pre-commit hook
 
 Git pre-commit hook is an useful tool that checks your code automatically when you run a `git commit` and,
-if it fails, the `git commit` is canceled.
+if it fails, the `git commit` is canceled. This is often used to make sure
+that the changes to your code match a particular style, or that there are no
+code linting errors.
 
 For example, if you want that `git commit` checks if your code matches the PEP8 specification,
 you can configure a git flake8 pre-commit hook:
