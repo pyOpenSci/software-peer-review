@@ -38,7 +38,7 @@ Some popular code stylers are:
 
 ## Git pre-commit hook
 
-Git pre-commit hook is an useful tool that checks your code automatically when you run a `git commit` and,
+Git pre-commit hook is a useful tool that checks your code automatically when you run a `git commit` and,
 if it fails, the `git commit` is canceled. This is often used to make sure
 that the changes to your code match a particular style, or that there are no
 code linting errors.
