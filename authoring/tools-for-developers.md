@@ -5,7 +5,7 @@ This section presents some useful tools that can be very helpful for the develop
 
 ## Code linters
 
-Code linteres are tools that analyze source code and identify programming errors, stylistic errors,
+Code linters are tools that analyze source code and identify programming errors, stylistic errors,
 invalid typing, wrong or missing docstrings, etc.
 
 Some linters that could help you to keep your code in good shape are:
@@ -77,4 +77,3 @@ Some pre-commit hooks you can find useful would be:
 - [isort](https://github.com/pre-commit/mirrors-isort)
 
 If you want more information about `pre-commit`, check out its [documentation](https://pre-commit.com/).
-
