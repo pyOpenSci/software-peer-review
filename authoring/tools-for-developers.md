@@ -1,4 +1,34 @@
-# Using git pre-commit hook
+# Tools for developers
+
+This section presents some useful tools that can be very helpful for the development workflow.
+
+
+## Code linters
+
+Code linteres are tools that analyze source code and identify programming errors, stylistic errors,
+invalid typing, wrong or missing docstrings, etc.
+
+Some linters that could help you to keep your code in good shape are:
+
+- [flake8](https://flake8.pycqa.org/en/latest/)
+- [mypy](http://mypy-lang.org/)
+- [numpydoc](https://numpydoc.readthedocs.io/en/latest/)
+- [pydocstyle](https://github.com/PyCQA/pydocstyle)
+
+
+## Code stylers
+
+Code stylers are tools that fix styling issues in a file, formatting it automatically. 
+Using an automatic formatting tool helps to keep the source code within specification
+and also helps review workflow.
+
+Some popular code stylers are:
+
+- [black](https://github.com/psf/black)
+- [isort](https://github.com/timothycrosley/isort)
+
+
+## Git pre-commit hook
 
 Git pre-commit hook is an useful tool that checks your code automatically when you run a `git commit` and,
 if it fails, the `git commit` is canceled.
