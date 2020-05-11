@@ -26,7 +26,9 @@ Code stylers are tools that fix styling issues in a file, formatting it automati
 Code *styling* is different from code *linting* because it doesn't change the functionality
 of your code at all, it *only* changes how it looks. 
 Using an automatic formatting tool helps to keep the source code within specification
-and also helps review workflow.
+and also helps review workflow. While stylers might cause your code to look differently
+than you would have chosen, many projects have adopted them in order to have a single
+code style that is consistent across projects.
 
 Some popular code stylers are:
 
