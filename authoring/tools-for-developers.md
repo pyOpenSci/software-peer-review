@@ -22,7 +22,9 @@ Some linters that could help you to keep your code in good shape are:
 
 ## Code stylers
 
-Code stylers are tools that fix styling issues in a file, formatting it automatically. 
+Code stylers are tools that fix styling issues in a file, formatting it automatically.
+Code *styling* is different from code *linting* because it doesn't change the functionality
+of your code at all, it *only* changes how it looks. 
 Using an automatic formatting tool helps to keep the source code within specification
 and also helps review workflow.
 
