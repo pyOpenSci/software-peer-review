@@ -12,9 +12,12 @@ Linters are often either run directly from the command-line, or they can be run 
 a part of many modern code editors to give you automatic feedback about your code
 structure as you write it.
 
-Some linters that could help you to keep your code in good shape are:
+A very popular code linter for Python is [flake8](https://flake8.pycqa.org/en/latest/).
+`Flake8` checks if the code is according to [PEP 8](https://www.python.org/dev/peps/pep-0008/), 
+the Python Enhancement Proposal about `Style Guide for Python Code`.
 
-- [flake8](https://flake8.pycqa.org/en/latest/)
+See also:
+
 - [mypy](http://mypy-lang.org/)
 - [numpydoc](https://numpydoc.readthedocs.io/en/latest/)
 - [pydocstyle](https://github.com/PyCQA/pydocstyle)
@@ -30,9 +33,12 @@ and also helps review workflow. While stylers might cause your code to look diff
 than you would have chosen, many projects have adopted them in order to have a single
 code style that is consistent across projects.
 
-Some popular code stylers are:
+Currently, [black](https://github.com/psf/black) is the most popular code styler for Python.
+It will format the code according the `PEP 8` and should work fine with `flake8` (maybe it needs
+some extra configuration as, for example, `line-length`).
+ 
+See also:
 
-- [black](https://github.com/psf/black)
 - [isort](https://github.com/timothycrosley/isort)
 
 
@@ -46,9 +52,9 @@ code linting errors.
 For example, if you want that `git commit` checks if your code matches the PEP8 specification,
 you can configure a git flake8 pre-commit hook:
 
+
 ```yaml
 # file: .pre-commit-config.yaml
-# see: https://flake8.pycqa.org/en/latest/user/using-hooks.html
 repos:
   - repo: https://gitlab.com/pycqa/flake8
     rev: '3.7.9'
@@ -56,6 +62,12 @@ repos:
     -   id: flake8
 
 ```
+
+```{note}
+See [the flake8 hooks explanation](see: https://flake8.pycqa.org/en/latest/user/using-hooks.html) 
+for more details
+```
+
 This file specifies a hook that will be triggered automatically before each `git commit`,
 in this case, it specifies a flake8 using version `3.7.9`.
 
