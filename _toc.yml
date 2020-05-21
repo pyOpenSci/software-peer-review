@@ -1,0 +1,28 @@
+- title: Home
+  file: intro
+
+- file: authoring/index
+  expand_sections: true
+  sections:
+    - file: authoring/overview
+    - file: authoring/testing
+    - file: authoring/collaboration
+    - file: authoring/release
+
+- file: process/intro
+  expand_sections: true
+  sections:
+    - file: process/aims_scope
+    - file: process/guidelines
+    - file: process/coc
+
+- file: submissions/intro
+  expand_sections: true
+  sections:
+  - file: submissions/author_guide
+  - file: submissions/reviewer_guide
+  - file: submissions/editor_guide
+
+- file: appendices/templates
+- file: appendices/glossary
+

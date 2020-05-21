@@ -1,16 +1,33 @@
 # <img src="content/images/logo/logo.png" width=40 /> pyOpenSci Guidebook
 [![CircleCI](https://circleci.com/gh/pyOpenSci/dev_guide.svg?style=svg)](https://circleci.com/gh/pyOpenSci/dev_guide)
 
-https://pyopensci.github.io/dev_guide/
+https://pyopensci.org/dev_guide/
 
-pyOpenSci's guide for developing, reviewing, and maintaining packages. 
+pyOpenSci's guide for developing, reviewing, and maintaining packages.
 
-## Acknowledgements
-The pyOpenSci guidebook is written using [Jupyter Books](https://github.com/jupyter/jupyter-book):
+## Build the guide locally
 
-Jupyter Books was originally created by [Sam Lau][sam] and [Chris Holdgraf][chris]
-with support of the **UC Berkeley Data Science Education Program and the Berkeley
-Institute for Data Science**.
+The pyOpenSci guidebook is written using [Jupyter Books](https://github.com/executablebooks/jupyter-book).
 
-[sam]: http://www.samlau.me/
-[chris]: https://predictablynoisy.com
+To build the guide locally, take the following steps:
+
+* Clone this repository:
+
+  ```
+  git clone https://github.com/pyOpenSci/dev_guide
+  ```
+* Install Jupyter Book
+
+  ```
+  pip install -U jupyter-book>=0.7.0b
+  ```
+* Build the guide
+
+  ```
+  jupyter-book build dev_guide
+  ```
+
+## Contributing to this guide
+
+We welcome and issues and pull-requests to improve the content of this guide.
+If you'd like to see an improvement, please [open an issue](https://github.com/pyOpenSci/dev_guide/issues/new/choose).

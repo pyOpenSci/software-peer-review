@@ -1,148 +1,24 @@
 version: 2.1
 jobs:
-  # Build the site to store artifacts
-  site:
-    docker:
-      - image: circleci/ruby:2.6
-    steps:
-      # Build the site's HTML w/ the base_url for CircleCI artifacts
-      - build_site:
-          build_args: --baseurl /0/html/
-
-      # Tell Circle to store the documentation output in a folder that we can access later
-      - store_artifacts:
-          path: _site/
-          destination: html
-
-  # Deploy the built site to jupyter-book.github.io
-  deploy:
-    docker:
-      - image: circleci/ruby:2.6
-    steps:
-      - checkout
-      - attach_workspace:
-          # Must be absolute path or relative path from working_directory
-          at: /tmp/workspace
-
-      # Add deployment key fingerprint for CircleCI to use for a push
-      - add_ssh_keys:
-          fingerprints:
-            - "62:51:a8:7a:4d:b6:51:4d:94:ca:d6:ef:95:19:15:5d"
-
-      # Grab the the built markdown from the last step
-      - run:
-          name: Copy over built site files
-          command: rm -rf _build && cp -r /tmp/workspace/_build ./
-
-      # Build the site so we have local files
-      - build_site:
-          build_args: ""
-
-      # Copying over built website to the live site
-      - run:
-          name: Copy built site to a folder to store
-          command: cp -r ./_site ../_site
-      - run:
-          name: Change to gh-pages branch and replace w/ new site
-          command: |
-            git checkout gh-pages
-            rm -rf ./*
-            cp -r ../_site/* ./
-            touch ./.nojekyll
-
-      - run:
-          name: Commit results and push to gh-pages
-          command: |
-            git config --global user.email "kysolvik@gmail.com"
-            git config --global user.name "Kylen Solvik"
-            git add -A
-            git commit -m "jekyll book web deploy"
-            git push -f origin gh-pages:gh-pages
-
   build_book:
     docker:
       - image: circleci/python:3.6-stretch
     steps:
-      # Get our data and merge with upstream
-      - run: sudo apt-get update
       - checkout
-      # Update our path
-      - run: echo "export PATH=~/.local/bin:$PATH" >> $BASH_ENV
-      # Restore cached files to speed things up
-      - restore_cache:
-          keys:
-            - cache-pip
-      # Install the packages needed to build our documentation
-      # This will depend on your particular package!
-      - run: pip install --user -r build-requirements.txt
-
-      # Cache some files for a speedup in subsequent builds
-      - save_cache:
-          key: cache-pip
-          paths:
-            - ~/.cache/pip
-
-      # Build the book
+      - run: pip install -r requirements.txt
+      - run: pip install -U --pre jupyter-book
       - run:
           name: Build site markdown
           command: jupyter-book build .
 
-      # Persist the specified paths (see https://circleci.com/docs/2.0/workflows/#using-workspaces-to-share-data-among-jobs)
-      - persist_to_workspace:
-          root: .
-          paths:
-            - _build/
-
+      - store_artifacts:
+          path: _build/html
+          destination: html
 
 
 # Tell CircleCI to use this workflow when it builds the site
 workflows:
   version: 2
-  default:
+  build_book:
     jobs:
-      - build_book:
-          filters:
-            branches:
-              ignore:
-                - gh-pages
-      - site:
-          filters:
-            branches:
-              ignore:
-                - gh-pages
-      - deploy:
-          requires:
-            - build_book
-          filters:
-              branches:
-                only:
-                  - master
-                ignore:
-                  - gh-pages
-
-commands:
-  build_site:
-    description: "Build the site with Jekyll"
-    parameters:
-      build_args:
-        type: string
-        default: ""
-    steps:
-      - checkout
-      - restore_cache:
-          keys:
-            - rails-demo-bundle-v2-{{ checksum "Gemfile.lock" }}
-            - rails-demo-bundle-v2-
-
-      - run: gem install bundler
-      - run: bundle install
-
-      # Store bundle cache
-      - save_cache:
-          key: rails-demo-bundle-v2-{{ checksum "Gemfile.lock" }}
-          paths:
-            - vendor/bundle
-
-      - run:
-          name: Build the website
-          command: bundle exec jekyll build << parameters.build_args >>
+      - build_book
