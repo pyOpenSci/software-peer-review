@@ -17,7 +17,7 @@
 }
 
 .toggle-body .admonition-title:after {
-    content: "";
+    content: "" !important;
 }
 
 .toggle-body button.toggle-button {

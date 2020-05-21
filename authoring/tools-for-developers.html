@@ -1,0 +1,341 @@
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>Tools for developers &#8212; The pyOpenSci Developer Guide</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
+    <link href="../_static/css/index.css" rel="stylesheet">
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/jupyter-sphinx.css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/sphinx-book-theme.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/language_data.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/mystnb.js"></script>
+    <script src="../_static/sphinx-book-theme.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .secondtoggle, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.20.0-alpha.0/dist/embed-amd.js"></script>
+    <link rel="shortcut icon" href="../_static/logo.png"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="docsearch:language" content="en">
+
+
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+<a class="navbar-brand text-wrap" href="../index.html">
+  
+  <img src="../_static/logo.png" class="logo" alt="logo">
+  
+  
+  <h1 class="site-logo" id="site-title">The pyOpenSci Developer Guide</h1>
+  
+</a>
+</div>
+
+<form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form>
+
+<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+  
+  <ul class="nav sidenav_l1">
+  <li class="">
+    <a href="index.html">Author’s Guide</a>
+  <ul class="nav sidenav_l2">
+    <li class="">
+      <a href="overview.html">Overview</a>
+    </li>
+    <li class="">
+      <a href="testing.html">Testing your package</a>
+    </li>
+    <li class="">
+      <a href="collaboration.html">Collaboration Guide</a>
+    </li>
+    <li class="">
+      <a href="release.html">Releasing a package</a>
+    </li>
+  </ul>
+  </li>
+  <li class="">
+    <a href="../process/intro.html">The Peer Review Process</a>
+  <ul class="nav sidenav_l2">
+    <li class="">
+      <a href="../process/aims_scope.html">Aims and Scope</a>
+    </li>
+    <li class="">
+      <a href="../process/guidelines.html">Peer Review Policies</a>
+    </li>
+    <li class="">
+      <a href="../process/coc.html">Community Code of Conduct</a>
+    </li>
+  </ul>
+  </li>
+  <li class="">
+    <a href="../submissions/intro.html">Submission Guides</a>
+  <ul class="nav sidenav_l2">
+    <li class="">
+      <a href="../submissions/author_guide.html">Guide for Authors</a>
+    </li>
+    <li class="">
+      <a href="../submissions/reviewer_guide.html">Guide for Reviewers</a>
+    </li>
+    <li class="">
+      <a href="../submissions/editor_guide.html">Guide for Editors</a>
+    </li>
+  </ul>
+  </li>
+  <li class="">
+    <a href="../appendices/templates.html">Appendix: Templates</a>
+  </li>
+  <li class="">
+    <a href="../appendices/glossary.html">Glossary</a>
+  </li>
+</ul>
+</nav>
+
+ <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="row topbar fixed-top container-xl">
+    <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show">
+    </div>
+    <div class="col pl-2 topbar-main">
+        
+        <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse" data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu" aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation" title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-arrow-left"></i>
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        
+        <div class="dropdown-buttons-trigger">
+            <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i class="fas fa-download"></i></button>
+
+            
+            <div class="dropdown-buttons">
+                <!-- ipynb file if we had a myst markdown file -->
+                
+                <!-- Download raw file -->
+                <a class="dropdown-buttons" href="../_sources/authoring/tools-for-developers.md.txt"><button type="button" class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip" data-placement="left">.md</button></a>
+                <!-- Download PDF via print -->
+                <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF" onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+            </div>
+            
+        </div>
+
+        <!-- Edit this page -->
+        <a class="edit-button" href="https://github.com/pyOpenSci/dev_guide/edit/master/authoring/tools-for-developers.md"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="bottom" title="Edit this page"><i class="fas fa-pencil-alt"></i></button></a>
+
+        <!-- Full screen (wrap in <a> to have style consistency -->
+        <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="bottom" onclick="toggleFullScreen()" title="Fullscreen mode"><i class="fas fa-expand"></i></button></a>
+
+        <!-- Launch buttons -->
+        
+    </div>
+    <div class="d-none d-md-block col-md-2 bd-toc show">
+<div class="tocsection onthispage pt-5 pb-3">
+    <i class="fas fa-list"></i> On this page
+</div>
+
+<nav id="bd-toc-nav">
+    <ul class="nav section-nav flex-column">
+    
+        <li class="nav-item toc-entry toc-h2">
+            <a href="#code-linters" class="nav-link">Code linters</a>
+        </li>
+    
+        <li class="nav-item toc-entry toc-h2">
+            <a href="#code-stylers" class="nav-link">Code stylers</a>
+        </li>
+    
+        <li class="nav-item toc-entry toc-h2">
+            <a href="#git-pre-commit-hook" class="nav-link">Git pre-commit hook</a>
+        </li>
+    
+        <li class="nav-item toc-entry toc-h2">
+            <a href="#what-git-pre-commit-hook-should-i-use" class="nav-link">What git pre-commit hook should I use?</a>
+        </li>
+    
+    </ul>
+</nav>
+
+
+
+<div class="tocsection editthispage">
+    <a href="https://github.com/pyOpenSci/dev_guide/edit/master/authoring/tools-for-developers.md">
+        <i class="fas fa-pencil-alt"></i> Edit this page
+    </a>
+</div>
+
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="tools-for-developers">
+<h1>Tools for developers<a class="headerlink" href="#tools-for-developers" title="Permalink to this headline">¶</a></h1>
+<p>This section presents some useful tools that can be very helpful for the development workflow.</p>
+<div class="section" id="code-linters">
+<h2>Code linters<a class="headerlink" href="#code-linters" title="Permalink to this headline">¶</a></h2>
+<p>Code linters are tools that analyze source code and identify programming errors, stylistic errors,
+invalid typing, wrong or missing docstrings, etc.</p>
+<p>Linters are often either run directly from the command-line, or they can be run as
+a part of many modern code editors to give you automatic feedback about your code
+structure as you write it.</p>
+<p>A very popular code linter for Python is <a class="reference external" href="https://flake8.pycqa.org/en/latest/">flake8</a>.
+<code class="docutils literal notranslate"><span class="pre">Flake8</span></code> checks if the code is according to <a class="reference external" href="https://www.python.org/dev/peps/pep-0008/">PEP 8</a>,
+the Python Enhancement Proposal about <code class="docutils literal notranslate"><span class="pre">Style</span> <span class="pre">Guide</span> <span class="pre">for</span> <span class="pre">Python</span> <span class="pre">Code</span></code>.</p>
+<p>See also:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="http://mypy-lang.org/">mypy</a></p></li>
+<li><p><a class="reference external" href="https://numpydoc.readthedocs.io/en/latest/">numpydoc</a></p></li>
+<li><p><a class="reference external" href="https://github.com/PyCQA/pydocstyle">pydocstyle</a></p></li>
+</ul>
+</div>
+<div class="section" id="code-stylers">
+<h2>Code stylers<a class="headerlink" href="#code-stylers" title="Permalink to this headline">¶</a></h2>
+<p>Code stylers are tools that fix styling issues in a file, formatting it automatically.
+Code <em>styling</em> is different from code <em>linting</em> because it doesn’t change the functionality
+of your code at all, it <em>only</em> changes how it looks.
+Using an automatic formatting tool helps to keep the source code within specification
+and also helps review workflow. While stylers might cause your code to look differently
+than you would have chosen, many projects have adopted them in order to have a single
+code style that is consistent across projects.</p>
+<p>Currently, <a class="reference external" href="https://github.com/psf/black">black</a> is the most popular code styler for Python.
+It will format the code according the <code class="docutils literal notranslate"><span class="pre">PEP</span> <span class="pre">8</span></code> and should work fine with <code class="docutils literal notranslate"><span class="pre">flake8</span></code> (maybe it needs
+some extra configuration as, for example, <code class="docutils literal notranslate"><span class="pre">line-length</span></code>).</p>
+<p>See also:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/timothycrosley/isort">isort</a></p></li>
+</ul>
+</div>
+<div class="section" id="git-pre-commit-hook">
+<h2>Git pre-commit hook<a class="headerlink" href="#git-pre-commit-hook" title="Permalink to this headline">¶</a></h2>
+<p>Git pre-commit hook is a useful tool that checks your code automatically when you run a <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">commit</span></code> and,
+if it fails, the <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">commit</span></code> is canceled. This is often used to make sure
+that the changes to your code match a particular style, or that there are no
+code linting errors.</p>
+<p>For example, if you want that <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">commit</span></code> checks if your code matches the PEP8 specification,
+you can configure a git flake8 pre-commit hook:</p>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="c1"># file: .pre-commit-config.yaml</span>
+<span class="nt">repos</span><span class="p">:</span>
+  <span class="p p-Indicator">-</span> <span class="nt">repo</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">https://gitlab.com/pycqa/flake8</span>
+    <span class="nt">rev</span><span class="p">:</span> <span class="s">&#39;3.7.9&#39;</span>
+    <span class="nt">hooks</span><span class="p">:</span>
+    <span class="p p-Indicator">-</span>   <span class="nt">id</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">flake8</span>
+</pre></div>
+</div>
+<div class="alert alert-info">
+<p class="admonition-title">Note</p>
+<p>See [the flake8 hooks explanation](see: https://flake8.pycqa.org/en/latest/user/using-hooks.html)
+for more details</p>
+</div>
+<p>This file specifies a hook that will be triggered automatically before each <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">commit</span></code>,
+in this case, it specifies a flake8 using version <code class="docutils literal notranslate"><span class="pre">3.7.9</span></code>.</p>
+<p>Before you can see any change, first you should install <code class="docutils literal notranslate"><span class="pre">pre-commit</span></code> library.
+One way to do it is using <code class="docutils literal notranslate"><span class="pre">pip</span></code> or <code class="docutils literal notranslate"><span class="pre">conda</span></code>:</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>pip install pre-commit
+
+<span class="c1"># or</span>
+
+conda install -c conda-forge pre-commit
+</pre></div>
+</div>
+<p>Now, you can install your pre-commit hook using <code class="docutils literal notranslate"><span class="pre">pre-commit</span> <span class="pre">install</span></code>, and it will create the hook based on
+the file <code class="docutils literal notranslate"><span class="pre">.pre-commit-config.yaml</span></code>.</p>
+<p>Before each <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">commit</span></code> command, in this case, git will run <code class="docutils literal notranslate"><span class="pre">flake8</span></code> and, if it fails, the <code class="docutils literal notranslate"><span class="pre">commit</span></code> will be canceled.</p>
+</div>
+<div class="section" id="what-git-pre-commit-hook-should-i-use">
+<h2>What git pre-commit hook should I use?<a class="headerlink" href="#what-git-pre-commit-hook-should-i-use" title="Permalink to this headline">¶</a></h2>
+<p>The git pre-commit hook you should use, depends on the project needs or the team needs.
+Some pre-commit hooks you can find useful would be:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://flake8.pycqa.org/en/latest/user/using-hooks.html">flake8</a></p></li>
+<li><p><a class="reference external" href="https://github.com/pre-commit/mirrors-mypy">mypy</a></p></li>
+<li><p><a class="reference external" href="https://black.readthedocs.io/en/stable/version_control_integration.html">black</a></p></li>
+<li><p><a class="reference external" href="https://github.com/pre-commit/mirrors-isort">isort</a></p></li>
+</ul>
+<p>If you want more information about <code class="docutils literal notranslate"><span class="pre">pre-commit</span></code>, check out its <a class="reference external" href="https://pre-commit.com/">documentation</a>.</p>
+</div>
+</div>
+
+
+              </div>
+              
+        </div>
+    </div>
+    
+    
+    <div class='prev-next-bottom'>
+        
+
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By The pyOpenSci Community<br/>
+        
+            &copy; Copyright 2020.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+
+    <script src="../_static/js/index.js"></script>
+    
+    <!-- Google Analytics -->
+    <script>
+      window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+      ga('create', 'UA-165151943-1', 'auto');
+      ga('set', 'anonymizeIp', true);
+      ga('send', 'pageview');
+    </script>
+    <script async src='https://www.google-analytics.com/analytics.js'></script>
+    <!-- End Google Analytics -->
+    
+  </body>
+</html>

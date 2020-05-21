@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*********************************************
 * Variables *
 *********************************************/
@@ -15,31 +16,9 @@ code {
 /*********************************************
 * Main body *
 *********************************************/
-@media (min-width: 1500px) {
-  .col-xxl-7 {
-    flex: 0 0 61% !important;
-    max-width: 61% !important;
-    position: relative !important;
-    width: 100% !important;
-    padding-right: 15px !important;
-    padding-left: 15px !important; } }
-
-@media (max-width: 1500px) {
-  div.bd-sidebar.collapse:not(.show) + main.bd-content {
-    flex: 0 0 100%;
-    max-width: 100%; } }
-
 main.bd-content {
   padding-top: 3em !important;
   padding-bottom: 0px !important; }
-  main.bd-content.single-page {
-    max-width: 1100px;
-    margin-left: auto;
-    margin-right: auto; }
-    main.bd-content.single-page div#main-content div.section:first-of-type > h1:first-of-type {
-      border-bottom: 1px solid #130654;
-      padding-bottom: .2em;
-      font-size: 3em; }
   main.bd-content #main-content a.headerlink {
     opacity: 0;
     margin-left: .2em; }
@@ -93,24 +72,48 @@ main.bd-content {
     main.bd-content #main-content div.alert p.admonition-title {
       margin-bottom: .2em;
       font-weight: bold; }
-      main.bd-content #main-content div.alert p.admonition-title::after {
+      main.bd-content #main-content div.alert p.admonition-title:before {
         font-family: "Font Awesome 5 Free";
-        margin-left: 0.5em;
+        margin-right: 0.5em;
         font-weight: 900;
-        content: "\f06a"; }
-    main.bd-content #main-content div.alert.alert-warning p.admonition-title::after {
-      content: "\f071";
-      color: red; }
+        content: "\f05a";
+        /* info-circle */ }
+    main.bd-content #main-content div.alert.alert-warning p.admonition-title:before, main.bd-content #main-content div.alert.alert-danger p.admonition-title:before {
+      content: "\f071"; }
+    main.bd-content #main-content div.alert.alert-primary p.admonition-title:before {
+      content: ""; }
   main.bd-content #main-content dl.glossary dd {
     margin-left: 1.5em; }
-  main.bd-content #main-content div.contents p.topic-title {
-    font-size: 1.5em;
-    padding: .5em 0 0 1em; }
+  main.bd-content #main-content div.contents {
+    padding: 1em; }
+    main.bd-content #main-content div.contents p.topic-title {
+      font-size: 1.5em;
+      padding: .5em 0 0 1em; }
   main.bd-content #main-content p.centered {
     text-align: center; }
   main.bd-content #main-content div.sphinx-tabs > div.menu > a.item {
     width: auto;
     margin: 0; }
+  main.bd-content #main-content span.brackets:before, main.bd-content #main-content a.brackets:before {
+    content: "["; }
+  main.bd-content #main-content span.brackets:after, main.bd-content #main-content a.brackets:after {
+    content: "]"; }
+  main.bd-content #main-content .footnote-reference, main.bd-content #main-content a.bibtex.internal {
+    font-size: .8em;
+    vertical-align: top; }
+  main.bd-content #main-content dl.footnote span.fn-backref {
+    font-size: .8em;
+    vertical-align: top;
+    padding-left: .1em; }
+  main.bd-content #main-content dl.footnote dd {
+    font-size: .9em;
+    margin-left: 3em; }
+  main.bd-content #main-content dl.citation {
+    margin-left: 3em; }
+  main.bd-content #main-content dl.footnote dt.label {
+    float: left; }
+  main.bd-content #main-content dl.footnote dd p {
+    padding-left: 1.5em; }
 
 div.cell div.cell_output {
   padding-right: 0; }
@@ -147,7 +150,11 @@ div.sidebar, div.margin, div.margin-caption p.caption, .cell.tag_popout, .cell.t
       div.cell.tag_popout p.sidebar-title, div.cell.tag_margin p.sidebar-title, div.margin p.sidebar-title, div.margin-caption p.caption p.sidebar-title {
         font-size: 1em; }
   div.cell.tag_margin .cell_output {
-    padding-left: 0; } }
+    padding-left: 0; }
+  div.sidebar:not(.margin) {
+    width: 60%;
+    margin-left: 1.5em;
+    margin-right: -28%; } }
 
 @media (min-width: 768px) {
   div.cell.tag_full-width, div.cell.tag_full_width, div.full_width, div.full-width {
@@ -171,20 +178,6 @@ blockquote {
 
 div.highlight {
   background: none; }
-
-dl.footnote dt.label {
-  float: left; }
-
-dl.footnote dd p {
-  padding-left: 1.5em; }
-
-dl.citation {
-  margin-left: 5%; }
-
-a.bibtex.internal {
-  /* margin-bottom: .1em; */
-  font-size: .8em;
-  vertical-align: top; }
 
 /*********************************************
 * Top Bar *
@@ -290,7 +283,7 @@ button.topbarbtn img {
 *********************************************/
 .bd-toc {
   padding: 0px !important;
-  overflow-y: hidden;
+  overflow-y: visible;
   background: white;
   right: 0;
   z-index: 999;
@@ -299,23 +292,27 @@ button.topbarbtn img {
     color: #5a5a5a; }
   .bd-toc nav {
     opacity: 0;
-    transition: opacity 0.2s ease; }
+    max-height: 0;
+    transition: opacity 0.2s ease, max-height .7s ease;
+    overflow-y: hidden;
+    background: white; }
     .bd-toc nav a:hover, .bd-toc nav li.active > a.active {
       color: #0071bc; }
     .bd-toc nav li.active > a.active {
       border-left: 2px solid #0071bc; }
-  @media (min-width: 1500px) {
-    .bd-toc {
-      height: auto !important; }
-      .bd-toc nav {
-        opacity: 1; } }
-  .bd-toc:hover, .bd-toc.show {
-    overflow-y: visible;
-    height: auto; }
-    .bd-toc:hover nav, .bd-toc.show nav {
-      opacity: 1; }
+  .bd-toc:hover nav, .bd-toc.show nav {
+    max-height: 100vh;
+    opacity: 1; }
+  .bd-toc:hover .tocsection:after, .bd-toc.show .tocsection:after {
+    opacity: 0; }
   .bd-toc .tocsection {
     padding: .5rem 0 .5rem 1rem !important; }
+    .bd-toc .tocsection:after {
+      content: "\f107";
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      padding-left: .5em;
+      transition: opacity .3s ease; }
   .bd-toc .toc-entry a {
     padding: .125rem 1rem !important; }
   .bd-toc div.editthispage {
@@ -356,11 +353,11 @@ button.topbarbtn img {
     font-size: 1.1em;
     color: black;
     text-align: center; }
-  .bd-sidebar p.navbar_footer {
+  .bd-sidebar div.navbar_extra_footer {
     text-align: center;
     font-size: .9em;
-    padding-top: .5em;
-    color: #5a5a5a; }
+    color: #5a5a5a;
+    margin-bottom: 3em; }
   .bd-sidebar.collapsing {
     border: none;
     overflow: hidden;

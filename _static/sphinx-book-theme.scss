@@ -2,7 +2,6 @@
 * Variables *
 *********************************************/
 // Breakpoints from Bootstrap: https://getbootstrap.com/docs/4.1/layout/overview/#responsive-breakpoints
-$breakpoint-xxl: 1500px;  // Custom one
 $breakpoint-xl: 1200px;
 $breakpoint-lg: 992px;
 $breakpoint-md: 768px;
@@ -32,43 +31,9 @@ code {
 * Main body *
 *********************************************/
 
-// Custom XXL breakpoint
-@media (min-width: $breakpoint-xxl) {
-    .col-xxl-7 {
-        flex: 0 0 61% !important;
-        max-width: 61% !important;
-        position: relative !important;
-        width: 100% !important;
-        padding-right: 15px !important;
-        padding-left: 15px !important;
-    }
-}
-
-// If the sidebar is collapsed, our main content should expand fully
-div.bd-sidebar.collapse:not(.show) + main.bd-content {
-    @media (max-width: $breakpoint-xxl) {
-        flex: 0 0 100%;
-        max-width: 100%;
-    }
-}
-
 main.bd-content {
     padding-top: $topbar-height !important;
     padding-bottom: 0px !important;
-
-    // CSS unique to a single page
-    &.single-page {
-        max-width: 1100px;
-        margin-left: auto;
-        margin-right: auto;
-
-        // Page title styling
-        div#main-content div.section:first-of-type > h1:first-of-type {
-            border-bottom: 1px solid #130654;
-            padding-bottom: .2em;
-            font-size: 3em;
-        }
-    }
 
     #main-content {
         // Content links and link color
@@ -171,18 +136,22 @@ main.bd-content {
                 margin-bottom: .2em;
                 font-weight: bold;
 
-                &::after {
+                &:before {
                     font-family: "Font Awesome 5 Free";
-                    margin-left: 0.5em;
+                    margin-right: 0.5em;
                     font-weight: 900;
-                    // Default content is exclamation point
-                    content: "\f06a";
+                    content: "\f05a";  /* info-circle */
                 }
             }
 
-            &.alert-warning p.admonition-title::after {
-                content: "\f071";
-                color: red;
+            &.alert-warning, &.alert-danger {
+                p.admonition-title:before {
+                    content: "\f071";
+                }
+            }
+
+            &.alert-primary p.admonition-title:before {
+                content: "\f06a" /* exclamation-circle */
             }
         }
 
@@ -193,10 +162,13 @@ main.bd-content {
             }
         }
 
-        // Table of contents
-        div.contents p.topic-title {
-            font-size: 1.5em;
-            padding: .5em 0 0 1em;
+        // Within-page Table of contents
+        div.contents {
+            padding: 1em;
+            p.topic-title {
+                font-size: 1.5em;
+                padding: .5em 0 0 1em;
+            }
         }
 
         // Misc text and directives
@@ -209,6 +181,52 @@ main.bd-content {
         div.sphinx-tabs > div.menu > a.item {
             width: auto;
             margin: 0;
+        }
+
+        // Footnotes and Citations
+        span.brackets, a.brackets {
+            &:before {
+                content: "[";
+            }
+
+            &:after {
+                content: "]";
+            }
+        }
+
+        .footnote-reference, a.bibtex.internal {
+            font-size: .8em;
+            vertical-align: top;
+        }
+
+        dl.footnote {
+
+            span.fn-backref {
+                font-size: .8em;
+                vertical-align: top;
+                padding-left:.1em;
+            }
+
+            dd {
+                font-size:.9em;
+                margin-left: 3em;
+            }
+        }
+
+        dl.citation {
+            margin-left: 3em;
+        }
+
+        // Footnotes
+
+        dl.footnote {
+            dt.label {
+                float: left;
+            }
+
+            dd p {
+                padding-left: 1.5em;
+            }
         }
     }
 }
@@ -277,6 +295,13 @@ div.sidebar, div.margin, div.margin-caption p.caption, .cell.tag_popout, .cell.t
     div.cell.tag_margin .cell_output {
         padding-left: 0;
     }
+
+    div.sidebar:not(.margin) {
+        width: 60%;
+        margin-left: 1.5em;
+        margin-right: -28%;
+    }
+
 }
 
 
@@ -314,29 +339,6 @@ div.highlight {
     background: none;
 }
 
-// Footnotes
-
-dl.footnote {
-    dt.label {
-        float: left;
-    }
-
-    dd p {
-        padding-left: 1.5em;
-    }
-}
-
-// Citations
-
-dl.citation {
-    margin-left: 5%;
-}
-
-a.bibtex.internal {
-    /* margin-bottom: .1em; */
-    font-size: .8em;
-    vertical-align: top;
-}
 
 /*********************************************
 * Top Bar *
@@ -496,7 +498,7 @@ button.topbarbtn img {
 
 .bd-toc {
     padding: 0px !important;
-    overflow-y: hidden;
+    overflow-y: visible;
     background: white;
     right: 0;
     z-index: 999;
@@ -510,7 +512,10 @@ button.topbarbtn img {
     // By default the nav is hidden unless a few conditions are met
     nav {
         opacity: 0;
-        transition: opacity 0.2s ease;
+        max-height: 0;
+        transition: opacity 0.2s ease, max-height .7s ease;
+        overflow-y: hidden;
+        background: white;
 
         // TOC link color
         a:hover, li.active > a.active {
@@ -522,25 +527,29 @@ button.topbarbtn img {
         }
     }
 
-    // On really wide screens, we always show the nav
-    @media (min-width: $breakpoint-xxl) {
-        height: auto !important;
-        nav {
-            opacity: 1;
-        }
-    }
-
     // On hover or w/ a show class, we show the TOC
     &:hover, &.show {
-        overflow-y: visible;
-        height: auto;
         nav {
+            max-height: 100vh;
             opacity: 1;
+        }
+
+        // Hide the arrow when we display the toc
+        .tocsection:after {
+            opacity: 0;
         }
     }
 
     .tocsection {
-        padding: .5rem 0 .5rem 1rem !important
+        padding: .5rem 0 .5rem 1rem !important;
+
+        &:after {
+            content: "\f107";
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
+            padding-left: .5em;
+            transition: opacity .3s ease;
+        }
     }
 
     .toc-entry a {
@@ -614,11 +623,11 @@ button.topbarbtn img {
         text-align: center;
     }
 
-    p.navbar_footer {
+    div.navbar_extra_footer {
         text-align: center;
         font-size: .9em;
-        padding-top: .5em;
         color: $non-content-grey;
+        margin-bottom: 3em;
     }
 
     &.collapsing {
