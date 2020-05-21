@@ -13,10 +13,10 @@ review process.
 
 ## A Guide for New Reviewers
 
-TODO: Add text about the criteria for being a reviewer here ... outline idea below
-* Familiar with Python
-* course review for usability and documentation vs technical reviews
-* we like to have both in each review so it can be split up across multiple reviewers (technical, usability, etc)
+% TODO: Add text about the criteria for being a reviewer here ... outline idea below
+% * Familiar with Python
+% * course review for usability and documentation vs technical reviews
+% * we like to have both in each review so it can be split up across multiple reviewers (technical, usability, etc)
 
 ## Get Started With Your Review
 
