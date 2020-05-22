@@ -14,17 +14,21 @@ To build the guide locally, take the following steps:
 * Clone this repository:
 
   ```
-  git clone https://github.com/pyOpenSci/dev_guide
+  git clone https://github.com/pyOpenSci/contributing-guide
   ```
 * Install Jupyter Book
 
   ```
-  pip install -U jupyter-book>=0.7.0b
+  pip install -U "jupyter-book>=0.7.0b"
+
   ```
 * Build the guide
 
   ```
-  jupyter-book build dev_guide
+  # Cd to the repo if you are not already in it!
+  cd contributing-guide
+  # Build the book locally!
+  jupyter-book build .
   ```
 
 ## Contributing to this guide
