@@ -36,7 +36,7 @@ You could implement the "[gitflow](https://www.atlassian.com/git/tutorials/compa
 
 One particular aspect of working with collaborators is reviewing pull requests. Even if not adopting gitflow it might make sense for repo collaborators to make PRs and have them reviewed, and in general PRs by external developers will need to be assessed. Sometimes you'll be fine just reading the changes and trusting [Continuous integration](../authoring/overview#continuous-integration). Sometimes you'll need to dive deeper, e.g. by downloading a copy of the branch that the PR was created from.
 
-(attributions=)
+(attributions)=
 ### Be generous with attributions
 
 If someone contributes to your repository consider adding them in CONTRIBUTORS, as contributor for small contributions, author for bigger contributions. Also consider adding their name near the feature/bug fix line in HISTORY We recommend your being generous with such acknowledgements.
