@@ -7,7 +7,7 @@ These are templates to be used by editors and reviewers. When a package is submi
 ```
 ## Editor checks:
 
-- [ ] **Fit**: The package meets criteria for [fit](https://pyopensci.github.io/dev_guide/peer_review/aims_scope.html#package-categories) and [overlap](https://pyopensci.github.io/dev_guide/peer_review/aims_scope.html#package-categories).
+- [ ] **Fit**: The package meets criteria for [fit](https://pyopensci.github.io/dev_guide/peer_review/aims-and-scope.html#package-categories) and [overlap](https://pyopensci.github.io/dev_guide/peer_review/aims-and-scope.html#package-categories).
 - [ ] **Automated tests:** Package has a testing suite and is tested via Travis-CI or another CI service.
 - [ ] **License:** The package has an OSI accepted license
 - [ ] **Repository:** The repository link resolves correctly
@@ -61,6 +61,15 @@ The README should include, from top to bottom:
 - [ ] Direction to more detailed documentation (e.g. your documentation files or website).
 - [ ] If applicable, how the package compares to other similar packages and/or how it relates to other packages
 - [ ] Citation information
+
+#### Usability
+Reviewers are encouraged to submit suggestions (or pull requests) that will improve the usability of the package as a whole.
+Package structure should follow general community best-practices. In general please consider:
+
+- [ ] The documentation is easy to find and understand
+- [ ] The need for the package is clear
+- [ ] All functions have documentation and associated examples for use
+
 
 #### Functionality
 

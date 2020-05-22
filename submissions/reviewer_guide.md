@@ -1,14 +1,55 @@
 # Guide for Reviewers
 
-Please be respectful and kind to the authors in your reviews. Our [code of conduct](../process/coc) is mandatory for everyone involved in our review process.
+```{epigraph}
+Thank you for taking the time to review a package for pyOpenSci and for contributing
+to making open source scientific software easier to use by the community! If you
+have any questions about the review process, feel free to reach out to one of
+our editors or to post a question on our [discourse forum](https://pyopensci.discourse.group/).  
+```
 
-## Preparing Your Review
+Please be respectful and kind to the authors in your reviews. Our
+[code of conduct](../open-source-software-peer-review/code-of-conduct) is mandatory for everyone involved in our
+review process.
 
-### General Guidelines
+## A Guide for New Reviewers
 
-When you are assigned to review a package, you are expected to submit your review within 3 weeks. Please contact the editor directly or in the submission thread to inform them about possible delays.
+% TODO: Add text about the criteria for being a reviewer here ... outline idea below
+% * Familiar with Python
+% * course review for usability and documentation vs technical reviews
+% * we like to have both in each review so it can be split up across multiple reviewers (technical, usability, etc)
 
-To review a package, please begin by copying our [review template](../appendices/templates#review-template) and using it as a high-level checklist. In addition to checking off the minimum criteria, we ask that you provide general comments addressing the following:
+## Get Started With Your Review
+
+As a new review you want to start by installing the package that you are
+reviewing locally to test it out. You can either fork and install the package in
+development mode `pip install -e .` or install from `pip` or `conda-forge`. Be sure
+that the version that you are reviewing aligns with the version submitted the
+version submitted by the author. The package version can be found at the top of
+the review issue. In the example below you can see that pyrolite version 0.2.5
+was submitted for review. That is the version that you should install!
+
+```
+Submitting Author: Name (@morganjwilliams)
+Package Name: pyrolite
+One-Line Description of Package: A set of tools for getting the most from your geochemical data.
+Repository Link: https://github.com/morganjwilliams/pyrolite
+Version submitted: 0.2.5
+Editor: @lwasser
+```
+
+### General Guidelines For Reviewing A Python Package for PyOpenSci
+
+```{note}
+If you are submitting a review, we appreciate submission within 3 weeks of
+accepting a review. Please contact the editor directly or in the submission
+thread to inform them about possible delays.
+```
+
+To review a package, please begin by copying our
+[review template](../appendices/templates#review-template) and using it as a
+high-level checklist. In addition to checking off the minimum criteria specified
+in the review- template, please also provide general comments addressing the following:
+
 - Does the code comply with general principles in the [Mozilla reviewing guide](https://mozillascience.github.io/codeReview/review.html)?
 - Does the package comply with the [pyOpenSci packaging guide](../authoring/overview)?
 - Are there improvements that could be made to the code style?
@@ -19,20 +60,21 @@ To review a package, please begin by copying our [review template](../appendices
 - Were functions and arguments named to work together to form a common, logical programming API that is easy to read, and autocomplete?
 - If you have your own relevant data/problem, work through it with the package. You may find rough edges and use-cases the author didn't think about.
 
-### Examples of Past Reviews
+### Examples of Past pyOpenSci Reviews
 
-**Note**: Because pyOpenSci is new, we do not have examples from our review process yet. For now, this section is taken from the excellent [rOpenSci guidebook](https://ropensci.github.io/dev_guide/reviewerguide.html#experience-from-past-reviewers). Our review process is based on theirs. We will update with pyOpenSci-specific information in the future.
+It might be helpful to consult some previous reviews and read about the
+experiences of other reviewers. In general you can find submission threads of
+onboarded packages here. Here are a few chosen examples of reviews (note that
+your reviews do not need to be as long as these examples):
 
-It might be helpful to consult some previous reviews and read about the experiences of other reviewers. In general you can find submission threads of onboarded packages here. Here are a few chosen examples of reviews (note that your reviews do not need to be as long as these examples):
+
+* `MovingPandas` [review 1](https://github.com/pyOpenSci/software-review/issues/18#issuecomment-579520816) and [review 2](https://github.com/pyOpenSci/software-review/issues/18#issuecomment-581752433)
+
+* `Pandera` [review 1](https://github.com/pyOpenSci/software-review/issues/12#issuecomment-527622205) and [review 2](https://github.com/pyOpenSci/software-review/issues/12#issuecomment-531491008)
 
 
-* `rtika` [review 1](https://github.com/ropensci/software-review/issues/191#issuecomment-367166658) and [review 2](https://github.com/ropensci/software-review/issues/191#issuecomment-368254623)
 
-* `NLMR` [review 1](https://github.com/ropensci/software-review/issues/188#issuecomment-368042693) and [review 2](https://github.com/ropensci/software-review/issues/188#issuecomment-369310831)
-
-* `bowerbird` [pre-review comment](https://github.com/ropensci/software-review/issues/139#issuecomment-322713737), [review 1](https://github.com/ropensci/software-review/issues/139#issuecomment-342380870), [review 2](https://github.com/ropensci/software-review/issues/139#issuecomment-342724843).
-
-* `rusda` [review](https://github.com/ropensci/software-review/issues/18#issuecomment-120445737) (from before we had a review template)
+### Lessons Learned from rOpenSci
 
 You can read blog posts written by reviewers about their experiences [via this link](https://ropensci.org/tags/reviewer/). In particular, in [this blog post by Mara Averick](https://ropensci.org/blog/2017/08/22/first-package-review/) read about the "naive user" role a reviewer can take to provide useful feedback even without being experts of the package's topic or implementation, by asking themselves _"What did I think this thing would do? Does it do it? What are things that scare me off?"_. In [another blog post](https://ropensci.org/blog/2017/09/08/first-review-experiences/) Verena Haunschmid explains how she alternated between using the package and checking its code.
 
@@ -51,4 +93,3 @@ We welcome any feedback and/or questions about the review process! We encourage 
 
 ## Review Follow-Up
 Authors should respond within 2 weeks with their changes to the package in response to your review. At this stage, we ask that you respond as to whether the changes sufficiently address any issues raised in your review. We encourage ongoing discussion between package authors and reviewers, and you may ask editors to clarify issues in the review thread as well.
-
