@@ -17,7 +17,7 @@ the editorial board. The Editor in Chief fulfills the following roles:
 - Tag issue with `1/editor-checks` tag and assign a main editor. Please strive to finish the checks and start looking for reviewers within 1 week.
 - Use the [editor template](../appendices/templates#editors-template) to guide initial checks and record your response to the submission.
 - Check that template has been properly filled out.
-- Check against policies for [fit](aims_scope#package-categories) and [overlap](aims_scope#package-overlap). If reject, see [this section](#responding-to-out-of-scope-submissions) about how to respond.
+- Check against policies for [fit](aims-and-scope#package-categories) and [overlap](aims-and-scope#package-overlap). If reject, see [this section](#responding-to-out-of-scope-submissions) about how to respond.
 - Check that mandatory parts of template are complete.  If not, direct authors toward appropriate instructions.
 - Run automated tests: spelling, linting, etc ... will be filled in later.
 - For packages needing continuous integration on multiple platforms ([criteria in this section of the packaging chapter](../authoring/overview#continuous-integration)) make sure the package gets tested on multiple platforms (having the package built on both Travis and AppVeyor for instance).

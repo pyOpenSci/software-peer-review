@@ -1,14 +1,11 @@
 file: intro
 sections:
 - file: README
-- file: open-source-software-peer-review/aims_scope
+- file: open-source-software-peer-review/index
   sections:
-  - file: open-source-software-peer-review/guidelines
-  - file: open-source-software-peer-review/intro
-  - file: open-source-software-peer-review/pyopensci-code-of-conduct
-- file: appendices/templates
-  sections:
-  - file: appendices/glossary
+  - file: open-source-software-peer-review/code-of-conduct
+  - file: open-source-software-peer-review/aims-and-scope
+  - file: open-source-software-peer-review/policies-and-guidelines
 - file: authoring/index
   sections:
   - file: authoring/collaboration
@@ -20,3 +17,6 @@ sections:
   - file: submissions/author_guide
   - file: submissions/intro
   - file: submissions/reviewer_guide
+- file: appendices/templates
+  sections:
+  - file: appendices/glossary

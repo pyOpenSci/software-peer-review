@@ -1,4 +1,4 @@
-# Peer Review Policies
+# pyOpenSci Open Source Software Peer Review Guidelines & Policies
 
 ## Review Process Guidelines
 - Packages are reviewed for quality, fit, documentation, clarity and the review process is quite similar to a manuscript review (see our [packaging guide](../authoring/overview) and [reviewing guide](../submissions/reviewer_guide) for more details). Unlike a manuscript review, this process will be an ongoing conversation.
@@ -36,4 +36,3 @@ Should authors abandon the maintenance of an actively used package in our suite,
 
 ### Requesting Package Removal
 In the unlikely scenario that a contributor of a package requests removal of their package from the suite, we retain the right to maintain a version of the package in our suite for archival purposes.
-
