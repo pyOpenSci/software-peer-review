@@ -1,28 +1,22 @@
-- title: Home
-  file: intro
-
+file: intro
+sections:
+- file: README
+- file: open-source-software-peer-review/index
+  sections:
+  - file: open-source-software-peer-review/code-of-conduct
+  - file: open-source-software-peer-review/aims-and-scope
+  - file: open-source-software-peer-review/policies-and-guidelines
 - file: authoring/index
-  expand_sections: true
   sections:
-    - file: authoring/overview
-    - file: authoring/testing
-    - file: authoring/collaboration
-    - file: authoring/release
-
-- file: process/intro
-  expand_sections: true
-  sections:
-    - file: process/aims_scope
-    - file: process/guidelines
-    - file: process/coc
-
-- file: submissions/intro
-  expand_sections: true
+  - file: authoring/collaboration
+  - file: authoring/overview
+  - file: authoring/testing
+  - file: authoring/release
+- file: submissions/editor_guide
   sections:
   - file: submissions/author_guide
+  - file: submissions/intro
   - file: submissions/reviewer_guide
-  - file: submissions/editor_guide
-
 - file: appendices/templates
-- file: appendices/glossary
-
+  sections:
+  - file: appendices/glossary
