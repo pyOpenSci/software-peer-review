@@ -5,7 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta charset="utf-8" />
-    <title>Submission Guides &#8212; The pyOpenSci Developer Guide</title>
+    <title>Community Code of Conduct &#8212; The pyOpenSci Developer Guide</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
     <link href="../_static/css/index.css" rel="stylesheet">
     <link rel="stylesheet" href="../_static/sphinx-book-theme.css" type="text/css" />
@@ -31,8 +31,8 @@
     <link rel="shortcut icon" href="../_static/logo.png"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Guide for Authors" href="author_guide.html" />
-    <link rel="prev" title="Community Code of Conduct" href="../process/coc.html" />
+    <link rel="next" title="pyOpenSci Open Source Software Peer Review Guidelines &amp; Policies" href="policies-and-guidelines.html" />
+    <link rel="prev" title="Aims and Scope" href="aims-and-scope.html" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="docsearch:language" content="en">
@@ -67,56 +67,28 @@
 <nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
   
   <ul class="nav sidenav_l1">
-  <li class="">
-    <a href="../authoring/index.html">Author’s Guide</a>
-  <ul class="nav sidenav_l2">
-    <li class="">
-      <a href="../authoring/overview.html">Overview</a>
-    </li>
-    <li class="">
-      <a href="../authoring/testing.html">Testing your package</a>
-    </li>
-    <li class="">
-      <a href="../authoring/collaboration.html">Collaboration Guide</a>
-    </li>
-    <li class="">
-      <a href="../authoring/release.html">Releasing a package</a>
-    </li>
-  </ul>
-  </li>
-  <li class="">
-    <a href="../process/intro.html">The Peer Review Process</a>
-  <ul class="nav sidenav_l2">
-    <li class="">
-      <a href="../process/aims_scope.html">Aims and Scope</a>
-    </li>
-    <li class="">
-      <a href="../process/guidelines.html">Peer Review Policies</a>
-    </li>
-    <li class="">
-      <a href="../process/coc.html">Community Code of Conduct</a>
-    </li>
-  </ul>
-  </li>
   <li class="active">
-    <a href="">Submission Guides</a>
+    <a href="intro.html">The Peer Review Process</a>
   <ul class="nav sidenav_l2">
     <li class="">
-      <a href="author_guide.html">Guide for Authors</a>
+      <a href="aims-and-scope.html">Aims and Scope</a>
+    </li>
+    <li class="active">
+      <a href="">Community Code of Conduct</a>
     </li>
     <li class="">
-      <a href="reviewer_guide.html">Guide for Reviewers</a>
-    </li>
-    <li class="">
-      <a href="editor_guide.html">Guide for Editors</a>
+      <a href="policies-and-guidelines.html">pyOpenSci Open Source Software Peer Review Guidelines & Policies</a>
     </li>
   </ul>
+  </li>
+  <li class="">
+    <a href="../open-source-software-submissions/intro.html">Submission Guides</a>
   </li>
   <li class="">
     <a href="../appendices/templates.html">Appendix: Templates</a>
   </li>
   <li class="">
-    <a href="../appendices/glossary.html">Glossary</a>
+    <a href="../authoring/index.html">Author’s Guide</a>
   </li>
 </ul>
 </nav>
@@ -155,7 +127,7 @@
                 <!-- ipynb file if we had a myst markdown file -->
                 
                 <!-- Download raw file -->
-                <a class="dropdown-buttons" href="../_sources/submissions/intro.md.txt"><button type="button" class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip" data-placement="left">.md</button></a>
+                <a class="dropdown-buttons" href="../_sources/open-source-software-peer-review/code-of-conduct.md.txt"><button type="button" class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip" data-placement="left">.md</button></a>
                 <!-- Download PDF via print -->
                 <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF" onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
             </div>
@@ -163,7 +135,7 @@
         </div>
 
         <!-- Edit this page -->
-        <a class="edit-button" href="https://github.com/pyOpenSci/dev_guide/edit/master/submissions/intro.md"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="bottom" title="Edit this page"><i class="fas fa-pencil-alt"></i></button></a>
+        <a class="edit-button" href="https://github.com/pyOpenSci/dev_guide/edit/master/open-source-software-peer-review/code-of-conduct.md"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="bottom" title="Edit this page"><i class="fas fa-pencil-alt"></i></button></a>
 
         <!-- Full screen (wrap in <a> to have style consistency -->
         <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="bottom" onclick="toggleFullScreen()" title="Fullscreen mode"><i class="fas fa-expand"></i></button></a>
@@ -182,7 +154,7 @@
 
 
 <div class="tocsection editthispage">
-    <a href="https://github.com/pyOpenSci/dev_guide/edit/master/submissions/intro.md">
+    <a href="https://github.com/pyOpenSci/dev_guide/edit/master/open-source-software-peer-review/code-of-conduct.md">
         <i class="fas fa-pencil-alt"></i> Edit this page
     </a>
 </div>
@@ -194,12 +166,19 @@
         
               <div>
                 
-  <div class="section" id="submission-guides">
-<h1>Submission Guides<a class="headerlink" href="#submission-guides" title="Permalink to this headline">¶</a></h1>
-<p>These are a collection of guides for the peer review and submission process.
-They are broken down by the various roles that carry out a submission.</p>
-<div class="toctree-wrapper compound">
-</div>
+  <div class="section" id="community-code-of-conduct">
+<h1>Community Code of Conduct<a class="headerlink" href="#community-code-of-conduct" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>We are committed to providing a friendly, safe and welcoming environment for all, regardless of gender, sexual orientation, disability, ethnicity, religion, or similar personal characteristic.</p></li>
+<li><p>Please avoid using openly sexual nicknames or other nicknames that might detract from a friendly, safe and welcoming environment for all.</p></li>
+<li><p>Please be kind and courteous. There’s no need to be mean or rude.</p></li>
+<li><p>Respect that people have differences of opinion and that every design or implementation choice carries a trade-off and numerous costs. There is seldom a right answer.</p></li>
+<li><p>Please keep unstructured critique to a minimum. If you have solid ideas you want to experiment with, make a fork and see how it works.</p></li>
+<li><p>We will exclude you from interaction if you insult, demean or harass anyone. That is not welcome behavior. We interpret the term “harassment” as including the definition in the Citizen Code of Conduct; if you have any lack of clarity about what might be included in that concept, please read their definition. In particular, we don’t tolerate behavior that excludes people in socially marginalized groups.</p></li>
+<li><p>Private harassment is also unacceptable. No matter who you are, if you feel you have been or are being harassed or made uncomfortable by a community member, please contact us at earth.lab&#64;colorado.edu immediately with a capture (log, photo, email) of the harassment if possible. Whether you’re a regular contributor or a newcomer, we care about making this community a safe place for you and we’ve got your back.</p></li>
+<li><p>Likewise, any spamming, trolling, flaming, baiting or other attention-stealing behavior are not welcome.</p></li>
+<li><p>Avoid the use of personal pronouns in code comments or documentation. There is no need to address persons when explaining code (e.g. “When the developer”). The focus should be on the code, not the author.</p></li>
+</ul>
 </div>
 
 
@@ -211,8 +190,8 @@ They are broken down by the various roles that carry out a submission.</p>
     
     <div class='prev-next-bottom'>
         
-    <a class='left-prev' id="prev-link" href="../process/coc.html" title="previous page">Community Code of Conduct</a>
-    <a class='right-next' id="next-link" href="author_guide.html" title="next page">Guide for Authors</a>
+    <a class='left-prev' id="prev-link" href="aims-and-scope.html" title="previous page">Aims and Scope</a>
+    <a class='right-next' id="next-link" href="policies-and-guidelines.html" title="next page">pyOpenSci Open Source Software Peer Review Guidelines &amp; Policies</a>
 
     </div>
     <footer class="footer mt-5 mt-md-0">

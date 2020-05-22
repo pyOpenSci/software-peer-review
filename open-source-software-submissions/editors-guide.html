@@ -31,8 +31,8 @@
     <link rel="shortcut icon" href="../_static/logo.png"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Appendix: Templates" href="../appendices/templates.html" />
-    <link rel="prev" title="Guide for Reviewers" href="reviewer_guide.html" />
+    <link rel="next" title="pyOpenSci Editor in Chief Guide" href="editor-in-chief-guide.html" />
+    <link rel="prev" title="Submission Guides" href="intro.html" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="docsearch:language" content="en">
@@ -68,47 +68,22 @@
   
   <ul class="nav sidenav_l1">
   <li class="">
-    <a href="../authoring/index.html">Author’s Guide</a>
-  <ul class="nav sidenav_l2">
-    <li class="">
-      <a href="../authoring/overview.html">Overview</a>
-    </li>
-    <li class="">
-      <a href="../authoring/testing.html">Testing your package</a>
-    </li>
-    <li class="">
-      <a href="../authoring/collaboration.html">Collaboration Guide</a>
-    </li>
-    <li class="">
-      <a href="../authoring/release.html">Releasing a package</a>
-    </li>
-  </ul>
-  </li>
-  <li class="">
-    <a href="../process/intro.html">The Peer Review Process</a>
-  <ul class="nav sidenav_l2">
-    <li class="">
-      <a href="../process/aims_scope.html">Aims and Scope</a>
-    </li>
-    <li class="">
-      <a href="../process/guidelines.html">Peer Review Policies</a>
-    </li>
-    <li class="">
-      <a href="../process/coc.html">Community Code of Conduct</a>
-    </li>
-  </ul>
+    <a href="../open-source-software-peer-review/intro.html">The Peer Review Process</a>
   </li>
   <li class="active">
     <a href="intro.html">Submission Guides</a>
   <ul class="nav sidenav_l2">
-    <li class="">
-      <a href="author_guide.html">Guide for Authors</a>
-    </li>
-    <li class="">
-      <a href="reviewer_guide.html">Guide for Reviewers</a>
-    </li>
     <li class="active">
       <a href="">Guide for Editors</a>
+    </li>
+    <li class="">
+      <a href="editor-in-chief-guide.html">pyOpenSci Editor in Chief Guide</a>
+    </li>
+    <li class="">
+      <a href="author-guide.html">Guide for Authors</a>
+    </li>
+    <li class="">
+      <a href="reviewer-guide.html">Guide for Reviewers</a>
     </li>
   </ul>
   </li>
@@ -116,7 +91,7 @@
     <a href="../appendices/templates.html">Appendix: Templates</a>
   </li>
   <li class="">
-    <a href="../appendices/glossary.html">Glossary</a>
+    <a href="../authoring/index.html">Author’s Guide</a>
   </li>
 </ul>
 </nav>
@@ -155,7 +130,7 @@
                 <!-- ipynb file if we had a myst markdown file -->
                 
                 <!-- Download raw file -->
-                <a class="dropdown-buttons" href="../_sources/submissions/editor_guide.md.txt"><button type="button" class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip" data-placement="left">.md</button></a>
+                <a class="dropdown-buttons" href="../_sources/open-source-software-submissions/editors-guide.md.txt"><button type="button" class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip" data-placement="left">.md</button></a>
                 <!-- Download PDF via print -->
                 <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF" onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
             </div>
@@ -163,7 +138,7 @@
         </div>
 
         <!-- Edit this page -->
-        <a class="edit-button" href="https://github.com/pyOpenSci/dev_guide/edit/master/submissions/editor_guide.md"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="bottom" title="Edit this page"><i class="fas fa-pencil-alt"></i></button></a>
+        <a class="edit-button" href="https://github.com/pyOpenSci/dev_guide/edit/master/open-source-software-submissions/editors-guide.md"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="bottom" title="Edit this page"><i class="fas fa-pencil-alt"></i></button></a>
 
         <!-- Full screen (wrap in <a> to have style consistency -->
         <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="bottom" onclick="toggleFullScreen()" title="Fullscreen mode"><i class="fas fa-expand"></i></button></a>
@@ -180,40 +155,38 @@
     <ul class="nav section-nav flex-column">
     
         <li class="nav-item toc-entry toc-h2">
-            <a href="#editor-in-chief" class="nav-link">Editor in Chief</a>
+            <a href="#get-started-checklist" class="nav-link">Get Started Checklist</a>
         </li>
     
         <li class="nav-item toc-entry toc-h2">
-            <a href="#editor-checklist" class="nav-link">Editor Checklist</a><ul class="nav section-nav flex-column">
+            <a href="#general-guidelines-for-editor" class="nav-link">General Guidelines for Editor</a>
+        </li>
+    
+        <li class="nav-item toc-entry toc-h2">
+            <a href="#guidelines-for-identifying-reviewers" class="nav-link">Guidelines For Identifying Reviewers</a><ul class="nav section-nav flex-column">
                 
         <li class="nav-item toc-entry toc-h3">
-            <a href="#look-for-and-assign-reviewers" class="nav-link">Look for and assign reviewers:</a><ul class="nav section-nav flex-column">
-                
-        <li class="nav-item toc-entry toc-h4">
             <a href="#tasks" class="nav-link">Tasks</a>
         </li>
     
+        <li class="nav-item toc-entry toc-h3">
+            <a href="#where-to-look-for-reviewers" class="nav-link">Where to Look for Reviewers?</a><ul class="nav section-nav flex-column">
+                
         <li class="nav-item toc-entry toc-h4">
-            <a href="#where-to-look-for-reviewers" class="nav-link">Where to look for reviewers?</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h4">
-            <a href="#criteria-for-choosing-a-reviewer" class="nav-link">Criteria for choosing a reviewer</a>
+            <a href="#criteria-for-choosing-reviewers" class="nav-link">Criteria for Choosing Reviewers</a>
         </li>
     
             </ul>
         </li>
     
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#during-review" class="nav-link">During review:</a>
+            </ul>
         </li>
     
+        <li class="nav-item toc-entry toc-h2">
+            <a href="#editor-responsibilities-during-review" class="nav-link">Editor Responsibilities During Review:</a><ul class="nav section-nav flex-column">
+                
         <li class="nav-item toc-entry toc-h3">
-            <a href="#after-review" class="nav-link">After review:</a>
-        </li>
-    
-        <li class="nav-item toc-entry toc-h3">
-            <a href="#responding-to-out-of-scope-submissions" class="nav-link">Responding to out-of-scope submissions</a>
+            <a href="#editor-responsibilities-after-review" class="nav-link">Editor Responsibilities After Review:</a>
         </li>
     
             </ul>
@@ -225,7 +198,7 @@
 
 
 <div class="tocsection editthispage">
-    <a href="https://github.com/pyOpenSci/dev_guide/edit/master/submissions/editor_guide.md">
+    <a href="https://github.com/pyOpenSci/dev_guide/edit/master/open-source-software-submissions/editors-guide.md">
         <i class="fas fa-pencil-alt"></i> Edit this page
     </a>
 </div>
@@ -239,57 +212,78 @@
                 
   <div class="section" id="guide-for-editors">
 <h1>Guide for Editors<a class="headerlink" href="#guide-for-editors" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="editor-in-chief">
-<h2>Editor in Chief<a class="headerlink" href="#editor-in-chief" title="Permalink to this headline">¶</a></h2>
-<p>The Editor in Chief serves for 3 months or a time agreed to by all members of
-the editorial board. The Editor in Chief fulfills the following roles:</p>
+<div class="section" id="get-started-checklist">
+<h2>Get Started Checklist<a class="headerlink" href="#get-started-checklist" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li><p>Watches all issues posted to the software-review repo.</p></li>
-<li><p>Assigns package submissions to other editors, including self, to handle. For the most part, this position rotates among pyOpenSci editors. However, in some cases, an editor may be assigned if the Editor in Chief thinks someone is particularly well-suited to the contents of a package, or if an editor is not able to support the review process at that time due to time or other conflicts.</p></li>
-<li><p>Raises scope/overlap issue with all editors if they see an ambiguous case. This may also be done by handling editors (see below). To initiate discussion, this is posted to the pyOpenSci Slack software review channel, tagging all editors.</p></li>
-<li><p>Responds to pre-submission inquiries and <code class="docutils literal notranslate"><span class="pre">meta</span></code> issues posted to the software-review and software-review-meta repos, similarly pinging channel if discussion is needed. Any editor should feel free to step in on these. See <a class="reference external" href="#responding-to-out-of-scope-submissions">this section</a> about how to respond to out-of-scope (pre-) submissions.</p></li>
-<li><p>Responds to referrals from JOSS or other publication partners.</p></li>
-<li><p>Monitors the review process pace and reminds other editors to move packages along as needed.</p></li>
+<li><p>Tag issue with <code class="docutils literal notranslate"><span class="pre">2/seeking-reviewer(s)</span></code> tag.</p></li>
+<li><p>Add a comment to the issue with your response to the Editor Checks.</p>
+<ul>
+<li><p>Use the <a class="reference external" href="../appendices/templates#editors-template">editor template</a>.</p></li>
+<li><p>Fill out the Editor Checks sections for <code class="docutils literal notranslate"><span class="pre">Fit</span></code>, <code class="docutils literal notranslate"><span class="pre">Automated</span> <span class="pre">Tests</span></code>, <code class="docutils literal notranslate"><span class="pre">License</span></code>, <code class="docutils literal notranslate"><span class="pre">Repository</span></code></p>
+<ul>
+<li><p>Check against policies for <a class="reference external" href="aims_scope#package-categories">fit</a> and <a class="reference external" href="aims_scope#package-overlap">overlap</a>. If reject, see <a class="reference external" href="#responding-to-out-of-scope-submissions">this section</a> about how to respond.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Archive</span></code> and <code class="docutils literal notranslate"><span class="pre">Version</span></code> for JOSS may be filled out at the end of the review.</p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Check the comment submission by the author to ensure that mandatory parts of submission template are complete.</p>
+<ul>
+<li><p>If not, direct authors toward appropriate instructions.</p></li>
+</ul>
+</li>
+<li><p>If initial checks show major gaps, request changes before assigning reviewers.</p></li>
+<li><p>Within one week of completing checks, identify two reviewers for the package (see sections below for additional guidance).</p></li>
+<li><p>Once reviewers have been identified:</p>
+<ul>
+<li><p>Modify the Editor Comments under Editor Checks to add reviewer names and assign due date (typically 2-3 week turnaround).</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">Reviewers:</span> <span class="pre">Full</span> <span class="pre">Name</span>&#160; <span class="pre">(&#64;github_username)</span> <span class="pre">and</span> <span class="pre">Full</span> <span class="pre">Name</span> <span class="pre">(&#64;github_username)</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Due</span> <span class="pre">date:</span> <span class="pre">Date</span></code></p></li>
+<li><p>Include in your comment to the reviewers:</p>
+<ul>
+<li><p>link to guide for reviewers</p></li>
+<li><p>link to review template</p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Edit the original comment submitted by author to fill in the Editor and Reviewer Information:</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">Editor:</span> <span class="pre">Full</span> <span class="pre">Name</span> <span class="pre">(&#64;github_username)</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Reviewer</span> <span class="pre">1:</span> <span class="pre">Full</span> <span class="pre">Name</span> <span class="pre">(&#64;github_username)</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Reviewer</span> <span class="pre">2:</span> <span class="pre">Full</span> <span class="pre">Name</span> <span class="pre">(&#64;github_username)</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Archive</span></code> and <code class="docutils literal notranslate"><span class="pre">Version</span> <span class="pre">accepted</span></code> are filled out at the end of the review.</p></li>
+</ul>
+</li>
+<li><p>Tag issue with <code class="docutils literal notranslate"><span class="pre">3/reviewer(s)-assigned</span></code> tag</p></li>
+</ul>
+</li>
 </ul>
 </div>
-<div class="section" id="editor-checklist">
-<h2>Editor Checklist<a class="headerlink" href="#editor-checklist" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="general-guidelines-for-editor">
+<h2>General Guidelines for Editor<a class="headerlink" href="#general-guidelines-for-editor" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li><p>Tag issue with <code class="docutils literal notranslate"><span class="pre">1/editor-checks</span></code> tag and assign a main editor. Please strive to finish the checks and start looking for reviewers within 1 week.</p></li>
-<li><p>Use the <a class="reference external" href="../appendices/templates#editors-template">editor template</a> to guide initial checks and record your response to the submission.</p></li>
-<li><p>Check that template has been properly filled out.</p></li>
-<li><p>Check against policies for <a class="reference external" href="aims_scope#package-categories">fit</a> and <a class="reference external" href="aims_scope#package-overlap">overlap</a>. If reject, see <a class="reference external" href="#responding-to-out-of-scope-submissions">this section</a> about how to respond.</p></li>
-<li><p>Check that mandatory parts of template are complete.  If not, direct authors toward appropriate instructions.</p></li>
 <li><p>Run automated tests: spelling, linting, etc … will be filled in later.</p></li>
-<li><p>For packages needing continuous integration on multiple platforms (<a class="reference external" href="../authoring/overview#continuous-integration">criteria in this section of the packaging chapter</a>) make sure the package gets tested on multiple platforms (having the package built on both Travis and AppVeyor for instance).</p></li>
+<li><p>For packages needing continuous integration on multiple platforms (<a class="reference external" href="../authoring/overview#continuous-integration">criteria in this section of the packaging chapter</a>), make sure the package gets tested on multiple platforms (having the package built on both Travis and AppVeyor for instance).</p></li>
 <li><p>Wherever possible when asking for changes, direct authors to automatic tools and online resources.</p></li>
-<li><p>If initial checks show major gaps, request changes before assigning reviewers.</p></li>
 <li><p>If the package raises a new issue for pyOpenSci policy, create an issue on <a class="reference external" href="https://github.com/pyOpenSci/governance">pyOpenSci’s governance repo</a></p></li>
 </ul>
-<div class="section" id="look-for-and-assign-reviewers">
-<h3>Look for and assign reviewers:<a class="headerlink" href="#look-for-and-assign-reviewers" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="guidelines-for-identifying-reviewers">
+<h2>Guidelines For Identifying Reviewers<a class="headerlink" href="#guidelines-for-identifying-reviewers" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="tasks">
-<h4>Tasks<a class="headerlink" href="#tasks" title="Permalink to this headline">¶</a></h4>
-<ul>
-<li><p>Use the <a class="reference external" href="../appendices/templates#review-request-template">email template</a> if needed for inviting reviewers</p>
+<h3>Tasks<a class="headerlink" href="#tasks" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
+<li><p>Use the <a class="reference external" href="../appendices/templates#review-request-template">email template</a> if needed to invite reviewers.</p>
+<ul>
 <li><p>When inviting reviewers, include something like “if I don’t hear from you in a week, I’ll assume you are unable to review,” so as to give a clear deadline when you’ll move on to looking for someone else.</p></li>
 </ul>
 </li>
-<li><p>Assign a due date 3 weeks after all reviewers have been found.</p></li>
-<li><p>Once two or more reviewers are found, assign reviewers by tagging in the
-issue with the following format:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Reviewer</span><span class="p">:</span> <span class="nd">@githubname1</span>
-<span class="n">Reviewer</span><span class="p">:</span> <span class="nd">@githubname2</span>
-<span class="n">Due</span> <span class="n">date</span><span class="p">:</span> <span class="n">YYYY</span><span class="o">-</span><span class="n">MM</span><span class="o">-</span><span class="n">DD</span>
-</pre></div>
-</div>
-</li>
-<li><p>Switch numbered tag <code class="docutils literal notranslate"><span class="pre">to</span> <span class="pre">3/reviewers-assigned</span></code> once reviewers are assigned.</p></li>
 </ul>
 </div>
 <div class="section" id="where-to-look-for-reviewers">
-<h4>Where to look for reviewers?<a class="headerlink" href="#where-to-look-for-reviewers" title="Permalink to this headline">¶</a></h4>
+<h3>Where to Look for Reviewers?<a class="headerlink" href="#where-to-look-for-reviewers" title="Permalink to this headline">¶</a></h3>
 <p>As a (guest) editor, use:</p>
 <ul class="simple">
 <li><p>the potential suggestions made by the submitter(s), (although submitters may have a narrow view of the types of expertise needed.  We suggest not using more than one of suggested reviewers).</p></li>
@@ -301,9 +295,8 @@ issue with the following format:</p>
 <li><p>look for users of the package or of the data source/upstream service the package connects to (via their opening issues in the repository, starring it, citing it in papers, talking about it on Twitter).</p></li>
 <li><p>You can also search for authors/maintainers of related packages on <a class="reference external" href="https://pypi.org/search/">PyPI</a>.</p></li>
 </ul>
-</div>
-<div class="section" id="criteria-for-choosing-a-reviewer">
-<h4>Criteria for choosing a reviewer<a class="headerlink" href="#criteria-for-choosing-a-reviewer" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="criteria-for-choosing-reviewers">
+<h4>Criteria for Choosing Reviewers<a class="headerlink" href="#criteria-for-choosing-reviewers" title="Permalink to this headline">¶</a></h4>
 <p>Here are criteria to keep in mind when choosing a reviewer. You might need to piece this information together by searching CRAN and the potential reviewer’s GitHub page and general online presence (personal website, Twitter).</p>
 <ul class="simple">
 <li><p>Has not reviewed a package for us within the last 6 months.</p></li>
@@ -317,8 +310,9 @@ issue with the following format:</p>
 <p>Each submission should be reviewed by <em>two</em> package reviewers. Although it is fine for one of them to have less package development experience and more domain knowledge, the review should not be split in two.  Both reviewers need to review the package comprehensively, though from their particular perspective.  In general, at least one reviewer should have prior reviewing experience, and of course inviting one new reviewer expands our pool of reviewers.</p>
 </div>
 </div>
-<div class="section" id="during-review">
-<h3>During review:<a class="headerlink" href="#during-review" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="editor-responsibilities-during-review">
+<h2>Editor Responsibilities During Review:<a class="headerlink" href="#editor-responsibilities-during-review" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><p>Check in with reviewers and authors occasionally. Offer clarification and help as needed.</p></li>
 <li><p>In general aim for 3 weeks for review, 2 weeks for subsequent changes, and 1 week for reviewer approval of changes.</p></li>
@@ -326,23 +320,25 @@ issue with the following format:</p>
 <li><p>If the author stops responding, refer to <a class="reference external" href="peer_review_proc#review-process-guidelines">the policies</a> and/or ping the other editors in the Slack channel for discussion. Importantly, if a reviewer was assigned to a closed issue, contact them when closing the issue to explain the decision, thank them once again for their work, and make a note in our database to assign them to a submission with high chances of smooth software review next time (e.g. a package author who has already submitted packages to us).</p></li>
 <li><p>Upon changes being made, change the review status tag to <code class="docutils literal notranslate"><span class="pre">5/awaiting-reviewer-response</span></code>.</p></li>
 </ul>
-</div>
-<div class="section" id="after-review">
-<h3>After review:<a class="headerlink" href="#after-review" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="editor-responsibilities-after-review">
+<h3>Editor Responsibilities After Review:<a class="headerlink" href="#editor-responsibilities-after-review" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li><p>Change the status tag to <code class="docutils literal notranslate"><span class="pre">6/approved</span></code>.</p></li>
 <li><p>You can use the <a class="reference external" href="../appendices/templates#approval-comment-template">approval comment template</a>.</p></li>
 <li><p>Add review/er information to the review database.</p></li>
-<li><p>Ask authors to migrate to <code class="docutils literal notranslate"><span class="pre">pyOpenSci</span></code></p>
+<li><p>If package will be migrated to <code class="docutils literal notranslate"><span class="pre">pyOpenSci</span></code>:</p>
 <ul>
 <li><p>Create a two-person team in pyOpenSci’s “pyOpenSci” GitHub organization, named for the package, with yourself and the package author as members.</p></li>
 <li><p>Have the author transfer the repository to <code class="docutils literal notranslate"><span class="pre">pyOpenSci</span></code></p></li>
 <li><p>Go to the repository settings in the “pyOpenSci” GitHub organization and give the author “Admin” access to the repository.</p></li>
 </ul>
 </li>
+<li><p>Fill out <code class="docutils literal notranslate"><span class="pre">Archive</span></code> and <code class="docutils literal notranslate"><span class="pre">Version</span></code> for JOSS under Editor Checks comment.</p></li>
+<li><p>Fill out <code class="docutils literal notranslate"><span class="pre">Archive</span></code> and <code class="docutils literal notranslate"><span class="pre">Version</span> <span class="pre">accepted</span></code> in the original comment submitted by author.</p></li>
 <li><p>Ask author to:</p>
 <ul>
 <li><p>Change any needed links, such those for CI badges</p></li>
+<li><p>Add pyOpenSci badge: <code class="docutils literal notranslate"><span class="pre">[![pyOpenSci](https://tinyurl.com/y22nb8up)](link-to-issue)</span></code>.</p></li>
 <li><p>Re-activate CI services</p>
 <ul>
 <li><p>For Travis, activating the project in the pyOpenSci account should be sufficient</p></li>
@@ -352,13 +348,9 @@ issue with the following format:</p>
 </li>
 </ul>
 </li>
-<li><p>Add a “peer-reviewed” topic to the repo.</p></li>
+<li><p>Add a “peer-reviewed” topic to the repository.</p></li>
 <li><p>Close the software-review issue.</p></li>
 </ul>
-</div>
-<div class="section" id="responding-to-out-of-scope-submissions">
-<h3>Responding to out-of-scope submissions<a class="headerlink" href="#responding-to-out-of-scope-submissions" title="Permalink to this headline">¶</a></h3>
-<p>Thank authors for their submission, explain the reasons for the decision, and direct them to other publication venues if relevant, and to the pyOpenSci governance repo issues for discussion. Use wording from Aims and scope in particular regarding the evolution of scope over time, and the overlap and differences between unconf/staff/software-review development.</p>
 </div>
 </div>
 </div>
@@ -372,8 +364,8 @@ issue with the following format:</p>
     
     <div class='prev-next-bottom'>
         
-    <a class='left-prev' id="prev-link" href="reviewer_guide.html" title="previous page">Guide for Reviewers</a>
-    <a class='right-next' id="next-link" href="../appendices/templates.html" title="next page">Appendix: Templates</a>
+    <a class='left-prev' id="prev-link" href="intro.html" title="previous page">Submission Guides</a>
+    <a class='right-next' id="next-link" href="editor-in-chief-guide.html" title="next page">pyOpenSci Editor in Chief Guide</a>
 
     </div>
     <footer class="footer mt-5 mt-md-0">

@@ -5,7 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta charset="utf-8" />
-    <title>The Peer Review Process &#8212; The pyOpenSci Developer Guide</title>
+    <title>Submission Guides &#8212; The pyOpenSci Developer Guide</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
     <link href="../_static/css/index.css" rel="stylesheet">
     <link rel="stylesheet" href="../_static/sphinx-book-theme.css" type="text/css" />
@@ -31,8 +31,8 @@
     <link rel="shortcut icon" href="../_static/logo.png"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Aims and Scope" href="aims_scope.html" />
-    <link rel="prev" title="Releasing a package" href="../authoring/release.html" />
+    <link rel="next" title="Guide for Editors" href="editors-guide.html" />
+    <link rel="prev" title="pyOpenSci Open Source Software Peer Review Guidelines &amp; Policies" href="../open-source-software-peer-review/policies-and-guidelines.html" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="docsearch:language" content="en">
@@ -68,47 +68,22 @@
   
   <ul class="nav sidenav_l1">
   <li class="">
-    <a href="../authoring/index.html">Author’s Guide</a>
-  <ul class="nav sidenav_l2">
-    <li class="">
-      <a href="../authoring/overview.html">Overview</a>
-    </li>
-    <li class="">
-      <a href="../authoring/testing.html">Testing your package</a>
-    </li>
-    <li class="">
-      <a href="../authoring/collaboration.html">Collaboration Guide</a>
-    </li>
-    <li class="">
-      <a href="../authoring/release.html">Releasing a package</a>
-    </li>
-  </ul>
+    <a href="../open-source-software-peer-review/intro.html">The Peer Review Process</a>
   </li>
   <li class="active">
-    <a href="">The Peer Review Process</a>
+    <a href="">Submission Guides</a>
   <ul class="nav sidenav_l2">
     <li class="">
-      <a href="aims_scope.html">Aims and Scope</a>
+      <a href="editors-guide.html">Guide for Editors</a>
     </li>
     <li class="">
-      <a href="guidelines.html">Peer Review Policies</a>
+      <a href="editor-in-chief-guide.html">pyOpenSci Editor in Chief Guide</a>
     </li>
     <li class="">
-      <a href="coc.html">Community Code of Conduct</a>
-    </li>
-  </ul>
-  </li>
-  <li class="">
-    <a href="../submissions/intro.html">Submission Guides</a>
-  <ul class="nav sidenav_l2">
-    <li class="">
-      <a href="../submissions/author_guide.html">Guide for Authors</a>
+      <a href="author-guide.html">Guide for Authors</a>
     </li>
     <li class="">
-      <a href="../submissions/reviewer_guide.html">Guide for Reviewers</a>
-    </li>
-    <li class="">
-      <a href="../submissions/editor_guide.html">Guide for Editors</a>
+      <a href="reviewer-guide.html">Guide for Reviewers</a>
     </li>
   </ul>
   </li>
@@ -116,7 +91,7 @@
     <a href="../appendices/templates.html">Appendix: Templates</a>
   </li>
   <li class="">
-    <a href="../appendices/glossary.html">Glossary</a>
+    <a href="../authoring/index.html">Author’s Guide</a>
   </li>
 </ul>
 </nav>
@@ -155,7 +130,7 @@
                 <!-- ipynb file if we had a myst markdown file -->
                 
                 <!-- Download raw file -->
-                <a class="dropdown-buttons" href="../_sources/process/intro.md.txt"><button type="button" class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip" data-placement="left">.md</button></a>
+                <a class="dropdown-buttons" href="../_sources/open-source-software-submissions/intro.md.txt"><button type="button" class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip" data-placement="left">.md</button></a>
                 <!-- Download PDF via print -->
                 <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF" onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
             </div>
@@ -163,7 +138,7 @@
         </div>
 
         <!-- Edit this page -->
-        <a class="edit-button" href="https://github.com/pyOpenSci/dev_guide/edit/master/process/intro.md"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="bottom" title="Edit this page"><i class="fas fa-pencil-alt"></i></button></a>
+        <a class="edit-button" href="https://github.com/pyOpenSci/dev_guide/edit/master/open-source-software-submissions/intro.md"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="bottom" title="Edit this page"><i class="fas fa-pencil-alt"></i></button></a>
 
         <!-- Full screen (wrap in <a> to have style consistency -->
         <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="bottom" onclick="toggleFullScreen()" title="Fullscreen mode"><i class="fas fa-expand"></i></button></a>
@@ -172,16 +147,9 @@
         
     </div>
     <div class="d-none d-md-block col-md-2 bd-toc show">
-<div class="tocsection onthispage pt-5 pb-3">
-    <i class="fas fa-list"></i> On this page
-</div>
 
 <nav id="bd-toc-nav">
     <ul class="nav section-nav flex-column">
-    
-        <li class="nav-item toc-entry toc-h2">
-            <a href="#the-peer-review-timeline" class="nav-link">The Peer Review Timeline</a>
-        </li>
     
     </ul>
 </nav>
@@ -189,7 +157,7 @@
 
 
 <div class="tocsection editthispage">
-    <a href="https://github.com/pyOpenSci/dev_guide/edit/master/process/intro.md">
+    <a href="https://github.com/pyOpenSci/dev_guide/edit/master/open-source-software-submissions/intro.md">
         <i class="fas fa-pencil-alt"></i> Edit this page
     </a>
 </div>
@@ -201,21 +169,11 @@
         
               <div>
                 
-  <div class="section" id="the-peer-review-process">
-<h1>The Peer Review Process<a class="headerlink" href="#the-peer-review-process" title="Permalink to this headline">¶</a></h1>
-<p>These pages contain information about the peer review process.</p>
-<div class="section" id="the-peer-review-timeline">
-<h2>The Peer Review Timeline<a class="headerlink" href="#the-peer-review-timeline" title="Permalink to this headline">¶</a></h2>
-<ul class="simple">
-<li><p><em>Pre-submission:</em> If you are unsure if your package fits within the scope of the pyOpenSci suite, create a pre-submission inquiry issue on the <a class="reference external" href="https://github.com/pyOpenSci/software-review/issues/new/choose">pyopensci/software-review repository</a>. An editor will respond within a few days to let you know if we can review your package at this time. For more info, see the <a class="reference internal" href="aims_scope.html"><span class="doc">&quot;Aims and Scope&quot;</span></a> section of this guide.</p></li>
-<li><p>To submit a package for review, the author must initiate a review request in the <a class="reference external" href="https://github.com/pyOpenSci/software-review">pyopensci/software-review repo</a> by creating an <a class="reference external" href="https://github.com/pyOpenSci/software-review/issues/new/choose">issue</a>.</p></li>
-<li><p>An editor will review your submission within <strong>1 week</strong> and respond with next steps. The editor may assign the package to reviewers, request that the package be updated to meet minimal criteria before review, or reject the package due to lack of fit or overlap.</p></li>
-<li><p>If your package meets minimal criteria, the editor will assign 1-3 reviewers. They will be asked to provide reviews as comments on your issue within <strong>3 weeks</strong>.</p></li>
-<li><p>We ask that you respond to reviewers’ comments within <strong>2 weeks</strong> of the last-submitted review, but you may make updates to your package or respond at any time. Here is an author response example. We encourage ongoing conversations between authors and reviewers. See the reviewing guide for more details.</p></li>
-<li><p>Once your package is approved, we will provide further instructions about the transfer of your repository to the pyOpenSci repository.</p></li>
-</ul>
+  <div class="section" id="submission-guides">
+<h1>Submission Guides<a class="headerlink" href="#submission-guides" title="Permalink to this headline">¶</a></h1>
+<p>These are a collection of guides for the peer review and submission process.
+They are broken down by the various roles that carry out a submission.</p>
 <div class="toctree-wrapper compound">
-</div>
 </div>
 </div>
 
@@ -228,8 +186,8 @@
     
     <div class='prev-next-bottom'>
         
-    <a class='left-prev' id="prev-link" href="../authoring/release.html" title="previous page">Releasing a package</a>
-    <a class='right-next' id="next-link" href="aims_scope.html" title="next page">Aims and Scope</a>
+    <a class='left-prev' id="prev-link" href="../open-source-software-peer-review/policies-and-guidelines.html" title="previous page">pyOpenSci Open Source Software Peer Review Guidelines &amp; Policies</a>
+    <a class='right-next' id="next-link" href="editors-guide.html" title="next page">Guide for Editors</a>
 
     </div>
     <footer class="footer mt-5 mt-md-0">

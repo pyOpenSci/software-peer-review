@@ -5,7 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta charset="utf-8" />
-    <title>Community Code of Conduct &#8212; The pyOpenSci Developer Guide</title>
+    <title>Aims and Scope &#8212; The pyOpenSci Developer Guide</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
     <link href="../_static/css/index.css" rel="stylesheet">
     <link rel="stylesheet" href="../_static/sphinx-book-theme.css" type="text/css" />
@@ -31,8 +31,8 @@
     <link rel="shortcut icon" href="../_static/logo.png"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Submission Guides" href="../submissions/intro.html" />
-    <link rel="prev" title="Peer Review Policies" href="guidelines.html" />
+    <link rel="next" title="Community Code of Conduct" href="code-of-conduct.html" />
+    <link rel="prev" title="The Peer Review Process" href="intro.html" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="docsearch:language" content="en">
@@ -67,56 +67,28 @@
 <nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
   
   <ul class="nav sidenav_l1">
-  <li class="">
-    <a href="../authoring/index.html">Author’s Guide</a>
-  <ul class="nav sidenav_l2">
-    <li class="">
-      <a href="../authoring/overview.html">Overview</a>
-    </li>
-    <li class="">
-      <a href="../authoring/testing.html">Testing your package</a>
-    </li>
-    <li class="">
-      <a href="../authoring/collaboration.html">Collaboration Guide</a>
-    </li>
-    <li class="">
-      <a href="../authoring/release.html">Releasing a package</a>
-    </li>
-  </ul>
-  </li>
   <li class="active">
     <a href="intro.html">The Peer Review Process</a>
   <ul class="nav sidenav_l2">
-    <li class="">
-      <a href="aims_scope.html">Aims and Scope</a>
-    </li>
-    <li class="">
-      <a href="guidelines.html">Peer Review Policies</a>
-    </li>
     <li class="active">
-      <a href="">Community Code of Conduct</a>
+      <a href="">Aims and Scope</a>
+    </li>
+    <li class="">
+      <a href="code-of-conduct.html">Community Code of Conduct</a>
+    </li>
+    <li class="">
+      <a href="policies-and-guidelines.html">pyOpenSci Open Source Software Peer Review Guidelines & Policies</a>
     </li>
   </ul>
   </li>
   <li class="">
-    <a href="../submissions/intro.html">Submission Guides</a>
-  <ul class="nav sidenav_l2">
-    <li class="">
-      <a href="../submissions/author_guide.html">Guide for Authors</a>
-    </li>
-    <li class="">
-      <a href="../submissions/reviewer_guide.html">Guide for Reviewers</a>
-    </li>
-    <li class="">
-      <a href="../submissions/editor_guide.html">Guide for Editors</a>
-    </li>
-  </ul>
+    <a href="../open-source-software-submissions/intro.html">Submission Guides</a>
   </li>
   <li class="">
     <a href="../appendices/templates.html">Appendix: Templates</a>
   </li>
   <li class="">
-    <a href="../appendices/glossary.html">Glossary</a>
+    <a href="../authoring/index.html">Author’s Guide</a>
   </li>
 </ul>
 </nav>
@@ -155,7 +127,7 @@
                 <!-- ipynb file if we had a myst markdown file -->
                 
                 <!-- Download raw file -->
-                <a class="dropdown-buttons" href="../_sources/process/coc.md.txt"><button type="button" class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip" data-placement="left">.md</button></a>
+                <a class="dropdown-buttons" href="../_sources/open-source-software-peer-review/aims-and-scope.md.txt"><button type="button" class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip" data-placement="left">.md</button></a>
                 <!-- Download PDF via print -->
                 <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF" onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
             </div>
@@ -163,7 +135,7 @@
         </div>
 
         <!-- Edit this page -->
-        <a class="edit-button" href="https://github.com/pyOpenSci/dev_guide/edit/master/process/coc.md"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="bottom" title="Edit this page"><i class="fas fa-pencil-alt"></i></button></a>
+        <a class="edit-button" href="https://github.com/pyOpenSci/dev_guide/edit/master/open-source-software-peer-review/aims-and-scope.md"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="bottom" title="Edit this page"><i class="fas fa-pencil-alt"></i></button></a>
 
         <!-- Full screen (wrap in <a> to have style consistency -->
         <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="bottom" onclick="toggleFullScreen()" title="Fullscreen mode"><i class="fas fa-expand"></i></button></a>
@@ -172,9 +144,26 @@
         
     </div>
     <div class="d-none d-md-block col-md-2 bd-toc show">
+<div class="tocsection onthispage pt-5 pb-3">
+    <i class="fas fa-list"></i> On this page
+</div>
 
 <nav id="bd-toc-nav">
     <ul class="nav section-nav flex-column">
+    
+        <li class="nav-item toc-entry toc-h2">
+            <a href="#package-categories" class="nav-link">Package Categories</a><ul class="nav section-nav flex-column">
+                
+        <li class="nav-item toc-entry toc-h3">
+            <a href="#notes-on-categories" class="nav-link">Notes on Categories</a>
+        </li>
+    
+            </ul>
+        </li>
+    
+        <li class="nav-item toc-entry toc-h2">
+            <a href="#package-overlap" class="nav-link">Package Overlap</a>
+        </li>
     
     </ul>
 </nav>
@@ -182,7 +171,7 @@
 
 
 <div class="tocsection editthispage">
-    <a href="https://github.com/pyOpenSci/dev_guide/edit/master/process/coc.md">
+    <a href="https://github.com/pyOpenSci/dev_guide/edit/master/open-source-software-peer-review/aims-and-scope.md">
         <i class="fas fa-pencil-alt"></i> Edit this page
     </a>
 </div>
@@ -194,19 +183,44 @@
         
               <div>
                 
-  <div class="section" id="community-code-of-conduct">
-<h1>Community Code of Conduct<a class="headerlink" href="#community-code-of-conduct" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="aims-and-scope">
+<h1>Aims and Scope<a class="headerlink" href="#aims-and-scope" title="Permalink to this headline">¶</a></h1>
+<p>pyOpenSci aims to support Python packages that enable reproducible research and managing the data lifecycle for scientists. Packages submitted to pyOpenSci should fit into one or more of the categories outlined below. If you are unsure whether your package fits into one of these categories, please open an issue as a pre-submission inquiry. We will let you know if we are able to review it at this time.</p>
+<div class="section" id="package-categories">
+<h2>Package Categories<a class="headerlink" href="#package-categories" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li><p>We are committed to providing a friendly, safe and welcoming environment for all, regardless of gender, sexual orientation, disability, ethnicity, religion, or similar personal characteristic.</p></li>
-<li><p>Please avoid using openly sexual nicknames or other nicknames that might detract from a friendly, safe and welcoming environment for all.</p></li>
-<li><p>Please be kind and courteous. There’s no need to be mean or rude.</p></li>
-<li><p>Respect that people have differences of opinion and that every design or implementation choice carries a trade-off and numerous costs. There is seldom a right answer.</p></li>
-<li><p>Please keep unstructured critique to a minimum. If you have solid ideas you want to experiment with, make a fork and see how it works.</p></li>
-<li><p>We will exclude you from interaction if you insult, demean or harass anyone. That is not welcome behavior. We interpret the term “harassment” as including the definition in the Citizen Code of Conduct; if you have any lack of clarity about what might be included in that concept, please read their definition. In particular, we don’t tolerate behavior that excludes people in socially marginalized groups.</p></li>
-<li><p>Private harassment is also unacceptable. No matter who you are, if you feel you have been or are being harassed or made uncomfortable by a community member, please contact us at earth.lab&#64;colorado.edu immediately with a capture (log, photo, email) of the harassment if possible. Whether you’re a regular contributor or a newcomer, we care about making this community a safe place for you and we’ve got your back.</p></li>
-<li><p>Likewise, any spamming, trolling, flaming, baiting or other attention-stealing behavior are not welcome.</p></li>
-<li><p>Avoid the use of personal pronouns in code comments or documentation. There is no need to address persons when explaining code (e.g. “When the developer”). The focus should be on the code, not the author.</p></li>
+<li><p><strong>Data retrieval:</strong> Packages for accessing and downloading data from online sources. Includes wrappers for accessing APIs.</p></li>
+<li><p><strong>Data extraction:</strong> Packages that aid in retrieving data from unstructured sources such as text, images and PDFs.</p></li>
+<li><p><strong>Data munging:</strong> Tools for processing data from scientific data formats.</p></li>
+<li><p><strong>Data deposition:</strong> Tools for depositing data in scientific research repositories.</p></li>
+<li><p><strong>Reproducibility:</strong> Tools to scientists ensure that their research is reproducible. E.g. version control, automated testing, or citation tools.</p></li>
+<li><p><strong>Geospatial:</strong> Packages focused on the retrieval, manipulation, and analysis of spatial data.</p></li>
+<li><p><strong>Education:</strong> Packages to aid with instruction.</p></li>
+<li><p><strong>Data visualization:</strong>* Packages for visualizing and analyzing data.</p></li>
 </ul>
+<p>* Please fill out a pre-submission inquiry before submitting a data visualization package. See the notes below.</p>
+<div class="section" id="notes-on-categories">
+<h3>Notes on Categories<a class="headerlink" href="#notes-on-categories" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>pyOpenSci is young and this list is tentative. If your scientific Python package does not fit into one of the categories or if you have any other questions, we’d encourage you to open a pre-submission inquiry. We’re happy to help.</p></li>
+<li><p>Data visualization packages come in many varieties, ranging from small hyper-specific methods for one type of data to general, do-it-all packages (e.g. matplotlib). pyOpenSci accepts packages that are somewhere in between the two. If you’re interested in submitting your data visualization package, please open a pre-submission inquiry on first.</p></li>
+<li><p>Note that we cannot currently accept statistics and/or machine learning packages. We don’t feel that we can give these the deep, thorough review that they require.</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="package-overlap">
+<h2>Package Overlap<a class="headerlink" href="#package-overlap" title="Permalink to this headline">¶</a></h2>
+<p>pyOpenSci encourages competition among packages, forking and re-implementation as they improve options of users overall. However, as we want packages in the pyOpenSci suite to be our top recommendations for the tasks they perform, we aim to avoid duplication of functionality of existing Python packages in any repo without significant improvements. A Python package that replicates the functionality of an existing package may be considered for inclusion in the pyOpenSci suite if it significantly improves on alternatives by being:</p>
+<ul class="simple">
+<li><p>More open in licensing or development practices</p></li>
+<li><p>Broader in functionality (e.g., providing access to more data sets, providing a greater suite of functions), but not only by duplicating additional packages</p></li>
+<li><p>Better in usability and performance</p></li>
+<li><p>Actively maintained while alternatives are poorly or no longer actively maintained</p></li>
+</ul>
+<p>These factors should be considered as a whole to determine if the package is a significant improvement. A new package would not meet this standard only by following our package guidelines while others do not, unless this leads to a significant difference in the areas above.</p>
+<p>We recommend that packages highlight differences from and improvements over overlapping packages in their README and/or vignettes.</p>
+<p>We encourage developers whose packages are not accepted due to overlap to still consider submittal to other repositories or journals.</p>
+</div>
 </div>
 
 
@@ -218,8 +232,8 @@
     
     <div class='prev-next-bottom'>
         
-    <a class='left-prev' id="prev-link" href="guidelines.html" title="previous page">Peer Review Policies</a>
-    <a class='right-next' id="next-link" href="../submissions/intro.html" title="next page">Submission Guides</a>
+    <a class='left-prev' id="prev-link" href="intro.html" title="previous page">The Peer Review Process</a>
+    <a class='right-next' id="next-link" href="code-of-conduct.html" title="next page">Community Code of Conduct</a>
 
     </div>
     <footer class="footer mt-5 mt-md-0">
