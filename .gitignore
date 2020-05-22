@@ -106,3 +106,5 @@ _site/
 
 # Test builds
 _build
+
+.DS_Store
