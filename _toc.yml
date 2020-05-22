@@ -1,22 +1,24 @@
 file: intro
 sections:
 - file: README
-- file: open-source-software-peer-review/index
+- file: open-source-software-peer-review/intro
   sections:
-  - file: open-source-software-peer-review/code-of-conduct
   - file: open-source-software-peer-review/aims-and-scope
+  - file: open-source-software-peer-review/code-of-conduct
   - file: open-source-software-peer-review/policies-and-guidelines
+- file: open-source-software-submissions/intro
+  sections:
+  - file: open-source-software-submissions/editors-guide
+  - file: open-source-software-submissions/editor-in-chief-guide
+  - file: open-source-software-submissions/author-guide
+  - file: open-source-software-submissions/reviewer-guide
+- file: appendices/templates
+  sections:
+  - file: appendices/glossary
 - file: authoring/index
   sections:
   - file: authoring/collaboration
   - file: authoring/overview
+  - file: authoring/tools-for-developers
   - file: authoring/testing
   - file: authoring/release
-- file: submissions/editor_guide
-  sections:
-  - file: submissions/author_guide
-  - file: submissions/intro
-  - file: submissions/reviewer_guide
-- file: appendices/templates
-  sections:
-  - file: appendices/glossary
