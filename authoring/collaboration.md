@@ -43,7 +43,10 @@ If someone contributes to your repository consider adding them in CONTRIBUTORS, 
 
 If your package was reviewed by pyOpenSci and you feel that your reviewers have made a substantial contribution to the development of your package, you may list them in CONTRIBUTORS as a reviewer. Only include reviewers after asking for their consent.
 
-Please do not list editors as contributors. Your participation in and contribution to pyOpenSci is thanks enough!
+```{note}
+Please do not list PyOpenSci editors and reviewers as contributors to your project. 
+Your participation in and contribution to pyOpenSci is thanks enough!
+```
 
 ### Welcoming collaborators to pyOpenSci
 
