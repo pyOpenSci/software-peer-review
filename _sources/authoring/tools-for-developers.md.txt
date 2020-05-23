@@ -64,8 +64,7 @@ repos:
 ```
 
 ```{note}
-See [the flake8 hooks explanation](see: https://flake8.pycqa.org/en/latest/user/using-hooks.html) 
-for more details
+See [the flake8 hooks explanation](https://flake8.pycqa.org/en/latest/user/using-hooks.html) for more details.
 ```
 
 This file specifies a hook that will be triggered automatically before each `git commit`,
