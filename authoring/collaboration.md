@@ -36,16 +36,18 @@ You could implement the "[gitflow](https://www.atlassian.com/git/tutorials/compa
 
 One particular aspect of working with collaborators is reviewing pull requests. Even if not adopting gitflow it might make sense for repo collaborators to make PRs and have them reviewed, and in general PRs by external developers will need to be assessed. Sometimes you'll be fine just reading the changes and trusting [Continuous integration](../authoring/overview#continuous-integration). Sometimes you'll need to dive deeper, e.g. by downloading a copy of the branch that the PR was created from.
 
-(attributions=)
+(attributions)=
 ### Be generous with attributions
 
 If someone contributes to your repository consider adding them in CONTRIBUTORS, as contributor for small contributions, author for bigger contributions. Also consider adding their name near the feature/bug fix line in HISTORY We recommend your being generous with such acknowledgements.
 
 If your package was reviewed by pyOpenSci and you feel that your reviewers have made a substantial contribution to the development of your package, you may list them in CONTRIBUTORS as a reviewer. Only include reviewers after asking for their consent.
 
-Please do not list editors as contributors. Your participation in and contribution to pyOpenSci is thanks enough!
+```{note}
+Please do not list pyOpenSci editors and reviewers as contributors to your project. 
+Your participation in and contribution to pyOpenSci is thanks enough!
+```
 
 ### Welcoming collaborators to pyOpenSci
 
 If you give someone write permissions to the repository, please contact us at earth.lab@colorado.edu so that this new contributor can get invited to pyOpenSci's GitHub organization.
-
