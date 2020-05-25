@@ -99,6 +99,9 @@ pyOpenSci projects should use an open source software license that is approved b
 - **Better/Best:** Choose a license based on your needs and future use of package, plus explain your choice in your submission for review.
 
 ## Other recommendations
+### Python version support
+As keeping compatibility with old Python versions could be a hard task, pyOpenSci suggests that the package should supports, at least, latest three Python versions, as much as possible.
+
 ### Code Style
 pyOpenSci encourages authors to consult [PEP 8](https://www.python.org/dev/peps/pep-0008/) for information on how to style your code.
 
