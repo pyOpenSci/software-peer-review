@@ -197,6 +197,10 @@
             <a href="#other-recommendations" class="nav-link">Other recommendations</a><ul class="nav section-nav flex-column">
                 
         <li class="nav-item toc-entry toc-h3">
+            <a href="#python-version-support" class="nav-link">Python version support</a>
+        </li>
+    
+        <li class="nav-item toc-entry toc-h3">
             <a href="#code-style" class="nav-link">Code Style</a>
         </li>
     
@@ -346,6 +350,13 @@ Good meets the requirements, but going beyond the minimum can make package maint
 </div>
 <div class="section" id="other-recommendations">
 <h2>Other recommendations<a class="headerlink" href="#other-recommendations" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="python-version-support">
+<h3>Python version support<a class="headerlink" href="#python-version-support" title="Permalink to this headline">¶</a></h3>
+<p>You should always be explicit about which versions of Python your package supports.
+Keeping compatibility with old Python versions can be difficult as functionality changes.
+A good rule of thumb is that the package should support, at least,
+the latest three Python versions (e.g., 3.8, 3.7, 3.6).</p>
+</div>
 <div class="section" id="code-style">
 <h3>Code Style<a class="headerlink" href="#code-style" title="Permalink to this headline">¶</a></h3>
 <p>pyOpenSci encourages authors to consult <a class="reference external" href="https://www.python.org/dev/peps/pep-0008/">PEP 8</a> for information on how to style your code.</p>
