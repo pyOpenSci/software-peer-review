@@ -147,7 +147,7 @@ There are a few things left to do to wrap up this submission:
 - [ ] <reviewers-and-maintainers> if you have time and are open to being listed on our website, please add yourselves to [this file](https://github.com/pyOpenSci/pyopensci.github.io/blob/master/_data/contributors.yml) via a pr so we can list you on our website as contributors!
 
 <IF JOSS SUBMISSION>
-This package is going to move on to JOSS for review. i believe @arfon will ask you to implement the items below but let's let him chime in here first! 
+This package is going to move on to JOSS for review. I believe @arfon will ask you to implement the items below but let's let him chime in here first! 
 - [ ] Activate Zenodo watching the repo
 - [ ] Tag and create a release so as to create a Zenodo version and DOI
 - [ ] Submit to JOSS using the Zenodo DOI. We will tag it for expedited review.
