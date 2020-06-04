@@ -154,7 +154,7 @@ This package is going to move on to JOSS for review. i believe @arfon will ask y
 
 <IF JOSS SUBMISSION/>
 
-All --if you have any feedback for us about the review process please feel free to share it here. We are always looking to improve our process and our documentation in the [contributing-guide](https://www.pyopensci.org/contributing-guide). I know things were very slow this round and that is absolutely because of me. I appreciate your patience. We have also been updating our documentation to improve the process so all feedback is appreciated! 
+All -- if you have any feedback for us about the review process please feel free to share it here. We are always looking to improve our process and our documentation in the [contributing-guide](https://www.pyopensci.org/contributing-guide). I know things were very slow this round and that is absolutely because of me. I appreciate your patience. We have also been updating our documentation to improve the process so all feedback is appreciated! 
 ```
 
 ## Generic new member template
