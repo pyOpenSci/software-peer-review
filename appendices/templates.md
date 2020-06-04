@@ -136,22 +136,25 @@ Sincerely,
 [template]: https://pyopensci.github.io/dev_guide/appendices/templates.html#review-template
 
 
-## Approval Comment Template
+## Editor Approval Comment Template
 ```
-Approved! Thanks <author(s) GitHub username(s)> for submitting and <reviewers' GithHub usernames> for your reviews! <optional: smiling cat emoji à la Scott>
+----------------------------------------------
+🎉 <package-name-here> has been approved by pyOpenSci! Thank you <maintainer-name-here> for submitting pyrolite and many thanks to <reviewer-names-here> for reviewing this package! 😸  
 
-To-dos:
-- [ ] Transfer the repo to our "pyOpenSci" GitHub organization under "Settings" in your repo. I have invited you to a team that should allow you to do so. You'll be made admin once you do.
-- [ ] Fix any links in badges for CI and coverage to point to the pyOpenSci URL. For Appveryor projects, you should still use your personal Appveyor account. After transfer of your repo to the "pyOpenSci" GitHub organization the badge should be `[![AppVeyor Build Status](https://ci.appveyor.com/api/projects/status/github/pyOpenSci/pkgname?branch=master&svg=true)](https://ci.appveyor.com/project/individualaccount/pkgname)`.
-- [ ] Add the badge for pyOpenSci peer-review to README.md. The badge should be `[![pyOpenSci](https://tinyurl.com/y22nb8up)](https://github.com/pyOpenSci/software-review/issues/issue-number)`
+There are a few things left to do to wrap up this submission: 
+- [ ] Add the badge for pyOpenSci peer-review to the README.md of <package-name-here>. The badge should be `[![pyOpenSci](https://tinyurl.com/y22nb8up)](https://github.com/pyOpenSci/software-review/issues/issue-number)`
+- [ ] Add pyrolite to the pyOpenSci website. <maintainer-name>, please open a pr to update [this file](https://github.com/pyOpenSci/pyopensci.github.io/blob/master/_data/packages.yml): to add your package and name to the list of contributors
+- [ ] <reviewers-and-maintainers> if you have time and are open to being listed on our website, please add yourselves to [this file](https://github.com/pyOpenSci/pyopensci.github.io/blob/master/_data/contributors.yml) via a pr so we can list you on our website as contributors!
 
-<IF JOSS>
+<IF JOSS SUBMISSION>
+This package is going to move on to JOSS for review. i believe @arfon will ask you to implement the items below but let's let him chime in here first! 
 - [ ] Activate Zenodo watching the repo
 - [ ] Tag and create a release so as to create a Zenodo version and DOI
 - [ ] Submit to JOSS using the Zenodo DOI. We will tag it for expedited review.
-<IF JOSS/>
 
-We've started putting together a gitbook with our best practice and tips, [this chapter](https://pyopensci.github.io/dev_guide/maintenance/maintenance_intro.html) starts the 3rd section that's about guidance for after onboarding. Please tell us what could be improved, the corresponding repo is [here](https://github.com/pyOpenSci/dev_guide).
+<IF JOSS SUBMISSION/>
+
+All --if you have any feedback for us about the review process please feel free to share it here. We are always looking to improve our process and our documentation in the [contributing-guide](https://www.pyopensci.org/contributing-guide). I know things were very slow this round and that is absolutely because of me. I appreciate your patience. We have also been updating our documentation to improve the process so all feedback is appreciated! 
 ```
 
 ## Generic new member template
