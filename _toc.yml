@@ -12,9 +12,6 @@ sections:
   - file: open-source-software-submissions/editor-in-chief-guide
   - file: open-source-software-submissions/author-guide
   - file: open-source-software-submissions/reviewer-guide
-- file: appendices/templates
-  sections:
-  - file: appendices/glossary
 - file: authoring/index
   sections:
   - file: authoring/collaboration
@@ -22,3 +19,6 @@ sections:
   - file: authoring/tools-for-developers
   - file: authoring/testing
   - file: authoring/release
+- file: appendices/templates
+  sections:
+  - file: appendices/glossary
