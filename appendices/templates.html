@@ -32,7 +32,7 @@
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Glossary" href="glossary.html" />
-    <link rel="prev" title="Guide for Reviewers" href="../open-source-software-submissions/reviewer-guide.html" />
+    <link rel="prev" title="Releasing a package" href="../authoring/release.html" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="docsearch:language" content="en">
@@ -73,6 +73,9 @@
   <li class="">
     <a href="../open-source-software-submissions/intro.html">Submission Guides</a>
   </li>
+  <li class="">
+    <a href="../authoring/index.html">Author’s Guide</a>
+  </li>
   <li class="active">
     <a href="">Appendix: Templates</a>
   <ul class="nav sidenav_l2">
@@ -80,9 +83,6 @@
       <a href="glossary.html">Glossary</a>
     </li>
   </ul>
-  </li>
-  <li class="">
-    <a href="../authoring/index.html">Author’s Guide</a>
   </li>
 </ul>
 </nav>
@@ -128,8 +128,17 @@
             
         </div>
 
-        <!-- Edit this page -->
-        <a class="edit-button" href="https://github.com/pyOpenSci/dev_guide/edit/master/appendices/templates.md"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="bottom" title="Edit this page"><i class="fas fa-pencil-alt"></i></button></a>
+        <!-- Source interaction buttons -->
+        
+        <div class="dropdown-buttons-trigger">
+            <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+            <div class="dropdown-buttons sourcebuttons">
+                <a class="repository-button" href="https://github.com/pyOpenSci/dev_guide"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left" title="Source repository"><i class="fab fa-github"></i>repository</button></a>
+                <a class="issues-button" href="https://github.com/pyOpenSci/dev_guide/issues/new?title=Issue%20on%20page%20%2Fappendices/templates.html&body=Your%20issue%20content%20here."><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left" title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+                <a class="edit-button" href="https://github.com/pyOpenSci/dev_guide/edit/master/appendices/templates.md"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left" title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
+            </div>
+        </div>
+        
 
         <!-- Full screen (wrap in <a> to have style consistency -->
         <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="bottom" onclick="toggleFullScreen()" title="Fullscreen mode"><i class="fas fa-expand"></i></button></a>
@@ -158,7 +167,7 @@
         </li>
     
         <li class="nav-item toc-entry toc-h2">
-            <a href="#approval-comment-template" class="nav-link">Approval Comment Template</a>
+            <a href="#editor-approval-comment-template" class="nav-link">Editor Approval Comment Template</a>
         </li>
     
         <li class="nav-item toc-entry toc-h2">
@@ -305,22 +314,25 @@ review at this time.</p>
 <p>Sincerely,</p>
 <p>[EDITOR]</p>
 </div>
-<div class="section" id="approval-comment-template">
-<h2>Approval Comment Template<a class="headerlink" href="#approval-comment-template" title="Permalink to this headline">¶</a></h2>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>Approved! Thanks &lt;author(s) GitHub username(s)&gt; for submitting and &lt;reviewers&#39; GithHub usernames&gt; for your reviews! &lt;optional: smiling cat emoji à la Scott&gt;
+<div class="section" id="editor-approval-comment-template">
+<h2>Editor Approval Comment Template<a class="headerlink" href="#editor-approval-comment-template" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>----------------------------------------------
+🎉 &lt;package-name-here&gt; has been approved by pyOpenSci! Thank you &lt;maintainer-name-here&gt; for submitting pyrolite and many thanks to &lt;reviewer-names-here&gt; for reviewing this package! 😸  
 
-To-dos:
-- [ ] Transfer the repo to our &quot;pyOpenSci&quot; GitHub organization under &quot;Settings&quot; in your repo. I have invited you to a team that should allow you to do so. You&#39;ll be made admin once you do.
-- [ ] Fix any links in badges for CI and coverage to point to the pyOpenSci URL. For Appveryor projects, you should still use your personal Appveyor account. After transfer of your repo to the &quot;pyOpenSci&quot; GitHub organization the badge should be `[![AppVeyor Build Status](https://ci.appveyor.com/api/projects/status/github/pyOpenSci/pkgname?branch=master&amp;svg=true)](https://ci.appveyor.com/project/individualaccount/pkgname)`.
-- [ ] Add the badge for pyOpenSci peer-review to README.md. The badge should be `[![pyOpenSci](https://tinyurl.com/y22nb8up)](https://github.com/pyOpenSci/software-review/issues/issue-number)`
+There are a few things left to do to wrap up this submission: 
+- [ ] Add the badge for pyOpenSci peer-review to the README.md of &lt;package-name-here&gt;. The badge should be `[![pyOpenSci](https://tinyurl.com/y22nb8up)](https://github.com/pyOpenSci/software-review/issues/issue-number)`
+- [ ] Add &lt;package-name&gt; to the pyOpenSci website. &lt;maintainer-name&gt;, please open a pr to update [this file](https://github.com/pyOpenSci/pyopensci.github.io/blob/master/_data/packages.yml): to add your package and name to the list of contributors
+- [ ] &lt;reviewers-and-maintainers&gt; if you have time and are open to being listed on our website, please add yourselves to [this file](https://github.com/pyOpenSci/pyopensci.github.io/blob/master/_data/contributors.yml) via a pr so we can list you on our website as contributors!
 
-&lt;IF JOSS&gt;
+&lt;IF JOSS SUBMISSION&gt;
+This package is going to move on to JOSS for review. I believe @arfon will ask you to implement the items below but let&#39;s let him chime in here first! 
 - [ ] Activate Zenodo watching the repo
 - [ ] Tag and create a release so as to create a Zenodo version and DOI
 - [ ] Submit to JOSS using the Zenodo DOI. We will tag it for expedited review.
-&lt;IF JOSS/&gt;
 
-We&#39;ve started putting together a gitbook with our best practice and tips, [this chapter](https://pyopensci.github.io/dev_guide/maintenance/maintenance_intro.html) starts the 3rd section that&#39;s about guidance for after onboarding. Please tell us what could be improved, the corresponding repo is [here](https://github.com/pyOpenSci/dev_guide).
+&lt;IF JOSS SUBMISSION/&gt;
+
+All -- if you have any feedback for us about the review process please feel free to share it here. We are always looking to improve our process and our documentation in the [contributing-guide](https://www.pyopensci.org/contributing-guide). We have also been updating our documentation to improve the process so all feedback is appreciated! 
 </pre></div>
 </div>
 </div>
@@ -353,7 +365,7 @@ You&#39;ve been in the scientific Python community for some time now, and I thin
     
     <div class='prev-next-bottom'>
         
-    <a class='left-prev' id="prev-link" href="../open-source-software-submissions/reviewer-guide.html" title="previous page">Guide for Reviewers</a>
+    <a class='left-prev' id="prev-link" href="../authoring/release.html" title="previous page">Releasing a package</a>
     <a class='right-next' id="next-link" href="glossary.html" title="next page">Glossary</a>
 
     </div>
