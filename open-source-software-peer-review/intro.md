@@ -2,6 +2,9 @@
 
 These pages contain information about the peer review process.
 
+```{tableofcontents}
+```
+
 ## The Peer Review Timeline
 
 - *Pre-submission:* If you are unsure if your package fits within the scope of the pyOpenSci suite, create a pre-submission inquiry issue on the [pyopensci/software-review repository](https://github.com/pyOpenSci/software-review/issues/new/choose). An editor will respond within a few days to let you know if we can review your package at this time. For more info, see the ["Aims and Scope"](aims-and-scope) section of this guide.

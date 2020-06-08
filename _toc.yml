@@ -8,14 +8,14 @@ sections:
   - file: open-source-software-peer-review/policies-and-guidelines
 - file: open-source-software-submissions/intro
   sections:
-  - file: open-source-software-submissions/editors-guide
-  - file: open-source-software-submissions/editor-in-chief-guide
   - file: open-source-software-submissions/author-guide
   - file: open-source-software-submissions/reviewer-guide
+  - file: open-source-software-submissions/editors-guide
+  - file: open-source-software-submissions/editor-in-chief-guide
 - file: authoring/index
   sections:
-  - file: authoring/collaboration
   - file: authoring/overview
+  - file: authoring/collaboration
   - file: authoring/tools-for-developers
   - file: authoring/testing
   - file: authoring/release
