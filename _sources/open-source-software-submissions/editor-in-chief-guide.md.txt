@@ -1,6 +1,6 @@
-# pyOpenSci Editor in Chief Guide
+# Editor in Chief Guide
 
-## Editor in Chief Role & Responsibilities 
+## Editor in Chief Role & Responsibilities
 
 The Editor in Chief serves for 3 months or a time agreed to by all members of the editorial board. The Editor in Chief fulfills the following roles:
 
