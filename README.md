@@ -1,7 +1,7 @@
 # <img src="content/images/logo/logo.png" width=40 /> pyOpenSci Guidebook
-[![CircleCI](https://circleci.com/gh/pyOpenSci/dev_guide.svg?style=svg)](https://circleci.com/gh/pyOpenSci/dev_guide)
+[![CircleCI](https://circleci.com/gh/pyOpenSci/dev_guide.svg?style=svg)](https://circleci.com/gh/pyOpenSci/contributing-guide)
 
-https://pyopensci.org/dev_guide/
+https://pyopensci.org/contributing-guide/
 
 pyOpenSci's guide for developing, reviewing, and maintaining packages.
 
