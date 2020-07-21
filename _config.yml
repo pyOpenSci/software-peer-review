@@ -5,7 +5,7 @@ logo: images/logo/logo.png
 exclude_patterns: ["README.md"]
 
 repository:
-  url: https://github.com/pyOpenSci/dev_guide
+  url: https://github.com/pyOpenSci/contributing-guide
   branch: master
 
 html:
