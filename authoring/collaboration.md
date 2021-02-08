@@ -1,6 +1,6 @@
 # Collaboration Guide
 
-Note: pyOpenSci is still building out this section of our guidebook. Many of the examples come from rOpenSci. If you have suggestions for changes, check out the [GitHub repo](https://github.com/pyOpenSci/dev_guide).
+Note: pyOpenSci is still building out this section of our guidebook. Many of the examples come from rOpenSci. If you have suggestions for changes, check out the [GitHub repo](https://github.com/pyOpenSci/contributing-guide).
 
 ## Make your repo contribution and collaboration friendly
 
@@ -10,7 +10,7 @@ We require that you use a code of conduct such as the [Contributor Covenant](htt
 
 ### Contributing guide
 
-We have a [template for contributing guidelines](https://github.com/pyOpenSci/cookiecutter-pyopensci/blob/master/%7B%7Bcookiecutter.project_slug%7D%7D/CONTRIBUTING.rst) in our cookiecutter repository. Even if you're not using cookiecutter to build your project (see our [packaging guide](../packaging/#project-template) for info), you can download our CONTRIBUTING.rst as a starting point.
+We have a [template for contributing guidelines](https://github.com/pyOpenSci/cookiecutter-pyopensci/blob/master/%7B%7Bcookiecutter.project_slug%7D%7D/CONTRIBUTING.rst) in our cookiecutter repository. Even if you're not using cookiecutter to build your project (see our [packaging guide](../authoring/overview#project-template) for info), you can download our CONTRIBUTING.rst as a starting point.
 
 You can tweak it a bit depending on your workflow and package. For example, make sure contributors have instructions in your CONTRIBUTING file for running local tests if not trivial. CONTRIBUTING can also contain some details about how you acknowledge contributions (see [this section](#attributions)) and the roadmap of your package (cf [this example for R](https://github.com/ecohealthalliance/fasterize/blob/master/CONTRIBUTING.md)).
 
