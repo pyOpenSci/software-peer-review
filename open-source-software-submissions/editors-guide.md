@@ -5,7 +5,7 @@
 - Add a comment to the issue with your response to the Editor Checks.
   - Use the [editor template](../appendices/templates#editors-template).
   - Fill out the Editor Checks sections for `Fit`, `Automated Tests`, `License`, `Repository`
-    - Check against policies for [fit](aims_scope#package-categories) and [overlap](aims_scope#package-overlap). If reject, see [this section](#responding-to-out-of-scope-submissions) about how to respond.
+    - Check against policies for [fit](aims-and-scope#package-categories) and [overlap](aims-and-scope#package-overlap). If reject, see [this section](editor-in-chief-guide#responding-to-out-of-scope-submissions) about how to respond.
     - `Archive` and `Version` for JOSS may be filled out at the end of the review.
 - Check the comment submission by the author to ensure that mandatory parts of submission template are complete.
   - If not, direct authors toward appropriate instructions.
@@ -29,7 +29,7 @@
 - Run automated tests: spelling, linting, etc ... will be filled in later.
 - For packages needing continuous integration on multiple platforms ([criteria in this section of the packaging chapter](../authoring/overview#continuous-integration)), make sure the package gets tested on multiple platforms (having the package built on both Travis and AppVeyor for instance).
 - Wherever possible when asking for changes, direct authors to automatic tools and online resources.
-- If the package raises a new issue for pyOpenSci policy, create an issue on [pyOpenSci's governance repo](https://github.com/pyOpenSci/governance)
+- If the package raises a new issue for pyOpenSci policy, create an issue on [pyOpenSci's governance repo](https://github.com/pyOpenSci/governance/issues/new)
 
 ## Guidelines For Identifying Reviewers
 
@@ -55,7 +55,7 @@ Here are criteria to keep in mind when choosing a reviewer. You might need to pi
 * Has not reviewed a package for us within the last 6 months.
 * Some package development experience.
 * Some domain experience in the field of the package or data source.
-* No [conflicts of interest](peer_review_proc#conflict-of-interest).
+* No [conflicts of interest](../open-source-software-peer-review/policies-and-guidelines#conflict-of-interest).
 * Try to balance your sense of the potential reviewer’s experience against the complexity of the package.
 * Diversity - with two reviewers both shouldn’t be cis white males.
 * Some evidence that they are interested in openness or Python community activities, although blind emailing is fine.
@@ -67,13 +67,13 @@ Each submission should be reviewed by _two_ package reviewers. Although it is fi
 -   Check in with reviewers and authors occasionally. Offer clarification and help as needed.
 -   In general aim for 3 weeks for review, 2 weeks for subsequent changes, and 1 week for reviewer approval of changes.
 -   Upon all reviews being submitted, change the review status tag to `4/review-in-awaiting-changes` to update the reminder bot.
--   If the author stops responding, refer to [the policies](peer_review_proc#review-process-guidelines) and/or ping the other editors in the Slack channel for discussion. Importantly, if a reviewer was assigned to a closed issue, contact them when closing the issue to explain the decision, thank them once again for their work, and make a note in our database to assign them to a submission with high chances of smooth software review next time (e.g. a package author who has already submitted packages to us).
+-   If the author stops responding, refer to [the policies](open-source-software-peer-review/policies-and-guidelines.html#review-process-guidelines) and/or ping the other editors in the Slack channel for discussion. Importantly, if a reviewer was assigned to a closed issue, contact them when closing the issue to explain the decision, thank them once again for their work, and make a note in our database to assign them to a submission with high chances of smooth software review next time (e.g. a package author who has already submitted packages to us).
 -   Upon changes being made, change the review status tag to `5/awaiting-reviewer-response`.
 
 ### Editor Responsibilities After Review:
 
 -   Change the status tag to `6/approved`.
--   You can use the [approval comment template](../appendices/templates#approval-comment-template).
+-   You can use the [approval comment template](../appendices/templates#editor-approval-comment-template).
 -   Add review/er information to the review database.
 -   If package will be migrated to `pyOpenSci`:
     -   Create a two-person team in pyOpenSci's "pyOpenSci" GitHub organization, named for the package, with yourself and the package author as members.

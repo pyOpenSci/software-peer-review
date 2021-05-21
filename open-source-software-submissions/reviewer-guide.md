@@ -78,12 +78,12 @@ your reviews do not need to be as long as these examples):
 
 You can read blog posts written by reviewers about their experiences [via this link](https://ropensci.org/tags/reviewer/). In particular, in [this blog post by Mara Averick](https://ropensci.org/blog/2017/08/22/first-package-review/) read about the "naive user" role a reviewer can take to provide useful feedback even without being experts of the package's topic or implementation, by asking themselves _"What did I think this thing would do? Does it do it? What are things that scare me off?"_. In [another blog post](https://ropensci.org/blog/2017/09/08/first-review-experiences/) Verena Haunschmid explains how she alternated between using the package and checking its code.
 
-As both a former reviewer and package author [Adam Sparks](https://adamhsparks.github.io/) [wrote this](https://twitter.com/adamhsparks/status/898132036451303425) "[write] a good critique of the package structure and best coding practices. If you know how to do something better, tell me. It’s easy to miss documentation opportunities as a developer, as a reviewer, you have a different view. You’re a user that can give feedback. What’s not clear in the package? How can it be made more clear? If you’re using it for the first time, is it easy? Do you know another R package that maybe I should be using? Or is there one I’m using that perhaps I shouldn’t be? If you can contribute to the package, offer."
+As both a former reviewer and package author [Adam Sparks](https://adamhsparks.com) [wrote this](https://twitter.com/adamhsparks/status/898132036451303425) "[write] a good critique of the package structure and best coding practices. If you know how to do something better, tell me. It’s easy to miss documentation opportunities as a developer, as a reviewer, you have a different view. You’re a user that can give feedback. What’s not clear in the package? How can it be made more clear? If you’re using it for the first time, is it easy? Do you know another R package that maybe I should be using? Or is there one I’m using that perhaps I shouldn’t be? If you can contribute to the package, offer."
 
 
 ### Feedback on the Process
 
-We welcome any feedback and/or questions about the review process! We encourage you to open an issue on our [governance repository](https://github.com/pyOpenSci/governance).
+We welcome any feedback and/or questions about the review process! We encourage you to open an issue on our [governance repository](https://github.com/pyOpenSci/governance/issues/new).
 
 ## Submitting the Review
 - When your review is complete, paste it as a comment into the package software-review issue.

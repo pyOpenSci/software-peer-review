@@ -7,7 +7,7 @@ These are templates to be used by editors and reviewers. When a package is submi
 ```
 ## Editor checks:
 
-- [ ] **Fit**: The package meets criteria for [fit](https://pyopensci.github.io/dev_guide/peer_review/aims-and-scope.html#package-categories) and [overlap](https://pyopensci.github.io/dev_guide/peer_review/aims-and-scope.html#package-categories).
+- [ ] **Fit**: The package meets criteria for [fit](https://www.pyopensci.org/contributing-guide/open-source-software-peer-review/aims-and-scope.html#package-categories) and [overlap](https://www.pyopensci.org/contributing-guide/open-source-software-peer-review/aims-and-scope.html#package-overlap).
 - [ ] **Automated tests:** Package has a testing suite and is tested via Travis-CI or another CI service.
 - [ ] **License:** The package has an OSI accepted license
 - [ ] **Repository:** The repository link resolves correctly
@@ -78,7 +78,7 @@ Package structure should follow general community best-practices. In general ple
 - [ ] **Performance:** Any performance claims of the software been confirmed.
 - [ ] **Automated tests:** Tests cover essential functions of the package and a reasonable range of inputs and conditions. All tests pass on the local machine.
 - [ ] **Continuous Integration:** Has continuous integration, such as Travis CI, AppVeyor, CircleCI, and/or others.
-- [ ] **Packaging guidelines**: The package conforms to the pyOpenSci [packaging guidelines](https://www.pyopensci.org/dev_guide/authoring/overview.html).
+- [ ] **Packaging guidelines**: The package conforms to the pyOpenSci [packaging guidelines](https://www.pyopensci.org/contributing-guide/authoring/index.html#packaging-guide).
 
 #### For packages co-submitting to JOSS
 
@@ -131,9 +131,9 @@ Sincerely,
 
 [EDITOR]
 
-[reviewers guide]: https://pyopensci.github.io/dev_guide/peer_review/reviewer_guide.html
-[packaging guide]: https://pyopensci.github.io/dev_guide/authoring/overview.html
-[template]: https://pyopensci.github.io/dev_guide/appendices/templates.html#review-template
+[reviewers guide]: https://www.pyopensci.org/contributing-guide/open-source-software-submissions/reviewer-guide.html
+[packaging guide]: https://www.pyopensci.org/contributing-guide/authoring/index.html#packaging-guide
+[template]: https://www.pyopensci.org/contributing-guide/appendices/templates.html#review-template
 
 
 ## Editor Approval Comment Template

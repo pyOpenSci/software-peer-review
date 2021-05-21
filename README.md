@@ -1,5 +1,5 @@
-# <img src="content/images/logo/logo.png" width=40 /> pyOpenSci Guidebook
-[![CircleCI](https://circleci.com/gh/pyOpenSci/dev_guide.svg?style=svg)](https://circleci.com/gh/pyOpenSci/contributing-guide)
+# <img src="images/logo/logo.png" width=40 /> pyOpenSci Guidebook
+[![CircleCI](https://circleci.com/gh/pyOpenSci/contributing-guide.svg?style=svg)](https://circleci.com/gh/pyOpenSci/contributing-guide)
 
 https://pyopensci.org/contributing-guide/
 
@@ -34,4 +34,4 @@ To build the guide locally, take the following steps:
 ## Contributing to this guide
 
 We welcome and issues and pull-requests to improve the content of this guide.
-If you'd like to see an improvement, please [open an issue](https://github.com/pyOpenSci/dev_guide/issues/new/choose).
+If you'd like to see an improvement, please [open an issue](https://github.com/pyOpenSci/contributing-guide/issues/new/choose).
