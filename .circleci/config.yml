@@ -5,9 +5,13 @@ jobs:
       - image: circleci/python:3.6-stretch
     steps:
       - checkout
-      - run: pip install -r requirements.txt
       - run:
-          name: Build site markdown
+          name: setup environment
+          command: |
+            pip install -r requirements.txt
+            pip list
+      - run:
+          name: Build Site Markdown
           command: jupyter-book build .
 
       - store_artifacts:
