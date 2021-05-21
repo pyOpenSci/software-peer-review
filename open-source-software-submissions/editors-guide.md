@@ -50,7 +50,10 @@ When these sources of information are not enough:
 
 #### Criteria for Choosing Reviewers
 
-Here are criteria to keep in mind when choosing a reviewer. You might need to piece this information together by searching CRAN and the potential reviewer’s GitHub page and general online presence (personal website, Twitter).
+Here are criteria to keep in mind when choosing a reviewer. You might need to
+piece this information together by searching `PyPI`, `Conda` / `Conda-forge` and
+the potential reviewer’s GitHub page and general online presence (personal
+website, Twitter).
 
 * Has not reviewed a package for us within the last 6 months.
 * Some package development experience.
@@ -61,17 +64,22 @@ https://www.pyopensci.org/contributing-guide/open-source-software-peer-review/po
 
       open-source-software-peer-review/policies-and-guidelines.html#conflict-of-interest.
 * Try to balance your sense of the potential reviewer’s experience against the complexity of the package.
-* Diversity - with two reviewers both shouldn’t be cis white males.
+* **Diversity** - with two reviewers both shouldn’t be cis white males.
 * Some evidence that they are interested in openness or Python community activities, although blind emailing is fine.
 
-Each submission should be reviewed by _two_ package reviewers. Although it is fine for one of them to have less package development experience and more domain knowledge, the review should not be split in two.  Both reviewers need to review the package comprehensively, though from their particular perspective.  In general, at least one reviewer should have prior reviewing experience, and of course inviting one new reviewer expands our pool of reviewers.
+Each submission should be reviewed by _two_ package reviewers. Although it is
+fine for one of them to have less package development experience and more domain
+knowledge, the review should not be split in two.  Both reviewers need to review
+the package comprehensively, though from their particular perspective.  In
+general, at least one reviewer should have prior reviewing experience, and of
+course inviting one new reviewer expands our pool of reviewers.
 
 ## Editor Responsibilities During Review:
 
 -   Check in with reviewers and authors occasionally. Offer clarification and help as needed.
 -   In general aim for 3 weeks for review, 2 weeks for subsequent changes, and 1 week for reviewer approval of changes.
 -   Upon all reviews being submitted, change the review status tag to `4/review-in-awaiting-changes` to update the reminder bot.
--   If the author stops responding, refer to [the policies](peer_review_proc#review-process-guidelines) and/or ping the other editors in the Slack channel for discussion. Importantly, if a reviewer was assigned to a closed issue, contact them when closing the issue to explain the decision, thank them once again for their work, and make a note in our database to assign them to a submission with high chances of smooth software review next time (e.g. a package author who has already submitted packages to us).
+-   If the author stops responding, refer to [the policies](peer_review_proc#review-process-guidelines) and/or ping the other editors in the Slack channel <*Not available publically yet*> for discussion. Importantly, if a reviewer was assigned to a closed issue, contact them when closing the issue to explain the decision, thank them once again for their work, and make a note in our database to assign them to a submission with high chances of smooth software review next time (e.g. a package author who has already submitted packages to us).
 -   Upon changes being made, change the review status tag to `5/awaiting-reviewer-response`.
 
 ### Editor Responsibilities After Review:
