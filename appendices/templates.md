@@ -110,6 +110,7 @@ Estimated hours spent reviewing:
 
 Editors may make use of the e-mail template below in recruiting reviewers:
 
+```
 Dear [REVIEWER],
 
 Hi, this is [EDITOR]. [FRIENDLY BANTER]. I'm writing to ask if you would be willing to review a package for pyOpenSci. As you probably know, pyOpenSci conducts peer review of Python packages contributed to our collection in a manner similar to journals.
@@ -130,6 +131,7 @@ Thank you for your time.
 Sincerely,
 
 [EDITOR]
+```
 
 [reviewers guide]: https://www.pyopensci.org/contributing-guide/open-source-software-submissions/reviewer-guide.html
 [packaging guide]: https://www.pyopensci.org/contributing-guide/authoring/index.html#packaging-guide
@@ -141,20 +143,20 @@ Sincerely,
 ----------------------------------------------
 🎉 <package-name-here> has been approved by pyOpenSci! Thank you <maintainer-name-here> for submitting <package-name> and many thanks to <reviewer-names-here> for reviewing this package! 😸  
 
-There are a few things left to do to wrap up this submission: 
+There are a few things left to do to wrap up this submission:
 - [ ] Add the badge for pyOpenSci peer-review to the README.md of <package-name-here>. The badge should be `[![pyOpenSci](https://tinyurl.com/y22nb8up)](https://github.com/pyOpenSci/software-review/issues/issue-number)`
 - [ ] Add <package-name> to the pyOpenSci website. <maintainer-name>, please open a pr to update [this file](https://github.com/pyOpenSci/pyopensci.github.io/blob/master/_data/packages.yml): to add your package and name to the list of contributors
 - [ ] <reviewers-and-maintainers> if you have time and are open to being listed on our website, please add yourselves to [this file](https://github.com/pyOpenSci/pyopensci.github.io/blob/master/_data/contributors.yml) via a pr so we can list you on our website as contributors!
 
 <IF JOSS SUBMISSION>
-This package is going to move on to JOSS for review. I believe @arfon will ask you to implement the items below but let's let him chime in here first! 
+This package is going to move on to JOSS for review. I believe @arfon will ask you to implement the items below but let's let him chime in here first!
 - [ ] Activate Zenodo watching the repo
 - [ ] Tag and create a release so as to create a Zenodo version and DOI
 - [ ] Submit to JOSS using the Zenodo DOI. We will tag it for expedited review.
 
 <IF JOSS SUBMISSION/>
 
-All -- if you have any feedback for us about the review process please feel free to share it here. We are always looking to improve our process and our documentation in the [contributing-guide](https://www.pyopensci.org/contributing-guide). We have also been updating our documentation to improve the process so all feedback is appreciated! 
+All -- if you have any feedback for us about the review process please feel free to share it here. We are always looking to improve our process and our documentation in the [contributing-guide](https://www.pyopensci.org/contributing-guide). We have also been updating our documentation to improve the process so all feedback is appreciated!
 ```
 
 ## Generic new member template
