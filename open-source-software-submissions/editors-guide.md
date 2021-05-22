@@ -5,30 +5,26 @@
 Follow the checklist below when serving as an editor for a package submitted to
 pyOpenSci for review.
 
-### Get Started With the Checklist
+#### 1. Tag the Submission & Ensure You Have Sufficient Information From The Author
 
-#### 1. Tag the Submission
+Once you begin the review process as an editor:
 
-First, tag the submission.
-- Tag the submission issue with the `2/seeking-reviewer(s)` tag.
+* Tag the submission issue with the `2/seeking-reviewer(s)` tag.
+* Check the comment submission by the author to ensure that mandatory parts of submission template are complete.
+  - If elements are not commplete, direct authors toward filling in any missing pieces.
 
-#### 2. Check the Author Submission Comment
+#### 2. Check the Package for Basic Infrastructure
 
-- Check the comment submission by the author to ensure that mandatory parts of submission template are complete.
-  - If not, direct authors toward filling in any missing pieces.
+- Make sure that the package contains a basic testing framework and CI setup required by PyOpenSci. This avoids additional and redundant reviewer time.
+- Also skim the package for sufficient documentation, style, and basic linting
 
-#### 3. Check the Package for Basic Infrastructure
+#### 3. Next, Add a Comment With the Editor Checks
+Once the above is complete you are ready to add editor checks to the issue.
 
-- Make sure that the package contains a basic testing framework and CI setup
-- Check for style / basic linting
+- Add a comment to the issue that contains a copy of the Editor Checks template (see below) filled out with your response to the checks that begin the review.
+- In this comment you will add reviewers and the review deadline date once you have reviewers assigned (see below)
 
-#### 4. Next, Add a Comment With the Editor Checks
-
-- Add a comment to the issue that contains a copy of
-the Editor Checks template (see below) filled out with your response to the
-checks that begin the review.
-
-```
+```markdown
 ## Editor checks:
 
 - [ ] **Fit**: The package meets criteria for [fit](https://www.pyopensci.org/contributing-guide/open-source-software-peer-review/aims-and-scope.html#package-categories) and [overlap](https://www.pyopensci.org/contributing-guide/open-source-software-peer-review/aims-and-scope.html#package-overlap).
@@ -61,16 +57,17 @@ to respond.
 
 - If initial checks show major gaps, request changes before assigning reviewers.
 
-#### 5. Identify Reviewers
+#### 4. Identify Reviewers
 
-- Within one week of completing checks, identify two reviewers for the package (see sections below for additional guidance).
+- Within one week of completing the editor checks, identify two reviewers for the package (see sections below for additional guidance on finding and selecting reviewers).
 - Once reviewers have been identified:
-  - Modify the Editor Comments under Editor Checks to add reviewer names and assign due date (typically 2-3 week turnaround).
+  - Modify the Editor Comments under Editor Checks to add reviewer names and assign due date (typically 2-3 week turnaround). Also add the reviewers to the initial top comment in the issue.
+
     - `Reviewers: Full Name  (@github_username) and Full Name (@github_username)`
     - `Due date: Date`
     - Include in your comment to the reviewers:
-      - link to guide for reviewers
-      - link to review template
+      - Link to the reviewer guide for reviewers
+      - Link to the review template
   - Edit the original comment submitted by author to fill in the Editor and Reviewer Information:
     - `Editor: Full Name (@github_username)`
     - `Reviewer 1: Full Name (@github_username)`
@@ -137,15 +134,50 @@ course inviting one new reviewer expands our pool of reviewers.
 
 ### Editor Responsibilities After Review:
 
--   Change the status tag to `6/approved`.
--   You can use the [approval comment template](../appendices/templates#approval-comment-template).
--   Add review/er information to the review database.
+Once the package has been accepted through the review process:
+
+- Change the status tag of the issue to `6/approved`
+- Update the top of the issue with the version of the package that was approved and the doi.
+
+If the package was accepted by JOSS:
+
+- Fill out `Archive` and `Version` for JOSS under Editor Checks comment.
+- Fill out `Archive` and `Version accepted` in the original comment submitted by author.
+
+- Then post the approval template below to the issue. This template asks the authors and reviewers to add themselves and the package that was approved to the pyOpenSci website.
+
+```
+----------------------------------------------
+🎉 <package-name-here> has been approved by pyOpenSci! Thank you <maintainer-name-here> for submitting <package-name> and many thanks to <reviewer-names-here> for reviewing this package! 😸  
+
+There are a few things left to do to wrap up this submission:
+- [ ] Add the badge for pyOpenSci peer-review to the README.md of <package-name-here>. The badge should be `[![pyOpenSci](https://tinyurl.com/y22nb8up)](https://github.com/pyOpenSci/software-review/issues/issue-number)`
+- [ ] Add <package-name> to the pyOpenSci website. <maintainer-name>, please open a pr to update [this file](https://github.com/pyOpenSci/pyopensci.github.io/blob/master/_data/packages.yml): to add your package and name to the list of contributors
+- [ ] <reviewers-and-maintainers> if you have time and are open to being listed on our website, please add yourselves to [this file](https://github.com/pyOpenSci/pyopensci.github.io/blob/master/_data/contributors.yml) via a pr so we can list you on our website as contributors!
+
+<IF JOSS SUBMISSION>
+This package is going to move on to JOSS for review. I believe @arfon will ask you to implement the items below but let's let him chime in here first!
+- [ ] Activate Zenodo watching the repo
+- [ ] Tag and create a release so as to create a Zenodo version and DOI
+- [ ] Submit to JOSS using the Zenodo DOI. We will tag it for expedited review.
+
+<IF JOSS SUBMISSION/>
+
+All -- if you have any feedback for us about the review process please feel free to share it here. We are always looking to improve our process and our documentation in the [contributing-guide](https://www.pyopensci.org/contributing-guide). We have also been updating our documentation to improve the process so all feedback is appreciated!
+```
+
+When all of the above steps are complete, you can close the software-review issue.
+
+#### Optional - Move Package to PyOpenSci Organization (BETA)
+
+rOpenSci packages often live in the rOpenSci organization. PyOpenSci is still
+figuring out whether this model fits for the Python community. If an author is
+interested in this option, consider doing the following:
+
 -   If package will be migrated to `pyOpenSci`:
     -   Create a two-person team in pyOpenSci's "pyOpenSci" GitHub organization, named for the package, with yourself and the package author as members.
     -   Have the author transfer the repository to `pyOpenSci`
     -   Go to the repository settings in the "pyOpenSci" GitHub organization and give the author "Admin" access to the repository.
-- Fill out `Archive` and `Version` for JOSS under Editor Checks comment.
-- Fill out `Archive` and `Version accepted` in the original comment submitted by author.
 -   Ask author to:
     -  Change any needed links, such those for CI badges
     -  Add pyOpenSci badge: `[![pyOpenSci](https://tinyurl.com/y22nb8up)](link-to-issue)`.
@@ -154,4 +186,3 @@ course inviting one new reviewer expands our pool of reviewers.
         -  For AppVeyor, tell the author to update the GitHub link in their badge, but do not transfer the project: AppVeyor projects should remain under the authors' account. The badge is `[![AppVeyor Build Status](https://ci.appveyor.com/api/projects/status/github/pyOpenSci/pkgname?branch=master&svg=true)](https://ci.appveyor.com/project/individualaccount/pkgname)`.
         -  For Codecov, the webhook may need to be reset by the author.
 -   Add a "peer-reviewed" topic to the repository.
--   Close the software-review issue.
