@@ -1,15 +1,68 @@
 # Guide for Editors
 
 ## Get Started Checklist
-- Tag issue with `2/seeking-reviewer(s)` tag.
-- Add a comment to the issue with your response to the Editor Checks.
-  - Use the [editor template](../appendices/templates#editors-template).
-  - Fill out the Editor Checks sections for `Fit`, `Automated Tests`, `License`, `Repository`
-    - Check against policies for [fit](aims_scope#package-categories) and [overlap](aims_scope#package-overlap). If reject, see [this section](#responding-to-out-of-scope-submissions) about how to respond.
-    - `Archive` and `Version` for JOSS may be filled out at the end of the review.
+
+Follow the checklist below when serving as an editor for a package submitted to
+pyOpenSci for review.
+
+### Get Started With the Checklist
+
+#### 1. Tag the Submission
+
+First, tag the submission.
+- Tag the submission issue with the `2/seeking-reviewer(s)` tag.
+
+#### 2. Check the Author Submission Comment
+
 - Check the comment submission by the author to ensure that mandatory parts of submission template are complete.
-  - If not, direct authors toward appropriate instructions.
+  - If not, direct authors toward filling in any missing pieces.
+
+#### 3. Check the Package for Basic Infrastructure
+
+- Make sure that the package contains a basic testing framework and CI setup
+- Check for style / basic linting
+
+#### 4. Next, Add a Comment With the Editor Checks
+
+- Add a comment to the issue that contains a copy of
+the Editor Checks template (see below) filled out with your response to the
+checks that begin the review.
+
+```
+## Editor checks:
+
+- [ ] **Fit**: The package meets criteria for [fit](https://www.pyopensci.org/contributing-guide/open-source-software-peer-review/aims-and-scope.html#package-categories) and [overlap](https://www.pyopensci.org/contributing-guide/open-source-software-peer-review/aims-and-scope.html#package-overlap).
+- [ ] **Automated tests:** Package has a testing suite and is tested via Travis-CI or another CI service.
+- [ ] **License:** The package has an OSI accepted license
+- [ ] **Repository:** The repository link resolves correctly
+- [ ] **Archive** (JOSS only, may be post-review): The repository DOI resolves correctly
+- [ ] **Version** (JOSS only, may be post-review): Does the release version given match the GitHub release (v1.0.0)?
+
+---
+
+## Editor comments
+
+---
+
+Reviewers:
+Due date:
+```
+
+- Fill out the Editor Checks sections for `Fit`, `Automated Tests`, `License`, and `Repository`
+- Check against policies for [package fit within identified categories for the pyOpenSci ecosystem](../open-source-software-peer-review/aims-and-scope.html#package-categories)
+- Check against policies for [package overlap of functionality with other packages](../open-source-software-peer-review/aims-and-scope.html#package-overlap).
+
+If the package does not fit the pyOpenSci scope and policies and needs to be
+rejected, see [this section](#responding-to-out-of-scope-submissions) about how
+to respond.
+
+- `Archive` and `Version` within the editor checks for JOSS may be filled out at the end of the review. The JOSS component of the review happens last after all of the review on the pyOpenSci side is complete.
+
+
 - If initial checks show major gaps, request changes before assigning reviewers.
+
+#### 5. Identify Reviewers
+
 - Within one week of completing checks, identify two reviewers for the package (see sections below for additional guidance).
 - Once reviewers have been identified:
   - Modify the Editor Comments under Editor Checks to add reviewer names and assign due date (typically 2-3 week turnaround).
@@ -25,11 +78,11 @@
     - `Archive` and `Version accepted` are filled out at the end of the review.
   - Tag issue with `3/reviewer(s)-assigned` tag
 
-## General Guidelines for Editor
-- Run automated tests: spelling, linting, etc ... will be filled in later.
-- For packages needing continuous integration on multiple platforms ([criteria in this section of the packaging chapter](../authoring/overview#continuous-integration)), make sure the package gets tested on multiple platforms (having the package built on both Travis and AppVeyor for instance).
-- Wherever possible when asking for changes, direct authors to automatic tools and online resources.
-- If the package raises a new issue for pyOpenSci policy, create an issue on [pyOpenSci's governance repo](https://github.com/pyOpenSci/governance)
+### General Review guidelines
+
+- For packages needing continuous integration on multiple platforms ([criteria in this section of the packaging chapter](../authoring/overview#continuous-integration)), make sure the package gets tested on multiple platforms (e.g. MAC, Windows, Linux).
+- Wherever possible when asking for changes in the review process, direct authors to automatic tools and online resources.
+  - If the package raises a new issue for pyOpenSci policy, create an issue on [pyOpenSci's governance repo](https://github.com/pyOpenSci/governance)
 
 ## Guidelines For Identifying Reviewers
 
