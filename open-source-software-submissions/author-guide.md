@@ -27,7 +27,7 @@ default if the package fits into the JOSS scope.
 - If you choose to opt into the pyOpenSci / JOSS partnership in your review, do NOT submit your package to JOSS separately. A PyOpenSci editor fill facilitate that step once you complete your review.
 
 
-```{admonition} **Important**
+```{note} 
  Acceptance to pyOpenSci does not guarantee acceptance to JOSS. In particular, JOSS doesn't accept the full variety of packages that are in scope for pyOpenSci. For example, thin API wrappers fall within  [pyOpenSci's scope](../open-source-software-peer-review/aims-and-scope) but are usually not accepted by JOSS. Be sure to review JOSS's [submission requirements](https://joss.readthedocs.io/en/latest/submitting.html#submission-requirements) before writing up a paper about your package.
 ```
 
