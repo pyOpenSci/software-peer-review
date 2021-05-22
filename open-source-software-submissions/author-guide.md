@@ -3,8 +3,10 @@
 Before submitting your project for review with pyOpenSci, make sure that it
 adheres to the standards and guidelines put forward in the [authoring guide](../authoring/index).
 
-## Presubmission
-If you are unsure if your package fits within pyOpenSci's [scope](../open-source-software-peer-review/aims-and-scope), you're encouraged to open a presubmission inquiry issue on the [software-review](https://github.com/pyOpenSci/software-review) repository.
+## Presubmission Inquiries
+If you are unsure if your package fits within pyOpenSci's
+[scope](../open-source-software-peer-review/aims-and-scope), you're encouraged
+to open a [presubmission inquiry issue on the software-review](https://github.com/pyOpenSci/software-review/issues/new?assignees=&labels=0%2Fpresubmission&template=presubmission-inquiry.md&title=) repository.
 
 ## Submission for Peer Review
 To request peer review, start a new issue in the [pyOpenSci/software-review](https://github.com/pyOpenSci/software-review) repository and fill out the "Submit Software for Review" issue template. For more information on the process and timeline for review, see our [section on the review process](../open-source-software-peer-review/intro).
