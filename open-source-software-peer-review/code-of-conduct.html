@@ -7,7 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Community Code of Conduct &#8212; The pyOpenSci Developer Guide</title>
     
-  <link rel="stylesheet" href="../_static/css/index.73d71520a4ca3b99cfee5594769eaaae.css">
+  <link href="../_static/css/theme.css" rel="stylesheet" />
+  <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
 
     
   <link rel="stylesheet"
@@ -19,14 +20,10 @@
 
     
       
-  <link rel="stylesheet"
-    href="../_static/vendor/open-sans_all/1.44.1/index.css">
-  <link rel="stylesheet"
-    href="../_static/vendor/lato_latin-ext/1.44.1/index.css">
 
     
-    <link rel="stylesheet" href="../_static/sphinx-book-theme.2d2078699c18a0efb88233928e1cf6ed.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.acff12b8f9c144ce68a297486a2fa670.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
@@ -34,18 +31,17 @@
     <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
     <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
     
-  <link rel="preload" as="script" href="../_static/js/index.3da636dd464baa7582d2.js">
+  <link rel="preload" as="script" href="../_static/js/index.1c5a1a01449ed65a7b51.js">
 
     <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
     <script src="../_static/doctools.js"></script>
-    <script src="../_static/language_data.js"></script>
     <script src="../_static/togglebutton.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
     <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
-    <script src="../_static/sphinx-book-theme.be0a4a0c39cd630af62a2fcf693f3f06.js"></script>
+    <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
     <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
     <script >
         const thebe_selector = ".thebe"
@@ -58,14 +54,14 @@
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Peer Review Guidelines &amp; Policies" href="policies-and-guidelines.html" />
     <link rel="prev" title="Aims and Scope" href="aims-and-scope.html" />
-
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
-
-
-
+    
   </head>
   <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
     
 
     <div class="container-xl">
@@ -74,27 +70,34 @@
 <div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
     
         <div class="navbar-brand-box">
-<a class="navbar-brand text-wrap" href="../index.html">
-  
-  <img src="../_static/logo.png" class="logo" alt="logo">
-  
-  
-  <h1 class="site-logo" id="site-title">The pyOpenSci Developer Guide</h1>
-  
-</a>
-</div>
-
-<form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+      <img src="../_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">The pyOpenSci Developer Guide</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
   <i class="icon fas fa-search"></i>
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
-</form>
-
-<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
-  <ul class="current nav sidenav_l1">
- <li class="toctree-l1 current active">
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <div class="bd-toc-item active">
+        <p class="caption">
+ <span class="caption-text">
+  Overview
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active has-children">
   <a class="reference internal" href="intro.html">
    The Peer Review Process
   </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
   <ul class="current">
    <li class="toctree-l2">
     <a class="reference internal" href="aims-and-scope.html">
@@ -113,26 +116,110 @@
    </li>
   </ul>
  </li>
- <li class="toctree-l1">
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Submission Guides
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1 has-children">
   <a class="reference internal" href="../open-source-software-submissions/intro.html">
    Submission Guides
   </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../open-source-software-submissions/author-guide.html">
+     Guide for Authors
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../open-source-software-submissions/reviewer-guide.html">
+     Guide for Reviewers
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../open-source-software-submissions/editors-guide.html">
+     Guide for Editors
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../open-source-software-submissions/editor-in-chief-guide.html">
+     Editor in Chief Guide
+    </a>
+   </li>
+  </ul>
  </li>
- <li class="toctree-l1">
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Python Packaging Guide
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1 has-children">
   <a class="reference internal" href="../authoring/index.html">
-   Author’s Guide
+   Python Packaging Guide for Maintainers Submitting to PyOpenSci
   </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../authoring/overview.html">
+     Overview
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../authoring/collaboration.html">
+     Collaboration Guide
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../authoring/tools-for-developers.html">
+     Tools for developers
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../authoring/testing.html">
+     Testing your package
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../authoring/release.html">
+     Releasing a package
+    </a>
+   </li>
+  </ul>
  </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Appendices
+ </span>
+</p>
+<ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="../appendices/templates.html">
    Appendix: Templates
   </a>
  </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../appendices/glossary.html">
+   Glossary
+  </a>
+ </li>
 </ul>
 
-</nav>
-
- <!-- To handle the deprecated key -->
+    </div>
+</nav> <!-- To handle the deprecated key -->
 
 <div class="navbar_extra_footer">
   Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
@@ -147,25 +234,25 @@
           
 <main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
     
-    <div class="row topbar fixed-top container-xl">
-    <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show">
-    </div>
-    <div class="col pl-2 topbar-main">
-        
-        <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
-            data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
-            aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
-            title="Toggle navigation" data-toggle="tooltip" data-placement="left">
-            <i class="fas fa-bars"></i>
-            <i class="fas fa-arrow-left"></i>
-            <i class="fas fa-arrow-up"></i>
-        </button>
-        
-        <div class="dropdown-buttons-trigger">
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
     <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
             class="fas fa-download"></i></button>
 
-    
     <div class="dropdown-buttons">
         <!-- ipynb file if we had a myst markdown file -->
         
@@ -177,9 +264,9 @@
         <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
             onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
     </div>
-    
 </div>
-        <!-- Source interaction buttons -->
+
+            <!-- Source interaction buttons -->
 
 <div class="dropdown-buttons-trigger">
     <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
@@ -199,20 +286,21 @@
     </div>
 </div>
 
+            <!-- Full screen (wrap in <a> to have style consistency -->
 
-        <!-- Full screen (wrap in <a> to have style consistency -->
-        <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
-                data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
-                title="Fullscreen mode"><i
-                    class="fas fa-expand"></i></button></a>
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
 
-        <!-- Launch buttons -->
+            <!-- Launch buttons -->
 
-    </div>
+        </div>
 
-    <!-- Table of contents -->
-    <div class="d-none d-md-block col-md-2 bd-toc show">
-        
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+        </div>
     </div>
 </div>
     <div id="main-content" class="row">
@@ -229,7 +317,7 @@
 <li><p>Respect that people have differences of opinion and that every design or implementation choice carries a trade-off and numerous costs. There is seldom a right answer.</p></li>
 <li><p>Please keep unstructured critique to a minimum. If you have solid ideas you want to experiment with, make a fork and see how it works.</p></li>
 <li><p>We will exclude you from interaction if you insult, demean or harass anyone. That is not welcome behavior. We interpret the term “harassment” as including the definition in the Citizen Code of Conduct; if you have any lack of clarity about what might be included in that concept, please read their definition. In particular, we don’t tolerate behavior that excludes people in socially marginalized groups.</p></li>
-<li><p>Private harassment is also unacceptable. No matter who you are, if you feel you have been or are being harassed or made uncomfortable by a community member, please contact us at earth.lab&#64;colorado.edu immediately with a capture (log, photo, email) of the harassment if possible. Whether you’re a regular contributor or a newcomer, we care about making this community a safe place for you and we’ve got your back.</p></li>
+<li><p>Private harassment is also unacceptable. No matter who you are, if you feel you have been or are being harassed or made uncomfortable by a community member, please contact us at <a class="reference external" href="mailto:earth&#46;lab&#37;&#52;&#48;colorado&#46;edu">earth<span>&#46;</span>lab<span>&#64;</span>colorado<span>&#46;</span>edu</a> immediately with a capture (log, photo, email) of the harassment if possible. Whether you’re a regular contributor or a newcomer, we care about making this community a safe place for you and we’ve got your back.</p></li>
 <li><p>Likewise, any spamming, trolling, flaming, baiting or other attention-stealing behavior are not welcome.</p></li>
 <li><p>Avoid the use of personal pronouns in code comments or documentation. There is no need to address persons when explaining code (e.g. “When the developer”). The focus should be on the code, not the author.</p></li>
 </ul>
@@ -257,15 +345,15 @@
 
               </div>
               
-        </div>
-    </div>
-    
-    
-    <div class='prev-next-bottom'>
         
+        <div class='prev-next-bottom'>
+            
     <a class='left-prev' id="prev-link" href="aims-and-scope.html" title="previous page">Aims and Scope</a>
     <a class='right-next' id="next-link" href="policies-and-guidelines.html" title="next page">Peer Review Guidelines &amp; Policies</a>
 
+        </div>
+        
+        </div>
     </div>
     <footer class="footer mt-5 mt-md-0">
     <div class="container">
@@ -282,21 +370,19 @@
 
       </div>
     </div>
+  
+  <script src="../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
 
-    
-  <script src="../_static/js/index.3da636dd464baa7582d2.js"></script>
+  
+<script async="" src="https://www.google-analytics.com/analytics.js"></script>
+<script>
+                        window.ga = window.ga || function () {
+                            (ga.q = ga.q || []).push(arguments) };
+                        ga.l = +new Date;
+                        ga('create', 'UA-165151943-1', 'auto');
+                        ga('set', 'anonymizeIp', true);
+                        ga('send', 'pageview');
+                    </script>
 
-
-    
-    <!-- Google Analytics -->
-    <script>
-      window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-      ga('create', 'UA-165151943-1', 'auto');
-      ga('set', 'anonymizeIp', true);
-      ga('send', 'pageview');
-    </script>
-    <script async src='https://www.google-analytics.com/analytics.js'></script>
-    <!-- End Google Analytics -->
-    
   </body>
 </html>

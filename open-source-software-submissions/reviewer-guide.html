@@ -7,7 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Guide for Reviewers &#8212; The pyOpenSci Developer Guide</title>
     
-  <link rel="stylesheet" href="../_static/css/index.73d71520a4ca3b99cfee5594769eaaae.css">
+  <link href="../_static/css/theme.css" rel="stylesheet" />
+  <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
 
     
   <link rel="stylesheet"
@@ -19,14 +20,10 @@
 
     
       
-  <link rel="stylesheet"
-    href="../_static/vendor/open-sans_all/1.44.1/index.css">
-  <link rel="stylesheet"
-    href="../_static/vendor/lato_latin-ext/1.44.1/index.css">
 
     
-    <link rel="stylesheet" href="../_static/sphinx-book-theme.2d2078699c18a0efb88233928e1cf6ed.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.acff12b8f9c144ce68a297486a2fa670.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
@@ -34,18 +31,17 @@
     <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
     <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
     
-  <link rel="preload" as="script" href="../_static/js/index.3da636dd464baa7582d2.js">
+  <link rel="preload" as="script" href="../_static/js/index.1c5a1a01449ed65a7b51.js">
 
     <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
     <script src="../_static/doctools.js"></script>
-    <script src="../_static/language_data.js"></script>
     <script src="../_static/togglebutton.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
     <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
-    <script src="../_static/sphinx-book-theme.be0a4a0c39cd630af62a2fcf693f3f06.js"></script>
+    <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
     <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
     <script >
         const thebe_selector = ".thebe"
@@ -58,14 +54,14 @@
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Guide for Editors" href="editors-guide.html" />
     <link rel="prev" title="Guide for Authors" href="author-guide.html" />
-
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
-
-
-
+    
   </head>
   <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
     
 
     <div class="container-xl">
@@ -74,32 +70,68 @@
 <div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
     
         <div class="navbar-brand-box">
-<a class="navbar-brand text-wrap" href="../index.html">
-  
-  <img src="../_static/logo.png" class="logo" alt="logo">
-  
-  
-  <h1 class="site-logo" id="site-title">The pyOpenSci Developer Guide</h1>
-  
-</a>
-</div>
-
-<form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+      <img src="../_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">The pyOpenSci Developer Guide</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
   <i class="icon fas fa-search"></i>
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
-</form>
-
-<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
-  <ul class="current nav sidenav_l1">
- <li class="toctree-l1">
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <div class="bd-toc-item active">
+        <p class="caption">
+ <span class="caption-text">
+  Overview
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1 has-children">
   <a class="reference internal" href="../open-source-software-peer-review/intro.html">
    The Peer Review Process
   </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../open-source-software-peer-review/aims-and-scope.html">
+     Aims and Scope
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../open-source-software-peer-review/code-of-conduct.html">
+     Community Code of Conduct
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../open-source-software-peer-review/policies-and-guidelines.html">
+     Peer Review Guidelines &amp; Policies
+    </a>
+   </li>
+  </ul>
  </li>
- <li class="toctree-l1 current active">
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Submission Guides
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active has-children">
   <a class="reference internal" href="intro.html">
    Submission Guides
   </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
   <ul class="current">
    <li class="toctree-l2">
     <a class="reference internal" href="author-guide.html">
@@ -123,21 +155,71 @@
    </li>
   </ul>
  </li>
- <li class="toctree-l1">
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Python Packaging Guide
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1 has-children">
   <a class="reference internal" href="../authoring/index.html">
-   Author’s Guide
+   Python Packaging Guide for Maintainers Submitting to PyOpenSci
   </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../authoring/overview.html">
+     Overview
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../authoring/collaboration.html">
+     Collaboration Guide
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../authoring/tools-for-developers.html">
+     Tools for developers
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../authoring/testing.html">
+     Testing your package
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../authoring/release.html">
+     Releasing a package
+    </a>
+   </li>
+  </ul>
  </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Appendices
+ </span>
+</p>
+<ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="../appendices/templates.html">
    Appendix: Templates
   </a>
  </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../appendices/glossary.html">
+   Glossary
+  </a>
+ </li>
 </ul>
 
-</nav>
-
- <!-- To handle the deprecated key -->
+    </div>
+</nav> <!-- To handle the deprecated key -->
 
 <div class="navbar_extra_footer">
   Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
@@ -152,25 +234,25 @@
           
 <main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
     
-    <div class="row topbar fixed-top container-xl">
-    <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show">
-    </div>
-    <div class="col pl-2 topbar-main">
-        
-        <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
-            data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
-            aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
-            title="Toggle navigation" data-toggle="tooltip" data-placement="left">
-            <i class="fas fa-bars"></i>
-            <i class="fas fa-arrow-left"></i>
-            <i class="fas fa-arrow-up"></i>
-        </button>
-        
-        <div class="dropdown-buttons-trigger">
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
     <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
             class="fas fa-download"></i></button>
 
-    
     <div class="dropdown-buttons">
         <!-- ipynb file if we had a myst markdown file -->
         
@@ -182,9 +264,9 @@
         <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
             onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
     </div>
-    
 </div>
-        <!-- Source interaction buttons -->
+
+            <!-- Source interaction buttons -->
 
 <div class="dropdown-buttons-trigger">
     <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
@@ -204,25 +286,25 @@
     </div>
 </div>
 
+            <!-- Full screen (wrap in <a> to have style consistency -->
 
-        <!-- Full screen (wrap in <a> to have style consistency -->
-        <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
-                data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
-                title="Fullscreen mode"><i
-                    class="fas fa-expand"></i></button></a>
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
 
-        <!-- Launch buttons -->
+            <!-- Launch buttons -->
 
-    </div>
-
-    <!-- Table of contents -->
-    <div class="d-none d-md-block col-md-2 bd-toc show">
-        
-        <div class="tocsection onthispage pt-5 pb-3">
-            <i class="fas fa-list"></i> Contents
         </div>
-        <nav id="bd-toc-nav">
-            <ul class="nav section-nav flex-column">
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav">
+                <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#a-guide-for-new-reviewers">
    A Guide for New Reviewers
@@ -267,8 +349,8 @@
  </li>
 </ul>
 
-        </nav>
-        
+            </nav>
+        </div>
     </div>
 </div>
     <div id="main-content" class="row">
@@ -303,7 +385,7 @@ was submitted for review. That is the version that you should install!</p>
 <span class="n">Package</span> <span class="n">Name</span><span class="p">:</span> <span class="n">pyrolite</span>
 <span class="n">One</span><span class="o">-</span><span class="n">Line</span> <span class="n">Description</span> <span class="n">of</span> <span class="n">Package</span><span class="p">:</span> <span class="n">A</span> <span class="nb">set</span> <span class="n">of</span> <span class="n">tools</span> <span class="k">for</span> <span class="n">getting</span> <span class="n">the</span> <span class="n">most</span> <span class="kn">from</span> <span class="nn">your</span> <span class="n">geochemical</span> <span class="n">data</span><span class="o">.</span>
 <span class="n">Repository</span> <span class="n">Link</span><span class="p">:</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">morganjwilliams</span><span class="o">/</span><span class="n">pyrolite</span>
-<span class="n">Version</span> <span class="n">submitted</span><span class="p">:</span> <span class="mf">0.2</span><span class="o">.</span><span class="mi">5</span>
+<span class="n">Version</span> <span class="n">submitted</span><span class="p">:</span> <span class="mf">0.2.5</span>
 <span class="n">Editor</span><span class="p">:</span> <span class="nd">@lwasser</span>
 </pre></div>
 </div>
@@ -345,11 +427,11 @@ your reviews do not need to be as long as these examples):</p>
 <div class="section" id="lessons-learned-from-ropensci">
 <h3>Lessons Learned from rOpenSci<a class="headerlink" href="#lessons-learned-from-ropensci" title="Permalink to this headline">¶</a></h3>
 <p>You can read blog posts written by reviewers about their experiences <a class="reference external" href="https://ropensci.org/tags/reviewer/">via this link</a>. In particular, in <a class="reference external" href="https://ropensci.org/blog/2017/08/22/first-package-review/">this blog post by Mara Averick</a> read about the “naive user” role a reviewer can take to provide useful feedback even without being experts of the package’s topic or implementation, by asking themselves <em>“What did I think this thing would do? Does it do it? What are things that scare me off?”</em>. In <a class="reference external" href="https://ropensci.org/blog/2017/09/08/first-review-experiences/">another blog post</a> Verena Haunschmid explains how she alternated between using the package and checking its code.</p>
-<p>As both a former reviewer and package author <a class="reference external" href="https://adamhsparks.github.io/">Adam Sparks</a> <a class="reference external" href="https://twitter.com/adamhsparks/status/898132036451303425">wrote this</a> “[write] a good critique of the package structure and best coding practices. If you know how to do something better, tell me. It’s easy to miss documentation opportunities as a developer, as a reviewer, you have a different view. You’re a user that can give feedback. What’s not clear in the package? How can it be made more clear? If you’re using it for the first time, is it easy? Do you know another R package that maybe I should be using? Or is there one I’m using that perhaps I shouldn’t be? If you can contribute to the package, offer.”</p>
+<p>As both a former reviewer and package author <a class="reference external" href="https://adamhsparks.com">Adam Sparks</a> <a class="reference external" href="https://twitter.com/adamhsparks/status/898132036451303425">wrote this</a> “[write] a good critique of the package structure and best coding practices. If you know how to do something better, tell me. It’s easy to miss documentation opportunities as a developer, as a reviewer, you have a different view. You’re a user that can give feedback. What’s not clear in the package? How can it be made more clear? If you’re using it for the first time, is it easy? Do you know another R package that maybe I should be using? Or is there one I’m using that perhaps I shouldn’t be? If you can contribute to the package, offer.”</p>
 </div>
 <div class="section" id="feedback-on-the-process">
 <h3>Feedback on the Process<a class="headerlink" href="#feedback-on-the-process" title="Permalink to this headline">¶</a></h3>
-<p>We welcome any feedback and/or questions about the review process! We encourage you to open an issue on our <a class="reference external" href="https://github.com/pyOpenSci/governance">governance repository</a>.</p>
+<p>We welcome any feedback and/or questions about the review process! We encourage you to open an issue on our <a class="reference external" href="https://github.com/pyOpenSci/governance/issues/new">governance repository</a>.</p>
 </div>
 </div>
 <div class="section" id="submitting-the-review">
@@ -389,15 +471,15 @@ your reviews do not need to be as long as these examples):</p>
 
               </div>
               
-        </div>
-    </div>
-    
-    
-    <div class='prev-next-bottom'>
         
+        <div class='prev-next-bottom'>
+            
     <a class='left-prev' id="prev-link" href="author-guide.html" title="previous page">Guide for Authors</a>
     <a class='right-next' id="next-link" href="editors-guide.html" title="next page">Guide for Editors</a>
 
+        </div>
+        
+        </div>
     </div>
     <footer class="footer mt-5 mt-md-0">
     <div class="container">
@@ -414,21 +496,19 @@ your reviews do not need to be as long as these examples):</p>
 
       </div>
     </div>
+  
+  <script src="../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
 
-    
-  <script src="../_static/js/index.3da636dd464baa7582d2.js"></script>
+  
+<script async="" src="https://www.google-analytics.com/analytics.js"></script>
+<script>
+                        window.ga = window.ga || function () {
+                            (ga.q = ga.q || []).push(arguments) };
+                        ga.l = +new Date;
+                        ga('create', 'UA-165151943-1', 'auto');
+                        ga('set', 'anonymizeIp', true);
+                        ga('send', 'pageview');
+                    </script>
 
-
-    
-    <!-- Google Analytics -->
-    <script>
-      window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-      ga('create', 'UA-165151943-1', 'auto');
-      ga('set', 'anonymizeIp', true);
-      ga('send', 'pageview');
-    </script>
-    <script async src='https://www.google-analytics.com/analytics.js'></script>
-    <!-- End Google Analytics -->
-    
   </body>
 </html>
