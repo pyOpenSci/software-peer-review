@@ -1,4 +1,4 @@
-# Author's Guide
+# Python Packaging Guide for Maintainers Submitting to PyOpenSci
 
 These pages contain guides for authoring packages that will go through the
 pyOpenSci review process. This includes best-practices and guidelines for structuring

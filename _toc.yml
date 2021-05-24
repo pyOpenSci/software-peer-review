@@ -1,24 +1,32 @@
-file: intro
-sections:
-- file: README
-- file: open-source-software-peer-review/intro
-  sections:
-  - file: open-source-software-peer-review/aims-and-scope
-  - file: open-source-software-peer-review/code-of-conduct
-  - file: open-source-software-peer-review/policies-and-guidelines
-- file: open-source-software-submissions/intro
-  sections:
-  - file: open-source-software-submissions/author-guide
-  - file: open-source-software-submissions/reviewer-guide
-  - file: open-source-software-submissions/editors-guide
-  - file: open-source-software-submissions/editor-in-chief-guide
-- file: authoring/index
-  sections:
-  - file: authoring/overview
-  - file: authoring/collaboration
-  - file: authoring/tools-for-developers
-  - file: authoring/testing
-  - file: authoring/release
-- file: appendices/templates
-  sections:
+- file: intro
+
+- part: Overview
+  chapters:
+  - file: open-source-software-peer-review/intro
+    sections:
+    - file: open-source-software-peer-review/aims-and-scope
+    - file: open-source-software-peer-review/code-of-conduct
+    - file: open-source-software-peer-review/policies-and-guidelines
+
+- part: Submission Guides
+  chapters:
+  - file: open-source-software-submissions/intro
+    sections:
+    - file: open-source-software-submissions/author-guide
+    - file: open-source-software-submissions/reviewer-guide
+    - file: open-source-software-submissions/editors-guide
+    - file: open-source-software-submissions/editor-in-chief-guide
+
+- part: Python Packaging Guide
+  chapters:
+  - file: authoring/index
+    sections:
+    - file: authoring/overview
+    - file: authoring/collaboration
+    - file: authoring/tools-for-developers
+    - file: authoring/testing
+    - file: authoring/release
+- part: Appendices
+  chapters:
+  - file: appendices/templates
   - file: appendices/glossary
