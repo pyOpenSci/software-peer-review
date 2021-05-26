@@ -1,25 +1,32 @@
 # Guide for Editors
 
+Thank you for your time in serving as an editor for a PyOpenSci package! An editor
+for pyOpenSci should have the following experience:
+
+* They should have completed a review for atleast 1 package for pyOpenSci.
+* They should have some experience with the open source software for scientific
+Python community be it maintaining or contributing to packages, or being involved
+in the community in some way.
+
 ## Get Started Checklist
 
 Follow the checklist below when serving as an editor for a package submitted to
 pyOpenSci for review.
 
-#### 1. Tag the Submission & Ensure You Have Sufficient Information From The Author
+### 1. Tag the Submission
 
 Once you begin the review process as an editor:
 
 * Tag the submission issue with the `2/seeking-reviewer(s)` tag.
 * Check the comment submission by the author to ensure that mandatory parts of submission template are complete.
-  - If elements are not commplete, direct authors toward filling in any missing pieces.
+  - If elements are not complete, direct authors toward filling in any missing pieces.
 
-#### 2. Check the Package for Basic Infrastructure
+### 2. Complete Editor Checks
 
-- Make sure that the package contains a basic testing framework and CI setup required by PyOpenSci. This avoids additional and redundant reviewer time.
-- Also skim the package for sufficient documentation, style, and basic linting
-
-#### 3. Next, Add a Comment With the Editor Checks
 Once the above is complete you are ready to add editor checks to the issue.
+The goal of this step is to ensure that the package is ready to be reviewed.
+Following through with this step will ensure that we are using our volunteer
+reviewer time effectively.
 
 - Add a comment to the issue that contains a copy of the Editor Checks template (see below) filled out with your response to the checks that begin the review.
 - In this comment you will add reviewers and the review deadline date once you have reviewers assigned (see below)
@@ -28,7 +35,8 @@ Once the above is complete you are ready to add editor checks to the issue.
 ## Editor checks:
 
 - [ ] **Fit**: The package meets criteria for [fit](https://www.pyopensci.org/contributing-guide/open-source-software-peer-review/aims-and-scope.html#package-categories) and [overlap](https://www.pyopensci.org/contributing-guide/open-source-software-peer-review/aims-and-scope.html#package-overlap).
-- [ ] **Automated tests:** Package has a testing suite and is tested via Travis-CI or another CI service.
+- [ ] **Automated tests:** Package has a testing suite and is tested using CI (e.g. GitHub Actions, Travis-CI, CircleCI, etc).
+- [ ] **Documentation:** Package has documentation setup (ReadTheDocs, JupyterBook, website,etc.).
 - [ ] **License:** The package has an OSI accepted license
 - [ ] **Repository:** The repository link resolves correctly
 - [ ] **Archive** (JOSS only, may be post-review): The repository DOI resolves correctly
@@ -37,66 +45,70 @@ Once the above is complete you are ready to add editor checks to the issue.
 ---
 
 ## Editor comments
+:wave: Hi @reviewer-one and @reviewer-two! Thank you for volunteering to review
+for PyOpenSci! <Add any additional banter here that you wish..>
 
+The following resources will help you complete your review:
+
+1. Here is the **[reviewers guide](https://www.pyopensci.org/contributing-guide/open-source-software-submissions/reviewer-guide.html)**. This guide contains all of the steps and information needed to complete your review.
+2. Here is the **[review template](https://www.pyopensci.org/contributing-guide/appendices/templates.html#review-template)** that you will need to fill out and submit
+here as a comment, once your review is complete.
+
+Please get in touch with any questions or concerns! Your review is due: <Insert deadline DATE HERE>
 ---
 
 Reviewers:
 Due date:
 ```
 
-- Fill out the Editor Checks sections for `Fit`, `Automated Tests`, `License`, and `Repository`
+- Fill out the Editor Checks sections for `Fit`, `Automated Tests`, `Documentation`, `License`, and `Repository`
 - Check against policies for [package fit within identified categories for the pyOpenSci ecosystem](../open-source-software-peer-review/aims-and-scope.html#package-categories)
 - Check against policies for [package overlap of functionality with other packages](../open-source-software-peer-review/aims-and-scope.html#package-overlap).
 
 If the package does not fit the pyOpenSci scope and policies and needs to be
-rejected, see [this section](#responding-to-out-of-scope-submissions) about how
-to respond.
+rejected, see
+[this section in the editor in chief guide](editor-in-chief-guide.html#responding-to-out-of-scope-submissions)
+about how to respond.
 
-- `Archive` and `Version` within the editor checks for JOSS may be filled out at the end of the review. The JOSS component of the review happens last after all of the review on the pyOpenSci side is complete.
+- `Archive` and `Version` within the editor checks for JOSS may be filled out at the end of the review.
+  * `Archive` refers to the DOI / citation badge provided through the JOSS
+  review. If the package is not submitted to JOSS and has a DOI from another
+  source such as ZENODO, then you can reference the url for that DOI in the final
+  checks.
+  * `Version` refers to the final package version that was accepted by pyOpenSci. This is the final version as presented after all feedback from the reviews has been considered and implemented.
 
+```{note}
+PyOpenSci has a partnership with JOSS where packages that are in-scope for JOSS
+can be directly accepted into the JOSS ecosystem through the pyOpenSci review.
+The JOSS component of the review happens last after all of the review on the
+pyOpenSci side is complete and is begun through direct communication with a
+JOSS editor.
+```
 
-- If initial checks show major gaps, request changes before assigning reviewers.
+**Important: If initial checks show major gaps, request changes before assigning reviewers.**
 
-#### 4. Identify Reviewers
+### 3. Identify Reviewers
 
-- Within one week of completing the editor checks, identify two reviewers for the package (see sections below for additional guidance on finding and selecting reviewers).
-- Once reviewers have been identified:
-  - Modify the Editor Comments under Editor Checks to add reviewer names and assign due date (typically 2-3 week turnaround). Also add the reviewers to the initial top comment in the issue.
+Within **one week of completing the editor checks**, identify two reviewers for
+the package  
 
-    - `Reviewers: Full Name  (@github_username) and Full Name (@github_username)`
-    - `Due date: Date`
-    - Include in your comment to the reviewers:
-      - Link to the reviewer guide for reviewers
-      - Link to the review template
-  - Edit the original comment submitted by author to fill in the Editor and Reviewer Information:
-    - `Editor: Full Name (@github_username)`
-    - `Reviewer 1: Full Name (@github_username)`
-    - `Reviewer 2: Full Name (@github_username)`
-    - `Archive` and `Version accepted` are filled out at the end of the review.
-  - Tag issue with `3/reviewer(s)-assigned` tag
+If you wish, you can use the [email template](../appendices/templates#review-request-template) to invite reviewers. When inviting reviewers, include something like "if I don't hear from
+you in a week, I'll assume you are unable to review," so as to give a clear
+deadline when you'll move on to looking for someone else to keep the processing
+moving.
 
-### General Review guidelines
+#### Where to Look for Reviewers?
 
-- For packages needing continuous integration on multiple platforms ([criteria in this section of the packaging chapter](../authoring/overview#continuous-integration)), make sure the package gets tested on multiple platforms (e.g. MAC, Windows, Linux).
-- Wherever possible when asking for changes in the review process, direct authors to automatic tools and online resources.
-  - If the package raises a new issue for pyOpenSci policy, create an issue on [pyOpenSci's governance repo](https://github.com/pyOpenSci/governance)
-
-## Guidelines For Identifying Reviewers
-
-### Tasks
-- Use the [email template](../appendices/templates#review-request-template) if needed to invite reviewers.
-    -  When inviting reviewers, include something like "if I don't hear from you in a week, I'll assume you are unable to review," so as to give a clear deadline when you'll move on to looking for someone else.
-
-### Where to Look for Reviewers?
-
-As a (guest) editor, use:
-* the potential suggestions made by the submitter(s), (although submitters may have a narrow view of the types of expertise needed.  We suggest not using more than one of suggested reviewers).
-* the authors of [pyOpenSci packages](https://github.com/pyOpenSci/).
+As a (guest) editor, you can find reviewers through:
+* Suggestions made by the submitter(s), (although submitters may have a narrow view of the types of expertise needed. We suggest not using more than one of suggested reviewers).
+* Authors of existing [pyOpenSci packages](https://www.pyopensci.org/python-packages/).
+* Other [contributors to pyOpenSci](https://www.pyopensci.org/contributors/)
 
 When these sources of information are not enough:
 * ping other editors for ideas.
 * look for users of the package or of the data source/upstream service the package connects to (via their opening issues in the repository, starring it, citing it in papers, talking about it on Twitter).
 * You can also search for authors/maintainers of related packages on [PyPI](https://pypi.org/search/).
+* Post in twitter and ensure pyOpenSci retweets your post.
 
 #### Criteria for Choosing Reviewers
 
@@ -106,33 +118,91 @@ the potential reviewer’s GitHub page and general online presence (personal
 website, Twitter).
 
 * Has not reviewed a package for us within the last 6 months.
-* Some package development experience.
+* Some package development / contribution experience.
 * Some domain experience in the field of the package or data source.
 * No [conflicts of interest](../open-source-software-peer-review/policies-and-guidelines.html#conflict-of-interest)
 
-https://www.pyopensci.org/contributing-guide/open-source-software-peer-review/policies-and-guidelines.html#conflict-of-interest
+Try to balance your sense of the potential reviewer’s experience against the complexity of the package.
 
-      open-source-software-peer-review/policies-and-guidelines.html#conflict-of-interest.
-* Try to balance your sense of the potential reviewer’s experience against the complexity of the package.
-* **Diversity** - with two reviewers both shouldn’t be cis white males.
-* Some evidence that they are interested in openness or Python community activities, although blind emailing is fine.
+* **Diversity** - if you have two reviewers both shouldn’t be cis white males.
+* Reviewers should also have demonstrated interest in openness or Python community activities, although blind emailing is fine.
 
 Each submission should be reviewed by _two_ package reviewers. Although it is
 fine for one of them to have less package development experience and more domain
-knowledge, the review should not be split in two.  Both reviewers need to review
-the package comprehensively, though from their particular perspective.  In
+knowledge, the review should not be split in two parts.  Both reviewers need to review
+the package comprehensively, though from their particular perspective. In
 general, at least one reviewer should have prior reviewing experience, and of
 course inviting one new reviewer expands our pool of reviewers.
 
-## Editor Responsibilities During Review:
+Reviewers should ideally have some subject matter expertise associated
+with the package functionality. It is ok and even welcome if one reviewer has
+more technical expertise and the other focuses on usability and is less technical.
+Read through the Guidelines for Reviewers Section to learn more about finding and
+selecting reviewers.
+
+```{note}
+PyOpenSci has been piloting a new reviewer mentorship program where we pair a
+new reviewer with someone in the community with previous review experience. If
+a new reviewer is interested in this, get in touch with the **editor in chief**.
+```
+
+
+### 4. Onboard Reviewers
+
+Once reviewers have been identified:
+
+- Modify the Editor Comments under Editor Checks to add reviewer names and assign due date (typically a 2-3 week turn around).
+- Also add the reviewers to the initial top comment in the issue.
+
+
+```markdown
+Reviewers: Full Name  (@github_username) and Full Name (@github_username)
+Due date: Date`
+Include in your comment to the reviewers:
+      - Link to the reviewer guide for reviewers
+      - Link to the review template
+```
+
+- Edit the original comment submitted by author to fill in the Editor and Reviewer Information:
+
+```markdown
+Editor: Full Name (@github_username)
+Reviewer 1: Full Name (@github_username)
+Reviewer 2: Full Name (@github_username)
+Archive: Filled out when the review is complete.
+Version accepted: Filled out when the review is complete.
+```
+
+- Tag issue with `3/reviewer(s)-assigned` tag
+
+
+## Editor Responsibilities During the Review:
+
+During the review process, it is important to check in with the reviewers to
+ensure that things are moving smoothly:
 
 -   Check in with reviewers and authors occasionally. Offer clarification and help as needed.
 -   In general aim for 3 weeks for review, 2 weeks for subsequent changes, and 1 week for reviewer approval of changes.
--   Upon all reviews being submitted, change the review status tag to `4/review-in-awaiting-changes` to update the reminder bot.
--   If the author stops responding, refer to [the policies](peer_review_proc#review-process-guidelines) and/or ping the other editors in the Slack channel <*Not available publically yet*> for discussion. Importantly, if a reviewer was assigned to a closed issue, contact them when closing the issue to explain the decision, thank them once again for their work, and make a note in our database to assign them to a submission with high chances of smooth software review next time (e.g. a package author who has already submitted packages to us).
+- If a review has not been submitted after 2 weeks, ping the reviewer(s) within the review issue to ensure they are aware of the 3 week deadline.
+-   Once all reviews are submitted, change the review status tag to `4/review-in-awaiting-changes` to update the reminder bot. <WHAT IS THIS BOT?!>
+-   If the author stops responding, refer to [the policies](peer_review_proc#review-process-guidelines) and/or ping the other editors in the Slack channel <*Not available publically yet*> for discussion.
+
+::::{important}
+If a reviewer was assigned to a closed issue, contact them when closing the
+issue to explain the decision, thank them once again for their work, and make a
+note in our database to assign them to a submission with high chances of smooth
+software review next time (e.g. a package author who has already submitted packages to us).
+::::
+
 -   Upon changes being made, change the review status tag to `5/awaiting-reviewer-response`.
 
-### Editor Responsibilities After Review:
+### General Review guidelines
+
+- For packages needing continuous integration on multiple platforms ([criteria in this section of the packaging chapter](../authoring/overview#continuous-integration)), make sure the package gets tested on multiple platforms (e.g. MAC, Windows, Linux).
+- Wherever possible when asking for changes in the review process, direct authors to automatic tools and online resources.
+  - If the package raises a new issue for pyOpenSci policy, create an issue on [pyOpenSci's governance repo](https://github.com/pyOpenSci/governance)
+
+## Editor Responsibilities After the Review:
 
 Once the package has been accepted through the review process:
 
