@@ -206,7 +206,7 @@ software review next time (e.g. a package author who has already submitted packa
 
 Once the package has been accepted through the review process:
 
-- Change the status tag of the issue to `6/approved`
+- Change the status tag of the issue to `6/pyOS-approved`
 - Update the top of the issue with the version of the package that was approved and the doi.
 
 
@@ -215,26 +215,39 @@ If the package fits within the JOSS Scope, once the package has been approved
 by pyOpenSci:
 
 * Tag the issue `7/under-joss-review`
+* Instruct the author to <a href="https://joss.readthedocs.io/en/latest/submitting.html#what-should-my-paper-contain" target="_blank">read the `paper.md` file requirements</a> for JOSS and ensure that paper is added to the repo.
 * Direct the package author to [follow the instructions to submit the package to JOSS](https://joss.readthedocs.io/en/latest/submitting.html).
 
 These instructions loosely include:
 
 1. Login to the JOSS website and fill out the JOSS submission form. When you fill out the form, be sure to mention and link to the approved pyOpenSci review.
-2. Wait for a JOSS editor to approve the presubmission
+2. Wait for a JOSS editor to approve the presubmission (which includes a scope check)
 
-JOSS will accept the pyOpenSci review and direct the author through the processing of checking their paper.md file. Once the package is accepted by JOSS, the author will be instructed to add the JOSS doi badge to their package README file.
 
-Once the package is accepted, and the DOI badge resolves properly: 
+::::{important}
+The scope of packages accepted by pyOpenSci is in some cases different from  those
+accepted by JOSS. Not all pyOpenSci accepted packages will be accepted by JOSS.
+::::
 
-* tag the issue with `8/joss-review-complete`
-* close the issue within the pyOpenSci software-review repo.  
+JOSS will accept the pyOpenSci review and direct the author through the
+process of checking their `paper.md` file. Once the package is accepted by JOSS,
+the author will be instructed to add the JOSS DOI badge to their package **README** file.
+
+Once the package is accepted by JOSS, and the DOI badge resolves properly:
+
+
 
 If the package was accepted by JOSS:
 
-- Fill out `Archive` and `Version` for JOSS under Editor Checks comment.
-- Fill out `Archive` and `Version accepted` in the original comment submitted by author.
+* Fill out `Archive` and `Version` for JOSS under Editor Checks comment.
+* Fill out `Archive` and `Version accepted` in the original comment submitted by author.
+* Tag the issue with `9/joss-approved`
 
-- Then post the approval template below to the issue. This template asks the authors and reviewers to add themselves and the package that was approved to the pyOpenSci website.
+
+- You may wish to use the approval template below in the issue. This template
+  asks the authors and reviewers to add themselves and the package that was
+  approved to the pyOpenSci website. They can do this step regardless of the
+  JOSS submission process.
 
 ```
 ----------------------------------------------
@@ -246,17 +259,31 @@ There are a few things left to do to wrap up this submission:
 - [ ] <reviewers-and-maintainers> if you have time and are open to being listed on our website, please add yourselves to [this file](https://github.com/pyOpenSci/pyopensci.github.io/blob/master/_data/contributors.yml) via a pr so we can list you on our website as contributors!
 
 <IF JOSS SUBMISSION>
-This package is going to move on to JOSS for review. I believe @arfon will ask you to implement the items below but let's let him chime in here first!
+It looks like you would like to submit this package to JOSS. Here are the next steps:
+
+1. Login to the JOSS website and fill out the JOSS submission form. When you fill out the form, be sure to mention and link to the approved pyOpenSci review.
+2. Wait for a JOSS editor to approve the presubmission (which includes a scope check)
+
 - [ ] Activate Zenodo watching the repo
 - [ ] Tag and create a release so as to create a Zenodo version and DOI
 - [ ] Submit to JOSS using the Zenodo DOI. We will tag it for expedited review.
 
+3. Once the package is approved by JOSS, you will be given instructions by JOSS about updating the citation information in your README file.
 <IF JOSS SUBMISSION/>
 
 All -- if you have any feedback for us about the review process please feel free to share it here. We are always looking to improve our process and our documentation in the [contributing-guide](https://www.pyopensci.org/contributing-guide). We have also been updating our documentation to improve the process so all feedback is appreciated!
 ```
 
-When all of the above steps are complete, you can close the software-review issue.
+#### Last Steps Before Closing the Review Issue
+Once the review is complete, you can close the issue. Before doing that:
+
+* Be sure that the issue is tagged with `6/pyOS-approved`
+* Followup with authors and reviewers to ensure:
+    * that the package was properly added [pyOpenSci website](https://www.pyopensci.org/python-packages/) and
+    * reviewers and maintainers are listed on the [contributors page](https://www.pyopensci.org/contributors/)
+
+Congratulations, you have completed a review for pyOpenSci!
+
 
 #### Optional - Move Package to PyOpenSci Organization (BETA)
 

@@ -1,0 +1,19 @@
+
+.admonition .note {
+
+}
+
+.admonition-title, .admonition-title::before {
+  background-color: #107762;
+  color: #ffffff!important;
+}
+
+.admonition.important .admonition-title {
+  background-color: #107762;
+  border-color: #1abc9c;
+}
+
+.admonition.important {
+    border-color: #0e6654;
+    background-color: #ecfcf9;
+}
