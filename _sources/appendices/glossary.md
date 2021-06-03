@@ -3,7 +3,7 @@
 The following are common terms in the scientific python community and their
 definitions for reference.
 
-* **branch**: A parallel copy of your GitHub repo. Use branches to write code and make changes that you don't want to affect the live version of your package. When you're ready, you can merge the changes back to the "master" branch. More info [here](https://help.github.com/articles/about-branches/).
+* **branch**: A parallel copy of your GitHub repo. Use branches to write code and make changes that you don't want to affect the live version of your package. When you're ready, you can merge the changes back to the "main" branch. More info [here](https://help.github.com/articles/about-branches/).
 * **continuous integration**: The practice of automatically building and testing a project's source code as changes are made by developers. This helps identify bugs before they become a bigger problem. Travis CI is an example of a continuous integration service.
 * **code coverage**: A measure of the fraction of lines in a project's code that are run during testing. 100% coverage means that every line of code is executed during the tests.
 * **commit**: Saving a change (or changes) to git. Via git, each save/commit is given a unique ID, which lets you easily revert to a previous save/commit.
