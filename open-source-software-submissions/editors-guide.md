@@ -39,7 +39,7 @@ reviewer time effectively.
 - [ ] **Documentation:** Package has documentation setup (ReadTheDocs, JupyterBook, website,etc.).
 - [ ] **License:** The package has an OSI accepted license
 - [ ] **Repository:** The repository link resolves correctly
-- [ ] **Archive** Zenodo or JOSS. (may be post-review): The repository DOI resolves correctly
+- [ ] **Archive** Zenodo. (may be post-review): The repository is archived somewhere outside of GitHub. We suggest using Zenodo and created releases for this purpose.
 - [ ] **Version** (may be post-review) Does the release version given match the GitHub release (v1.0.0)?
 
 ---
@@ -71,10 +71,8 @@ rejected, see
 about how to respond.
 
 - `Archive` and `Version` within the editor checks for JOSS may be filled out at the end of the review.
-  * `Archive` refers to the DOI / citation badge provided through the JOSS
-  review. If the package is not submitted to JOSS and has a DOI from another
-  source such as ZENODO, then you can reference the url for that DOI in the final
-  checks.
+  * `Archive` refers to an archive created through a release. You can use zenodo to both
+      create this archive and also provide the package with a citable DOI. If zenodo is used please add the zenodo link here.
   * `Version` refers to the final package version that was accepted by pyOpenSci.
   This is the final version as presented after all feedback from the reviews has
   been considered and implemented.
@@ -240,11 +238,9 @@ the author will be instructed to add the JOSS DOI badge to their package **READM
 
 Once the package is accepted by JOSS, and the DOI badge resolves properly:
 
-
-
 If the package was accepted by JOSS:
 
-* Fill out `Archive` and `Version` for JOSS under Editor Checks comment.
+* Fill out `Archive` and `Version` accepted in the Editor Checks comment and at the top of the issue.
 * Fill out `Archive` and `Version accepted` in the original comment submitted by author.
 * Tag the issue with `9/joss-approved`
 
@@ -260,7 +256,7 @@ If the package was accepted by JOSS:
 
 There are a few things left to do to wrap up this submission:
 - [ ] Activate Zenodo watching the repo if you haven't already done so.
-- [ ] Tag and create a release sto create a Zenodo version and DOI.
+- [ ] Tag and create a release to create a Zenodo version and DOI.
 - [ ] Add the badge for pyOpenSci peer-review to the README.md of <package-name-here>. The badge should be `[![pyOpenSci](https://tinyurl.com/y22nb8up)](https://github.com/pyOpenSci/software-review/issues/issue-number)`
 - [ ] Add <package-name> to the pyOpenSci website. <maintainer-name>, please open a pr to update [this file](https://github.com/pyOpenSci/pyopensci.github.io/blob/main/_data/packages.yml): to add your package and name to the list of contributors
 - [ ] <reviewers-and-maintainers> if you have time and are open to being listed on our website, please add yourselves to [this file](https://github.com/pyOpenSci/pyopensci.github.io/blob/main/_data/contributors.yml) via a pr so we can list you on our website as contributors!
