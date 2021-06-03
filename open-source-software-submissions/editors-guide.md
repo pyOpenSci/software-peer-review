@@ -3,7 +3,7 @@
 Thank you for your time in serving as an editor for a PyOpenSci package! An editor
 for pyOpenSci should have the following experience:
 
-* They should have completed a review for atleast 1 package for pyOpenSci.
+* They should have completed a review for *atleast* 1 package for pyOpenSci.
 * They should have some experience with the open source software for scientific
 Python community be it maintaining or contributing to packages, or being involved
 in the community in some way.
@@ -39,8 +39,8 @@ reviewer time effectively.
 - [ ] **Documentation:** Package has documentation setup (ReadTheDocs, JupyterBook, website,etc.).
 - [ ] **License:** The package has an OSI accepted license
 - [ ] **Repository:** The repository link resolves correctly
-- [ ] **Archive** (JOSS only, may be post-review): The repository DOI resolves correctly
-- [ ] **Version** (JOSS only, may be post-review): Does the release version given match the GitHub release (v1.0.0)?
+- [ ] **Archive** Zenodo or JOSS. (may be post-review): The repository DOI resolves correctly
+- [ ] **Version** (may be post-review) Does the release version given match the GitHub release (v1.0.0)?
 
 ---
 
@@ -75,7 +75,9 @@ about how to respond.
   review. If the package is not submitted to JOSS and has a DOI from another
   source such as ZENODO, then you can reference the url for that DOI in the final
   checks.
-  * `Version` refers to the final package version that was accepted by pyOpenSci. This is the final version as presented after all feedback from the reviews has been considered and implemented.
+  * `Version` refers to the final package version that was accepted by pyOpenSci.
+  This is the final version as presented after all feedback from the reviews has
+  been considered and implemented.
 
 ```{note}
 PyOpenSci has a partnership with JOSS where packages that are in-scope for JOSS
@@ -225,8 +227,11 @@ These instructions loosely include:
 
 
 ::::{important}
-The scope of packages accepted by pyOpenSci is in some cases different from  those
+The scope of packages accepted by pyOpenSci is in some cases different from those
 accepted by JOSS. Not all pyOpenSci accepted packages will be accepted by JOSS.
+Further, packages that have been previously published elsewhere may not be
+eligible to published with JOSS unless **significant** changes and improvements
+to package functionality have been made.
 ::::
 
 JOSS will accept the pyOpenSci review and direct the author through the
@@ -254,6 +259,8 @@ If the package was accepted by JOSS:
 🎉 <package-name-here> has been approved by pyOpenSci! Thank you <maintainer-name-here> for submitting <package-name> and many thanks to <reviewer-names-here> for reviewing this package! 😸  
 
 There are a few things left to do to wrap up this submission:
+- [ ] Activate Zenodo watching the repo if you haven't already done so.
+- [ ] Tag and create a release sto create a Zenodo version and DOI.
 - [ ] Add the badge for pyOpenSci peer-review to the README.md of <package-name-here>. The badge should be `[![pyOpenSci](https://tinyurl.com/y22nb8up)](https://github.com/pyOpenSci/software-review/issues/issue-number)`
 - [ ] Add <package-name> to the pyOpenSci website. <maintainer-name>, please open a pr to update [this file](https://github.com/pyOpenSci/pyopensci.github.io/blob/master/_data/packages.yml): to add your package and name to the list of contributors
 - [ ] <reviewers-and-maintainers> if you have time and are open to being listed on our website, please add yourselves to [this file](https://github.com/pyOpenSci/pyopensci.github.io/blob/master/_data/contributors.yml) via a pr so we can list you on our website as contributors!
@@ -261,14 +268,12 @@ There are a few things left to do to wrap up this submission:
 <IF JOSS SUBMISSION>
 It looks like you would like to submit this package to JOSS. Here are the next steps:
 
-1. Login to the JOSS website and fill out the JOSS submission form. When you fill out the form, be sure to mention and link to the approved pyOpenSci review.
-2. Wait for a JOSS editor to approve the presubmission (which includes a scope check)
+- [ ] Login to the JOSS website and fill out the JOSS submission form using your Zenodo DOI. **When you fill out the form, be sure to mention and link to the approved pyOpenSci review.** JOSS will tag your package for expedited review if it is already pyOpenSci approved.
+- [ ] Wait for a JOSS editor to approve the presubmission (which includes a scope check)
+- [ ] Once the package is approved by JOSS, you will be given instructions by JOSS about updating the citation information in your README file.
+- [ ] When the JOSS review is complete, add a comment to your review in the pyOpenSci software-review repo that it has been approved by JOSS.
 
-- [ ] Activate Zenodo watching the repo
-- [ ] Tag and create a release so as to create a Zenodo version and DOI
-- [ ] Submit to JOSS using the Zenodo DOI. We will tag it for expedited review.
-
-3. Once the package is approved by JOSS, you will be given instructions by JOSS about updating the citation information in your README file.
+🎉 Congratulations! You are now published with both JOSS and pyOpenSci! 🎉
 <IF JOSS SUBMISSION/>
 
 All -- if you have any feedback for us about the review process please feel free to share it here. We are always looking to improve our process and our documentation in the [contributing-guide](https://www.pyopensci.org/contributing-guide). We have also been updating our documentation to improve the process so all feedback is appreciated!
@@ -281,6 +286,7 @@ Once the review is complete, you can close the issue. Before doing that:
 * Followup with authors and reviewers to ensure:
     * that the package was properly added [pyOpenSci website](https://www.pyopensci.org/python-packages/) and
     * reviewers and maintainers are listed on the [contributors page](https://www.pyopensci.org/contributors/)
+* If the package is approved by JOSS, be sure that the issue is tagged with `7/JOSS-approved` and the archive / doi information is updated before closing the issue.
 
 Congratulations, you have completed a review for pyOpenSci!
 
