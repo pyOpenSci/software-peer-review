@@ -6,7 +6,7 @@ exclude_patterns: ["README.md"]
 
 repository:
   url: https://github.com/pyOpenSci/contributing-guide
-  branch: master
+  branch: main
 
 html:
   favicon: images/logo/logo.png
