@@ -10,9 +10,9 @@ We require that you use a code of conduct such as the [Contributor Covenant](htt
 
 ### Contributing guide
 
-We have a [template for contributing guidelines](https://github.com/pyOpenSci/cookiecutter-pyopensci/blob/master/%7B%7Bcookiecutter.project_slug%7D%7D/CONTRIBUTING.rst) in our cookiecutter repository. Even if you're not using cookiecutter to build your project (see our [packaging guide](../authoring/overview#project-template) for info), you can download our CONTRIBUTING.rst as a starting point.
+We have a [template for contributing guidelines](https://github.com/pyOpenSci/cookiecutter-pyopensci/blob/main/%7B%7Bcookiecutter.project_slug%7D%7D/CONTRIBUTING.rst) in our cookiecutter repository. Even if you're not using cookiecutter to build your project (see our [packaging guide](../authoring/overview#project-template) for info), you can download our CONTRIBUTING.rst as a starting point.
 
-You can tweak it a bit depending on your workflow and package. For example, make sure contributors have instructions in your CONTRIBUTING file for running local tests if not trivial. CONTRIBUTING can also contain some details about how you acknowledge contributions (see [this section](#attributions)) and the roadmap of your package (cf [this example for R](https://github.com/ecohealthalliance/fasterize/blob/master/CONTRIBUTING.md)).
+You can tweak it a bit depending on your workflow and package. For example, make sure contributors have instructions in your CONTRIBUTING file for running local tests if not trivial. CONTRIBUTING can also contain some details about how you acknowledge contributions (see [this section](#attributions)) and the roadmap of your package (cf [this example for R](https://github.com/ecohealthalliance/fasterize/blob/main/CONTRIBUTING.md)).
 
 ### Issue labelling
 
@@ -24,7 +24,7 @@ You can use labels such as "help wanted", "good first issue", or "beginner" to h
 
 There's no general pyOpenSci rule as to how you should onboard collaborators. You should increase their rights to the repo as you gain trust, and you should definitely acknowledge contributions (see [this section](#attributions)).
 
-You can ask a new collaborator to make PRs (see following section for assessing a PR locally, i.e. beyond CI checks) to dev/master and assess them before merging, and after a while let them push to master, although you might want to keep a system of PR reviews... even for yourself once you have team mates!
+You can ask a new collaborator to make PRs (see following section for assessing a PR locally, i.e. beyond CI checks) to dev/main and assess them before merging, and after a while let them push to main, although you might want to keep a system of PR reviews... even for yourself once you have team mates!
 
 A possible model for onboarding collaborators is provided by Jim Hester in [his `lintr` repo](https://github.com/jimhester/lintr/issues/318).
 
@@ -44,7 +44,7 @@ If someone contributes to your repository consider adding them in CONTRIBUTORS, 
 If your package was reviewed by pyOpenSci and you feel that your reviewers have made a substantial contribution to the development of your package, you may list them in CONTRIBUTORS as a reviewer. Only include reviewers after asking for their consent.
 
 ```{note}
-Please do not list pyOpenSci editors and reviewers as contributors to your project. 
+Please do not list pyOpenSci editors and reviewers as contributors to your project.
 Your participation in and contribution to pyOpenSci is thanks enough!
 ```
 
