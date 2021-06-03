@@ -435,7 +435,7 @@ reviewer time effectively.</p>
 <span class="k">- [ ]</span> <span class="gs">**Documentation:**</span> Package has documentation setup (ReadTheDocs, JupyterBook, website,etc.).
 <span class="k">- [ ]</span> <span class="gs">**License:**</span> The package has an OSI accepted license
 <span class="k">- [ ]</span> <span class="gs">**Repository:**</span> The repository link resolves correctly
-<span class="k">- [ ]</span> <span class="gs">**Archive**</span> Zenodo or JOSS. (may be post-review): The repository DOI resolves correctly
+<span class="k">- [ ]</span> <span class="gs">**Archive**</span> Zenodo. (may be post-review): The repository is archived somewhere outside of GitHub. We suggest using Zenodo and created releases for this purpose.
 <span class="k">- [ ]</span> <span class="gs">**Version**</span> (may be post-review) Does the release version given match the GitHub release (v1.0.0)?
 
 ---
@@ -469,10 +469,8 @@ about how to respond.</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">Archive</span></code> and <code class="docutils literal notranslate"><span class="pre">Version</span></code> within the editor checks for JOSS may be filled out at the end of the review.</p>
 <ul>
-<li><p><code class="docutils literal notranslate"><span class="pre">Archive</span></code> refers to the DOI / citation badge provided through the JOSS
-review. If the package is not submitted to JOSS and has a DOI from another
-source such as ZENODO, then you can reference the url for that DOI in the final
-checks.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Archive</span></code> refers to an archive created through a release. You can use zenodo to both
+create this archive and also provide the package with a citable DOI. If zenodo is used please add the zenodo link here.</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">Version</span></code> refers to the final package version that was accepted by pyOpenSci.
 This is the final version as presented after all feedback from the reviews has
 been considered and implemented.</p></li>
@@ -646,7 +644,7 @@ the author will be instructed to add the JOSS DOI badge to their package <strong
 <p>Once the package is accepted by JOSS, and the DOI badge resolves properly:</p>
 <p>If the package was accepted by JOSS:</p>
 <ul class="simple">
-<li><p>Fill out <code class="docutils literal notranslate"><span class="pre">Archive</span></code> and <code class="docutils literal notranslate"><span class="pre">Version</span></code> for JOSS under Editor Checks comment.</p></li>
+<li><p>Fill out <code class="docutils literal notranslate"><span class="pre">Archive</span></code> and <code class="docutils literal notranslate"><span class="pre">Version</span></code> accepted in the Editor Checks comment and at the top of the issue.</p></li>
 <li><p>Fill out <code class="docutils literal notranslate"><span class="pre">Archive</span></code> and <code class="docutils literal notranslate"><span class="pre">Version</span> <span class="pre">accepted</span></code> in the original comment submitted by author.</p></li>
 <li><p>Tag the issue with <code class="docutils literal notranslate"><span class="pre">9/joss-approved</span></code></p></li>
 </ul>
@@ -661,7 +659,7 @@ JOSS submission process.</p></li>
 
 There are a few things left to do to wrap up this submission:
 - [ ] Activate Zenodo watching the repo if you haven&#39;t already done so.
-- [ ] Tag and create a release sto create a Zenodo version and DOI.
+- [ ] Tag and create a release to create a Zenodo version and DOI.
 - [ ] Add the badge for pyOpenSci peer-review to the README.md of &lt;package-name-here&gt;. The badge should be `[![pyOpenSci](https://tinyurl.com/y22nb8up)](https://github.com/pyOpenSci/software-review/issues/issue-number)`
 - [ ] Add &lt;package-name&gt; to the pyOpenSci website. &lt;maintainer-name&gt;, please open a pr to update [this file](https://github.com/pyOpenSci/pyopensci.github.io/blob/main/_data/packages.yml): to add your package and name to the list of contributors
 - [ ] &lt;reviewers-and-maintainers&gt; if you have time and are open to being listed on our website, please add yourselves to [this file](https://github.com/pyOpenSci/pyopensci.github.io/blob/main/_data/contributors.yml) via a pr so we can list you on our website as contributors!
