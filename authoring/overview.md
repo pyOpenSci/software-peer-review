@@ -75,8 +75,8 @@ All external package functions, classes, and methods should be fully documented 
 ### Continuous Integration
 All pyOpenSci packages must use some form of continuous integration.
 
-- For Linux and Mac OSX, we suggest Travis CI.
-- For Windows, we suggest AppVeyor CI.
+- For Linux and Mac OSX, we suggest GitHub Actions, Circle CI or Travis CI.
+- For Windows, we suggest GitHub Actions or AppVeyor CI.
 - In many cases, you will want CI for all platforms. Different continuous integration services will support builds on different operating systems. Packages should have CI for all platforms when they contain:
     - Compiled code
     - Java dependencies
