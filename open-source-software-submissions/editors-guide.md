@@ -184,7 +184,7 @@ ensure that things are moving smoothly:
 -   Check in with reviewers and authors occasionally. Offer clarification and help as needed.
 -   In general aim for 3 weeks for review, 2 weeks for subsequent changes, and 1 week for reviewer approval of changes.
 - If a review has not been submitted after 2 weeks, ping the reviewer(s) within the review issue to ensure they are aware of the 3 week deadline.
--   Once all reviews are submitted, change the review status tag to `4/review-in-awaiting-changes` to update the reminder bot. <WHAT IS THIS BOT?!>
+-   Once all reviews are submitted, change the review status tag to `4/review-in-awaiting-changes`.
 -   If the author stops responding, refer to [the policies](peer_review_proc#review-process-guidelines) and/or ping the other editors in the Slack channel <*Not available publically yet*> for discussion.
 
 ::::{important}
