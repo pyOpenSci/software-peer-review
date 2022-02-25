@@ -13,7 +13,7 @@ input regarding the fit of your package within the pyOpenSci ecosystem.
 ## Submission for Peer Review
 To request peer review, start a new issue in the
 [pyOpenSci/software-review](https://github.com/pyOpenSci/software-review)
-repository and fill out the "Submit Software for Review" issue template. For
+repository and fill out the [Submit Software for Review](https://github.com/pyOpenSci/software-review/issues/new?assignees=&labels=1%2Feditor-checks%2C+New+Submission%21&template=submit-software-for-review.md&title=) issue template. For
 more information on the process and timeline for review, see
 our [section on the review process](../open-source-software-peer-review/intro).
 
@@ -36,7 +36,7 @@ default if the package fits into the JOSS scope.
 
 If your package does not clearly fit within one of the categories outlined in
 our [scope](../open-source-software-peer-review/aims-and-scope), create
-a [Presubmission Inquiry issue](https://github.com/pyOpenSci/software-review/issues/new/choose)
+a [Presubmission Inquiry issue](https://github.com/pyOpenSci/software-review/issues/new?assignees=&labels=0%2Fpresubmission&template=presubmission-inquiry.md&title=)
 in our software-review repo. You can use the same issue template if you have
 other questions. An editor will get back to you in a few days to answer your
 questions and to help determine the fit.
