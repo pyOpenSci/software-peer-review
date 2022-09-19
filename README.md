@@ -19,16 +19,22 @@ To build the guide locally, take the following steps:
 * Install Jupyter Book
 
   ```
-  pip install -U "jupyter-book>=0.7.0b"
+  pip install -U jupyter-book
 
   ```
 * Build the guide
 
   ```
   # Cd to the repo if you are not already in it!
-  cd contributing-guide
+  $ cd contributing-guide
   # Build the book locally!
-  jupyter-book build .
+  $ jupyter-book build .
+  ```
+
+  To clean out old pages of your book:
+
+  ```
+  $ jupyter-book clean .
   ```
 
 ## Contributing to this guide
