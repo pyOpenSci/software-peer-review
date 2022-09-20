@@ -1,4 +1,4 @@
-# Get Involved with PyOpenSci
+# An Overview Of the Peer Review Process
 
 Welcome to PyOpenSci submissions. Below, you will find a collection of guides
 that will direct you through the peer review process.

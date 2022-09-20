@@ -1,23 +1,21 @@
-- file: intro
-
-- part: Overview
+format: jb-book
+root: intro
+parts:
+- caption: Overview
   chapters:
   - file: open-source-software-peer-review/intro
-    sections:
-    - file: open-source-software-peer-review/aims-and-scope
-    - file: open-source-software-peer-review/code-of-conduct
-    - file: open-source-software-peer-review/policies-and-guidelines
-
-- part: Submission Guides
+  - file: open-source-software-peer-review/aims-and-scope
+  - file: open-source-software-peer-review/code-of-conduct
+  - file: open-source-software-peer-review/policies-and-guidelines
+- caption: Open Peer Review Guides
   chapters:
   - file: open-source-software-submissions/intro
-    sections:
-    - file: open-source-software-submissions/author-guide
-    - file: open-source-software-submissions/reviewer-guide
-    - file: open-source-software-submissions/editors-guide
-    - file: open-source-software-submissions/editor-in-chief-guide
-
-- part: Python Packaging Guide
+    title: Peer Review Process
+  - file: open-source-software-submissions/author-guide
+  - file: open-source-software-submissions/reviewer-guide
+  - file: open-source-software-submissions/editors-guide
+  - file: open-source-software-submissions/editor-in-chief-guide
+- caption: Python Packaging Guide
   chapters:
   - file: authoring/index
     sections:
@@ -26,7 +24,7 @@
     - file: authoring/tools-for-developers
     - file: authoring/testing
     - file: authoring/release
-- part: Appendices
+- caption: Appendices
   chapters:
   - file: appendices/templates
   - file: appendices/glossary
