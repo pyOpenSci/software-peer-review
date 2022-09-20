@@ -20,12 +20,11 @@ parts:
 - caption: Python Packaging Guide
   chapters:
   - file: authoring/index
-    sections:
-    - file: authoring/overview
-    - file: authoring/collaboration
-    - file: authoring/tools-for-developers
-    - file: authoring/testing
-    - file: authoring/release
+  - file: authoring/overview
+  - file: authoring/collaboration
+  - file: authoring/tools-for-developers
+  - file: authoring/testing
+  - file: authoring/release
 - caption: Appendices
   chapters:
   - file: appendices/templates
