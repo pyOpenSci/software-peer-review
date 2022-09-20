@@ -1,5 +1,33 @@
 # An Overview Of the Peer Review Process
 
+## GENERAL Steps of the pyOpenSci Open Peer Review Process
+*MAYBE THIS PULLS TOGETHER WHO DOES WHAT*
+
+
+- **Author submits Pre-submission INquiry:** 
+- Editor discusses package scope with author
+  - Optional at this pre-submission stage: Editor reviews submission and performs basic checks
+  - TIME: ~1 week
+
+- **Author Submits a Package for Review by submitting an issue in our [pyopensci/software-review repo](https://github.com/pyOpenSci/software-review/issues/new/choose/issues/new/choose).
+- **Editor in Chief Reviews Package Submission for Scope and Minimal Infrastructure Criteria** 
+- TIME ~2 weeks (or longer if editor requests changes that take the author longer to implement)
+
+Editor finds reviewers for package ~ 1-2 weeks
+
+ **The Review Begins** 
+ TIME: 3 weeks**. 
+ 
+- Authors respond to reviews within ~2 weeks of last submitted review
+- **Response to Reviews** Authors respond to reviewers’ comments 
+within **2 weeks** of the last-submitted review. 
+
+IF JOSS...
+more here... 
+
+
+## Guides for Authors, Reviewers and Editors 
+
 Welcome to PyOpenSci submissions. Below, you will find a collection of guides
 that will direct you through the peer review process.
 
