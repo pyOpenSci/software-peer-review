@@ -20,12 +20,24 @@ happy to help. Also check out the rest of our [Packaging Guide](../authoring/ove
 
 ## 2. Is Your Package in Scope for pyOpenSci?
 Next, check to see if your package falls into the scope of pyOpenSci. If you aren't 
-sure about whether your package fits within
-[pyOpenSci's scope](../open-source-software-peer-review/aims-and-scope), submit
+sure about whether your package fits within pyOpenSci's scope (below), submit
 a [presubmission inquiry issue on the software-review](https://github.com/pyOpenSci/software-review/issues/new?assignees=&labels=0%2Fpresubmission&template=presubmission-inquiry.md&title=)
 repository. After you submit an inquiry, a pyOpenSci editor will get back to you 
 with input regarding the fit of your package for pyOpenSci review. This can take 
 up to a week. 
+
+```{include} ../scope.md
+```
+
+```{note} 
+**Before you consider submitting to us please consider the following:**
+
+1. Please be sure that you have time to devote to making changes to your 
+package. You may get feedback from an editor and two reviewers. Changes could 
+take time. Please consider this before submitting to us.
+2. Peer review is lead by a diverse group of volunteer editors and reviewers. 
+Please be considerate when engaging with everyone online.  
+```
 
 ## 3. Presubmission Questions
 
@@ -35,21 +47,6 @@ a [Presubmission Inquiry issue](https://github.com/pyOpenSci/software-review/iss
 in our software-review repo. You can use the same issue template if you have
 other questions. An editor will get back to you in a few days to answer your
 questions and to help determine the fit.
-
-```{include} ../scope.md
-
-YOU
-```
-
-```{note} 
-Before you consider submitting to us please consider the following:
-
-1. Please be sure that you have time to devote to making changes to your 
-package. You may get feedback from an editor and two reviewers. Changes could 
-take time. Please consider this before submitting to us.
-2. Peer review is lead by a diverse group of volunteer editors and reviewers. 
-Please be considerate when engaging with everyone online.  
-```
 
 ## 4. Submit Your Package for Peer Review
 To submit your package for peer review, you can 
@@ -84,13 +81,19 @@ Congratulations! You are almost done!
 
 ## My Package is Approved, Now What?
 
-- **Package Approval** Once your package is approved, a few things will happen:
-1. We will give you instructions on how to add your package to the pyOpenSci 
-website. This will give your package more visibility in the community as a vetted pyOpenSci tool.
-2. We will ask you to add the pyOpenSci badge <TODO add image of badge> to your 
-README.md file.
-3. We will promote your package on our twitter channel!
-4. If you wish to go on to submit your package to JOSS, this is when you'd start 
+Congratulations on being accepted into the pyOpenSci community of maintainers!
+Once your package is approved, a few things will happen:
+
+1. We will ask you to ensure that your package is being tracked / archived using 
+Zenodo. You will then want to created a tagged release representing the version of the 
+package accepted by pyOpenSci.
+2 We will ask you to add the pyOpenSci badge [![pyOpenSci](https://tinyurl.com/y22nb8up)](https://github.com/pyOpenSci/software-review/issues/issue-number) to the 
+top of your README.md file.
+1. We will ask you to add your package to the [pyOpenSci website](https://www.pyopensci.org/contributors/). This will give 
+your package more visibility in the community as a vetted pyOpenSci tool.
+    * We also will ask you (and those who reviewed your package) to add yourself to our list of contributors as a maintainer!
+1. We will promote your package on our twitter channel!
+2. If you wish to go on to submit your package to JOSS, this is when you'd start 
 that process. 
 
 ### Journal of Open Source Software (JOSS) Submission

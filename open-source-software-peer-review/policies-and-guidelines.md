@@ -50,27 +50,33 @@ Authors of contributed packages essentially maintain the same ownership they had
 to their package joining the pyOpenSci suite. Package authors will continue to maintain
 and develop their software after acceptance into pyOpenSci. Unless explicitly added as
 collaborators, the pyOpenSci team will not interfere much with day to day operations.
-However, the team may intervene with critical bug fixes, or address urgent issues if
-package authors do not respond in a timely manner (see the section about maintainer
-responsiveness).
+
+```{note}
+Note from the Executive Director: Please note that we are reviewing the text 
+below and will be updating our policy 
+surrounding package quality and long term maintenance in the upcoming weeks 
+(Fall 2022).
+```
 
 ### Quality Commitment
 pyOpenSci strives to develop and promote high quality research software. To ensure that
 your software meets our criteria, we review all of our submissions as part of the
-Software Peer Review process, and even after acceptance will continue to step in with
-improvements and bug fixes.
+Software Peer Review process. We expect that you will continue to maintain a 
+package that has been accepted continually. 
 
 Despite our best efforts to support contributed software, errors are the responsibility
 of individual maintainers. Buggy, unmaintained software may be removed from our suite at
-any time.
+any time. We also ask maintainers that they get in touch with us if they do need 
+to step down from maintaining a tool. 
 
-### Maintener Responsiveness
+### Maintainer Responsiveness
 If package maintainers do not respond in a timely manner to requests for package fixes,
-we will remind the maintainer a number of times, but after 3 months (or shorter time
-frame, depending on how critical the fix is) we will make the changes ourselves.
+we will remind the maintainer a number of times. After 3 months (or shorter time
+frame, depending on how critical the fix is) we will discuss the future of the package
+as a part of our pyOpenSci ecosystem.
 
-Should authors abandon the maintenance of an actively used package in our suite, we will
-consider petitioning PyPI to transfer package maintainer status to pyOpenSci.
+Should authors abandon the maintenance of an actively used package in our suite, 
+we will consider petitioning PyPI to transfer package maintainer status to pyOpenSci.
 
 ### Requesting Package Removal
 In the unlikely scenario that a contributor of a package requests removal of their
