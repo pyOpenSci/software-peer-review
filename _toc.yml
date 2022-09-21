@@ -1,29 +1,30 @@
 format: jb-book
 root: intro
 parts:
-- caption: Overview
+- caption: About Our Peer Review Process
   chapters:
-  - file: open-source-software-peer-review/intro
+#  - file: open-source-software-peer-review/intro
   - file: open-source-software-peer-review/aims-and-scope
-  - file: open-source-software-peer-review/code-of-conduct
+    title: Peer Review Goals and Scope
   - file: open-source-software-peer-review/policies-and-guidelines
+  - file: open-source-software-peer-review/code-of-conduct
 - caption: Open Peer Review Guides
   chapters:
   - file: open-source-software-submissions/intro
-    title: Peer Review Process
+    title: Peer Review Timeline Overview
   - file: open-source-software-submissions/author-guide
+    title: Guide For Package Authors
   - file: open-source-software-submissions/reviewer-guide
   - file: open-source-software-submissions/editors-guide
   - file: open-source-software-submissions/editor-in-chief-guide
 - caption: Python Packaging Guide
   chapters:
   - file: authoring/index
-    sections:
-    - file: authoring/overview
-    - file: authoring/collaboration
-    - file: authoring/tools-for-developers
-    - file: authoring/testing
-    - file: authoring/release
+  - file: authoring/overview
+  - file: authoring/collaboration
+  - file: authoring/tools-for-developers
+  - file: authoring/testing
+  - file: authoring/release
 - caption: Appendices
   chapters:
   - file: appendices/templates

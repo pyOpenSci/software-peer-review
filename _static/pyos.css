@@ -1,4 +1,24 @@
 
+/* HEADER BLOCK */ 
+div.header__block { 
+  color: #222;
+}
+
+/* 
+.announcement div {
+  background-color: #ccc;
+} */
+
+.header-item.announcement, .header-item.announcement .noprint {
+  background-color:#ccc;
+}
+
+div .announcement .header-item .noprint, header-item.announcement {
+  background-color: #ccc!important;
+}
+
+/* notes */
+
 div.admonition.note .admonition-title, div.admonition.note .admonition-title::before {
   background-color: #C1CFD4;
   color: #222;

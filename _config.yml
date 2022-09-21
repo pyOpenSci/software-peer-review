@@ -15,3 +15,11 @@ html:
   use_issues_button: true
   use_repository_button: true
   home_page_in_navbar: false
+  announcement: "<div class='header__block'>ATTENTION
+                <p>
+                We are currently updating this book to stay tuned! 
+                The packaging guide is the section that is most
+                out of date right now.
+                </p>
+                </div>
+                "
