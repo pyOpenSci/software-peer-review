@@ -4,7 +4,7 @@ name: deploy-book
 on:
   push:
     branches:
-    - main
+    - *
 
 # This job installs dependencies, build the book, and pushes it to `gh-pages`
 jobs:
@@ -30,7 +30,10 @@ jobs:
         jupyter-book build .
 
     # Push the book's HTML to github-pages
-    - name: GitHub Pages action
+    - name: Push to GitHub Pages 
+      # Only push if on main branch
+      if: github.ref == 'refs/heads/main'
+      run: |
       uses: peaceiris/actions-gh-pages@v3.5.9
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
