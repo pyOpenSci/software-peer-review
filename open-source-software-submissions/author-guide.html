@@ -4,11 +4,13 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Guide for Authors &#8212; The pyOpenSci Developer Guide</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>pyOpenSci Review Guide for Python Open Source Package Authors &#8212; The pyOpenSci Developer Guide</title>
     
-  <link href="../_static/css/theme.css" rel="stylesheet">
-  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
 
     
   <link rel="stylesheet"
@@ -18,32 +20,32 @@
   <link rel="preload" as="font" type="font/woff2" crossorigin
     href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
 
-    
-      
-
-    
-    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/sphinx-book-theme.css?digest=84ace793992934648b4de8eed757e5a2" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
     <link rel="stylesheet" type="text/css" href="../_static/pyos.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
     
-  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
 
-    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
     <script src="../_static/doctools.js"></script>
-    <script src="../_static/togglebutton.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
-    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
-    <script src="../_static/sphinx-book-theme.9d8b4a8b9bb19db25eeaddc40d639ba2.js"></script>
-    <script >const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
 const thebe_selector = ".thebe,.cell"
 const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
@@ -53,7 +55,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Guide for Reviewers" href="reviewer-guide.html" />
-    <link rel="prev" title="Get Involved with PyOpenSci" href="intro.html" />
+    <link rel="prev" title="An Overview Of the Peer Review Process" href="intro.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -71,7 +73,21 @@ const thebe_selector_output = ".output, .cell_output"
                     </script>
 
   </head>
-  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"><div class='header__block'>ATTENTION <p> We are currently updating this book to stay tuned! The packaging guide is the section that is most out of date right now. </p> </div> </div>
+<div class="header header-item noprint"></div>
+
     
     <div class="container-fluid" id="banner"></div>
 
@@ -80,14 +96,10 @@ const thebe_selector_output = ".output, .cell_output"
     <div class="container-xl">
       <div class="row">
           
-<!-- Checkboxes to toggle the left sidebar -->
-<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
-<label class="overlay" for="__navigation">
-    <div class="visually-hidden">Toggle navigation sidebar</div>
-</label>
-<div class="col-12 col-md-3 bd-sidebar site-navigation " id="site-navigation">
-    
-        <div class="navbar-brand-box">
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
     <a class="navbar-brand text-wrap" href="../index.html">
       
         <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
@@ -105,124 +117,98 @@ const thebe_selector_output = ".output, .cell_output"
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
 </form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item active">
-        <p class="caption">
+        <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
-  Overview
+  About Our Peer Review Process
  </span>
 </p>
 <ul class="nav bd-sidenav">
- <li class="toctree-l1 has-children">
-  <a class="reference internal" href="../open-source-software-peer-review/intro.html">
-   The Peer Review Process
+ <li class="toctree-l1">
+  <a class="reference internal" href="../open-source-software-peer-review/aims-and-scope.html">
+   Peer Review Goals and Scope
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
-  <label for="toctree-checkbox-1">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../open-source-software-peer-review/aims-and-scope.html">
-     Aims and Scope
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../open-source-software-peer-review/code-of-conduct.html">
-     Community Code of Conduct
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../open-source-software-peer-review/policies-and-guidelines.html">
-     Peer Review Guidelines &amp; Policies
-    </a>
-   </li>
-  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../open-source-software-peer-review/policies-and-guidelines.html">
+   Peer Review Guidelines &amp; Policies
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../open-source-software-peer-review/code-of-conduct.html">
+   Community Code of Conduct
+  </a>
  </li>
 </ul>
-<p class="caption">
+<p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
-  Submission Guides
+  Open Peer Review Guides
  </span>
 </p>
 <ul class="current nav bd-sidenav">
- <li class="toctree-l1 current active has-children">
+ <li class="toctree-l1">
   <a class="reference internal" href="intro.html">
-   Get Involved with PyOpenSci
+   Peer Review Timeline Overview
   </a>
-  <input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
-  <label for="toctree-checkbox-2">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul class="current">
-   <li class="toctree-l2 current active">
-    <a class="current reference internal" href="#">
-     Guide for Authors
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="reviewer-guide.html">
-     Guide for Reviewers
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="editors-guide.html">
-     Guide for Editors
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="editor-in-chief-guide.html">
-     Editor in Chief Guide
-    </a>
-   </li>
-  </ul>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Guide For Package Authors
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="reviewer-guide.html">
+   Guide for Reviewers
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="editors-guide.html">
+   Guide for Editors
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="editor-in-chief-guide.html">
+   Editor in Chief Guide
+  </a>
  </li>
 </ul>
-<p class="caption">
+<p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
   Python Packaging Guide
  </span>
 </p>
 <ul class="nav bd-sidenav">
- <li class="toctree-l1 has-children">
+ <li class="toctree-l1">
   <a class="reference internal" href="../authoring/index.html">
    Python Packaging Guide for Maintainers Submitting to PyOpenSci
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
-  <label for="toctree-checkbox-3">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../authoring/overview.html">
-     Overview
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../authoring/collaboration.html">
-     Collaboration Guide
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../authoring/tools-for-developers.html">
-     Tools for developers
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../authoring/testing.html">
-     Testing your package
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../authoring/release.html">
-     Releasing a package
-    </a>
-   </li>
-  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../authoring/overview.html">
+   Overview
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../authoring/collaboration.html">
+   Collaboration Guide
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../authoring/tools-for-developers.html">
+   Tools for developers
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../authoring/testing.html">
+   Testing your package
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../authoring/release.html">
+   Releasing a package
+  </a>
  </li>
 </ul>
-<p class="caption">
+<p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
   Appendices
  </span>
@@ -241,100 +227,252 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 
     </div>
-</nav> <!-- To handle the deprecated key -->
-
-<div class="navbar_extra_footer">
-  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
-</div>
-
-</div>
-
-
-          
-
-
-          
-<!-- This is an invisible pixel that we watch to see if we've scrolled. -->
-<div class="sbt-scroll-pixel-helper"></div>
-<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
-    
-    <div class="topbar container-xl fixed-top">
-    <div class="topbar-contents row">
-        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
-        <div class="col pl-md-4 topbar-main">
-            <div class="topbar-left">
-                
-                <label class="nav-toggle-button" for="__navigation">
-                    <div class="visually-hidden">Toggle navigation</div>
-                    <i class="fas fa-bars"></i>
-                </label>
-                
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+            <div class="navbar_extra_footer">
+            Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
             </div>
             
-<div class="dropdown-buttons-trigger">
-    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
-            class="fas fa-download"></i></button>
-
-    <div class="dropdown-buttons">
-        <!-- ipynb file if we had a myst markdown file -->
-        
-        <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../_sources/open-source-software-submissions/author-guide.md"><button type="button"
-                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
-                data-placement="left">.md</button></a>
-        <!-- Download PDF via print -->
-        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
-                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
-    </div>
-</div>
-
-            <!-- Source interaction buttons -->
-
-<div class="dropdown-buttons-trigger">
-    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
-        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
-    <div class="dropdown-buttons sourcebuttons">
-        <a class="repository-button"
-            href="https://github.com/pyOpenSci/contributing-guide"><button type="button" class="btn btn-secondary topbarbtn"
-                data-toggle="tooltip" data-placement="left" title="Source repository"><i
-                    class="fab fa-github"></i>repository</button></a>
-        <a class="issues-button"
-            href="https://github.com/pyOpenSci/contributing-guide/issues/new?title=Issue%20on%20page%20%2Fopen-source-software-submissions/author-guide.html&body=Your%20issue%20content%20here."><button
-                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
-                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
-        <a class="edit-button" href="https://github.com/pyOpenSci/contributing-guide/edit/main/open-source-software-submissions/author-guide.md"><button
-                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
-                title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
-    </div>
-</div>
-
-            <!-- Full screen (wrap in <a> to have style consistency -->
-
-<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
-        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
-        title="Fullscreen mode"><i
-            class="fas fa-expand"></i></button></a>
-
-            <!-- Launch buttons -->
-
         </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
 
-        <!-- Table of contents -->
-        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
-            
-            <div class="tocsection onthispage pt-5 pb-3">
-                <i class="fas fa-list"></i> Contents
-            </div>
-            <nav id="bd-toc-nav" aria-label="Page">
-                <ul class="visible nav section-nav flex-column">
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+<div class="menu-dropdown menu-dropdown-repository-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Source repositories">
+      <i class="fab fa-github"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://github.com/pyOpenSci/contributing-guide"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Source repository"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="headerbtn__text-container">repository</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="https://github.com/pyOpenSci/contributing-guide/issues/new?title=Issue%20on%20page%20%2Fopen-source-software-submissions/author-guide.html&body=Your%20issue%20content%20here."
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Open an issue"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="headerbtn__text-container">open issue</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="https://github.com/pyOpenSci/contributing-guide/edit/main/open-source-software-submissions/author-guide.md"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Edit this page"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-pencil-alt"></i>
+  </span>
+<span class="headerbtn__text-container">suggest edit</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="../_sources/open-source-software-submissions/author-guide.md"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.md</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#presubmission-inquiries">
-   Presubmission Inquiries
+  <a class="reference internal nav-link" href="#does-your-package-meet-packaging-requirements">
+   1. Does Your Package Meet Packaging Requirements?
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#submission-for-peer-review">
-   Submission for Peer Review
+  <a class="reference internal nav-link" href="#is-your-package-in-scope-for-pyopensci">
+   2. Is Your Package in Scope for pyOpenSci?
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#package-scope">
+   Package Scope
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#notes-on-scope-categories">
+     Notes on Scope Categories
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#presubmission-questions">
+   3. Presubmission Questions
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#submit-your-package-for-peer-review">
+   4. Submit Your Package for Peer Review
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#editor-in-chief-reviews-package-for-scope-and-minimal-infrastructure-criteria">
+   5. Editor in Chief Reviews Package for Scope and Minimal Infrastructure Criteria
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#the-review-begins">
+   6. The Review Begins
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#response-to-reviews">
+   7. Response to Reviews
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#acceptance-into-pyopensci">
+   8. Acceptance into pyOpenSci
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#my-package-is-approved-now-what">
+   My Package is Approved, Now What?
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
@@ -344,27 +482,16 @@ const thebe_selector_output = ".output, .cell_output"
    </li>
   </ul>
  </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#presubmission-questions">
-   Presubmission Questions
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#package-prep-help">
-   Package Prep Help
-  </a>
- </li>
 </ul>
 
-            </nav>
-        </div>
-    </div>
+    </nav>
 </div>
-    <div id="main-content" class="row">
-        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Guide for Authors</h1>
+                <h1>pyOpenSci Review Guide for Python Open Source Package Authors</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -375,13 +502,60 @@ const thebe_selector_output = ".output, .cell_output"
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#presubmission-inquiries">
-   Presubmission Inquiries
+  <a class="reference internal nav-link" href="#does-your-package-meet-packaging-requirements">
+   1. Does Your Package Meet Packaging Requirements?
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#submission-for-peer-review">
-   Submission for Peer Review
+  <a class="reference internal nav-link" href="#is-your-package-in-scope-for-pyopensci">
+   2. Is Your Package in Scope for pyOpenSci?
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#package-scope">
+   Package Scope
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#notes-on-scope-categories">
+     Notes on Scope Categories
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#presubmission-questions">
+   3. Presubmission Questions
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#submit-your-package-for-peer-review">
+   4. Submit Your Package for Peer Review
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#editor-in-chief-reviews-package-for-scope-and-minimal-infrastructure-criteria">
+   5. Editor in Chief Reviews Package for Scope and Minimal Infrastructure Criteria
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#the-review-begins">
+   6. The Review Begins
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#response-to-reviews">
+   7. Response to Reviews
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#acceptance-into-pyopensci">
+   8. Acceptance into pyOpenSci
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#my-package-is-approved-now-what">
+   My Package is Approved, Now What?
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
@@ -391,73 +565,176 @@ const thebe_selector_output = ".output, .cell_output"
    </li>
   </ul>
  </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#presubmission-questions">
-   Presubmission Questions
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#package-prep-help">
-   Package Prep Help
-  </a>
- </li>
 </ul>
 
                         </nav>
                     </div>
                 </div>
             </div>
-            
+            <main id="main-content" role="main">
+                
               <div>
                 
-  <div class="section" id="guide-for-authors">
-<h1>Guide for Authors<a class="headerlink" href="#guide-for-authors" title="Permalink to this headline">¶</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="pyopensci-review-guide-for-python-open-source-package-authors">
+<h1>pyOpenSci Review Guide for Python Open Source Package Authors<a class="headerlink" href="#pyopensci-review-guide-for-python-open-source-package-authors" title="Permalink to this headline">#</a></h1>
+<p>So you are considering submitting a package for review with pyOpenSci? You’ve
+come to the right place.</p>
+<section id="does-your-package-meet-packaging-requirements">
+<h2>1. Does Your Package Meet Packaging Requirements?<a class="headerlink" href="#does-your-package-meet-packaging-requirements" title="Permalink to this headline">#</a></h2>
 <p>Before submitting your project for review with pyOpenSci, make sure that it
-adheres to the standards and guidelines put forward in the <a class="reference internal" href="../authoring/index.html"><span class="doc std std-doc">authoring guide</span></a>.</p>
-<div class="section" id="presubmission-inquiries">
-<h2>Presubmission Inquiries<a class="headerlink" href="#presubmission-inquiries" title="Permalink to this headline">¶</a></h2>
-<p>If you are unsure of whether your package fits within
-<a class="reference internal" href="../open-source-software-peer-review/aims-and-scope.html"><span class="doc std std-doc">pyOpenSci’s scope</span></a>, submit
-a <a class="reference external" href="https://github.com/pyOpenSci/software-review/issues/new?assignees=&amp;labels=0%2Fpresubmission&amp;template=presubmission-inquiry.md&amp;title=">presubmission inquiry issue on the software-review</a>
-repository. After you submit an inquiry, a pyOpenSci editor will provide you with
-input regarding the fit of your package within the pyOpenSci ecosystem.</p>
+follows the standards and guidelines outlined in the
+<a class="reference internal" href="../authoring/index.html"><span class="doc std std-doc">Python packaging guide</span></a>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>Package Prep Help - Can we actually support this now??</strong></p>
+<p>If you would like help preparing your package for review, create
+a <a class="reference external" href="https://github.com/pyOpenSci/software-review/issues/new/choose">Help Request issue</a>
+in the software-review repo. We can assign someone to help you prep your code
+and add things like testing, documentation, and/or continuous integration. We’re
+happy to help. Also check out the rest of our <a class="reference internal" href="../authoring/overview.html"><span class="doc std std-doc">Packaging Guide</span></a>, which may help answer some of your questions about packaging your code.</p>
 </div>
-<div class="section" id="submission-for-peer-review">
-<h2>Submission for Peer Review<a class="headerlink" href="#submission-for-peer-review" title="Permalink to this headline">¶</a></h2>
-<p>To request peer review, start a new issue in the
-<a class="reference external" href="https://github.com/pyOpenSci/software-review">pyOpenSci/software-review</a>
-repository and fill out the <a class="reference external" href="https://github.com/pyOpenSci/software-review/issues/new?assignees=&amp;labels=1%2Feditor-checks%2C+New+Submission%21&amp;template=submit-software-for-review.md&amp;title=">Submit Software for Review</a> issue template. For
-more information on the process and timeline for review, see
-our <a class="reference internal" href="../open-source-software-peer-review/intro.html"><span class="doc std std-doc">section on the review process</span></a>.</p>
-<div class="section" id="journal-of-open-source-software-joss-submission">
-<h3>Journal of Open Source Software (JOSS) Submission<a class="headerlink" href="#journal-of-open-source-software-joss-submission" title="Permalink to this headline">¶</a></h3>
-<p>PyOpenSci has a partnership with JOSS where our review is accepted by JOSS by
-default if the package fits into the JOSS scope.</p>
+</section>
+<section id="is-your-package-in-scope-for-pyopensci">
+<h2>2. Is Your Package in Scope for pyOpenSci?<a class="headerlink" href="#is-your-package-in-scope-for-pyopensci" title="Permalink to this headline">#</a></h2>
+<p>Next, check to see if your package falls into the scope of pyOpenSci. If you aren’t
+sure about whether your package fits within pyOpenSci’s scope (below), submit
+a <a class="reference external" href="https://github.com/pyOpenSci/software-review/issues/new?assignees=&amp;labels=0%2Fpresubmission&amp;template=presubmission-inquiry.md&amp;title=">presubmission inquiry issue on the software-review</a>
+repository. After you submit an inquiry, a pyOpenSci editor will get back to you
+with input regarding the fit of your package for pyOpenSci review. This can take
+up to a week.</p>
+</section>
+<section id="package-scope">
+<h2>Package Scope<a class="headerlink" href="#package-scope" title="Permalink to this headline">#</a></h2>
 <ul class="simple">
-<li><p>When you submit your package for pyOpenSci review, you can opt to include a submission to JOSS after passing pyOpenSci review. In this case, your package will evaluated by JOSS through the pyOpenSci review</p></li>
-<li><p>To complete the JOSS submission, you will also need to craft a <strong><a class="reference external" href="http://paper.md">paper.md</a></strong> file describing the package following JOSS’ standards (see below). More detail on the requirements for JOSS can be found on <a class="reference external" href="https://joss.readthedocs.io/en/latest/submitting.html#what-should-my-paper-contain">their website</a>.</p></li>
-<li><p>If you choose to opt into the pyOpenSci / JOSS partnership in your review, do NOT submit your package to JOSS separately. A PyOpenSci editor fill facilitate that step once you complete your review.</p></li>
+<li><p><strong>Data retrieval:</strong> Packages for accessing and downloading data from online sources. Includes wrappers for accessing APIs.</p></li>
+<li><p><strong>Data extraction:</strong> Packages that aid in retrieving data from unstructured sources such as text, images and PDFs.</p></li>
+<li><p><strong>Data munging:</strong> Tools for processing data from scientific data formats.</p></li>
+<li><p><strong>Data deposition:</strong> Tools for depositing data in scientific research repositories.</p></li>
+<li><p><strong>Reproducibility:</strong> Tools to scientists ensure that their research is reproducible. E.g. version control, automated testing, or citation tools.</p></li>
+<li><p><strong>Geospatial:</strong> Packages focused on the retrieval, manipulation, and analysis of spatial data.</p></li>
+<li><p><strong>Education:</strong> Packages to aid with instruction.</p></li>
+<li><p><strong>Data visualization:</strong> Packages for visualizing and analyzing data.</p></li>
+</ul>
+<section id="notes-on-scope-categories">
+<h3>Notes on Scope Categories<a class="headerlink" href="#notes-on-scope-categories" title="Permalink to this headline">#</a></h3>
+<ul class="simple">
+<li><p>pyOpenSci is still developing as a community. If your scientific Python
+package does not fit into one of the categories or if you have any other
+questions, we’d encourage you to open a pre-submission inquiry. We’re happy to help.</p></li>
+<li><p>Data visualization packages come in many varieties, ranging from small
+hyper-specific methods for one type of data to general, do-it-all packages
+(e.g. matplotlib). pyOpenSci accepts packages that are somewhere in between the
+two. If you’re interested in submitting your data visualization package, please
+open a pre-submission inquiry on first.</p></li>
 </ul>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Acceptance to pyOpenSci does not guarantee acceptance to JOSS. In particular, JOSS doesn’t accept the full variety of packages that are in scope for pyOpenSci. For example, thin API wrappers fall within  <a class="reference internal" href="../open-source-software-peer-review/aims-and-scope.html"><span class="doc std std-doc">pyOpenSci’s scope</span></a> but are usually not accepted by JOSS. Be sure to review JOSS’s <a class="reference external" href="https://joss.readthedocs.io/en/latest/submitting.html#submission-requirements">submission requirements</a> before writing up a paper about your package.</p>
+<p><strong>Before you consider submitting to us please consider the following:</strong></p>
+<ol class="simple">
+<li><p>Please be sure that you have time to devote to making changes to your
+package. You may get feedback from an editor and two reviewers. Changes could
+take time. Please consider this before submitting to us.</p></li>
+<li><p>Peer review is lead by a diverse group of volunteer editors and reviewers.
+Please be considerate when engaging with everyone online.</p></li>
+</ol>
 </div>
-</div>
-</div>
-<div class="section" id="presubmission-questions">
-<h2>Presubmission Questions<a class="headerlink" href="#presubmission-questions" title="Permalink to this headline">¶</a></h2>
+</section>
+</section>
+<section id="presubmission-questions">
+<h2>3. Presubmission Questions<a class="headerlink" href="#presubmission-questions" title="Permalink to this headline">#</a></h2>
 <p>If your package does not clearly fit within one of the categories outlined in
 our <a class="reference internal" href="../open-source-software-peer-review/aims-and-scope.html"><span class="doc std std-doc">scope</span></a>, create
 a <a class="reference external" href="https://github.com/pyOpenSci/software-review/issues/new?assignees=&amp;labels=0%2Fpresubmission&amp;template=presubmission-inquiry.md&amp;title=">Presubmission Inquiry issue</a>
 in our software-review repo. You can use the same issue template if you have
 other questions. An editor will get back to you in a few days to answer your
 questions and to help determine the fit.</p>
+</section>
+<section id="submit-your-package-for-peer-review">
+<h2>4. Submit Your Package for Peer Review<a class="headerlink" href="#submit-your-package-for-peer-review" title="Permalink to this headline">#</a></h2>
+<p>To submit your package for peer review, you can
+open an issue in our <a class="reference external" href="https://github.com/pyOpenSci/software-review/issues/new/choose/issues/new/choose">pyopensci/software-review repo</a>
+repository and fill out the <a class="reference external" href="https://github.com/pyOpenSci/software-review/issues/new?assignees=&amp;labels=1%2Feditor-checks%2C+New+Submission%21&amp;template=submit-software-for-review.md&amp;title=">Submit Software for Review</a> issue template.</p>
+</section>
+<section id="editor-in-chief-reviews-package-for-scope-and-minimal-infrastructure-criteria">
+<h2>5. Editor in Chief Reviews Package for Scope and Minimal Infrastructure Criteria<a class="headerlink" href="#editor-in-chief-reviews-package-for-scope-and-minimal-infrastructure-criteria" title="Permalink to this headline">#</a></h2>
+<p>Once the issue is opened, an editor will review your submission within
+<strong>2 weeks</strong> and respond with next steps. The editor may request that you make updates
+to your package to meet minimal criteria before review. They also may reject your
+package if it does not fall within our scope.</p>
+</section>
+<section id="the-review-begins">
+<h2>6. The Review Begins<a class="headerlink" href="#the-review-begins" title="Permalink to this headline">#</a></h2>
+<p>If your package meets minimal criteria for being
+reviewed it may then be given to an editor with appropriate domain experience
+to run the review. That editor will assign 2-3 reviewers to review your
+package. Reviewers will be asked to provide review feedback  as comments on your
+issue within <strong>3 weeks</strong>. Reviewers also can open issues in your package repository.
+We prefer issues that link back to the review as they document changes made to your
+package that were triggered by our review process.</p>
+</section>
+<section id="response-to-reviews">
+<h2>7. Response to Reviews<a class="headerlink" href="#response-to-reviews" title="Permalink to this headline">#</a></h2>
+<p>You should respond to reviewers’ comments within <strong>2 weeks</strong> of the
+last-submitted review. You can make updates to your package at any time. We
+encourage ongoing conversations between authors and reviewers. See the
+reviewing guide for more details.</p>
+</section>
+<section id="acceptance-into-pyopensci">
+<h2>8. Acceptance into pyOpenSci<a class="headerlink" href="#acceptance-into-pyopensci" title="Permalink to this headline">#</a></h2>
+<p>Once the reviewers are happy with changes that you’ve made to the package, the
+editor will review everything and accept your package into the pyOpenSci ecosystem.
+Congratulations! You are almost done!</p>
+</section>
+<section id="my-package-is-approved-now-what">
+<h2>My Package is Approved, Now What?<a class="headerlink" href="#my-package-is-approved-now-what" title="Permalink to this headline">#</a></h2>
+<p>Congratulations on being accepted into the pyOpenSci community of maintainers!
+Once your package is approved, a few things will happen:</p>
+<ol class="simple">
+<li><p>We will ask you to ensure that your package is being tracked / archived using
+Zenodo. You will then want to created a tagged release representing the version of the
+package accepted by pyOpenSci.
+2 We will ask you to add the pyOpenSci badge <a class="reference external" href="https://github.com/pyOpenSci/software-review/issues/issue-number"><img alt="pyOpenSci" src="https://tinyurl.com/y22nb8up" /></a> to the
+top of your <a class="reference external" href="http://README.md">README.md</a> file.</p></li>
+<li><p>We will ask you to add your package to the <a class="reference external" href="https://www.pyopensci.org/contributors/">pyOpenSci website</a>. This will give
+your package more visibility in the community as a vetted pyOpenSci tool.</p>
+<ul class="simple">
+<li><p>We also will ask you (and those who reviewed your package) to add yourself to our list of contributors as a maintainer!</p></li>
+</ul>
+</li>
+<li><p>We will promote your package on our twitter channel!</p></li>
+<li><p>If you wish to go on to submit your package to JOSS, this is when you’d start
+that process.</p></li>
+</ol>
+<section id="journal-of-open-source-software-joss-submission">
+<h3>Journal of Open Source Software (JOSS) Submission<a class="headerlink" href="#journal-of-open-source-software-joss-submission" title="Permalink to this headline">#</a></h3>
+<p>PyOpenSci has a partnership with JOSS where our review is accepted by JOSS by
+default if the package fits into the JOSS scope.</p>
+<ul class="simple">
+<li><p>When you submit your package for pyOpenSci review, you can opt to include a
+submission to JOSS after passing pyOpenSci review. In this case, your package
+will evaluated by JOSS through the pyOpenSci review</p></li>
+<li><p>To complete the JOSS submission, you will also need to craft a <strong><a class="reference external" href="http://paper.md">paper.md</a></strong>
+file describing the package following JOSS’ standards (see below). More detail on the requirements for JOSS can be found on <a class="reference external" href="https://joss.readthedocs.io/en/latest/submitting.html#what-should-my-paper-contain">their website</a>.</p></li>
+<li><p>If you choose to opt into the pyOpenSci / JOSS partnership in your review,
+you do NOT need to go through a second review with JOSS. JOSS accepts our review
+for theirs. Please just start a review process with JOSS and reference the pyOpenSci
+review issue that you have been working within for your review with us. Make sure
+that you let the JOSS editor know that we have already accepted you. They will use
+our review for their process and fast track you through their review!</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Acceptance to pyOpenSci does not guarantee acceptance to JOSS. In particular,
+JOSS doesn’t accept the full variety of packages that are in scope for
+pyOpenSci. For example, thin API wrappers fall within
+<a class="reference internal" href="../open-source-software-peer-review/aims-and-scope.html"><span class="doc std std-doc">pyOpenSci’s scope</span></a> but
+are usually not accepted by JOSS. Be sure to review JOSS’s
+<a class="reference external" href="https://joss.readthedocs.io/en/latest/submitting.html#submission-requirements">submission requirements</a>
+before writing up a paper about your package.</p>
 </div>
-<div class="section" id="package-prep-help">
-<h2>Package Prep Help<a class="headerlink" href="#package-prep-help" title="Permalink to this headline">¶</a></h2>
-<p>If you would like help preparing your package for review, create a <a class="reference external" href="https://github.com/pyOpenSci/software-review/issues/new/choose">Help Request issue</a> in the software-review repo. We can assign someone to help you prep your code and add things like testing, documentation, and/or continuous integration. We’re happy to help. Also check out the rest of our <a class="reference internal" href="../authoring/overview.html"><span class="doc std std-doc">Packaging Guide</span></a>, which may help answer some of your questions about packaging your code.</p>
-</div>
-</div>
+</section>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {
@@ -481,14 +758,16 @@ questions and to help determine the fit.</p>
 
               </div>
               
-            
-                <!-- Previous / next buttons -->
-<div class='prev-next-area'> 
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
     <a class='left-prev' id="prev-link" href="intro.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Get Involved with PyOpenSci</p>
+            <p class="prev-next-title">An Overview Of the Peer Review Process</p>
         </div>
     </a>
     <a class='right-next' id="next-link" href="reviewer-guide.html" title="next page">
@@ -499,24 +778,28 @@ questions and to help determine the fit.</p>
     <i class="fas fa-angle-right"></i>
     </a>
 </div>
-            
+            </footer>
         </div>
     </div>
-    <footer class="footer">
-  <p>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By The pyOpenSci Community<br/>
+  
+      &copy; Copyright 2022.<br/>
+</p>
+        </footer>
+    </div>
     
-      By The pyOpenSci Community<br/>
-    
-        &copy; Copyright 2020.<br/>
-  </p>
-</footer>
-</main>
+</div>
 
 
       </div>
     </div>
   
-  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
 
   </body>
 </html>
