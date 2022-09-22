@@ -47,7 +47,3 @@ If your package was reviewed by pyOpenSci and you feel that your reviewers have 
 Please do not list pyOpenSci editors and reviewers as contributors to your project.
 Your participation in and contribution to pyOpenSci is thanks enough!
 ```
-
-### Welcoming collaborators to pyOpenSci
-
-If you give someone write permissions to the repository, please contact us at earth.lab@colorado.edu so that this new contributor can get invited to pyOpenSci's GitHub organization.
