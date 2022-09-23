@@ -4,6 +4,8 @@
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7101778.svg)](https://doi.org/10.5281/zenodo.7101778)
 
+![Deploy Book](https://github.com/pyOpenSci/contributing-guide/actions/workflows/book.yml/badge.svg)
+
 https://pyopensci.org/contributing-guide/
 
 pyOpenSci's guide for developing, reviewing, and maintaining packages.
