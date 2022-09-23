@@ -29,6 +29,14 @@ jobs:
       run: |
         jupyter-book build .
 
+    # Save html as artifact
+    - name: Archive production artifacts
+      uses: actions/upload-artifact@v3
+      with:
+        name: book-html
+        path: |
+          _build/html/index.html
+
     # Push the book's HTML to github-pages
     - name: Push to GitHub Pages 
       # Only push if on main branch
