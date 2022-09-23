@@ -4,8 +4,6 @@
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7101778.svg)](https://doi.org/10.5281/zenodo.7101778)
 
-[![CircleCI](https://circleci.com/gh/pyOpenSci/contributing-guide.svg?style=svg)](https://circleci.com/gh/pyOpenSci/contributing-guide)
-
 https://pyopensci.org/contributing-guide/
 
 pyOpenSci's guide for developing, reviewing, and maintaining packages.
