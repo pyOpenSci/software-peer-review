@@ -46,6 +46,7 @@ When a new package is submitted for review, the EiC will:
 - Tag the issue with `1/editor-checks` tag 
 - Next, they will use the template below in the issue to check whether the package has 
 the bare minimum requirements to initiate a review (or they will assign that task to an editor as stated above). 
+- SURVEY data: To ensure we have information from the authors, please be sure that they filled out our survey. Thank them graciously for doing this. They can skip sections of it if they wish, but we do need their contact information and we do want to track their experience with out review process and organization  
 
 
 ### Editor checklist (copy template below to use in the issue)
@@ -73,7 +74,14 @@ to work on them before the review process begins.
 - [ ] **Package overlap:** That package doesn't fully overlap with functionality of other packages that have already been submitted to pyOpenSci
 - [ ] **Archive** (JOSS only, may be post-review): The repository DOI resolves correctly
 - [ ] **Version** (JOSS only, may be post-review): Does the release version given match the GitHub release (v1.0.0)?
+
 ---
+- [ ] [Initial onboarding survey was filled out ](https://forms.gle/F9mou7S3jhe8DMJ16) 
+We appreciate each maintainer of the package filling out this survey individually. :raised_hands: 
+Thank you authors in advance for sending 10 minutes to do this. It truly helps our organization. :raised_hands:
+---
+
+*******
 
 ## Editor comments
 
@@ -95,4 +103,3 @@ A few final tasks to perform here:
 If the package is determined to be out-of-scope, the editor in chief should thank authors for their submission,
 explain the reasons for the decision, and direct them to other publication venues 
 if relevant. If further discussion is warranted that can take place within the issue. 
-
