@@ -1,10 +1,11 @@
 # <img src="images/logo/logo.png" width=40 /> pyOpenSci Guidebook
 
-
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/pyopensci/contributing-guide?color=purple&display_name=tag&style=plastic)
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7101778.svg)](https://doi.org/10.5281/zenodo.7101778)
 
 [![CircleCI](https://circleci.com/gh/pyOpenSci/contributing-guide.svg?style=svg)](https://circleci.com/gh/pyOpenSci/contributing-guide)
+
 
 https://pyopensci.org/contributing-guide/
 

@@ -31,6 +31,7 @@ Get Involved (Maybe a link to a get involved page)
 
 % The SVG rendering breaks latex builds for the GitHub badge, so only include in HTML
 ```{only} html
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/pyopensci/contributing-guide?color=purple&display_name=tag&style=plastic)
 [![](https://img.shields.io/github/stars/pyopensci/contributing-guide?style=social)](https://github.com/pyopensci/contributing-guide)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7101778.svg)](https://doi.org/10.5281/zenodo.7101778)
 ```
