@@ -3,7 +3,8 @@ root: intro
 parts:
 - caption: About Our Peer Review Process
   chapters:
-#  - file: open-source-software-peer-review/intro
+  - file: open-source-software-peer-review/intro
+    title: About our peer review process
   - file: open-source-software-peer-review/aims-and-scope
     title: Peer Review Goals and Scope
   - file: open-source-software-peer-review/policies-and-guidelines
