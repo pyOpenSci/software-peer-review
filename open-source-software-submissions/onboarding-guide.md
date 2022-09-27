@@ -1,4 +1,4 @@
-# pyOpenSci Review Guide for Onboarding New Editors and Reviewers
+# Onboarding New Editors and Reviewers
 
 The pyOpenSci open peer review process is supported by volunteer editors and reviewers. Here we will discuss processes for onboarding new editors.
 
