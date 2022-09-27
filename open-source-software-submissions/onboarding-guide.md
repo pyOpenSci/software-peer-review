@@ -1,6 +1,6 @@
 # Onboarding New Editors and Reviewers
 
-The pyOpenSci open peer review process is supported by volunteer editors and reviewers. Here we will discuss processes for onboarding new editors.
+The pyOpenSci open peer review process is supported by volunteer editors. Here we discuss processes for onboarding new editors.
 
 The success of our peer review process is dependent upon a 
 well-balanced editorial board. Our board needs to have combined expertise in:
@@ -8,35 +8,43 @@ well-balanced editorial board. Our board needs to have combined expertise in:
 * A suite of specific science domains that fall within the scope of our peer review process
 * Technical expertise in Python packaging.
 * Awareness of the importance of documentation and package usability. 
+* Awareness of the importance of CI / test suites to ensure robust software development.
 
 ## Recruiting new editors
 
 Recruiting new editors and maintaining a sufficient and well-balanced editorial 
-board will be the responsibility of the software review lead (position to be 
+board is the responsibility of the software review lead (position to be 
 defined) with support and advice from the editorial board. 
 
 ```{note}
 pyOpenSci is a newly restructured organization. While we've been performing peer 
-review for almost 4 years, we are now beginning to formalize our process given
+review for almost 4 years, we are now beginning to formalize our process thanks to
 funding support from the Sloan foundation. In these early months, this software 
-review lead role will be overseen by the Executive Director and the Editor in 
-Chief. 
+review lead role will be completed largely by the Executive Director with support from the Editor in 
+Chief. In the future we hope to find someone with interest in leading peer review for pyOpenSci
 ```
-
-Steps to discuss a new editor:
-
-* Start a private channel for discussion (so that it does not have a history in 
-the editors channel that future editors will join, which could be awkward).
-* Ping editors to be sure they get a notification as this is an important topic.
-* Wait for a majority of editors to chime in before inviting someone. Provide 
-editors one week to respond.
 
 ## Where to find new editors
 
-* Consider contributors who have reviewed for pyOpenSci or submitted a package 
-to pyOpenSci
-* Consider contributors who have served as a guest editor
+As we build our pyOpenSci community our pool of potential editors will grow.
+A few options to consider include:
+* Contributors who have reviewed for pyOpenSci
+* Contributors who have submitted a package to pyOpenSci
+* Contributors who have served as a guest editor
+* Colleagues that you know who have reviewed for JOSS or rOpenSci who have Python expertise
 
+## Starting the editorial search
+
+To begin, start your search well in advance of when you think you may need new 
+editor(s). When you begin your search, start with the existing editorial team. 
+See if anyone can identify reviewers who excelled and may be a good editorial candidate. Do this in a private channels on Slack as follows:
+
+* Start a private channel for discussion. This ensures there is not a visible
+history in a public channel that a new editor may see in the future (this could
+be awkward for someone to see!).
+* Ping editors to be sure they get a notification as this is an important topic.
+* Wait for a majority of editors to chime in before inviting someone. Provide 
+editors one week to respond on slack.
 
 ## Experience required to be an editor 
 
@@ -48,19 +56,25 @@ a robust editorial board, we  offer a "mentorship" process. Editor mentorship
 is where someone with existing editorial experience, mentors the new editor 
 through their first review(s).
 
-A new editor will be considered "guest" for the first 3 months or their tenure 
-and/or until they have completed their first review. At that time, they can be 
-considered to be a full editor as deemed appropriate by the software review lead
-and the current editorial board.
+A new editor will be considered "guest" for the first 3 months of their tenure 
+and/or until they have completed their first review. Once they have a completed 
+a review they can be considered to be a full editor as deemed appropriate by the 
+software review lead and the current editorial board.
 
-# EDIT: Guest editors
+## Adhoc guest editors
 
-<TODO >text here about what a guest editor is... 
+In some cases you may require a guest editor for a single package (a one-off 
+type of situation). Examples of when this might happen include:
 
+* if there a conflict of interest between a package submitter and the editorial team (e.g. a close colleague of everyone on the team)
+* if the editorial board is at capacity handling the current review load 
 
-## Inviting a new editor
+In this case, you may consider using our internal reviewer signup list to see
+if someone who signed up to be a reviewer might want to serve as an editor. 
+
+## Process for inviting a new editor 
  
-* Candidates for the editorial board most often start by being guest editors.
+* Editorial board candidates most often start as guest editors.
 * After 3 months or their first review (which ever comes first) assess how the 
 review process went. Allow other editors to provide input as well. 
 * Once it is determined that the guest editor is committed to support the pyOpenSci
@@ -68,6 +82,8 @@ review process, you can email them to fully participate on the editorial board
 using the template below.
 
 ```
+Hi [NAME HERE]:
+
 We would like to invite you to join the pyOpenSci editorial board as a full
 member. [*SPECIFIC REASONS FOR INVITATION (mention contributions TO pyOpenSci)*]. 
 We think you will make a wonderful addition to our pyOpenSci open review team!
@@ -83,12 +99,14 @@ In addition to handling packages, editors weigh in on group editorial decisions,
 such as whether a package is in-scope, and determining updates to our policies. 
 We generally do this through Slack, which we expect editors to be able to check 
 regularly. We have editorial board calls annually.  
-We also rotate Editor-in-Chief responsibilities (first-pass scope decisions and 
-assigning editors) amongst the board about quarterly. 
+
+Every 3-6 months the Editor-in-Chief responsibilities rotate to a new editor. 
 You'll have the opportunity to enter this rotation once you have been on the 
-board for some time, usually at least six months. 
-Some of us also take on bigger projects to improve the peer-review process, 
-though this is entirely optional. 
+editorial board for atleast 6 months. 
+
+OPTIONAL: Some editors also take on bigger projects to support pyOpenSci and 
+improve the peer-review process. This is entirely optional but please let us 
+know if you are interested in additional activities that support the organization. 
 
 We hope that you'll join our growing editorial board!
 
@@ -101,44 +119,79 @@ Best,
 
 ## Onboarding a new editor
 
-* Inform rOpenSci community manager so that
-    * editors are added to the [rOpenSci website](https://github.com/ropensci/roweb3/#team-member).
-    * an introduction blog post can be put together.
+To onboard a new editor:
 
-* If they haven't already done so as guest editors, request that the new editor turn on [two-factor authentication (2FA) for GitHub](https://docs.github.com/en/authentication/securing-your-account-with-two-factor-authentication-2fa).
+* Ask them to add themselves to the [pyOpenSci website](https://github.com/pyOpenSci/pyopensci.github.io/blob/main/_data/contributors.yml) using a pull request. If they are already listed on our website, then they only need to add 
+the `title:` yaml element and update `contributor_type:` as see below:
 
-* Invite editors to the rOpenSci GitHub organization as member, as a member of the [`editors` team](https://github.com/orgs/ropensci/teams/editors) and the [`data-pkg-editors`](https://github.com/orgs/ropensci/teams/data-pkg-editors) or [`stats-board`](https://github.com/orgs/ropensci/teams/stats-board) sub-team, as appropriate.  This will give them appropriate permissions and allow them to get team-specific notifications. 
+```yaml
+- name: FirstName LastName
+  sort: 2
+  title: "Editor" # Make sure this says Editor
+  bio: ''
+  organization: ""
+  github_username: ghusernamehere
+  github_image_id: 11934090 # You can find this value by opening your github profile image
+  # in a new browser tab and grabbing the id https://avatars.githubusercontent.com/u/7649194?v=4 <- 
+  # in this example 7649194 is the image_id
+  contributor_type:
+    - current editor # Make sure current editor is added here
+    - contributor
+  packages-submitted: [""]
+  packages-reviewed: ["pystiche"]
+  packages-editor: [""]
+```
 
+
+* Next work with the new editor to create a blog post introducing them which will get [posted on the pyOpenSci blog](https://www.pyopensci.org/blog).
+
+* If they haven't already done, ask the new editor turn on [two-factor authentication (2FA) for GitHub](https://docs.github.com/en/authentication/securing-your-account-with-two-factor-authentication-2fa).
+
+<!-- do we need this?
+* Invite editors to the pyOpenSci GitHub organization as member, as a member of the [`editors` team](https://github.com/orgs/pyopensci/teams/editors). 
+This will give them appropriate permissions and allow them to get team-specific notifications. 
 * Editors need access to the AirTable database of software review.
+* * In the Slack workspace they need to be added to the editors team so that `@editors` will ping them too.
+ -->
+* Add the new editor to the pyOpenSci Slack workspace and specifically the private editors channel.
 
-* Editors need access to the private editors channel in rOpenSci Slack workspace (and to the Slack workspace in general if they didn't previously, in that case ask rOpenSci community manager).
+* Post a welcome message for the new editor in the editor channel, pinging all editors.
 
-* Post a welcome message in the channel, pinging all editors.
-
-* In the Slack workspace they need to be added to the editors team so that `@editors` will ping them too.
-
+<!-- 
+This is what ROS does... i need to think this through. it doesn't make sense 
+to add names in so many places manually... maybe there is a better way
 * We add editors' names to 
     * [dev_guide authors list](https://github.com/ropensci/dev_guide/blob/main/index.Rmd)
     * [dev_guide chapter introducing software review](https://github.com/ropensci/dev_guide/blob/main/softwarereview_intro.Rmd) (at two locations in this file, as editors and a bit below to remove them from the reviewers list)
     * [software-review README](https://github.com/ropensci/software-review/blob/main/README.Rmd) (in two places in this file as well)
-Both the dev_guide and software-review README are automatically knit via continuous integration.
+Both the dev_guide and software-review README are automatically knit via continuous integration. -->
 
-* Add editors to https://github.com/orgs/ropensci/teams/editors/members
+<!-- * Add editors to https://github.com/orgs/ropensci/teams/editors/members -->
 
 ## Offboarding an editor
+
+When it's time for an editor to step down:
 
 * Thank them for their work!
 
 * Remove them from the editors-only channel and the editors Slack team.
 
-* Remove them from https://github.com/orgs/ropensci/teams/editors/members and sub-team.
+* Moved them to alumni-editor on the [pyOpenSci website](https://github.com/pyOpenSci/pyopensci.github.io/blob/main/_data/contributors.yml) as follows:
 
-* Inform rOpenSci community manager or some other staff emember so that they might be moved to alumni team members on the website.
-
-* Remove their access to the Airtable workspace.
-
-* Remove them from
-    * [dev_guide chapter introducing software review](https://github.com/ropensci/dev_guide/blob/main/softwarereview_intro.Rmd) (at two locations in this file, as editors and a bit below to remove them from the reviewers list)
-    * [software-review README](https://github.com/ropensci/software-review/blob/main/README.Rmd) (in two places in this file as well)
-Both the dev_guide and software-review README are automatically knit via continuous integration.
-
+```yaml
+- name: FirstName LastName
+  sort: 2
+  title: "Emeritus Editor" # Modify this to say Emeritus Editor
+  bio: ''
+  organization: ""
+  github_username: ghusernamehere
+  github_image_id: 11934090 # You can find this value by opening your github profile image
+  # in a new browser tab and grabbing the id https://avatars.githubusercontent.com/u/7649194?v=4 <- 
+  # in this example 7649194 is the image_id
+  contributor_type:
+    - current editor # Make sure emeritus editor is here
+    - contributor
+  packages-submitted: [""]
+  packages-reviewed: ["pystiche"]
+  packages-editor: [""]
+```
