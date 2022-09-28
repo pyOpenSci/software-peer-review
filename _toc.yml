@@ -13,10 +13,13 @@ parts:
   - file: open-source-software-submissions/intro
     title: Peer Review Timeline Overview
   - file: open-source-software-submissions/author-guide
-    title: Guide For Package Authors
+    title: Guide for Package Authors
   - file: open-source-software-submissions/reviewer-guide
+    title: Guide for Reviewers
   - file: open-source-software-submissions/editors-guide
   - file: open-source-software-submissions/editor-in-chief-guide
+  - file: open-source-software-submissions/onboarding-guide
+    title: Guide for Onboarding Editors
 - caption: Python Packaging Guide
   chapters:
   - file: authoring/index
