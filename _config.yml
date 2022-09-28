@@ -17,9 +17,9 @@ html:
   home_page_in_navbar: false
   announcement: "<div class='header__block'>ATTENTION
                 <p>
-                We are currently updating this book to stay tuned! 
-                The packaging guide is the section that is most
-                out of date right now.
+                We are currently updating this book so please check back frequently! 
+                The packaging guide is currently the most
+                out of date section in this guidebook.
                 </p>
                 </div>
                 "
