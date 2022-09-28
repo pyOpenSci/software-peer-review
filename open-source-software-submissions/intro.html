@@ -85,7 +85,7 @@ const thebe_selector_output = ".output, .cell_output"
     <div class="visually-hidden">Toggle in-page Table of Contents</div>
 </label>
 <!-- Headers at the top -->
-<div class="announcement header-item noprint"><div class='header__block'>ATTENTION <p> We are currently updating this book to stay tuned! The packaging guide is the section that is most out of date right now. </p> </div> </div>
+<div class="announcement header-item noprint"><div class='header__block'>ATTENTION <p> We are currently updating this book so please check back frequently! The packaging guide is currently the most out of date section in this guidebook. </p> </div> </div>
 <div class="header header-item noprint"></div>
 
     
@@ -424,14 +424,60 @@ title="Print to PDF"
     <nav id="bd-toc-nav" aria-label="Page">
         <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#general-steps-of-the-pyopensci-open-peer-review-process">
-   GENERAL Steps of the pyOpenSci Open Peer Review Process
+  <a class="reference internal nav-link" href="#pyopensci-open-peer-review-steps">
+   pyOpenSci open peer review steps
   </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#guides-for-authors-reviewers-and-editors">
-   Guides for Authors, Reviewers and Editors
-  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#step-1-optional-author-submits-pre-submission-inquiry">
+     Step 1
+     <em>
+      optional
+     </em>
+     : Author submits pre-submission inquiry:*
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#author-submits-their-package-for-review">
+     2. Author submits their package for review
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#editor-in-chief-reviews-package-submission">
+     3. Editor in Chief reviews package submission
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#editor-finds-reviewers-for-package">
+     3. Editor finds reviewers for package
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#once-we-had-an-editor-and-2-reviewers-on-board-the-review-begins">
+     4. Once we had an editor and 2 reviewers on board, the review begins
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#author-response-to-reviews">
+     5. Author response to reviews
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#often-there-is-some-back-and-forth-between-reviewers-and-maintainers-at-this-step">
+     6. Often there is some back and forth between reviewers and maintainers at this step
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#package-acceptance">
+     7. Package acceptance
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#joss-submission">
+     JOSS submission
+    </a>
+   </li>
+  </ul>
  </li>
 </ul>
 
@@ -453,14 +499,60 @@ title="Print to PDF"
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#general-steps-of-the-pyopensci-open-peer-review-process">
-   GENERAL Steps of the pyOpenSci Open Peer Review Process
+  <a class="reference internal nav-link" href="#pyopensci-open-peer-review-steps">
+   pyOpenSci open peer review steps
   </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#guides-for-authors-reviewers-and-editors">
-   Guides for Authors, Reviewers and Editors
-  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#step-1-optional-author-submits-pre-submission-inquiry">
+     Step 1
+     <em>
+      optional
+     </em>
+     : Author submits pre-submission inquiry:*
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#author-submits-their-package-for-review">
+     2. Author submits their package for review
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#editor-in-chief-reviews-package-submission">
+     3. Editor in Chief reviews package submission
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#editor-finds-reviewers-for-package">
+     3. Editor finds reviewers for package
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#once-we-had-an-editor-and-2-reviewers-on-board-the-review-begins">
+     4. Once we had an editor and 2 reviewers on board, the review begins
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#author-response-to-reviews">
+     5. Author response to reviews
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#often-there-is-some-back-and-forth-between-reviewers-and-maintainers-at-this-step">
+     6. Often there is some back and forth between reviewers and maintainers at this step
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#package-acceptance">
+     7. Package acceptance
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#joss-submission">
+     JOSS submission
+    </a>
+   </li>
+  </ul>
  </li>
 </ul>
 
@@ -474,36 +566,78 @@ title="Print to PDF"
                 
   <section class="tex2jax_ignore mathjax_ignore" id="an-overview-of-the-peer-review-process">
 <h1>An Overview Of the Peer Review Process<a class="headerlink" href="#an-overview-of-the-peer-review-process" title="Permalink to this headline">#</a></h1>
-<section id="general-steps-of-the-pyopensci-open-peer-review-process">
-<h2>GENERAL Steps of the pyOpenSci Open Peer Review Process<a class="headerlink" href="#general-steps-of-the-pyopensci-open-peer-review-process" title="Permalink to this headline">#</a></h2>
-<p><em>MAYBE THIS PULLS TOGETHER WHO DOES WHAT</em></p>
+<section id="pyopensci-open-peer-review-steps">
+<h2>pyOpenSci open peer review steps<a class="headerlink" href="#pyopensci-open-peer-review-steps" title="Permalink to this headline">#</a></h2>
+<p>There are several components to the pyOpenSci peer review process. Below, we overview the entire process
+from start to finish.</p>
+<section id="step-1-optional-author-submits-pre-submission-inquiry">
+<h3>Step 1 <em>optional</em>: Author submits pre-submission inquiry:*<a class="headerlink" href="#step-1-optional-author-submits-pre-submission-inquiry" title="Permalink to this headline">#</a></h3>
+<p>A <strong>presubmission inquiry</strong> is wise to do if you are unsure of whether your package
+is in scope. To submit a pre-submission inquiry, open up an issue using the presubmission template in our <a class="reference external" href="https://github.com/pyOpenSci/software-review/issues/new/choose/issues/new/choose">pyopensci/software-review repository</a>. During this time an Editor in Chief will review for scope and performs
+basic checks for package infrastructure</p>
 <ul class="simple">
-<li><p><strong>Author submits Pre-submission INquiry:</strong></p></li>
-<li><p>Editor discusses package scope with author</p>
-<ul>
-<li><p>Optional at this pre-submission stage: Editor reviews submission and performs basic checks</p></li>
-<li><p>TIME: ~1 week</p></li>
+<li><p>Estimated time: ~1-2 weeks</p></li>
 </ul>
-</li>
-<li><p>**Author Submits a Package for Review by submitting an issue in our <a class="reference external" href="https://github.com/pyOpenSci/software-review/issues/new/choose/issues/new/choose">pyopensci/software-review repo</a>.</p></li>
-<li><p><strong>Editor in Chief Reviews Package Submission for Scope and Minimal Infrastructure Criteria</strong></p></li>
+<p><strong>These are the basic checks that your package should have prior to being submitted for peer review</strong></p>
+</section>
+<section id="author-submits-their-package-for-review">
+<h3>2. Author submits their package for review<a class="headerlink" href="#author-submits-their-package-for-review" title="Permalink to this headline">#</a></h3>
+<p>To do this, you open an issue using the software submission template in our
+<a class="reference external" href="https://github.com/pyOpenSci/software-review/issues/new/choose/issues/new/choose">pyopensci/software-review repository</a>.</p>
+</section>
+<section id="editor-in-chief-reviews-package-submission">
+<h3>3. Editor in Chief reviews package submission<a class="headerlink" href="#editor-in-chief-reviews-package-submission" title="Permalink to this headline">#</a></h3>
+<p>The Editor in Chief will review your submission at this point for both package scope and minimal infrastructure criteria
+(listed above)</p>
+<ul class="simple">
 <li><p>TIME ~2 weeks (or longer if editor requests changes that take the author longer to implement)</p></li>
 </ul>
-<p>Editor finds reviewers for package ~ 1-2 weeks</p>
-<p><strong>The Review Begins</strong>
-TIME: 3 weeks**.</p>
-<ul class="simple">
-<li><p>Authors respond to reviews within ~2 weeks of last submitted review</p></li>
-<li><p><strong>Response to Reviews</strong> Authors respond to reviewers’ comments
-within <strong>2 weeks</strong> of the last-submitted review.</p></li>
-</ul>
-<p>IF JOSS…
-more here…</p>
 </section>
-<section id="guides-for-authors-reviewers-and-editors">
-<h2>Guides for Authors, Reviewers and Editors<a class="headerlink" href="#guides-for-authors-reviewers-and-editors" title="Permalink to this headline">#</a></h2>
-<p>Welcome to PyOpenSci submissions. Below, you will find a collection of guides
-that will direct you through the peer review process.</p>
+<section id="editor-finds-reviewers-for-package">
+<h3>3. Editor finds reviewers for package<a class="headerlink" href="#editor-finds-reviewers-for-package" title="Permalink to this headline">#</a></h3>
+<p>At this point if your package has the minimal infrastructure
+requirements and is in scope the Editor in Chief will assign an editor
+to review your package. That editor will then look
+for reviewers.</p>
+<p>Time: ~ 2-3 weeks</p>
+</section>
+<section id="once-we-had-an-editor-and-2-reviewers-on-board-the-review-begins">
+<h3>4. Once we had an editor and 2 reviewers on board, the review begins<a class="headerlink" href="#once-we-had-an-editor-and-2-reviewers-on-board-the-review-begins" title="Permalink to this headline">#</a></h3>
+<p>Reviewers have 3 weeks to return a review. To do this
+they will use our reviewer template in the <a class="reference internal" href="reviewer-guide.html"><span class="doc std std-doc">reviewer guide</span></a> and past that, filled out, into the issue.</p>
+<p>TIME: ~3 weeks</p>
+</section>
+<section id="author-response-to-reviews">
+<h3>5. Author response to reviews<a class="headerlink" href="#author-response-to-reviews" title="Permalink to this headline">#</a></h3>
+<p>At this point the authors should respond to the review. We prefer that authors
+respond within 2 weeks of the submitted review. We also understand that it may
+take longer to actually implement the changes requested in the review. But we
+request that authors respond to reviews to acknowledge
+that they have seen them.</p>
+<p>The reviewers are encouraged to open pull requests and issues in to help the
+maintainers update their package.</p>
+</section>
+<section id="often-there-is-some-back-and-forth-between-reviewers-and-maintainers-at-this-step">
+<h3>6. Often there is some back and forth between reviewers and maintainers at this step<a class="headerlink" href="#often-there-is-some-back-and-forth-between-reviewers-and-maintainers-at-this-step" title="Permalink to this headline">#</a></h3>
+<p>There is no specified duration for this period. Rather as long as all
+parties are responsive within 2 weeks the review shall continue until the author has completed work addressing the reviews.</p>
+</section>
+<section id="package-acceptance">
+<h3>7. Package acceptance<a class="headerlink" href="#package-acceptance" title="Permalink to this headline">#</a></h3>
+<p>Once the maintainers have completed updating the package, the assigned editor
+will ask the reviewers if they are happy with changes made. At this point the
+editor performs one last check on the package. And accepts it if that is appropriate.</p>
+<p>Now, there are a few final cleanup activities including adding a pyOpenSci
+badge to the package README file, and creating a new release on GitHub from the reviewed version. The package is
+now accepted into the pyOpenSci ecosystem!</p>
+</section>
+<section id="joss-submission">
+<h3>JOSS submission<a class="headerlink" href="#joss-submission" title="Permalink to this headline">#</a></h3>
+<p>JOSS refers to the <a class="reference external" href="https://joss.theoj.org/">Journal of Open Source Software</a>. If the maintainer wishes, and their package is within JOSS’ scope, they can now
+be fast tracked through the JOSS review process (another review is not required
+for this step).</p>
+<p>If you want to learn more about each step listed above, we suggest that you read
+through the guides below:</p>
 <ul class="simple">
 <li><p><strong><a class="reference internal" href="author-guide.html"><span class="doc std std-doc">Authors Guide</span></a>:</strong> If you are a <strong>package maintainer</strong> who is
 interested in submitting a package to
@@ -515,10 +649,10 @@ advance for volunteering your time to support open science and open source softw
 <li><p><strong><a class="reference internal" href="editors-guide.html"><span class="doc std std-doc">Editor guide</span></a>:</strong> Editors for pyOpenSci have previous
 experience reviewing packages for pyOpenSci. The editor guide
 will walk you through the best practices for the editor role.</p></li>
-<li><p><strong><a class="reference internal" href="editor-in-chief-guide.html"><span class="doc std std-doc">Editor in Chief guide</span></a>:</strong> The Editor in Chief will
-eventually be a rotating position within pyOpenSci held by members of the
-pyOpenSci editorial board (once this is created).</p></li>
+<li><p><strong><a class="reference internal" href="editor-in-chief-guide.html"><span class="doc std std-doc">Editor in Chief guide</span></a>:</strong> The Editor in Chief is a rotating position within pyOpenSci held by members of the
+pyOpenSci editorial board.</p></li>
 </ul>
+</section>
 </section>
 </section>
 
