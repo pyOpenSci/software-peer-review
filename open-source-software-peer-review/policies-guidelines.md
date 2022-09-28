@@ -9,7 +9,7 @@
 - Once all major issues and questions, and those addressable with reasonable effort, are
   resolved, the editor assigned to a package will make a decision (accept, hold, or
   reject). Rejections are usually done early (before the review process begins, see the
-  aims and scope section), but in rare cases a package may also be not onboarded after
+  aims and scope section). In rare cases a package may also not be onboarded after
   review & revision. It is ultimately editor’s decision on whether or not to reject the
   package based on how the reviews are addressed.
 - Communication between authors, reviewers and editors will first and foremost take
@@ -86,13 +86,17 @@ We will reach out to our package maintainers each year to check in on how
 maintenance is going. 
 
 ### Maintainer Responsiveness
-If package maintainers do not respond in a timely manner to requests for package fixes,
-we will remind the maintainer a number of times. After 3 months (or shorter time
-frame, depending on how critical the fix is) we will discuss the future of the package
-as a part of our pyOpenSci ecosystem.
+If package maintainers do not respond in a timely manner to requests for 
+package fixes, we will remind the maintainer a number of times. After 3 months 
+(or shorter time frame, depending on how critical the fix is) we will discuss 
+the future of the package as a part of our pyOpenSci ecosystem. 
 
-Should authors abandon the maintenance of an actively used package in our suite, 
-we will consider petitioning PyPI to transfer package maintainer status to pyOpenSci.
+* If a package becomes completely un-maintained we will highlight that fact and 
+remove it as a vetted tool in our ecosystem.
+* If a sub-community decides to fork and maintain that package we are open to working with the new maintainers to keep the package within our ecosystem.
+
+<!-- Should authors abandon the maintenance of an actively used package in our suite, 
+we will consider petitioning PyPI to transfer package maintainer status to pyOpenSci. -->
 
 
 ```{note}

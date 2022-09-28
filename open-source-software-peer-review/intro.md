@@ -3,6 +3,28 @@
 ```{tableofcontents}
 ```
 
+## Why do we need pyOpenSci
+
+Discussion here on 
+
+## Why submit your package to pyOpenSci for review?
+
+There is a lot to gain from submitting your package to pyOpenSci.
+But of course, before you submit, please be sure to read the policies 
+... to ensure pyOpenSci is the right fit for you. 
+
+First, and foremost, we hope you submit your package for review **because you value the feedback**.  We aim to provide useful feedback to package authors and for our review process to be open, non-adversarial, and focused on improving software quality.
+
+
+- Once your package is accepted, your package will receive **support from pyOpenSci members**. You'll retain ownership and control of your package. However, if you need help with ongoing maintenance issues, we will try to find people who can help. 
+  
+-  pyOpenSci will **promote your package** through our:
+   - [webpage](https://pyopensci.org/python-packages/), 
+   - [blog](https://wwwpyopensci.org/blog/), and 
+   - [social media account](https://twitter.com/pyopensci).
+
+-   pyOpenSci packages that are in scope for the [Journal of Open-Source Software](https://joss.theoj.org/) and add the necessary accompanying short `paper.md` file, can, at the discretion of JOSS editors, benefit from a fast-tracked review process. <LINK TO MORE ON THIS>
+
 ## Why do we need peer review for Python scientific software?
 
 pyOpenSci's [suite of packages](https://pyopensci.org/python-packages/) are fully 
@@ -52,56 +74,54 @@ We use GitHub for our entire review process. We like GitHub because:
 We make the most of [GitHub](https://github.com/)infrastructure in
 our review process.
 
-Each package review is contained within an issue in the [pyPpenSci/software-review GitHub repository](https://github.com/pyopensci/software-review/). 
+Each package review is contained within an issue in the [pyOpenSci/software-review GitHub repository](https://github.com/pyopensci/software-review/). 
 
 # TODO: ADD GOOD EXAMPLE HERE
 For instance, click [here](https://github.com/ropensci/software-review/issues/24) to read the review thread of the `ropenaq` package: the process is an ongoing conversation until acceptance of the package, with two external reviews as important milestones. 
 
-### GitHub tools including issue submission templates and labels helps us streamline peer review
+### GitHub tools including issue submission templates and labels help us streamline peer review
 We use GitHub features including:
 
 * issue templates (as submission templates), and
 * labelling issues to track progress of submissions (from editor checks to approval).
 * Project boards to track help wanted items
 
-ALl of this functionality supports a streamlined and open peer review
+All of this functionality supports a streamlined and open peer review
 process. 
 
-## Why submit your package to pyOpenSci?
+## Why review a package for pyOpenSci?
 
--   First, and foremost, we hope you submit your package for review **because you value the feedback**.  We aim to provide useful feedback to package authors and for our review process to be open, non-adversarial, and focused on improving software quality.
--   Once aboard, your package will continue to receive **support from rOpenSci members**.  You'll retain ownership and control of your package, but we can help with ongoing maintenance issues such as those associated with updates to R and dependencies and CRAN policies.
--   rOpenSci will **promote your package** through our [webpage](https://ropensci.org/packages/), [blog](https://ropensci.org/blog/), and [social media](https://twitter.com/ropensci). Packages in our suite also get a [documentation website that is automatically built and deployed after each push](#docsropensci).
--   rOpenSci **packages can be cross-listed** with other repositories such as CRAN and BioConductor.
--   rOpenSci packages that are in scope for the [Journal of Open-Source Software](https://joss.theoj.org/) and add the necessary accompanying short paper, would, at the discretion of JOSS editors, benefit from a fast-tracked review process.
--   If you write one, rOpenSci will **promote gitbooks related to your package**: the source of such books can be transferred to [the `ropensci-books` GitHub organisation](https://github.com/ropensci-books) for books to be listed [at books.ropensci.org](https://books.ropensci.org/).
+We hope you choose to review **to give back to the rOpenSci and scientific communities.**  Our mission to expand the ability to efficiently use scientific data and promote a culture of open reproducible is only possible through the volunteer efforts of community members like you.
 
-## Why review packages for rOpenSci? {#whyreview}
+-   Peer review is a two-way conversation. By reviewing packages, you'll have the chance to **continue to learn development practices from authors and other reviewers**.
+-   The open nature of our review process allows you to **network and meet colleagues and collaborators** through the review process. Our community is friendly and filled with supportive members expert in Python package development, a diversity of science domains and computer science.
 
--   As in any peer-review process, we hope you choose to review **to give back to the rOpenSci and scientific communities.**  Our mission to expand access to scientific data and promote a culture of reproducible research is only possible through the volunteer efforts of community members like you.
--   Review is a two-way conversation. By reviewing packages, you'll have the chance to **continue to learn development practices from authors and other reviewers**.
--   The open nature of our review process allows you to **network and meet colleagues and collaborators** through the review process. Our community is friendly and filled with supportive members expert in R development and many other areas of science and scientific computing.
--   To volunteer to be one of our reviewers, fill out [this short form](https://airtable.com/shrnfDI2S9uuyxtDw) providing your contact information and areas of expertise. We are always looking for more reviewers with both general package-writing experience and domain expertise in the fields where packages are used.
+### Volunteer to review for us
+-   To volunteer to be one of our reviewers, fill out [this short form](https://forms.gle/9dv99gri6XKNU8177). In the form you will provide your contact information and areas of expertise. We are always looking for more reviewers with both general package-writing experience and domain expertise in the fields where packages are used. Some of our reviewers focus on package usability and documentation. This allows you to review even if you don't have strong technical background. We will pair you with a second reviewer that can focus more on the technical aspect of the review. 
 
+## Why are reviews open?
 
-## Why are reviews open? {#whyopen}
+Our reviewing threads are public. Authors, reviewers, and editors all know 
+each other’s identities. The broader community can view or even participate 
+in the conversation as it happens. This provides an incentive to be thorough 
+and provide non-adversarial, constructive reviews. 
 
-Our reviewing threads are public. Authors, reviewers, and editors all know each other’s identities. The broader community can view or even participate in the conversation as it happens. This provides an incentive to be thorough and provide non-adversarial, constructive reviews. Both authors and [reviewers report](https://ropensci.org/tags/reviewer/) that they enjoy and learn more from this open and direct exchange. It also has the benefit of building a community. Participants have the opportunity to meaningfully network with new peers, and new collaborations have emerged via ideas spawned during the review process.
+It also has the benefit of building a community. Participants have the 
+opportunity to meaningfully network with new peers, and new collaborations 
+have emerged via ideas spawned during the review process.
 
-We are aware that open systems can have drawbacks. For instance, in traditional academic review, [double-blind peer review can increase representation of female authors](https://www.sciencedirect.com/science/article/pii/S0169534707002704), suggesting bias in non-blind reviews. It is also possible reviewers are less critical in open review. However, we posit that the openness of the review conversation provides a check on review quality and bias; it’s harder to inject unsupported or subjective comments in public and without the cover of anonymity. Ultimately, we believe that having direct and public communication between authors and reviewers improves quality and fairness of reviews.
+We are aware that open systems can have drawbacks. For instance, in 
+traditional academic review, [double-blind peer review can increase representation of female authors](https://www.sciencedirect.com/science/article/pii/S0169534707002704), 
+suggesting bias in non-blind reviews. 
 
-Furthermore, authors and reviewers have the ability to contact privately the editors if they have any doubt or question.
+It is also possible reviewers are less critical in open review. However, we 
+believe that the openness of the review conversation provides a check on 
+review quality and bias; it’s harder to inject unsupported or subjective 
+comments in public and without the cover of anonymity. 
 
-## How will users know a package has been reviewed?
-
-* Your package README will feature a peer-review badge linking to the software review thread.
-* Your package will get a [`docs.ropensci.org` docs website](#rodocsci) that you can link from DESCRIPTION.
-* Your package repo will be transferred to the rOpenSci organization.
-* If reviewers [agree to be listed in DESCRIPTION](#authorship), their metadata will mention the review.
-
-
-
-
+> Ultimately, we 
+> believe that having direct and public communication between authors and 
+> reviewers improves quality and fairness of reviews.
 
 
 ### If you submit to pyOpenSci You Can Also Be Accepted by JOSS
@@ -115,7 +135,6 @@ to add next to your pyOpenSci badge of review. And a cross-ref enabled DOI.
 
 <TODO: add link
 Read more here on the JOSS / pyOpenSci partnership
-
 
 ## pyOpenSci and JOSS
 (is this the right place for this? - this probably should go in the reviewer 
