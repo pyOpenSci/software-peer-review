@@ -9,7 +9,7 @@
 - Once all major issues and questions, and those addressable with reasonable effort, are
   resolved, the editor assigned to a package will make a decision (accept, hold, or
   reject). Rejections are usually done early (before the review process begins, see the
-  aims and scope section). In rare cases a package may also not be onboarded after
+  aims and scope section). In rare cases a package may also not be on-boarded after
   review & revision. It is ultimately editor’s decision on whether or not to reject the
   package based on how the reviews are addressed.
 - Communication between authors, reviewers and editors will first and foremost take
@@ -32,7 +32,7 @@
 
 We strongly suggest submitting your package for review with pyOpenSci before:
  
-*  publishing on pypi or conda; 
+*  publishing on `PyPI` or `conda`; 
 *  submitting a software paper describing the package to a journal. 
  
 Review feedback may result in major improvements and updates to your package, 
@@ -42,7 +42,7 @@ We do not consider previous publication on `PyPI` or `conda` or in other venues
 sufficient reason to not adopt reviewer or editor recommendations provided in 
 our review.
 
-> Do not submit your package for review while it or an associated manuscript is 
+>Please do not submit your package for review while it or an associated manuscript is 
 > also under review at another venue, as this may result on conflicting requests 
 > for changes from two sets of reviewers.
 
