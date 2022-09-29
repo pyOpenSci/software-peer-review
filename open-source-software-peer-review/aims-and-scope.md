@@ -4,7 +4,7 @@ pyOpenSci has several goals to support the scientific Python open source
 community.
 
 1. **Packages with overlapping functionality:** 
-It's easy to find multiple packages on PyPi that perform that same tasks (or overlapping tasks). When you submit to us, we ask that you know about other packages in our system that may do similar things. This check will help us connect maintainers who are working on similar goals. It will also help us in the long term reduce the number of overlapping packages, in various states of maintainence on pypi.
+It's easy to find multiple packages on `PyPI` that perform that same tasks (or overlapping tasks). When you submit to us, we ask that you know about other packages in our system that may do similar things. This check will help us connect maintainers who are working on similar goals. It will also help us in the long term reduce the number of overlapping packages, in various states of maintenance on `PyPI`.
 
 2. **Improve package usability:** Documentation makes it easier for scientists to use your tools. Our review process looks at documentation, quick start vignettes (code samples to get started) to make it easier for new users to get started using your package. 
 
@@ -35,7 +35,7 @@ whether it is in scope or not.
 
 ## Package Overlap
 pyOpenSci encourages competition among packages, forking and re-implementation 
-as they improve options of users. However, strive to make packages in the 
+as they improve options of users. However, we strive to make packages in the 
 pyOpenSci suite to represent our top recommendations for the tasks that they 
 perform. We aim to avoid duplication of functionality of existing Python 
 packages in any repo without significant improvements. A Python package that 
@@ -55,7 +55,7 @@ following our package guidelines while others do not, unless this leads to a
 significant difference in the areas above.
 
 We recommend that packages highlight differences from and improvements over 
-overlapping packages in their README and/or vignettes.
+overlapping packages in their `README` and/or vignettes or get started tutorials.
 
 We encourage developers whose packages are not accepted due to overlap to still 
 consider submittal to other repositories or journals.
