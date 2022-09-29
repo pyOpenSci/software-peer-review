@@ -1,4 +1,7 @@
-## Package Scope
+## Package Categories
+
+Below are the categories that we consider "in our scope" to review at this point.
+This list may change / expand over time. 
 
 - **Data retrieval:** Packages for accessing and downloading data from online sources. Includes wrappers for accessing APIs.
 - **Data extraction:** Packages that aid in retrieving data from unstructured sources such as text, images and PDFs.

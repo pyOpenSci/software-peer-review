@@ -29,6 +29,12 @@ jobs:
       run: |
         jupyter-book build .
 
+    - name: Check HTML using htmlproofer
+      uses: chabad360/htmlproofer@master
+      with:
+        directory: '_build'
+        arguments: --ignore-files '/html/_static/'
+
     # Push the book's HTML to github-pages
     - name: Push to GitHub Pages 
       # Only push if on main branch
