@@ -54,8 +54,6 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="shortcut icon" href="../_static/logo.png"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Community Code of Conduct" href="code-of-conduct.html" />
-    <link rel="prev" title="pyOpenSci Open Peer Review Goals and Scope" href="aims-and-scope.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -122,15 +120,15 @@ const thebe_selector_output = ".output, .cell_output"
   About Our Peer Review Process
  </span>
 </p>
-<ul class="current nav bd-sidenav">
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="intro.html">
+   About our peer review process
+  </a>
+ </li>
  <li class="toctree-l1">
   <a class="reference internal" href="aims-and-scope.html">
    Peer Review Goals and Scope
-  </a>
- </li>
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
-   Peer Review Guidelines &amp; Policies
   </a>
  </li>
  <li class="toctree-l1">
@@ -319,7 +317,7 @@ title="Source repository"
       </li>
       
       <li>
-        <a href="https://github.com/pyOpenSci/contributing-guide/issues/new?title=Issue%20on%20page%20%2Fopen-source-software-peer-review/policies-and-guidelines.html&body=Your%20issue%20content%20here."
+        <a href="https://github.com/pyOpenSci/contributing-guide/issues/new?title=Issue%20on%20page%20%2Fopen-source-software-peer-review/policies-guidelines.html&body=Your%20issue%20content%20here."
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -336,7 +334,7 @@ title="Open an issue"
       </li>
       
       <li>
-        <a href="https://github.com/pyOpenSci/contributing-guide/edit/main/open-source-software-peer-review/policies-and-guidelines.md"
+        <a href="https://github.com/pyOpenSci/contributing-guide/edit/main/open-source-software-peer-review/policies-guidelines.md"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -364,7 +362,7 @@ title="Edit this page"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="../_sources/open-source-software-peer-review/policies-and-guidelines.md"
+        <a href="../_sources/open-source-software-peer-review/policies-guidelines.md"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -427,10 +425,20 @@ title="Print to PDF"
   <a class="reference internal nav-link" href="#review-process-guidelines">
    Review Process Guidelines
   </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#submitting-your-package-for-review-in-other-venues">
+   Submitting your package for review in other venues
+  </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#conflict-of-interest">
-     Conflict of interest
+    <a class="reference internal nav-link" href="#publication-with-journal-of-open-source-software-joss">
+     Publication with Journal of Open Source Software (JOSS)
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#conflict-of-interest-for-reviews-and-editors">
+     Conflict of interest for reviews and editors
     </a>
    </li>
   </ul>
@@ -441,13 +449,13 @@ title="Print to PDF"
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#quality-commitment">
-     Quality Commitment
+    <a class="reference internal nav-link" href="#maintainer-responsiveness">
+     Maintainer Responsiveness
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#maintainer-responsiveness">
-     Maintainer Responsiveness
+    <a class="reference internal nav-link" href="#quality-commitment">
+     Quality Commitment
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
@@ -480,10 +488,20 @@ title="Print to PDF"
   <a class="reference internal nav-link" href="#review-process-guidelines">
    Review Process Guidelines
   </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#submitting-your-package-for-review-in-other-venues">
+   Submitting your package for review in other venues
+  </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#conflict-of-interest">
-     Conflict of interest
+    <a class="reference internal nav-link" href="#publication-with-journal-of-open-source-software-joss">
+     Publication with Journal of Open Source Software (JOSS)
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#conflict-of-interest-for-reviews-and-editors">
+     Conflict of interest for reviews and editors
     </a>
    </li>
   </ul>
@@ -494,13 +512,13 @@ title="Print to PDF"
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#quality-commitment">
-     Quality Commitment
+    <a class="reference internal nav-link" href="#maintainer-responsiveness">
+     Maintainer Responsiveness
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#maintainer-responsiveness">
-     Maintainer Responsiveness
+    <a class="reference internal nav-link" href="#quality-commitment">
+     Quality Commitment
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
@@ -532,7 +550,7 @@ manuscript review, this process will be an ongoing conversation.</p></li>
 <li><p>Once all major issues and questions, and those addressable with reasonable effort, are
 resolved, the editor assigned to a package will make a decision (accept, hold, or
 reject). Rejections are usually done early (before the review process begins, see the
-aims and scope section), but in rare cases a package may also be not onboarded after
+aims and scope section). In rare cases a package may also not be on-boarded after
 review &amp; revision. It is ultimately editor’s decision on whether or not to reject the
 package based on how the reviews are addressed.</p></li>
 <li><p>Communication between authors, reviewers and editors will first and foremost take
@@ -551,8 +569,35 @@ editor will try to contact the author by email.</p></li>
 new submission. If the package is still in scope, the author will have to respond to
 the initial reviews before the editor starts looking for new reviewers.</p></li>
 </ul>
-<section id="conflict-of-interest">
-<h3>Conflict of interest<a class="headerlink" href="#conflict-of-interest" title="Permalink to this headline">#</a></h3>
+</section>
+<section id="submitting-your-package-for-review-in-other-venues">
+<h2>Submitting your package for review in other venues<a class="headerlink" href="#submitting-your-package-for-review-in-other-venues" title="Permalink to this headline">#</a></h2>
+<p>We strongly suggest submitting your package for review with pyOpenSci before:</p>
+<ul class="simple">
+<li><p>publishing on <code class="docutils literal notranslate"><span class="pre">PyPI</span></code> or <code class="docutils literal notranslate"><span class="pre">conda</span></code>;</p></li>
+<li><p>submitting a software paper describing the package to a journal.</p></li>
+</ul>
+<p>Review feedback may result in major improvements and updates to your package,
+including changes that could be break package functionality.</p>
+<p>We do not consider previous publication on <code class="docutils literal notranslate"><span class="pre">PyPI</span></code> or <code class="docutils literal notranslate"><span class="pre">conda</span></code> or in other venues
+sufficient reason to not adopt reviewer or editor recommendations provided in
+our review.</p>
+<blockquote>
+<div><p>Please do not submit your package for review while it or an associated manuscript is
+also under review at another venue, as this may result on conflicting requests
+for changes from two sets of reviewers.</p>
+</div></blockquote>
+<section id="publication-with-journal-of-open-source-software-joss">
+<h3>Publication with Journal of Open Source Software (JOSS)<a class="headerlink" href="#publication-with-journal-of-open-source-software-joss" title="Permalink to this headline">#</a></h3>
+<p>If you have previously published your software package with JOSS, you can still
+submit it to pyOpenSci for review. This provides:</p>
+<ul class="simple">
+<li><p>Increased visibility of your package as a vetted tool within the scientific python ecosystem</p></li>
+<li><p>We will also keep in touch with you as a maintainer to support long term maintenance. If you need to step down from maintaining your package we will help find a new maintainer and/or help sunset the tool.</p></li>
+</ul>
+</section>
+<section id="conflict-of-interest-for-reviews-and-editors">
+<h3>Conflict of interest for reviews and editors<a class="headerlink" href="#conflict-of-interest-for-reviews-and-editors" title="Permalink to this headline">#</a></h3>
 <p>Following criteria are meant to be a guide for what constitutes a conflict of interest
 for an editor or reviewer. The potential editor or reviewer has a conflict of interest
 if:</p>
@@ -566,15 +611,35 @@ a major role</p></li>
 <li><p>The potential reviewer/editor has significantly contributed to a competitor project.</p></li>
 <li><p>There is also a lifetime COI for the family members, business partners, and thesis student/advisor or mentor.</p></li>
 </ul>
-<p>In the case where none of the associate editors can serve as editor, an external guest editor will be recruited.</p>
+<p>In the case where none of the associate editors can serve as editor, an
+external guest editor will be recruited to lead the package review.</p>
 </section>
 </section>
 <section id="after-acceptance-package-ownership-and-maintenance">
 <h2>After Acceptance: Package Ownership and Maintenance<a class="headerlink" href="#after-acceptance-package-ownership-and-maintenance" title="Permalink to this headline">#</a></h2>
-<p>Authors of contributed packages essentially maintain the same ownership they had prior
-to their package joining the pyOpenSci suite. Package authors will continue to maintain
+<p>Authors of contributed packages essentially maintain the same ownership they
+had prior to their package joining the pyOpenSci suite. Package authors will
+continue to maintain
 and develop their software after acceptance into pyOpenSci. Unless explicitly added as
-collaborators, the pyOpenSci team will not interfere much with day to day operations.</p>
+collaborators, the pyOpenSci team will not interfere with day to day operations.</p>
+<p>If you need to step down from maintaining your accepted pyOpenSci package, please
+please notify the EiC / software review lead of this as soon as you can. We
+will talk with you about your tool and work together to either find a new maintainer or sunset the tool depending upon what makes the most sense.</p>
+<p>We will reach out to our package maintainers each year to check in on how
+maintenance is going.</p>
+<section id="maintainer-responsiveness">
+<h3>Maintainer Responsiveness<a class="headerlink" href="#maintainer-responsiveness" title="Permalink to this headline">#</a></h3>
+<p>If package maintainers do not respond in a timely manner to requests for
+package fixes, we will remind the maintainer a number of times. After 3 months
+(or shorter time frame, depending on how critical the fix is) we will discuss
+the future of the package as a part of our pyOpenSci ecosystem.</p>
+<ul class="simple">
+<li><p>If a package becomes completely un-maintained we will highlight that fact and
+remove it as a vetted tool in our ecosystem.</p></li>
+<li><p>If a sub-community decides to fork and maintain that package we are open to working with the new maintainers to keep the package within our ecosystem.</p></li>
+</ul>
+<!-- Should authors abandon the maintenance of an actively used package in our suite, 
+we will consider petitioning PyPI to transfer package maintainer status to pyOpenSci. -->
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Note from the Executive Director: Please note that we are reviewing the text
@@ -582,6 +647,7 @@ below and will be updating our policy
 surrounding package quality and long term maintenance in the upcoming weeks
 (Fall 2022).</p>
 </div>
+</section>
 <section id="quality-commitment">
 <h3>Quality Commitment<a class="headerlink" href="#quality-commitment" title="Permalink to this headline">#</a></h3>
 <p>pyOpenSci strives to develop and promote high quality research software. To ensure that
@@ -592,15 +658,6 @@ package that has been accepted continually.</p>
 of individual maintainers. Buggy, unmaintained software may be removed from our suite at
 any time. We also ask maintainers that they get in touch with us if they do need
 to step down from maintaining a tool.</p>
-</section>
-<section id="maintainer-responsiveness">
-<h3>Maintainer Responsiveness<a class="headerlink" href="#maintainer-responsiveness" title="Permalink to this headline">#</a></h3>
-<p>If package maintainers do not respond in a timely manner to requests for package fixes,
-we will remind the maintainer a number of times. After 3 months (or shorter time
-frame, depending on how critical the fix is) we will discuss the future of the package
-as a part of our pyOpenSci ecosystem.</p>
-<p>Should authors abandon the maintenance of an actively used package in our suite,
-we will consider petitioning PyPI to transfer package maintainer status to pyOpenSci.</p>
 </section>
 <section id="requesting-package-removal">
 <h3>Requesting Package Removal<a class="headerlink" href="#requesting-package-removal" title="Permalink to this headline">#</a></h3>
@@ -638,20 +695,6 @@ suite for archival purposes.</p>
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-    <a class='left-prev' id="prev-link" href="aims-and-scope.html" title="previous page">
-        <i class="fas fa-angle-left"></i>
-        <div class="prev-next-info">
-            <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">pyOpenSci Open Peer Review Goals and Scope</p>
-        </div>
-    </a>
-    <a class='right-next' id="next-link" href="code-of-conduct.html" title="next page">
-    <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Community Code of Conduct</p>
-    </div>
-    <i class="fas fa-angle-right"></i>
-    </a>
 </div>
             </footer>
         </div>
