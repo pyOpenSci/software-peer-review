@@ -3,9 +3,30 @@
 ```{tableofcontents}
 ```
 
-## Why do we need pyOpenSci
+## Why do we need pyOpenSci peer review?
 
-Discussion here on 
+The open peer review process lead by pyOpenSci address several issues in the scientific Python
+ecosystem:
+
+1. [Multiple packages that have overlapping functionality. See this example on `PyPI`](https://pypi.org/search/?q=twitter) 
+2. Packages that have varying levels of maintenance yet are used by the community to support open science workflows. 
+3. Packages that are well-maintained and used but then maintenance comes to a halt when the maintainer needs to step down (burn-out is common and understandable).
+4. Packages using varying types of packaging and documentation approaches making it more difficult to contribute.
+5. Packages that are not documented enough to support:
+   * Contributions from others
+   * Directions on how to get started using the package functionality (quick start vignettes or tutorials)  
+* Packages that are missing OSI licensing and citation information
+
+### How is pyOpenSci different from JOSS and other review processes?
+pyOpenSci is different from other review processes
+out there because:
+
+1. We specifically review to community accepted python packaging standards
+2. We consider accepted packages as vetted and a part of our ecosystem. We recommend those packages to others. If the maintainer needs to step down, we will ensure a new maintainer takes over OR sunset and remove the package from our ecosystem.
+
+The JOSS review process is about publication. There, you will receive a DOI that is cross-ref
+enabled. However JOSS will not followup with the maintainer to ensure that the package is maintained over time. 
+
 
 ## Why submit your package to pyOpenSci for review?
 
@@ -15,7 +36,6 @@ But of course, before you submit, please be sure to read the policies
 
 First, and foremost, we hope you submit your package for review **because you value the feedback**.  We aim to provide useful feedback to package authors and for our review process to be open, non-adversarial, and focused on improving software quality.
 
-
 - Once your package is accepted, your package will receive **support from pyOpenSci members**. You'll retain ownership and control of your package. However, if you need help with ongoing maintenance issues, we will try to find people who can help. 
   
 -  pyOpenSci will **promote your package** through our:
@@ -23,7 +43,7 @@ First, and foremost, we hope you submit your package for review **because you va
    - [blog](https://wwwpyopensci.org/blog/), and 
    - [social media account](https://twitter.com/pyopensci).
 
--   pyOpenSci packages that are in scope for the [Journal of Open-Source Software](https://joss.theoj.org/) and add the necessary accompanying short `paper.md` file, can, at the discretion of JOSS editors, benefit from a fast-tracked review process. <LINK TO MORE ON THIS>
+-   pyOpenSci packages that are in scope for the [Journal of Open-Source Software](https://joss.theoj.org/) and add the necessary accompanying short `paper.md` file, can, at the discretion of JOSS editors, benefit from a fast-tracked review process. [Read more about our partnership with JOSS here](#pyopensci-and-joss).
 
 ## Why do we need peer review for Python scientific software?
 
@@ -76,8 +96,10 @@ our review process.
 
 Each package review is contained within an issue in the [pyOpenSci/software-review GitHub repository](https://github.com/pyopensci/software-review/). 
 
-# TODO: ADD GOOD EXAMPLE HERE
-For instance, click [here](https://github.com/ropensci/software-review/issues/24) to read the review thread of the `ropenaq` package: the process is an ongoing conversation until acceptance of the package, with two external reviews as important milestones. 
+
+```{note}
+For instance, click [here](https://github.com/ropensci/software-review/issues/24) to read the review thread from an rOpenSci review of the `ropenaq` package. Note that the  process is an ongoing conversation until the package is accepted. Two external reviews are important milestones in the review process. 
+```
 
 ### GitHub tools including issue submission templates and labels help us streamline peer review
 We use GitHub features including:
@@ -133,12 +155,9 @@ API wrappers. JOSS will then accept our review (you will not need a second
 review with JOSS!). JOSS will review your paper and you will get a JOSS badge 
 to add next to your pyOpenSci badge of review. And a cross-ref enabled DOI.
 
-<TODO: add link
-Read more here on the JOSS / pyOpenSci partnership
 
 ## pyOpenSci and JOSS
-(is this the right place for this? - this probably should go in the reviewer 
-guide and make it super short here)
+
 > You don't have to chose between pyOpenSci and JOSS; You can submit your package to both.
 
 pyOpenSci and [the Journal of Open Source Software (JOSS)](https://joss.theoj.org/)
@@ -165,4 +184,3 @@ the pyOpenSci review process is different from that of JOSS in a few ways:
 JOSS reviews are [more limited in scope](https://joss.readthedocs.io/en/latest/review_criteria.html) compared to pyOpenSci and the
 [submission criteria](https://joss.readthedocs.io/en/latest/review_criteria.html)
 are, in places, less stringent than those of pyOpenSci.
-
