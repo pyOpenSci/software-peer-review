@@ -1,6 +1,6 @@
 # Editor in Chief Guide
 
-## Editor in Chief role & responsibilities
+## Editor in Chief (EiC) role & responsibilities
 
 The Editor in Chief (EiC) is a rotating position that serves 
 for 3 to 6 months or a time agreed to by all members of the editorial 
@@ -12,30 +12,27 @@ to support finding a new EiC.
 
 ### The Editor in Chief fulfills the following roles:
 
-- Watches all issues posted to the software-review repo.
-- Performs an initial set of editor checks on new package submissions (see template for these checks below)
+- Watches all issues posted to the [software-review repository](https://github.com/pyOpenSci/software-review/issues) (by "watching" it on GitHub to receive notifications, and by joining the `#feed-software-review` channel on Slack).
+- Performs an initial set of editor checks on new package submissions (see {ref}`template <editor-checklist-template>` for these checks below)
 - Raises scope/overlap issue with all editors if they see an ambiguous submission. 
 This may also be done by handling editors if appropriate (see note below). If 
 the scope of a package is in question, the EiC should post to the pyOpenSci 
 Slack `software-review` channel, tagging all editors.
-- Assigns package submissions to other editors (including themselves if they have bandwidth), to handle. 
+- Assigns package submissions to other editors to handle. Assigning may be based upon domain background or just who has bandwidth to lead the review. The editor in chief can assign packages to themself for review.
 - Responds to pre-submission inquiries posted to the software-review repository 
-and similarly pings editors in the `software-review slack channel` if discussion 
+and similarly pings editors in the `software-review` Slack channel if discussion 
 is needed. Any editor should feel free to communicate with package authors as it 
 makes sense. See [this section](#responding-to-out-of-scope-submissions) about 
 how to respond to out-of-scope (pre-) submissions.
 - Responds to review referrals from JOSS or other publication partners.
-- Monitors the review process pace.
-- Reminds other editors to move the package review process along as needed if 
-the timeline seems to be stalled or slow.
-
+- Monitors pace of review process and reminds other editors to move packages along as needed.
+- Requests a new EiC when their rotation is up (set a calendar reminder ahead of your expected end date and ask for volunteers in the editors’ Slack channel)
 
 This Editor in Chief position rotates between different pyOpenSci editors. 
 
-
 ```{note}
-In some cases, if the EiC is unable to support a particular package due to 
-conflicts OR if they simple believe another editor is better suited to assess 
+In some cases, if the EiC is unable to support review of a particular package due to 
+conflicts OR if they simply believe another editor is better suited to assess 
 the scope and readiness of a package to be reviewed, they may opt to assign an editor to perform initial checks.
 ```
 
@@ -44,11 +41,11 @@ the scope and readiness of a package to be reviewed, they may opt to assign an e
 When a new package is submitted for review, the EiC will:
 
 - Tag the issue with `1/editor-checks` tag 
-- Next, they will use the template below in the issue to check whether the package has 
+- Next, they will use the {ref}`template <editor-checklist-template>` below in the issue to check whether the package has 
 the bare minimum requirements to initiate a review (or they will assign that task to an editor as stated above). 
-- SURVEY data: To ensure we have information from the authors, please be sure that they filled out our survey. Thank them graciously for doing this. They can skip sections of it if they wish, but we do need their contact information and we do want to track their experience with out review process and organization  
+- Finally they will ensure the onboarding survey is filled out. Thank the authors graciously for doing this. They can skip sections of it if they wish, but we do need their contact information and we do want to track their experience with our review process and organization.  
 
-
+(editor-checklist-template)=
 ### Editor checklist (copy template below to use in the issue)
 
 ```markdown
@@ -61,15 +58,15 @@ to work on them before the review process begins.
 
 - [ ] **Fit**: The package meets criteria for [fit](https://www.pyopensci.org/contributing-guide/open-source-software-peer-review/aims-and-scope.html#package-categories) and [overlap](https://www.pyopensci.org/contributing-guide/open-source-software-peer-review/aims-and-scope.html#package-overlap).
 - [ ] **Documentation** The package has sufficient documentation available online (README, sphinx docs) to allow us to evaluate package function and scope *without installing the package*. This includes:
-  - [ ] Get started vignettes or tutorials that help a user understand how to use the package and what it can do for them
+  - [ ] tutorials or vignettes that help a user understand how to use the package and what it can do for them (often these have a name like "Getting started")
   - [ ] API documentation - this includes clearly written doc strings with variables defined using a standard docstring format
   - [ ] README that clearly articulates the function of the package
   - [ ] Contributing documentation that details how to install a development environment and how to contribute to the package
-- [ ] **Issue Header Information**: All of the required issue header information is contained within the top of the issue.
+- [ ] **Issue Submission Documentation**: All of the information is filled out in the `YAML` header of the issue (located at the top of the issue template).
 - [ ] **Automated tests:** Package has a testing suite and is tested via GitHub actions or another Continuous Integration service.
-- [ ] **License:** The package has an OSI accepted license
+- [ ] **License:** The package has an [OSI approved license](https://opensource.org/licenses)
 - [ ] **Repository:** The repository link resolves correctly
-- [ ] **README:** The package has a README with clear explanation of what the packages does and instructions on how to install it along with development instructions. 
+- [ ] **README:** The package has a README with clear explanation of what the package does and instructions on how to install it along with development instructions. 
 - [ ] **Contributing statement:** The package has a contributing.md file that details how to contribute to the package. 
 - [ ] **Package overlap:** That package doesn't fully overlap with functionality of other packages that have already been submitted to pyOpenSci
 - [ ] **Archive** (JOSS only, may be post-review): The repository DOI resolves correctly
@@ -78,7 +75,7 @@ to work on them before the review process begins.
 ---
 - [ ] [Initial onboarding survey was filled out ](https://forms.gle/F9mou7S3jhe8DMJ16) 
 We appreciate each maintainer of the package filling out this survey individually. :raised_hands: 
-Thank you authors in advance for sending 10 minutes to do this. It truly helps our organization. :raised_hands:
+Thank you authors in advance for setting aside five to ten minutes to do this. It truly helps our organization. :raised_hands:
 ---
 
 *******
@@ -98,8 +95,36 @@ A few final tasks to perform here:
 - Update the yaml in the header of the issue with the editor assigned to the review 
 - Add the tag `2/seeking-reviewer(s)` to the issue.
 
+### Submissions that are incomplete or vague: need more details
+
+In some cases online documentation of a package is sparse, the README is 
+minimal or hard to understand or there is no clear documentation setup. Or 
+in other cases some of the YAML at the top of the issue is missing. 
+This makes assessment of the package's scope much harder. 
+In this case, please ask for more information. Even if the package is deemed
+out-of-scope, the package documentation will improve as a result of your questions. 
+
+Example text
+
+```markdown
+Hello <username> and many thanks for your submission.
+
+We are discussing whether the package is in scope and need a bit more 
+information.
+
+Would you mind adding more details and context to your `README` file?
+After reading it, someone with little domain knowledge should understand 
+the aim, goals and functionality of the package.
+
+<optional>
+If a package has overlapping functionality with other packages, we require you 
+to mention in your documentation (README) and in this issue [how it is "best in class"](https://pyopensci.org/policies.html#overlap). Could you add a more detailed comparison to the packages you mention in the README so we can evaluate?
+</optional>
+
+```
+
 ### Responding to out-of-scope submissions
 
-If the package is determined to be out-of-scope, the editor in chief should thank authors for their submission,
+If the package is determined to be out-of-scope, the Editor in Chief should thank authors for their submission,
 explain the reasons for the decision, and direct them to other publication venues 
 if relevant. If further discussion is warranted that can take place within the issue. 
