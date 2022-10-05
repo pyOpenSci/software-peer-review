@@ -1,3 +1,5 @@
+name: link-artifact
+
 # Run on pushes
 on:
   push:
@@ -16,3 +18,7 @@ jobs:
           artifact-path: 0/html/index.html
           circleci-jobs: build_book
           job-title: Check rendered book here
+      - name: Check the URL
+        if: github.event.status != 'pending'
+        run: |
+          curl --fail ${{ steps.step1.outputs.url }} | grep $GITHUB_SHA
