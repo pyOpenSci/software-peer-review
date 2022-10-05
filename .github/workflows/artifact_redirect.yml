@@ -8,7 +8,6 @@ on:
 
 jobs:
   circleci_artifacts_redirector_job:
-    if: "${{ github.event.context == 'ci/circleci: build_book' }}"
     runs-on: ubuntu-latest
     name: Run CircleCI artifacts redirector
     steps:
