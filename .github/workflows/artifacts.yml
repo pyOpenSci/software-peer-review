@@ -1,4 +1,10 @@
-on: [status]
+name: artifact-redirector
+
+# Run on pushes
+on:
+  push:
+    branches:
+      - '*'
 
 jobs:
   circleci_artifacts_redirector_job:
