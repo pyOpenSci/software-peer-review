@@ -10,7 +10,21 @@ https://pyopensci.org/contributing-guide/
 
 pyOpenSci's guide for developing, reviewing, and maintaining packages.
 
-## Build the guide locally
+## Automated build and publishing
+
+Whenever changes are pushed to any branch on GitHub, the book is built (separately) by both GitHub Actions and CircleCI. 
+
+### Why both GitHub Actions and CircleCI?
+
+- GitHub Actions is the main build tool. In addition to building whenever changes are pushed to any branch, it handles publishing the book when changes are made to the main branch. When that happens, it pushes the built html files to the gh-pages branch, which publishes the book to the [website](https://pyopensci.org/contributing-guide/)b.
+- CircleCI's build is redundant, but it offers an easier way of viewing the built html in browser WITHOUT merging the changes to main or downloading files. See [How do you preview the book](https://github.com/pyopensci/contributing-guide/#how-do-you-preview-the-book) below for details. 
+
+### How do you preview the website?
+- *(Recommended)* Via the artifact redirector workflow: When viewing the checks in a pull request or from a branch, click "Details" next to the "Click to preview rendered book" to be automatically taken to the CircleCI index.html preview. This is performed using the [circleci-artifacts-redirector-action workflow](https://github.com/larsoner/circleci-artifacts-redirector-action).
+- Via CircleCI: Go to the CircleCI job and select the "Artifacts" tab. Click on "index.html" to preview the built book.
+- Via GitHub Actions alone: GitHub Actions also saves the built html files for preview, but you have to download and unzip the files to your local computer. Go to your deploy-book build in the [Actions tab](https://github.com/pyOpenSci/contributing-guide/actions). Then select "book-html" in the "Artifacts" pane near the bottom of the page. After downloading, unzip the book-html.zip file into a separate directory and open "index.html" from the directory with the unzipped files. The book should open in your web browser.
+
+## How to build the guide locally
 
 The pyOpenSci guidebook is written using [Jupyter Books](https://github.com/executablebooks/jupyter-book).
 
