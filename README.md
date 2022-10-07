@@ -16,7 +16,7 @@ Whenever changes are pushed to any branch on GitHub, the book is built (separate
 
 ### Why both GitHub Actions and CircleCI?
 
-- GitHub Actions is the main build tool. In addition to building whenever changes are pushed to any branch, it handles publishing the book when changes are made to the main branch. When that happens, it pushes the built html files to the gh-pages branch, which publishes the book to the [website](https://pyopensci.org/contributing-guide/)b.
+- GitHub Actions is the main build tool. In addition to building whenever changes are pushed to any branch, it handles publishing the book when changes are made to the main branch. When that happens, it pushes the built html files to the gh-pages branch, which publishes the book to the [website](https://pyopensci.org/contributing-guide/).
 - CircleCI's build is redundant, but it offers an easier way of viewing the built html in browser WITHOUT merging the changes to main or downloading files. See [How do you preview the book](https://github.com/pyopensci/contributing-guide/#how-do-you-preview-the-book) below for details. 
 
 ### How do you preview the website?
