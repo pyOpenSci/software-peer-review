@@ -5,6 +5,7 @@ on: [status]
 jobs:
   circleci_artifacts_redirector_job:
     runs-on: ubuntu-latest
+    if: "${{ github.event.context == 'ci/circleci: build_book' }}"
     name: Run CircleCI artifacts redirector
     steps:
       - name: GitHub Action step
