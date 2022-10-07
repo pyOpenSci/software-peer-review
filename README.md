@@ -4,8 +4,7 @@
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7101778.svg)](https://doi.org/10.5281/zenodo.7101778)
 
-[![CircleCI](https://circleci.com/gh/pyOpenSci/contributing-guide.svg?style=svg)](https://circleci.com/gh/pyOpenSci/contributing-guide)
-
+![deploy-book](https://github.com/pyOpenSci/contributing-guide/actions/workflows/book.yml/badge.svg)  ![Deploy Book](https://github.com/pyOpenSci/contributing-guide/actions/workflows/book.yml/badge.svg)[![CircleCI Book Preview](https://circleci.com/gh/pyOpenSci/contributing-guide.svg?style=svg)](https://circleci.com/gh/pyOpenSci/contributing-guide) 
 
 https://pyopensci.org/contributing-guide/
 
