@@ -9,7 +9,7 @@
 - [ ] **License:** The package has an OSI accepted license
 - [ ] **Repository:** The repository link resolves correctly
 - [ ] **README:** The package has a README with clear explanation of what the packages does and instructions on how to install it along with development instructions. 
-- [ ] **Contributing statement:** The package has a contributing.md file that details how to contribute to the package. 
+- [ ] **Contributing statement:** The package has a `contributing.md` file that details how to contribute to the package. 
 - [ ] **Package overlap:** That package doesn't fully overlap with functionality of other packages that have already been submitted to pyOpenSci
 - [ ] **Archive** (JOSS only, may be post-review): The repository DOI resolves correctly
 - [ ] **Version** (JOSS only, may be post-review): Does the release version given match the GitHub release (v1.0.0)?

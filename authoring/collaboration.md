@@ -6,7 +6,7 @@ Note: pyOpenSci is still building out this section of our guidebook. Many of the
 
 ### Code of conduct
 
-We require that you use a code of conduct such as the [Contributor Covenant](http://contributor-covenant.org/) in developing your package. You should document your code of conduct in a `CODE_OF_CONDUCT` file in the package root directory, and link to this file from the `README` file.
+We require that you use a code of conduct such as the [Contributor Covenant](https://contributor-covenant.org/) in developing your package. You should document your code of conduct in a `CODE_OF_CONDUCT` file in the package root directory, and link to this file from the `README` file.
 
 ### Contributing guide
 

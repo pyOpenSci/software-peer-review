@@ -8,6 +8,11 @@ repository:
   url: https://github.com/pyOpenSci/contributing-guide
   branch: main
 
+parse:
+  myst_enable_extensions:
+    - sphinx_copybutton
+
+
 html:
   favicon: images/logo/logo.png
   google_analytics_id: UA-141260825-1

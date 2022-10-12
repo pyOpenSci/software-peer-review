@@ -18,7 +18,7 @@ When you update your package, you release a new version to PyPI. Fortunately, th
 
 ### Version Naming
 
-* We recommend that pyOpenSci packages use [semantic versioning](https://www.python.org/dev/peps/pep-0440/#semantic-versioning). In addition to the [PEP section on it](https://www.python.org/dev/peps/pep-0440/#semantic-versioning), semver.org has more [detail](https://semver.org/).
+* We recommend that pyOpenSci packages use [semantic versioning](https://www.python.org/dev/peps/pep-0440/#semantic-versioning). In addition to the [PEP section on it](https://www.python.org/dev/peps/pep-0440/#semantic-versioning), [the semver website has more detail](https://semver.org/).
 
 * Versioning can be done using [bumpversion](https://github.com/peritus/bumpversion), e.g. for a minor update:
 
@@ -52,12 +52,12 @@ foobar 0.2.0 (2016-04-01)
 To manually upload a new package version to PyPI, follow these steps:
 
 1. Update your HISTORY file as described [above](#history)
-2. Open setup.py and change the version, e.g., version='1.0.3'
-3. If you added new, non-Python files to the project that need to be distributed as well, e.g., configuration files, add them to MANIFEST.in. This does not need to be done for Python code files ending in .py.
+2. Open `setup.py` and change the version, e.g., version='1.0.3'
+3. If you added new, non-Python files to the project that need to be distributed as well, e.g., configuration files, add them to `MANIFEST.in`. This does not need to be done for Python code files ending in .py.
 4. Open a terminal and go into the parent of the project's root dir
-5. python setup.py sdist
+5. `python setup.py sdist`
 6. Check the resulting files, especially the egg file: are all the files contained?
-7. If everything is ok, upload the new version to PyPI: python setup.py sdist upload
+7. If everything is ok, upload the new version to PyPI: `python setup.py sdist upload`
 
 That's it!
 
