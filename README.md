@@ -26,7 +26,7 @@ To submit a Pull Request with changes:
 
 ## How to build the guide locally
 
-The pyOpenSci guidebook is written using [Jupyter Books](https://github.com/executablebooks/jupyter-book).
+The pyOpenSci guidebook is written using [Jupyter Book](https://github.com/executablebooks/jupyter-book).
 
 To build the guide locally, take the following steps:
 
