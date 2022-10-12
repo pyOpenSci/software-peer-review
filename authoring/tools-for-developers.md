@@ -94,7 +94,7 @@ Some pre-commit hooks you can find useful would be:
 
 - [flake8](https://flake8.pycqa.org/en/latest/user/using-hooks.html)
 - [mypy](https://github.com/pre-commit/mirrors-mypy)
-- [black](https://black.readthedocs.io/en/stable/version_control_integration.html)
+- [black](https://black.readthedocs.io/en/stable/integrations/source_version_control.html)
 - [isort](https://github.com/pre-commit/mirrors-isort)
 
 If you want more information about `pre-commit`, check out its [documentation](https://pre-commit.com/).
