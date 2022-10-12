@@ -1,14 +1,96 @@
 # Guide for Editors
 
-Thank you for your time in serving as an editor for a PyOpenSci package! An editor
-for pyOpenSci should have the following experience:
+Thank you for your time in serving as an editor for a PyOpenSci package! Below you will find some
+information about the role that editors have in the 
+pyOpenSci Python open source peer review process. 
 
-* They should have completed a review for *atleast* 1 package for pyOpenSci.
-* They should have some experience with the open source software for scientific
-Python community be it maintaining or contributing to packages, or being involved
-in the community in some way.
+There are two types of editors in our peer review process:
 
-## Get Started Checklist
+* Guest editors and
+* Full editors 
+
+Both types of editors are considered a part of the editorial board for 
+pyOpenSci. The major difference between guest and full editors is the time 
+that they may or may not serve on the editorial board. And the support that 
+they may need in serving as editor. 
+
+
+## Guest Editors 
+A guest editor is is invited to lead a review in the 
+case where we need specific expertise for a single review. We also consider editors who are 
+performing their first review as guest editors as they may require more 
+guidance or mentorship to complete the review (if they are new to our organization). 
+
+New editors who wish to continue on as full editors for pyOpenSci may do so 
+as long as both parties (pyOpenSci and the guest editors) feel like it is a
+healthy fit for them and the organization.
+
+## Editors and the Editorial Board
+
+A full editor most often someone who has experience with the 
+pyOpenSci open package review process. A full editor ideally:
+
+* has completed a review for *atleast* 1 package for pyOpenSci
+* and/or has submitted and gone through the pyOpenSci package review process 
+* and/or has experience reviewing for an organization such as JOSS or rOpenSci.
+
+We also appreciate when editors have some experience working with or in the
+Python open source software community be it maintaining or contributing to 
+packages, or being involved in the community in some way. This is certainly
+now a required however if you are interested in getting involved through
+pyOpenSci!
+
+```{note}
+There could be certain situations when an editor is on boarded with less experience! The above are simply guidelines that we like to follow.  
+```
+
+## What does an editor do? (Responsibilities)
+
+An editor is normally recruited by the Editor in Chief, other editors on the 
+board, or the software review lead. [More on recruiting editors can be found here](onboarding-guide.md). 
+
+An editor is responsible for:
+
+* Leading the review process for 3-4 packages a year
+* Weighing in on group editorial decisions such as whether a package is in-scope, and making updates to the pyOpenSci policies. 
+  
+ ```{note} 
+Decisions surrounding policy, updates to peer review guides and decisions 
+on package review are generally made in the private `editorial-board` channel in the pyOpenSci Slack organization. Please make sure that you 
+are comfortable with checking Slack regularly. 
+```
+
+### Supporting other reviews
+While editors are not charged with tracking other submissions that they are 
+not leading, if you do notice an issue with another review, please feel free
+to raise that issue either directly with the editor for that review OR raise
+the issue in the editors channel in slack. 
+
+
+### Editor in chief rotation 
+The editorial board normally participates in the Editor in Chief rotation. 
+You are eligible to enter this rotation after 3 months of serving on the board 
+and/or after your first review as it makes sense. [Read more about the roles
+and responsibilities of the Editor in Chief, here.](editor-in-chief-guide.md)
+
+If the Editor in Chief role feels like too much responsibility, an editor can also decline being a part of this rotation.
+
+## How long does an editor serve on the editorial board?
+
+Ideally an editor can commit to serving for **atleast** one year as an editor
+for pyOpenSci. During that year we expect that you will lead review of 3-4 packages. However, we understand that in certain situations, an editor
+may need to step down before the 1 year time period has ended. 
+
+We also understand that life gets busy and you are always welcome to "say no" 
+to a review during a particularly busy time. 
+
+We welcome 
+editors staying on for longer as long as they are happy serving with us and 
+they get along well with other members of the editorial board, the software 
+review lead and the current Editor in Chief. 
+
+
+## Get Started With Leading a Package Review -- Checklist
 
 Follow the checklist below when serving as an editor for a package submitted to
 pyOpenSci for review.
@@ -29,7 +111,12 @@ Following through with this step will ensure that we are using our volunteer
 reviewer time effectively.
 
 - Add a comment to the issue that contains a copy of the Editor Checks template (see below) filled out with your response to the checks that begin the review.
-- In this comment you will add reviewers and the review deadline date once you have reviewers assigned (see below)
+- In this comment you will add reviewers and the review deadline date once you have reviewers assigned (see below).
+
+```{note}
+As a part of the editor checks, please be sure that you, the package submitter and both 
+reviewers fill our our editor/ reviewer/ maintainer survey. The link can be found on the review issue at the top for all reviews submitted after September 2022. 
+```
 
 ```markdown
 ## Editor checks:
