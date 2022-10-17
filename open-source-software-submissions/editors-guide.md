@@ -4,7 +4,7 @@ Thank you for your time in serving as an editor for a PyOpenSci package! An edit
 for pyOpenSci should have the following experience:
 
 * They should have completed a review for *at least* 1 package for pyOpenSci.
-* They should have some experience with open source software for the scientific
+* They should have some experience with open source software that supports the scientific
 Python community, be it maintaining or contributing to packages or being involved
 in the community in some way.
 
