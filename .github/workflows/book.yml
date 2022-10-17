@@ -1,10 +1,7 @@
 name: deploy-book
 
-# Run on pushes
-on:
-  push:
-    branches:
-      - '*'
+# Run on pushes & pull requests
+on: [push, pull_request]
 
 # This job installs dependencies, build the book, and pushes it to `gh-pages`
 jobs:
