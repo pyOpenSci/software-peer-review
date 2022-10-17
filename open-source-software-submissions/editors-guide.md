@@ -108,7 +108,7 @@ When these sources of information are not enough:
 * Ping other editors for ideas.
 * Look for users of the package or the data source/upstream service the package connects to (via their opening issues in the repository, starring it, citing it in papers, talking about it on Twitter).
 * You can also search for authors/maintainers of related packages on [PyPI](https://pypi.org/search/).
-* Post in Twitter and ensure pyOpenSci retweets your post.
+* Post on Twitter and ensure pyOpenSci retweets your post.
 
 #### Criteria for Choosing Reviewers
 
