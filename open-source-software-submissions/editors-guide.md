@@ -70,13 +70,6 @@ rejected, see
 [this section in the editor in chief guide](editor-in-chief-guide.html#responding-to-out-of-scope-submissions)
 about how to respond.
 
-- `Archive` and `Version` within the editor checks for JOSS may be filled out at the end of the review.
-  * `Archive` refers to an archive created through a release. You can use zenodo to
-      create this archive and provide the package with a citable DOI. If zenodo is used, please add the zenodo link here.
-  * `Version` refers to the final package version that was accepted by pyOpenSci.
-  This is the final version as presented after all feedback from the reviews has
-  been considered and implemented.
-
 ```{note}
 PyOpenSci has a partnership with JOSS where packages that are in-scope for JOSS
 can be directly accepted into the JOSS ecosystem through the pyOpenSci review.
@@ -84,6 +77,13 @@ The JOSS component of the review happens after all of the review on the
 pyOpenSci side is complete and it begins through direct communication with a
 JOSS editor.
 ```
+
+- `Archive` and `Version` within the editor checks for JOSS may be filled out at the end of the review.
+  * `Archive` refers to an archive created through a release. You can use zenodo to
+      create this archive and provide the package with a citable DOI. If zenodo is used, please add the zenodo link here.
+  * `Version` refers to the final package version that was accepted by pyOpenSci.
+  This is the final version as presented after all feedback from the reviews has
+  been considered and implemented.
 
 **Important: If initial checks show major gaps, request changes before assigning reviewers.**
 
@@ -125,7 +125,7 @@ website, Twitter).
 Try to balance your sense of the potential reviewer’s experience against the complexity of the package.
 
 * **Diversity** - if you have two reviewers both shouldn’t be cis white males.
-* Reviewers should also have demonstrated interest in openness or Python community activities, although blind emailing is fine.
+* **Openness** - reviewers should also have demonstrated interest in open source or Python community activities, although blind emailing is fine.
 
 Each submission should be reviewed by _two_ package reviewers. Although it is
 fine for one of them to have less package development experience and more domain
@@ -186,6 +186,7 @@ ensure that things are moving smoothly:
 - If a review has not been submitted after 2 weeks, ping the reviewer(s) within the review issue to ensure they are aware of the 3 week deadline.
 -   Once all reviews are submitted, change the review status tag to `4/review-in-awaiting-changes`.
 -   If the author stops responding, refer to [the policies](peer_review_proc#review-process-guidelines) and/or ping the other editors in the Slack channel <*Not available publically yet*> for discussion.
+-   Upon changes being made, change the review status tag to `5/awaiting-reviewer-response`.
 
 ::::{important}
 If a reviewer was assigned to a closed issue, contact them when closing the
@@ -193,8 +194,6 @@ issue to explain the decision, thank them once again for their work, and make a
 note in our database to assign them to a submission with high chance of smooth
 software review next time (e.g. a package author who has already submitted packages to us).
 ::::
-
--   Upon changes being made, change the review status tag to `5/awaiting-reviewer-response`.
 
 ### General Review guidelines
 
