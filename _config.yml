@@ -8,9 +8,9 @@ repository:
   url: https://github.com/pyOpenSci/contributing-guide
   branch: main
 
-parse:
-  myst_enable_extensions:
-    - sphinx_copybutton
+#parse:
+#  myst_enable_extensions:
+#    - sphinx_copybutton
 
 
 html:
