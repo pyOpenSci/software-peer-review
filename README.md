@@ -44,7 +44,7 @@ To build the guide locally, take the following steps:
 * Build the guide
 
   ```
-  # Cd to the repo if you are not already in it!
+  # Change directory (`cd`) to the repo if you are not already in it!
   $ cd contributing-guide
   # Build the book locally!
   $ jupyter-book build .
