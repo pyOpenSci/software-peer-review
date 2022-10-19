@@ -6,17 +6,20 @@ Note: pyOpenSci is still building out this section of our guidebook. Many of the
 
 ### Code of conduct
 
-We require that you use a code of conduct such as the [Contributor Covenant](http://contributor-covenant.org/) in developing your package. You should document your code of conduct in a `CODE_OF_CONDUCT` file in the package root directory, and link to this file from the `README` file.
+We require that you use a code of conduct such as the [Contributor Covenant](https://contributor-covenant.org/) in developing your package. You should document your code of conduct in a `CODE_OF_CONDUCT` file in the package root directory, and link to this file from the `README` file.
 
 ### Contributing guide
 
-We have a [template for contributing guidelines](https://github.com/pyOpenSci/cookiecutter-pyopensci/blob/main/%7B%7Bcookiecutter.project_slug%7D%7D/CONTRIBUTING.rst) in our cookiecutter repository. Even if you're not using cookiecutter to build your project (see our [packaging guide](../authoring/overview#project-template) for info), you can download our CONTRIBUTING.rst as a starting point.
+October 2022 NOTE: we are in the process of updating all of this and will likely deprecate
+this cookie cutter. Proceed at your own risk :) 
 
-You can tweak it a bit depending on your workflow and package. For example, make sure contributors have instructions in your CONTRIBUTING file for running local tests if not trivial. CONTRIBUTING can also contain some details about how you acknowledge contributions (see [this section](#attributions)) and the roadmap of your package (cf [this example for R](https://github.com/ecohealthalliance/fasterize/blob/main/CONTRIBUTING.md)).
+We have a [template for contributing guidelines](https://github.com/pyOpenSci/cookiecutter-pyopensci/blob/master/%7B%7Bcookiecutter.project_slug%7D%7D/CONTRIBUTING.rst) in our cookiecutter repository. Even if you're not using cookiecutter to build your project (see our [packaging guide](../authoring/overview#project-template) for info), you can download our CONTRIBUTING.rst as a starting point.
+
+You can tweak it a bit depending on your workflow and package. For example, make sure contributors have instructions in your CONTRIBUTING file for running local tests if not trivial. CONTRIBUTING can also contain some details about how you acknowledge contributions (see [this section](#attributions)) and the roadmap of your package (cf [this example for R](https://github.com/ecohealthalliance/fasterize/blob/master/CONTRIBUTING.md)).
 
 ### Issue labelling
 
-You can use labels such as "help wanted", "good first issue", or "beginner" to help potential collaborators, including newbies, find your repo. For more info, see this [GitHub article](https://help.github.com/articles/helping-new-contributors-find-your-project-with-labels/).
+You can use labels such as "help wanted", "good first issue", or "beginner" to help potential collaborators, including newbies, find your repo. For more info, see this [GitHub article](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/encouraging-helpful-contributions-to-your-project-with-labels).
 
 ## Working with collaborators
 
