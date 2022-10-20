@@ -38,18 +38,31 @@ the scope and readiness of a package to be reviewed, they may opt to assign an e
 
 ## Editor in Chief checklist
 
-When a new package is submitted for review, the EiC will:
+When a new package is submitted for review, the Editor in Chief will:
 
-- Tag the issue with `1/editor-checks` tag 
-- Next, they will use the {ref}`template <editor-checklist-template>` below in the issue to check whether the package has 
+### 1. ✅ Tag the issue with `1/editor-checks` tag in GitHub
+
+### 2. ✅ Next, they will use the {ref}`template <editor-checklist-template>` below in the issue 
+
+This step serves to check whether the package has 
 the bare minimum requirements to initiate a review (or they will assign that task to an editor as stated above). 
-- Finally they will ensure the onboarding survey is filled out. Thank the authors graciously for doing this. They can skip sections of it if they wish, but we do need their contact information and we do want to track their experience with our review process and organization.  
+These checks ensure that the package is ready to be reviewed.
+
+Following this step will ensure that we are using our volunteer reviewer time effectively.
+
+In some situations, these checks may be passed down to an editor including:
+ 
+* If the Editor in Chief is overwhelmed with package submissions to evaluate 
+* If the Editor in Chief simply is busy at the time and needs support with checks 
+* If the Editor in Chief thinks that the checks might be better served if done by an Editor 
+(For instance if a specific domain or technical expertise would support more effective checks)
+
 
 (editor-checklist-template)=
 ### Editor checklist (copy template below to use in the issue)
 
 ```markdown
-## Editor checks 
+## Editor in Chief checks 
 
 Hi there! Thank you for submitting your package for pyOpenSci
 review. Below are the basic checks that your package needs to pass 
@@ -85,17 +98,26 @@ Thank you authors in advance for setting aside five to ten minutes to do this. I
 
 ```
 
+### 3. ✅ Finally they will ensure the onboarding survey is filled out. 
+
+Thank the authors graciously for doing this. They can skip sections of it if they wish, but we do need their contact information and we do want to track their experience with our review process and organization. 
+
+### 4. ✅ Assign an editor to the issue to manage the rest of the review
+
 Once the package initial checks are complete, and it is determined that 
-the package is in scope for pyOpenSci review, the EiC will assign an 
-editor to the review. The editor will begin the process of finding reviewers for the package. [Check out the editor guide for more information on this process](editors-guide.md) 
+the package is in scope for pyOpenSci review, the Editor in Chief will assign an 
+editor to the review issue. The editor will begin the process of finding reviewers 
+for the package. [Check out the editor guide for more information on this process](editors-guide.md) 
 
-A few final tasks to perform here:
+### 5. ✅ Update the YAML header of the issue 
 
+Once all of the above is complete, the Editor in Chief should:
+ 
 - Add any comments to the bottom of your editor checks comment
 - Update the yaml in the header of the issue with the editor assigned to the review 
 - Add the tag `2/seeking-reviewer(s)` to the issue.
 
-### Submissions that are incomplete or vague: need more details
+## A Note about submissions that are incomplete or vague
 
 In some cases online documentation of a package is sparse, the README is 
 minimal or hard to understand or there is no clear documentation setup. Or 
