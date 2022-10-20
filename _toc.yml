@@ -24,7 +24,10 @@ parts:
 - caption: Python Packaging Guide
   chapters:
   - file: authoring/index
-  - file: authoring/overview
+  - file: authoring/documentation-readme
+    title: Package Documentation
+  - file: authoring/tests-continuous-integration
+    title: Tests & Continuous Integration Documentation
   - file: authoring/collaboration
   - file: authoring/tools-for-developers
   - file: authoring/testing
