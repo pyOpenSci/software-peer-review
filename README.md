@@ -35,29 +35,32 @@ To build the guide locally, take the following steps:
   ```
   git clone https://github.com/pyOpenSci/contributing-guide
   ```
-* Install Jupyter Book
 
-  ```
-  pip install -U jupyter-book
+To build, follow these steps:
 
-  ```
-* Build the guide
+1. Install `nox`
 
-  ```
-  # Change directory (`cd`) to the repo if you are not already in it!
-  $ cd contributing-guide
-  # Build the book locally!
-  $ jupyter-book build .
-  ```
+```console
+pip install nox
+```
+2. Build the documentation:
+
+```console
+nox -s docs
+```
+
+This should create a local environment in a `.nox` folder, build the documentation (as specified in the `noxfile.py` configuration), and the output will be in `_build/html`.
+
+To build live documentation that updates when you update local files, run the following command:
+
+```console
+$ nox -s docs-live
+```
+
 * To view your built book:
 
-  Navigate to _build/html/ on your local clone of the repo and open "index.html".
+Navigate to _build/html/ on your local clone of the repo and open "index.html".
 
-* To clean out old pages of your book (e.g. if you remove a page):
-
-  ```
-  $ jupyter-book clean .
-  ```
 
 ## Automated build and publishing
 

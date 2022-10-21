@@ -5,33 +5,45 @@ on: [push, pull_request]
 
 # This job installs dependencies, build the book, and pushes it to `gh-pages`
 jobs:
-  deploy-book:
+  build-test-book:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
 
-    # Install dependencies
-    - name: Set up Python 3.9
-      uses: actions/setup-python@v1
+    - name: Setup Python
+      uses: actions/setup-python@v2
       with:
-        python-version: 3.9
+        python-version: '3.9'
 
-    # Install Current Version Jupyter Book
-    - name: Install Jupyter Book
+    - name: Upgrade pip
       run: |
-        pip install -r requirements.txt
+        # install pip=>20.1 to use "pip cache dir"
+        python3 -m pip install --upgrade pip
+    - name: Get pip cache dir
+      id: pip-cache
+      run: echo "::set-output name=dir::$(pip cache dir)"
 
-    # Build the book
-    - name: Build the book
-      run: |
-        jupyter-book build .
+    - name: Cache dependencies
+      uses: actions/cache@v2
+      with:
+        path: ${{ steps.pip-cache.outputs.dir }}
+        key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
+        restore-keys: |
+          ${{ runner.os }}-pip-
+
+    - name: Install dependencies
+      run: python3 -m pip install nox
+
+    - name: Build book
+      run: nox -s docs
 
     # Test for bad links and ensure alt tags for usability
     - name: Check HTML using htmlproofer
       uses: chabad360/htmlproofer@master
       with:
         directory: '_build'
-        arguments: --ignore-files '/html/_static/'
+        arguments: |
+           --ignore-files "/.+\/_static/"
 
     # Save html as artifact
     - name: Save book html as artifact for viewing
