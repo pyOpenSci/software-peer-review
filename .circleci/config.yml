@@ -8,16 +8,16 @@ jobs:
       - run:
           name: setup environment
           command: |
-            pip install -r requirements.txt
+            pip install --upgrade pip
+            pip install nox
             pip list
       - run:
-          name: Build Site Markdown
-          command: jupyter-book build .
+          name: Build book html 
+          command: nox -s docs
 
       - store_artifacts:
           path: _build/html
           destination: html
-
 
 # Tell CircleCI to use this workflow when it builds the site
 workflows:
