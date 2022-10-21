@@ -118,3 +118,44 @@ submitting and reviewing packages, as well as our
 [Code of Conduct](open-source-software-peer-review/code-of-conduct). The 
 [Aims and Scope](open-source-software-peer-review/aims-and-scope) section 
 lays out what types of packages we review.
+
+
+
+## Build out the toctree hidden
+
+```{toctree}
+:hidden:
+:caption: About peer review
+
+open-source-software-peer-review/intro  
+open-source-software-peer-review/aims-and-scope
+open-source-software-peer-review/policies-guidelines
+open-source-software-peer-review/code-of-conduct
+
+```
+
+```{toctree}
+:hidden:
+:caption: Peer Review Guides
+
+open-source-software-submissions/intro
+open-source-software-submissions/author-guide
+open-source-software-submissions/reviewer-guide
+open-source-software-submissions/editors-guide
+open-source-software-submissions/editor-in-chief-guide
+open-source-software-submissions/onboarding-guide
+:title: title here
+```
+
+```{toctree}
+:hidden:
+:caption: Authoring information
+
+authoring/index
+authoring/overview
+authoring/collaboration
+authoring/tools-for-developers 
+authoring/testing 
+authoring/release
+
+```
