@@ -37,6 +37,15 @@ jobs:
     - name: Build book
       run: nox -s docs
 
+      # Push the book's HTML to github-pages
+    - name: Push to GitHub Pages 
+      # Only push if on main branch
+      if: github.ref == 'refs/heads/main'
+      uses: peaceiris/actions-gh-pages@v3.8.0
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: "./_build/html"
+
     # Test for bad links and ensure alt tags for usability
     - name: Check HTML using htmlproofer
       uses: chabad360/htmlproofer@master
@@ -53,11 +62,4 @@ jobs:
         path: |
           ./_build/html
 
-    # Push the book's HTML to github-pages
-    - name: Push to GitHub Pages 
-      # Only push if on main branch
-      if: github.ref == 'refs/heads/main'
-      uses: peaceiris/actions-gh-pages@v3.8.0
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: "./_build/html"
+
