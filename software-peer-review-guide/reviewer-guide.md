@@ -8,7 +8,7 @@ our editors or to post a question on our [discourse forum](https://pyopensci.dis
 ```
 
 Please be respectful and kind to the authors in your reviews. Our
-[code of conduct](../open-source-software-peer-review/code-of-conduct) is mandatory for everyone involved in our
+[code of conduct](../about-peer-review/code-of-conduct) is mandatory for everyone involved in our
 review process.
 
 ## A Guide for New Reviewers

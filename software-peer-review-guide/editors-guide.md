@@ -102,7 +102,7 @@ review lead and the current Editor in Chief.
 Follow the checklist below when serving as an editor for a package submitted to
 pyOpenSci for review.
 
-### 1. Tag the Submission
+### ✅ 1. First, tag the submission issue on GitHub
 
 Once you begin the review process as an editor:
 
@@ -110,7 +110,7 @@ Once you begin the review process as an editor:
 * Check the submission by the author to ensure that mandatory parts of the template are complete.
   - If elements are incomplete, direct the authors toward filling in any missing pieces.
 
-### 2. Complete Editor Checks
+### ✅ 2. Respond to the submitter in the GitHub issue
 
 Once the above is complete, you are ready to add editor checks to the issue.
 The goal of this step is to ensure that the package is ready to be reviewed.
@@ -121,21 +121,9 @@ reviewer time effectively.
 
 - In this comment, you will add reviewers and the review deadline date once you have reviewers assigned (see below).
 
-```{note}
-As a part of the editor checks, please be sure that you, the package submitter and both 
-reviewers fill our our editor/ reviewer/ maintainer survey. The link can be found on the review issue at the top for all reviews submitted after September 2022. 
-```
 
 ```markdown
 ## Editor checks:
-
-- [ ] **Fit**: The package meets criteria for [fit](https://www.pyopensci.org/contributing-guide/open-source-software-peer-review/aims-and-scope.html#package-categories) and [overlap](https://www.pyopensci.org/contributing-guide/open-source-software-peer-review/aims-and-scope.html#package-overlap).
-- [ ] **Automated tests:** Package has a testing suite and is tested using CI (e.g. GitHub Actions, Travis-CI, CircleCI, etc).
-- [ ] **Documentation:** Package has documentation setup (ReadTheDocs, JupyterBook, website,etc.).
-- [ ] **License:** The package has an OSI accepted license
-- [ ] **Repository:** The repository link resolves correctly
-- [ ] **Archive** Zenodo. (may be post-review): The repository is archived somewhere outside of GitHub. We suggest using Zenodo and created releases for this purpose.
-- [ ] **Version** (may be post-review) Does the release version given match the GitHub release (v1.0.0)?
 
 ---
 
@@ -145,7 +133,7 @@ for PyOpenSci! <Add any additional banter here that you wish..>
 
 The following resources will help you complete your review:
 
-1. Here is the **[reviewers guide](https://www.pyopensci.org/contributing-guide/open-source-software-submissions/reviewer-guide.html)**. This guide contains all of the steps and information needed to complete your review.
+1. Here is the **[reviewers guide](https://www.pyopensci.org/contributing-guide/peer-review-guides/reviewer-guide.html)**. This guide contains all of the steps and information needed to complete your review.
 2. Here is the **[review template](https://www.pyopensci.org/contributing-guide/appendices/templates.html#review-template)** that you will need to fill out and submit
 here as a comment, once your review is complete.
 
@@ -157,8 +145,8 @@ Due date:
 ```
 
 - Fill out the Editor Checks section for `Fit`, `Automated Tests`, `Documentation`, `License`, and `Repository`.
-- Check against policies for [package fit within identified categories for the pyOpenSci ecosystem](../open-source-software-peer-review/aims-and-scope.html#package-categories).
-- Check against policies for [package overlap of functionality with other packages](../open-source-software-peer-review/aims-and-scope.html#package-overlap).
+- Check against policies for [package fit within identified categories for the pyOpenSci ecosystem](../about-peer-review/aims-and-scope.html#package-categories).
+- Check against policies for [package overlap of functionality with other packages](../about-peer-review/aims-and-scope.html#package-overlap).
 
 If the package does not fit the pyOpenSci scope and policies and needs to be
 rejected, see
@@ -215,7 +203,7 @@ website, Twitter).
 * Has not reviewed a package for us within the last 6 months.
 * Some package development / contribution experience.
 * Some domain experience in the field of the package or data source.
-* No [conflicts of interest](../open-source-software-peer-review/policies-and-guidelines.html#conflict-of-interest).
+* No [conflicts of interest](../about-peer-review/policies-and-guidelines.html#conflict-of-interest).
 
 Try to balance your sense of the potential reviewer’s experience against the complexity of the package.
 

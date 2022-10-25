@@ -1,14 +1,11 @@
 # Welcome to The pyOpenSci Community Guidebook!
 
-
 ::::{grid} 2
 :reverse:
-
 
 :::{grid-item}
 :columns: 4
 :class: sd-m-auto
-
 
 :::  
 
@@ -46,18 +43,21 @@ Get Involved (Maybe a link to a get involved page)
 :gutter: 3
 
 :::{grid-item-card}
-:link: open-source-software-peer-review/aims-and-scope
+:link: about-peer-review/aims-and-scope
+
 :link-type: doc
 :class-header: bg-light
 
 Open Peer Review ✏️
 ^^^
-Get a basic overview of our open peer review process for Python open source
+Get a basic overview of our open peer review process for Python scientific open source
+
 software.
 :::
 
 :::{grid-item-card}
-:link: open-source-software-submissions/reviewer-guide
+:link: software-peer-review-guide/reviewer-guide
+
 :link-type: doc
 :class-header: bg-light
 
@@ -68,7 +68,8 @@ Learn how to submit a package for peer review with pyOpenSci.
 :::
 
 :::{grid-item-card}
-:link: open-source-software-submissions/editors-guide
+
+:link: about-peer-review/editors-guide
 :link-type: doc
 :class-header: bg-light
 
@@ -79,7 +80,8 @@ This guide will walk you through the editorial process.
 :::
 
 :::{grid-item-card}
-:link: open-source-software-submissions/reviewer-guide
+
+:link: software-peer-review-guide/reviewer-guide
 :link-type: doc
 :class-header: bg-light
 
@@ -115,11 +117,19 @@ writing and preparing your package.
 ### 2. Peer Review Process
 Outlines the pyOpenSci peer review process. This includes guidelines for 
 submitting and reviewing packages, as well as our 
-[Code of Conduct](open-source-software-peer-review/code-of-conduct). The 
-[Aims and Scope](open-source-software-peer-review/aims-and-scope) section 
+
+[Code of Conduct](about-peer-review/code-of-conduct). The 
+[Aims and Scope](about-peer-review/aims-and-scope) section 
 lays out what types of packages we review.
 
-
+<!-- 
+Removing button for the time being
+```{button-ref} start/your-first-book
+:ref-type: doc
+:color: primary
+:class: sd-rounded-pill float-left
+Get Involved (Maybe a link to a get involved page)
+``` -->
 
 ## Build out the toctree hidden
 
@@ -127,10 +137,10 @@ lays out what types of packages we review.
 :hidden:
 :caption: About peer review
 
-open-source-software-peer-review/intro  
-open-source-software-peer-review/aims-and-scope
-open-source-software-peer-review/policies-guidelines
-open-source-software-peer-review/code-of-conduct
+about-peer-review/intro  
+about-peer-review/aims-and-scope
+about-peer-review/policies-guidelines
+about-peer-review/code-of-conduct
 
 ```
 
@@ -138,12 +148,13 @@ open-source-software-peer-review/code-of-conduct
 :hidden:
 :caption: Peer Review Guides
 
-open-source-software-submissions/intro
-open-source-software-submissions/author-guide
-open-source-software-submissions/reviewer-guide
-open-source-software-submissions/editors-guide
-open-source-software-submissions/editor-in-chief-guide
-open-source-software-submissions/onboarding-guide
+software-peer-review-guide/intro
+software-peer-review-guide/author-guide
+software-peer-review-guide/reviewer-guide
+software-peer-review-guide/editors-guide
+software-peer-review-guide/editor-in-chief-guide
+software-peer-review-guide/onboarding-guide
+
 :title: title here
 ```
 
@@ -159,3 +170,4 @@ authoring/testing
 authoring/release
 
 ```
+
