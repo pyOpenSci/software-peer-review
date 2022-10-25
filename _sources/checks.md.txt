@@ -1,0 +1,15 @@
+- [ ] **Fit**: The package meets criteria for [fit](https://www.pyopensci.org/contributing-guide/about-peer-review/aims-and-scope.html#package-categories) and [overlap](https://www.pyopensci.org/contributing-guide/about-peer-review/aims-and-scope.html#package-overlap).
+- [ ] **Documentation** The package has sufficient documentation available online (README, sphinx docs) to allow us to evaluate package function and scope *without installing the package*. This includes:
+  - [ ] Get started vignettes or tutorials that help a user understand how to use the package and what it can do for them
+  - [ ] API documentation - this includes clearly written doc strings with variables defined using a standard docstring format
+  - [ ] README that clearly articulates the function of the package
+  - [ ] Contributing documentation that details how to install a development environment and how to contribute to the package
+- [ ] **Issue Header Information**: All of the required issue header information is contained within the top of the issue.
+- [ ] **Automated tests:** Package has a testing suite and is tested via GitHub actions or another Continuous Integration service.
+- [ ] **License:** The package has an OSI accepted license
+- [ ] **Repository:** The repository link resolves correctly
+- [ ] **README:** The package has a README with clear explanation of what the packages does and instructions on how to install it along with development instructions. 
+- [ ] **Contributing statement:** The package has a `contributing.md` file that details how to contribute to the package. 
+- [ ] **Package overlap:** That package doesn't fully overlap with functionality of other packages that have already been submitted to pyOpenSci
+- [ ] **Archive** (JOSS only, may be post-review): The repository DOI resolves correctly
+- [ ] **Version** (JOSS only, may be post-review): Does the release version given match the GitHub release (v1.0.0)?

@@ -1,0 +1,760 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>How Peer Review Works &#8212; pyOpenSci Peer Review Guide</title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script src="../_static/design-tabs.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+<script async="" src="https://www.google-analytics.com/analytics.js"></script>
+<script>
+                        window.ga = window.ga || function () {
+                            (ga.q = ga.q || []).push(arguments) };
+                        ga.l = +new Date;
+                        ga('create', 'UA-141260825-1', 'auto');
+                        ga('set', 'anonymizeIp', true);
+                        ga('send', 'pageview');
+                    </script>
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint">🚧 UNDER CONSTRUCTION: this guide is under heavy construction right now. 🚧</div>
+<div class="header header-item noprint"></div>
+
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">pyOpenSci Peer Review Guide</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  About peer review
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="aims-and-scope.html">
+   pyOpenSci Open Peer Review Goals and Scope
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="policies-guidelines.html">
+   Peer Review Guidelines &amp; Policies
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="code-of-conduct.html">
+   Community Code of Conduct
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Peer Review Guides
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../software-peer-review-guide/intro.html">
+   An Overview Of the Peer Review Process
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../software-peer-review-guide/author-guide.html">
+   pyOpenSci Review Guide for Python Open Source Package Authors
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../software-peer-review-guide/reviewer-guide.html">
+   Guide for Reviewers
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../software-peer-review-guide/editors-guide.html">
+   Guide for Editors
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../software-peer-review-guide/editor-in-chief-guide.html">
+   Editor in Chief Guide
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../software-peer-review-guide/onboarding-guide.html">
+   Onboarding New Editors and Reviewers
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Authoring information
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../authoring/index.html">
+   Python Packaging Guide for Maintainers Submitting to PyOpenSci
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../authoring/overview.html">
+   Overview
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../authoring/collaboration.html">
+   Collaboration Guide
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../authoring/release.html">
+   Releasing a package
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+            <div class="navbar_extra_footer">
+            Theme by the <a href="https://ebp.jupyterbook.org">Executable Book Project</a>
+            </div>
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+<a href="https://github.com/pyopensci/governance"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="bottom"
+title="Source repository"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+
+</a>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="../_sources/about-peer-review/intro.md.txt"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.md</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#why-do-we-need-pyopensci-peer-review">
+   Why do we need pyOpenSci peer review?
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#how-is-pyopensci-different-from-joss-and-other-review-processes">
+     How is pyOpenSci different from JOSS and other review processes?
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#why-submit-your-package-to-pyopensci-for-review">
+   Why submit your package to pyOpenSci for review?
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#why-do-we-need-peer-review-for-python-scientific-software">
+   Why do we need peer review for Python scientific software?
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#peer-review-helps-maintain-consistent-open-source-software-quality">
+     Peer review helps maintain consistent open source software quality
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#a-truly-community-founded-review-process">
+     A truly community-founded review process
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#how-do-i-know-a-python-package-is-pyopensci-vetted">
+     How do I know a python package is pyOpenSci vetted?
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#how-do-reviews-work">
+     How do reviews work?
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#github-tools-including-issue-submission-templates-and-labels-help-us-streamline-peer-review">
+     GitHub tools including issue submission templates and labels help us streamline peer review
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#why-review-a-package-for-pyopensci">
+   Why review a package for pyOpenSci?
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#volunteer-to-review-for-us">
+     Volunteer to review for us
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#why-are-reviews-open">
+   Why are reviews open?
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#if-you-submit-to-pyopensci-you-can-also-be-accepted-by-joss">
+     If you submit to pyOpenSci You Can Also Be Accepted by JOSS
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#pyopensci-and-joss">
+   pyOpenSci and JOSS
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#why-two-review-processes-joss-and-pyopensci">
+     Why Two Review Processes JOSS and pyOpenSci?
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </nav>
+</div>
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>How Peer Review Works</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#why-do-we-need-pyopensci-peer-review">
+   Why do we need pyOpenSci peer review?
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#how-is-pyopensci-different-from-joss-and-other-review-processes">
+     How is pyOpenSci different from JOSS and other review processes?
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#why-submit-your-package-to-pyopensci-for-review">
+   Why submit your package to pyOpenSci for review?
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#why-do-we-need-peer-review-for-python-scientific-software">
+   Why do we need peer review for Python scientific software?
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#peer-review-helps-maintain-consistent-open-source-software-quality">
+     Peer review helps maintain consistent open source software quality
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#a-truly-community-founded-review-process">
+     A truly community-founded review process
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#how-do-i-know-a-python-package-is-pyopensci-vetted">
+     How do I know a python package is pyOpenSci vetted?
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#how-do-reviews-work">
+     How do reviews work?
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#github-tools-including-issue-submission-templates-and-labels-help-us-streamline-peer-review">
+     GitHub tools including issue submission templates and labels help us streamline peer review
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#why-review-a-package-for-pyopensci">
+   Why review a package for pyOpenSci?
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#volunteer-to-review-for-us">
+     Volunteer to review for us
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#why-are-reviews-open">
+   Why are reviews open?
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#if-you-submit-to-pyopensci-you-can-also-be-accepted-by-joss">
+     If you submit to pyOpenSci You Can Also Be Accepted by JOSS
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#pyopensci-and-joss">
+   pyOpenSci and JOSS
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#why-two-review-processes-joss-and-pyopensci">
+     Why Two Review Processes JOSS and pyOpenSci?
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
+              <div>
+                
+  <section id="how-peer-review-works">
+<h1>How Peer Review Works<a class="headerlink" href="#how-peer-review-works" title="Permalink to this headline">#</a></h1>
+<section id="why-do-we-need-pyopensci-peer-review">
+<h2>Why do we need pyOpenSci peer review?<a class="headerlink" href="#why-do-we-need-pyopensci-peer-review" title="Permalink to this headline">#</a></h2>
+<p>The open peer review process lead by pyOpenSci address several issues in the scientific Python
+ecosystem:</p>
+<ol class="arabic simple">
+<li><p><a class="reference external" href="https://pypi.org/search/?q=twitter">Multiple packages that have overlapping functionality. See this example on <code class="docutils literal notranslate"><span class="pre">PyPI</span></code></a></p></li>
+<li><p>Packages that have varying levels of maintenance yet are used by the community to support open science workflows.</p></li>
+<li><p>Packages that are well-maintained and used but then maintenance comes to a halt when the maintainer needs to step down (burn-out is common and understandable).</p></li>
+<li><p>Packages using varying types of packaging and documentation approaches making it more difficult to contribute.</p></li>
+<li><p>Packages that are not documented enough to support:</p>
+<ul class="simple">
+<li><p>Contributions from others</p></li>
+<li><p>Directions on how to get started using the package functionality (quick start vignettes or tutorials)</p></li>
+</ul>
+</li>
+</ol>
+<ul class="simple">
+<li><p>Packages that are missing OSI licensing and citation information</p></li>
+</ul>
+<section id="how-is-pyopensci-different-from-joss-and-other-review-processes">
+<h3>How is pyOpenSci different from JOSS and other review processes?<a class="headerlink" href="#how-is-pyopensci-different-from-joss-and-other-review-processes" title="Permalink to this headline">#</a></h3>
+<p>pyOpenSci is different from other review processes
+out there because:</p>
+<ol class="arabic simple">
+<li><p>We specifically review to community accepted python packaging standards</p></li>
+<li><p>We consider accepted packages as vetted and a part of our ecosystem. We recommend those packages to others. If the maintainer needs to step down, we will ensure a new maintainer takes over OR sunset and remove the package from our ecosystem.</p></li>
+</ol>
+<p>The JOSS review process is about publication. There, you will receive a DOI that is cross-ref
+enabled. However JOSS will not followup with the maintainer to ensure that the package is maintained over time.</p>
+</section>
+</section>
+<section id="why-submit-your-package-to-pyopensci-for-review">
+<h2>Why submit your package to pyOpenSci for review?<a class="headerlink" href="#why-submit-your-package-to-pyopensci-for-review" title="Permalink to this headline">#</a></h2>
+<p>There is a lot to gain from submitting your package to pyOpenSci.
+But of course, before you submit, please be sure to read the policies
+… to ensure pyOpenSci is the right fit for you.</p>
+<p>First, and foremost, we hope you submit your package for review <strong>because you value the feedback</strong>.  We aim to provide useful feedback to package authors and for our review process to be open, non-adversarial, and focused on improving software quality.</p>
+<ul class="simple">
+<li><p>Once your package is accepted, your package will receive <strong>support from pyOpenSci members</strong>. You’ll retain ownership and control of your package. However, if you need help with ongoing maintenance issues, we will try to find people who can help.</p></li>
+<li><p>pyOpenSci will <strong>promote your package</strong> through our:</p>
+<ul>
+<li><p><a class="reference external" href="https://pyopensci.org/python-packages/">webpage</a>,</p></li>
+<li><p><a class="reference external" href="https://wwwpyopensci.org/blog/">blog</a>, and</p></li>
+<li><p><a class="reference external" href="https://twitter.com/pyopensci">social media account</a>.</p></li>
+</ul>
+</li>
+<li><p>pyOpenSci packages that are in scope for the <a class="reference external" href="https://joss.theoj.org/">Journal of Open-Source Software</a> and add the necessary accompanying short <code class="docutils literal notranslate"><span class="pre">paper.md</span></code> file, can, at the discretion of JOSS editors, benefit from a fast-tracked review process. <span class="xref myst">Read more about our partnership with JOSS here</span>.</p></li>
+</ul>
+</section>
+<section id="why-do-we-need-peer-review-for-python-scientific-software">
+<h2>Why do we need peer review for Python scientific software?<a class="headerlink" href="#why-do-we-need-peer-review-for-python-scientific-software" title="Permalink to this headline">#</a></h2>
+<p>pyOpenSci’s <a class="reference external" href="https://pyopensci.org/python-packages/">suite of packages</a> are fully
+contributed by community members with a great diversity of skills. This diversity
+of developer backgrounds results in a range of quality associated with the suite
+of tools available to process scientific data.</p>
+<section id="peer-review-helps-maintain-consistent-open-source-software-quality">
+<h3>Peer review helps maintain consistent open source software quality<a class="headerlink" href="#peer-review-helps-maintain-consistent-open-source-software-quality" title="Permalink to this headline">#</a></h3>
+<p>Peer review of python tools that support science is critical to enforcing
+quality and usability standards. All pyOpenSci packages contributed by the
+community undergo a transparent, constructive, non adversarial and open peer
+review process. The goal of that process is to enforce commonly accepted standards.
+These standards include technical structure of the package, usability of the
+package, documenting package functionality in a way that is accessible
+to all levels of users and proper licensing and citation information.</p>
+</section>
+<section id="a-truly-community-founded-review-process">
+<h3>A truly community-founded review process<a class="headerlink" href="#a-truly-community-founded-review-process" title="Permalink to this headline">#</a></h3>
+<p>Our peer review process is run by volunteer members of the Python scientific
+community:</p>
+<ul class="simple">
+<li><p>Editors manage the incoming package review submissions and ensure
+reviews move forward progress of submissions;</p></li>
+<li><p>authors create, submit and improve their package;</p></li>
+<li><p>Reviewers, two per submission, examine the software code and user experience.</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><a class="reference external" href="https://www.numfocus.org/blog/how-ropensci-uses-code-review-to-promote-reproducible-science/">This blog post</a> written by editors from our partner organization, rOpenSci, is a good introduction to pyOpenSci software peer review</p>
+</div>
+</section>
+<section id="how-do-i-know-a-python-package-is-pyopensci-vetted">
+<h3>How do I know a python package is pyOpenSci vetted?<a class="headerlink" href="#how-do-i-know-a-python-package-is-pyopensci-vetted" title="Permalink to this headline">#</a></h3>
+<p>You can identify pyOpenSci packages that have been peer-reviewed by the green
+“peer-reviewed” badge at the top their README, <span class="xref myst"><img alt="pyOpenSci" src="https://tinyurl.com/y22nb8up" /></span> linking to the specific issue
+where the tool was reviewed. <a class="reference external" href="https://github.com/hpi-dhc/devicely">See this example from devicely, one of our packages</a>.</p>
+</section>
+<section id="how-do-reviews-work">
+<h3>How do reviews work?<a class="headerlink" href="#how-do-reviews-work" title="Permalink to this headline">#</a></h3>
+<p>We use GitHub for our entire review process. We like GitHub because:</p>
+<ul class="simple">
+<li><p>It’s free to create an account</p></li>
+<li><p>It facilitates collaboration and supports community around a package</p></li>
+<li><p>It facilitates open discussion via issues</p></li>
+<li><p>It supports version control</p></li>
+<li><p>Numerous packages store their code bases on GitHub</p></li>
+</ul>
+<p>We make the most of <a class="reference external" href="https://github.com/">GitHub</a>infrastructure in
+our review process.</p>
+<p>Each package review is contained within an issue in the <a class="reference external" href="https://github.com/pyopensci/software-review/">pyOpenSci/software-review GitHub repository</a>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>For instance, click <a class="reference external" href="https://github.com/ropensci/software-review/issues/24">here</a> to read the review thread from an rOpenSci review of the <code class="docutils literal notranslate"><span class="pre">ropenaq</span></code> package. Note that the  process is an ongoing conversation until the package is accepted. Two external reviews are important milestones in the review process.</p>
+</div>
+</section>
+<section id="github-tools-including-issue-submission-templates-and-labels-help-us-streamline-peer-review">
+<h3>GitHub tools including issue submission templates and labels help us streamline peer review<a class="headerlink" href="#github-tools-including-issue-submission-templates-and-labels-help-us-streamline-peer-review" title="Permalink to this headline">#</a></h3>
+<p>We use GitHub features including:</p>
+<ul class="simple">
+<li><p>issue templates (as submission templates), and</p></li>
+<li><p>labelling issues to track progress of submissions (from editor checks to approval).</p></li>
+<li><p>Project boards to track help wanted items</p></li>
+</ul>
+<p>All of this functionality supports a streamlined and open peer review
+process.</p>
+</section>
+</section>
+<section id="why-review-a-package-for-pyopensci">
+<h2>Why review a package for pyOpenSci?<a class="headerlink" href="#why-review-a-package-for-pyopensci" title="Permalink to this headline">#</a></h2>
+<p>We hope you choose to review <strong>to give back to the rOpenSci and scientific communities.</strong>  Our mission to expand the ability to efficiently use scientific data and promote a culture of open reproducible is only possible through the volunteer efforts of community members like you.</p>
+<ul class="simple">
+<li><p>Peer review is a two-way conversation. By reviewing packages, you’ll have the chance to <strong>continue to learn development practices from authors and other reviewers</strong>.</p></li>
+<li><p>The open nature of our review process allows you to <strong>network and meet colleagues and collaborators</strong> through the review process. Our community is friendly and filled with supportive members expert in Python package development, a diversity of science domains and computer science.</p></li>
+</ul>
+<section id="volunteer-to-review-for-us">
+<h3>Volunteer to review for us<a class="headerlink" href="#volunteer-to-review-for-us" title="Permalink to this headline">#</a></h3>
+<ul class="simple">
+<li><p>To volunteer to be one of our reviewers, fill out <a class="reference external" href="https://forms.gle/9dv99gri6XKNU8177">this short form</a>. In the form you will provide your contact information and areas of expertise. We are always looking for more reviewers with both general package-writing experience and domain expertise in the fields where packages are used. Some of our reviewers focus on package usability and documentation. This allows you to review even if you don’t have strong technical background. We will pair you with a second reviewer that can focus more on the technical aspect of the review.</p></li>
+</ul>
+</section>
+</section>
+<section id="why-are-reviews-open">
+<h2>Why are reviews open?<a class="headerlink" href="#why-are-reviews-open" title="Permalink to this headline">#</a></h2>
+<p>Our reviewing threads are public. Authors, reviewers, and editors all know
+each other’s identities. The broader community can view or even participate
+in the conversation as it happens. This provides an incentive to be thorough
+and provide non-adversarial, constructive reviews.</p>
+<p>It also has the benefit of building a community. Participants have the
+opportunity to meaningfully network with new peers, and new collaborations
+have emerged via ideas spawned during the review process.</p>
+<p>We are aware that open systems can have drawbacks. For instance, in
+traditional academic review, <a class="reference external" href="https://www.sciencedirect.com/science/article/pii/S0169534707002704">double-blind peer review can increase representation of female authors</a>,
+suggesting bias in non-blind reviews.</p>
+<p>It is also possible reviewers are less critical in open review. However, we
+believe that the openness of the review conversation provides a check on
+review quality and bias; it’s harder to inject unsupported or subjective
+comments in public and without the cover of anonymity.</p>
+<blockquote>
+<div><p>Ultimately, we
+believe that having direct and public communication between authors and
+reviewers improves quality and fairness of reviews.</p>
+</div></blockquote>
+<section id="if-you-submit-to-pyopensci-you-can-also-be-accepted-by-joss">
+<h3>If you submit to pyOpenSci You Can Also Be Accepted by JOSS<a class="headerlink" href="#if-you-submit-to-pyopensci-you-can-also-be-accepted-by-joss" title="Permalink to this headline">#</a></h3>
+<p>We have a strong partnership with JOSS (Journal of Open Source Software); JOSS
+accepts our review as their own. If your package is within JOSS’ scope you can
+then submit it to JOSS, linking to the accepted pyOpenSci review. Note that
+JOSS won’t accept packages that are don’t have research applications such as
+API wrappers. JOSS will then accept our review (you will not need a second
+review with JOSS!). JOSS will review your paper and you will get a JOSS badge
+to add next to your pyOpenSci badge of review. And a cross-ref enabled DOI.</p>
+</section>
+</section>
+<section id="pyopensci-and-joss">
+<h2>pyOpenSci and JOSS<a class="headerlink" href="#pyopensci-and-joss" title="Permalink to this headline">#</a></h2>
+<blockquote>
+<div><p>You don’t have to chose between pyOpenSci and JOSS; You can submit your package to both.</p>
+</div></blockquote>
+<p>pyOpenSci and <a class="reference external" href="https://joss.theoj.org/">the Journal of Open Source Software (JOSS)</a>
+are complementary, partner organizations; and you don’t have to chose one or the
+other! After a package to pyOpenSci has been reviewed and accepted by pyOpenSci
+you can chose to also register it with JOSS. JOSS has <a class="reference external" href="https://joss.readthedocs.io/en/latest/review_criteria.html">more limited scope</a>  of the
+for packages that it will review. For instance while pyOpenSci will review and
+accept API wrappers, JOSS won’t.</p>
+<p>If your package is accepted by pyOpenSci and in scope for JOSS, JOSS will fast
+track your package through their process given it was already reviewed by us.
+Once accepted by JOSS, you now have both a pyOpenSci acceptance and one by JOSS.
+Joss will then give you a cross-ref supported DOI for citation.</p>
+<section id="why-two-review-processes-joss-and-pyopensci">
+<h3>Why Two Review Processes JOSS and pyOpenSci?<a class="headerlink" href="#why-two-review-processes-joss-and-pyopensci" title="Permalink to this headline">#</a></h3>
+<p>the pyOpenSci review process is different from that of JOSS in a few ways:</p>
+<ul class="simple">
+<li><p>pyOpenSci is specific to the Python community and thus will enforce community specific python specific standards.</p></li>
+<li><p>pyOpenSci places heavy emphasis on documentation and usability in our reviews and associated standardization of both.</p></li>
+<li><p>pyOpenSci builds community around and visibility for it’s tools.</p></li>
+<li><p>pyOpenSci supports long term tool maintenance.</p></li>
+</ul>
+<p>JOSS reviews are <a class="reference external" href="https://joss.readthedocs.io/en/latest/review_criteria.html">more limited in scope</a> compared to pyOpenSci and the
+<a class="reference external" href="https://joss.readthedocs.io/en/latest/review_criteria.html">submission criteria</a>
+are, in places, less stringent than those of pyOpenSci.</p>
+</section>
+</section>
+</section>
+
+
+              </div>
+              
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+</div>
+            </footer>
+        </div>
+    </div>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By Leah Wasser<br/>
+  
+      &copy; Copyright 2022, pyOpenSci.<br/>
+</p>
+        </footer>
+    </div>
+    
+</div>
+
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
+
+  </body>
+</html>

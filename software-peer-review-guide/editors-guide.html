@@ -1,0 +1,1031 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Guide for Editors &#8212; pyOpenSci Peer Review Guide</title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script src="../_static/design-tabs.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Editor in Chief Guide" href="editor-in-chief-guide.html" />
+    <link rel="prev" title="Guide for Reviewers" href="reviewer-guide.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+<script async="" src="https://www.google-analytics.com/analytics.js"></script>
+<script>
+                        window.ga = window.ga || function () {
+                            (ga.q = ga.q || []).push(arguments) };
+                        ga.l = +new Date;
+                        ga('create', 'UA-141260825-1', 'auto');
+                        ga('set', 'anonymizeIp', true);
+                        ga('send', 'pageview');
+                    </script>
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint">🚧 UNDER CONSTRUCTION: this guide is under heavy construction right now. 🚧</div>
+<div class="header header-item noprint"></div>
+
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">pyOpenSci Peer Review Guide</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  About peer review
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../about-peer-review/aims-and-scope.html">
+   pyOpenSci Open Peer Review Goals and Scope
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../about-peer-review/policies-guidelines.html">
+   Peer Review Guidelines &amp; Policies
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../about-peer-review/code-of-conduct.html">
+   Community Code of Conduct
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Peer Review Guides
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="intro.html">
+   An Overview Of the Peer Review Process
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="author-guide.html">
+   pyOpenSci Review Guide for Python Open Source Package Authors
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="reviewer-guide.html">
+   Guide for Reviewers
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Guide for Editors
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="editor-in-chief-guide.html">
+   Editor in Chief Guide
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="onboarding-guide.html">
+   Onboarding New Editors and Reviewers
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Authoring information
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../authoring/index.html">
+   Python Packaging Guide for Maintainers Submitting to PyOpenSci
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../authoring/overview.html">
+   Overview
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../authoring/collaboration.html">
+   Collaboration Guide
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../authoring/release.html">
+   Releasing a package
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+            <div class="navbar_extra_footer">
+            Theme by the <a href="https://ebp.jupyterbook.org">Executable Book Project</a>
+            </div>
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+<a href="https://github.com/pyopensci/governance"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="bottom"
+title="Source repository"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+
+</a>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="../_sources/software-peer-review-guide/editors-guide.md.txt"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.md</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#guest-editors">
+   Guest Editors
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#editors-and-the-editorial-board">
+   Editors and the Editorial Board
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#what-does-an-editor-do-responsibilities">
+   What does an editor do? (Responsibilities)
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#supporting-other-reviews">
+     Supporting other reviews
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#editor-in-chief-rotation">
+     Editor in chief rotation
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#how-long-does-an-editor-serve-on-the-editorial-board">
+   How long does an editor serve on the editorial board?
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#get-started-with-leading-a-package-review-checklist">
+   Get Started With Leading a Package Review – Checklist
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#first-tag-the-submission-issue-on-github">
+     ✅ 1. First, tag the submission issue on GitHub
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#respond-to-the-submitter-in-the-github-issue">
+     ✅ 2. Respond to the submitter in the GitHub issue
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#identify-reviewers">
+     3. Identify Reviewers
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#where-to-look-for-reviewers">
+       Where to Look for Reviewers?
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#criteria-for-choosing-reviewers">
+       Criteria for Choosing Reviewers
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#onboard-reviewers">
+     4. Onboard Reviewers
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#editor-responsibilities-during-the-review">
+   Editor Responsibilities During the Review:
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#general-review-guidelines">
+     General Review guidelines
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#editor-responsibilities-after-the-review">
+   Editor Responsibilities After the Review:
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#instructions-for-submitting-to-joss">
+     Instructions for Submitting to JOSS:
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#last-steps-before-closing-the-review-issue">
+       Last Steps Before Closing the Review Issue
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#optional-move-package-to-pyopensci-organization-beta">
+       Optional - Move Package to PyOpenSci Organization (BETA)
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </nav>
+</div>
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Guide for Editors</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#guest-editors">
+   Guest Editors
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#editors-and-the-editorial-board">
+   Editors and the Editorial Board
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#what-does-an-editor-do-responsibilities">
+   What does an editor do? (Responsibilities)
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#supporting-other-reviews">
+     Supporting other reviews
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#editor-in-chief-rotation">
+     Editor in chief rotation
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#how-long-does-an-editor-serve-on-the-editorial-board">
+   How long does an editor serve on the editorial board?
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#get-started-with-leading-a-package-review-checklist">
+   Get Started With Leading a Package Review – Checklist
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#first-tag-the-submission-issue-on-github">
+     ✅ 1. First, tag the submission issue on GitHub
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#respond-to-the-submitter-in-the-github-issue">
+     ✅ 2. Respond to the submitter in the GitHub issue
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#identify-reviewers">
+     3. Identify Reviewers
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#where-to-look-for-reviewers">
+       Where to Look for Reviewers?
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#criteria-for-choosing-reviewers">
+       Criteria for Choosing Reviewers
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#onboard-reviewers">
+     4. Onboard Reviewers
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#editor-responsibilities-during-the-review">
+   Editor Responsibilities During the Review:
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#general-review-guidelines">
+     General Review guidelines
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#editor-responsibilities-after-the-review">
+   Editor Responsibilities After the Review:
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#instructions-for-submitting-to-joss">
+     Instructions for Submitting to JOSS:
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#last-steps-before-closing-the-review-issue">
+       Last Steps Before Closing the Review Issue
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#optional-move-package-to-pyopensci-organization-beta">
+       Optional - Move Package to PyOpenSci Organization (BETA)
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
+              <div>
+                
+  <section id="guide-for-editors">
+<h1>Guide for Editors<a class="headerlink" href="#guide-for-editors" title="Permalink to this headline">#</a></h1>
+<p>Thank you for your time in serving as an editor for a PyOpenSci package! Below you will find some
+information about the role that editors have in the
+pyOpenSci Python open source peer review process.</p>
+<p>Editors generally should:</p>
+<ul class="simple">
+<li><p>Have completed a review for <em>at least</em> 1 package for pyOpenSci.</p></li>
+<li><p>Have some experience with open source software that supports the scientific
+Python community, be it maintaining or contributing to packages or being involved
+in the community in some way.</p></li>
+</ul>
+<p>There are two types of editors in our peer review process:</p>
+<ul class="simple">
+<li><p>Guest editors and</p></li>
+<li><p>Full editors</p></li>
+</ul>
+<p>Both types of editors are considered a part of the editorial board for
+pyOpenSci. The major difference between guest and full editors is the time
+that they may or may not serve on the editorial board. And the support that
+they may need in serving as editor.</p>
+<section id="guest-editors">
+<h2>Guest Editors<a class="headerlink" href="#guest-editors" title="Permalink to this headline">#</a></h2>
+<p>A guest editor is is invited to lead a review in the
+case where we need specific expertise for a single review. We also consider editors who are
+performing their first review as guest editors as they may require more
+guidance or mentorship to complete the review (if they are new to our organization).</p>
+<p>New editors who wish to continue on as full editors for pyOpenSci may do so
+as long as both parties (pyOpenSci and the guest editors) feel like it is a
+healthy fit for them and the organization.</p>
+</section>
+<section id="editors-and-the-editorial-board">
+<h2>Editors and the Editorial Board<a class="headerlink" href="#editors-and-the-editorial-board" title="Permalink to this headline">#</a></h2>
+<p>A full editor most often someone who has experience with the
+pyOpenSci open package review process. A full editor ideally:</p>
+<ul class="simple">
+<li><p>has completed a review for <em>atleast</em> 1 package for pyOpenSci</p></li>
+<li><p>and/or has submitted and gone through the pyOpenSci package review process</p></li>
+<li><p>and/or has experience reviewing for an organization such as JOSS or rOpenSci.</p></li>
+</ul>
+<p>We also appreciate when editors have some experience working with or in the
+Python open source software community be it maintaining or contributing to
+packages, or being involved in the community in some way. This is certainly
+now a required however if you are interested in getting involved through
+pyOpenSci!</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>There could be certain situations when an editor is on boarded with less experience! The above are simply guidelines that we like to follow.</p>
+</div>
+</section>
+<section id="what-does-an-editor-do-responsibilities">
+<h2>What does an editor do? (Responsibilities)<a class="headerlink" href="#what-does-an-editor-do-responsibilities" title="Permalink to this headline">#</a></h2>
+<p>An editor is normally recruited by the Editor in Chief, other editors on the
+board, or the software review lead. <a class="reference internal" href="onboarding-guide.html"><span class="doc std std-doc">More on recruiting editors can be found here</span></a>.</p>
+<p>An editor is responsible for:</p>
+<ul class="simple">
+<li><p>Leading the review process for 3-4 packages a year</p></li>
+<li><p>Weighing in on group editorial decisions such as whether a package is in-scope, and making updates to the pyOpenSci policies.</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Decisions surrounding policy, updates to peer review guides and decisions
+on package review are generally made in the private <code class="docutils literal notranslate"><span class="pre">editorial-board</span></code> channel in the pyOpenSci Slack organization. Please make sure that you
+are comfortable with checking Slack regularly.</p>
+</div>
+<section id="supporting-other-reviews">
+<h3>Supporting other reviews<a class="headerlink" href="#supporting-other-reviews" title="Permalink to this headline">#</a></h3>
+<p>While editors are not charged with tracking other submissions that they are
+not leading, if you do notice an issue with another review, please feel free
+to raise that issue either directly with the editor for that review OR raise
+the issue in the editors channel in slack.</p>
+</section>
+<section id="editor-in-chief-rotation">
+<h3>Editor in chief rotation<a class="headerlink" href="#editor-in-chief-rotation" title="Permalink to this headline">#</a></h3>
+<p>The editorial board normally participates in the Editor in Chief rotation.
+You are eligible to enter this rotation after 3 months of serving on the board
+and/or after your first review as it makes sense. <a class="reference internal" href="editor-in-chief-guide.html"><span class="doc std std-doc">Read more about the roles
+and responsibilities of the Editor in Chief, here.</span></a></p>
+<p>If the Editor in Chief role feels like too much responsibility, an editor can also decline being a part of this rotation.</p>
+</section>
+</section>
+<section id="how-long-does-an-editor-serve-on-the-editorial-board">
+<h2>How long does an editor serve on the editorial board?<a class="headerlink" href="#how-long-does-an-editor-serve-on-the-editorial-board" title="Permalink to this headline">#</a></h2>
+<p>Ideally an editor can commit to serving for <strong>atleast</strong> one year as an editor
+for pyOpenSci. During that year we expect that you will lead review of 3-4 packages. However, we understand that in certain situations, an editor
+may need to step down before the 1 year time period has ended.</p>
+<p>We also understand that life gets busy and you are always welcome to “say no”
+to a review during a particularly busy time.</p>
+<p>We welcome
+editors staying on for longer as long as they are happy serving with us and
+they get along well with other members of the editorial board, the software
+review lead and the current Editor in Chief.</p>
+</section>
+<section id="get-started-with-leading-a-package-review-checklist">
+<h2>Get Started With Leading a Package Review – Checklist<a class="headerlink" href="#get-started-with-leading-a-package-review-checklist" title="Permalink to this headline">#</a></h2>
+<p>Follow the checklist below when serving as an editor for a package submitted to
+pyOpenSci for review.</p>
+<section id="first-tag-the-submission-issue-on-github">
+<h3>✅ 1. First, tag the submission issue on GitHub<a class="headerlink" href="#first-tag-the-submission-issue-on-github" title="Permalink to this headline">#</a></h3>
+<p>Once you begin the review process as an editor:</p>
+<ul class="simple">
+<li><p>Tag the submission issue with the <code class="docutils literal notranslate"><span class="pre">2/seeking-reviewer(s)</span></code> tag.</p></li>
+<li><p>Check the submission by the author to ensure that mandatory parts of the template are complete.</p>
+<ul>
+<li><p>If elements are incomplete, direct the authors toward filling in any missing pieces.</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="respond-to-the-submitter-in-the-github-issue">
+<h3>✅ 2. Respond to the submitter in the GitHub issue<a class="headerlink" href="#respond-to-the-submitter-in-the-github-issue" title="Permalink to this headline">#</a></h3>
+<p>Once the above is complete, you are ready to add editor checks to the issue.
+The goal of this step is to ensure that the package is ready to be reviewed.
+Following this step will ensure that we are using our volunteer
+reviewer time effectively.</p>
+<ul class="simple">
+<li><p>Add a comment to the issue that contains a copy of the Editor Checks template (see below) filled out with your response to the checks that begin the review.</p></li>
+<li><p>In this comment, you will add reviewers and the review deadline date once you have reviewers assigned (see below).</p></li>
+</ul>
+<div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span><span class="gu">## Editor checks:</span>
+
+---
+
+<span class="gu">## Editor comments</span>
+:wave: Hi <span class="ni">@reviewer</span>-one and <span class="ni">@reviewer</span>-two! Thank you for volunteering to review
+for PyOpenSci! &lt;Add any additional banter here that you wish..&gt;
+
+The following resources will help you complete your review:
+
+<span class="k">1.</span> Here is the <span class="gs">**[reviewers guide](https://www.pyopensci.org/contributing-guide/peer-review-guides/reviewer-guide.html)**</span>. This guide contains all of the steps and information needed to complete your review.
+<span class="k">2.</span> Here is the <span class="gs">**[review template](https://www.pyopensci.org/contributing-guide/appendices/templates.html#review-template)**</span> that you will need to fill out and submit
+here as a comment, once your review is complete.
+
+<span class="gu">Please get in touch with any questions or concerns! Your review is due: &lt;Insert deadline DATE HERE&gt;</span>
+<span class="gu">---</span>
+
+Reviewers:
+Due date:
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>Fill out the Editor Checks section for <code class="docutils literal notranslate"><span class="pre">Fit</span></code>, <code class="docutils literal notranslate"><span class="pre">Automated</span> <span class="pre">Tests</span></code>, <code class="docutils literal notranslate"><span class="pre">Documentation</span></code>, <code class="docutils literal notranslate"><span class="pre">License</span></code>, and <code class="docutils literal notranslate"><span class="pre">Repository</span></code>.</p></li>
+<li><p>Check against policies for <span class="xref myst">package fit within identified categories for the pyOpenSci ecosystem</span>.</p></li>
+<li><p>Check against policies for <span class="xref myst">package overlap of functionality with other packages</span>.</p></li>
+</ul>
+<p>If the package does not fit the pyOpenSci scope and policies and needs to be
+rejected, see
+<span class="xref myst">this section in the editor in chief guide</span>
+about how to respond.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>PyOpenSci has a partnership with JOSS where packages that are in-scope for JOSS
+can be directly accepted into the JOSS ecosystem through the pyOpenSci review.
+The JOSS component of the review happens after all of the review on the
+pyOpenSci side is complete and it begins through direct communication with a
+JOSS editor.</p>
+</div>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">Archive</span></code> and <code class="docutils literal notranslate"><span class="pre">Version</span></code> within the editor checks for JOSS may be filled out at the end of the review.</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">Archive</span></code> refers to an archive created through a release. You can use zenodo to
+create this archive and provide the package with a citable DOI. If zenodo is used, please add the zenodo link here.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Version</span></code> refers to the final package version that was accepted by pyOpenSci.
+This is the final version as presented after all feedback from the reviews has
+been considered and implemented.</p></li>
+</ul>
+</li>
+</ul>
+<p><strong>Important: If initial checks show major gaps, request changes before assigning reviewers.</strong></p>
+</section>
+<section id="identify-reviewers">
+<h3>3. Identify Reviewers<a class="headerlink" href="#identify-reviewers" title="Permalink to this headline">#</a></h3>
+<p>Within <strong>one week of completing the editor checks</strong>, identify two reviewers for
+the package.</p>
+<p>If you wish, you can use the <span class="xref myst">email template</span> to invite reviewers. When inviting reviewers, include something like “if I don’t hear from
+you in a week, I’ll assume you are unable to review,” so as to give a clear
+deadline when you’ll move on to looking for someone else to keep the processing
+moving.</p>
+<section id="where-to-look-for-reviewers">
+<h4>Where to Look for Reviewers?<a class="headerlink" href="#where-to-look-for-reviewers" title="Permalink to this headline">#</a></h4>
+<p>As a (guest) editor, you can find reviewers through:</p>
+<ul class="simple">
+<li><p>Suggestions made by the submitter(s) (although submitters may have a narrow view of the types of expertise needed. We suggest not using more than one of suggested reviewers).</p></li>
+<li><p>Authors of existing <a class="reference external" href="https://www.pyopensci.org/python-packages/">pyOpenSci packages</a>.</p></li>
+<li><p>Other <a class="reference external" href="https://www.pyopensci.org/contributors/">contributors to pyOpenSci</a>.</p></li>
+</ul>
+<p>When these sources of information are not enough:</p>
+<ul class="simple">
+<li><p>Ping other editors for ideas.</p></li>
+<li><p>Look for users of the package or the data source/upstream service the package connects to (via their opening issues in the repository, starring it, citing it in papers, talking about it on Twitter).</p></li>
+<li><p>You can also search for authors/maintainers of related packages on <a class="reference external" href="https://pypi.org/search/">PyPI</a>.</p></li>
+<li><p>Post on Twitter and ensure pyOpenSci retweets your post.</p></li>
+</ul>
+</section>
+<section id="criteria-for-choosing-reviewers">
+<h4>Criteria for Choosing Reviewers<a class="headerlink" href="#criteria-for-choosing-reviewers" title="Permalink to this headline">#</a></h4>
+<p>Here are criteria to keep in mind when choosing a reviewer. You might need to
+piece this information together by searching <code class="docutils literal notranslate"><span class="pre">PyPI</span></code>, <code class="docutils literal notranslate"><span class="pre">Conda</span></code> / <code class="docutils literal notranslate"><span class="pre">Conda-forge</span></code> and
+the potential reviewer’s GitHub page and general online presence (personal
+website, Twitter).</p>
+<ul class="simple">
+<li><p>Has not reviewed a package for us within the last 6 months.</p></li>
+<li><p>Some package development / contribution experience.</p></li>
+<li><p>Some domain experience in the field of the package or data source.</p></li>
+<li><p>No <span class="xref myst">conflicts of interest</span>.</p></li>
+</ul>
+<p>Try to balance your sense of the potential reviewer’s experience against the complexity of the package.</p>
+<ul class="simple">
+<li><p><strong>Diversity</strong> - if you have two reviewers both shouldn’t be cis white males.</p></li>
+<li><p><strong>Openness</strong> - reviewers should also have demonstrated interest in open source or Python community activities, although blind emailing is fine.</p></li>
+</ul>
+<p>Each submission should be reviewed by <em>two</em> package reviewers. Although it is
+fine for one of them to have less package development experience and more domain
+knowledge, the review should not be split into two parts.  Both reviewers need to review
+the package comprehensively, from their particular perspectives. In
+general, at least one reviewer should have prior reviewing experience, and of
+course inviting one new reviewer expands our pool of reviewers.</p>
+<p>Reviewers should ideally have some subject matter expertise associated
+with the package functionality. It is ok and even welcome if one reviewer has
+more technical expertise and the other focuses on usability and is less technical.
+Read through the Guidelines for Reviewers Section to learn more about finding and
+selecting reviewers.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>PyOpenSci has been piloting a new reviewer mentorship program where we pair a
+new reviewer with someone in the community with previous review experience. If
+a new reviewer is interested in this, get in touch with the <strong>editor in chief</strong>.</p>
+</div>
+</section>
+</section>
+<section id="onboard-reviewers">
+<h3>4. Onboard Reviewers<a class="headerlink" href="#onboard-reviewers" title="Permalink to this headline">#</a></h3>
+<p>Once reviewers have been identified:</p>
+<ul class="simple">
+<li><p>Modify the Editor Comments under Editor Checks to add reviewer names and assign due date (typically a 2-3 week turn around).</p></li>
+<li><p>Also add the reviewers to the initial top comment in the issue.</p></li>
+</ul>
+<div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span>Reviewers: Full Name  (@github_username) and Full Name (@github_username)
+Due date: Date`
+Include in your comment to the reviewers:
+      <span class="k">-</span> Link to the reviewer guide for reviewers
+      <span class="k">-</span> Link to the review template
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>Edit the original comment submitted by author to fill in the Editor and Reviewer Information:</p></li>
+</ul>
+<div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span>Editor: Full Name (@github_username)
+Reviewer 1: Full Name (@github_username)
+Reviewer 2: Full Name (@github_username)
+Archive: Filled out when the review is complete.
+Version accepted: Filled out when the review is complete.
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>Tag issue with <code class="docutils literal notranslate"><span class="pre">3/reviewer(s)-assigned</span></code> tag.</p></li>
+</ul>
+</section>
+</section>
+<section id="editor-responsibilities-during-the-review">
+<h2>Editor Responsibilities During the Review:<a class="headerlink" href="#editor-responsibilities-during-the-review" title="Permalink to this headline">#</a></h2>
+<p>During the review process, it is important to check in with the reviewers to
+ensure that things are moving smoothly:</p>
+<ul class="simple">
+<li><p>Check in with reviewers and authors occasionally. Offer clarification and help as needed.</p></li>
+<li><p>In general aim for 3 weeks for review, 2 weeks for subsequent changes, and 1 week for reviewer approval of changes.</p></li>
+<li><p>If a review has not been submitted after 2 weeks, ping the reviewer(s) within the review issue to ensure they are aware of the 3 week deadline.</p></li>
+<li><p>Once all reviews are submitted, change the review status tag to <code class="docutils literal notranslate"><span class="pre">4/review-in-awaiting-changes</span></code>.</p></li>
+<li><p>If the author stops responding, refer to <span class="xref myst">the policies</span> and/or ping the other editors in the Slack channel &lt;<em>Not available publically yet</em>&gt; for discussion.</p></li>
+<li><p>Upon changes being made, change the review status tag to <code class="docutils literal notranslate"><span class="pre">5/awaiting-reviewer-response</span></code>.</p></li>
+</ul>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>If a reviewer was assigned to a closed issue, contact them when closing the
+issue to explain the decision, thank them once again for their work, and make a
+note in our database to assign them to a submission with high chance of smooth
+software review next time (e.g. a package author who has already submitted packages to us).</p>
+</div>
+<section id="general-review-guidelines">
+<h3>General Review guidelines<a class="headerlink" href="#general-review-guidelines" title="Permalink to this headline">#</a></h3>
+<ul class="simple">
+<li><p>For packages needing continuous integration on multiple platforms (<span class="xref myst">criteria in this section of the packaging chapter</span>), make sure the package gets tested on multiple platforms (e.g. MAC, Windows, Linux).</p></li>
+<li><p>Wherever possible when asking for changes in the review process, direct authors to automatic tools and online resources.</p>
+<ul>
+<li><p>If the package raises a new issue for pyOpenSci policy, create an issue on <a class="reference external" href="https://github.com/pyOpenSci/governance">pyOpenSci’s governance repo</a>.</p></li>
+</ul>
+</li>
+</ul>
+</section>
+</section>
+<section id="editor-responsibilities-after-the-review">
+<h2>Editor Responsibilities After the Review:<a class="headerlink" href="#editor-responsibilities-after-the-review" title="Permalink to this headline">#</a></h2>
+<p>Once the package has been accepted through the review process:</p>
+<ul class="simple">
+<li><p>Change the status tag of the issue to <code class="docutils literal notranslate"><span class="pre">6/pyOS-approved</span></code>.</p></li>
+<li><p>Update the top of the issue with the version of the package that was approved and the DOI.</p></li>
+</ul>
+<section id="instructions-for-submitting-to-joss">
+<h3>Instructions for Submitting to JOSS:<a class="headerlink" href="#instructions-for-submitting-to-joss" title="Permalink to this headline">#</a></h3>
+<p>If the package fits within the JOSS Scope, once the package has been approved
+by pyOpenSci:</p>
+<ul class="simple">
+<li><p>Tag the issue <code class="docutils literal notranslate"><span class="pre">7/under-joss-review</span></code>.</p></li>
+<li><p>Instruct the author to <a href="https://joss.readthedocs.io/en/latest/submitting.html#what-should-my-paper-contain" target="_blank">read the <code class="docutils literal notranslate"><span class="pre">paper.md</span></code> file requirements</a> for JOSS and ensure that paper is added to the repo.</p></li>
+<li><p>Direct the package author to <a class="reference external" href="https://joss.readthedocs.io/en/latest/submitting.html">follow the instructions to submit the package to JOSS</a>.</p></li>
+</ul>
+<p>These instructions loosely include:</p>
+<ol class="arabic simple">
+<li><p>Login to the JOSS website and fill out the JOSS submission form. When you fill out the form, be sure to mention and link to the approved pyOpenSci review.</p></li>
+<li><p>Wait for a JOSS editor to approve the presubmission (which includes a scope check).</p></li>
+</ol>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>The scope of packages accepted by pyOpenSci is sometimes different from those
+accepted by JOSS. Not all pyOpenSci accepted packages will be accepted by JOSS.
+Further, packages that have been previously published elsewhere may not be
+eligible to be published with JOSS unless <strong>significant</strong> changes and improvements
+to package functionality have been made.</p>
+</div>
+<p>JOSS will accept the pyOpenSci review and direct the author to check their <code class="docutils literal notranslate"><span class="pre">paper.md</span></code> file. Once the package is accepted by JOSS,
+the author will be instructed to add the JOSS DOI badge to their package <strong>README</strong> file.</p>
+<p>Once the package is accepted by JOSS and the DOI badge resolves properly:</p>
+<p>If the package was accepted by JOSS:</p>
+<ul class="simple">
+<li><p>Fill out <code class="docutils literal notranslate"><span class="pre">Archive</span></code> and <code class="docutils literal notranslate"><span class="pre">Version</span></code> accepted in the Editor Checks comment and at the top of the issue.</p></li>
+<li><p>Fill out <code class="docutils literal notranslate"><span class="pre">Archive</span></code> and <code class="docutils literal notranslate"><span class="pre">Version</span> <span class="pre">accepted</span></code> in the original comment submitted by the author.</p></li>
+<li><p>Tag the issue with <code class="docutils literal notranslate"><span class="pre">9/joss-approved</span></code>.</p></li>
+</ul>
+<ul class="simple">
+<li><p>You may wish to use the approval template below in the issue. This template
+asks the authors and reviewers to add themselves and the package that was
+approved to the pyOpenSci website. They can do this step regardless of the
+JOSS submission process.</p></li>
+</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>----------------------------------------------
+🎉 &lt;package-name-here&gt; has been approved by pyOpenSci! Thank you &lt;maintainer-name-here&gt; for submitting &lt;package-name&gt; and many thanks to &lt;reviewer-names-here&gt; for reviewing this package! 😸  
+
+There are a few things left to do to wrap up this submission:
+- [ ] Activate Zenodo watching the repo if you haven&#39;t already done so.
+- [ ] Tag and create a release to create a Zenodo version and DOI.
+- [ ] Add the badge for pyOpenSci peer-review to the README.md of &lt;package-name-here&gt;. The badge should be `[![pyOpenSci](https://tinyurl.com/y22nb8up)](https://github.com/pyOpenSci/software-review/issues/issue-number)`
+- [ ] Add &lt;package-name&gt; to the pyOpenSci website. &lt;maintainer-name&gt;, please open a pr to update [this file](https://github.com/pyOpenSci/pyopensci.github.io/blob/main/_data/packages.yml): to add your package and name to the list of contributors
+- [ ] &lt;reviewers-and-maintainers&gt; if you have time and are open to being listed on our website, please add yourselves to [this file](https://github.com/pyOpenSci/pyopensci.github.io/blob/main/_data/contributors.yml) via a pr so we can list you on our website as contributors!
+
+&lt;IF JOSS SUBMISSION&gt;
+It looks like you would like to submit this package to JOSS. Here are the next steps:
+
+- [ ] Login to the JOSS website and fill out the JOSS submission form using your Zenodo DOI. **When you fill out the form, be sure to mention and link to the approved pyOpenSci review.** JOSS will tag your package for expedited review if it is already pyOpenSci approved.
+- [ ] Wait for a JOSS editor to approve the presubmission (which includes a scope check)
+- [ ] Once the package is approved by JOSS, you will be given instructions by JOSS about updating the citation information in your README file.
+- [ ] When the JOSS review is complete, add a comment to your review in the pyOpenSci software-review repo that it has been approved by JOSS.
+
+🎉 Congratulations! You are now published with both JOSS and pyOpenSci! 🎉
+&lt;IF JOSS SUBMISSION/&gt;
+
+All -- if you have any feedback for us about the review process please feel free to share it here. We are always looking to improve our process and documentation in the [contributing-guide](https://www.pyopensci.org/contributing-guide). We have also been updating our documentation to improve the process, so all feedback is appreciated!
+</pre></div>
+</div>
+<section id="last-steps-before-closing-the-review-issue">
+<h4>Last Steps Before Closing the Review Issue<a class="headerlink" href="#last-steps-before-closing-the-review-issue" title="Permalink to this headline">#</a></h4>
+<p>Once the review is complete, you can close the issue. Before doing that:</p>
+<ul class="simple">
+<li><p>Be sure that the issue is tagged with <code class="docutils literal notranslate"><span class="pre">6/pyOS-approved</span></code>.</p></li>
+<li><p>Followup with authors and reviewers to ensure:</p>
+<ul>
+<li><p>The package was properly added to the <a class="reference external" href="https://www.pyopensci.org/python-packages/">pyOpenSci website</a>.</p></li>
+<li><p>Reviewers and maintainers are listed on the <a class="reference external" href="https://www.pyopensci.org/contributors/">contributors page</a>.</p></li>
+</ul>
+</li>
+<li><p>If the package is approved by JOSS, be sure that the issue is tagged with <code class="docutils literal notranslate"><span class="pre">7/JOSS-approved</span></code> and that the archive / DOI information is updated before closing the issue.</p></li>
+</ul>
+<p>Congratulations, you have completed a review for pyOpenSci!</p>
+</section>
+<section id="optional-move-package-to-pyopensci-organization-beta">
+<h4>Optional - Move Package to PyOpenSci Organization (BETA)<a class="headerlink" href="#optional-move-package-to-pyopensci-organization-beta" title="Permalink to this headline">#</a></h4>
+<p>rOpenSci packages often live in the rOpenSci organization. PyOpenSci is still
+figuring out whether this model fits the Python community. If an author is
+interested in this option, consider doing the following:</p>
+<ul class="simple">
+<li><p>If the package will be migrated to <code class="docutils literal notranslate"><span class="pre">pyOpenSci</span></code>:</p>
+<ul>
+<li><p>Create a two-person team in pyOpenSci’s “pyOpenSci” GitHub organization, named for the package, with yourself and the package author as members.</p></li>
+<li><p>Have the author transfer the repository to <code class="docutils literal notranslate"><span class="pre">pyOpenSci</span></code>.</p></li>
+<li><p>Go to the repository settings in the “pyOpenSci” GitHub organization and give the author “Admin” access to the repository.</p></li>
+</ul>
+</li>
+<li><p>Ask the author to:</p>
+<ul>
+<li><p>Change any needed links, such as those for CI badges.</p></li>
+<li><p>Add pyOpenSci badge: <code class="docutils literal notranslate"><span class="pre">[![pyOpenSci](https://tinyurl.com/y22nb8up)](link-to-issue)</span></code>.</p></li>
+<li><p>Re-activate CI services:</p>
+<ul>
+<li><p>For Travis, activating the project in the pyOpenSci account should be sufficient.</p></li>
+<li><p>For AppVeyor, tell the author to update the GitHub link in their badge, but do not transfer the project: AppVeyor projects should remain under the authors’ account. The badge is <code class="docutils literal notranslate"><span class="pre">[![AppVeyor</span> <span class="pre">Build</span> <span class="pre">Status](https://ci.appveyor.com/api/projects/status/github/pyOpenSci/pkgname?branch=main&amp;svg=true)](https://ci.appveyor.com/project/individualaccount/pkgname)</span></code>.</p></li>
+<li><p>For Codecov, the webhook may need to be reset by the author.</p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Add a “peer-reviewed” topic to the repository.</p></li>
+</ul>
+</section>
+</section>
+</section>
+</section>
+
+
+              </div>
+              
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="reviewer-guide.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Guide for Reviewers</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="editor-in-chief-guide.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Editor in Chief Guide</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            </footer>
+        </div>
+    </div>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By Leah Wasser<br/>
+  
+      &copy; Copyright 2022, pyOpenSci.<br/>
+</p>
+        </footer>
+    </div>
+    
+</div>
+
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
+
+  </body>
+</html>

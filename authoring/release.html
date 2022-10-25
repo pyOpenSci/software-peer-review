@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Releasing a package &#8212; The pyOpenSci Developer Guide</title>
+    <title>Releasing a package &#8212; pyOpenSci Peer Review Guide</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -22,12 +22,9 @@
 
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
     <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
-    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/pyos.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
     
   <!-- Pre-loaded scripts that we'll load fully later -->
   <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
@@ -39,23 +36,10 @@
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
     <script src="../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
-    <script>let toggleHintShow = 'Click to show';</script>
-    <script>let toggleHintHide = 'Click to hide';</script>
-    <script>let toggleOpenOnPrint = 'true';</script>
-    <script src="../_static/togglebutton.js"></script>
-    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../_static/design-tabs.js"></script>
-    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
-const thebe_selector = ".thebe,.cell"
-const thebe_selector_input = "pre"
-const thebe_selector_output = ".output, .cell_output"
-</script>
-    <script async="async" src="../_static/sphinx-thebe.js"></script>
-    <link rel="shortcut icon" href="../_static/logo.png"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Appendix: Templates" href="../appendices/templates.html" />
-    <link rel="prev" title="Testing your package" href="testing.html" />
+    <link rel="prev" title="Collaboration Guide" href="collaboration.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -85,7 +69,7 @@ const thebe_selector_output = ".output, .cell_output"
     <div class="visually-hidden">Toggle in-page Table of Contents</div>
 </label>
 <!-- Headers at the top -->
-<div class="announcement header-item noprint"><div class='header__block'>ATTENTION <p> We are currently updating this book so please check back frequently! The packaging guide is currently the most out of date section in this guidebook. </p> </div> </div>
+<div class="announcement header-item noprint">🚧 UNDER CONSTRUCTION: this guide is under heavy construction right now. 🚧</div>
 <div class="header header-item noprint"></div>
 
     
@@ -109,76 +93,76 @@ const thebe_selector_output = ".output, .cell_output"
       <img src="../_static/logo.png" class="logo" alt="logo">
       
       
-      <h1 class="site-logo" id="site-title">The pyOpenSci Developer Guide</h1>
+      <h1 class="site-logo" id="site-title">pyOpenSci Peer Review Guide</h1>
       
     </a>
 </div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
   <i class="icon fas fa-search"></i>
-  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
 </form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item active">
         <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
-  About Our Peer Review Process
+  About peer review
  </span>
 </p>
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="../open-source-software-peer-review/intro.html">
-   About our peer review process
+  <a class="reference internal" href="../about-peer-review/aims-and-scope.html">
+   pyOpenSci Open Peer Review Goals and Scope
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../open-source-software-peer-review/aims-and-scope.html">
-   Peer Review Goals and Scope
+  <a class="reference internal" href="../about-peer-review/policies-guidelines.html">
+   Peer Review Guidelines &amp; Policies
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../open-source-software-peer-review/code-of-conduct.html">
+  <a class="reference internal" href="../about-peer-review/code-of-conduct.html">
    Community Code of Conduct
   </a>
  </li>
 </ul>
 <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
-  Open Peer Review Guides
+  Peer Review Guides
  </span>
 </p>
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="../open-source-software-submissions/intro.html">
-   Peer Review Timeline Overview
+  <a class="reference internal" href="../software-peer-review-guide/intro.html">
+   An Overview Of the Peer Review Process
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../open-source-software-submissions/author-guide.html">
-   Guide for Package Authors
+  <a class="reference internal" href="../software-peer-review-guide/author-guide.html">
+   pyOpenSci Review Guide for Python Open Source Package Authors
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../open-source-software-submissions/reviewer-guide.html">
+  <a class="reference internal" href="../software-peer-review-guide/reviewer-guide.html">
    Guide for Reviewers
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../open-source-software-submissions/editors-guide.html">
+  <a class="reference internal" href="../software-peer-review-guide/editors-guide.html">
    Guide for Editors
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../open-source-software-submissions/editor-in-chief-guide.html">
+  <a class="reference internal" href="../software-peer-review-guide/editor-in-chief-guide.html">
    Editor in Chief Guide
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../open-source-software-submissions/onboarding-guide.html">
-   Guide for Onboarding Editors
+  <a class="reference internal" href="../software-peer-review-guide/onboarding-guide.html">
+   Onboarding New Editors and Reviewers
   </a>
  </li>
 </ul>
 <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
-  Python Packaging Guide
+  Authoring information
  </span>
 </p>
 <ul class="current nav bd-sidenav">
@@ -197,36 +181,9 @@ const thebe_selector_output = ".output, .cell_output"
    Collaboration Guide
   </a>
  </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="tools-for-developers.html">
-   Tools for developers
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="testing.html">
-   Testing your package
-  </a>
- </li>
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
    Releasing a package
-  </a>
- </li>
-</ul>
-<p aria-level="2" class="caption" role="heading">
- <span class="caption-text">
-  Appendices
- </span>
-</p>
-<ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="../appendices/templates.html">
-   Appendix: Templates
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../appendices/glossary.html">
-   Glossary
   </a>
  </li>
 </ul>
@@ -237,7 +194,7 @@ const thebe_selector_output = ".output, .cell_output"
              <!-- To handle the deprecated key -->
             
             <div class="navbar_extra_footer">
-            Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+            Theme by the <a href="https://ebp.jupyterbook.org">Executable Book Project</a>
             </div>
             
         </div>
@@ -293,19 +250,10 @@ title="Fullscreen mode"
   </span>
 
 </button>
-
-<div class="menu-dropdown menu-dropdown-repository-buttons">
-  <button class="headerbtn menu-dropdown__trigger"
-      aria-label="Source repositories">
-      <i class="fab fa-github"></i>
-  </button>
-  <div class="menu-dropdown__content">
-    <ul>
-      <li>
-        <a href="https://github.com/pyOpenSci/contributing-guide"
+<a href="https://github.com/pyopensci/governance"
    class="headerbtn"
    data-toggle="tooltip"
-data-placement="left"
+data-placement="bottom"
 title="Source repository"
 >
   
@@ -313,48 +261,8 @@ title="Source repository"
 <span class="headerbtn__icon-container">
   <i class="fab fa-github"></i>
   </span>
-<span class="headerbtn__text-container">repository</span>
+
 </a>
-
-      </li>
-      
-      <li>
-        <a href="https://github.com/pyOpenSci/contributing-guide/issues/new?title=Issue%20on%20page%20%2Fauthoring/release.html&body=Your%20issue%20content%20here."
-   class="headerbtn"
-   data-toggle="tooltip"
-data-placement="left"
-title="Open an issue"
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-lightbulb"></i>
-  </span>
-<span class="headerbtn__text-container">open issue</span>
-</a>
-
-      </li>
-      
-      <li>
-        <a href="https://github.com/pyOpenSci/contributing-guide/edit/main/authoring/release.md"
-   class="headerbtn"
-   data-toggle="tooltip"
-data-placement="left"
-title="Edit this page"
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-pencil-alt"></i>
-  </span>
-<span class="headerbtn__text-container">suggest edit</span>
-</a>
-
-      </li>
-      
-    </ul>
-  </div>
-</div>
 
 <div class="menu-dropdown menu-dropdown-download-buttons">
   <button class="headerbtn menu-dropdown__trigger"
@@ -364,7 +272,7 @@ title="Edit this page"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="../_sources/authoring/release.md"
+        <a href="../_sources/authoring/release.md.txt"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -516,7 +424,7 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="releasing-a-package">
+  <section id="releasing-a-package">
 <span id="releasing"></span><h1>Releasing a package<a class="headerlink" href="#releasing-a-package" title="Permalink to this headline">#</a></h1>
 <p>This section covers releasing your package to PyPI as well as releasing future versions. Your package should have different versions over time: snapshots of a state of the package that you can release to PyPI for instance. These versions should be properly <em>numbered</em>, <em>released</em> and <em>described in a NEWS file</em>. More details below.</p>
 <section id="original-release">
@@ -532,7 +440,7 @@ title="Print to PDF"
 <section id="version-naming">
 <h3>Version Naming<a class="headerlink" href="#version-naming" title="Permalink to this headline">#</a></h3>
 <ul class="simple">
-<li><p>We recommend that pyOpenSci packages use <a class="reference external" href="https://www.python.org/dev/peps/pep-0440/#semantic-versioning">semantic versioning</a>. In addition to the <a class="reference external" href="https://www.python.org/dev/peps/pep-0440/#semantic-versioning">PEP section on it</a>, <a class="reference external" href="http://semver.org">semver.org</a> has more <a class="reference external" href="https://semver.org/">detail</a>.</p></li>
+<li><p>We recommend that pyOpenSci packages use <a class="reference external" href="https://www.python.org/dev/peps/pep-0440/#semantic-versioning">semantic versioning</a>. In addition to the <a class="reference external" href="https://www.python.org/dev/peps/pep-0440/#semantic-versioning">PEP section on it</a>, <a class="reference external" href="https://semver.org/">the semver website has more detail</a>.</p></li>
 <li><p>Versioning can be done using <a class="reference external" href="https://github.com/peritus/bumpversion">bumpversion</a>, e.g. for a minor update:</p></li>
 </ul>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">bumpversion</span> <span class="n">minor</span>
@@ -553,20 +461,20 @@ title="Print to PDF"
 </div>
 <ul class="simple">
 <li><p>Under that header, put in sections as needed, including: <code class="docutils literal notranslate"><span class="pre">NEW</span> <span class="pre">FEATURES</span></code>, <code class="docutils literal notranslate"><span class="pre">MINOR</span> <span class="pre">IMPROVEMENTS</span></code>, <code class="docutils literal notranslate"><span class="pre">BUG</span> <span class="pre">FIXES</span></code>, <code class="docutils literal notranslate"><span class="pre">DEPRECATED</span> <span class="pre">AND</span> <span class="pre">DEFUNCT</span></code>, <code class="docutils literal notranslate"><span class="pre">DOCUMENTATION</span> <span class="pre">FIXES</span></code> and any special heading grouping a large number of changes. Under each header, list items as needed. For each item give a description of the new feature, improvement, bug fix, or deprecated function/feature. Link to any related GitHub issue like <code class="docutils literal notranslate"><span class="pre">(#12)</span></code>. The <code class="docutils literal notranslate"><span class="pre">(#12)</span></code> will resolve on GitHub in Releases to a link to that issue in the repo.</p></li>
-<li><p>After you have added a <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">tag</span></code> and pushed up to GitHub, add the news items for that tagged version to the Release notes of a release in your GitHub repo with a title like <code class="docutils literal notranslate"><span class="pre">pkgname</span> <span class="pre">v0.1.0</span></code>. See <a class="reference external" href="https://help.github.com/articles/creating-releases/">GitHub docs about creating a release</a>.</p></li>
+<li><p>After you have added a <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">tag</span></code> and pushed up to GitHub, add the news items for that tagged version to the Release notes of a release in your GitHub repo with a title like <code class="docutils literal notranslate"><span class="pre">pkgname</span> <span class="pre">v0.1.0</span></code>. See <a class="reference external" href="https://docs.github.com/en/repositories/releasing-projects-on-github/managing-releases-in-a-repository">GitHub docs about creating a release</a>.</p></li>
 </ul>
 </section>
 <section id="releasing-versions-manual">
 <span id="manual-release"></span><h3>Releasing Versions: Manual<a class="headerlink" href="#releasing-versions-manual" title="Permalink to this headline">#</a></h3>
 <p>To manually upload a new package version to PyPI, follow these steps:</p>
-<ol class="simple">
-<li><p>Update your HISTORY file as described <a class="reference external" href="#history">above</a></p></li>
-<li><p>Open <a class="reference external" href="http://setup.py">setup.py</a> and change the version, e.g., version=’1.0.3’</p></li>
-<li><p>If you added new, non-Python files to the project that need to be distributed as well, e.g., configuration files, add them to <a class="reference external" href="http://MANIFEST.in">MANIFEST.in</a>. This does not need to be done for Python code files ending in .py.</p></li>
+<ol class="arabic simple">
+<li><p>Update your HISTORY file as described <span class="xref myst">above</span></p></li>
+<li><p>Open <code class="docutils literal notranslate"><span class="pre">setup.py</span></code> and change the version, e.g., version=’1.0.3’</p></li>
+<li><p>If you added new, non-Python files to the project that need to be distributed as well, e.g., configuration files, add them to <code class="docutils literal notranslate"><span class="pre">MANIFEST.in</span></code>. This does not need to be done for Python code files ending in .py.</p></li>
 <li><p>Open a terminal and go into the parent of the project’s root dir</p></li>
-<li><p>python <a class="reference external" href="http://setup.py">setup.py</a> sdist</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">python</span> <span class="pre">setup.py</span> <span class="pre">sdist</span></code></p></li>
 <li><p>Check the resulting files, especially the egg file: are all the files contained?</p></li>
-<li><p>If everything is ok, upload the new version to PyPI: python <a class="reference external" href="http://setup.py">setup.py</a> sdist upload</p></li>
+<li><p>If everything is ok, upload the new version to PyPI: <code class="docutils literal notranslate"><span class="pre">python</span> <span class="pre">setup.py</span> <span class="pre">sdist</span> <span class="pre">upload</span></code></p></li>
 </ol>
 <p>That’s it!</p>
 </section>
@@ -581,25 +489,6 @@ title="Print to PDF"
 </section>
 </section>
 
-    <script type="text/x-thebe-config">
-    {
-        requestKernel: true,
-        binderOptions: {
-            repo: "binder-examples/jupyter-stacks-datascience",
-            ref: "master",
-        },
-        codeMirrorConfig: {
-            theme: "abcdef",
-            mode: "python"
-        },
-        kernelOptions: {
-            kernelName: "python3",
-            path: "./authoring"
-        },
-        predefinedOutput: true
-    }
-    </script>
-    <script>kernelName = 'python3'</script>
 
               </div>
               
@@ -608,19 +497,12 @@ title="Print to PDF"
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-    <a class='left-prev' id="prev-link" href="testing.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="collaboration.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Testing your package</p>
+            <p class="prev-next-title">Collaboration Guide</p>
         </div>
-    </a>
-    <a class='right-next' id="next-link" href="../appendices/templates.html" title="next page">
-    <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Appendix: Templates</p>
-    </div>
-    <i class="fas fa-angle-right"></i>
     </a>
 </div>
             </footer>
@@ -629,9 +511,9 @@ title="Print to PDF"
     <div class="footer-content row">
         <footer class="col footer"><p>
   
-    By The pyOpenSci Community<br/>
+    By Leah Wasser<br/>
   
-      &copy; Copyright 2022.<br/>
+      &copy; Copyright 2022, pyOpenSci.<br/>
 </p>
         </footer>
     </div>
