@@ -56,7 +56,7 @@ jobs:
     # Push the book's HTML to github-pages
     - name: Push to GitHub Pages 
       # Only push if on main branch
-      if: github.ref == 'refs/heads/main'
+      if: ${{ github.ref == 'refs/heads/main' }}
       uses: peaceiris/actions-gh-pages@v3.8.0
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
