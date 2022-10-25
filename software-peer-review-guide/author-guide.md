@@ -6,16 +6,19 @@ come to the right place!
 Below you will find the steps that you need to follow to submit a package 
 to pyOpenSci for peer review. 
 
-Before you begin this process, [please be sure to read the review process guidelines](../open-source-software-peer-review/policies-guidelines).
+Before you begin this process, [please be sure to read the review process guidelines](../about-peer-review/policies-guidelines).
 
-## 1. Does your package have a 2-year maintenance plan?
+## 1. Do you plan to continue to maintain your package?
 One of the goals of pyOpenSci is to maintain a curated list of 
 community-approved, maintained and vetted tools that support open science workflows. 
 
-As such we prefer to review packages that will be useful to the community
+As such we review packages that will be useful to the community
 and maintained over time. While we understand that burnout is real,
 and you may move on in the future to other projects, we ask that you commit
-to maintaining your package for at least 2 years. 
+to maintaining your package for at least 1-2 years. 
+
+If that maintenance commitment is too much, you might consider submitting 
+your package to another Journal.
 
 If you need to step from maintaining your package, please let us know
 in advance. We will try to help you either.
@@ -71,7 +74,7 @@ up to a week.
 
 1. Please be sure that you have time to devote to making changes to your 
 package. You may get feedback from an editor and two reviewers. Changes could 
-take time. Please consider this before submitting to us. You can read more about the timeline to make changes in our [peer review policies page](../open-source-software-peer-review/policies-guidelines).
+take time. Please consider this before submitting to us. You can read more about the timeline to make changes in our [peer review policies page](../about-peer-review/policies-guidelines).
 2. Peer review is lead by a diverse group of volunteer editors and reviewers. 
 Please be considerate when engaging with everyone online. 
 ```
@@ -79,7 +82,7 @@ Please be considerate when engaging with everyone online.
 ## 4. Presubmission Questions
 
 If your package does not clearly fit within one of the categories outlined in
-our [scope](../open-source-software-peer-review/aims-and-scope), create
+our [scope](../about-peer-review/aims-and-scope), create
 a [Presubmission Inquiry issue](https://github.com/pyOpenSci/software-review/issues/new?assignees=&labels=0%2Fpresubmission&template=presubmission-inquiry.md&title=)
 in our software-review repo. You can use the same issue template if you have
 other questions. An editor will get back to you in a few days to answer your
@@ -154,7 +157,7 @@ our review for their process and fast track you through their review!
 Acceptance to pyOpenSci does not guarantee acceptance to JOSS. In particular, 
 JOSS doesn't accept the full variety of packages that are in scope for
 pyOpenSci. For example, thin API wrappers fall within
-[pyOpenSci's scope](../open-source-software-peer-review/aims-and-scope) but 
+[pyOpenSci's scope](../about-peer-review/aims-and-scope) but 
 are usually not accepted by JOSS. Be sure to review JOSS's 
 [submission requirements](https://joss.readthedocs.io/en/latest/submitting.html#submission-requirements) 
 before writing up a paper about your package.

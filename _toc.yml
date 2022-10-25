@@ -3,28 +3,31 @@ root: intro
 parts:
 - caption: About Our Peer Review Process
   chapters:
-  - file: open-source-software-peer-review/intro
+  - file: about-peer-review/intro
     title: About our peer review process
-  - file: open-source-software-peer-review/aims-and-scope
+  - file: about-peer-review/aims-and-scope
     title: Peer Review Goals and Scope
-  - file: open-source-software-peer-review/policies-and-guidelines
-  - file: open-source-software-peer-review/code-of-conduct
+  - file: about-peer-review/policies-guidelines
+  - file: about-peer-review/code-of-conduct
 - caption: Open Peer Review Guides
   chapters:
-  - file: open-source-software-submissions/intro
+  - file: software-peer-review-guide/intro
     title: Peer Review Timeline Overview
-  - file: open-source-software-submissions/author-guide
+  - file: software-peer-review-guide/author-guide
     title: Guide for Package Authors
-  - file: open-source-software-submissions/reviewer-guide
+  - file: software-peer-review-guide/reviewer-guide
     title: Guide for Reviewers
-  - file: open-source-software-submissions/editors-guide
-  - file: open-source-software-submissions/editor-in-chief-guide
-  - file: open-source-software-submissions/onboarding-guide
+  - file: software-peer-review-guide/editors-guide
+  - file: software-peer-review-guide/editor-in-chief-guide
+  - file: software-peer-review-guide/onboarding-guide
     title: Guide for Onboarding Editors
 - caption: Python Packaging Guide
   chapters:
   - file: authoring/index
-  - file: authoring/overview
+  - file: authoring/documentation-readme
+    title: Package Documentation
+  - file: authoring/tests-continuous-integration
+    title: Tests & Continuous Integration Documentation
   - file: authoring/collaboration
   - file: authoring/tools-for-developers
   - file: authoring/testing

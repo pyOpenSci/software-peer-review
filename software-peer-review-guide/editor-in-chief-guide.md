@@ -69,7 +69,7 @@ review. Below are the basic checks that your package needs to pass
 to begin our review. If some of these are missing, we will ask you 
 to work on them before the review process begins. 
 
-- [ ] **Fit**: The package meets criteria for [fit](https://www.pyopensci.org/contributing-guide/open-source-software-peer-review/aims-and-scope.html#package-categories) and [overlap](https://www.pyopensci.org/contributing-guide/open-source-software-peer-review/aims-and-scope.html#package-overlap).
+- [ ] **Fit**: The package meets criteria for [fit](https://www.pyopensci.org/contributing-guide/about-peer-review/aims-and-scope.html#package-categories) and [overlap](https://www.pyopensci.org/contributing-guide/about-peer-review/aims-and-scope.html#package-overlap).
 - [ ] **Documentation** The package has sufficient documentation available online (README, sphinx docs) to allow us to evaluate package function and scope *without installing the package*. This includes:
   - [ ] tutorials or vignettes that help a user understand how to use the package and what it can do for them (often these have a name like "Getting started")
   - [ ] API documentation - this includes clearly written doc strings with variables defined using a standard docstring format
@@ -140,7 +140,7 @@ the aim, goals and functionality of the package.
 
 <optional>
 If a package has overlapping functionality with other packages, we require you 
-to mention in your documentation (README) and in this issue [how it is "best in class"](https://www.pyopensci.org/contributing-guide/open-source-software-peer-review/aims-and-scope.html?highlight=overlap#package-overlap). Could you add a more detailed comparison to the packages you mention in the README so we can evaluate?
+to mention in your documentation (README) and in this issue [how it is "best in class"](https://www.pyopensci.org/contributing-guide/about-peer-review/aims-and-scope.html?highlight=overlap#package-overlap). Could you add a more detailed comparison to the packages you mention in the README so we can evaluate?
 </optional>
 
 ```

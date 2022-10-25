@@ -4,7 +4,7 @@
 
 - Packages are reviewed for quality, fit, documentation, clarity and the review process
   is quite similar to a manuscript review (see our [packaging guide](../authoring/overview)
-  and [reviewing guide](../open-source-software-submissions/reviewer-guide) for more details). Unlike a
+  and [reviewing guide](../peer-review-guides/reviewer-guide) for more details). Unlike a
   manuscript review, this process will be an ongoing conversation.
 - Once all major issues and questions, and those addressable with reasonable effort, are
   resolved, the editor assigned to a package will make a decision (accept, hold, or
