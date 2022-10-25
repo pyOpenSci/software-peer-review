@@ -41,7 +41,7 @@ jobs:
     - name: Check HTML using htmlproofer
       uses: chabad360/htmlproofer@master
       with:
-        directory: '_build/html'
+        directory: ./_build/html
         arguments: |
          --ignore-files "/.+\/_static/,/_static/"
 
@@ -51,7 +51,7 @@ jobs:
       with:
         name: book-html
         path: |
-          _build/html/
+          ./_build/html
 
     # Push the book's HTML to github-pages
     - name: Push to GitHub Pages 
