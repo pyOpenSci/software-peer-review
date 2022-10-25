@@ -73,7 +73,7 @@ Learn how to submit a package for peer review with pyOpenSci.
 :link-type: doc
 :class-header: bg-light
 
-Are you an Editor? ✨
+Are you an editor? ✨
 ^^^
 
 This guide will walk you through the editorial process.
