@@ -56,7 +56,7 @@ software.
 :::
 
 :::{grid-item-card}
-:link: software-peer-review-guide/reviewer-guide
+:link: software-peer-review-guide/author-guide
 
 :link-type: doc
 :class-header: bg-light
