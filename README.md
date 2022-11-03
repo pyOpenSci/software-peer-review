@@ -1,10 +1,8 @@
 # <img src="images/logo/logo.png" width=40 /> pyOpenSci Guidebook
 
 ![GitHub release (latest by date)](https://img.shields.io/github/v/release/pyopensci/peer-review-guide?color=purple&display_name=tag&style=plastic)
-
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7101778.svg)](https://doi.org/10.5281/zenodo.7101778)
-
-![deploy-book](https://github.com/pyOpenSci/peer-review-guide/actions/workflows/book.yml/badge.svg)  [![CircleCI Book Preview](https://circleci.com/gh/pyOpenSci/peer-review-guide.svg?style=svg)](https://circleci.com/gh/pyOpenSci/peer-review-guide) 
+![deploy-book](https://github.com/pyOpenSci/peer-review-guide/actions/workflows/build-book.yml/badge.svg)  [![CircleCI Book Preview](https://circleci.com/gh/pyOpenSci/peer-review-guide.svg?style=svg)](https://circleci.com/gh/pyOpenSci/peer-review-guide) 
 
 https://www.pyopensci.org/peer-review-guide/
 
