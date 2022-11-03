@@ -61,5 +61,3 @@ jobs:
         name: book-html
         path: |
           ./_build/html
-
-
