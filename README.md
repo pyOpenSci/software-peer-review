@@ -1,4 +1,4 @@
-# <img src="images/logo/logo.png" width=40 /> pyOpenSci Guidebook
+# <img src="images/logo/logo.png" width=40 /> pyOpenSci Peer Review Guide
 
 ![GitHub release (latest by date)](https://img.shields.io/github/v/release/pyopensci/peer-review-guide?color=purple&display_name=tag&style=plastic)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7101778.svg)](https://doi.org/10.5281/zenodo.7101778)
