@@ -1,7 +1,10 @@
 name: deploy-book
 
-# Run on pushes and pull requests
-on: [push, pull_request]
+on:
+  pull_request:
+  push:
+    branches:
+      - main
 
 # This job installs dependencies, build the book, and pushes it to `gh-pages`
 jobs:
@@ -37,19 +40,27 @@ jobs:
     - name: Build book
       run: nox -s docs
 
+      # Push the book's HTML to github-pages
+    - name: Push to GitHub Pages 
+      # Only push if on main branch
+      if: github.ref == 'refs/heads/main'
+      uses: peaceiris/actions-gh-pages@v3.8.0
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: "./_build/html"
+
+    # Test for bad links and ensure alt tags for usability
+    - name: Check HTML using htmlproofer
+      uses: chabad360/htmlproofer@master
+      with:
+        directory: ./_build/html
+        arguments: |
+         --ignore-files "/.+\/_static\/.+/"
+
     # Save html as artifact
     - name: Save book html as artifact for viewing
       uses: actions/upload-artifact@v3
       with:
         name: book-html
         path: |
-          _build/html/
-
-    # Push the book's HTML to github-pages
-    - name: Push to GitHub Pages 
-      # Only push if on main branch
-      if: ${{ github.ref == 'refs/heads/main' }}
-      uses: peaceiris/actions-gh-pages@v3.8.0
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./_build/html
+          ./_build/html
