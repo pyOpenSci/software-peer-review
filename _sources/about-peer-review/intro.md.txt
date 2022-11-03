@@ -27,7 +27,6 @@ out there because:
 The JOSS review process is about publication. There, you will receive a DOI that is cross-ref
 enabled. However JOSS will not followup with the maintainer to ensure that the package is maintained over time. 
 
-
 ## Why submit your package to pyOpenSci for review?
 
 There is a lot to gain from submitting your package to pyOpenSci.
@@ -39,8 +38,8 @@ First, and foremost, we hope you submit your package for review **because you va
 - Once your package is accepted, your package will receive **support from pyOpenSci members**. You'll retain ownership and control of your package. However, if you need help with ongoing maintenance issues, we will try to find people who can help. 
   
 -  pyOpenSci will **promote your package** through our:
-   - [webpage](https://pyopensci.org/python-packages/), 
-   - [blog](https://wwwpyopensci.org/blog/), and 
+   - [webpage](https://www.pyopensci.org/python-packages/), 
+   - [blog](https://www.pyopensci.org/blog/), and 
    - [social media account](https://twitter.com/pyopensci).
 
 -   pyOpenSci packages that are in scope for the [Journal of Open-Source Software](https://joss.theoj.org/) and add the necessary accompanying short `paper.md` file, can, at the discretion of JOSS editors, benefit from a fast-tracked review process. [Read more about our partnership with JOSS here](#pyopensci-and-joss).

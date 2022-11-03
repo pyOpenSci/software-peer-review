@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>pyOpenSci Review Guide for Python Open Source Package Authors &#8212; pyOpenSci Peer Review Guide</title>
+    <title>pyOpenSci Review Guide for Python Open Source Package Maintainers and Authors &#8212; pyOpenSci Peer Review Guide</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -23,7 +23,6 @@
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
     <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
     
   <!-- Pre-loaded scripts that we'll load fully later -->
@@ -33,8 +32,6 @@
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
     <script src="../_static/doctools.js"></script>
-    <script src="../_static/clipboard.min.js"></script>
-    <script src="../_static/copybutton.js"></script>
     <script src="../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
     <script src="../_static/design-tabs.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
@@ -109,8 +106,13 @@
 </p>
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
+  <a class="reference internal" href="../about-peer-review/intro.html">
+   Intro
+  </a>
+ </li>
+ <li class="toctree-l1">
   <a class="reference internal" href="../about-peer-review/aims-and-scope.html">
-   pyOpenSci Open Peer Review Goals and Scope
+   Aims &amp; Scope
   </a>
  </li>
  <li class="toctree-l1">
@@ -132,22 +134,22 @@
 <ul class="current nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="intro.html">
-   An Overview Of the Peer Review Process
+   Guide intro
   </a>
  </li>
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
-   pyOpenSci Review Guide for Python Open Source Package Authors
+   Author Guide
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="reviewer-guide.html">
-   Guide for Reviewers
+   Reviewer Guide
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="editors-guide.html">
-   Guide for Editors
+   Editor Guide
   </a>
  </li>
  <li class="toctree-l1">
@@ -157,34 +159,24 @@
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="onboarding-guide.html">
-   Onboarding New Editors and Reviewers
+   Onboarding Guide
   </a>
  </li>
 </ul>
 <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
-  Authoring information
+  Appendices
  </span>
 </p>
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="../authoring/index.html">
-   Python Packaging Guide for Maintainers Submitting to PyOpenSci
+  <a class="reference internal" href="../appendices/glossary.html">
+   Glossary
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="../authoring/overview.html">
-   Overview
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../authoring/collaboration.html">
-   Collaboration Guide
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="../authoring/release.html">
-   Releasing a package
+  <a class="reference internal" href="../appendices/templates.html">
+   Templates
   </a>
  </li>
 </ul>
@@ -417,7 +409,7 @@ title="Print to PDF"
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>pyOpenSci Review Guide for Python Open Source Package Authors</h1>
+                <h1>pyOpenSci Review Guide for Python Open Source Package Maintainers and Authors</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -513,8 +505,8 @@ title="Print to PDF"
                 
               <div>
                 
-  <section id="pyopensci-review-guide-for-python-open-source-package-authors">
-<h1>pyOpenSci Review Guide for Python Open Source Package Authors<a class="headerlink" href="#pyopensci-review-guide-for-python-open-source-package-authors" title="Permalink to this headline">#</a></h1>
+  <section id="pyopensci-review-guide-for-python-open-source-package-maintainers-and-authors">
+<h1>pyOpenSci Review Guide for Python Open Source Package Maintainers and Authors<a class="headerlink" href="#pyopensci-review-guide-for-python-open-source-package-maintainers-and-authors" title="Permalink to this headline">#</a></h1>
 <p>Are you considering submitting a package for review with pyOpenSci? You’ve
 come to the right place!</p>
 <p>Below you will find the steps that you need to follow to submit a package
@@ -556,7 +548,7 @@ directly to the Journal of Open Source Software (JOSS).</p>
 <h2>2. Does Your Package Meet Packaging Requirements?<a class="headerlink" href="#does-your-package-meet-packaging-requirements" title="Permalink to this headline">#</a></h2>
 <p>Before submitting your project for review with pyOpenSci, make sure that it
 follows the standards and guidelines outlined in the
-<a class="reference internal" href="../authoring/index.html"><span class="doc std std-doc">Python packaging guide</span></a>.</p>
+<span class="xref myst">Python packaging guide</span>.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p><strong>Package Prep Help - Can we actually support this now??</strong></p>
@@ -564,7 +556,7 @@ follows the standards and guidelines outlined in the
 a <a class="reference external" href="https://github.com/pyOpenSci/software-review/issues/new/choose">Help Request issue</a>
 in the software-review repo. We can assign someone to help you prep your code
 and add things like testing, documentation, and/or continuous integration. We’re
-happy to help. Also check out the rest of our <a class="reference internal" href="../authoring/overview.html"><span class="doc std std-doc">Packaging Guide</span></a>, which may help answer some of your questions about packaging your code.</p>
+happy to help. Also check out the rest of our <span class="xref myst">Packaging Guide</span>, which may help answer some of your questions about packaging your code.</p>
 </div>
 </section>
 <section id="is-your-package-in-scope-for-pyopensci">
@@ -625,7 +617,7 @@ questions and to help determine the fit.</p>
 <section id="submit-your-package-for-peer-review">
 <h2>5. Submit Your Package for Peer Review<a class="headerlink" href="#submit-your-package-for-peer-review" title="Permalink to this headline">#</a></h2>
 <p>To submit your package for peer review, you can
-open an issue in our <a class="reference external" href="https://github.com/pyOpenSci/software-review/issues/new/choose/issues/new/choose">pyopensci/software-review repo</a>
+open an issue in our <a class="reference external" href="https://github.com/pyOpenSci/software-review/issues/new/choose/">pyopensci/software-review repo</a>
 repository and fill out the <a class="reference external" href="https://github.com/pyOpenSci/software-review/issues/new?assignees=&amp;labels=1%2Feditor-checks%2C+New+Submission%21&amp;template=submit-software-for-review.md&amp;title=">Submit Software for Review</a> issue template.</p>
 </section>
 <section id="editor-in-chief-reviews-package-for-scope-and-minimal-infrastructure-criteria">
@@ -668,7 +660,7 @@ Zenodo. You will then want to created a tagged release representing the version 
 package accepted by pyOpenSci.
 2 We will ask you to add the pyOpenSci badge <a class="reference external" href="https://github.com/pyOpenSci/software-review/issues/issue-number"><img alt="pyOpenSci" src="https://tinyurl.com/y22nb8up" /></a> to the
 top of your README.md file.</p></li>
-<li><p>We will ask you to add your package to the <a class="reference external" href="https://www.pyopensci.org/contributors/">pyOpenSci website</a>. This will give
+<li><p>We will ask you to add your package to the <a class="reference external" href="https://www.pyopensci.org/our-community/">pyOpenSci website</a>. This will give
 your package more visibility in the community as a vetted pyOpenSci tool.</p>
 <ul class="simple">
 <li><p>We also will ask you (and those who reviewed your package) to add yourself to our list of contributors as a maintainer!</p></li>

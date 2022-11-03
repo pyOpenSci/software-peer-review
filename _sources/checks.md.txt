@@ -1,4 +1,4 @@
-- [ ] **Fit**: The package meets criteria for [fit](https://www.pyopensci.org/contributing-guide/about-peer-review/aims-and-scope.html#package-categories) and [overlap](https://www.pyopensci.org/contributing-guide/about-peer-review/aims-and-scope.html#package-overlap).
+- [ ] **Fit**: The package meets criteria for [fit](https://www.pyopensci.org/peer-review-guide/about-peer-review/aims-and-scope.html#package-scope) and [overlap](https://www.pyopensci.org/peer-review-guide/about-peer-review/aims-and-scope.html#package-overlap).
 - [ ] **Documentation** The package has sufficient documentation available online (README, sphinx docs) to allow us to evaluate package function and scope *without installing the package*. This includes:
   - [ ] Get started vignettes or tutorials that help a user understand how to use the package and what it can do for them
   - [ ] API documentation - this includes clearly written doc strings with variables defined using a standard docstring format

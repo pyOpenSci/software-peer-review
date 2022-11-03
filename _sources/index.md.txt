@@ -6,7 +6,6 @@
 :::{grid-item}
 :columns: 4
 :class: sd-m-auto
-
 :::  
 
 :::{grid-item}
@@ -15,81 +14,65 @@
 pyOpenSci is a diverse community that supports the open Python tools that 
 drive open science.
 
-<!-- 
-Removing button for the time being
-```{button-ref} start/your-first-book
-:ref-type: doc
-:color: primary
-:class: sd-rounded-pill float-left
-
-
-Get Involved (Maybe a link to a get involved page)
-``` -->
-
 % The SVG rendering breaks latex builds for the GitHub badge, so only include in HTML
 ```{only} html
 ![GitHub release (latest by date)](https://img.shields.io/github/v/release/pyopensci/contributing-guide?color=purple&display_name=tag&style=plastic)
 [![](https://img.shields.io/github/stars/pyopensci/contributing-guide?style=social)](https://github.com/pyopensci/contributing-guide)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7101778.svg)](https://doi.org/10.5281/zenodo.7101778)
 ```
-
 :::
 
 ::::
 <!-- I think this is the end of the header - below begins the next grid-->
 
-::::{grid} 1 1 1 3
+::::{grid} 1 1 1 2
 :class-container: text-center
 :gutter: 3
 
-:::{grid-item-card}
+:::{grid-item-card} {octicon}`book;1.5em;sd-mr-1` Learn About Open Peer Review ✏️
 :link: about-peer-review/aims-and-scope
-
 :link-type: doc
 :class-header: bg-light
 
-Open Peer Review ✏️
-^^^
 Get a basic overview of our open peer review process for Python scientific open source
-
 software.
++++
+[Click to learn more »](about-peer-review/aims-and-scope)
 :::
 
-:::{grid-item-card}
-:link: software-peer-review-guide/reviewer-guide
-
+:::{grid-item-card} {octicon}`code-square;1.5em;sd-mr-1`For Maintainers
+:link: software-peer-review-guide/author-guide
 :link-type: doc
 :class-header: bg-light
 
 Are you a package author / maintainer? ✨
-^^^
 
 Learn how to submit a package for peer review with pyOpenSci.
++++
+[Click to learn more »](software-peer-review-guide/author-guide)
 :::
 
-:::{grid-item-card}
-
-:link: about-peer-review/editors-guide
+:::{grid-item-card} {octicon}`pencil;1.5em;sd-mr-1`For Editors
+:link: software-peer-review-guide/editors-guide
 :link-type: doc
 :class-header: bg-light
 
-Are you an editor? ✨
-^^^
-
-This guide will walk you through the editorial process.
+ ✨ Our editor guide will walk you through the editorial process. ✨ 
++++
+[Click to learn more »](software-peer-review-guide/editors-guide)
 :::
 
-:::{grid-item-card}
-
+:::{grid-item-card} {octicon}`codescan-checkmark;1.5em;sd-mr-1` For Reviewers
 :link: software-peer-review-guide/reviewer-guide
 :link-type: doc
 :class-header: bg-light
 
 Are you a reviewer? ✨
-^^^
 
 Click here to read our reviewer guide which will walk you through the review
 process step-by-step.
++++
+[Click to learn more »](software-peer-review-guide/editors-guide)
 :::
 
 ::::
@@ -122,52 +105,35 @@ submitting and reviewing packages, as well as our
 [Aims and Scope](about-peer-review/aims-and-scope) section 
 lays out what types of packages we review.
 
-<!-- 
-Removing button for the time being
-```{button-ref} start/your-first-book
-:ref-type: doc
-:color: primary
-:class: sd-rounded-pill float-left
-Get Involved (Maybe a link to a get involved page)
-``` -->
-
-## Build out the toctree hidden
 
 ```{toctree}
 :hidden:
 :caption: About peer review
 
-about-peer-review/intro  
-about-peer-review/aims-and-scope
+Intro <about-peer-review/intro>
+Aims & Scope <about-peer-review/aims-and-scope>
 about-peer-review/policies-guidelines
 about-peer-review/code-of-conduct
-
 ```
 
 ```{toctree}
 :hidden:
 :caption: Peer Review Guides
 
-software-peer-review-guide/intro
-software-peer-review-guide/author-guide
-software-peer-review-guide/reviewer-guide
-software-peer-review-guide/editors-guide
-software-peer-review-guide/editor-in-chief-guide
-software-peer-review-guide/onboarding-guide
-
-:title: title here
+Guide intro <software-peer-review-guide/intro>
+Author Guide <software-peer-review-guide/author-guide>
+Reviewer Guide <software-peer-review-guide/reviewer-guide>
+Editor Guide <software-peer-review-guide/editors-guide>
+Editor in Chief Guide <software-peer-review-guide/editor-in-chief-guide>
+Onboarding Guide <software-peer-review-guide/onboarding-guide>
 ```
 
 ```{toctree}
 :hidden:
-:caption: Authoring information
+:caption: Appendices
 
-authoring/index
-authoring/overview
-authoring/collaboration
-authoring/tools-for-developers 
-authoring/testing 
-authoring/release
-
+Glossary <appendices/glossary>
+Templates <appendices/templates>
 ```
+
 

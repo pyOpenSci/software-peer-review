@@ -23,7 +23,6 @@
     <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
     <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
     <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
-    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
     
   <!-- Pre-loaded scripts that we'll load fully later -->
@@ -33,13 +32,11 @@
     <script src="_static/jquery.js"></script>
     <script src="_static/underscore.js"></script>
     <script src="_static/doctools.js"></script>
-    <script src="_static/clipboard.min.js"></script>
-    <script src="_static/copybutton.js"></script>
     <script src="_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
     <script src="_static/design-tabs.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="pyOpenSci Open Peer Review Goals and Scope" href="about-peer-review/aims-and-scope.html" />
+    <link rel="next" title="How Peer Review Works" href="about-peer-review/intro.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -108,8 +105,13 @@
 </p>
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
+  <a class="reference internal" href="about-peer-review/intro.html">
+   Intro
+  </a>
+ </li>
+ <li class="toctree-l1">
   <a class="reference internal" href="about-peer-review/aims-and-scope.html">
-   pyOpenSci Open Peer Review Goals and Scope
+   Aims &amp; Scope
   </a>
  </li>
  <li class="toctree-l1">
@@ -131,22 +133,22 @@
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="software-peer-review-guide/intro.html">
-   An Overview Of the Peer Review Process
+   Guide intro
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="software-peer-review-guide/author-guide.html">
-   pyOpenSci Review Guide for Python Open Source Package Authors
+   Author Guide
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="software-peer-review-guide/reviewer-guide.html">
-   Guide for Reviewers
+   Reviewer Guide
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="software-peer-review-guide/editors-guide.html">
-   Guide for Editors
+   Editor Guide
   </a>
  </li>
  <li class="toctree-l1">
@@ -156,34 +158,24 @@
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="software-peer-review-guide/onboarding-guide.html">
-   Onboarding New Editors and Reviewers
+   Onboarding Guide
   </a>
  </li>
 </ul>
 <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
-  Authoring information
+  Appendices
  </span>
 </p>
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="authoring/index.html">
-   Python Packaging Guide for Maintainers Submitting to PyOpenSci
+  <a class="reference internal" href="appendices/glossary.html">
+   Glossary
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="authoring/overview.html">
-   Overview
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="authoring/collaboration.html">
-   Collaboration Guide
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="authoring/release.html">
-   Releasing a package
+  <a class="reference internal" href="appendices/templates.html">
+   Templates
   </a>
  </li>
 </ul>
@@ -350,14 +342,9 @@ title="Print to PDF"
     <a class="reference internal nav-link" href="#peer-review-process">
      2. Peer Review Process
     </a>
+    <ul class="nav section-nav flex-column">
+    </ul>
    </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#build-out-the-toctree-hidden">
-   Build out the toctree hidden
-  </a>
-  <ul class="nav section-nav flex-column">
   </ul>
  </li>
 </ul>
@@ -398,14 +385,9 @@ title="Print to PDF"
     <a class="reference internal nav-link" href="#peer-review-process">
      2. Peer Review Process
     </a>
+    <ul class="nav section-nav flex-column">
+    </ul>
    </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#build-out-the-toctree-hidden">
-   Build out the toctree hidden
-  </a>
-  <ul class="nav section-nav flex-column">
   </ul>
  </li>
 </ul>
@@ -427,16 +409,6 @@ title="Print to PDF"
 <div class="sd-col sd-d-flex-column sd-col-8 sd-col-xs-8 sd-col-sm-8 sd-col-md-8 sd-col-lg-8 sd-fs-3 docutils">
 <p>pyOpenSci is a diverse community that supports the open Python tools that
 drive open science.</p>
-<!-- 
-Removing button for the time being
-```{button-ref} start/your-first-book
-:ref-type: doc
-:color: primary
-:class: sd-rounded-pill float-left
-
-
-Get Involved (Maybe a link to a get involved page)
-``` -->
 <p><img alt="GitHub release (latest by date)" src="https://img.shields.io/github/v/release/pyopensci/contributing-guide?color=purple&amp;display_name=tag&amp;style=plastic" />
 <a class="reference external" href="https://github.com/pyopensci/contributing-guide"><img alt="" src="https://img.shields.io/github/stars/pyopensci/contributing-guide?style=social" /></a>
 <a class="reference external" href="https://doi.org/10.5281/zenodo.7101778"><img alt="DOI" src="https://zenodo.org/badge/DOI/10.5281/zenodo.7101778.svg" /></a></p>
@@ -445,58 +417,58 @@ Get Involved (Maybe a link to a get involved page)
 </div>
 <!-- I think this is the end of the header - below begins the next grid-->
 <div class="sd-container-fluid sd-sphinx-override sd-mb-4 text-center docutils">
-<div class="sd-row sd-row-cols-1 sd-row-cols-xs-1 sd-row-cols-sm-1 sd-row-cols-md-1 sd-row-cols-lg-3 sd-g-3 sd-g-xs-3 sd-g-sm-3 sd-g-md-3 sd-g-lg-3 docutils">
+<div class="sd-row sd-row-cols-1 sd-row-cols-xs-1 sd-row-cols-sm-1 sd-row-cols-md-1 sd-row-cols-lg-2 sd-g-3 sd-g-xs-3 sd-g-sm-3 sd-g-md-3 sd-g-lg-3 docutils">
 <div class="sd-col sd-d-flex-row docutils">
 <div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-card-hover docutils">
-<div class="sd-card-header docutils">
-<p class="sd-card-text">:link-type: doc
-:class-header: bg-light</p>
-<p class="sd-card-text">Open Peer Review ✏️</p>
-</div>
 <div class="sd-card-body docutils">
-<p class="sd-card-text">Get a basic overview of our open peer review process for Python scientific open source</p>
-<p class="sd-card-text">software.</p>
+<div class="sd-card-title sd-font-weight-bold docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-book sd-mr-1" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M0 3.75A.75.75 0 01.75 3h7.497c1.566 0 2.945.8 3.751 2.014A4.496 4.496 0 0115.75 3h7.5a.75.75 0 01.75.75v15.063a.75.75 0 01-.755.75l-7.682-.052a3 3 0 00-2.142.878l-.89.891a.75.75 0 01-1.061 0l-.902-.901a3 3 0 00-2.121-.879H.75a.75.75 0 01-.75-.75v-15zm11.247 3.747a3 3 0 00-3-2.997H1.5V18h6.947a4.5 4.5 0 012.803.98l-.003-11.483zm1.503 11.485V7.5a3 3 0 013-3h6.75v13.558l-6.927-.047a4.5 4.5 0 00-2.823.971z"></path></svg> Learn About Open Peer Review ✏️</div>
+<p class="sd-card-text">Get a basic overview of our open peer review process for Python scientific open source
+software.</p>
 </div>
-<a class="sd-stretched-link reference external" href="about-peer-review/aims-and-scope"></a></div>
+<div class="sd-card-footer docutils">
+<p class="sd-card-text"><a class="reference internal" href="about-peer-review/aims-and-scope.html"><span class="doc std std-doc">Click to learn more »</span></a></p>
+</div>
+<a class="sd-stretched-link reference internal" href="about-peer-review/aims-and-scope.html"><span class="doc"></span></a></div>
 </div>
 <div class="sd-col sd-d-flex-row docutils">
 <div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-card-hover docutils">
-<div class="sd-card-header docutils">
-<p class="sd-card-text">:link-type: doc
-:class-header: bg-light</p>
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-code-square sd-mr-1" viewBox="0 0 24 24" aria-hidden="true"><path d="M10.3 8.24a.75.75 0 01-.04 1.06L7.352 12l2.908 2.7a.75.75 0 11-1.02 1.1l-3.5-3.25a.75.75 0 010-1.1l3.5-3.25a.75.75 0 011.06.04zm3.44 1.06a.75.75 0 111.02-1.1l3.5 3.25a.75.75 0 010 1.1l-3.5 3.25a.75.75 0 11-1.02-1.1l2.908-2.7-2.908-2.7z"></path><path fill-rule="evenodd" d="M2 3.75C2 2.784 2.784 2 3.75 2h16.5c.966 0 1.75.784 1.75 1.75v16.5A1.75 1.75 0 0120.25 22H3.75A1.75 1.75 0 012 20.25V3.75zm1.75-.25a.25.25 0 00-.25.25v16.5c0 .138.112.25.25.25h16.5a.25.25 0 00.25-.25V3.75a.25.25 0 00-.25-.25H3.75z"></path></svg>For Maintainers</div>
 <p class="sd-card-text">Are you a package author / maintainer? ✨</p>
-</div>
-<div class="sd-card-body docutils">
 <p class="sd-card-text">Learn how to submit a package for peer review with pyOpenSci.</p>
 </div>
-<a class="sd-stretched-link reference external" href="software-peer-review-guide/reviewer-guide"></a></div>
+<div class="sd-card-footer docutils">
+<p class="sd-card-text"><a class="reference internal" href="software-peer-review-guide/author-guide.html"><span class="doc std std-doc">Click to learn more »</span></a></p>
+</div>
+<a class="sd-stretched-link reference internal" href="software-peer-review-guide/author-guide.html"><span class="doc"></span></a></div>
 </div>
 <div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
-<div class="sd-card-header docutils">
-<p class="sd-card-text">:link: about-peer-review/editors-guide
-:link-type: doc
-:class-header: bg-light</p>
-<p class="sd-card-text">Are you an editor? ✨</p>
-</div>
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-card-hover docutils">
 <div class="sd-card-body docutils">
-<p class="sd-card-text">This guide will walk you through the editorial process.</p>
+<div class="sd-card-title sd-font-weight-bold docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-pencil sd-mr-1" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M17.263 2.177a1.75 1.75 0 012.474 0l2.586 2.586a1.75 1.75 0 010 2.474L19.53 10.03l-.012.013L8.69 20.378a1.75 1.75 0 01-.699.409l-5.523 1.68a.75.75 0 01-.935-.935l1.673-5.5a1.75 1.75 0 01.466-.756L14.476 4.963l2.787-2.786zm-2.275 4.371l-10.28 9.813a.25.25 0 00-.067.108l-1.264 4.154 4.177-1.271a.25.25 0 00.1-.059l10.273-9.806-2.94-2.939zM19 8.44l2.263-2.262a.25.25 0 000-.354l-2.586-2.586a.25.25 0 00-.354 0L16.061 5.5 19 8.44z"></path></svg>For Editors</div>
+<p class="sd-card-text">✨ Our editor guide will walk you through the editorial process. ✨</p>
 </div>
+<div class="sd-card-footer docutils">
+<p class="sd-card-text"><a class="reference internal" href="software-peer-review-guide/editors-guide.html"><span class="doc std std-doc">Click to learn more »</span></a></p>
 </div>
+<a class="sd-stretched-link reference internal" href="software-peer-review-guide/editors-guide.html"><span class="doc"></span></a></div>
 </div>
 <div class="sd-col sd-d-flex-row docutils">
-<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm docutils">
-<div class="sd-card-header docutils">
-<p class="sd-card-text">:link: software-peer-review-guide/reviewer-guide
-:link-type: doc
-:class-header: bg-light</p>
+<div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-card-hover docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-codescan-checkmark sd-mr-1" viewBox="0 0 24 24" aria-hidden="true"><path d="M15.03 8.28a.75.75 0 00-1.06-1.06l-5.22 5.22-2.22-2.22a.75.75 0 10-1.06 1.06l2.75 2.75a.75.75 0 001.06 0l5.75-5.75z"></path><path fill-rule="evenodd" d="M0 10.5C0 4.701 4.701 0 10.5 0S21 4.701 21 10.5c0 2.63-.967 5.033-2.564 6.875l4.344 4.345a.75.75 0 11-1.06 1.06l-4.345-4.344A10.459 10.459 0 0110.5 21C4.701 21 0 16.299 0 10.5zm10.5-9a9 9 0 100 18 9 9 0 000-18z"></path></svg> For Reviewers</div>
 <p class="sd-card-text">Are you a reviewer? ✨</p>
-</div>
-<div class="sd-card-body docutils">
 <p class="sd-card-text">Click here to read our reviewer guide which will walk you through the review
 process step-by-step.</p>
 </div>
+<div class="sd-card-footer docutils">
+<p class="sd-card-text"><a class="reference internal" href="software-peer-review-guide/editors-guide.html"><span class="doc std std-doc">Click to learn more »</span></a></p>
 </div>
+<a class="sd-stretched-link reference internal" href="software-peer-review-guide/reviewer-guide.html"><span class="doc"></span></a></div>
 </div>
 </div>
 </div>
@@ -528,24 +500,13 @@ submitting and reviewing packages, as well as our</p>
 <p><a class="reference internal" href="about-peer-review/code-of-conduct.html"><span class="doc std std-doc">Code of Conduct</span></a>. The
 <a class="reference internal" href="about-peer-review/aims-and-scope.html"><span class="doc std std-doc">Aims and Scope</span></a> section
 lays out what types of packages we review.</p>
-<!-- 
-Removing button for the time being
-```{button-ref} start/your-first-book
-:ref-type: doc
-:color: primary
-:class: sd-rounded-pill float-left
-Get Involved (Maybe a link to a get involved page)
-``` -->
+<div class="toctree-wrapper compound">
+</div>
+<div class="toctree-wrapper compound">
+</div>
+<div class="toctree-wrapper compound">
+</div>
 </section>
-</section>
-<section id="build-out-the-toctree-hidden">
-<h2>Build out the toctree hidden<a class="headerlink" href="#build-out-the-toctree-hidden" title="Permalink to this headline">#</a></h2>
-<div class="toctree-wrapper compound">
-</div>
-<div class="toctree-wrapper compound">
-</div>
-<div class="toctree-wrapper compound">
-</div>
 </section>
 </section>
 
@@ -557,10 +518,10 @@ Get Involved (Maybe a link to a get involved page)
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-    <a class='right-next' id="next-link" href="about-peer-review/aims-and-scope.html" title="next page">
+    <a class='right-next' id="next-link" href="about-peer-review/intro.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">pyOpenSci Open Peer Review Goals and Scope</p>
+        <p class="prev-next-title">How Peer Review Works</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>
