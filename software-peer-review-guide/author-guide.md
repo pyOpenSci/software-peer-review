@@ -1,4 +1,4 @@
-# pyOpenSci Review Guide for Python Open Source Package Authors
+# pyOpenSci Review Guide for Python Open Source Package Maintainers and Authors
 
 Are you considering submitting a package for review with pyOpenSci? You've 
 come to the right place!
@@ -90,7 +90,7 @@ questions and to help determine the fit.
 
 ## 5. Submit Your Package for Peer Review
 To submit your package for peer review, you can 
-open an issue in our [pyopensci/software-review repo](https://github.com/pyOpenSci/software-review/issues/new/choose/issues/new/choose)
+open an issue in our [pyopensci/software-review repo](https://github.com/pyOpenSci/software-review/issues/new/choose/)
 repository and fill out the [Submit Software for Review](https://github.com/pyOpenSci/software-review/issues/new?assignees=&labels=1%2Feditor-checks%2C+New+Submission%21&template=submit-software-for-review.md&title=) issue template. 
 
 ## 6. Editor in Chief Reviews Package for Scope and Minimal Infrastructure Criteria
@@ -129,7 +129,7 @@ Zenodo. You will then want to created a tagged release representing the version 
 package accepted by pyOpenSci.
 2 We will ask you to add the pyOpenSci badge [![pyOpenSci](https://tinyurl.com/y22nb8up)](https://github.com/pyOpenSci/software-review/issues/issue-number) to the 
 top of your README.md file.
-1. We will ask you to add your package to the [pyOpenSci website](https://www.pyopensci.org/contributors/). This will give 
+1. We will ask you to add your package to the [pyOpenSci website](https://www.pyopensci.org/our-community/). This will give 
 your package more visibility in the community as a vetted pyOpenSci tool.
     * We also will ask you (and those who reviewed your package) to add yourself to our list of contributors as a maintainer!
 1. We will promote your package on our twitter channel!

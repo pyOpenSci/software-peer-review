@@ -185,7 +185,7 @@ moving.
 As a (guest) editor, you can find reviewers through:
 * Suggestions made by the submitter(s) (although submitters may have a narrow view of the types of expertise needed. We suggest not using more than one of suggested reviewers).
 * Authors of existing [pyOpenSci packages](https://www.pyopensci.org/python-packages/).
-* Other [contributors to pyOpenSci](https://www.pyopensci.org/contributors/).
+* Other [contributors to pyOpenSci](https://www.pyopensci.org/our-community/).
 
 When these sources of information are not enough:
 * Ping other editors for ideas.
@@ -362,7 +362,7 @@ Once the review is complete, you can close the issue. Before doing that:
 * Be sure that the issue is tagged with `6/pyOS-approved`.
 * Followup with authors and reviewers to ensure:
     * The package was properly added to the [pyOpenSci website](https://www.pyopensci.org/python-packages/).
-    * Reviewers and maintainers are listed on the [contributors page](https://www.pyopensci.org/contributors/).
+    * Reviewers and maintainers are listed on the [contributors page](https://www.pyopensci.org/our-community/).
 * If the package is approved by JOSS, be sure that the issue is tagged with `7/JOSS-approved` and that the archive / DOI information is updated before closing the issue.
 
 Congratulations, you have completed a review for pyOpenSci!

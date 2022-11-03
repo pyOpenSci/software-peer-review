@@ -69,7 +69,7 @@ review. Below are the basic checks that your package needs to pass
 to begin our review. If some of these are missing, we will ask you 
 to work on them before the review process begins. 
 
-- [ ] **Fit**: The package meets criteria for [fit](https://www.pyopensci.org/contributing-guide/about-peer-review/aims-and-scope.html#package-categories) and [overlap](https://www.pyopensci.org/contributing-guide/about-peer-review/aims-and-scope.html#package-overlap).
+- [ ] **Fit**: The package meets criteria for [fit](https://www.pyopensci.org/peer-review-guide/about-peer-review/aims-and-scope.html#package-scope) and [overlap](https://www.pyopensci.org/peer-review-guide/about-peer-review/aims-and-scope.html#package-overlap).
 - [ ] **Documentation** The package has sufficient documentation available online (README, sphinx docs) to allow us to evaluate package function and scope *without installing the package*. This includes:
   - [ ] tutorials or vignettes that help a user understand how to use the package and what it can do for them (often these have a name like "Getting started")
   - [ ] API documentation - this includes clearly written doc strings with variables defined using a standard docstring format
