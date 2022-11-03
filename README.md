@@ -14,7 +14,7 @@ pyOpenSci's guide for developing, reviewing, and maintaining packages.
 ## Contributing to this guide
 
 We welcome issues and pull requests to improve the content of this guide.
-If you'd like to see an improvement, please [open an issue](https://github.com/pyOpenSci/peer-review-guide/issues/new/choose).
+If you'd like to see an improvement, please [open an issue](https://github.com/pyOpenSci/peer-review-guide/issues/).
 
 To submit a Pull Request with changes:
 1. Create a fork of this repo to make changes.

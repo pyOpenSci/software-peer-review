@@ -6,7 +6,7 @@ from start to finish.
 
 ### Step 1 *optional*: Author submits pre-submission inquiry:* 
 A **presubmission inquiry** is wise to do if you are unsure of whether your package 
-is in scope. To submit a pre-submission inquiry, open up an issue using the presubmission template in our [pyopensci/software-review repository](https://github.com/pyOpenSci/software-review/issues/new/choose/issues/new/choose). During this time an Editor in Chief will review for scope and performs 
+is in scope. To submit a pre-submission inquiry, open up an issue using the presubmission template in our [pyopensci/software-review repository](https://github.com/pyOpenSci/software-review/issues/new/choose/). During this time an Editor in Chief will review for scope and performs 
 basic checks for package infrastructure
 
 - Estimated time: ~1-2 weeks
@@ -20,7 +20,7 @@ basic checks for package infrastructure
 ### 2. Author submits their package for review
 
 To do this, you open an issue using the software submission template in our
-[pyopensci/software-review repository](https://github.com/pyOpenSci/software-review/issues/new/choose/issues/new/choose).
+[pyopensci/software-review repository](https://github.com/pyOpenSci/software-review/issues/new/choose/).
 
 ### 3. Editor in Chief reviews package submission
 
