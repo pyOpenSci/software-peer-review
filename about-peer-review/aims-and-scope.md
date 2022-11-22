@@ -28,9 +28,8 @@ support open science.
 pyOpenSci only reviews packages that fall within our specified domain and 
 technical scope listed below. 
 
-## TODO ADD LINK TO PRESUBMISSION ISSUE TEMPLATE 
 If you are unsure whether your package is in scope for review, please 
-open a [pre-submission inquiry using a GitHub Issue](LINK) to get feedback from 
+open a [pre-submission inquiry using a GitHub Issue](https://github.com/pyOpenSci/software-review/issues/new?assignees=&labels=0%2Fpresubmission&template=presubmission-inquiry.md&title=) to get feedback from 
 one of our editors. We are happy to look at your package and help you understand 
 whether it is in scope or not. 
 
