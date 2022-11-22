@@ -1,4 +1,4 @@
-# Welcome to The pyOpenSci Community Guidebook!
+# Welcome to the pyOpenSci Software Peer Review Guidebook!
 
 ::::{grid} 2
 :reverse:
@@ -30,7 +30,7 @@ drive open science.
 :gutter: 3
 
 :::{grid-item-card} {octicon}`book;1.5em;sd-mr-1` Learn About Open Peer Review ✏️
-:link: about-peer-review/aims-and-scope
+:link: about-peer-review/intro
 :link-type: doc
 :class-header: bg-light
 
@@ -110,17 +110,20 @@ lays out what types of packages we review.
 :hidden:
 :caption: About peer review
 
-Intro <about-peer-review/intro>
+About Peer Review  <about-peer-review/intro>
+Peer Review Benefits <about-peer-review/review-benefits>
+How peer review works <about-peer-review/how-peer-review-works.md>
 Aims & Scope <about-peer-review/aims-and-scope>
-about-peer-review/policies-guidelines
-about-peer-review/code-of-conduct
+pyOpenSci, JOSS & rOpenSci <about-peer-review/pyopensci-related-joss-ropensci>
+Peer review policies <about-peer-review/policies-guidelines>
+Code of Conduct <about-peer-review/code-of-conduct>
 ```
 
 ```{toctree}
 :hidden:
 :caption: Peer Review Guides
 
-Guide intro <software-peer-review-guide/intro>
+Peer review process overview <software-peer-review-guide/intro>
 Author Guide <software-peer-review-guide/author-guide>
 Reviewer Guide <software-peer-review-guide/reviewer-guide>
 Editor Guide <software-peer-review-guide/editors-guide>
