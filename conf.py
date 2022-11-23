@@ -42,7 +42,7 @@ extensions = [
 myst_enable_extensions = ["colon_fence"]
 
 # For generating sitemap
-html_baseurl = 'https://www.pyopensci.org/package-review-guide/'
+html_baseurl = 'https://www.pyopensci.org/peer-review-guide/'
 
 # Link to our repo for easy PR/ editing
 html_theme_options = {
