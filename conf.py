@@ -33,12 +33,16 @@ release = '0.1'
 extensions = [
     "myst_nb",
     "sphinx_design",
-    "sphinx.ext.intersphinx"
+    "sphinx.ext.intersphinx",
+    "sphinx_sitemap",
+    "sphinxext.opengraph",
 ]
 
 # colon fence for card support in md
 myst_enable_extensions = ["colon_fence"]
 
+# For generating sitemap
+html_baseurl = 'https://www.pyopensci.org/peer-review-guide/'
 
 # Link to our repo for easy PR/ editing
 html_theme_options = {
