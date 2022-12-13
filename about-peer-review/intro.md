@@ -95,7 +95,7 @@ comments in public and without the cover of anonymity.
 ### How do I know that a Python package has been reviewed by pyOpenSci?
 
 You can identify pyOpenSci packages that have been peer-reviewed by the green 
-"peer-reviewed" badge at the top their `README.md` file, [![pyOpenSci](https://tinyurl.com/y22nb8up)](). This badge is added by the package author, after the package
+"peer-reviewed" badge at the top of their `README.md` file, [![pyOpenSci](https://tinyurl.com/y22nb8up)](). This badge is added by the package author after the package
 has successfully completed review and ideally links to the specific GitHub issue
 where the tool was reviewed. [See this example from devicely, one of our accepted pyOpenSci ecosystem packages](https://github.com/hpi-dhc/devicely).
 
