@@ -8,7 +8,7 @@ we are not a typical publisher or journal. Rather we are a community
 that provides support for both a diverse group of software maintainers and 
 long term maintenance of our packages.
 
-### Why Two Review Processes JOSS and pyOpenSci? 
+## How is pyOpenSci different from JOSS and other review processes?
 
 The pyOpenSci review process is different from that of JOSS in a few ways:
 
