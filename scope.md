@@ -28,7 +28,7 @@ pyOpenSci is still defining the technical scope criteria for package review.
 Your package **may not be in technical scope** for us to review at this time if
 fits any of the out-of-technical-scope criteria listed below. 
 
-- Package is an out of sync fork of another package repository. 
+- **Package is an out of sync fork of another package repository.** 
 Sometimes we understand that a package maintainer may need to step down.  In that case, we strongly suggest that the original package owner, transfer the package to a new organization that would allow transfer of ownership of the package rather than 
 a fork. However, if there is a case where a forked repository is warranted, please 
 consider submitting a pre-submission inquiry first and explain why the package is a 
