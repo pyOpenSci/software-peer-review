@@ -9,7 +9,7 @@ Our review process is focused on improving software quality and sustainability. 
 
 ## Support from the pyOpenSci community of maintainers and experts
 
- Once your package is accepted, your package will receive support from pyOpenSci community. You'll retain ownership and control of your package. However, if you need help with ongoing maintenance issues, we will try to find people who can help. You will also have accessed to our Slack community to engage with other maintainers and to seek help. 
+ Once your package is accepted, your package will receive support from pyOpenSci community. You'll retain ownership and control of your package. However, if you need help with ongoing maintenance issues, we will try to find people who can help. You will also have access to our Slack community to engage with other maintainers and to seek help. 
   
 ##  pyOpenSci will promote your package online
 
