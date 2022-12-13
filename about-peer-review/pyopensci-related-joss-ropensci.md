@@ -36,8 +36,7 @@ You don't have to chose between pyOpenSci and JOSS; You can submit your package 
 pyOpenSci and [the Journal of Open Source Software (JOSS)](https://joss.theoj.org/)
 are complementary, partner organizations; and you don't have to chose one or the 
 other! After a package to pyOpenSci has been reviewed and accepted by pyOpenSci
-you can chose to also register it with JOSS. JOSS has [more limited scope](https://joss.readthedocs.io/en/latest/review_criteria.html)  of the 
-for packages that it will review. For instance while pyOpenSci will review and 
+you can also choose to register it with JOSS. JOSS has [more limited scope](https://joss.readthedocs.io/en/latest/review_criteria.html) for packages that it will review. For instance, while pyOpenSci will review and 
 accept API wrappers, JOSS won't. 
 
 If your package is accepted by pyOpenSci and in scope for JOSS, JOSS will fast 
