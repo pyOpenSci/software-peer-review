@@ -4,7 +4,7 @@
 
 pyOpenSci aligns closely with the broad mission of JOSS to provide maintainers with credit for their efforts in developing the open source
 tools necessary to support reproducible open science workflows. However, 
-we are not a typical publisher or Journal. Rather we are a community 
+we are not a typical publisher or journal. Rather we are a community 
 that provides support for both a diverse group of software maintainers and 
 long term maintenance of our packages.
 
