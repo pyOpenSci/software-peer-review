@@ -4,7 +4,7 @@
 ## Who submits packages and who runs the reviews 
 
 pyOpenSci's [suite of packages](https://www.pyopensci.org/python-packages/) are 
-contributed by community members with a great diversity of skills. This diversity 
+contributed by community members with a great diversity of skills and wide range of backgrounds
 of developer backgrounds results in a range of quality associated with the suite 
 of tools available to process scientific data.
 
