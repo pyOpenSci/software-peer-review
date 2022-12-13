@@ -34,7 +34,7 @@ a fork. However, if there is a case where a forked repository is warranted, plea
 consider submitting a pre-submission inquiry first and explain why the package is a 
 fork rather than an independent parent repository.
 - **Vendored dependencies:** If your package is a wrapper that wraps a tool in another 
-language or a lower level tool, we prefer that the dependency be added as sa 
+language or a lower level tool, we prefer that the dependency be added as a 
 dependency to your package so that maintenance of the original code base is independent from your package's maintenance. 
 - **If the code base of your package is exceedingly complex in terms of structure of maintenance needs**, we may not be able to review it. pyOpenSci has a goal of supporting long term maintenance of tools. When a maintainer steps down, we need to know that 
 the package infrastructure supports a new maintainer that is proficient in Python, stepping in to take over. 
