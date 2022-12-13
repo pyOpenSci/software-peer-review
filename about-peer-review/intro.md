@@ -5,7 +5,7 @@
 
 ## What is software peer review? 
 
-Software peer review refers a peer-review process that focuses on open source software code, documentation and infrastructure. In pyOpenSci this review includes: 
+Software peer review refers to a peer-review process that focuses on open source software code, documentation and infrastructure. In pyOpenSci this review includes:
 
 * Code quality,
 * Documentation quality,
