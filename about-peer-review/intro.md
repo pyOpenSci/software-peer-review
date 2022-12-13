@@ -57,7 +57,7 @@ numerous and diverse applications that the Python programming language is used f
 [This blog post](https://www.numfocus.org/blog/how-ropensci-uses-code-review-to-promote-reproducible-science/) written by editors from our partner organization, rOpenSci, is a good introduction to pyOpenSci software peer review 
 ```
 
-### Peer review of open software helps maintain consistent open source software quality
+### Peer review of open source software helps maintain consistent quality
 
 Peer review of python tools that support science is critical to enforcing 
 quality and usability standards. All pyOpenSci packages contributed by the 
