@@ -1,0 +1,35 @@
+{
+    "creators": [
+      {
+        "affiliation": "pyOpenSci Lab",
+        "name": "Wasser, Leah",
+        "orcid": "0000-0002-8177-6550"
+      },
+      {
+        "affiliation": "",
+        "name": "Nicholson, David",
+        "orcid": "0000-0002-4261-4719"
+      },
+      {
+        "affiliation": "Earth Lab, University of Colorado - Boulder",
+        "name": "Sasso, Ariane",
+        "orcid": ""
+      },
+      {
+        "affiliation": "",
+        "name": "Batisse , Alexandre",
+        "orcid": ""
+      }
+    ],
+    "keywords": [
+      "open source software",
+      "Python",
+      "open peer review",
+      "data science",
+      "open reproducible science",
+      "science"
+    ],
+    "license": "CC-BY-SA-4.0",
+    "upload_type": "publication",
+    "publication_type": "book"
+  }
