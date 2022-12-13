@@ -20,7 +20,7 @@ pyOpenSci reviews higher level software packages that support scientific workflo
 
 <img src="../images/python-stack-jupyter-earth.png" alt="Image showing the tiers of software in the python ecosystem starting with Python itself and as you move out packages become more domain specific. In this image packages like xarray and numpy are considered core to scientific python. Packages and distributions like astropy, simpeg and metpy are considered to be domain specific." width="700px">
 
-Diagram showing the Python ecosystem from the earth science perspective. pyOpenSci's review
+Diagram showing the tiers of software in the python ecosystem starting with Python itself and as you move out packages become more domain specific. In this image packages like xarray and numpy are considered core to scientific python. Packages and distributions like astropy, simpeg and metpy are considered to be domain specific.. pyOpenSci's review
 process focuses on domain specific packages rather than core packages as 
 these packages tend to have more variability in long term maintenance and 
 package infrastructure and quality compared to established core packages. **Source Jupyter meets earth**
