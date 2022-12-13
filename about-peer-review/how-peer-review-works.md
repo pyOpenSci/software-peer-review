@@ -4,29 +4,31 @@
 ## Who submits packages and who runs the reviews 
 
 pyOpenSci's [suite of packages](https://www.pyopensci.org/python-packages/) are 
-contributed by community members with a great diversity of skills and wide range of backgrounds
-of developer backgrounds results in a range of quality associated with the suite 
-of tools available to process scientific data.
+contributed by community members with a great diversity of skills and backgrounds. This diversity 
+of developer backgrounds enables us to vet and promote a broad ecosystem of 
+high quality tools 
+that supports scientists across domains with a suite of different data 
+types and structures. 
 
 ### Who reviews pyOpenSci packages ?
 
 Our peer review process is run by volunteer members of the Python scientific 
 community:
 
-* Editors manage the incoming package review submissions and ensure 
-reviews move forward progress of submissions; 
-* authors create, submit and improve their package; 
+* Editors manage incoming package submissions. Editors also ensure 
+that package reviews move through the review process efficiently; 
+* Authors create, submit and improve their package; 
 * Reviewers, two per submission, examine the software code and user experience. 
 
 Our [governance documentation](https://www.pyopensci.org/governance) clarifies 
 the various roles that support running our peer review process. 
 
-## Software reviews are contained within GitHub.com issues
+## Software reviews are contained within [GitHub](https://www.github.com/pyOpenSci) issues
 
 Our entire peer review process occurs on GitHub in the 
 [pyOpenSci software-review repository](https://www.github.com/pyopensci/software-review). 
 
-We use GitHub.com because:
+We use GitHub because:
 
 * It is free to create an account
 * Anyone can read the review discussion without an account making the process entirely open

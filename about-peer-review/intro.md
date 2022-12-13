@@ -10,8 +10,8 @@ Software peer review refers to a peer-review process that focuses on open source
 * Code quality,
 * Documentation quality,
 * Package usability, 
-* Testing that supports both code function and making it easier for others to contribute and evaluate how their contribution impacts other parts of the code,
-* Quality of infrastructure that contribute to software quality and reliability. 
+* Test coverage that supports both maintenance of code function. Test coverage also makes it easier for contributors to see how their contributions impacts other parts of the code,
+* Evaluation of infrastructure such as continuous integration to run rest suites and check code linters, that supports automated checks on pull requests. This infrastructure supports software quality and reliability. 
 
 ## What types of packages does pyOpenSci review? 
 pyOpenSci reviews higher level software packages that support scientific workflows. 
