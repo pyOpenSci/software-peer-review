@@ -37,7 +37,7 @@ We use GitHub.com because:
 ### We use GitHub issue templates and labels to organize the review steps
 
 * We use GitHub issue templates as submission templates for new reviews and pre-submission review questions.
-* We label issues to track every step of the package submission and review progress (e.g. 1/initial-editor-checks, 2/reviewers-needed, 6/pyopensci-approved (TODO:link to labels)
+* We label issues to track every step of the package submission and review progress (e.g. [1/initial-editor-checks, 2/reviewers-needed, 6/pyopensci-approved](https://github.com/pyOpenSci/software-review/labels)
 
 ```{note}
 Click [here](https://github.com/ropensci/software-review/issues/24) to read the review thread from an rOpenSci review of the `ropenaq` package. Note that the  process is an ongoing conversation until the package is accepted. Two external reviews are important milestones in the review process. 
