@@ -43,7 +43,7 @@ scientific Python ecosystem:
 1. Packages that are not documented enough to support:
    * Contributions from others
    * Directions on how to get started using the package functionality (quick start vignettes or tutorials)  
-1. Packages that are missing OSI licensing and citation information
+1. Packages that are missing OSI licensing and citation information.
 
 ### Why is pyOpenSci focused on the Python programming language? 
 
