@@ -49,9 +49,9 @@ It is important that this step occur in one post rather than a string of
 conversational feedback that is more difficult to follow. This allows the author to address all issues at 
 one time. Thus the EIC should:
 
-1. Review the checklist
-1. Give the author a rough estimate of how long the checks might take to complete
-1. Perform all of the checks locally
+1. Review the checklist.
+1. Give the author a rough estimate of how long the checks might take to complete.
+1. Perform all of the checks locally.
 1. When all of the above are complete, post the checklist with any feedback for the author in the issue. This should be one single post. 
 ```
 
@@ -65,10 +65,10 @@ improve the quality of the package.
 
 In some situations, the editor-in-chief initial checks may be passed down to an editor as follows:
  
-* If the Editor in Chief is overwhelmed with package submissions to evaluate 
-* If the Editor in Chief simply is busy at the time and needs support with checks 
+* If the Editor in Chief is overwhelmed with package submissions to evaluate.
+* If the Editor in Chief simply is busy at the time and needs support with checks.
 * If the Editor in Chief thinks that the checks might be better served if done by an Editor 
-(For instance if a specific domain or technical expertise would support more effective checks)
+(For instance, if a specific domain or technical expertise would support more effective checks).
 
 (editor-checklist-template)=
 ### Editor-in-chief checklist 
@@ -97,18 +97,18 @@ for the package. [Check out the editor guide for more information on this proces
 
 Once all of the above is complete, the Editor in Chief should:
  
-* Add any comments to the bottom of your editor checks comment
-* Update the yaml in the header of the issue with the editor assigned to the review 
+* Add any comments to the bottom of your editor checks comment.
+* Update the YAML in the issue's header with the editor assigned to the review.
 * Add the tag `2/seeking-reviewer(s)` to the issue.
 
 ## A note about submissions that are incomplete or vague
 
 In some cases:
 
-* online documentation of a package is sparse, 
-* the README is minimal or hard to understand or 
-* there is no clear documentation setup. 
-* elements of the YAML template at the top of the issue are not filled out. 
+* Online documentation of a package is sparse.
+* README is minimal or hard to understand.
+* No clear documentation setup.
+* Elements of the YAML template at the top of the issue are not filled out.
 
 This makes assessment of the package's scope much harder. 
 In this case, please ask the author for more information. Even if the package is deemed

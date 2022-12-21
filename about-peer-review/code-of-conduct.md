@@ -7,7 +7,7 @@ go there now.](https://www.pyopensci.org/governance/code-of-conduct)
 ## NOTE: we are in the process of moving this file to our governance documentation and making significant changes to our code of conduct. 
 
 
-- We are committed to providing a friendly, safe and welcoming environment for all, regardless of gender, sexual orientation, disability, ethnicity, religion, or similar personal characteristic.
+- We are committed to providing a friendly, safe and welcoming environment for all, regardless of gender, sexual orientation, disability, ethnicity, religion, age, or any personal characteristics.
 - Please avoid using openly sexual nicknames or other nicknames that might detract from a friendly, safe and welcoming environment for all.
 - Please be kind and courteous. There’s no need to be mean or rude.
 - Respect that people have differences of opinion and that every design or implementation choice carries a trade-off and numerous costs. There is seldom a right answer.

@@ -19,20 +19,21 @@ expertise.
 
 Some of the basic things that we look for in a review include:
 
-* Familiarity with using the Python programming language 
-* Ability to evaluate a Python package for usability and documentation quality  
+* Familiarity with using the Python programming language.
+* Ability to evaluate a Python package for usability and documentation quality.
 * Ability to provide a technical review of Python package structure and code quality / approach to solving the problems that the package seeks to address.  
 
 We like to have a mix of technical and usability focus in our reviews so it's ok if you don't have all of the above skills!
 
 ```{note}
-## New to package review? We offer mentorship 
+## New to package review? We offer mentorship!
+``
 
 If you are interested in peer review but have never reviewed before, 
 we offer a mentorship program where we will pair you up with someone 
 who has more experience reviewing code. From this experience you can 
 learn more and empower yourself with code review skills. Software review skills 
-are also generally in data science so they are skills worth investing in! 
+are generally useful in data science, so they are skills worth investing in! 
 ```
 
 ## Get Started With Your Review
@@ -48,7 +49,7 @@ development/ editable mode `pip install -e .`
 ```{important}
 Be sure
 that the version that you are reviewing aligns with the version 
-submitted the version submitted by the author. The package version can 
+submitted by the author. The package version can 
 be found at the top of the review issue. In the example below you can 
 see that `pyrolite` version 0.2.5
 was submitted for review. 

@@ -154,7 +154,7 @@ will evaluated by JOSS through the pyOpenSci review
 - To complete the JOSS submission, you will also need to craft a **paper.md** 
 file describing the package following JOSS' standards (see below). More detail on the requirements for JOSS can be found on [their website](https://joss.readthedocs.io/en/latest/submitting.html#what-should-my-paper-contain).
 - If you choose to opt into the pyOpenSci / JOSS partnership in your review, 
-you do NOT need to go through a second review with JOSS. JOSS accepts our review
+you DO NOT need to go through a second review with JOSS. JOSS accepts our review
 for theirs. Please start a review process with JOSS and reference the pyOpenSci
 review issue where your package was accepted. Make sure
 that you let the JOSS editor know that we have already accepted your package. The JOSS editor will review your paper and once that is accepted you now have a JOSS DOI and badge to display on your README file as well!  

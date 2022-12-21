@@ -16,9 +16,9 @@ pyOpenSci domain scope.
 
 To be in technical scope for a pyOpenSci review, your package:
 
-* Should have maintenance workflows documented 
-* Should be structured in a way that someone else could contribute to it
-* Should vendor dependencies using standard approaches rather than including code from other packages within your repository. 
+* Should have maintenance workflows documented.
+* Should be structured in a way that someone else could contribute to it.
+* Should declare vendor dependencies using standard approaches rather than including code from other packages within your repository. 
 
 ### Notes on scope categories
 - pyOpenSci is still developing as a community. If your scientific Python 
@@ -28,11 +28,11 @@ questions, we'd encourage you to open a pre-submission inquiry. We're happy to h
 hyper-specific methods for one type of data to general, do-it-all packages 
 (e.g. matplotlib). pyOpenSci accepts packages that are somewhere in between the 
 two. If you're interested in submitting your data visualization package, please 
-open a pre-submission inquiry on first.
+open a pre-submission inquiry first.
 
 ## Python package technical scope
 
-pyOpenSci is may continue to update it's technical scope criteria for package 
+pyOpenSci may continue to update its technical scope criteria for package
 review as more packages with varying structural approaches are reviewed.  
 Your package **may not be in technical scope** for us to review at this time if
 fits any of the out-of-technical-scope criteria listed below. 
@@ -56,7 +56,7 @@ package repository to a new organization along with PyPI credentials. A new
 organization would allow transfer of ownership of package maintenance rather 
 than several forks existing.
 
-Of your package is a divergent fork of a maintained repository we will encourage you 
+If your package is a divergent fork of a maintained repository we will encourage you 
 to work with the original maintainers to merge efforts. 
 
 However, if there is a case where a forked repository is warranted, please 
