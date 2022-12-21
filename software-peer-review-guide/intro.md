@@ -13,7 +13,7 @@ basic checks for package infrastructure
 
 **These are the basic checks that your package should have prior to being submitted for peer review**
 
-```{include} ../checks.md
+```{include} ../appendices/pre-review-package-requirements.md
 ```
 
 ### 1. Author submits their package for review
