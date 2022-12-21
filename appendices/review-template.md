@@ -17,7 +17,7 @@ The package includes all the following forms of documentation:
 - [ ] **Function Documentation:** for all user-facing functions
 - [ ] **Examples** for all user-facing functions
 - [ ] **Community guidelines** including contribution guidelines in the README or CONTRIBUTING.
-- [ ] **Metadata** including author(s), author e-mail(s), a url, and any other relevant metadata e.g., in a `setup.py` file or elsewhere.
+- [ ] **Metadata** including author(s), author e-mail(s), a url, and any other relevant metadata e.g., in a `pyproject.toml` file or elsewhere.
 
 Readme requirements
 The package meets the readme requirements below:
@@ -28,9 +28,9 @@ The README should include, from top to bottom:
 
 - [ ] The package name
 - [ ] Badges for continuous integration and test coverage, a repostatus.org badge, and any other badges. If the README has many more badges, you might want to consider using a table for badges: [see this example](https://github.com/ropensci/drake). Such a table should be more wide than high. (Note that the badge for pyOpenSci peer-review will be provided upon acceptance.)
-- [ ] Short description of goals of package, with descriptive links to all vignettes (rendered, i.e. readable, cf the documentation website section) unless the package is small and there’s only one vignette repeating the README.
+- [ ] Short description of goals of package, with descriptive links to all vignettes (rendered, i.e. readable, cf. the documentation website section) unless the package is small and there’s only one vignette repeating the README.
 - [ ] Installation instructions
-- [ ] Any additional setup required (authentication tokens, etc)
+- [ ] Any additional setup required (authentication tokens, etc.)
 - [ ] Brief demonstration usage
 - [ ] Direction to more detailed documentation (e.g. your documentation files or website).
 - [ ] If applicable, how the package compares to other similar packages and/or how it relates to other packages
@@ -38,7 +38,7 @@ The README should include, from top to bottom:
 
 #### Usability
 Reviewers are encouraged to submit suggestions (or pull requests) that will improve the usability of the package as a whole.
-Package structure should follow general community best-practices. In general please consider:
+Package structure should follow general community best-practices. In general please consider whether:
 
 - [ ] The documentation is easy to find and understand
 - [ ] The need for the package is clear
