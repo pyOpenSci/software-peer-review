@@ -158,7 +158,7 @@ we are using our volunteer reviewer time effectively.
 * Add a comment to the issue that contains a copy of the Editor Response template (see below) filled out with your response to the checks that begin the review. 
 * Change the label of the issue to `2/seeking-reviewer(s)`
 
-```{include} ../appendices/editor-checks-template.md
+```{include} ../appendices/editor-initial-response-template.md
 ```
 
 
