@@ -55,7 +55,6 @@ emphasis on long term software maintenance and focuses more on
 publication quality and citation / credit.  
 ```
 
-
 ## 2. Does Your Package Meet Packaging Requirements?
 Before submitting your project for review with pyOpenSci, make sure that it
 follows the standards and guidelines outlined in the 
@@ -84,7 +83,7 @@ up to a week.
 
 Our current categories for determining package scope are below:
 
-```{include} ../scope.md
+```{include} ../appendices/scope.md
 ```
 
 ## 4. Submit Your Package for Peer Review
@@ -97,6 +96,12 @@ Once the issue is opened, our editor-in-chief and an editor from our editorial b
 **2 weeks** and respond with next steps. The editor may request that you make updates
 to your package to meet minimal criteria before review. They also may reject your 
 package if it does not fall within our scope. 
+
+```{button-link} https://www.pyopensci.org/software-peer-review-guide/editor-in-chief-guide.html#editor-checklist-template
+:color: secondary
+:class: sd-rounded-pill
+Click here to view the editor checks that will be used to evaluate your package. 
+```
 
 ## 6. The Review Begins
 If your package meets minimal criteria for being 

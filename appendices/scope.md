@@ -20,7 +20,6 @@ To be in technical scope for a pyOpenSci review, your package:
 * Should be structured in a way that someone else could contribute to it
 * Should vendor dependencies using standard approaches rather than including code from other packages within your repository. 
 
-
 ### Notes on scope categories
 - pyOpenSci is still developing as a community. If your scientific Python 
 package does not fit into one of the categories or if you have any other 
@@ -46,10 +45,8 @@ pyOpenSci has a goal of supporting long term maintenance of open source
 Python tools. It is thus important for us to know that if you need to step down as a maintainer, the package infrastructure and documentation is 
 in place to support us finding a new maintainer who can take over you 
 package's maintenance. 
-```
 
-A few examples of technically complex package structures that may 
-make it difficult for us to review are below:
+## Examples of technically complex package structures that may be difficult for us to review
 
 ### Example 1: Your package is an out of sync fork of another package repository that is being actively maintained. 
 
@@ -66,9 +63,10 @@ However, if there is a case where a forked repository is warranted, please
 consider submitting a pre-submission inquiry first and explain why the package is a 
 fork rather than an independent parent repository.
 
-### Example 2 Vendored dependencies
+### Example 2: Vendored dependencies
 
 If your package is a wrapper that wraps around another tool, we prefer that 
 the dependency be added as a dependency to your package. This allows 
 maintenance of the original code base to be independent from your package's 
 maintenance. 
+```
