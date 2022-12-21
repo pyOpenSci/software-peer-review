@@ -239,6 +239,34 @@ Be sure to:
 review next time (e.g. a package author who has already submitted packages to us).
 ```
 
+## Putting a review on hold & handling non-responsive authors 
+
+In some cases, an author may need more time to respond to 
+review comments. In this case, the author can choose to have 
+their submission put on hold. As an editor you should apply the `holding label` to the GitHub issue. 
+
+The holding status will be revisited every 3 months. 
+
+After one year the issue will be closed if there is no movement towards responding to reviews by the author.
+
+If the author simply not responding, the editor should:
+
+* Tag the author (`@author-github-handle`) in an issue comment notifying them that we will close ths issue in one month if there is no response. 
+* Close the issue if one month has passed without a reply. 
+
+If needed you can also chose to email the author. using the email provided in the package metadata file of the package. The email 
+could be in any of the three files in the package: `setup.py`, `pyproject.toml` (preferred) or `setup.cfg`. 
+
+```{important}
+If a submission is closed and the author wishes to re-submit, they will have to start a new submission. 
+
+If the package is still in scope, the author will have to 
+respond to the first round of reviews first. After that is 
+complete, you can begin looking for new reviewers to 
+evaluated the package. This ensures that none of the review 
+energy spent in the first review, goes to waste. 
+```
+
 ### ✔️ 6. How to accept a package into the pyOpenSci ecosystem
 
 Once the package has been accepted through the review process:

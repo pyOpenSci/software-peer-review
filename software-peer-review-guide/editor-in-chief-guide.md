@@ -44,6 +44,17 @@ When a new package is submitted for review, the Editor in Chief will:
 
 ### 2. ✔️ Add the editor checks to the issue 
 
+```{important}
+It is important that this step occur in one post rather than a string of 
+conversational feedback that is more difficult to follow. This allows the author to address all issues at 
+one time. Thus the EIC should:
+
+1. Review the checklist
+1. Give the author a rough estimate of how long the checks might take to complete
+1. Perform all of the checks locally
+1. When all of the above are complete, post the checklist with any feedback for the author in the issue. This should be one single post. 
+```
+
 Copy the {ref}`template below <editor-checklist-template>` 
 and add it to the issue. 
 

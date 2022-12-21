@@ -6,6 +6,8 @@ review. Below are the basic checks that your package needs to pass
 to begin our review. If some of these are missing, we will ask you 
 to work on them before the review process begins. 
 
+- [ ] **Installation** The package can be installed from a community repository such as PyPI (preferred), and/or a community channel on conda (e.g. conda-forge, bioconda)
+  - [ ] The package imports properly into a standard Python environment `import package-name`
 - [ ] **Fit**: The package meets criteria for [fit](https://www.pyopensci.org/peer-review-guide/about-peer-review/aims-and-scope.html#package-scope) and [overlap](https://www.pyopensci.org/peer-review-guide/about-peer-review/aims-and-scope.html#package-overlap).
 - [ ] **Documentation** The package has sufficient documentation available online (README, sphinx docs) to allow us to evaluate package function and scope *without installing the package*. This includes:
   - [ ] Short tutorials or [vignettes](https://kbroman.org/pkg_primer/pages/vignettes.html) that help a user understand how to use the package and what it can do for them (often these have a name like "Getting started")

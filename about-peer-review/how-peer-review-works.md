@@ -42,7 +42,12 @@ We use GitHub because:
 * We label issues to track every step of the package submission and review progress (e.g. [1/initial-editor-checks, 2/reviewers-needed, 6/pyopensci-approved](https://github.com/pyOpenSci/software-review/labels)
 
 ```{note}
-Click [here](https://github.com/ropensci/software-review/issues/24) to read the review thread from an rOpenSci review of the `ropenaq` package. Note that the  process is an ongoing conversation until the package is accepted. Two external reviews are important milestones in the review process. 
+[Click here to read the review thread from a December 2022 
+pyOpenSci pre-submission issue.](https://github.com/pyOpenSci/software-review/issues/65) Note the conversational 
+tone of the pre-review. In this case the package was improved 
+Before the formal review even began. 
+
+In the actual review process, two external reviews are important milestones. The editor will also provide the author with some feedback.
 ```
 
 For more detailed overview of the peer review process, [check out our process 
