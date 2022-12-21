@@ -1,13 +1,13 @@
 # pyOpenSci Guide for Peer Review Editors
 
-
+<!-- 
 ```{note}
 PyOpenSci has a partnership with JOSS where packages that are in-scope for JOSS
 can be directly accepted into the JOSS ecosystem through the pyOpenSci review.
 The JOSS component of the review happens after all of the review on the
 pyOpenSci side is complete and it begins through direct communication with a
 JOSS editor.
-```
+``` -->
 
 Thank you for your time in serving as an editor for a PyOpenSci package! Below you will find some
 information about the role that editors have in the 
