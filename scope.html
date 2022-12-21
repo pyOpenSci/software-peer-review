@@ -5,14 +5,14 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
-<meta property="og:title" content="Package Scope" />
+<meta property="og:title" content="Python package domain scope" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="scope.html" />
 <meta property="og:site_name" content="peer-review-guide" />
-<meta property="og:description" content="Data retrieval: Packages for accessing and downloading data from online sources. Includes wrappers for accessing APIs., Data extraction: Packages that aid in retrieving data from unstructured sourc..." />
-<meta name="description" content="Data retrieval: Packages for accessing and downloading data from online sources. Includes wrappers for accessing APIs., Data extraction: Packages that aid in retrieving data from unstructured sourc..." />
+<meta property="og:description" content="The following categories are the current domain areas that fall into the pyOpenSci domain scope. Data retrieval: Packages for accessing and downloading data from online sources. Includes wrappers f..." />
+<meta name="description" content="The following categories are the current domain areas that fall into the pyOpenSci domain scope. Data retrieval: Packages for accessing and downloading data from online sources. Includes wrappers f..." />
 
-    <title>Package Scope &#8212; pyOpenSci Peer Review Guide</title>
+    <title>Python package domain scope &#8212; pyOpenSci Peer Review Guide</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -29,6 +29,7 @@
     <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
     <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
     <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="_static/pyos.css" />
     <link rel="stylesheet" type="text/css" href="_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
     
   <!-- Pre-loaded scripts that we'll load fully later -->
@@ -112,7 +113,17 @@
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="about-peer-review/intro.html">
-   Intro
+   About Peer Review
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="about-peer-review/review-benefits.html">
+   Peer Review Benefits
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="about-peer-review/how-peer-review-works.html">
+   How peer review works
   </a>
  </li>
  <li class="toctree-l1">
@@ -121,13 +132,18 @@
   </a>
  </li>
  <li class="toctree-l1">
+  <a class="reference internal" href="about-peer-review/pyopensci-related-joss-ropensci.html">
+   pyOpenSci, JOSS &amp; rOpenSci
+  </a>
+ </li>
+ <li class="toctree-l1">
   <a class="reference internal" href="about-peer-review/policies-guidelines.html">
-   Peer Review Guidelines &amp; Policies
+   Peer review policies
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="about-peer-review/code-of-conduct.html">
-   Community Code of Conduct
+   Code of Conduct
   </a>
  </li>
 </ul>
@@ -139,7 +155,7 @@
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="software-peer-review-guide/intro.html">
-   Guide intro
+   Peer review process overview
   </a>
  </li>
  <li class="toctree-l1">
@@ -329,10 +345,34 @@ title="Print to PDF"
     </div>
     <nav id="bd-toc-nav" aria-label="Page">
         <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#notes-on-scope-categories">
-   Notes on Scope Categories
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   Python package domain scope
   </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#notes-on-scope-categories">
+     Notes on Scope Categories
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#python-package-technical-scope">
+   Python package technical scope
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#example-1-your-package-is-an-out-of-sync-fork-of-another-package-repository-that-is-being-actively-maintained">
+     Example 1: Your package is an out of sync fork of another package repository that is being actively maintained.
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#example-2-vendored-dependencies">
+     Example 2 Vendored dependencies
+    </a>
+   </li>
+  </ul>
  </li>
 </ul>
 
@@ -343,7 +383,7 @@ title="Print to PDF"
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Package Scope</h1>
+                <h1>Python package domain scope</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -353,10 +393,34 @@ title="Print to PDF"
                         </div>
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#notes-on-scope-categories">
-   Notes on Scope Categories
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   Python package domain scope
   </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#notes-on-scope-categories">
+     Notes on Scope Categories
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#python-package-technical-scope">
+   Python package technical scope
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#example-1-your-package-is-an-out-of-sync-fork-of-another-package-repository-that-is-being-actively-maintained">
+     Example 1: Your package is an out of sync fork of another package repository that is being actively maintained.
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#example-2-vendored-dependencies">
+     Example 2 Vendored dependencies
+    </a>
+   </li>
+  </ul>
  </li>
 </ul>
 
@@ -368,8 +432,10 @@ title="Print to PDF"
                 
               <div>
                 
-  <section id="package-scope">
-<h1>Package Scope<a class="headerlink" href="#package-scope" title="Permalink to this headline">#</a></h1>
+  <section id="python-package-domain-scope">
+<h1>Python package domain scope<a class="headerlink" href="#python-package-domain-scope" title="Permalink to this headline">#</a></h1>
+<p>The following categories are the current domain areas that fall into the
+pyOpenSci domain scope.</p>
 <ul class="simple">
 <li><p><strong>Data retrieval:</strong> Packages for accessing and downloading data from online sources. Includes wrappers for accessing APIs.</p></li>
 <li><p><strong>Data extraction:</strong> Packages that aid in retrieving data from unstructured sources such as text, images and PDFs.</p></li>
@@ -392,6 +458,44 @@ hyper-specific methods for one type of data to general, do-it-all packages
 two. If you’re interested in submitting your data visualization package, please
 open a pre-submission inquiry on first.</p></li>
 </ul>
+</section>
+</section>
+<section id="python-package-technical-scope">
+<h1>Python package technical scope<a class="headerlink" href="#python-package-technical-scope" title="Permalink to this headline">#</a></h1>
+<p>pyOpenSci is may continue to update it’s technical scope criteria for package
+review as more packages with varying structural approaches are reviewed.<br />
+Your package <strong>may not be in technical scope</strong> for us to review at this time if
+fits any of the out-of-technical-scope criteria listed below.</p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p><strong>If the code base of your package is exceedingly complex in terms of
+structure of maintenance needs</strong>, we may not be able to review it.</p>
+<p>pyOpenSci has a goal of supporting long term maintenance of open source
+Python tools. It is thus important for us to know that if you need to step down as a maintainer, the package infrastructure and documentation is
+in place to support us finding a new maintainer who can take over you
+package’s maintenance.</p>
+</div>
+<p>A few examples of technically complex package structures that may
+make it difficult for us to review are below:</p>
+<section id="example-1-your-package-is-an-out-of-sync-fork-of-another-package-repository-that-is-being-actively-maintained">
+<h2>Example 1: Your package is an out of sync fork of another package repository that is being actively maintained.<a class="headerlink" href="#example-1-your-package-is-an-out-of-sync-fork-of-another-package-repository-that-is-being-actively-maintained" title="Permalink to this headline">#</a></h2>
+<p>Sometimes we understand that a package maintainer may need to step down. In
+that case, we strongly suggest that the original package owner, transfer the
+package repository to a new organization along with PyPI credentials. A new
+organization would allow transfer of ownership of package maintenance rather
+than several forks existing.</p>
+<p>Of your package is a divergent fork of a maintained repository we will encourage you
+to work with the original maintainers to merge efforts.</p>
+<p>However, if there is a case where a forked repository is warranted, please
+consider submitting a pre-submission inquiry first and explain why the package is a
+fork rather than an independent parent repository.</p>
+</section>
+<section id="example-2-vendored-dependencies">
+<h2>Example 2 Vendored dependencies<a class="headerlink" href="#example-2-vendored-dependencies" title="Permalink to this headline">#</a></h2>
+<p>If your package is a wrapper that wraps around another tool, we prefer that
+the dependency be added as a dependency to your package. This allows
+maintenance of the original code base to be independent from your package’s
+maintenance.</p>
 </section>
 </section>
 

@@ -29,6 +29,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
     <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/pyos.css" />
     <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
     
   <!-- Pre-loaded scripts that we'll load fully later -->
@@ -43,8 +44,8 @@
     <link rel="canonical" href="https://www.pyopensci.org/peer-review-guide/about-peer-review/aims-and-scope.html" />
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Peer Review Guidelines &amp; Policies" href="policies-guidelines.html" />
-    <link rel="prev" title="How Peer Review Works" href="intro.html" />
+    <link rel="next" title="How Are JOSS, rOpenSci and pyOpenSci Related?" href="pyopensci-related-joss-ropensci.html" />
+    <link rel="prev" title="How pyOpenSci’s open software peer review works" href="how-peer-review-works.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -114,7 +115,17 @@
 <ul class="current nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="intro.html">
-   Intro
+   About Peer Review
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="review-benefits.html">
+   Peer Review Benefits
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="how-peer-review-works.html">
+   How peer review works
   </a>
  </li>
  <li class="toctree-l1 current active">
@@ -123,13 +134,18 @@
   </a>
  </li>
  <li class="toctree-l1">
+  <a class="reference internal" href="pyopensci-related-joss-ropensci.html">
+   pyOpenSci, JOSS &amp; rOpenSci
+  </a>
+ </li>
+ <li class="toctree-l1">
   <a class="reference internal" href="policies-guidelines.html">
-   Peer Review Guidelines &amp; Policies
+   Peer review policies
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="code-of-conduct.html">
-   Community Code of Conduct
+   Code of Conduct
   </a>
  </li>
 </ul>
@@ -141,7 +157,7 @@
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="../software-peer-review-guide/intro.html">
-   Guide intro
+   Peer review process overview
   </a>
  </li>
  <li class="toctree-l1">
@@ -337,13 +353,30 @@ title="Print to PDF"
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#package-scope">
-   Package Scope
+  <a class="reference internal nav-link" href="#python-package-domain-scope">
+   Python package domain scope
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#notes-on-scope-categories">
      Notes on Scope Categories
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#python-package-technical-scope">
+   Python package technical scope
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#example-1-your-package-is-an-out-of-sync-fork-of-another-package-repository-that-is-being-actively-maintained">
+     Example 1: Your package is an out of sync fork of another package repository that is being actively maintained.
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#example-2-vendored-dependencies">
+     Example 2 Vendored dependencies
     </a>
    </li>
   </ul>
@@ -378,13 +411,30 @@ title="Print to PDF"
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#package-scope">
-   Package Scope
+  <a class="reference internal nav-link" href="#python-package-domain-scope">
+   Python package domain scope
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#notes-on-scope-categories">
      Notes on Scope Categories
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#python-package-technical-scope">
+   Python package technical scope
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#example-1-your-package-is-an-out-of-sync-fork-of-another-package-repository-that-is-being-actively-maintained">
+     Example 1: Your package is an out of sync fork of another package repository that is being actively maintained.
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#example-2-vendored-dependencies">
+     Example 2 Vendored dependencies
     </a>
    </li>
   </ul>
@@ -427,14 +477,17 @@ support open science.</p></li>
 </ol>
 <section id="is-your-package-in-scope-for-pyopensci-review">
 <h2>Is Your Package in Scope For pyOpenSci Review?<a class="headerlink" href="#is-your-package-in-scope-for-pyopensci-review" title="Permalink to this headline">#</a></h2>
-<p>pyOpenSci reviews packages within a set of categories define below.
-If you are unsure whether your package fits into one of these categories, please
-open a <span class="xref myst">pre-submission inquiry via a GitHub Issue</span> to get feedback from
+<p>pyOpenSci only reviews packages that fall within our specified domain and
+technical scope listed below.</p>
+<p>If you are unsure whether your package is in scope for review, please
+open a <a class="reference external" href="https://github.com/pyOpenSci/software-review/issues/new?assignees=&amp;labels=0%2Fpresubmission&amp;template=presubmission-inquiry.md&amp;title=">pre-submission inquiry using a GitHub Issue</a> to get feedback from
 one of our editors. We are happy to look at your package and help you understand
 whether it is in scope or not.</p>
 </section>
-<section id="package-scope">
-<h2>Package Scope<a class="headerlink" href="#package-scope" title="Permalink to this headline">#</a></h2>
+<section id="python-package-domain-scope">
+<h2>Python package domain scope<a class="headerlink" href="#python-package-domain-scope" title="Permalink to this headline">#</a></h2>
+<p>The following categories are the current domain areas that fall into the
+pyOpenSci domain scope.</p>
 <ul class="simple">
 <li><p><strong>Data retrieval:</strong> Packages for accessing and downloading data from online sources. Includes wrappers for accessing APIs.</p></li>
 <li><p><strong>Data extraction:</strong> Packages that aid in retrieving data from unstructured sources such as text, images and PDFs.</p></li>
@@ -457,6 +510,44 @@ hyper-specific methods for one type of data to general, do-it-all packages
 two. If you’re interested in submitting your data visualization package, please
 open a pre-submission inquiry on first.</p></li>
 </ul>
+</section>
+</section>
+<section id="python-package-technical-scope">
+<h2>Python package technical scope<a class="headerlink" href="#python-package-technical-scope" title="Permalink to this headline">#</a></h2>
+<p>pyOpenSci is may continue to update it’s technical scope criteria for package
+review as more packages with varying structural approaches are reviewed.<br />
+Your package <strong>may not be in technical scope</strong> for us to review at this time if
+fits any of the out-of-technical-scope criteria listed below.</p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p><strong>If the code base of your package is exceedingly complex in terms of
+structure of maintenance needs</strong>, we may not be able to review it.</p>
+<p>pyOpenSci has a goal of supporting long term maintenance of open source
+Python tools. It is thus important for us to know that if you need to step down as a maintainer, the package infrastructure and documentation is
+in place to support us finding a new maintainer who can take over you
+package’s maintenance.</p>
+</div>
+<p>A few examples of technically complex package structures that may
+make it difficult for us to review are below:</p>
+<section id="example-1-your-package-is-an-out-of-sync-fork-of-another-package-repository-that-is-being-actively-maintained">
+<h3>Example 1: Your package is an out of sync fork of another package repository that is being actively maintained.<a class="headerlink" href="#example-1-your-package-is-an-out-of-sync-fork-of-another-package-repository-that-is-being-actively-maintained" title="Permalink to this headline">#</a></h3>
+<p>Sometimes we understand that a package maintainer may need to step down. In
+that case, we strongly suggest that the original package owner, transfer the
+package repository to a new organization along with PyPI credentials. A new
+organization would allow transfer of ownership of package maintenance rather
+than several forks existing.</p>
+<p>Of your package is a divergent fork of a maintained repository we will encourage you
+to work with the original maintainers to merge efforts.</p>
+<p>However, if there is a case where a forked repository is warranted, please
+consider submitting a pre-submission inquiry first and explain why the package is a
+fork rather than an independent parent repository.</p>
+</section>
+<section id="example-2-vendored-dependencies">
+<h3>Example 2 Vendored dependencies<a class="headerlink" href="#example-2-vendored-dependencies" title="Permalink to this headline">#</a></h3>
+<p>If your package is a wrapper that wraps around another tool, we prefer that
+the dependency be added as a dependency to your package. This allows
+maintenance of the original code base to be independent from your package’s
+maintenance.</p>
 </section>
 </section>
 <section id="package-overlap">
@@ -495,17 +586,17 @@ consider submittal to other repositories or journals.</p>
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-    <a class='left-prev' id="prev-link" href="intro.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="how-peer-review-works.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">How Peer Review Works</p>
+            <p class="prev-next-title">How pyOpenSci’s open software peer review works</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="policies-guidelines.html" title="next page">
+    <a class='right-next' id="next-link" href="pyopensci-related-joss-ropensci.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Peer Review Guidelines &amp; Policies</p>
+        <p class="prev-next-title">How Are JOSS, rOpenSci and pyOpenSci Related?</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>

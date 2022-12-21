@@ -4,6 +4,12 @@ div.header__block {
   color: #222;
 }
 
+/* not working and not sure why */
+.caption-text {
+
+}
+
+
 /* 
 .announcement div {
   background-color: #ccc;

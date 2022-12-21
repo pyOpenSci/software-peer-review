@@ -5,14 +5,14 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
-<meta property="og:title" content="Welcome to The pyOpenSci Community Guidebook!" />
+<meta property="og:title" content="Welcome to the pyOpenSci Software Peer Review Guidebook!" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="index.html" />
 <meta property="og:site_name" content="peer-review-guide" />
 <meta property="og:description" content="pyOpenSci is a diverse community that supports the open Python tools that drive open science. GitHub release (latest by date) DOI Learn About Open Peer Review ✏️ Get a basic overview of our open pe..." />
 <meta name="description" content="pyOpenSci is a diverse community that supports the open Python tools that drive open science. GitHub release (latest by date) DOI Learn About Open Peer Review ✏️ Get a basic overview of our open pe..." />
 
-    <title>Welcome to The pyOpenSci Community Guidebook! &#8212; pyOpenSci Peer Review Guide</title>
+    <title>Welcome to the pyOpenSci Software Peer Review Guidebook! &#8212; pyOpenSci Peer Review Guide</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -29,6 +29,7 @@
     <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
     <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
     <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="_static/pyos.css" />
     <link rel="stylesheet" type="text/css" href="_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
     
   <!-- Pre-loaded scripts that we'll load fully later -->
@@ -43,7 +44,7 @@
     <link rel="canonical" href="https://www.pyopensci.org/peer-review-guide/index.html" />
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="How Peer Review Works" href="about-peer-review/intro.html" />
+    <link rel="next" title="About the pyOpenSci peer review process" href="about-peer-review/intro.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -113,7 +114,17 @@
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="about-peer-review/intro.html">
-   Intro
+   About Peer Review
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="about-peer-review/review-benefits.html">
+   Peer Review Benefits
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="about-peer-review/how-peer-review-works.html">
+   How peer review works
   </a>
  </li>
  <li class="toctree-l1">
@@ -122,13 +133,18 @@
   </a>
  </li>
  <li class="toctree-l1">
+  <a class="reference internal" href="about-peer-review/pyopensci-related-joss-ropensci.html">
+   pyOpenSci, JOSS &amp; rOpenSci
+  </a>
+ </li>
+ <li class="toctree-l1">
   <a class="reference internal" href="about-peer-review/policies-guidelines.html">
-   Peer Review Guidelines &amp; Policies
+   Peer review policies
   </a>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="about-peer-review/code-of-conduct.html">
-   Community Code of Conduct
+   Code of Conduct
   </a>
  </li>
 </ul>
@@ -140,7 +156,7 @@
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="software-peer-review-guide/intro.html">
-   Guide intro
+   Peer review process overview
   </a>
  </li>
  <li class="toctree-l1">
@@ -363,7 +379,7 @@ title="Print to PDF"
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Welcome to The pyOpenSci Community Guidebook!</h1>
+                <h1>Welcome to the pyOpenSci Software Peer Review Guidebook!</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -407,8 +423,8 @@ title="Print to PDF"
                 
               <div>
                 
-  <section id="welcome-to-the-pyopensci-community-guidebook">
-<h1>Welcome to The pyOpenSci Community Guidebook!<a class="headerlink" href="#welcome-to-the-pyopensci-community-guidebook" title="Permalink to this headline">#</a></h1>
+  <section id="welcome-to-the-pyopensci-software-peer-review-guidebook">
+<h1>Welcome to the pyOpenSci Software Peer Review Guidebook!<a class="headerlink" href="#welcome-to-the-pyopensci-software-peer-review-guidebook" title="Permalink to this headline">#</a></h1>
 <div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
 <div class="sd-row sd-row-cols-2 sd-row-cols-xs-2 sd-row-cols-sm-2 sd-row-cols-md-2 sd-row-cols-lg-2 sd-flex-row-reverse docutils">
 <div class="sd-col sd-d-flex-column sd-col-4 sd-col-xs-4 sd-col-sm-4 sd-col-md-4 sd-col-lg-4 sd-m-auto docutils">
@@ -436,7 +452,7 @@ software.</p>
 <div class="sd-card-footer docutils">
 <p class="sd-card-text"><a class="reference internal" href="about-peer-review/aims-and-scope.html"><span class="doc std std-doc">Click to learn more »</span></a></p>
 </div>
-<a class="sd-stretched-link reference internal" href="about-peer-review/aims-and-scope.html"><span class="doc"></span></a></div>
+<a class="sd-stretched-link reference internal" href="about-peer-review/intro.html"><span class="doc"></span></a></div>
 </div>
 <div class="sd-col sd-d-flex-row docutils">
 <div class="sd-card sd-sphinx-override sd-w-100 sd-shadow-sm sd-card-hover docutils">
@@ -528,7 +544,7 @@ lays out what types of packages we review.</p>
     <a class='right-next' id="next-link" href="about-peer-review/intro.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">How Peer Review Works</p>
+        <p class="prev-next-title">About the pyOpenSci peer review process</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>

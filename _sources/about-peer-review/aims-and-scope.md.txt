@@ -24,9 +24,12 @@ package.
 support open science. 
 
 ## Is Your Package in Scope For pyOpenSci Review?
-pyOpenSci reviews packages within a set of categories define below. 
-If you are unsure whether your package fits into one of these categories, please 
-open a [pre-submission inquiry via a GitHub Issue](LINK) to get feedback from 
+
+pyOpenSci only reviews packages that fall within our specified domain and 
+technical scope listed below. 
+
+If you are unsure whether your package is in scope for review, please 
+open a [pre-submission inquiry using a GitHub Issue](https://github.com/pyOpenSci/software-review/issues/new?assignees=&labels=0%2Fpresubmission&template=presubmission-inquiry.md&title=) to get feedback from 
 one of our editors. We are happy to look at your package and help you understand 
 whether it is in scope or not. 
 
