@@ -9,7 +9,7 @@ to work on them before the review process begins.
 - [ ] **Fit**: The package meets criteria for [fit](https://www.pyopensci.org/peer-review-guide/about-peer-review/aims-and-scope.html#package-scope) and [overlap](https://www.pyopensci.org/peer-review-guide/about-peer-review/aims-and-scope.html#package-overlap).
 - [ ] **Documentation** The package has sufficient documentation available online (README, sphinx docs) to allow us to evaluate package function and scope *without installing the package*. This includes:
   - [ ] tutorials or vignettes that help a user understand how to use the package and what it can do for them (often these have a name like "Getting started")
-  - [ ] API documentation - this includes clearly written doc strings with variables defined using a standard docstring format
+  - [ ] API documentation - this includes clearly written docstrings with variables defined using a standard docstring format such as the sphinx, Numpy, or Google formats
   - [ ] README that clearly articulates the function of the package
   - [ ] Contributing documentation that details how to install a development environment and how to contribute to the package
 - [ ] **Issue Submission Documentation**: All of the information is filled out in the `YAML` header of the issue (located at the top of the issue template).
