@@ -32,7 +32,7 @@ Try to balance your sense of the potential reviewer’s experience against the c
 
 Each submission should be reviewed by _two_ package reviewers. Although it is
 fine for one of them to have less package development experience and more domain
-knowledge, the review should not be split into two parts.  Both reviewers need to review
+knowledge, the review should not be split into two parts. Both reviewers need to review
 the package comprehensively, from their particular perspectives. In
 general, at least one reviewer should have prior reviewing experience, and of
 course inviting one new reviewer expands our pool of reviewers.

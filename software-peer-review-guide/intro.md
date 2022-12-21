@@ -5,7 +5,7 @@ There are several components to the pyOpenSci peer review process. Below, we ove
 from start to finish.
 
 ### Step 0. *optional* : Author submits pre-submission inquiry
-A **presubmission inquiry** is wise to do if you are unsure of whether your package 
+A **presubmission inquiry** is useful if you are unsure whether your package 
 is in scope. To submit a pre-submission inquiry, open up an issue using the presubmission template in our [pyopensci/software-review repository](https://github.com/pyOpenSci/software-review/issues/new/choose/). During this time an Editor in Chief will review for scope and performs 
 basic checks for package infrastructure
 
@@ -24,7 +24,7 @@ To do this, you open an issue using the software submission template in our
 ### 2. Editor in Chief reviews package submission
 
 The Editor in Chief will review your submission at this point for both package scope and minimal infrastructure criteria 
-(listed above) 
+(listed above).
 - TIME ~2 weeks (or longer if editor requests changes that take the author longer to implement)
 
 ### 3. Editor finds reviewers for package 
@@ -33,7 +33,7 @@ requirements and is in scope the Editor in Chief will assign an editor
 to review your package. That editor will then look 
 for reviewers.
 
-Time: ~ 2-3 weeks
+Time: ~2-3 weeks
 
 ### 4. Peer review of submitted Python Package begins 
 Once we have an editor and 2 reviewers on board, review begins. **Reviewers have 3 weeks to return a review.** To do this
@@ -49,7 +49,7 @@ take longer to actually implement the changes requested in the review. But we
 request that authors respond to reviews to acknowledge
 that they have seen them.
 
-The reviewers are encouraged to open pull requests and issues in to help the 
+The reviewers are encouraged to open pull requests and issues to help the 
 maintainers update their package.
 
 *Often there is some back and forth between reviewers and maintainers at this step.*
@@ -65,9 +65,9 @@ editor performs one last check on the package. And accepts it if that is appropr
  
 Now, there are a few final cleanup activities including:
  
- * adding the pyOpenSci peer-reviewed badge to the package README file
- * creating a new release on GitHub from the reviewed version
- * adding package authors and the package to the pyOpenSci website 
+ * Adding the pyOpenSci peer-reviewed badge to the package README file.
+ * Creating a new release on GitHub from the reviewed version.
+ * Adding package authors and the package to the pyOpenSci website.
  
 The package is now accepted into the pyOpenSci ecosystem!
 

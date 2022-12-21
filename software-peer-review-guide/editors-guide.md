@@ -127,8 +127,8 @@ Once you begin the review process as an editor:
   - If elements are incomplete, direct the authors toward filling in any missing pieces.
 
 ```markdown
-Submitting Author: SUBMITTING AUTHOR NAME HEREName (@github_handle)
-All current maintainers: ALL CURRENT MAINTAINERS LISTED HER(@github_handle1, @github_handle2)
+Submitting Author: SUBMITTING AUTHOR NAME HERE (Name @github_handle)
+All current maintainers: ALL CURRENT MAINTAINERS LISTED HERE (Name @github_handle1, Name @github_handle2)
 Package Name: PACKAGE-NAME-HERE
 One-Line Description of Package: DESCRIPTION OF THE PACKAGE HERE 
 Repository Link:  REPO-LINK
@@ -139,7 +139,7 @@ Version submitted:  VERSION-SUBMITTED
 The editor in chief who initially engaged with this review should have already evaluated the package level Editor Checks section for `Fit`, `Automated Tests`, `Documentation`, `License`, and `Repository`. 
 
 They also should have checked whether the package is [in scope for pyOpenSci](../about-peer-review/aims-and-scope.html#package-categories).
-And whether there is [functionality overlap with functionality with other packages](../about-peer-review/aims-and-scope.html#package-overlap).
+And whether there is [functionality overlap with functionality of any other existing Python packages](../about-peer-review/aims-and-scope.html#package-overlap).
 
 However, in some instances the editor-in-chief may request that an editor 
 perform these tasks. Be sure to check the issue to ensure the above checks have been implemented prior to initiating the review. 
@@ -197,7 +197,7 @@ moving.
 Once reviewers have been identified:
 
 * Tag issue with `3/reviewer(s)-assigned` tag.
-* Add reviewer names and review due date to Editor Comment that you left above in step 2.
+* Add reviewer names and review due date to the Editor Comment that you left above in step 2.
 * Also add the reviewer names to the YAML template at the very top of the issue.
 
 ```markdown

@@ -7,11 +7,11 @@ documentation and usability. The review process
 is similar to a manuscript review, however it has a stronger 
 focus on Python packaging best practices. 
 
-Unlike a manuscript review, our peer review process is be an ongoing conversation. Once all major issues and questions are addressed, the review editor package will make a decision to accept, hold, or reject the package. 
+Unlike a manuscript review, our peer review process is an ongoing conversation. Once all major issues and questions are addressed, the review editor package will make a decision to accept, hold, or reject the package. 
 
 Rejections are usually done early in the process, before the review process begins. In rare cases a package may also not be on-boarded into the pyOpenSci ecosystem after review & revision. 
 
-It is ultimately editor’s decision on whether or not to reject the package based on how the reviews are addressed.
+It is ultimately the editor’s decision on whether or not to reject the package based on how the reviews are addressed.
 
 ## Review communication approach 
 
