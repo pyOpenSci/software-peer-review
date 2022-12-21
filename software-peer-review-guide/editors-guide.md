@@ -151,7 +151,7 @@ about how to respond.
 ```
 
 ### ✔️ 2. Respond to the submitter in the GitHub issue
-Once the above is complete, you are ready to add editor response  to the issue.
+Once the above is complete, you are ready to add an editor response to the issue.
 This step ensures that the package is ready to be reviewed. It also ensures that 
 we are using our volunteer reviewer time effectively.
 
