@@ -65,7 +65,7 @@ The package contains a `paper.md` matching [JOSS's requirements](http://joss.the
 - [ ] **A short summary** describing the high-level functionality of the software
 - [ ] **Authors:** A list of authors with their affiliations
 - [ ] **A statement of need** clearly stating problems the software is designed to solve and its target audience.
-- [ ] **References:** with DOIs for all those that have one (e.g. papers, datasets, software).
+- [ ] **References:** With DOIs for all those that have one (e.g. papers, datasets, software).
 
 #### Final approval (post-review)
 
