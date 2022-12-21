@@ -19,7 +19,7 @@ The package includes all the following forms of documentation:
 - [ ] **Community guidelines** including contribution guidelines in the README or CONTRIBUTING.
 - [ ] **Metadata** including author(s), author e-mail(s), a url, and any other relevant metadata e.g., in a `pyproject.toml` file or elsewhere.
 
-Readme requirements
+Readme file  requirements
 The package meets the readme requirements below:
 
 - [ ] Package has a README.md file in the root directory.
@@ -27,22 +27,32 @@ The package meets the readme requirements below:
 The README should include, from top to bottom:
 
 - [ ] The package name
-- [ ] Badges for continuous integration and test coverage, a repostatus.org badge, and any other badges. If the README has many more badges, you might want to consider using a table for badges: [see this example](https://github.com/ropensci/drake). Such a table should be more wide than high. (Note that the badge for pyOpenSci peer-review will be provided upon acceptance.)
-- [ ] Short description of goals of package, with descriptive links to all vignettes (rendered, i.e. readable, cf. the documentation website section) unless the package is small and there’s only one vignette repeating the README.
-- [ ] Installation instructions
-- [ ] Any additional setup required (authentication tokens, etc.)
-- [ ] Brief demonstration usage
-- [ ] Direction to more detailed documentation (e.g. your documentation files or website).
-- [ ] If applicable, how the package compares to other similar packages and/or how it relates to other packages
+- [ ] Badges for: 
+    - [ ] Continuous integration and test coverage, 
+    - [ ] Docs building (if you have a documentation website)
+    - [ ] A [repostatus.org](https://www.repostatus.org/) badge
+    - [ ] Python versions supported 
+    - [ ] Current package version (on PyPI / Conda)
+
+*NOTE: If the README has many more badges, you might want to consider using a table for badges: [see this example](https://github.com/ropensci/drake). Such a table should be more wide than high. (Note that the a badge for pyOpenSci peer-review will be provided upon acceptance.)*
+
+- [ ] Short description of package goals.
+- [ ] Package installation instructions
+- [ ] Any additional setup required to use the package (authentication tokens, etc.)
+- [ ] Descriptive links to all vignettes. If the package is small, there may only be a need for one vignette which could be placed in the README.md file.
+    - [ ] Brief demonstration of package usage (as it makes sense - links to vignettes could also suffice here if package description is clear)
+- [ ] Link to your documentation website.
+- [ ] If applicable, how the package compares to other similar packages and/or how it relates to other packages in the scientific ecosystem.
 - [ ] Citation information
 
 #### Usability
 Reviewers are encouraged to submit suggestions (or pull requests) that will improve the usability of the package as a whole.
 Package structure should follow general community best-practices. In general please consider whether:
 
-- [ ] The documentation is easy to find and understand
+- [ ] Package documentation is clear and easy to find and use.
 - [ ] The need for the package is clear
 - [ ] All functions have documentation and associated examples for use
+- [ ] The package is easy to install
 
 
 #### Functionality
@@ -51,10 +61,13 @@ Package structure should follow general community best-practices. In general ple
 - [ ] **Functionality:** Any functional claims of the software been confirmed.
 - [ ] **Performance:** Any performance claims of the software been confirmed.
 - [ ] **Automated tests:** Tests cover essential functions of the package and a reasonable range of inputs and conditions. All tests pass on the local machine.
-- [ ] **Continuous Integration:** Has continuous integration, such as Travis CI, AppVeyor, CircleCI, and/or others.
-- [ ] **Packaging guidelines**: The package conforms to the pyOpenSci [packaging guidelines](https://www.pyopensci.org/contributing-guide/authoring/index.html#packaging-guide).
+- [ ] **Continuous Integration:** Has continuous integration setup (We suggest using Github actions but any CI platform is acceptable for review) 
+- [ ] **Packaging guidelines**: The package conforms to the pyOpenSci [packaging guidelines](https://www.pyopensci.org/python-package-guide).
+    A few notable highlights to look at:
+    - [ ] Package supports modern versions of Python and not [End of life versions](https://endoflife.date/python). 
+    - [ ] Code format is standard throughout package and follows PEP 8 guidelines (CI tests for linting pass)
 
-#### For packages co-submitting to JOSS
+#### For packages also submitting to JOSS
 
 - [ ] The package has an **obvious research application** according to JOSS's definition in their [submission requirements](http://joss.theoj.org/about#submission_requirements).
 
