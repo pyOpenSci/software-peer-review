@@ -4,7 +4,7 @@ These are templates to be used by editors and reviewers. When a package is submi
 
 ## Editor's Template
 
-```{include} editor-checks-template.md
+```{include} editor-initial-response-template.md
 ```
 
 
