@@ -1,4 +1,12 @@
 # Community Code of Conduct
+
+We keep our Code of Conduct in our governance documentation. [Click here to 
+go there now.](https://www.pyopensci.org/governance/code-of-conduct)  
+
+
+## NOTE: we are in the process of moving this file to our governance documentation and making significant changes to our code of conduct. 
+
+
 - We are committed to providing a friendly, safe and welcoming environment for all, regardless of gender, sexual orientation, disability, ethnicity, religion, or similar personal characteristic.
 - Please avoid using openly sexual nicknames or other nicknames that might detract from a friendly, safe and welcoming environment for all.
 - Please be kind and courteous. There’s no need to be mean or rude.
