@@ -3,7 +3,7 @@
 ## Where to Look for Reviewers?
 
 As a (guest) editor, you can find reviewers through:
-* Suggestions made by the submitter(s) (although submitters may have a narrow view of the types of expertise needed. We suggest not using more than one of suggested reviewers).
+* Suggestions made by the submitter(s) (although submitters may have a narrow view of the types of expertise needed. We suggest not using more than one of the suggested reviewers).
 * Authors of existing [pyOpenSci packages](https://www.pyopensci.org/python-packages/).
 * Other [contributors to pyOpenSci](https://www.pyopensci.org/our-community/).
 
@@ -27,7 +27,7 @@ website, Twitter).
 
 Try to balance your sense of the potential reviewer’s experience against the complexity of the package.
 
-* **Diversity** - if you have two reviewers both shouldn’t be cis white males.
+* **Diversity** - if you have two reviewers, both shouldn’t be cis white males.
 * **Openness** - reviewers should also have demonstrated interest in open source or Python community activities, although blind emailing is fine.
 
 Each submission should be reviewed by _two_ package reviewers. Although it is

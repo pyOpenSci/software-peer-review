@@ -21,7 +21,7 @@ Some of the basic things that we look for in a review include:
 
 * Familiarity with using the Python programming language 
 * Ability to evaluate a Python package for usability and documentation quality  
-* Ability to provide a technical review of python package structure and code quality / approach to solving the probelsm that the package seeks to address.  
+* Ability to provide a technical review of Python package structure and code quality / approach to solving the problems that the package seeks to address.  
 
 We like to have a mix of technical and usability focus in our reviews so it's ok if you don't have all of the above skills!
 
