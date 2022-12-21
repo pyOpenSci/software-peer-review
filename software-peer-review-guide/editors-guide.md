@@ -55,7 +55,7 @@ pyOpenSci open package review process. A full editor ideally:
 We also appreciate when editors have experience working with or in the
 Python open source software community be it maintaining packages, contributing to 
 packages, or supporting the community. This is certainly
-now a required however if you are interested in getting involved through
+not a requirement however if you are interested in getting involved with
 pyOpenSci!
 
 ```{note}
