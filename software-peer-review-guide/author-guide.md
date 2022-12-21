@@ -11,7 +11,7 @@ Before you begin this process, [please be sure to read the review process guidel
 **Before you consider submitting to us please consider the following:**
 
 1. Please be sure that you have time to devote to making changes to your 
-package. You may get feedback from an editor and two reviewers. Changes could 
+package. During review, you would get feedback from an editor and two reviewers. Changes could 
 take time. Please consider this before submitting to us. You can read more about the timeline to make changes in our [peer review policies page](../about-peer-review/policies-guidelines).
 2. Peer review is lead by a diverse group of volunteer editors and reviewers. 
 Please be considerate when engaging with everyone online. 
@@ -28,7 +28,7 @@ to maintaining your package for at least 1-2 years after the review process
 is complete. 
 
 If that maintenance commitment is too much, you might consider submitting 
-your package to a Journal that is more focused on publication only.
+your package to a journal that is more focused on publication only.
 
 
 
@@ -47,7 +47,7 @@ for their effort.
 If your package is more of a tool to support a specific workflow that 
 either:
 * may not be maintained long term or 
-* that may be so specific that it won't have a user base outside of your lab or work environment, 
+* may be so specific that it won't have a user base outside of your lab or work environment 
 
 please consider submitting it directly to a publisher like the
 Journal of Open Source Software (JOSS). A publisher like JOSS has less
@@ -71,7 +71,7 @@ and add things like testing, documentation, and/or continuous integration.
 Also check out the rest of our [Packaging Guide](https://www.pyopensci.org/python-package-guide), which may help answer some of your questions about packaging your code.
 
 **NOTE: we are currently updating our packaging guide and intend to add 
-tutorials on python packaging. Please expect these resources to be online sometime by Spring, 2023.**
+tutorials on Python packaging. Please expect these resources to be online sometime by Spring, 2023.**
 ```
 
 ## 3. Is Your Package in Scope for pyOpenSci?
@@ -171,9 +171,9 @@ be invited to join our Slack channel.
 
 We also will keep in touch with you, periodically checking in to ensure that package maintenance is going well and to better understand ways in which pyOpenSci can support you. 
 
-If at any time, you need to step from maintaining your package, 
+If at any time, you need to step down from maintaining your package, 
 or you need help with maintenance, please let us know - preferably 
-in advance. We will try to help you either.
+in advance. We will try to help you by either:
 
 * Find a new maintainer to take over your project (or additional maintainers to support maintenance) or
 * Sunset your package.
@@ -183,4 +183,4 @@ of vetted tools.
 
 ### Communication with pyOpenSci and removing tools from our vetted tool list 
 
-To ensure packages that we support and advocate for are maintained, if your package is accepted and we are not able to get in touch with you through normal communication channels (GitHub, email) after reaching our for atleast 1-2 months, we will remove your package from our list of vetted tools. We will also deprecate any blogs written that highlight your tool. 
+To ensure packages that we support and advocate for are maintained, if your package is accepted and we are not able to get in touch with you through normal communication channels (GitHub, email) after reaching our for at least 1-2 months, we will remove your package from our list of vetted tools. We will also remove any blogs written that highlight your tool. 

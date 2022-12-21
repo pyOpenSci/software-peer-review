@@ -1,4 +1,4 @@
-```markdogn
+```markdown
 Dear [REVIEWER-Name],
 
 Hi, this is [EDITOR-Name]. [FRIENDLY BANTER]. I'm writing to ask if you would be willing to review a package for pyOpenSci. As you probably know, pyOpenSci conducts peer review of Python packages contributed to our collection in a manner similar to journals.

@@ -69,7 +69,7 @@ Copy the template below to use it in the issue.
 
 ### 3. ✔️ Ensure that the package onboarding survey is filled out. 
 
-Thank the authors graciously for filling our our survey. They can 
+Thank the authors graciously for filling out our survey. They can 
 skip sections of it if they wish. We do need their contact 
 information to stay in touch about package maintenance. We also 
 want to track their experience with our review process and 
