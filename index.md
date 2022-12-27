@@ -129,6 +129,7 @@ Reviewer Guide <software-peer-review-guide/reviewer-guide>
 Editor Guide <software-peer-review-guide/editors-guide>
 Editor in Chief Guide <software-peer-review-guide/editor-in-chief-guide>
 Onboarding Guide <software-peer-review-guide/onboarding-guide>
+Where to Find Reviewers <software-peer-review-guide/where-to-find-python-package-reviewers>
 ```
 
 ```{toctree}
