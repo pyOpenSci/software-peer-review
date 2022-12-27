@@ -48,7 +48,7 @@ healthy fit for them and the organization.
 A full editor is most often someone who has experience with the 
 pyOpenSci open package review process. A full editor ideally:
 
-* has completed a review for *atleast* 1 package for pyOpenSci
+* has completed a review for *at least* 1 package for pyOpenSci
 * and/or has submitted and gone through the pyOpenSci package review process 
 * and/or has experience reviewing for an organization such as JOSS or rOpenSci.
 
