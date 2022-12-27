@@ -36,10 +36,12 @@ extensions = [
     "sphinx.ext.intersphinx",
     "sphinx_sitemap",
     "sphinxext.opengraph",
+    "sphinx_copybutton",
 ]
 
 # colon fence for card support in md
 myst_enable_extensions = ["colon_fence"]
+myst_heading_anchors = 3
 
 # For generating sitemap
 html_baseurl = 'https://www.pyopensci.org/peer-review-guide/'
@@ -55,8 +57,6 @@ html_theme_options = {
   ],
   "announcement": "🚧 UNDER CONSTRUCTION: this guide is under heavy construction right now. 🚧"
 }
-
-
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
@@ -80,7 +80,6 @@ exclude_patterns = [
 # a list of builtin themes.
 #
 html_theme = 'sphinx_book_theme'
-html_static_path = ["_static"]
 html_title = "pyOpenSci Peer Review Guide"
 html_logo = "images/logo/logo.png"
 
@@ -88,4 +87,4 @@ html_logo = "images/logo/logo.png"
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ['_static']
-html_css_files = ["pyos.css"]
+html_css_files = ['pyos.css']

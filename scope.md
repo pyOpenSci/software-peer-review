@@ -12,7 +12,16 @@ pyOpenSci domain scope.
 - **Education:** Packages to aid with instruction.
 - **Data visualization:** Packages for visualizing and analyzing data.
 
-### Notes on Scope Categories
+## Package technical scope
+
+To be in technical scope for a pyOpenSci review, your package:
+
+* Should have maintenance workflows documented 
+* Should be structured in a way that someone else could contribute to it
+* Should vendor dependencies using standard approaches rather than including code from other packages within your repository. 
+
+
+### Notes on scope categories
 - pyOpenSci is still developing as a community. If your scientific Python 
 package does not fit into one of the categories or if you have any other 
 questions, we'd encourage you to open a pre-submission inquiry. We're happy to help.
