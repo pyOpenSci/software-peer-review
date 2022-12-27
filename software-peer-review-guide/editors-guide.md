@@ -213,8 +213,8 @@ Version accepted: Filled out when the review is complete.
 During the review process, it is important to check in with the reviewers to
 ensure that things are moving smoothly:
 
--   Check in with reviewers and authors occasionally. Offer clarification and help as needed.
--   In general aim for 3 weeks for review, 2 weeks for subsequent changes, and 1 week for reviewer approval of changes.
+- Check in with reviewers and authors occasionally. Offer clarification and help as needed.
+- In general aim for 3 weeks for review, 2 weeks for subsequent changes, and 1 week for reviewer approval of changes.
 - If a review has not been submitted after 2 weeks, ping the reviewer(s) within the review issue to ensure they are aware of the 3 week deadline.
 
 ### ✔️ 5. What to do when reviews are in
