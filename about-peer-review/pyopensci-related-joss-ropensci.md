@@ -31,8 +31,7 @@ The pyOpenSci review process is different from that of JOSS in a few ways:
 1. We provide a welcoming forum for you to ask questions and get help with maintaining your package as needed. 
 
 JOSS reviews are also [more limited in scope](https://joss.readthedocs.io/en/latest/submitting.html?highlight=scope#submission-requirements) 
-compared to pyOpenSci. Some of the
-[JOSS submission criteria](https://joss.readthedocs.io/en/latest/review_criteria.html) 
+compared to pyOpenSci. Some of the JOSS submission criteria
 are, in places, less stringent or less specific to the Python programming 
 language than those of pyOpenSci.
 
