@@ -11,9 +11,9 @@
 
 The package includes all the following forms of documentation:
 
-- [ ] **A statement of need** clearly stating problems the software is designed to solve and its target audience in README
-- [ ] **Installation instructions:** for the development version of package and any non-standard dependencies in README
-- [ ] **Vignette(s)** demonstrating major functionality that runs successfully locally
+- [ ] **A statement of need** clearly stating problems the software is designed to solve and its target audience in README.
+- [ ] **Installation instructions:** for the development version of the package and any non-standard dependencies in README.
+- [ ] **Vignette(s)** demonstrating major functionality that runs successfully locally.
 - [ ] **Function Documentation:** for all user-facing functions
 - [ ] **Examples** for all user-facing functions
 - [ ] **Community guidelines** including contribution guidelines in the README or CONTRIBUTING.
