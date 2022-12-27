@@ -29,10 +29,10 @@ The README should include, from top to bottom:
 - [ ] The package name
 - [ ] Badges for: 
     - [ ] Continuous integration and test coverage, 
-    - [ ] Docs building (if you have a documentation website)
-    - [ ] A [repostatus.org](https://www.repostatus.org/) badge
-    - [ ] Python versions supported 
-    - [ ] Current package version (on PyPI / Conda)
+    - [ ] Docs building (if you have a documentation website),
+    - [ ] A [repostatus.org](https://www.repostatus.org/) badge,
+    - [ ] Python versions supported,
+    - [ ] Current package version (on PyPI / Conda).
 
 *NOTE: If the README has many more badges, you might want to consider using a table for badges: [see this example](https://github.com/ropensci/drake). Such a table should be more wide than high. (Note that the a badge for pyOpenSci peer-review will be provided upon acceptance.)*
 
