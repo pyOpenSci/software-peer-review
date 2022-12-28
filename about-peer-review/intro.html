@@ -29,6 +29,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
     <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/pyos.css" />
     <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
     
@@ -39,6 +40,8 @@
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
     <script src="../_static/doctools.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
     <script src="../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
     <script src="../_static/design-tabs.js"></script>
     <link rel="canonical" href="https://www.pyopensci.org/peer-review-guide/about-peer-review/intro.html" />
@@ -157,7 +160,7 @@
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="../software-peer-review-guide/intro.html">
-   Peer review process overview
+   Peer Review Timeline
   </a>
  </li>
  <li class="toctree-l1">
@@ -182,7 +185,12 @@
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../software-peer-review-guide/onboarding-guide.html">
-   Onboarding Guide
+   Onboarding Editors &amp; Reviewers
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../software-peer-review-guide/where-to-find-python-package-reviewers.html">
+   Finding Reviewers
   </a>
  </li>
 </ul>
@@ -463,7 +471,7 @@ title="Print to PDF"
 <li><p>Code quality,</p></li>
 <li><p>Documentation quality,</p></li>
 <li><p>Package usability,</p></li>
-<li><p>Test coverage that supports both maintenance of code function. Test coverage also makes it easier for contributors to see how their contributions impacts other parts of the code,</p></li>
+<li><p>Test coverage that supports the maintenance of code function. Test coverage also makes it easier for contributors to see how their contributions impact other parts of the code,</p></li>
 <li><p>Evaluation of infrastructure such as continuous integration to run rest suites and check code linters, that supports automated checks on pull requests. This infrastructure supports software quality and reliability.</p></li>
 </ul>
 </section>
@@ -473,7 +481,7 @@ title="Print to PDF"
 <figure class="align-default" id="fig-target">
 <a class="reference internal image-reference" href="../_images/python-stack-jupyter-earth.png"><img alt="Image showing the tiers of software in the python ecosystem starting with Python itself and as you move out packages become more domain specific. In this image packages like xarray and numpy are considered core to scientific python. Packages and distributions like astropy, simpeg and metpy are considered to be domain specific." src="../_images/python-stack-jupyter-earth.png" style="width: 700px;" /></a>
 <figcaption>
-<p><span class="caption-text">Diagram showing the tiers of software in the python ecosystem starting with Python itself and as you move out packages become more domain specific. In this image packages like xarray and numpy are considered core to scientific python. Packages and distributions like astropy, simpeg and metpy are considered to be domain specific.. pyOpenSci’s review
+<p><span class="caption-text">Diagram showing the tiers of software in the python ecosystem starting with Python itself and as you move out packages become more domain specific. In this image packages like xarray and numpy are considered core to scientific python. Packages and distributions like astropy, simpeg and metpy are considered to be domain specific. pyOpenSci’s review
 process focuses on domain specific packages rather than core packages as
 these packages tend to have more variability in long term maintenance and
 package infrastructure and quality compared to established core packages. <strong>Source: <a class="reference external" href="https://jupytearth.org/jupyter-resources/introduction/ecosystem.html">“Jupyter meets earth” project</a></strong></span><a class="headerlink" href="#fig-target" title="Permalink to this image">#</a></p>
@@ -509,7 +517,7 @@ faced within the scientific Python community are broader in scale given the
 numerous and diverse applications that the Python programming language is used for.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p><a class="reference external" href="https://www.numfocus.org/blog/how-ropensci-uses-code-review-to-promote-reproducible-science/">This blog post</a> written by editors from our partner organization, rOpenSci, is a good introduction to pyOpenSci software peer review</p>
+<p><a class="reference external" href="https://www.numfocus.org/blog/how-ropensci-uses-code-review-to-promote-reproducible-science/">This blog post</a> written by editors from our partner organization, rOpenSci, is a good introduction to pyOpenSci software peer review.</p>
 </div>
 </section>
 <section id="peer-review-of-open-source-software-helps-maintain-consistent-quality">

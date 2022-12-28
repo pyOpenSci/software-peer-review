@@ -123,12 +123,13 @@ Code of Conduct <about-peer-review/code-of-conduct>
 :hidden:
 :caption: Peer Review Guides
 
-Peer review process overview <software-peer-review-guide/intro>
+Peer Review Timeline <software-peer-review-guide/intro>
 Author Guide <software-peer-review-guide/author-guide>
 Reviewer Guide <software-peer-review-guide/reviewer-guide>
 Editor Guide <software-peer-review-guide/editors-guide>
 Editor in Chief Guide <software-peer-review-guide/editor-in-chief-guide>
-Onboarding Guide <software-peer-review-guide/onboarding-guide>
+Onboarding Editors & Reviewers <software-peer-review-guide/onboarding-guide>
+Finding Reviewers <software-peer-review-guide/where-to-find-python-package-reviewers>
 ```
 
 ```{toctree}

@@ -29,6 +29,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
     <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/pyos.css" />
     <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
     
@@ -39,6 +40,8 @@
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
     <script src="../_static/doctools.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
     <script src="../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
     <script src="../_static/design-tabs.js"></script>
     <link rel="canonical" href="https://www.pyopensci.org/peer-review-guide/about-peer-review/pyopensci-related-joss-ropensci.html" />
@@ -157,7 +160,7 @@
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="../software-peer-review-guide/intro.html">
-   Peer review process overview
+   Peer Review Timeline
   </a>
  </li>
  <li class="toctree-l1">
@@ -182,7 +185,12 @@
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../software-peer-review-guide/onboarding-guide.html">
-   Onboarding Guide
+   Onboarding Editors &amp; Reviewers
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../software-peer-review-guide/where-to-find-python-package-reviewers.html">
+   Finding Reviewers
   </a>
  </li>
 </ul>
@@ -409,27 +417,26 @@ research software to get academic credit for their work.</p></li>
 you with a citable, <a class="reference external" href="https://www.crossref.org/">Crossref digital object identifier (DOI)</a>.
 pyOpenSci aligns closely with the broad mission of
 JOSS to provide maintainers with credit for their open source work. However,
-our mission is also more focused. pyOpenSci not open source maintainers getting academic credit for their work. We also support:</p>
+our mission is also more focused. pyOpenSci is not just about open source maintainers getting academic credit for their work. We also support:</p>
 <ul class="simple">
-<li><p>the Python tools that drive scientific open reproducible  science workflows;</p></li>
-<li><p>enforcement and encouragement of Python-specific packaging standards across tools;</p></li>
-<li><p>and curated lists of peer reviewed, and maintained Python scientific software.</p></li>
+<li><p>the Python tools that drive scientific open reproducible science workflows;</p></li>
+<li><p>Enforcement and encouragement of Python-specific packaging standards across tools;</p></li>
+<li><p>Curated lists of peer reviewed, and maintained Python scientific software.</p></li>
 </ul>
 <section id="how-is-review-at-pyopensci-different-from-the-joss-review-process">
 <h2>How is review at pyOpenSci different from the JOSS review process?<a class="headerlink" href="#how-is-review-at-pyopensci-different-from-the-joss-review-process" title="Permalink to this headline">#</a></h2>
 <p>We are not a typical publisher or journal. Rather we are a community that provides support for both a diverse group of software maintainers and long term maintenance of our packages.</p>
 <p>The pyOpenSci review process is different from that of JOSS in a few ways:</p>
 <ol class="arabic simple">
-<li><p>Our review is specifically design to enforce modern, community-accepted best practices for Python packaging.</p></li>
+<li><p>Our review is specifically designed to enforce modern, community-accepted best practices for Python packaging.</p></li>
 <li><p>We place heavy emphasis on documentation and usability in our reviews and associated standardization of both.</p></li>
 <li><p>We build community around and visibility for its tools.</p></li>
 <li><p>We will promote packages and package maintainers once they are accepted into our ecosystem.</p></li>
-<li><p>We support long term maintenance of packages. If the maintainer needs to step down, we will ensure a new maintainer takes over OR sunset and remove the package from our ecosystem.</p></li>
+<li><p>We support long term maintenance of packages. If the maintainer needs to step down, we will ensure a new maintainer takes over or sunset and remove the package from our ecosystem.</p></li>
 <li><p>We provide a welcoming forum for you to ask questions and get help with maintaining your package as needed.</p></li>
 </ol>
-<p>JOSS reviews are also <a class="reference external" href="https://joss.readthedocs.io/en/latest/review_criteria.html">more limited in scope</a>
-compared to pyOpenSci. Some of the
-<a class="reference external" href="https://joss.readthedocs.io/en/latest/review_criteria.html">JOSS submission criteria</a>
+<p>JOSS reviews are also <a class="reference external" href="https://joss.readthedocs.io/en/latest/submitting.html?highlight=scope#submission-requirements">more limited in scope</a>
+compared to pyOpenSci. Some of the JOSS submission criteria
 are, in places, less stringent or less specific to the Python programming
 language than those of pyOpenSci.</p>
 </section>
@@ -437,8 +444,8 @@ language than those of pyOpenSci.</p>
 <h2>You can improve your package with a review at pyOpenSci and still publish in JOSS<a class="headerlink" href="#you-can-improve-your-package-with-a-review-at-pyopensci-and-still-publish-in-joss" title="Permalink to this headline">#</a></h2>
 <p>You don’t have to chose between pyOpenSci and JOSS; You can submit your package to both.</p>
 <p>pyOpenSci and JOSS are complementary, partner organizations. You don’t have
-to chose one or the other! After a package to pyOpenSci has been reviewed and
-accepted by pyOpenSci you can also choose to register it with JOSS.</p>
+to choose one or the other! After a package to pyOpenSci has been reviewed and
+accepted you can also choose to register it with JOSS.</p>
 <p>JOSS has <a class="reference external" href="https://joss.readthedocs.io/en/latest/review_criteria.html">more limited scope</a>
 for packages that it will review. For instance, while pyOpenSci will review
 and accept API wrappers, JOSS won’t.</p>
@@ -448,7 +455,7 @@ track your package through their review process given it was already reviewed by
 <p>Once accepted by JOSS, you now have both a pyOpenSci acceptance and one by JOSS.</p>
 <ul class="simple">
 <li><p>JOSS will give you a Crossref DOI for citation.</p></li>
-<li><p>And you can display that and your pyOpenSci peer reviewed badge at the top of your package’s README.md file.</p></li>
+<li><p>You can display that and your pyOpenSci peer reviewed badge at the top of your package’s README.md file.</p></li>
 </ul>
 </section>
 </section>

@@ -29,6 +29,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
     <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/pyos.css" />
     <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
     
@@ -39,6 +40,8 @@
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
     <script src="../_static/doctools.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
     <script src="../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
     <script src="../_static/design-tabs.js"></script>
     <link rel="canonical" href="https://www.pyopensci.org/peer-review-guide/about-peer-review/how-peer-review-works.html" />
@@ -157,7 +160,7 @@
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="../software-peer-review-guide/intro.html">
-   Peer review process overview
+   Peer Review Timeline
   </a>
  </li>
  <li class="toctree-l1">
@@ -182,7 +185,12 @@
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../software-peer-review-guide/onboarding-guide.html">
-   Onboarding Guide
+   Onboarding Editors &amp; Reviewers
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../software-peer-review-guide/where-to-find-python-package-reviewers.html">
+   Finding Reviewers
   </a>
  </li>
 </ul>
@@ -354,7 +362,7 @@ title="Print to PDF"
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#who-reviews-pyopensci-packages">
-     Who reviews pyOpenSci packages ?
+     Who reviews pyOpenSci packages?
     </a>
    </li>
   </ul>
@@ -397,7 +405,7 @@ title="Print to PDF"
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#who-reviews-pyopensci-packages">
-     Who reviews pyOpenSci packages ?
+     Who reviews pyOpenSci packages?
     </a>
    </li>
   </ul>
@@ -435,7 +443,7 @@ high quality tools
 that supports scientists across domains with a suite of different data
 types and structures.</p>
 <section id="who-reviews-pyopensci-packages">
-<h3>Who reviews pyOpenSci packages ?<a class="headerlink" href="#who-reviews-pyopensci-packages" title="Permalink to this headline">#</a></h3>
+<h3>Who reviews pyOpenSci packages?<a class="headerlink" href="#who-reviews-pyopensci-packages" title="Permalink to this headline">#</a></h3>
 <p>Our peer review process is run by volunteer members of the Python scientific
 community:</p>
 <ul class="simple">
@@ -454,21 +462,25 @@ the various roles that support running our peer review process.</p>
 <a class="reference external" href="https://www.github.com/pyopensci/software-review">pyOpenSci software-review repository</a>.</p>
 <p>We use GitHub because:</p>
 <ul class="simple">
-<li><p>It is free to create an account</p></li>
-<li><p>Anyone can read the review discussion without an account making the process entirely open</p></li>
-<li><p>It facilitates collaboration and supports community around a package</p></li>
-<li><p>It facilitates open discussion between reviewers and package maintainers and the pyOpenSci volunteers</p></li>
-<li><p>Numerous packages store their code bases on GitHub</p></li>
+<li><p>It is free to create an account,</p></li>
+<li><p>Anyone can read the review discussion without an account, making the process entirely open,</p></li>
+<li><p>It facilitates collaboration and supports the community around a package,</p></li>
+<li><p>It facilitates an open discussion between reviewers, package maintainers and the pyOpenSci volunteers,</p></li>
+<li><p>Numerous packages store their code bases on GitHub.</p></li>
 </ul>
 <section id="we-use-github-issue-templates-and-labels-to-organize-the-review-steps">
 <h3>We use GitHub issue templates and labels to organize the review steps<a class="headerlink" href="#we-use-github-issue-templates-and-labels-to-organize-the-review-steps" title="Permalink to this headline">#</a></h3>
 <ul class="simple">
 <li><p>We use GitHub issue templates as submission templates for new reviews and pre-submission review questions.</p></li>
-<li><p>We label issues to track every step of the package submission and review progress (e.g. <a class="reference external" href="https://github.com/pyOpenSci/software-review/labels">1/initial-editor-checks, 2/reviewers-needed, 6/pyopensci-approved</a></p></li>
+<li><p>We label issues to track every step of the package submission and review progress (e.g. <a class="reference external" href="https://github.com/pyOpenSci/software-review/labels">1/initial-editor-checks, 2/reviewers-needed, 6/pyopensci-approved</a>).</p></li>
 </ul>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Click <a class="reference external" href="https://github.com/ropensci/software-review/issues/24">here</a> to read the review thread from an rOpenSci review of the <code class="docutils literal notranslate"><span class="pre">ropenaq</span></code> package. Note that the  process is an ongoing conversation until the package is accepted. Two external reviews are important milestones in the review process.</p>
+<p><a class="reference external" href="https://github.com/pyOpenSci/software-review/issues/65">Click here to read the review thread from a December 2022
+pyOpenSci pre-submission issue.</a> Note the conversational
+tone of the pre-review. In this case the package was improved
+before the formal review even began.</p>
+<p>In the actual review process, two external reviews are important milestones. The editor will also provide the author with some feedback.</p>
 </div>
 <p>For more detailed overview of the peer review process, <a class="reference internal" href="../software-peer-review-guide/intro.html"><span class="doc std std-doc">check out our process
 timeline document here.</span></a></p>

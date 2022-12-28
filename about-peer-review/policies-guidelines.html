@@ -9,8 +9,8 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="about-peer-review/policies-guidelines.html" />
 <meta property="og:site_name" content="peer-review-guide" />
-<meta property="og:description" content="Review Process Guidelines: Packages are reviewed for quality, fit, documentation, clarity and the review process is quite similar to a manuscript review (see our packaging guide and reviewing guide..." />
-<meta name="description" content="Review Process Guidelines: Packages are reviewed for quality, fit, documentation, clarity and the review process is quite similar to a manuscript review (see our packaging guide and reviewing guide..." />
+<meta property="og:description" content="Review Process Guidelines: pyOpenSci packages are reviewed for quality, fit, scope, documentation and usability. The review process is similar to a manuscript review, however it has a stronger focu..." />
+<meta name="description" content="Review Process Guidelines: pyOpenSci packages are reviewed for quality, fit, scope, documentation and usability. The review process is similar to a manuscript review, however it has a stronger focu..." />
 
     <title>Peer Review Guidelines &amp; Policies &#8212; pyOpenSci Peer Review Guide</title>
     
@@ -29,6 +29,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
     <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/pyos.css" />
     <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
     
@@ -39,6 +40,8 @@
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
     <script src="../_static/doctools.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
     <script src="../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
     <script src="../_static/design-tabs.js"></script>
     <link rel="canonical" href="https://www.pyopensci.org/peer-review-guide/about-peer-review/policies-guidelines.html" />
@@ -157,7 +160,7 @@
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="../software-peer-review-guide/intro.html">
-   Peer review process overview
+   Peer Review Timeline
   </a>
  </li>
  <li class="toctree-l1">
@@ -182,7 +185,12 @@
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../software-peer-review-guide/onboarding-guide.html">
-   Onboarding Guide
+   Onboarding Editors &amp; Reviewers
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../software-peer-review-guide/where-to-find-python-package-reviewers.html">
+   Finding Reviewers
   </a>
  </li>
 </ul>
@@ -353,6 +361,11 @@ title="Print to PDF"
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#review-communication-approach">
+   Review communication approach
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#submitting-your-package-for-review-in-other-venues">
    Submitting your package for review in other venues
   </a>
@@ -416,6 +429,11 @@ title="Print to PDF"
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#review-communication-approach">
+   Review communication approach
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#submitting-your-package-for-review-in-other-venues">
    Submitting your package for review in other venues
   </a>
@@ -468,33 +486,19 @@ title="Print to PDF"
 <h1>Peer Review Guidelines &amp; Policies<a class="headerlink" href="#peer-review-guidelines-policies" title="Permalink to this headline">#</a></h1>
 <section id="review-process-guidelines">
 <h2>Review Process Guidelines<a class="headerlink" href="#review-process-guidelines" title="Permalink to this headline">#</a></h2>
-<ul class="simple">
-<li><p>Packages are reviewed for quality, fit, documentation, clarity and the review process
-is quite similar to a manuscript review (see our <span class="xref myst">packaging guide</span>
-and <span class="xref myst">reviewing guide</span> for more details). Unlike a
-manuscript review, this process will be an ongoing conversation.</p></li>
-<li><p>Once all major issues and questions, and those addressable with reasonable effort, are
-resolved, the editor assigned to a package will make a decision (accept, hold, or
-reject). Rejections are usually done early (before the review process begins, see the
-aims and scope section). In rare cases a package may also not be on-boarded after
-review &amp; revision. It is ultimately editor’s decision on whether or not to reject the
-package based on how the reviews are addressed.</p></li>
-<li><p>Communication between authors, reviewers and editors will first and foremost take
-place on GitHub, although you can choose to contact the editor by email. When
-submitting a package, please make sure your GitHub notification settings make it
-unlikely you will miss a comment.</p></li>
-<li><p>The author can choose to have their submission put on hold (editor applies the holding
-label). The holding status will be revisited every 3 months, and after one year the
-issue will be closed.</p></li>
-<li><p>If the author hasn’t requested a holding label, but is simply not responding, we
-should close the issue within one month after the last contact intent. This intent
-will include a comment tagging the author, but also an email using the email address
-listed in the DESCRIPTION of the package which is one of the rare cases where the
-editor will try to contact the author by email.</p></li>
-<li><p>If a submission is closed and the author wishes to re-submit, they’ll have to start a
-new submission. If the package is still in scope, the author will have to respond to
-the initial reviews before the editor starts looking for new reviewers.</p></li>
-</ul>
+<p>pyOpenSci packages are reviewed for quality, fit, scope,
+documentation and usability. The review process
+is similar to a manuscript review, however it has a stronger
+focus on Python packaging best practices.</p>
+<p>Unlike a manuscript review, our peer review process is an ongoing conversation. Once all major issues and questions are addressed, the review editor package will make a decision to accept, hold, or reject the package.</p>
+<p>Rejections are usually done early in the process, before the review process begins. In rare cases a package may also not be on-boarded into the pyOpenSci ecosystem after review &amp; revision.</p>
+<p>It is ultimately the editor’s decision on whether or not to reject the package based on how the reviews are addressed.</p>
+</section>
+<section id="review-communication-approach">
+<h2>Review communication approach<a class="headerlink" href="#review-communication-approach" title="Permalink to this headline">#</a></h2>
+<p>Communication between authors, reviewers and editors takes
+place on GitHub. You can, however choose to contact the editor by email if needed.</p>
+<p>When submitting a package, please make sure that your GitHub notification settings are setup to notify you when you receive feedback on the review issue.</p>
 </section>
 <section id="submitting-your-package-for-review-in-other-venues">
 <h2>Submitting your package for review in other venues<a class="headerlink" href="#submitting-your-package-for-review-in-other-venues" title="Permalink to this headline">#</a></h2>

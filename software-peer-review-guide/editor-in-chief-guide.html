@@ -29,6 +29,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
     <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/pyos.css" />
     <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
     
@@ -39,13 +40,15 @@
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
     <script src="../_static/doctools.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
     <script src="../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
     <script src="../_static/design-tabs.js"></script>
     <link rel="canonical" href="https://www.pyopensci.org/peer-review-guide/software-peer-review-guide/editor-in-chief-guide.html" />
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Onboarding New Editors and Reviewers" href="onboarding-guide.html" />
-    <link rel="prev" title="Guide for Editors" href="editors-guide.html" />
+    <link rel="prev" title="pyOpenSci Guide for Peer Review Editors" href="editors-guide.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -157,7 +160,7 @@
 <ul class="current nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="intro.html">
-   Peer review process overview
+   Peer Review Timeline
   </a>
  </li>
  <li class="toctree-l1">
@@ -182,7 +185,12 @@
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="onboarding-guide.html">
-   Onboarding Guide
+   Onboarding Editors &amp; Reviewers
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="where-to-find-python-package-reviewers.html">
+   Finding Reviewers
   </a>
  </li>
 </ul>
@@ -366,7 +374,7 @@ title="Print to PDF"
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#tag-the-issue-with-1-editor-checks-tag-in-github">
-     1. ✅ Tag the issue with
+     1. ✔️ Tag the issue with
      <code class="docutils literal notranslate">
       <span class="pre">
        1/editor-checks
@@ -376,47 +384,41 @@ title="Print to PDF"
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#next-they-will-use-the-template-below-in-the-issue">
-     2. ✅ Next, they will use the
-     <span class="xref std std-ref">
-      template
-     </span>
-     below in the issue
+    <a class="reference internal nav-link" href="#add-the-editor-checks-to-the-issue">
+     2. ✔️ Add the editor checks to the issue
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#editor-checklist-copy-template-below-to-use-in-the-issue">
-     Editor checklist (copy template below to use in the issue)
+    <a class="reference internal nav-link" href="#editor-checklist-template">
+     Editor-in-chief checklist
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#finally-they-will-ensure-the-onboarding-survey-is-filled-out">
-     3. ✅ Finally they will ensure the onboarding survey is filled out.
+    <a class="reference internal nav-link" href="#ensure-that-the-package-onboarding-survey-is-filled-out">
+     3. ✔️ Ensure that the package onboarding survey is filled out.
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#assign-an-editor-to-the-issue-to-manage-the-rest-of-the-review">
-     4. ✅ Assign an editor to the issue to manage the rest of the review
+     4. ✔️ Assign an editor to the issue to manage the rest of the review
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#update-the-yaml-header-of-the-issue">
-     5. ✅ Update the YAML header of the issue
+     5. ✔️ Update the YAML header of the issue
     </a>
    </li>
   </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#a-note-about-submissions-that-are-incomplete-or-vague">
-   A Note about submissions that are incomplete or vague
+   A note about submissions that are incomplete or vague
   </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#responding-to-out-of-scope-submissions">
-     Responding to out-of-scope submissions
-    </a>
-   </li>
-  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#responding-to-out-of-scope-submissions">
+   Responding to out-of-scope submissions
+  </a>
  </li>
 </ul>
 
@@ -456,7 +458,7 @@ title="Print to PDF"
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#tag-the-issue-with-1-editor-checks-tag-in-github">
-     1. ✅ Tag the issue with
+     1. ✔️ Tag the issue with
      <code class="docutils literal notranslate">
       <span class="pre">
        1/editor-checks
@@ -466,47 +468,41 @@ title="Print to PDF"
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#next-they-will-use-the-template-below-in-the-issue">
-     2. ✅ Next, they will use the
-     <span class="xref std std-ref">
-      template
-     </span>
-     below in the issue
+    <a class="reference internal nav-link" href="#add-the-editor-checks-to-the-issue">
+     2. ✔️ Add the editor checks to the issue
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#editor-checklist-copy-template-below-to-use-in-the-issue">
-     Editor checklist (copy template below to use in the issue)
+    <a class="reference internal nav-link" href="#editor-checklist-template">
+     Editor-in-chief checklist
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#finally-they-will-ensure-the-onboarding-survey-is-filled-out">
-     3. ✅ Finally they will ensure the onboarding survey is filled out.
+    <a class="reference internal nav-link" href="#ensure-that-the-package-onboarding-survey-is-filled-out">
+     3. ✔️ Ensure that the package onboarding survey is filled out.
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#assign-an-editor-to-the-issue-to-manage-the-rest-of-the-review">
-     4. ✅ Assign an editor to the issue to manage the rest of the review
+     4. ✔️ Assign an editor to the issue to manage the rest of the review
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
     <a class="reference internal nav-link" href="#update-the-yaml-header-of-the-issue">
-     5. ✅ Update the YAML header of the issue
+     5. ✔️ Update the YAML header of the issue
     </a>
    </li>
   </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#a-note-about-submissions-that-are-incomplete-or-vague">
-   A Note about submissions that are incomplete or vague
+   A note about submissions that are incomplete or vague
   </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#responding-to-out-of-scope-submissions">
-     Responding to out-of-scope submissions
-    </a>
-   </li>
-  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#responding-to-out-of-scope-submissions">
+   Responding to out-of-scope submissions
+  </a>
  </li>
 </ul>
 
@@ -541,7 +537,7 @@ Slack <code class="docutils literal notranslate"><span class="pre">software-revi
 <li><p>Responds to pre-submission inquiries posted to the software-review repository
 and similarly pings editors in the <code class="docutils literal notranslate"><span class="pre">software-review</span></code> Slack channel if discussion
 is needed. Any editor should feel free to communicate with package authors as it
-makes sense. See <span class="xref myst">this section</span> about
+makes sense. See <a class="reference internal" href="#responding-to-out-of-scope-submissions"><span class="std std-doc">this section</span></a> about
 how to respond to out-of-scope (pre-) submissions.</p></li>
 <li><p>Responds to review referrals from JOSS or other publication partners.</p></li>
 <li><p>Monitors pace of review process and reminds other editors to move packages along as needed.</p></li>
@@ -560,24 +556,39 @@ the scope and readiness of a package to be reviewed, they may opt to assign an e
 <h2>Editor in Chief checklist<a class="headerlink" href="#editor-in-chief-checklist" title="Permalink to this headline">#</a></h2>
 <p>When a new package is submitted for review, the Editor in Chief will:</p>
 <section id="tag-the-issue-with-1-editor-checks-tag-in-github">
-<h3>1. ✅ Tag the issue with <code class="docutils literal notranslate"><span class="pre">1/editor-checks</span></code> tag in GitHub<a class="headerlink" href="#tag-the-issue-with-1-editor-checks-tag-in-github" title="Permalink to this headline">#</a></h3>
+<h3>1. ✔️ Tag the issue with <code class="docutils literal notranslate"><span class="pre">1/editor-checks</span></code> tag in GitHub<a class="headerlink" href="#tag-the-issue-with-1-editor-checks-tag-in-github" title="Permalink to this headline">#</a></h3>
 </section>
-<section id="next-they-will-use-the-template-below-in-the-issue">
-<h3>2. ✅ Next, they will use the <a class="reference internal" href="#editor-checklist-template"><span class="std std-ref">template</span></a> below in the issue<a class="headerlink" href="#next-they-will-use-the-template-below-in-the-issue" title="Permalink to this headline">#</a></h3>
-<p>This step serves to check whether the package has
-the bare minimum requirements to initiate a review (or they will assign that task to an editor as stated above).
-These checks ensure that the package is ready to be reviewed.</p>
-<p>Following this step will ensure that we are using our volunteer reviewer time effectively.</p>
-<p>In some situations, these checks may be passed down to an editor including:</p>
+<section id="add-the-editor-checks-to-the-issue">
+<h3>2. ✔️ Add the editor checks to the issue<a class="headerlink" href="#add-the-editor-checks-to-the-issue" title="Permalink to this headline">#</a></h3>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>It is important that this step occur in one post rather than a string of
+conversational feedback that is more difficult to follow. This allows the author to address all issues at
+one time. Thus the EIC should:</p>
+<ol class="arabic simple">
+<li><p>Review the checklist.</p></li>
+<li><p>Give the author a rough estimate of how long the checks might take to complete.</p></li>
+<li><p>Perform all of the checks locally.</p></li>
+<li><p>When all of the above are complete, post the checklist with any feedback for the author in the issue. This should be one single post.</p></li>
+</ol>
+</div>
+<p>Copy the <a class="reference internal" href="#editor-checklist-template"><span class="std std-ref">template below</span></a>
+and add it to the issue.</p>
+<p>Editor checks ensure that the package has
+the bare minimum requirements to initiate a review.
+We hope that even the process of going through these checks will
+improve the quality of the package.</p>
+<p>In some situations, the editor-in-chief initial checks may be passed down to an editor as follows:</p>
 <ul class="simple">
-<li><p>If the Editor in Chief is overwhelmed with package submissions to evaluate</p></li>
-<li><p>If the Editor in Chief simply is busy at the time and needs support with checks</p></li>
+<li><p>If the Editor in Chief is overwhelmed with package submissions to evaluate.</p></li>
+<li><p>If the Editor in Chief simply is busy at the time and needs support with checks.</p></li>
 <li><p>If the Editor in Chief thinks that the checks might be better served if done by an Editor
-(For instance if a specific domain or technical expertise would support more effective checks)</p></li>
+(For instance, if a specific domain or technical expertise would support more effective checks).</p></li>
 </ul>
 </section>
-<section id="editor-checklist-copy-template-below-to-use-in-the-issue">
-<span id="editor-checklist-template"></span><h3>Editor checklist (copy template below to use in the issue)<a class="headerlink" href="#editor-checklist-copy-template-below-to-use-in-the-issue" title="Permalink to this headline">#</a></h3>
+<section id="editor-checklist-template">
+<span id="id1"></span><h3>Editor-in-chief checklist<a class="headerlink" href="#editor-checklist-template" title="Permalink to this headline">#</a></h3>
+<p>Copy the template below to use it in the issue.</p>
 <div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span><span class="gu">## Editor in Chief checks </span>
 
 Hi there! Thank you for submitting your package for pyOpenSci
@@ -585,20 +596,20 @@ review. Below are the basic checks that your package needs to pass
 to begin our review. If some of these are missing, we will ask you 
 to work on them before the review process begins. 
 
-<span class="k">- [ ]</span> <span class="gs">**Fit**</span>: The package meets criteria for [<span class="nt">fit</span>](<span class="na">https://www.pyopensci.org/peer-review-guide/about-peer-review/aims-and-scope.html#package-scope</span>) and [<span class="nt">overlap</span>](<span class="na">https://www.pyopensci.org/peer-review-guide/about-peer-review/aims-and-scope.html#package-overlap</span>).
-<span class="k">- [ ]</span> <span class="gs">**Documentation**</span> The package has sufficient documentation available online (README, sphinx docs) to allow us to evaluate package function and scope <span class="ge">*without installing the package*</span>. This includes:
-  <span class="k">- [ ]</span> tutorials or vignettes that help a user understand how to use the package and what it can do for them (often these have a name like &quot;Getting started&quot;)
-  <span class="k">- [ ]</span> API documentation - this includes clearly written doc strings with variables defined using a standard docstring format
-  <span class="k">- [ ]</span> README that clearly articulates the function of the package
-  <span class="k">- [ ]</span> Contributing documentation that details how to install a development environment and how to contribute to the package
-<span class="k">- [ ]</span> <span class="gs">**Issue Submission Documentation**</span>: All of the information is filled out in the <span class="sb">`YAML`</span> header of the issue (located at the top of the issue template).
-<span class="k">- [ ]</span> <span class="gs">**Automated tests:**</span> Package has a testing suite and is tested via GitHub actions or another Continuous Integration service.
-<span class="k">- [ ]</span> <span class="gs">**License:**</span> The package has an [<span class="nt">OSI approved license</span>](<span class="na">https://opensource.org/licenses</span>)
-<span class="k">- [ ]</span> <span class="gs">**Repository:**</span> The repository link resolves correctly
-<span class="k">- [ ]</span> <span class="gs">**README:**</span> The package has a README with clear explanation of what the package does and instructions on how to install it along with development instructions. 
-<span class="k">- [ ]</span> <span class="gs">**Contributing statement:**</span> The package has a contributing.md file that details how to contribute to the package. 
-<span class="k">- [ ]</span> <span class="gs">**Package overlap:**</span> That package doesn&#39;t fully overlap with functionality of other packages that have already been submitted to pyOpenSci
-<span class="k">- [ ]</span> <span class="gs">**Archive**</span> (JOSS only, may be post-review): The repository DOI resolves correctly
+<span class="k">- [ ]</span> <span class="gs">**Installation**</span> The package can be installed from a community repository such as PyPI (preferred), and/or a community channel on conda (e.g. conda-forge, bioconda).
+  <span class="k">- [ ]</span> The package imports properly into a standard Python environment <span class="sb">`import package-name`</span>.
+<span class="k">- [ ]</span> <span class="gs">**Fit**</span> The package meets criteria for [<span class="nt">fit</span>](<span class="na">https://www.pyopensci.org/peer-review-guide/about-peer-review/aims-and-scope.html#package-scope</span>) and [<span class="nt">overlap</span>](<span class="na">https://www.pyopensci.org/peer-review-guide/about-peer-review/aims-and-scope.html#package-overlap</span>).
+<span class="k">- [ ]</span> <span class="gs">**Documentation**</span> The package has sufficient online documentation (README, sphinx docs) to allow us to evaluate package function and scope <span class="ge">*without installing the package*</span>. This includes:
+  <span class="k">- [ ]</span> Short tutorials or [<span class="nt">vignettes</span>](<span class="na">https://kbroman.org/pkg_primer/pages/vignettes.html</span>) that help a user understand how to use the package and what it can do for them (often these have a name like &quot;Getting started&quot;)
+  <span class="k">- [ ]</span> API documentation: this includes clearly written docstrings with variables defined using a standard docstring format. <span class="ge">*We suggest using the [Numpy](https://numpydoc.readthedocs.io/en/latest/format.html#docstring-standard) docstring format*</span>.
+  <span class="k">- [ ]</span> <span class="gs">**README**</span> The package has a <span class="sb">`README.md`</span> file with clear explanation of what the package does, instructions on how to install it, and a link to development instructions. 
+  <span class="k">- [ ]</span> <span class="gs">**Contributing File**</span> The package has a <span class="sb">`CONTRIBUTING.md`</span> file that details how to install and contribute to the package. 
+<span class="k">- [ ]</span> <span class="gs">**Issue Submission Documentation**</span> All of the information is filled out in the <span class="sb">`YAML`</span> header of the issue (located at the top of the issue template).
+<span class="k">- [ ]</span> <span class="gs">**Automated tests**</span> Package has a testing suite and is tested via GitHub actions or another Continuous Integration service.
+<span class="k">- [ ]</span> <span class="gs">**License**</span> The package has an [<span class="nt">OSI approved license</span>](<span class="na">https://opensource.org/licenses</span>).
+<span class="k">- [ ]</span> <span class="gs">**Repository**</span> The repository link resolves correctly.
+<span class="k">- [ ]</span> <span class="gs">**Package overlap**</span> The package doesn&#39;t entirely overlap with the functionality of other packages that have already been submitted to pyOpenSci.
+<span class="k">- [ ]</span> <span class="gs">**Archive**</span> (JOSS only, may be post-review): The repository DOI resolves correctly.
 <span class="k">- [ ]</span> <span class="gs">**Version**</span> (JOSS only, may be post-review): Does the release version given match the GitHub release (v1.0.0)?
 
 ---
@@ -613,42 +624,50 @@ We appreciate each maintainer of the package filling out this survey individuall
 </pre></div>
 </div>
 </section>
-<section id="finally-they-will-ensure-the-onboarding-survey-is-filled-out">
-<h3>3. ✅ Finally they will ensure the onboarding survey is filled out.<a class="headerlink" href="#finally-they-will-ensure-the-onboarding-survey-is-filled-out" title="Permalink to this headline">#</a></h3>
-<p>Thank the authors graciously for doing this. They can skip sections of it if they wish, but we do need their contact information and we do want to track their experience with our review process and organization.</p>
+<section id="ensure-that-the-package-onboarding-survey-is-filled-out">
+<h3>3. ✔️ Ensure that the package onboarding survey is filled out.<a class="headerlink" href="#ensure-that-the-package-onboarding-survey-is-filled-out" title="Permalink to this headline">#</a></h3>
+<p>Thank the authors graciously for filling out our survey. They can
+skip sections of it if they wish. We do need their contact
+information to stay in touch about package maintenance. We also
+want to track their experience with our review process and
+organization.</p>
 </section>
 <section id="assign-an-editor-to-the-issue-to-manage-the-rest-of-the-review">
-<h3>4. ✅ Assign an editor to the issue to manage the rest of the review<a class="headerlink" href="#assign-an-editor-to-the-issue-to-manage-the-rest-of-the-review" title="Permalink to this headline">#</a></h3>
+<h3>4. ✔️ Assign an editor to the issue to manage the rest of the review<a class="headerlink" href="#assign-an-editor-to-the-issue-to-manage-the-rest-of-the-review" title="Permalink to this headline">#</a></h3>
 <p>Once the package initial checks are complete, and it is determined that
 the package is in scope for pyOpenSci review, the Editor in Chief will assign an
 editor to the review issue. The editor will begin the process of finding reviewers
 for the package. <a class="reference internal" href="editors-guide.html"><span class="doc std std-doc">Check out the editor guide for more information on this process</span></a></p>
 </section>
 <section id="update-the-yaml-header-of-the-issue">
-<h3>5. ✅ Update the YAML header of the issue<a class="headerlink" href="#update-the-yaml-header-of-the-issue" title="Permalink to this headline">#</a></h3>
+<h3>5. ✔️ Update the YAML header of the issue<a class="headerlink" href="#update-the-yaml-header-of-the-issue" title="Permalink to this headline">#</a></h3>
 <p>Once all of the above is complete, the Editor in Chief should:</p>
 <ul class="simple">
-<li><p>Add any comments to the bottom of your editor checks comment</p></li>
-<li><p>Update the yaml in the header of the issue with the editor assigned to the review</p></li>
+<li><p>Add any comments to the bottom of your editor checks comment.</p></li>
+<li><p>Update the YAML in the issue’s header with the editor assigned to the review.</p></li>
 <li><p>Add the tag <code class="docutils literal notranslate"><span class="pre">2/seeking-reviewer(s)</span></code> to the issue.</p></li>
 </ul>
 </section>
 </section>
 <section id="a-note-about-submissions-that-are-incomplete-or-vague">
-<h2>A Note about submissions that are incomplete or vague<a class="headerlink" href="#a-note-about-submissions-that-are-incomplete-or-vague" title="Permalink to this headline">#</a></h2>
-<p>In some cases online documentation of a package is sparse, the README is
-minimal or hard to understand or there is no clear documentation setup. Or
-in other cases some of the YAML at the top of the issue is missing.
-This makes assessment of the package’s scope much harder.
-In this case, please ask for more information. Even if the package is deemed
+<h2>A note about submissions that are incomplete or vague<a class="headerlink" href="#a-note-about-submissions-that-are-incomplete-or-vague" title="Permalink to this headline">#</a></h2>
+<p>In some cases:</p>
+<ul class="simple">
+<li><p>Online documentation of a package is sparse.</p></li>
+<li><p>README is minimal or hard to understand.</p></li>
+<li><p>No clear documentation setup.</p></li>
+<li><p>Elements of the YAML template at the top of the issue are not filled out.</p></li>
+</ul>
+<p>This makes assessment of the package’s scope much harder.
+In this case, please ask the author for more information. Even if the package is deemed
 out-of-scope, the package documentation will improve as a result of your questions.</p>
-<p>Example text</p>
+<p>Example text:</p>
 <div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span>Hello &lt;username&gt; and many thanks for your submission.
 
 We are discussing whether the package is in scope and need a bit more 
 information.
 
-Would you mind adding more details and context to your <span class="sb">`README`</span> file?
+Please add more details and context to your <span class="sb">`README`</span> file.
 After reading it, someone with little domain knowledge should understand 
 the aim, goals and functionality of the package.
 
@@ -658,12 +677,13 @@ to mention in your documentation (README) and in this issue [<span class="nt">ho
 &lt;/optional&gt;
 </pre></div>
 </div>
-<section id="responding-to-out-of-scope-submissions">
-<h3>Responding to out-of-scope submissions<a class="headerlink" href="#responding-to-out-of-scope-submissions" title="Permalink to this headline">#</a></h3>
-<p>If the package is determined to be out-of-scope, the Editor in Chief should thank authors for their submission,
-explain the reasons for the decision, and direct them to other publication venues
-if relevant. If further discussion is warranted that can take place within the issue.</p>
 </section>
+<section id="responding-to-out-of-scope-submissions">
+<h2>Responding to out-of-scope submissions<a class="headerlink" href="#responding-to-out-of-scope-submissions" title="Permalink to this headline">#</a></h2>
+<p>If the package is determined to be out-of-scope, the Editor in Chief should
+thank authors for their submission, explain the reasons for the decision, and
+direct them to other publication venues if relevant. If further discussion is
+warranted that can take place within the issue.</p>
 </section>
 </section>
 
@@ -679,7 +699,7 @@ if relevant. If further discussion is warranted that can take place within the i
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Guide for Editors</p>
+            <p class="prev-next-title">pyOpenSci Guide for Peer Review Editors</p>
         </div>
     </a>
     <a class='right-next' id="next-link" href="onboarding-guide.html" title="next page">

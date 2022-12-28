@@ -1,5 +1,38 @@
 
-/* HEADER BLOCK */ 
+body, p {
+  font-size: 1.04em;
+}
+
+h1, h2, h3 {
+  font-family:'Franklin Gothic Medium', Arial, sans-serif;
+  font-weight: bold;
+}
+
+h1 {
+  margin-bottom: 1em;
+  font-size: 2.5rem;
+}
+
+h2 {
+  margin-top: 1.7em;
+}
+
+h3, .content-container h3 {
+  margin-top: 1.6em!important;
+}
+
+ul li p {
+  padding-bottom: .8em;
+  line-height: 1.5em;
+}
+
+.epigraph {
+  font-style: italic;
+  border-left: 4px solid #ccc!important;
+  margin-left: 0!important;
+  font-size: 1.2em!important;
+}
+
 div.header__block { 
   color: #222;
 }
@@ -14,40 +47,14 @@ div.header__block {
 .announcement div {
   background-color: #ccc;
 } */
-
+/* 
 .header-item.announcement, .header-item.announcement .noprint {
   background-color:#ccc;
 }
 
-div .announcement .header-item .noprint, header-item.announcement {
-  background-color: #ccc!important;
-}
-
-/* notes */
-
-div.admonition.note .admonition-title, div.admonition.note .admonition-title::before {
-  background-color: #C1CFD4;
-  color: #222;
-
-}
-
 div.admonition.note {
-    border-color: #C1CFD4;
-    background-color: #E3F4FA;
+  margin-top: 4em;
+  margin-bottom: 4em;
+  background-color: #F8F9FB
 }
 
-
-div.admonition.important .admonition-title, div.admonition.important .admonition-title::before {
-  background-color: #107762;
-  color: #ffffff!important;
-}
-
-div.admonition.important .admonition-title {
-  background-color: #107762;
-  border-color: #1abc9c;
-}
-
-div.admonition.important {
-    border-color: #0e6654;
-    background-color: #ecfcf9;
-}

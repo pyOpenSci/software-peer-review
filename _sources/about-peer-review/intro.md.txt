@@ -10,7 +10,7 @@ Software peer review refers to a peer-review process that focuses on open source
 * Code quality,
 * Documentation quality,
 * Package usability, 
-* Test coverage that supports both maintenance of code function. Test coverage also makes it easier for contributors to see how their contributions impacts other parts of the code,
+* Test coverage that supports the maintenance of code function. Test coverage also makes it easier for contributors to see how their contributions impact other parts of the code,
 * Evaluation of infrastructure such as continuous integration to run rest suites and check code linters, that supports automated checks on pull requests. This infrastructure supports software quality and reliability. 
 
 ## What types of packages does pyOpenSci review? 
@@ -20,7 +20,7 @@ pyOpenSci reviews higher level software packages that support scientific workflo
 
 <img src="../images/python-stack-jupyter-earth.png" alt="Image showing the tiers of software in the python ecosystem starting with Python itself and as you move out packages become more domain specific. In this image packages like xarray and numpy are considered core to scientific python. Packages and distributions like astropy, simpeg and metpy are considered to be domain specific." width="700px">
 
-Diagram showing the tiers of software in the python ecosystem starting with Python itself and as you move out packages become more domain specific. In this image packages like xarray and numpy are considered core to scientific python. Packages and distributions like astropy, simpeg and metpy are considered to be domain specific.. pyOpenSci's review
+Diagram showing the tiers of software in the python ecosystem starting with Python itself and as you move out packages become more domain specific. In this image packages like xarray and numpy are considered core to scientific python. Packages and distributions like astropy, simpeg and metpy are considered to be domain specific. pyOpenSci's review
 process focuses on domain specific packages rather than core packages as 
 these packages tend to have more variability in long term maintenance and 
 package infrastructure and quality compared to established core packages. **Source: ["Jupyter meets earth" project](https://jupytearth.org/jupyter-resources/introduction/ecosystem.html)**
@@ -54,7 +54,7 @@ faced within the scientific Python community are broader in scale given the
 numerous and diverse applications that the Python programming language is used for.
 
 ```{note}
-[This blog post](https://www.numfocus.org/blog/how-ropensci-uses-code-review-to-promote-reproducible-science/) written by editors from our partner organization, rOpenSci, is a good introduction to pyOpenSci software peer review 
+[This blog post](https://www.numfocus.org/blog/how-ropensci-uses-code-review-to-promote-reproducible-science/) written by editors from our partner organization, rOpenSci, is a good introduction to pyOpenSci software peer review.
 ```
 
 ### Peer review of open source software helps maintain consistent quality

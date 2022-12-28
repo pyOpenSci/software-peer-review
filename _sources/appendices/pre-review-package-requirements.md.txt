@@ -1,0 +1,12 @@
+
+- [ ] **Fit** The package meets criteria for [fit](https://www.pyopensci.org/peer-review-guide/about-peer-review/aims-and-scope.html#package-scope) and [overlap](https://www.pyopensci.org/peer-review-guide/about-peer-review/aims-and-scope.html#package-overlap).
+    - [ ] **Package overlap** That package doesn't entirely overlap with the functionality of other packages that have already been submitted to pyOpenSci.
+- [ ] **Documentation** The package has sufficient online documentation (README, sphinx docs) to allow us to evaluate package function and scope *without installing the package*. This includes:
+  - [ ] Get started vignettes or tutorials that help users understand how to use the package and what it can do for them.
+  - [ ] API documentation - this includes clearly written doc strings with variables defined using a standard docstring format.
+- [ ] **README.md File** The package has a README.md file with a clear explanation of what the package does and instructions on how to install it, along with development instructions.  
+   - [ ] README file clearly articulates the function of the package.
+- [ ] **CONTRIBUTING.md file** The package has a `CONTRIBUTING.md` file that details how to install and contribute to the package. 
+- [ ] **Automated tests** Package has a testing suite and is tested via GitHub actions or another Continuous Integration service.
+- [ ] **License** The package has an OSI accepted license.
+- [ ] **Repository** The package repository link resolves correctly.

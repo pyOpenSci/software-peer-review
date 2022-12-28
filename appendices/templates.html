@@ -29,6 +29,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
     <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/pyos.css" />
     <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
     
@@ -39,6 +40,8 @@
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
     <script src="../_static/doctools.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
     <script src="../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
     <script src="../_static/design-tabs.js"></script>
     <link rel="canonical" href="https://www.pyopensci.org/peer-review-guide/appendices/templates.html" />
@@ -156,7 +159,7 @@
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="../software-peer-review-guide/intro.html">
-   Peer review process overview
+   Peer Review Timeline
   </a>
  </li>
  <li class="toctree-l1">
@@ -181,7 +184,12 @@
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../software-peer-review-guide/onboarding-guide.html">
-   Onboarding Guide
+   Onboarding Editors &amp; Reviewers
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../software-peer-review-guide/where-to-find-python-package-reviewers.html">
+   Finding Reviewers
   </a>
  </li>
 </ul>
@@ -352,8 +360,8 @@ title="Print to PDF"
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#review-template">
-   Review Template
+  <a class="reference internal nav-link" href="#peer-review-template">
+   Peer Review Template
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
@@ -396,8 +404,8 @@ title="Print to PDF"
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#review-template">
-   Review Template
+  <a class="reference internal nav-link" href="#peer-review-template">
+   Peer Review Template
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
@@ -430,28 +438,30 @@ title="Print to PDF"
 <p>These are templates to be used by editors and reviewers. When a package is submitted, the assigned editor fills out the Editor’s Template and posts it in the submission’s issue thread on GitHub.</p>
 <section id="editor-s-template">
 <h2>Editor’s Template<a class="headerlink" href="#editor-s-template" title="Permalink to this headline">#</a></h2>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>## Editor checks:
-
-- [ ] **Fit**: The package meets criteria for [fit](https://www.pyopensci.org/peer-review-guide/about-peer-review/aims-and-scope.html#package-scope) and [overlap](https://www.pyopensci.org/peer-review-guide/about-peer-review/aims-and-scope.html#package-overlap).
-- [ ] **Automated tests:** Package has a testing suite and is tested via Travis-CI or another CI service.
-- [ ] **License:** The package has an OSI accepted license
-- [ ] **Repository:** The repository link resolves correctly
-- [ ] **Archive** (JOSS only, may be post-review): The repository DOI resolves correctly
-- [ ] **Version** (JOSS only, may be post-review): Does the release version given match the GitHub release (v1.0.0)?
+<div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span><span class="gu">## Editor response to review:</span>
 
 ---
 
-## Editor comments
+<span class="gu">## Editor comments</span>
+:wave: Hi <span class="ni">@reviewer</span>-one and <span class="ni">@reviewer</span>-two! Thank you for volunteering to review
+for PyOpenSci! &lt;Add any additional banter here that you wish..&gt;
 
----
+The following resources will help you complete your review:
+
+<span class="k">1.</span> Here is the <span class="gs">**[reviewers guide](https://www.pyopensci.org/contributing-guide/peer-review-guides/reviewer-guide.html)**</span>. This guide contains all of the steps and information needed to complete your review.
+<span class="k">2.</span> Here is the <span class="gs">**[review template](https://www.pyopensci.org/contributing-guide/appendices/templates.html#review-template)**</span> that you will need to fill out and submit
+here as a comment, once your review is complete.
+
+<span class="gu">Please get in touch with any questions or concerns! Your review is due: &lt;Insert deadline DATE HERE&gt;</span>
+<span class="gu">---</span>
 
 Reviewers:
 Due date:
 </pre></div>
 </div>
 </section>
-<section id="review-template">
-<h2>Review Template<a class="headerlink" href="#review-template" title="Permalink to this headline">#</a></h2>
+<section id="peer-review-template">
+<h2>Peer Review Template<a class="headerlink" href="#peer-review-template" title="Permalink to this headline">#</a></h2>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>## Package Review
 
 *Please check off boxes as applicable, and elaborate in comments below. Your review is not limited to these topics, as described in the reviewer guide*
@@ -462,15 +472,15 @@ Due date:
 
 The package includes all the following forms of documentation:
 
-- [ ] **A statement of need** clearly stating problems the software is designed to solve and its target audience in README
-- [ ] **Installation instructions:** for the development version of package and any non-standard dependencies in README
-- [ ] **Vignette(s)** demonstrating major functionality that runs successfully locally
-- [ ] **Function Documentation:** for all user-facing functions
-- [ ] **Examples** for all user-facing functions
+- [ ] **A statement of need** clearly stating problems the software is designed to solve and its target audience in README.
+- [ ] **Installation instructions:** for the development version of the package and any non-standard dependencies in README.
+- [ ] **Vignette(s)** demonstrating major functionality that runs successfully locally.
+- [ ] **Function Documentation:** for all user-facing functions.
+- [ ] **Examples** for all user-facing functions.
 - [ ] **Community guidelines** including contribution guidelines in the README or CONTRIBUTING.
-- [ ] **Metadata** including author(s), author e-mail(s), a url, and any other relevant metadata e.g., in a `setup.py` file or elsewhere.
+- [ ] **Metadata** including author(s), author e-mail(s), a url, and any other relevant metadata e.g., in a `pyproject.toml` file or elsewhere.
 
-Readme requirements
+Readme file  requirements
 The package meets the readme requirements below:
 
 - [ ] Package has a README.md file in the root directory.
@@ -478,22 +488,32 @@ The package meets the readme requirements below:
 The README should include, from top to bottom:
 
 - [ ] The package name
-- [ ] Badges for continuous integration and test coverage, a repostatus.org badge, and any other badges. If the README has many more badges, you might want to consider using a table for badges: [see this example](https://github.com/ropensci/drake). Such a table should be more wide than high. (Note that the badge for pyOpenSci peer-review will be provided upon acceptance.)
-- [ ] Short description of goals of package, with descriptive links to all vignettes (rendered, i.e. readable, cf the documentation website section) unless the package is small and there’s only one vignette repeating the README.
-- [ ] Installation instructions
-- [ ] Any additional setup required (authentication tokens, etc)
-- [ ] Brief demonstration usage
-- [ ] Direction to more detailed documentation (e.g. your documentation files or website).
-- [ ] If applicable, how the package compares to other similar packages and/or how it relates to other packages
+- [ ] Badges for: 
+    - [ ] Continuous integration and test coverage, 
+    - [ ] Docs building (if you have a documentation website),
+    - [ ] A [repostatus.org](https://www.repostatus.org/) badge,
+    - [ ] Python versions supported,
+    - [ ] Current package version (on PyPI / Conda).
+
+*NOTE: If the README has many more badges, you might want to consider using a table for badges: [see this example](https://github.com/ropensci/drake). Such a table should be more wide than high. (Note that the a badge for pyOpenSci peer-review will be provided upon acceptance.)*
+
+- [ ] Short description of package goals.
+- [ ] Package installation instructions
+- [ ] Any additional setup required to use the package (authentication tokens, etc.)
+- [ ] Descriptive links to all vignettes. If the package is small, there may only be a need for one vignette which could be placed in the README.md file.
+    - [ ] Brief demonstration of package usage (as it makes sense - links to vignettes could also suffice here if package description is clear)
+- [ ] Link to your documentation website.
+- [ ] If applicable, how the package compares to other similar packages and/or how it relates to other packages in the scientific ecosystem.
 - [ ] Citation information
 
 #### Usability
 Reviewers are encouraged to submit suggestions (or pull requests) that will improve the usability of the package as a whole.
-Package structure should follow general community best-practices. In general please consider:
+Package structure should follow general community best-practices. In general please consider whether:
 
-- [ ] The documentation is easy to find and understand
+- [ ] Package documentation is clear and easy to find and use.
 - [ ] The need for the package is clear
 - [ ] All functions have documentation and associated examples for use
+- [ ] The package is easy to install
 
 
 #### Functionality
@@ -502,10 +522,13 @@ Package structure should follow general community best-practices. In general ple
 - [ ] **Functionality:** Any functional claims of the software been confirmed.
 - [ ] **Performance:** Any performance claims of the software been confirmed.
 - [ ] **Automated tests:** Tests cover essential functions of the package and a reasonable range of inputs and conditions. All tests pass on the local machine.
-- [ ] **Continuous Integration:** Has continuous integration, such as Travis CI, AppVeyor, CircleCI, and/or others.
-- [ ] **Packaging guidelines**: The package conforms to the pyOpenSci [packaging guidelines](https://www.pyopensci.org/contributing-guide/authoring/index.html#packaging-guide).
+- [ ] **Continuous Integration:** Has continuous integration setup (We suggest using Github actions but any CI platform is acceptable for review) 
+- [ ] **Packaging guidelines**: The package conforms to the pyOpenSci [packaging guidelines](https://www.pyopensci.org/python-package-guide).
+    A few notable highlights to look at:
+    - [ ] Package supports modern versions of Python and not [End of life versions](https://endoflife.date/python). 
+    - [ ] Code format is standard throughout package and follows PEP 8 guidelines (CI tests for linting pass)
 
-#### For packages co-submitting to JOSS
+#### For packages also submitting to JOSS
 
 - [ ] The package has an **obvious research application** according to JOSS&#39;s definition in their [submission requirements](http://joss.theoj.org/about#submission_requirements).
 
@@ -516,7 +539,7 @@ The package contains a `paper.md` matching [JOSS&#39;s requirements](http://joss
 - [ ] **A short summary** describing the high-level functionality of the software
 - [ ] **Authors:** A list of authors with their affiliations
 - [ ] **A statement of need** clearly stating problems the software is designed to solve and its target audience.
-- [ ] **References:** with DOIs for all those that have one (e.g. papers, datasets, software).
+- [ ] **References:** With DOIs for all those that have one (e.g. papers, datasets, software).
 
 #### Final approval (post-review)
 
@@ -535,20 +558,29 @@ Estimated hours spent reviewing:
 <section id="review-request-template">
 <h2>Review Request Template<a class="headerlink" href="#review-request-template" title="Permalink to this headline">#</a></h2>
 <p>Editors may make use of the e-mail template below in recruiting reviewers:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>Dear [REVIEWER],
+<div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span>Dear [REVIEWER-Name],
 
-Hi, this is [EDITOR]. [FRIENDLY BANTER]. I&#39;m writing to ask if you would be willing to review a package for pyOpenSci. As you probably know, pyOpenSci conducts peer review of Python packages contributed to our collection in a manner similar to journals.
+Hi, this is [EDITOR-Name]. [FRIENDLY BANTER]. I&#39;m writing to ask if you have time 
+to review a package for pyOpenSci. pyOpenSci has an open peer review of open source Python packages that support science. Accepted packages become a part of our pyOpenSci ecosystem of vetted community-adopted tools. Our review process is similar to that 
+of open journals however it focuses on ensuring high quality packaging approaches 
+that are inline with community adopted Python standards. 
 
 The package, [PACKAGE] by [AUTHOR(S)], does [FUNCTION]. You can find it on GitHub here: [REPO LINK]. We conduct our open review process via GitHub as well, here: [ONBOARDING ISSUE]
 
-If you accept, note that we ask reviewers to complete reviews in three weeks. (We’ve found it takes a similar amount of time to review a package as an academic paper.)
+If you accept, note that we ask reviewers to complete reviews in three weeks (We’ve found it takes a similar amount of time to review a package as an academic paper.).
 
-Our [reviewers guide] details what we look for in a package review, and includes links to example reviews. Our standards are detailed in our [packaging guide], and we provide reviewer [template] for you to use. Please make sure you do not have a conflict of interest preventing you from reviewing this package. If you have questions or feedback, feel free to ask me.
+Our [<span class="nt">reviewers guide</span>](<span class="na">https://www.pyopensci.org/peer-review-guide/software-peer-review-guide/reviewer-guide.html</span>) details what we look for in a package review, and includes links to example reviews. We also include a reviewer template on that page that you can use to guide your review. Our Python packaging standards are detailed in our [<span class="nt">packaging guide</span>](<span class="na">https://www.pyopensci.org/python-package-guide</span>). 
 
-{IF APPLICABLE: The authors have also chosen to jointly submit their package to the Journal of Open Source Software, so this package includes a short `paper.md` manuscript describing the software that we ask you include in your review.}
+If you have time, please have a look at the package first, to make 
+sure that you do not have a conflict of interest with the package authors. 
 
-Are you able to review? If you can not, suggestions for alternate reviewers are always helpful. If I don&#39;t hear from you within a week, I will assume you are unable to
-review at this time.
+If you have questions or feedback, feel free to ask me.
+
+{IF APPLICABLE: The authors have also chosen to jointly submit their package to the Journal of Open Source Software, so this package includes a short <span class="sb">`paper.md`</span> manuscript describing the software that we ask you include in your review.}
+
+Are you able to review? If you can not, I welcome any suggestions that you 
+have for other reviewers. If I don&#39;t hear from you within a week, I will assume 
+that you are unable to review this package at this time.
 
 Thank you for your time.
 
