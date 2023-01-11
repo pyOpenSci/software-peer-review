@@ -56,21 +56,46 @@ publication quality and citation / credit.
 ```
 
 ## 2. Does Your Package Meet Packaging Requirements?
-Before submitting your project for review with pyOpenSci, make sure that it
-follows the standards and guidelines outlined in the 
-[pyOpenSci Python packaging guide](https://www.pyopensci.org/python-package-guide).
+Before submitting your project for review with pyOpenSci, make sure that you 
+your package meets all of the requirements listed in the editor checks (see below).
+We use these checks as a baseline for all submissions and pre-submissions to 
+pyOpenSci. 
 
-```{note}
-**Package Prep Help - Can we actually support this now??**
+If you have questions about any of the elements listed below, you can 
+check out our [pyOpenSci Python packaging guide](https://www.pyopensci.org/python-package-guide) which includes an overview discussion of best practices 
+for Python packaging including discussions of:
 
-If you would like help preparing your package for review, create 
-a [new help request post in our Discourse forum under `coding-help`](https://pyopensci.discourse.group/c/coding-help/10). We can find someone to help you prep your code 
-and add things like testing, documentation, and/or continuous integration.  
+* Tools that you can use to create your package 
+* Tools for creating and publishing documentation.
+* Resources for creating files such as the README file, code of conduct, contributing guide and more. 
 
-Also check out the rest of our [Packaging Guide](https://www.pyopensci.org/python-package-guide), which may help answer some of your questions about packaging your code.
+```{note} 
+This document is under construction currently (Jan 2023). It should be completed 
+by the end of Spring 2023. 
+```
 
-**NOTE: we are currently updating our packaging guide and intend to add 
-tutorials on Python packaging. Please expect these resources to be online sometime by Spring, 2023.**
+
+```{include} ../appendices/editor-in-chief-checks.md
+```
+
+
+```{hint}
+**Do you have questions about Python packaging or our peer review process?**
+
+[Post your question(s) in our Discourse forum under `coding-help`](https://pyopensci.discourse.group/c/coding-help/10). We will do our best help you with questions 
+surrounding:
+
+* Package structure 
+* Setting up continuous integration 
+* `PyPI` and `conda` publication 
+* Getting started with test suites 
+* Creating and publishing documentation 
+* Anything related to our peer review process. 
+
+Also check back on our [Packaging Guide](https://www.pyopensci.org/python-package-guide), 
+to be updated this Spring 2023. This guide is designed to review the dynamic 
+ecosystem of Python packaging tools that you can use to create a high quality 
+Python package. 
 ```
 
 ## 3. Is Your Package in Scope for pyOpenSci?
@@ -97,7 +122,7 @@ Once the issue is opened, our editor-in-chief and an editor from our editorial b
 to your package to meet minimal criteria before review. They also may reject your 
 package if it does not fall within our scope. 
 
-```{button-link} https://www.pyopensci.org/software-peer-review-guide/editor-in-chief-guide.html#editor-checklist-template
+```{button-link} /software-peer-review-guide/editor-in-chief-guide.html#editor-checklist-template
 :color: secondary
 :class: sd-rounded-pill
 Click here to view the editor checks that will be used to evaluate your package. 

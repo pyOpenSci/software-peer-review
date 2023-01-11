@@ -38,6 +38,7 @@ Your package **may not be in technical scope** for us to review at this time if
 fits any of the out-of-technical-scope criteria listed below. 
 
 ```{important}
+
 **If the code base of your package is exceedingly complex in terms of 
 structure of maintenance needs**, we may not be able to review it. 
 
@@ -46,9 +47,10 @@ Python tools. It is thus important for us to know that if you need to step down 
 in place to support us finding a new maintainer who can take over you 
 package's maintenance. 
 
-## Examples of technically complex package structures that may be difficult for us to review
+**Examples of technically complex package structures that may be difficult for us to 
+review**
 
-### Example 1: Your package is an out of sync fork of another package repository that is being actively maintained. 
+## Example 1: Your package is an out of sync fork of another package repository that is being actively maintained. 
 
 Sometimes we understand that a package maintainer may need to step down. In 
 that case, we strongly suggest that the original package owner, transfer the 

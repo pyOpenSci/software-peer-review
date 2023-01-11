@@ -11,9 +11,11 @@ basic checks for package infrastructure
 
 - Estimated time: ~1-2 weeks
 
-**These are the basic checks that your package should have prior to being submitted for peer review**
+**Below, are the basic checks that your package should have prior to being 
+submitted for peer review.** These are the checks that an Editor in Chief or 
+and editor will look at when evaluating your package for review. 
 
-```{include} ../appendices/pre-review-package-requirements.md
+```{include} /appendices/editor-in-chief-checks.md
 ```
 
 ### 1. Author submits their package for review

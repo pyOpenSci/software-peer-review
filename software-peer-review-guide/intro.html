@@ -510,29 +510,50 @@ basic checks for package infrastructure</p>
 <ul class="simple">
 <li><p>Estimated time: ~1-2 weeks</p></li>
 </ul>
-<p><strong>These are the basic checks that your package should have prior to being submitted for peer review</strong></p>
-<ul class="simple">
-<li><p>[ ] <strong>Fit</strong> The package meets criteria for <a class="reference external" href="https://www.pyopensci.org/peer-review-guide/about-peer-review/aims-and-scope.html#package-scope">fit</a> and <a class="reference external" href="https://www.pyopensci.org/peer-review-guide/about-peer-review/aims-and-scope.html#package-overlap">overlap</a>.</p>
-<ul>
-<li><p>[ ] <strong>Package overlap</strong> That package doesn’t entirely overlap with the functionality of other packages that have already been submitted to pyOpenSci.</p></li>
-</ul>
-</li>
-<li><p>[ ] <strong>Documentation</strong> The package has sufficient online documentation (README, sphinx docs) to allow us to evaluate package function and scope <em>without installing the package</em>. This includes:</p>
-<ul>
-<li><p>[ ] Get started vignettes or tutorials that help users understand how to use the package and what it can do for them.</p></li>
-<li><p>[ ] API documentation - this includes clearly written doc strings with variables defined using a standard docstring format.</p></li>
-</ul>
-</li>
-<li><p>[ ] <strong>README.md File</strong> The package has a README.md file with a clear explanation of what the package does and instructions on how to install it, along with development instructions.</p>
-<ul>
-<li><p>[ ] README file clearly articulates the function of the package.</p></li>
-</ul>
-</li>
-<li><p>[ ] <strong>CONTRIBUTING.md file</strong> The package has a <code class="docutils literal notranslate"><span class="pre">CONTRIBUTING.md</span></code> file that details how to install and contribute to the package.</p></li>
-<li><p>[ ] <strong>Automated tests</strong> Package has a testing suite and is tested via GitHub actions or another Continuous Integration service.</p></li>
-<li><p>[ ] <strong>License</strong> The package has an OSI accepted license.</p></li>
-<li><p>[ ] <strong>Repository</strong> The package repository link resolves correctly.</p></li>
-</ul>
+<p><strong>Below, are the basic checks that your package should have prior to being
+submitted for peer review.</strong> These are the checks that an Editor in Chief or
+and editor will look at when evaluating your package for review.</p>
+<div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span><span class="gu">## Editor in Chief checks </span>
+
+Hi there! Thank you for submitting your package for pyOpenSci
+review. Below are the basic checks that your package needs to pass 
+to begin our review. If some of these are missing, we will ask you 
+to work on them before the review process begins. 
+
+Please check our [<span class="nt">Python packaging guide</span>](<span class="na">https://www.pyopensci.org/python-package-guide</span>) for more information on the elements 
+below. 
+
+<span class="k">- [ ]</span> <span class="gs">**Installation**</span> The package can be installed from a community repository such as PyPI (preferred), and/or a community channel on conda (e.g. conda-forge, bioconda).
+<span class="w">  </span><span class="k">- [ ]</span> The package imports properly into a standard Python environment <span class="sb">`import package-name`</span>.
+<span class="k">- [ ]</span> <span class="gs">**Fit**</span> The package meets criteria for [<span class="nt">fit</span>](<span class="na">https://www.pyopensci.org/peer-review-guide/about-peer-review/aims-and-scope.html#package-scope</span>) and [<span class="nt">overlap</span>](<span class="na">https://www.pyopensci.org/peer-review-guide/about-peer-review/aims-and-scope.html#package-overlap</span>).
+<span class="k">- [ ]</span> <span class="gs">**Documentation**</span> The package has sufficient online documentation to allow us to evaluate package function and scope <span class="ge">*without installing the package*</span>. This includes:
+<span class="w">  </span><span class="k">- [ ]</span> User-facing documentation that overviews how to install and start using the package. 
+<span class="w">  </span><span class="k">- [ ]</span> Short tutorials that help a user understand how to use the package and what it can do for them.
+<span class="w">  </span><span class="k">- [ ]</span> API documentation (documentation for your code&#39;s functions, classes, methods and attributes): this includes clearly written docstrings with variables defined using a standard docstring format. <span class="ge">*We suggest using the [Numpy](https://numpydoc.readthedocs.io/en/latest/format.html#docstring-standard) docstring format*</span>.
+<span class="k">- [ ]</span> Core GitHub repository Files 
+<span class="w">  </span><span class="k">- [ ]</span> <span class="gs">**README**</span> The package has a <span class="sb">`README.md`</span> file with clear explanation of what the package does, instructions on how to install it, and a link to development instructions. 
+<span class="w">  </span><span class="k">- [ ]</span> <span class="gs">**Contributing File**</span> The package has a <span class="sb">`CONTRIBUTING.md`</span> file that details how to install and contribute to the package.
+<span class="w">  </span><span class="k">- [ ]</span> <span class="gs">**Code of Conduct**</span> The package has a <span class="sb">`Code of Conduct`</span> file. 
+<span class="w">  </span><span class="k">- [ ]</span> <span class="gs">**License**</span> The package has an [<span class="nt">OSI approved license</span>](<span class="na">https://opensource.org/licenses</span>).
+NOTE: We prefer that you have development instructions in your documentation too. 
+<span class="k">- [ ]</span> <span class="gs">**Issue Submission Documentation**</span> All of the information is filled out in the <span class="sb">`YAML`</span> header of the issue (located at the top of the issue template).
+<span class="k">- [ ]</span> <span class="gs">**Automated tests**</span> Package has a testing suite and is tested via GitHub actions or another Continuous Integration service.
+<span class="k">- [ ]</span> <span class="gs">**Repository**</span> The repository link resolves correctly.
+<span class="k">- [ ]</span> <span class="gs">**Package overlap**</span> The package doesn&#39;t entirely overlap with the functionality of other packages that have already been submitted to pyOpenSci.
+<span class="k">- [ ]</span> <span class="gs">**Archive**</span> (JOSS only, may be post-review): The repository DOI resolves correctly.
+<span class="k">- [ ]</span> <span class="gs">**Version**</span> (JOSS only, may be post-review): Does the release version given match the GitHub release (v1.0.0)?
+
+---
+<span class="k">- [ ]</span> [<span class="nt">Initial onboarding survey was filled out </span>](<span class="na">https://forms.gle/F9mou7S3jhe8DMJ16</span>) 
+We appreciate each maintainer of the package filling out this survey individually. :raised_hands: 
+<span class="gu">Thank you authors in advance for setting aside five to ten minutes to do this. It truly helps our organization. :raised_hands:</span>
+<span class="gu">---</span>
+
+*******
+
+<span class="gu">## Editor comments</span>
+</pre></div>
+</div>
 </section>
 <section id="author-submits-their-package-for-review">
 <h3>1. Author submits their package for review<a class="headerlink" href="#author-submits-their-package-for-review" title="Permalink to this headline">#</a></h3>

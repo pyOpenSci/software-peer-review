@@ -58,3 +58,8 @@ div.admonition.note {
   background-color: #F8F9FB
 }
 
+.admonition p {
+  font-weight: normal !important;
+  font-size: .9em;
+}
+

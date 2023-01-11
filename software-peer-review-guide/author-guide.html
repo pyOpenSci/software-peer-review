@@ -626,18 +626,81 @@ publication quality and citation / credit.</p>
 </section>
 <section id="does-your-package-meet-packaging-requirements">
 <h2>2. Does Your Package Meet Packaging Requirements?<a class="headerlink" href="#does-your-package-meet-packaging-requirements" title="Permalink to this headline">#</a></h2>
-<p>Before submitting your project for review with pyOpenSci, make sure that it
-follows the standards and guidelines outlined in the
-<a class="reference external" href="https://www.pyopensci.org/python-package-guide">pyOpenSci Python packaging guide</a>.</p>
+<p>Before submitting your project for review with pyOpenSci, make sure that you
+your package meets all of the requirements listed in the editor checks (see below).
+We use these checks as a baseline for all submissions and pre-submissions to
+pyOpenSci.</p>
+<p>If you have questions about any of the elements listed below, you can
+check out our <a class="reference external" href="https://www.pyopensci.org/python-package-guide">pyOpenSci Python packaging guide</a> which includes an overview discussion of best practices
+for Python packaging including discussions of:</p>
+<ul class="simple">
+<li><p>Tools that you can use to create your package</p></li>
+<li><p>Tools for creating and publishing documentation.</p></li>
+<li><p>Resources for creating files such as the README file, code of conduct, contributing guide and more.</p></li>
+</ul>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p><strong>Package Prep Help - Can we actually support this now??</strong></p>
-<p>If you would like help preparing your package for review, create
-a <a class="reference external" href="https://pyopensci.discourse.group/c/coding-help/10">new help request post in our Discourse forum under <code class="docutils literal notranslate"><span class="pre">coding-help</span></code></a>. We can find someone to help you prep your code
-and add things like testing, documentation, and/or continuous integration.</p>
-<p>Also check out the rest of our <a class="reference external" href="https://www.pyopensci.org/python-package-guide">Packaging Guide</a>, which may help answer some of your questions about packaging your code.</p>
-<p><strong>NOTE: we are currently updating our packaging guide and intend to add
-tutorials on Python packaging. Please expect these resources to be online sometime by Spring, 2023.</strong></p>
+<p>This document is under construction currently (Jan 2023). It should be completed
+by the end of Spring 2023.</p>
+</div>
+<div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span><span class="gu">## Editor in Chief checks </span>
+
+Hi there! Thank you for submitting your package for pyOpenSci
+review. Below are the basic checks that your package needs to pass 
+to begin our review. If some of these are missing, we will ask you 
+to work on them before the review process begins. 
+
+Please check our [<span class="nt">Python packaging guide</span>](<span class="na">https://www.pyopensci.org/python-package-guide</span>) for more information on the elements 
+below. 
+
+<span class="k">- [ ]</span> <span class="gs">**Installation**</span> The package can be installed from a community repository such as PyPI (preferred), and/or a community channel on conda (e.g. conda-forge, bioconda).
+<span class="w">  </span><span class="k">- [ ]</span> The package imports properly into a standard Python environment <span class="sb">`import package-name`</span>.
+<span class="k">- [ ]</span> <span class="gs">**Fit**</span> The package meets criteria for [<span class="nt">fit</span>](<span class="na">https://www.pyopensci.org/peer-review-guide/about-peer-review/aims-and-scope.html#package-scope</span>) and [<span class="nt">overlap</span>](<span class="na">https://www.pyopensci.org/peer-review-guide/about-peer-review/aims-and-scope.html#package-overlap</span>).
+<span class="k">- [ ]</span> <span class="gs">**Documentation**</span> The package has sufficient online documentation to allow us to evaluate package function and scope <span class="ge">*without installing the package*</span>. This includes:
+<span class="w">  </span><span class="k">- [ ]</span> User-facing documentation that overviews how to install and start using the package. 
+<span class="w">  </span><span class="k">- [ ]</span> Short tutorials that help a user understand how to use the package and what it can do for them.
+<span class="w">  </span><span class="k">- [ ]</span> API documentation (documentation for your code&#39;s functions, classes, methods and attributes): this includes clearly written docstrings with variables defined using a standard docstring format. <span class="ge">*We suggest using the [Numpy](https://numpydoc.readthedocs.io/en/latest/format.html#docstring-standard) docstring format*</span>.
+<span class="k">- [ ]</span> Core GitHub repository Files 
+<span class="w">  </span><span class="k">- [ ]</span> <span class="gs">**README**</span> The package has a <span class="sb">`README.md`</span> file with clear explanation of what the package does, instructions on how to install it, and a link to development instructions. 
+<span class="w">  </span><span class="k">- [ ]</span> <span class="gs">**Contributing File**</span> The package has a <span class="sb">`CONTRIBUTING.md`</span> file that details how to install and contribute to the package.
+<span class="w">  </span><span class="k">- [ ]</span> <span class="gs">**Code of Conduct**</span> The package has a <span class="sb">`Code of Conduct`</span> file. 
+<span class="w">  </span><span class="k">- [ ]</span> <span class="gs">**License**</span> The package has an [<span class="nt">OSI approved license</span>](<span class="na">https://opensource.org/licenses</span>).
+NOTE: We prefer that you have development instructions in your documentation too. 
+<span class="k">- [ ]</span> <span class="gs">**Issue Submission Documentation**</span> All of the information is filled out in the <span class="sb">`YAML`</span> header of the issue (located at the top of the issue template).
+<span class="k">- [ ]</span> <span class="gs">**Automated tests**</span> Package has a testing suite and is tested via GitHub actions or another Continuous Integration service.
+<span class="k">- [ ]</span> <span class="gs">**Repository**</span> The repository link resolves correctly.
+<span class="k">- [ ]</span> <span class="gs">**Package overlap**</span> The package doesn&#39;t entirely overlap with the functionality of other packages that have already been submitted to pyOpenSci.
+<span class="k">- [ ]</span> <span class="gs">**Archive**</span> (JOSS only, may be post-review): The repository DOI resolves correctly.
+<span class="k">- [ ]</span> <span class="gs">**Version**</span> (JOSS only, may be post-review): Does the release version given match the GitHub release (v1.0.0)?
+
+---
+<span class="k">- [ ]</span> [<span class="nt">Initial onboarding survey was filled out </span>](<span class="na">https://forms.gle/F9mou7S3jhe8DMJ16</span>) 
+We appreciate each maintainer of the package filling out this survey individually. :raised_hands: 
+<span class="gu">Thank you authors in advance for setting aside five to ten minutes to do this. It truly helps our organization. :raised_hands:</span>
+<span class="gu">---</span>
+
+*******
+
+<span class="gu">## Editor comments</span>
+</pre></div>
+</div>
+<div class="admonition hint">
+<p class="admonition-title">Hint</p>
+<p><strong>Do you have questions about Python packaging or our peer review process?</strong></p>
+<p><a class="reference external" href="https://pyopensci.discourse.group/c/coding-help/10">Post your question(s) in our Discourse forum under <code class="docutils literal notranslate"><span class="pre">coding-help</span></code></a>. We will do our best help you with questions
+surrounding:</p>
+<ul class="simple">
+<li><p>Package structure</p></li>
+<li><p>Setting up continuous integration</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">PyPI</span></code> and <code class="docutils literal notranslate"><span class="pre">conda</span></code> publication</p></li>
+<li><p>Getting started with test suites</p></li>
+<li><p>Creating and publishing documentation</p></li>
+<li><p>Anything related to our peer review process.</p></li>
+</ul>
+<p>Also check back on our <a class="reference external" href="https://www.pyopensci.org/python-package-guide">Packaging Guide</a>,
+to be updated this Spring 2023. This guide is designed to review the dynamic
+ecosystem of Python packaging tools that you can use to create a high quality
+Python package.</p>
 </div>
 </section>
 <section id="is-your-package-in-scope-for-pyopensci">
@@ -701,7 +764,8 @@ structure of maintenance needs</strong>, we may not be able to review it.</p>
 Python tools. It is thus important for us to know that if you need to step down as a maintainer, the package infrastructure and documentation is
 in place to support us finding a new maintainer who can take over you
 package’s maintenance.</p>
-<p class="rubric">Examples of technically complex package structures that may be difficult for us to review</p>
+<p><strong>Examples of technically complex package structures that may be difficult for us to
+review</strong></p>
 <p class="rubric">Example 1: Your package is an out of sync fork of another package repository that is being actively maintained.</p>
 <p>Sometimes we understand that a package maintainer may need to step down. In
 that case, we strongly suggest that the original package owner, transfer the
@@ -732,7 +796,7 @@ repository and fill out the <a class="reference external" href="https://github.c
 <strong>2 weeks</strong> and respond with next steps. The editor may request that you make updates
 to your package to meet minimal criteria before review. They also may reject your
 package if it does not fall within our scope.</p>
-<p><a class="sd-sphinx-override sd-btn sd-text-wrap sd-btn-secondary sd-rounded-pill reference external" href="https://www.pyopensci.org/software-peer-review-guide/editor-in-chief-guide.html#editor-checklist-template"><span>Click here to view the editor checks that will be used to evaluate your package. </span></a></p>
+<p><a class="sd-sphinx-override sd-btn sd-text-wrap sd-btn-secondary sd-rounded-pill reference external" href="/software-peer-review-guide/editor-in-chief-guide.html#editor-checklist-template"><span>Click here to view the editor checks that will be used to evaluate your package. </span></a></p>
 </section>
 <section id="the-review-begins">
 <h2>6. The Review Begins<a class="headerlink" href="#the-review-begins" title="Permalink to this headline">#</a></h2>
