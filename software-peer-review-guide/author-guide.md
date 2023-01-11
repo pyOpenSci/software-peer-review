@@ -122,7 +122,7 @@ Once the issue is opened, our editor-in-chief and an editor from our editorial b
 to your package to meet minimal criteria before review. They also may reject your 
 package if it does not fall within our scope. 
 
-```{button-link} https://www.pyopensci.org/software-peer-review-guide/editor-in-chief-guide.html#editor-checklist-template
+```{button-link} /software-peer-review-guide/editor-in-chief-guide.html#editor-checklist-template
 :color: secondary
 :class: sd-rounded-pill
 Click here to view the editor checks that will be used to evaluate your package. 
