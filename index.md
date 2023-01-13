@@ -9,7 +9,7 @@
 :::  
 
 :::{grid-item}
-:columns: 8
+:columns: 12
 :class: sd-fs-3
 pyOpenSci is a diverse community that supports the open Python tools that 
 drive open science.
@@ -105,31 +105,45 @@ submitting and reviewing packages, as well as our
 [Aims and Scope](about-peer-review/aims-and-scope) section 
 lays out what types of packages we review.
 
+```{toctree}
+:hidden:
+
+🏠 Home <self>
+```
 
 ```{toctree}
 :hidden:
 :caption: About peer review
 
-About Peer Review  <about-peer-review/intro>
-Peer Review Benefits <about-peer-review/review-benefits>
-How peer review works <about-peer-review/how-peer-review-works.md>
-Aims & Scope <about-peer-review/aims-and-scope>
-pyOpenSci, JOSS & rOpenSci <about-peer-review/pyopensci-related-joss-ropensci>
-Peer review policies <about-peer-review/policies-guidelines>
-Code of Conduct <about-peer-review/code-of-conduct>
+About Our Review <about/intro>
+Why Open Review <about/why-open-review>
+Review Benefits <about/review-benefits>
+Review Process <about/how-peer-review-works.md>
+Package Scope (What we review) <about/package-scope>
+Peer Review Timeline <software-peer-review-guide/intro>
+OUR PROCESS <our-process/how-review-works>
+POLICIES & GUIDELINES <policies/review-guidelines>
+```
+
+
+```{toctree}
+:hidden:
+:caption: Partners
+
+Scientific Communities <partners/scientific-communities>
+JOSS <partners/joss>
 ```
 
 ```{toctree}
 :hidden:
-:caption: Peer Review Guides
+:caption: How To Guides
 
-Peer Review Timeline <software-peer-review-guide/intro>
-Author Guide <software-peer-review-guide/author-guide>
-Reviewer Guide <software-peer-review-guide/reviewer-guide>
-Editor Guide <software-peer-review-guide/editors-guide>
-Editor in Chief Guide <software-peer-review-guide/editor-in-chief-guide>
-Onboarding Editors & Reviewers <software-peer-review-guide/onboarding-guide>
-Finding Reviewers <software-peer-review-guide/where-to-find-python-package-reviewers>
+Author Guide <how-to/author-guide>
+Reviewer Guide <how-to/reviewer-guide>
+Editor Guide <how-to/editors-guide>
+Editor in Chief Guide <how-to/editor-in-chief-guide>
+Onboarding Editors & Reviewers <how-to/onboarding-guide>
+Finding Reviewers <how-to/where-to-find-reviewers>
 ```
 
 ```{toctree}

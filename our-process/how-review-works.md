@@ -1,6 +1,13 @@
 # How pyOpenSci's open software peer review works
 
 
+```{toctree}
+:hidden:
+
+How Peer Review Works <self>
+Review Timeline <review-timeline>
+```
+
 ## Who submits packages and who runs the reviews 
 
 pyOpenSci's [suite of packages](https://www.pyopensci.org/python-packages/) are 
