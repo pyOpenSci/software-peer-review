@@ -80,7 +80,7 @@ exclude_patterns = [
 # a list of builtin themes.
 #
 html_theme = 'sphinx_book_theme'
-html_title = "pyOpenSci Peer Review Guide"
+html_title = "pyOpenSci Software Peer Review Guide"
 html_logo = "images/logo/logo.png"
 
 # Add any paths that contain custom static files (such as style sheets) here,
