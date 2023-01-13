@@ -122,7 +122,7 @@ Review Process <about/how-peer-review-works.md>
 Package Scope (What we review) <about/package-scope>
 Peer Review Timeline <software-peer-review-guide/intro>
 OUR PROCESS <our-process/how-review-works>
-POLICIES & GUIDELINES <policies/review-guidelines>
+POLICIES & GUIDELINES <policies>
 ```
 
 
