@@ -1,13 +1,5 @@
 # Peer Review Guidelines & Policies
 
-```{toctree}
-:hidden:
-:caption: Policies and Guidelines
-Peer review policies <self>
-Code of Conduct <policies/code-of-conduct>
-
-```
-
 ## Review Process Guidelines
 
 pyOpenSci packages are reviewed for quality, fit, scope, 

@@ -1,5 +1,4 @@
-# pyOpenSci Community Goals 
-
+# pyOpenSci Software Peer Review Goals 
 
 pyOpenSci has several goals that support the scientific Python open source 
 community.

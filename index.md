@@ -117,12 +117,13 @@ lays out what types of packages we review.
 
 About Our Review <about/intro>
 Why Open Review <about/why-open-review>
-Review Benefits <about/review-benefits>
+Review Benefits for Authors <about/benefits>
 Review Process <about/how-peer-review-works.md>
+Our Goals <about/our-goals.md>
 Package Scope (What we review) <about/package-scope>
 Peer Review Timeline <software-peer-review-guide/intro>
 OUR PROCESS <our-process/how-review-works>
-POLICIES & GUIDELINES <policies>
+Peer Review Policies <policies>
 ```
 
 
@@ -143,7 +144,7 @@ Reviewer Guide <how-to/reviewer-guide>
 Editor Guide <how-to/editors-guide>
 Editor in Chief Guide <how-to/editor-in-chief-guide>
 Onboarding Editors & Reviewers <how-to/onboarding-guide>
-Finding Reviewers <how-to/where-to-find-reviewers>
+Finding Reviewers <how-to/finding-reviewers>
 ```
 
 ```{toctree}

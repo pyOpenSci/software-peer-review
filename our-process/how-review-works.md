@@ -6,6 +6,7 @@
 
 How Peer Review Works <self>
 Review Timeline <review-timeline>
+Peer Review Policies <policies>
 ```
 
 ## Who submits packages and who runs the reviews 
