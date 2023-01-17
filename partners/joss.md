@@ -1,18 +1,29 @@
 # pyOpenSci and Journal of Open Source Software (JOSS) Partnership 
 
 pyOpenSci has a formal partnership with
-[the Journal of Open Source Software (JOSS)](https://joss.theoj.org/). JOSS is a journal and a publisher that provides a way for developers of 
+[the Journal of Open Source Software (JOSS)](https://joss.theoj.org/). JOSS is 
+a journal and a publisher that provides a way for developers of 
 research software to get academic credit for their work. 
 
 The JOSS review process is about publication. A review from JOSS will provide 
 you with a citable, [Crossref digital object identifier (DOI)](https://www.crossref.org/). 
 pyOpenSci aligns closely with the broad mission of 
 JOSS to provide maintainers with credit for their open source work. However, 
-our mission is also more focused. pyOpenSci is not just about open source maintainers getting academic credit for their work. We also support:
+our mission is also more focused. pyOpenSci is not just about open source 
+maintainers getting academic credit for their work. 
 
-* the Python tools that drive scientific open reproducible science workflows; 
-* Enforcement and encouragement of Python-specific packaging standards across tools; 
-* Curated lists of peer reviewed, and maintained Python scientific software.
+pyOpenSci is different from JOSS because:
+
+* We build community around the scientific Python ecosystem. Maintainers that go through our process can ask questions and get help. Or they can just talk to other maintainers who might have similar challenges. 
+* We support the Python tools that drive scientific open reproducible science workflows. We also provide training in that space to support new users and future maintainers and contributors.  
+* We focus on enforcement and encouragement of Python-specific packaging standards and best practices. As such we try to help maintainers improve the quality of their package.
+* We focus on package documentation and usability as a way to improve quality and user experience. 
+* We have a view across the entire scientific ecosystem. As such we will try our best to identify redundancy in package function across the ecosystem.
+* We provide additional visibilty for our packages through our tool catalog, website and social media presence. 
+
+At the end of the day the pyOpenSci badge represents packages that are high 
+quality, maintained and vetted. We want the community to trust the tools in our 
+ecosystem. 
 
 ## How is review at pyOpenSci different from the JOSS review process? 
 
