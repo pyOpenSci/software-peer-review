@@ -1,4 +1,4 @@
-# WThehat Types of Packages that pyOpenSci Reviews 
+# The Scope of  Packages that pyOpenSci Reviews 
 
 ## What types of packages does pyOpenSci review? 
 pyOpenSci reviews higher level software packages that support scientific workflows. 
@@ -33,6 +33,7 @@ whether it is in scope or not.
 ```{include} /appendices/scope.md
 ```
 
+(package-overlap)=
 ## Package Overlap
 pyOpenSci encourages competition among packages, forking and re-implementation 
 as they improve options of users. However, we strive to make packages in the 

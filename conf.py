@@ -43,6 +43,9 @@ extensions = [
 myst_enable_extensions = ["colon_fence"]
 myst_heading_anchors = 3
 
+# Supress as we have includes that don't need to start at h1 
+suppress_warnings = ["myst.header"]
+
 # For generating sitemap
 html_baseurl = 'https://www.pyopensci.org/peer-review-guide/'
 

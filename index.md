@@ -30,18 +30,18 @@ drive open science.
 :gutter: 3
 
 :::{grid-item-card} {octicon}`book;1.5em;sd-mr-1` Learn About Open Peer Review ✏️
-:link: about-peer-review/intro
+:link: about/intro
 :link-type: doc
 :class-header: bg-light
 
 Get a basic overview of our open peer review process for Python scientific open source
 software.
 +++
-[Click to learn more »](about-peer-review/aims-and-scope)
+[Click to learn more »](about/intro)
 :::
 
 :::{grid-item-card} {octicon}`code-square;1.5em;sd-mr-1`For Maintainers
-:link: software-peer-review-guide/author-guide
+:link: how-to/author-guide
 :link-type: doc
 :class-header: bg-light
 
@@ -49,21 +49,21 @@ Are you a package author / maintainer? ✨
 
 Learn how to submit a package for peer review with pyOpenSci.
 +++
-[Click to learn more »](software-peer-review-guide/author-guide)
+[Click to learn more »](how-to/author-guide)
 :::
 
 :::{grid-item-card} {octicon}`pencil;1.5em;sd-mr-1`For Editors
-:link: software-peer-review-guide/editors-guide
+:link: how-to/editors-guide
 :link-type: doc
 :class-header: bg-light
 
  ✨ Our editor guide will walk you through the editorial process. ✨ 
 +++
-[Click to learn more »](software-peer-review-guide/editors-guide)
+[Click to learn more »](how-to/editors-guide)
 :::
 
 :::{grid-item-card} {octicon}`codescan-checkmark;1.5em;sd-mr-1` For Reviewers
-:link: software-peer-review-guide/reviewer-guide
+:link: how-to/reviewer-guide
 :link-type: doc
 :class-header: bg-light
 
@@ -72,7 +72,7 @@ Are you a reviewer? ✨
 Click here to read our reviewer guide which will walk you through the review
 process step-by-step.
 +++
-[Click to learn more »](software-peer-review-guide/editors-guide)
+[Click to learn more »](how-to/editors-guide)
 :::
 
 ::::
@@ -86,24 +86,30 @@ and share their own software. We hope to foster a greater sense of community
 among scientific Python users so that we can help each other become better 
 programmers and researchers.
 
+:::{figure-md} pyos-badge-home
+:class: myclass
+
+<img src="https://tinyurl.com/y22nb8up" alt="The pyOpenSci badge- On the left is the badge in grey and it says pyOpenSci. On the right it is bright green and says Peer Reviewed." class="bg-primary mb-1" width="200px">
+
+**pyOpenSci Peer Review Badge will appear on the README.md file of packages that have been 
+reviewed and vetted by us.**
+:::
+
 ## This Guide
 This guidebook contains information for pyOpenSci package authors, reviewers, 
 and editors. It is organized into three sections:
 
-### 1. Before Review - Packaging Guide
-Contains our guidelines for creating and testing scientific python packages. 
-Before submitting a package for review, check to be sure that your software 
-meets the basic [requirements](authoring/overview#overview). The section also 
-contains recommendations and best practices that might be helpful as you are 
-writing and preparing your package.
+### 1. About Peer Review
+This section provides a broad overview of our peer review process. 
 
-### 2. Peer Review Process
-Outlines the pyOpenSci peer review process. This includes guidelines for 
-submitting and reviewing packages, as well as our 
 
-[Code of Conduct](about-peer-review/code-of-conduct). The 
-[Aims and Scope](about-peer-review/aims-and-scope) section 
-lays out what types of packages we review.
+### 2. Our Partners
+This section discusses our partnerships with other scientific and open source 
+communities including Pangeo and JOSS. 
+
+### 3. How To Guides
+This section provides specific guides for each role in our peer review process. 
+
 
 ```{toctree}
 :hidden:
@@ -115,15 +121,10 @@ lays out what types of packages we review.
 :hidden:
 :caption: About peer review
 
-About Our Review <about/intro>
-Why Open Review <about/why-open-review>
-Review Benefits for Authors <about/benefits>
-Review Process <about/how-peer-review-works.md>
-Our Goals <about/our-goals.md>
-Package Scope (What we review) <about/package-scope>
-Peer Review Timeline <software-peer-review-guide/intro>
-OUR PROCESS <our-process/how-review-works>
-Peer Review Policies <policies>
+ABOUT </about/intro>
+Review Benefits for Authors </about/benefits>
+Package Scope (What we review) </about/package-scope>
+REVIEW PROCESS </our-process/how-review-works>
 ```
 
 

@@ -1,6 +1,13 @@
 # About the pyOpenSci software peer review process
 
-```{tableofcontents}
+
+```{toctree}
+:hidden:
+:caption: About peer review
+
+Intro <self>
+Why Open Review </about/why-open-review>
+Our Goals </about/our-goals>
 ```
 
 ## Community-driven software peer review
@@ -86,13 +93,20 @@ get academic credit for their work.
 [This blog post](https://www.numfocus.org/blog/how-ropensci-uses-code-review-to-promote-reproducible-science/) written by editors from our partner organization, rOpenSci, is a good introduction to pyOpenSci software peer review.
 ```
 
-
-
-
 ### How do I know that a Python package has been reviewed by pyOpenSci?
 
 You can identify pyOpenSci packages that have been peer-reviewed by the green 
-"peer-reviewed" badge at the top of their `README.md` file, [![pyOpenSci](https://tinyurl.com/y22nb8up)](). This badge is added by the package author after the package
+"peer-reviewed" badge at the top of their `README.md` file. 
+
+:::{figure-md} pyos-badge
+:class: myclass
+
+<img src="https://tinyurl.com/y22nb8up" alt="The pyOpenSci badge" class="bg-primary mb-1" width="200px">
+
+pyOpenSci Peer Review Badge
+:::
+
+This badge is added by the package author after the package
 has successfully completed review and ideally links to the specific GitHub issue
 where the tool was reviewed. [See this example from devicely, one of our accepted pyOpenSci ecosystem packages](https://github.com/hpi-dhc/devicely).
 

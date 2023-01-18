@@ -39,7 +39,7 @@ Time: ~2-3 weeks
 
 ### 4. Peer review of submitted Python Package begins 
 Once we have an editor and 2 reviewers on board, review begins. **Reviewers have 3 weeks to return a review.** To do this
-they will use our reviewer template in the [reviewer guide](reviewer-guide.md) and paste that, filled out, into the issue.
+they will use our reviewer template in the [reviewer guide](/how-to/reviewer-guide.md) and paste that, filled out, into the issue.
 
 TIME: ~3 weeks 
 
@@ -90,7 +90,7 @@ through the peer-review guides below that are tailored to each role in the peer 
 :gutter: 3
 
 :::{grid-item-card} {octicon}`code-square;1.5em;sd-mr-1` Author / Maintainer Guide
-:link: author-guide
+:link: /how-to/author-guide
 :link-type: doc
 :class-header: bg-light
 
@@ -100,7 +100,7 @@ Learn more »
 :::
 
 :::{grid-item-card} {octicon}`pencil;1.5em;sd-mr-1` Editor Guide
-:link: editors-guide
+:link: /how-to/editors-guide
 :link-type: doc
 :class-header: bg-light
 +++
@@ -112,7 +112,7 @@ Learn more »
 :::
 
 :::{grid-item-card} {octicon}`codescan-checkmark;1.5em;sd-mr-1` Reviewer Guide
-:link: software-peer-review-guide/reviewer-guide
+:link: /how-to/reviewer-guide
 :link-type: doc
 :class-header: bg-light
 
@@ -124,7 +124,7 @@ Learn more »
 :::
 
 :::{grid-item-card} {octicon}`pencil;1.5em;sd-mr-1` ✨ Editor in Chief Guide
-:link: software-peer-review-guide/editors-in-chief-guide
+:link: /how-to/editor-in-chief-guide
 :link-type: doc
 :class-header: bg-light
 

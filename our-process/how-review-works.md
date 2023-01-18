@@ -59,4 +59,4 @@ In the actual review process, two external reviews are important milestones. The
 ```
 
 For more detailed overview of the peer review process, [check out our process 
-timeline document here.](../software-peer-review-guide/intro.md) 
+timeline document here.](review-timeline) 

@@ -1,10 +1,10 @@
 # pyOpenSci Review Guide for Python Open Source Package Maintainers and Authors
 
 Are you considering submitting a package for review with pyOpenSci? You've 
-come to the right place! Below you will find the steps that you need to follow to submit a package 
-to pyOpenSci for peer review. 
+come to the right place! Below you will find the steps that you need to follow 
+to submit a package to pyOpenSci for peer review. 
 
-Before you begin this process, [please be sure to read the review process guidelines](../about-peer-review/policies-guidelines).
+Before you begin this process, [please be sure to read the review process guidelines](../our-process/policies).
 
 
 ```{note} 
@@ -12,7 +12,7 @@ Before you begin this process, [please be sure to read the review process guidel
 
 1. Please be sure that you have time to devote to making changes to your 
 package. During review, you would get feedback from an editor and two reviewers. Changes could 
-take time. Please consider this before submitting to us. You can read more about the timeline to make changes in our [peer review policies page](../about-peer-review/policies-guidelines).
+take time. Please consider this before submitting to us. You can read more about the timeline to make changes in our [peer review policies page](../our-process/policies).
 2. Peer review is lead by a diverse group of volunteer editors and reviewers. 
 Please be considerate when engaging with everyone online. 
 ```
@@ -122,7 +122,7 @@ Once the issue is opened, our editor-in-chief and an editor from our editorial b
 to your package to meet minimal criteria before review. They also may reject your 
 package if it does not fall within our scope. 
 
-```{button-link} /software-peer-review-guide/editor-in-chief-guide.html#editor-checklist-template
+```{button-link} /how-to/editor-in-chief-guide.html#editor-checklist-template
 :color: secondary
 :class: sd-rounded-pill
 Click here to view the editor checks that will be used to evaluate your package. 
@@ -188,7 +188,7 @@ that you let the JOSS editor know that we have already accepted your package. Th
 Acceptance to pyOpenSci does not guarantee acceptance to JOSS. In particular, 
 JOSS doesn't accept the full variety of packages that are in scope for
 pyOpenSci. For example, thin API wrappers fall within
-[pyOpenSci's scope](../about-peer-review/aims-and-scope) but 
+[pyOpenSci's scope](../about/package-scope) but 
 are usually not accepted by JOSS. Be sure to review JOSS's 
 [submission requirements](https://joss.readthedocs.io/en/latest/submitting.html#submission-requirements) 
 before writing up a paper about your package.

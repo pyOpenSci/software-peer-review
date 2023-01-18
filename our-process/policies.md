@@ -20,8 +20,6 @@ place on GitHub. You can, however choose to contact the editor by email if neede
 
 When submitting a package, please make sure that your GitHub notification settings are setup to notify you when you receive feedback on the review issue. 
 
-
-
 ## Submitting your package for review in other venues
 
 We strongly suggest submitting your package for review with pyOpenSci before:
@@ -47,6 +45,7 @@ submit it to pyOpenSci for review. This provides:
 * Increased visibility of your package as a vetted tool within the scientific python ecosystem
 * We will also keep in touch with you as a maintainer to support long term maintenance. If you need to step down from maintaining your package we will help find a new maintainer and/or help sunset the tool.
 
+(coi)=
 ### Conflict of interest for reviews and editors
 Following criteria are meant to be a guide for what constitutes a conflict of interest
 for an editor or reviewer. The potential editor or reviewer has a conflict of interest
