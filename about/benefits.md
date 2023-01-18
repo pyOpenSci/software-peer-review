@@ -34,4 +34,4 @@ your package.
 pyOpenSci has a broad view across the scientific Python ecosystem. When you submit your package for review we will ask you to identify other packages in the ecosystem that may have similar functionality. In the long run we hope to identify overlap in package functionality and help maintainers work together on similar tools rather than maintaining overlapping functionality. 
 
 ## Your package can be fast tracked and accepted by JOSS
-pyOpenSci packages that are in scope for the [Journal of Open-Source Software](https://joss.theoj.org/) and add the necessary accompanying short `paper.md` file, can, at the discretion of JOSS editors, benefit from a fast-tracked review process. [Read more about our partnership with JOSS here](pyopensci-related-joss-ropensci).
+pyOpenSci packages that are in scope for the [Journal of Open-Source Software](https://joss.theoj.org/) and add the necessary accompanying short `paper.md` file, can, at the discretion of JOSS editors, benefit from a fast-tracked review process. [Read more about our partnership with JOSS here](/partners/joss).

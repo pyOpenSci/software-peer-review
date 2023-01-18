@@ -8,7 +8,7 @@ pyOpenSci is launching a prototype collaboration that supports an existing
 scientific community.  
 
 ### What pyOpenSci provides to existing communities 
-In addition to [the core benefits that pyOpenSci peer review provides](/about/review-benefits), 
+In addition to [the core benefits that pyOpenSci peer review provides](/about/benefits), 
 we also provide infrastructure and resources for: 
 * Peer review of tools in the community's ecosystem 
 * Adoption of community specific review standards which will be enforced in addition 

@@ -138,8 +138,8 @@ Version submitted:  VERSION-SUBMITTED
 ```{note}
 The editor in chief who initially engaged with this review should have already evaluated the package level Editor Checks section for `Fit`, `Automated Tests`, `Documentation`, `License`, and `Repository`. 
 
-They also should have checked whether the package is [in scope for pyOpenSci](../about-peer-review/aims-and-scope.html#package-categories).
-And whether there is [functionality overlap with functionality of any other existing Python packages](../about-peer-review/aims-and-scope.html#package-overlap).
+They also should have checked whether the package is [in scope for pyOpenSci](../about/package-scope).
+And whether there is [functionality overlap with functionality of any other existing Python packages](package-overlap).
 
 However, in some instances the editor-in-chief may request that an editor 
 perform these tasks. Be sure to check the issue to ensure the above checks have been implemented prior to initiating the review. 
@@ -189,7 +189,7 @@ moving.
 * Change the label on the issue to `3/reviewer(s)-assigned`
 
 ```{note} 
-[Click here for more information about finding reviewers for a package.](where-to-find-python-package-reviewers)
+[Click here for more information about finding reviewers for a package.](finding-reviewers)
 ```
 
 ### ✔️ 4. Onboard reviewers
@@ -221,7 +221,7 @@ ensure that things are moving smoothly:
 
 * Once all reviews are submitted, change the review status tag to `4/review-in-awaiting-changes`.
 
-If the author stops responding, refer to [the policies](peer_review_proc#review-process-guidelines) and/or ping the other editors in the Slack channel <*Not available publically yet*> for discussion.
+If the author stops responding, refer to [the policies](/our-process/policies) and/or ping the other editors in the Slack channel <*Not available publicly yet*> for discussion.
 
 Once the author has responded to the reviews and made appropriate changes made changes:
 
