@@ -1,8 +1,7 @@
 # pyOpenSci Peer Review Partnerships 
 
-pyOpenSci collaborates several organizations that support the scientific 
-community. Below is a discussion of some of our partners that have been 
-involved in our peer review process 
+pyOpenSci collaborates with organizations that support the scientific 
+community.
 
 ## Software peer review support for scientific communities 
 pyOpenSci is launching a prototype collaboration that supports an existing 
@@ -28,13 +27,13 @@ The benefit of communities partnering with us is:
 ## Pangeo 
 
 pyOpenSci is launching a prototype effort to explore what it looks like to 
-support Pangeo. 
+support [Pangeo](https://pangeo.io/). 
 
 If you are submitting a package for review that fits into the Pangeo ecosystem,
 your package will be:
 
 * Reviewed against current pyOpenSci guidelines and checks. 
-* Also reviewed against the Pangeo-specific guidelines below
+* Also reviewed against the Pangeo-specific guidelines below.
 
 ```{admonition} Pangeo Review Guidelines
 :class: note
@@ -42,9 +41,11 @@ your package will be:
 On top of the pyOpenSci review guidelines, we will also perform checks for 
 the following: 
 
-* Consume and produce high-level data structures (e.g. xarray datasets / pandas dataframes) wherever feasible
-* Operate lazily when called on dask data structure
-* Avoid file I/O unless specifically an I/O package
+* **Consume and produce high-level data structures** (e.g. **Xarray datasets**, **Pandas DataFrames**) wherever feasible: 
+* **Operate lazily when called on Dask data structure:** Lazy loading refers to a tool only performing operations on data when it's needed. Lazy loading is ideal for workflows using larger datasets which will quickly consume memory and compute power when you work with them. [Learn more here.](https://saturncloud.io/blog/a-data-scientist-s-guide-to-lazy-evaluation-with-dask/)  
+<!-- TODO: Is this the best link for an overview of lazy loading - maybe there is a tutorial?? -->
+* **Avoid file I/O unless your package is specifically an I/O package:** I/0 refers to data input and output of data.
+<!-- TODO: Ask tom for a better explanation of what this specific means and add a link if there is one ? -->
 
 ```
 
