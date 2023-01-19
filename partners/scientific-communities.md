@@ -34,7 +34,9 @@ your package will be:
 
 * Reviewed against current pyOpenSci guidelines and checks. 
 * Also reviewed against the Pangeo-specific guidelines below.
+-->
 
+<!-- 
 ```{admonition} Pangeo Review Guidelines
 :class: note
 
@@ -43,24 +45,7 @@ the following:
 
 * **Consume and produce high-level data structures** (e.g. **Xarray datasets**, **Pandas DataFrames**) wherever feasible: 
 * **Operate lazily when called on Dask data structure:** Lazy loading refers to a tool only performing operations on data when it's needed. Lazy loading is ideal for workflows using larger datasets which will quickly consume memory and compute power when you work with them. [Learn more here.](https://saturncloud.io/blog/a-data-scientist-s-guide-to-lazy-evaluation-with-dask/)  
-<!-- TODO: Is this the best link for an overview of lazy loading - maybe there is a tutorial?? -->
+TODO: Is this the best link for an overview of lazy loading - maybe there is a tutorial?? 
 * **Avoid file I/O unless your package is specifically an I/O package:** I/0 refers to data input and output of data.
-<!-- TODO: Ask tom for a better explanation of what this specific means and add a link if there is one ? -->
-
+TODO: Ask tom for a better explanation of what this specific means and add a link if there is one ? 
 ``` -->
-
-
-
-<!-- 
-
-## rOpenSci
-
-rOpenSci has provided a strong model for the development of 
-pyOpenSci. pyOpenSci keeps in touch with and has learned 
-from rOpenSci's development. 
-
- 
-
-OpenScience Labs
-
-Pangeo -->
