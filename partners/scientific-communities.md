@@ -23,7 +23,7 @@ The benefit of communities partnering with us is:
 * We have a broad view across all scientific ecosystems which will help us to better identify overlap of package functions.
 * We also have broader reach to users of scientific software across the ecosystem.
 * Finally a consolidated peer review process will help enforce standardization of scientific Python packaging and best pratices across the ecosystem. 
-
+<!-- 
 ## Pangeo 
 
 pyOpenSci is launching a prototype effort to explore what it looks like to 
@@ -47,7 +47,7 @@ the following:
 * **Avoid file I/O unless your package is specifically an I/O package:** I/0 refers to data input and output of data.
 <!-- TODO: Ask tom for a better explanation of what this specific means and add a link if there is one ? -->
 
-```
+``` -->
 
 
 
