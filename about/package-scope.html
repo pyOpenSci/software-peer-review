@@ -1,0 +1,682 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+<meta property="og:title" content="The Scope of  Packages that pyOpenSci Reviews" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="about/package-scope.html" />
+<meta property="og:site_name" content="peer-review-guide" />
+<meta property="og:description" content="What types of packages does pyOpenSci review?: pyOpenSci reviews higher level software packages that support scientific workflows. Image showing the tiers of software in the python ecosystem starti..." />
+<meta name="description" content="What types of packages does pyOpenSci review?: pyOpenSci reviews higher level software packages that support scientific workflows. Image showing the tiers of software in the python ecosystem starti..." />
+
+    <title>The Scope of Packages that pyOpenSci Reviews &#8212; pyOpenSci Software Peer Review Guide</title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/pyos.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script src="../_static/design-tabs.js"></script>
+    <link rel="canonical" href="https://www.pyopensci.org/peer-review-guide/about/package-scope.html" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="How pyOpenSci’s open software peer review works" href="../our-process/how-review-works.html" />
+    <link rel="prev" title="The Benefits of Submitting a Package to pyOpenSci" href="benefits.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+<script async="" src="https://www.google-analytics.com/analytics.js"></script>
+<script>
+                        window.ga = window.ga || function () {
+                            (ga.q = ga.q || []).push(arguments) };
+                        ga.l = +new Date;
+                        ga('create', 'UA-141260825-1', 'auto');
+                        ga('set', 'anonymizeIp', true);
+                        ga('send', 'pageview');
+                    </script>
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint">🚧 UNDER CONSTRUCTION: this guide is under heavy construction right now. 🚧</div>
+<div class="header header-item noprint"></div>
+
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">pyOpenSci Software Peer Review Guide</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../index.html">
+   🏠 Home
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  About peer review
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="intro.html">
+   ABOUT
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="intro.html">
+     Intro
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="why-open-review.html">
+     Why Open Review
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="our-goals.html">
+   Our Goals
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="benefits.html">
+   Benefits for Package Authors
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Package Scope (What we review)
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../our-process/how-review-works.html">
+   OUR PROCESS
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../our-process/how-review-works.html">
+     How Peer Review Works
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../our-process/review-timeline.html">
+     Review Timeline
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../our-process/policies.html">
+     Peer Review Policies
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Partners
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../partners/scientific-communities.html">
+   Scientific Communities
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../partners/joss.html">
+   JOSS
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  How To Guides
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../how-to/author-guide.html">
+   Author Guide
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../how-to/reviewer-guide.html">
+   Reviewer Guide
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../how-to/editors-guide.html">
+   Editor Guide
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../how-to/editor-in-chief-guide.html">
+   Editor in Chief Guide
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../how-to/onboarding-guide.html">
+   Onboarding Editors &amp; Reviewers
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../how-to/finding-reviewers.html">
+   Finding Reviewers
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Appendices
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../appendices/glossary.html">
+   Glossary
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../appendices/templates.html">
+   Templates
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+            <div class="navbar_extra_footer">
+            Theme by the <a href="https://ebp.jupyterbook.org">Executable Book Project</a>
+            </div>
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+<a href="https://github.com/pyopensci/governance"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="bottom"
+title="Source repository"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+
+</a>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="../_sources/about/package-scope.md.txt"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.md</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#what-types-of-packages-does-pyopensci-review">
+   What types of packages does pyOpenSci review?
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#is-your-package-in-scope-for-pyopensci-review">
+   Is Your Package in Scope For pyOpenSci Review?
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#python-package-domain-scope">
+   Python package domain scope
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#package-technical-scope">
+   Package technical scope
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#notes-on-scope-categories">
+     Notes on scope categories
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#python-package-technical-scope">
+   Python package technical scope
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#package-overlap">
+   Package Overlap
+  </a>
+ </li>
+</ul>
+
+    </nav>
+</div>
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>The Scope of  Packages that pyOpenSci Reviews</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#what-types-of-packages-does-pyopensci-review">
+   What types of packages does pyOpenSci review?
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#is-your-package-in-scope-for-pyopensci-review">
+   Is Your Package in Scope For pyOpenSci Review?
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#python-package-domain-scope">
+   Python package domain scope
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#package-technical-scope">
+   Package technical scope
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#notes-on-scope-categories">
+     Notes on scope categories
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#python-package-technical-scope">
+   Python package technical scope
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#package-overlap">
+   Package Overlap
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
+              <div>
+                
+  <section id="the-scope-of-packages-that-pyopensci-reviews">
+<h1>The Scope of  Packages that pyOpenSci Reviews<a class="headerlink" href="#the-scope-of-packages-that-pyopensci-reviews" title="Permalink to this headline">#</a></h1>
+<section id="what-types-of-packages-does-pyopensci-review">
+<h2>What types of packages does pyOpenSci review?<a class="headerlink" href="#what-types-of-packages-does-pyopensci-review" title="Permalink to this headline">#</a></h2>
+<p>pyOpenSci reviews higher level software packages that support scientific workflows.</p>
+<figure class="align-default" id="fig-target">
+<a class="reference internal image-reference" href="../_images/python-stack-jupyter-earth.png"><img alt="Image showing the tiers of software in the python ecosystem starting with Python itself and as you move out packages become more domain specific. In this image packages like xarray and numpy are considered core to scientific python. Packages and distributions like astropy, simpeg and metpy are considered to be domain specific." src="../_images/python-stack-jupyter-earth.png" style="width: 700px;" /></a>
+<figcaption>
+<p><span class="caption-text">Diagram showing the tiers of software in the python ecosystem starting with Python itself and as you move out packages become more domain specific. In this image packages like xarray and numpy are considered core to scientific python. Packages and distributions like astropy, simpeg and metpy are considered to be domain specific. pyOpenSci’s review
+process focuses on domain specific packages rather than core packages as
+these packages tend to have more variability in long term maintenance and
+package infrastructure and quality compared to established core packages. <strong>Source: <a class="reference external" href="https://jupytearth.org/jupyter-resources/introduction/ecosystem.html">“Jupyter meets earth” project</a></strong></span><a class="headerlink" href="#fig-target" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<p>Currently, the packages that pyOpenSci reviews also need to fall into the
+technical and applied scope of our organization. This scope may expand over time
+as the organization grows.</p>
+</section>
+<section id="is-your-package-in-scope-for-pyopensci-review">
+<h2>Is Your Package in Scope For pyOpenSci Review?<a class="headerlink" href="#is-your-package-in-scope-for-pyopensci-review" title="Permalink to this headline">#</a></h2>
+<p>pyOpenSci only reviews packages that fall within our specified domain and
+technical scope listed below.</p>
+<p>If you are unsure whether your package is in scope for review, please
+open a <a class="reference external" href="https://github.com/pyOpenSci/software-review/issues/new?assignees=&amp;labels=0%2Fpresubmission&amp;template=presubmission-inquiry.md&amp;title=">pre-submission inquiry using a GitHub Issue</a> to get feedback from
+one of our editors. We are happy to look at your package and help you understand
+whether it is in scope or not.</p>
+</section>
+<section id="python-package-domain-scope">
+<h2>Python package domain scope<a class="headerlink" href="#python-package-domain-scope" title="Permalink to this headline">#</a></h2>
+<p>The following categories are the current domain areas that fall into the
+pyOpenSci domain scope.</p>
+<ul class="simple">
+<li><p><strong>Data retrieval:</strong> Packages for accessing and downloading data from online sources. Includes wrappers for accessing APIs.</p></li>
+<li><p><strong>Data extraction:</strong> Packages that aid in retrieving data from unstructured sources such as text, images and PDFs.</p></li>
+<li><p><strong>Data munging:</strong> Tools for processing data from scientific data formats.</p></li>
+<li><p><strong>Data deposition:</strong> Tools for depositing data in scientific research repositories.</p></li>
+<li><p><strong>Reproducibility:</strong> Tools to scientists ensure that their research is reproducible. E.g. version control, automated testing, or citation tools.</p></li>
+<li><p><strong>Geospatial:</strong> Packages focused on the retrieval, manipulation, and analysis of spatial data.</p></li>
+<li><p><strong>Education:</strong> Packages to aid with instruction.</p></li>
+<li><p><strong>Data visualization:</strong> Packages for visualizing and analyzing data.</p></li>
+</ul>
+</section>
+<section id="package-technical-scope">
+<h2>Package technical scope<a class="headerlink" href="#package-technical-scope" title="Permalink to this headline">#</a></h2>
+<p>To be in technical scope for a pyOpenSci review, your package:</p>
+<ul class="simple">
+<li><p>Should have maintenance workflows documented.</p></li>
+<li><p>Should be structured in a way that someone else could contribute to it.</p></li>
+<li><p>Should declare vendor dependencies using standard approaches rather than including code from other packages within your repository.</p></li>
+</ul>
+<section id="notes-on-scope-categories">
+<h3>Notes on scope categories<a class="headerlink" href="#notes-on-scope-categories" title="Permalink to this headline">#</a></h3>
+<ul class="simple">
+<li><p>pyOpenSci is still developing as a community. If your scientific Python
+package does not fit into one of the categories or if you have any other
+questions, we’d encourage you to open a pre-submission inquiry. We’re happy to help.</p></li>
+<li><p>Data visualization packages come in many varieties, ranging from small
+hyper-specific methods for one type of data to general, do-it-all packages
+(e.g. matplotlib). pyOpenSci accepts packages that are somewhere in between the
+two. If you’re interested in submitting your data visualization package, please
+open a pre-submission inquiry first.</p></li>
+</ul>
+</section>
+</section>
+<section id="python-package-technical-scope">
+<h2>Python package technical scope<a class="headerlink" href="#python-package-technical-scope" title="Permalink to this headline">#</a></h2>
+<p>pyOpenSci may continue to update its technical scope criteria for package
+review as more packages with varying structural approaches are reviewed.<br />
+Your package <strong>may not be in technical scope</strong> for us to review at this time if
+fits any of the out-of-technical-scope criteria listed below.</p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p><strong>If the code base of your package is exceedingly complex in terms of
+structure of maintenance needs</strong>, we may not be able to review it.</p>
+<p>pyOpenSci has a goal of supporting long term maintenance of open source
+Python tools. It is thus important for us to know that if you need to step down as a maintainer, the package infrastructure and documentation is
+in place to support us finding a new maintainer who can take over you
+package’s maintenance.</p>
+<p><strong>Examples of technically complex package structures that may be difficult for us to
+review</strong></p>
+<p class="rubric">Example 1: Your package is an out of sync fork of another package repository that is being actively maintained.</p>
+<p>Sometimes we understand that a package maintainer may need to step down. In
+that case, we strongly suggest that the original package owner, transfer the
+package repository to a new organization along with PyPI credentials. A new
+organization would allow transfer of ownership of package maintenance rather
+than several forks existing.</p>
+<p>If your package is a divergent fork of a maintained repository we will encourage you
+to work with the original maintainers to merge efforts.</p>
+<p>However, if there is a case where a forked repository is warranted, please
+consider submitting a pre-submission inquiry first and explain why the package is a
+fork rather than an independent parent repository.</p>
+<p class="rubric">Example 2: Vendored dependencies</p>
+<p>If your package is a wrapper that wraps around another tool, we prefer that
+the dependency be added as a dependency to your package. This allows
+maintenance of the original code base to be independent from your package’s
+maintenance.</p>
+</div>
+</section>
+<section id="package-overlap">
+<span id="id1"></span><h2>Package Overlap<a class="headerlink" href="#package-overlap" title="Permalink to this headline">#</a></h2>
+<p>pyOpenSci encourages competition among packages, forking and re-implementation
+as they improve options of users. However, we strive to make packages in the
+pyOpenSci suite to represent our top recommendations for the tasks that they
+perform. We aim to avoid duplication of functionality of existing Python
+packages in any repo without significant improvements. A Python package that
+replicates the functionality of an existing package may be considered for
+inclusion in the pyOpenSci suite if it significantly improves on alternatives by
+being:</p>
+<ul class="simple">
+<li><p>More open in licensing or development practices</p></li>
+<li><p>Broader in functionality (e.g., providing access to more data sets, providing
+a greater suite of functions), but not only by duplicating additional packages</p></li>
+<li><p>Better in usability and performance</p></li>
+<li><p>Actively maintained while alternatives are poorly or no longer actively maintained</p></li>
+</ul>
+<p>These factors should be considered as a whole to determine if the package is a
+significant improvement. A new package would not meet this standard only by
+following our package guidelines while others do not, unless this leads to a
+significant difference in the areas above.</p>
+<p>We recommend that packages highlight differences from and improvements over
+overlapping packages in their <code class="docutils literal notranslate"><span class="pre">README</span></code> and/or vignettes or get started tutorials.</p>
+<p>We encourage developers whose packages are not accepted due to overlap to still
+consider submittal to other repositories or journals.</p>
+</section>
+</section>
+
+
+              </div>
+              
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="benefits.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">The Benefits of Submitting a Package to pyOpenSci</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="../our-process/how-review-works.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">How pyOpenSci’s open software peer review works</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            </footer>
+        </div>
+    </div>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By Leah Wasser<br/>
+  
+      &copy; Copyright 2022, pyOpenSci.<br/>
+</p>
+        </footer>
+    </div>
+    
+</div>
+
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
+
+  </body>
+</html>

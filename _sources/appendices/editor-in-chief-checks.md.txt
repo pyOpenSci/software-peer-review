@@ -11,7 +11,7 @@ below.
 
 - [ ] **Installation** The package can be installed from a community repository such as PyPI (preferred), and/or a community channel on conda (e.g. conda-forge, bioconda).
   - [ ] The package imports properly into a standard Python environment `import package-name`.
-- [ ] **Fit** The package meets criteria for [fit](https://www.pyopensci.org/peer-review-guide/about-peer-review/aims-and-scope.html#package-scope) and [overlap](https://www.pyopensci.org/peer-review-guide/about-peer-review/aims-and-scope.html#package-overlap).
+- [ ] **Fit** The package meets criteria for [fit](https://www.pyopensci.org/peer-review-guide/about/package-scope.html) and [overlap](https://www/pyopensci.org/peer-review-guide/about/package-scope.html#package-overlap).
 - [ ] **Documentation** The package has sufficient online documentation to allow us to evaluate package function and scope *without installing the package*. This includes:
   - [ ] User-facing documentation that overviews how to install and start using the package. 
   - [ ] Short tutorials that help a user understand how to use the package and what it can do for them.
