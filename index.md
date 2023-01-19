@@ -122,9 +122,10 @@ This section provides specific guides for each role in our peer review process.
 :caption: About peer review
 
 ABOUT </about/intro>
-Review Benefits for Authors </about/benefits>
+Our Goals </about/our-goals>
+Benefits for Package Authors </about/benefits>
 Package Scope (What we review) </about/package-scope>
-REVIEW PROCESS </our-process/how-review-works>
+OUR PROCESS </our-process/how-review-works>
 ```
 
 

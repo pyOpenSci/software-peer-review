@@ -7,7 +7,6 @@
 
 Intro <self>
 Why Open Review </about/why-open-review>
-Our Goals </about/our-goals>
 ```
 
 ## Community-driven software peer review
