@@ -24,24 +24,24 @@ The benefit of communities partnering with us is:
 * We also have broader reach to users of scientific software across the ecosystem.
 * Finally a consolidated peer review process will help enforce standardization of scientific Python packaging and best practices across the ecosystem.
 
-## Pangeo
+## pyOpenSci's partnership with Pangeo
 
-pyOpenSci is launching a prototype effort to explore what it looks like to
-support [Pangeo](https://pangeo.io/).
+pyOpenSci is creating a collaboration workflow to
+collaborate with the [Pangeo](https://pangeo.io/) scientific community. Through
+this collaboration we add an additional layer of peer review checks to pangeo
+packages that go through our [open peer review process](/about/intro).
 
 If you are submitting a package for review that fits into the Pangeo ecosystem,
 your package will be:
 
 * Reviewed against current pyOpenSci guidelines and checks.
-* Also reviewed against the Pangeo-specific guidelines below.
+* Also reviewed against the Pangeo-specific guidelines listed below.
 
-
-
-```{admonition} Pangeo Specific Software Peer Review Guidelines
-:class: note
+### Pangeo Specific Software Peer Review Guidelines
 
 In addition to [basic pyOpenSci review checks](https://www.pyopensci.org/software-peer-review/how-to/editor-in-chief-guide.html#editor-checklist-template), when reviewing a
-Pangeo-related package, we will also perform checks for the following:
+Pangeo-related package, we will also perform the checks below that are
+defined by the Pangeo community.
 
 * **Consume and produce high-level data structures** (e.g. **Xarray datasets**, **Pandas DataFrames**) wherever feasible.
 * **Operate lazily when called on Dask data structure:** Lazy loading refers to a tool only performing operations on data when it's needed. Lazy loading is ideal for workflows using larger datasets which will quickly consume memory and compute power when you work with them. Lazy loading allows a tool to create a connection to a dataset, but only actually access / open the part of the dataset that you require to use in your workflow.  [Learn more here.](https://docs.dask.org/en/stable/user-interfaces.html?highlight=lazy#laziness-and-computing)
