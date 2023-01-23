@@ -43,7 +43,7 @@ your package will be:
 In addition to [basic pyOpenSci review checks](https://www.pyopensci.org/software-peer-review/how-to/editor-in-chief-guide.html#editor-checklist-template), when reviewing a
 Pangeo-related package, we will also perform checks for the following:
 
-* **Consume and produce high-level data structures** (e.g. **Xarray datasets**, **Pandas DataFrames**) wherever feasible:
+* **Consume and produce high-level data structures** (e.g. **Xarray datasets**, **Pandas DataFrames**) wherever feasible.
 * **Operate lazily when called on Dask data structure:** Lazy loading refers to a tool only performing operations on data when it's needed. Lazy loading is ideal for workflows using larger datasets which will quickly consume memory and compute power when you work with them. Lazy loading allows a tool to create a connection to a dataset, but only actually access / open the part of the dataset that you require to use in your workflow.  [Learn more here.](https://docs.dask.org/en/stable/user-interfaces.html?highlight=lazy#laziness-and-computing)
 
     * A few other resources related to lazy loading:
