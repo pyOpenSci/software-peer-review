@@ -37,14 +37,28 @@ your package will be:
 
 
 
-```{admonition} Pangeo Review Guidelines
+```{admonition} Pangeo Specific Software Peer Review Guidelines
 :class: note
 
-On top of the pyOpenSci review guidelines, we will also perform checks for
-the following:
+In addition to [basic pyOpenSci review checks](https://www.pyopensci.org/software-peer-review/how-to/editor-in-chief-guide.html#editor-checklist-template), when reviewing a
+Pangeo-related package, we will also perform checks for the following:
 
 * **Consume and produce high-level data structures** (e.g. **Xarray datasets**, **Pandas DataFrames**) wherever feasible:
-* **Operate lazily when called on Dask data structure:** Lazy loading refers to a tool only performing operations on data when it's needed. Lazy loading is ideal for workflows using larger datasets which will quickly consume memory and compute power when you work with them. [Learn more here.](https://saturncloud.io/blog/a-data-scientist-s-guide-to-lazy-evaluation-with-dask/)
-TODO: Is this the best link for an overview of lazy loading - maybe there is a tutorial??
-* **Avoid file I/O unless your package is specifically an I/O package:** I/0 refers to data input and output of data.
-TODO: Ask tom for a better explanation of what this specific means and add a link if there is one ?
+* **Operate lazily when called on Dask data structure:** Lazy loading refers to a tool only performing operations on data when it's needed. Lazy loading is ideal for workflows using larger datasets which will quickly consume memory and compute power when you work with them. Lazy loading allows a tool to create a connection to a dataset, but only actually access / open the part of the dataset that you require to use in your workflow.  [Learn more here.](https://docs.dask.org/en/stable/user-interfaces.html?highlight=lazy#laziness-and-computing)
+
+    * A few other resources related to lazy loading:
+
+        * [Dask and stages of computation](https://docs.dask.org/en/stable/phases-of-computation.html): this provides and overview of using Dask effectively to optimize your compute workflow.
+        * [Using Dask and Xarray together:](https://docs.xarray.dev/en/stable/user-guide/dask.html?highlight=lazy#using-dask-with-xarray) this page provides an overview of how to use Dask to optimize working with data arrays in Xarray.
+
+* **Avoid file input and output (I/O) unless your package is specifically an I/O package:** I/0 refers to data input and output of data.
+    * [Read more about file input and output in the cloud](https://docs.2i2c.org/en/latest/data/cloud.html)
+
+<!-- TODO: Ask Tom for a better explanation of
+why this is important - ie wouldn't some packages like een xarray allows you to write data into a
+usable format. ... need more clarification.
+
+* We could also add content in our packaging guide as it makes sense for pangeo
+guidelines - particularly if they have other best practices that they want to
+see related to API dev see: https://discourse.pangeo.io/t/tutorial-idea-writing-apis-for-your-pangeo-package/3105/9
+-->
