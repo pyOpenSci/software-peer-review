@@ -52,14 +52,5 @@ defined by the Pangeo community.
         * [Using Dask and Xarray together:](https://docs.xarray.dev/en/stable/user-guide/dask.html?highlight=lazy#using-dask-with-xarray) this page provides an overview of how to use Dask to optimize working with data arrays in Xarray.
         * [Tutorial on using Dask and lazy loading]( http://tutorial.dask.org/01_dataframe.html )
 
-* **Avoid file input and output (I/O) unless your package is specifically an I/O package:** I/0 refers to data input and output of data.
-    * [Read more about file input and output in the cloud](https://docs.2i2c.org/en/latest/data/cloud.html)
-
-<!-- TODO: Ask Tom for a better explanation of
-why this is important - ie wouldn't some packages like een xarray allows you to write data into a
-usable format. ... need more clarification.
-
-* We could also add content in our packaging guide as it makes sense for pangeo
-guidelines - particularly if they have other best practices that they want to
-see related to API dev see: https://discourse.pangeo.io/t/tutorial-idea-writing-apis-for-your-pangeo-package/3105/9
--->
+* **Use existing package methods and approaches to reading and writing data rather than creating your own:** The data read and write tools within packages such as Xarray build on existing packages including Zarr, fsspec, h5netcdf, and GDAL. As such they can already read and write a variety of file types to a variety of file systems, including Cloud Object storage.
+[See: 2i2c documentation for more on cloud native file format support.](https://docs.2i2c.org/en/latest/data/cloud.html#cloud-native-formats)
