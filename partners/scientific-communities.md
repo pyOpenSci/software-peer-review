@@ -50,6 +50,7 @@ Pangeo-related package, we will also perform checks for the following:
 
         * [Dask and stages of computation](https://docs.dask.org/en/stable/phases-of-computation.html): this provides and overview of using Dask effectively to optimize your compute workflow.
         * [Using Dask and Xarray together:](https://docs.xarray.dev/en/stable/user-guide/dask.html?highlight=lazy#using-dask-with-xarray) this page provides an overview of how to use Dask to optimize working with data arrays in Xarray.
+        * [Tutorial on using Dask and lazy loading]( http://tutorial.dask.org/01_dataframe.html )
 
 * **Avoid file input and output (I/O) unless your package is specifically an I/O package:** I/0 refers to data input and output of data.
     * [Read more about file input and output in the cloud](https://docs.2i2c.org/en/latest/data/cloud.html)
