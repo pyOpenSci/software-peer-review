@@ -52,5 +52,6 @@ defined by the Pangeo community.
         * [Using Dask and Xarray together:](https://docs.xarray.dev/en/stable/user-guide/dask.html?highlight=lazy#using-dask-with-xarray) this page provides an overview of how to use Dask to optimize working with data arrays in Xarray.
         * [Tutorial on using Dask and lazy loading]( http://tutorial.dask.org/01_dataframe.html )
 
-* **Use existing package methods and approaches to reading and writing data rather than creating your own:** The data read and write tools within packages such as Xarray build on existing packages including Zarr, fsspec, h5netcdf, and GDAL. As such they can already read and write a variety of file types to a variety of file systems, including Cloud Object storage.
+* **Use existing package methods and approaches to reading and writing data rather than creating your own:** Unless you package is specifically focused on reading or writing data with specific use cases in mind, it
+   should not include its own custom code for read/write data operations. The data be read and written using tools within packages such as Xarray or geoparquet via GeoPandas that build on existing packages such as Zarr, fsspec, h5netcdf, and GDAL. These tools already read and write a variety of file types to a variety of file systems, including Cloud Object storage.
 [See: 2i2c documentation for more on cloud native file format support.](https://docs.2i2c.org/en/latest/data/cloud.html#cloud-native-formats)
