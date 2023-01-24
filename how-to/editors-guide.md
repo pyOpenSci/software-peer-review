@@ -1,6 +1,6 @@
 # pyOpenSci Guide for Peer Review Editors
 
-<!-- 
+<!--
 ```{note}
 PyOpenSci has a partnership with JOSS where packages that are in-scope for JOSS
 can be directly accepted into the JOSS ecosystem through the pyOpenSci review.
@@ -10,83 +10,83 @@ JOSS editor.
 ``` -->
 
 Thank you for your time in serving as an editor for a PyOpenSci package! Below you will find some
-information about the role that editors have in the 
-pyOpenSci Python open peer review process. 
+information about the role that editors have in the
+pyOpenSci Python open peer review process.
 
-## Experience needed to become an editor 
+## Experience needed to become an editor
 
-Editors generally should: 
+Editors generally should:
 
 * Have completed a review for *at least* 1 package for pyOpenSci.
 * Have some experience with open source software that supports the scientific
 Python community. This experience could be maintaining or contributing to packages. It also could be experience related to usability of open source software and/or documentation, tutorials etc. Or finally it could be involvement in the scientific Python community in some other way.
 
 ## Two types of editors
-There are two types of editors involved in our open peer review process: 
+There are two types of editors involved in our open peer review process:
 
 * Guest editors and
-* Full editors 
+* Full editors
 
-Both types of editors are considered a part of the editorial board for 
+Both types of editors are considered a part of the editorial board for
 pyOpenSci. The major difference between guest and full editors is:
 
-* A guest editor may only join the board for a single review. 
-* A guest editor may be new to pyOpenSci's review process and thus require a bit more support in their first review.  
+* A guest editor may only join the board for a single review.
+* A guest editor may be new to pyOpenSci's review process and thus require a bit more support in their first review.
 
-### Guest editors 
-A guest editor is is invited to lead a review in the 
-case where we need specific expertise for a single review. We also consider editors who are 
-performing their first review as guest editors as they may require more 
-guidance or mentorship to complete the review (if they are new to our organization). 
+### Guest editors
+A guest editor is is invited to lead a review in the
+case where we need specific expertise for a single review. We also consider editors who are
+performing their first review as guest editors as they may require more
+guidance or mentorship to complete the review (if they are new to our organization).
 
-New editors who wish to continue on as full editors for pyOpenSci may do so 
+New editors who wish to continue on as full editors for pyOpenSci may do so
 as long as both parties (pyOpenSci and the guest editors) feel like it is a
 healthy fit for them and the organization.
 
 ### "Full" editors
 
-A full editor is most often someone who has experience with the 
+A full editor is most often someone who has experience with the
 pyOpenSci open package review process. A full editor ideally:
 
 * has completed a review for *at least* 1 package for pyOpenSci
-* and/or has submitted and gone through the pyOpenSci package review process 
+* and/or has submitted and gone through the pyOpenSci package review process
 * and/or has experience reviewing for an organization such as JOSS or rOpenSci.
 
 We also appreciate when editors have experience working with or in the
-Python open source software community be it maintaining packages, contributing to 
+Python open source software community be it maintaining packages, contributing to
 packages, or supporting the community. This is certainly
 not a requirement however if you are interested in getting involved with
 pyOpenSci!
 
 ```{note}
-There could be certain situations when an editor is on boarded with less experience! The above are simply guidelines that we like to follow.  
+There could be certain situations when an editor is on boarded with less experience! The above are simply guidelines that we like to follow.
 ```
 
 ## What does an editor do? (Responsibilities)
-An editor is normally recruited by the Editor in Chief, other editors on the 
-board, or the software review lead. [More on recruiting editors can be found here](onboarding-guide.md). 
+An editor is normally recruited by the Editor in Chief, other editors on the
+board, or the software review lead. [More on recruiting editors can be found here](onboarding-guide.md).
 
 An editor is responsible for:
 
 * Leading the review process for 3-4 packages a year
-* Weighing in on group editorial decisions such as whether a package is in-scope, and making updates to the pyOpenSci policies. 
-  
- ```{note} 
-Decisions surrounding policy, updates to peer review guides and decisions 
-on package review are generally made in the private `editorial-board` channel in the pyOpenSci Slack organization. Please make sure that you 
-are comfortable with checking Slack regularly. 
+* Weighing in on group editorial decisions such as whether a package is in-scope, and making updates to the pyOpenSci policies.
+
+ ```{note}
+Decisions surrounding policy, updates to peer review guides and decisions
+on package review are generally made in the private `editorial-board` channel in the pyOpenSci Slack organization. Please make sure that you
+are comfortable with checking Slack regularly.
 ```
 
 ## Editor support of other reviews
-Editors are not charged with tracking other submissions that they are 
-not leading. However, if you are serving as an editor and notice an 
-issue with another review, please raise that issue either directly with 
-the editor for that review. Or you can raise the issue in the editors 
-channel in slack. 
+Editors are not charged with tracking other submissions that they are
+not leading. However, if you are serving as an editor and notice an
+issue with another review, please raise that issue either directly with
+the editor for that review. Or you can raise the issue in the editors
+channel in slack.
 
-## Editor-in-Chief rotation 
-The editorial board normally participates in the Editor in Chief rotation. 
-You are eligible to enter this rotation after 3 months of serving on the editorial board 
+## Editor-in-Chief rotation
+The editorial board normally participates in the Editor in Chief rotation.
+You are eligible to enter this rotation after 3 months of serving on the editorial board
 and/or after your first review as it makes sense. [Read more about the roles
 and responsibilities of the Editor in Chief, here.](editor-in-chief-guide.md)
 
@@ -94,25 +94,25 @@ If the Editor in Chief role feels like too much responsibility, an editor can al
 
 ## How long does an editor serve on the editorial board?
 
-Ideally an editor can commit to serving for **atleast** one year as an editor
+Ideally an editor can commit to serving for **at least** one year as an editor
 for pyOpenSci. During that year we expect that you will lead review of 3-4 packages. However, we understand that in certain situations, an editor
-may need to step down before the 1 year time period has ended. 
+may need to step down before the 1 year time period has ended.
 
-We also understand that life gets busy and you are always welcome to "say no" 
-to a review during a particularly busy time. 
+We also understand that life gets busy and you are always welcome to "say no"
+to a review during a particularly busy time.
 
-We welcome 
-editors staying on for longer as long as they are happy serving with us and 
-they get along well with other members of the editorial board, the software 
-review lead and the current Editor in Chief. 
+We welcome
+editors staying on for longer as long as they are happy serving with us and
+they get along well with other members of the editorial board, the software
+review lead and the current Editor in Chief.
 
 ## Editor checklist: Get Started With Leading a Package Review
 
 Follow the checklist below when serving as an editor for a package submitted to
 pyOpenSci for review.
 
-All reviews happen in GitHub issues. The template for the 
-`yaml` header of a review submission below will be 
+All reviews happen in GitHub issues. The template for the
+`yaml` header of a review submission below will be
 referenced multiple times in the steps below:
 
 ```{include} ../appendices/issue-review-template.md
@@ -130,19 +130,19 @@ Once you begin the review process as an editor:
 Submitting Author: SUBMITTING AUTHOR NAME HERE (Name @github_handle)
 All current maintainers: ALL CURRENT MAINTAINERS LISTED HERE (Name @github_handle1, Name @github_handle2)
 Package Name: PACKAGE-NAME-HERE
-One-Line Description of Package: DESCRIPTION OF THE PACKAGE HERE 
+One-Line Description of Package: DESCRIPTION OF THE PACKAGE HERE
 Repository Link:  REPO-LINK
 Version submitted:  VERSION-SUBMITTED
 ```
 
 ```{note}
-The editor in chief who initially engaged with this review should have already evaluated the package level Editor Checks section for `Fit`, `Automated Tests`, `Documentation`, `License`, and `Repository`. 
+The editor in chief who initially engaged with this review should have already evaluated the package level Editor Checks section for `Fit`, `Automated Tests`, `Documentation`, `License`, and `Repository`.
 
 They also should have checked whether the package is [in scope for pyOpenSci](../about/package-scope).
 And whether there is [functionality overlap with functionality of any other existing Python packages](package-overlap).
 
-However, in some instances the editor-in-chief may request that an editor 
-perform these tasks. Be sure to check the issue to ensure the above checks have been implemented prior to initiating the review. 
+However, in some instances the editor-in-chief may request that an editor
+perform these tasks. Be sure to check the issue to ensure the above checks have been implemented prior to initiating the review.
 
 If the package does not fit the pyOpenSci scope and policies and needs to be
 rejected, see
@@ -152,10 +152,10 @@ about how to respond.
 
 ### ✔️ 2. Respond to the submitter in the GitHub issue
 Once the above is complete, you are ready to add an editor response to the issue.
-This step ensures that the package is ready to be reviewed. It also ensures that 
+This step ensures that the package is ready to be reviewed. It also ensures that
 we are using our volunteer reviewer time effectively.
 
-* Add a comment to the issue that contains a copy of the Editor Response template (see below) filled out with your response to the checks that begin the review. 
+* Add a comment to the issue that contains a copy of the Editor Response template (see below) filled out with your response to the checks that begin the review.
 * Change the label of the issue to `2/seeking-reviewer(s)`
 
 ```{include} ../appendices/editor-initial-response-template.md
@@ -163,16 +163,16 @@ we are using our volunteer reviewer time effectively.
 
 
 ```{important}
-**Important: If in the initial checks you find any major gaps in the package's 
+**Important: If in the initial checks you find any major gaps in the package's
 structure, request changes before assigning reviewers.**
 ```
 
 ### ✔️ 3. Identify Python package reviewers
 
-Within **one week of responding to the issue as the editor**, identify two people to 
+Within **one week of responding to the issue as the editor**, identify two people to
 review the Python package.
 
-If you wish, you can use the email template below to invite reviewers. 
+If you wish, you can use the email template below to invite reviewers.
 
 ```{include} ../appendices/reviewer-request-template.md
 ```
@@ -184,11 +184,11 @@ moving.
 
 * Once you have assigned reviewers to the review, you will update the editor response above with:
 
-1) reviewer GitHub handles and 
-2) the review deadline date. 
+1) reviewer GitHub handles and
+2) the review deadline date.
 * Change the label on the issue to `3/reviewer(s)-assigned`
 
-```{note} 
+```{note}
 [Click here for more information about finding reviewers for a package.](finding-reviewers)
 ```
 
@@ -229,42 +229,42 @@ Once the author has responded to the reviews and made appropriate changes made c
 * Change the issue status tag to `5/awaiting-reviewer-response`.
 
 ```{important}
-If for some reason during the process you need to halt the review and close the issue, be sure to let all parties know (maintainer and reviewers) prior to closing the issue. 
+If for some reason during the process you need to halt the review and close the issue, be sure to let all parties know (maintainer and reviewers) prior to closing the issue.
 
 Be sure to:
 
-* explain why the decision was made 
+* explain why the decision was made
 * thank them for their work
 * make a note <TBD where this will be documented> to assign the reviewer to another submission with high chance of smooth
 review next time (e.g. a package author who has already submitted packages to us).
 ```
 
-## Putting a review on hold & handling non-responsive authors 
+## Putting a review on hold & handling non-responsive authors
 
-In some cases, an author may need more time to respond to 
-review comments. In this case, the author can choose to have 
-their submission put on hold. As an editor you should apply the `holding label` to the GitHub issue. 
+In some cases, an author may need more time to respond to
+review comments. In this case, the author can choose to have
+their submission put on hold. As an editor you should apply the `holding label` to the GitHub issue.
 
-The holding status will be revisited every 3 months. 
+The holding status will be revisited every 3 months.
 
 After one year the issue will be closed if there is no movement towards responding to reviews by the author.
 
 If the author simply not responding, the editor should:
 
-* Tag the author (`@author-github-handle`) in an issue comment notifying them that we will close ths issue in one month if there is no response. 
-* Close the issue if one month has passed without a reply. 
+* Tag the author (`@author-github-handle`) in an issue comment notifying them that we will close the issue in one month if there is no response.
+* Close the issue if one month has passed without a reply.
 
-If needed you can also chose to email the author. using the email provided in the package metadata file of the package. The email 
-could be in any of the three files in the package: `setup.py`, `pyproject.toml` (preferred) or `setup.cfg`. 
+If needed you can also chose to email the author. using the email provided in the package metadata file of the package. The email
+could be in any of the three files in the package: `setup.py`, `pyproject.toml` (preferred) or `setup.cfg`.
 
 ```{important}
-If a submission is closed and the author wishes to re-submit, they will have to start a new submission. 
+If a submission is closed and the author wishes to re-submit, they will have to start a new submission.
 
-If the package is still in scope, the author will have to 
-respond to the first round of reviews first. After that is 
-complete, you can begin looking for new reviewers to 
-evaluated the package. This ensures that none of the review 
-energy spent in the first review, goes to waste. 
+If the package is still in scope, the author will have to
+respond to the first round of reviews first. After that is
+complete, you can begin looking for new reviewers to
+evaluated the package. This ensures that none of the review
+energy spent in the first review, goes to waste.
 ```
 
 ### ✔️ 6. How to accept a package into the pyOpenSci ecosystem
@@ -283,8 +283,8 @@ JOSS submission process.
 * Update the YAML at the top of the issue with the version of the package that was approved, Zenodo DOI for the approved version and the date approved.
 
 ```markdown
-Archive: UPDATE-THIS-WITH-A-ZENODO-ARCHIVE-BADGE-TBD  
-Version accepted: UPDATE-THIS-TBD 
+Archive: UPDATE-THIS-WITH-A-ZENODO-ARCHIVE-BADGE-TBD
+Version accepted: UPDATE-THIS-TBD
 Date accepted (month/day/year): UPDATE-THIS-TBD
 ```
 
@@ -297,9 +297,9 @@ reviews has been considered and implemented
 ```
 
 
-## Closing notes about the editorial process 
+## Closing notes about the editorial process
 * If the package raises a new issue for pyOpenSci policy, create an issue on [pyOpenSci's governance repo](https://github.com/pyOpenSci/governance).
-* If the package review raises a new issue in our peer review process, please [open an issue in our peer review guide repo.](https://github.com/pyOpenSci/peer-review-guide). 
+* If the package review raises a new issue in our peer review process, please [open an issue in our peer review guide repo.](https://github.com/pyOpenSci/peer-review-guide).
 
 
 ## ✔️ OPTIONAL:  Instructions for Submitting to JOSS

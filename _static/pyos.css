@@ -33,7 +33,7 @@ ul li p {
   font-size: 1.2em!important;
 }
 
-div.header__block { 
+div.header__block {
   color: #222;
 }
 
@@ -43,11 +43,11 @@ div.header__block {
 }
 
 
-/* 
+/*
 .announcement div {
   background-color: #ccc;
 } */
-/* 
+/*
 .header-item.announcement, .header-item.announcement .noprint {
   background-color:#ccc;
 }
@@ -62,4 +62,3 @@ div.admonition.note {
   font-weight: normal !important;
   font-size: .9em;
 }
-

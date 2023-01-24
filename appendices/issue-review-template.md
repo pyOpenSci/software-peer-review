@@ -9,14 +9,14 @@ assignees: ''
 Submitting Author: Name (@github_handle)
 All current maintainers: (@github_handle1, @github_handle2)
 Package Name: Package name here
-One-Line Description of Package: Description here 
-Repository Link:  
-Version submitted:   
-Editor: TBD  
-Reviewer 1: TBD  
-Reviewer 2: TBD  
-Archive: TBD  
-Version accepted: TBD 
+One-Line Description of Package: Description here
+Repository Link:
+Version submitted:
+Editor: TBD
+Reviewer 1: TBD
+Reviewer 2: TBD
+Archive: TBD
+Version accepted: TBD
 Date accepted (month/day/year): TBD
 ---
 ```
