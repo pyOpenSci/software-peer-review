@@ -24,6 +24,7 @@ The benefit of communities partnering with us is:
 * We also have broader reach to users of scientific software across the ecosystem.
 * Finally a consolidated peer review process will help enforce standardization of scientific Python packaging and best practices across the ecosystem.
 
+(pangeo-collaboration)=
 ## pyOpenSci's partnership with Pangeo
 
 pyOpenSci is creating a collaboration workflow to
