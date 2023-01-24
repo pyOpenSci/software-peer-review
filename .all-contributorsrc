@@ -16,6 +16,17 @@
         "review",
         "design"
       ]
+    },
+    {
+      "login": "arianesasso",
+      "name": "Ariane Sasso",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3659681?v=4",
+      "profile": "http://arianesasso.me",
+      "contributions": [
+        "code",
+        "review",
+        "design"
+      ]
     }
   ],
   "contributorsPerLine": 7,
