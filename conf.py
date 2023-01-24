@@ -17,9 +17,9 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'peer-review-guide'
-copyright = '2022, pyOpenSci'
-author = 'Leah Wasser'
+project = 'pyOpenSci Software Peer Review Guide'
+copyright = '2023, pyOpenSci'
+author = 'pyOpenSci Editorial Team and Community'
 
 # The full version, including alpha/beta/rc tags
 release = '0.1'
@@ -47,11 +47,11 @@ myst_heading_anchors = 3
 suppress_warnings = ["myst.header"]
 
 # For generating sitemap
-html_baseurl = 'https://www.pyopensci.org/peer-review-guide/'
+html_baseurl = 'https://www.pyopensci.org/software-peer-review/'
 
 # Link to our repo for easy PR/ editing
 html_theme_options = {
-    "repository_url": "https://github.com/pyopensci/governance",
+    "repository_url": "https://github.com/pyopensci/software-peer-review",
     "use_repository_button": True,
     "google_analytics_id": "UA-141260825-1",
     "external_links": [
