@@ -6,12 +6,12 @@
 :::{grid-item}
 :columns: 4
 :class: sd-m-auto
-:::  
+:::
 
 :::{grid-item}
 :columns: 12
 :class: sd-fs-3
-pyOpenSci is a diverse community that supports the open Python tools that 
+pyOpenSci is a diverse community that supports the open Python tools that
 drive open science.
 
 % The SVG rendering breaks latex builds for the GitHub badge, so only include in HTML
@@ -57,7 +57,7 @@ Learn how to submit a package for peer review with pyOpenSci.
 :link-type: doc
 :class-header: bg-light
 
- ✨ Our editor guide will walk you through the editorial process. ✨ 
+ ✨ Our editor guide will walk you through the editorial process. ✨
 +++
 [Click to learn more »](how-to/editors-guide)
 :::
@@ -79,11 +79,11 @@ process step-by-step.
 
 
 ## Why pyOpenSci?
-pyOpenSci promotes open and reproducible research through peer-review of 
-scientific Python packages. We also build technical capacity by providing a 
-curated repository of high-quality packages and enabling scientists to write 
-and share their own software. We hope to foster a greater sense of community 
-among scientific Python users so that we can help each other become better 
+pyOpenSci promotes open and reproducible research through peer-review of
+scientific Python packages. We also build technical capacity by providing a
+curated repository of high-quality packages and enabling scientists to write
+and share their own software. We hope to foster a greater sense of community
+among scientific Python users so that we can help each other become better
 programmers and researchers.
 
 :::{figure-md} pyos-badge-home
@@ -91,24 +91,24 @@ programmers and researchers.
 
 <img src="https://tinyurl.com/y22nb8up" alt="The pyOpenSci badge- On the left is the badge in grey and it says pyOpenSci. On the right it is bright green and says Peer Reviewed." class="bg-primary mb-1" width="200px">
 
-**pyOpenSci Peer Review Badge will appear on the README.md file of packages that have been 
+**pyOpenSci Peer Review Badge will appear on the README.md file of packages that have been
 reviewed and vetted by us.**
 :::
 
 ## This Guide
-This guidebook contains information for pyOpenSci package authors, reviewers, 
+This guidebook contains information for pyOpenSci package authors, reviewers,
 and editors. It is organized into three sections:
 
 ### 1. About Peer Review
-This section provides a broad overview of our peer review process. 
+This section provides a broad overview of our peer review process.
 
 
 ### 2. Our Partners
-This section discusses our partnerships with other scientific and open source 
-communities including Pangeo and JOSS. 
+This section discusses our partnerships with other scientific and open source
+communities including Pangeo and JOSS.
 
 ### 3. How To Guides
-This section provides specific guides for each role in our peer review process. 
+This section provides specific guides for each role in our peer review process.
 
 
 ```{toctree}
@@ -156,5 +156,3 @@ Finding Reviewers <how-to/finding-reviewers>
 Glossary <appendices/glossary>
 Templates <appendices/templates>
 ```
-
-

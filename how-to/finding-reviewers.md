@@ -1,4 +1,4 @@
-# Reviewer Resources 
+# Reviewer Resources
 
 ## Where to Look for Reviewers?
 

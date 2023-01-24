@@ -41,7 +41,7 @@ jobs:
       run: nox -s docs
 
       # Push the book's HTML to github-pages
-    - name: Push to GitHub Pages 
+    - name: Push to GitHub Pages
       # Only push if on main branch
       if: github.ref == 'refs/heads/main'
       uses: peaceiris/actions-gh-pages@v3.8.0

@@ -43,7 +43,7 @@ extensions = [
 myst_enable_extensions = ["colon_fence"]
 myst_heading_anchors = 3
 
-# Supress as we have includes that don't need to start at h1 
+# Suppress as we have includes that don't need to start at h1
 suppress_warnings = ["myst.header"]
 
 # For generating sitemap
@@ -68,11 +68,11 @@ templates_path = ['_templates']
 # directories to ignore when looking for source files.
 # This pattern also affects html_static_path and html_extra_path.
 exclude_patterns = [
-    "_build", 
-    "Thumbs.db", 
-    ".DS_Store", 
-    ".github", 
-    ".nox", 
+    "_build",
+    "Thumbs.db",
+    ".DS_Store",
+    ".github",
+    ".nox",
     "README.md"
     ]
 
