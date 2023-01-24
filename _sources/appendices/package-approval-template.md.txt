@@ -1,6 +1,6 @@
 ```markdown
 ----------------------------------------------
-🎉 <package-name-here> has been approved by pyOpenSci! Thank you <maintainer-name-here> for submitting <package-name> and many thanks to <reviewer-names-here> for reviewing this package! 😸  
+🎉 <package-name-here> has been approved by pyOpenSci! Thank you <maintainer-name-here> for submitting <package-name> and many thanks to <reviewer-names-here> for reviewing this package! 😸
 
 There are a few things left to do to wrap up this submission:
 - [ ] Activate [Zenodo](https://zenodo.org/) watching the repo if you haven't already done so.

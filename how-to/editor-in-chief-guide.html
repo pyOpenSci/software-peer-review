@@ -8,7 +8,7 @@
 <meta property="og:title" content="Editor in Chief Guide" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="how-to/editor-in-chief-guide.html" />
-<meta property="og:site_name" content="peer-review-guide" />
+<meta property="og:site_name" content="pyOpenSci Software Peer Review Guide" />
 <meta property="og:description" content="Editor in Chief (EiC) role & responsibilities: The Editor in Chief (EiC) is a rotating position that serves for 3 to 6 months or a time agreed to by all members of the editorial board. If the EiC n..." />
 <meta name="description" content="Editor in Chief (EiC) role & responsibilities: The Editor in Chief (EiC) is a rotating position that serves for 3 to 6 months or a time agreed to by all members of the editorial board. If the EiC n..." />
 
@@ -44,7 +44,7 @@
     <script src="../_static/copybutton.js"></script>
     <script src="../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
     <script src="../_static/design-tabs.js"></script>
-    <link rel="canonical" href="https://www.pyopensci.org/peer-review-guide/how-to/editor-in-chief-guide.html" />
+    <link rel="canonical" href="https://www.pyopensci.org/software-peer-review/how-to/editor-in-chief-guide.html" />
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Onboarding New Editors and Reviewers" href="onboarding-guide.html" />
@@ -322,7 +322,7 @@ title="Fullscreen mode"
   </span>
 
 </button>
-<a href="https://github.com/pyopensci/governance"
+<a href="https://github.com/pyopensci/software-peer-review"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="bottom"
@@ -637,29 +637,29 @@ improve the quality of the package.</p>
 <section id="editor-checklist-template">
 <span id="id1"></span><h3>Editor-in-chief checklist<a class="headerlink" href="#editor-checklist-template" title="Permalink to this headline">#</a></h3>
 <p>Copy the template below to use it in the issue.</p>
-<div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span><span class="gu">## Editor in Chief checks </span>
+<div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span><span class="gu">## Editor in Chief checks</span>
 
 Hi there! Thank you for submitting your package for pyOpenSci
-review. Below are the basic checks that your package needs to pass 
-to begin our review. If some of these are missing, we will ask you 
-to work on them before the review process begins. 
+review. Below are the basic checks that your package needs to pass
+to begin our review. If some of these are missing, we will ask you
+to work on them before the review process begins.
 
-Please check our [<span class="nt">Python packaging guide</span>](<span class="na">https://www.pyopensci.org/python-package-guide</span>) for more information on the elements 
-below. 
+Please check our [<span class="nt">Python packaging guide</span>](<span class="na">https://www.pyopensci.org/python-package-guide</span>) for more information on the elements
+below.
 
 <span class="k">- [ ]</span> <span class="gs">**Installation**</span> The package can be installed from a community repository such as PyPI (preferred), and/or a community channel on conda (e.g. conda-forge, bioconda).
 <span class="w">  </span><span class="k">- [ ]</span> The package imports properly into a standard Python environment <span class="sb">`import package-name`</span>.
 <span class="k">- [ ]</span> <span class="gs">**Fit**</span> The package meets criteria for [<span class="nt">fit</span>](<span class="na">https://www.pyopensci.org/peer-review-guide/about/package-scope.html</span>) and [<span class="nt">overlap</span>](<span class="na">https://www/pyopensci.org/peer-review-guide/about/package-scope.html#package-overlap</span>).
 <span class="k">- [ ]</span> <span class="gs">**Documentation**</span> The package has sufficient online documentation to allow us to evaluate package function and scope <span class="ge">*without installing the package*</span>. This includes:
-<span class="w">  </span><span class="k">- [ ]</span> User-facing documentation that overviews how to install and start using the package. 
+<span class="w">  </span><span class="k">- [ ]</span> User-facing documentation that overviews how to install and start using the package.
 <span class="w">  </span><span class="k">- [ ]</span> Short tutorials that help a user understand how to use the package and what it can do for them.
 <span class="w">  </span><span class="k">- [ ]</span> API documentation (documentation for your code&#39;s functions, classes, methods and attributes): this includes clearly written docstrings with variables defined using a standard docstring format. <span class="ge">*We suggest using the [Numpy](https://numpydoc.readthedocs.io/en/latest/format.html#docstring-standard) docstring format*</span>.
-<span class="k">- [ ]</span> Core GitHub repository Files 
-<span class="w">  </span><span class="k">- [ ]</span> <span class="gs">**README**</span> The package has a <span class="sb">`README.md`</span> file with clear explanation of what the package does, instructions on how to install it, and a link to development instructions. 
+<span class="k">- [ ]</span> Core GitHub repository Files
+<span class="w">  </span><span class="k">- [ ]</span> <span class="gs">**README**</span> The package has a <span class="sb">`README.md`</span> file with clear explanation of what the package does, instructions on how to install it, and a link to development instructions.
 <span class="w">  </span><span class="k">- [ ]</span> <span class="gs">**Contributing File**</span> The package has a <span class="sb">`CONTRIBUTING.md`</span> file that details how to install and contribute to the package.
-<span class="w">  </span><span class="k">- [ ]</span> <span class="gs">**Code of Conduct**</span> The package has a <span class="sb">`Code of Conduct`</span> file. 
+<span class="w">  </span><span class="k">- [ ]</span> <span class="gs">**Code of Conduct**</span> The package has a <span class="sb">`Code of Conduct`</span> file.
 <span class="w">  </span><span class="k">- [ ]</span> <span class="gs">**License**</span> The package has an [<span class="nt">OSI approved license</span>](<span class="na">https://opensource.org/licenses</span>).
-NOTE: We prefer that you have development instructions in your documentation too. 
+NOTE: We prefer that you have development instructions in your documentation too.
 <span class="k">- [ ]</span> <span class="gs">**Issue Submission Documentation**</span> All of the information is filled out in the <span class="sb">`YAML`</span> header of the issue (located at the top of the issue template).
 <span class="k">- [ ]</span> <span class="gs">**Automated tests**</span> Package has a testing suite and is tested via GitHub actions or another Continuous Integration service.
 <span class="k">- [ ]</span> <span class="gs">**Repository**</span> The repository link resolves correctly.
@@ -668,8 +668,8 @@ NOTE: We prefer that you have development instructions in your documentation too
 <span class="k">- [ ]</span> <span class="gs">**Version**</span> (JOSS only, may be post-review): Does the release version given match the GitHub release (v1.0.0)?
 
 ---
-<span class="k">- [ ]</span> [<span class="nt">Initial onboarding survey was filled out </span>](<span class="na">https://forms.gle/F9mou7S3jhe8DMJ16</span>) 
-We appreciate each maintainer of the package filling out this survey individually. :raised_hands: 
+<span class="k">- [ ]</span> [<span class="nt">Initial onboarding survey was filled out </span>](<span class="na">https://forms.gle/F9mou7S3jhe8DMJ16</span>)
+We appreciate each maintainer of the package filling out this survey individually. :raised_hands:
 <span class="gu">Thank you authors in advance for setting aside five to ten minutes to do this. It truly helps our organization. :raised_hands:</span>
 <span class="gu">---</span>
 
@@ -719,15 +719,15 @@ out-of-scope, the package documentation will improve as a result of your questio
 <p>Example text:</p>
 <div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span>Hello &lt;username&gt; and many thanks for your submission.
 
-We are discussing whether the package is in scope and need a bit more 
+We are discussing whether the package is in scope and need a bit more
 information.
 
 Please add more details and context to your <span class="sb">`README`</span> file.
-After reading it, someone with little domain knowledge should understand 
+After reading it, someone with little domain knowledge should understand
 the aim, goals and functionality of the package.
 
 &lt;optional&gt;
-If a package has overlapping functionality with other packages, we require you 
+If a package has overlapping functionality with other packages, we require you
 to mention in your documentation (README) and in this issue [<span class="nt">how it is &quot;best in class&quot;</span>](<span class="na">https://www.pyopensci.org/contributing-guide/about/package-scope.md#package-overlap</span>). Please add a more detailed comparison to the packages you mention in the README so we can evaluate?
 &lt;/optional&gt;
 </pre></div>
@@ -771,9 +771,9 @@ warranted that can take place within the issue.</p>
     <div class="footer-content row">
         <footer class="col footer"><p>
   
-    By Leah Wasser<br/>
+    By pyOpenSci Editorial Team and Community<br/>
   
-      &copy; Copyright 2022, pyOpenSci.<br/>
+      &copy; Copyright 2023, pyOpenSci.<br/>
 </p>
         </footer>
     </div>

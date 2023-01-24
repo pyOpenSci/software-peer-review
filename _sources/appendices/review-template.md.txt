@@ -27,8 +27,8 @@ The package meets the readme requirements below:
 The README should include, from top to bottom:
 
 - [ ] The package name
-- [ ] Badges for: 
-    - [ ] Continuous integration and test coverage, 
+- [ ] Badges for:
+    - [ ] Continuous integration and test coverage,
     - [ ] Docs building (if you have a documentation website),
     - [ ] A [repostatus.org](https://www.repostatus.org/) badge,
     - [ ] Python versions supported,
@@ -61,10 +61,10 @@ Package structure should follow general community best-practices. In general ple
 - [ ] **Functionality:** Any functional claims of the software been confirmed.
 - [ ] **Performance:** Any performance claims of the software been confirmed.
 - [ ] **Automated tests:** Tests cover essential functions of the package and a reasonable range of inputs and conditions. All tests pass on the local machine.
-- [ ] **Continuous Integration:** Has continuous integration setup (We suggest using Github actions but any CI platform is acceptable for review) 
+- [ ] **Continuous Integration:** Has continuous integration setup (We suggest using Github actions but any CI platform is acceptable for review)
 - [ ] **Packaging guidelines**: The package conforms to the pyOpenSci [packaging guidelines](https://www.pyopensci.org/python-package-guide).
     A few notable highlights to look at:
-    - [ ] Package supports modern versions of Python and not [End of life versions](https://endoflife.date/python). 
+    - [ ] Package supports modern versions of Python and not [End of life versions](https://endoflife.date/python).
     - [ ] Code format is standard throughout package and follows PEP 8 guidelines (CI tests for linting pass)
 
 #### For packages also submitting to JOSS
