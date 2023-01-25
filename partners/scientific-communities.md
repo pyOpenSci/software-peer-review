@@ -45,7 +45,7 @@ Pangeo-related package, we will also perform the checks below that are
 defined by the Pangeo community.
 
 * **Consume and produce high-level data structures** (e.g. **Xarray datasets**, **Pandas DataFrames**) wherever feasible.
-* **Operate lazily when called on Dask data structure:** Lazy loading refers to a tool only performing operations on data when it's needed. Lazy loading is ideal for workflows using larger datasets which will quickly consume memory and compute power when you work with them. Lazy loading allows a tool to create a connection to a dataset, but only actually access / open the part of the dataset that you require to use in your workflow.  [Learn more here.](https://docs.dask.org/en/stable/user-interfaces.html?highlight=lazy#laziness-and-computing)
+* **Operate lazily when called on Dask data structure:** To support larger-than-memory datasets, many Pangeo workflows use [Dask](https://dask.org) to parallelize the workflow. Doing this efficiently requires lazily loading data and triggering compute only when needed. See the [Dask documentation](https://docs.dask.org/en/stable/user-interfaces.html#laziness-and-computing) for more.
 
     * A few other resources related to lazy loading:
 
@@ -53,6 +53,6 @@ defined by the Pangeo community.
         * [Using Dask and Xarray together:](https://docs.xarray.dev/en/stable/user-guide/dask.html?highlight=lazy#using-dask-with-xarray) this page provides an overview of how to use Dask to optimize working with data arrays in Xarray.
         * [Tutorial on using Dask and lazy loading]( http://tutorial.dask.org/01_dataframe.html )
 
-* **Use existing package methods and approaches to reading and writing data rather than creating your own:** Unless you package is specifically focused on reading or writing data with specific use cases in mind, it
+* **Use existing data reading and writing libraries rather than creating your own read and write utilities:** Unless you package is specifically focused on reading or writing data with specific use cases in mind, it
    should not include its own custom code for read/write data operations. The data be read and written using tools within packages such as Xarray or geoparquet via GeoPandas that build on existing packages such as Zarr, fsspec, h5netcdf, and GDAL. These tools already read and write a variety of file types to a variety of file systems, including Cloud Object storage.
 [See: 2i2c documentation for more on cloud native file format support.](https://docs.2i2c.org/en/latest/data/cloud.html#cloud-native-formats)
