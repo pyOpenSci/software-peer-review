@@ -1,0 +1,38 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "commitConvention": "angular",
+  "contributors": [
+    {
+      "login": "TomAugspurger",
+      "name": "Tom Augspurger",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1312546?v=4",
+      "profile": "https://tomaugspurger.github.io",
+      "contributions": [
+        "code",
+        "review",
+        "design"
+      ]
+    },
+    {
+      "login": "arianesasso",
+      "name": "Ariane Sasso",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3659681?v=4",
+      "profile": "http://arianesasso.me",
+      "contributions": [
+        "code",
+        "review",
+        "design"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "skipCi": true,
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "projectName": "software-peer-review",
+  "projectOwner": "pyOpenSci"
+}

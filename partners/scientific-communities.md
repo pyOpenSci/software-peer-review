@@ -32,6 +32,7 @@ collaborate with the [Pangeo](https://pangeo.io/) scientific community. Through
 this collaboration we add an additional layer of peer review checks to pangeo
 packages that go through our [open peer review process](/about/intro).
 
+
 If you are submitting a package for review that fits into the Pangeo ecosystem,
 your package will be:
 
@@ -56,3 +57,4 @@ defined by the Pangeo community.
 * **Use existing data reading and writing libraries rather than creating your own read and write utilities:** Unless you package is specifically focused on reading or writing data with specific use cases in mind, it
    should not include its own custom code for read/write data operations. The data be read and written using tools within packages such as Xarray or geoparquet via GeoPandas that build on existing packages such as Zarr, fsspec, h5netcdf, and GDAL. These tools already read and write a variety of file types to a variety of file systems, including Cloud Object storage.
 [See: 2i2c documentation for more on cloud native file format support.](https://docs.2i2c.org/en/latest/data/cloud.html#cloud-native-formats)
+
