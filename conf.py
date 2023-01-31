@@ -37,7 +37,7 @@ html_baseurl = 'https://www.pyopensci.org/software-peer-review/'
 
 # Link to our repo for easy PR/ editing
 html_theme_options = {
-    "announcement": "<p><a href='https://www.pyopensci.org/software-peer-review/about/intro.html'>Submit Your Python Package for Peer Review - Learn More!</a></p>",
+    "announcement": "<p><a href='https://www.github.com/pyopensci/software-submission/'>Submit Your Python Package for Peer Review!</a></p>",
     "external_links": [
         {
             "url": "https://www.pyopensci.org",
