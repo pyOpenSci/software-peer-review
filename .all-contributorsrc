@@ -27,6 +27,17 @@
         "review",
         "design"
       ]
+    },
+    {
+      "login": "rabernat",
+      "name": "Ryan Abernathey",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1197350?v=4",
+      "profile": "https://github.com/rabernat",
+      "contributions": [
+        "code",
+        "design",
+        "review"
+      ]
     }
   ],
   "contributorsPerLine": 7,
