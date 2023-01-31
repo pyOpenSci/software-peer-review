@@ -22,30 +22,37 @@ The benefit of communities partnering with us is:
 
 * We have a broad view across all scientific ecosystems which will help us to better identify overlap of package functions.
 * We also have broader reach to users of scientific software across the ecosystem.
-* Finally a consolidated peer review process will help enforce standardization of scientific Python packaging and best pratices across the ecosystem.
-<!--
-## Pangeo
+* Finally a consolidated peer review process will help enforce standardization of scientific Python packaging and best practices across the ecosystem.
 
-pyOpenSci is launching a prototype effort to explore what it looks like to
-support [Pangeo](https://pangeo.io/).
+(pangeo-collaboration)=
+## pyOpenSci's partnership with Pangeo
+
+pyOpenSci is creating a collaboration workflow to
+collaborate with the [Pangeo](https://pangeo.io/) scientific community. Through
+this collaboration we add an additional layer of peer review checks to Pangeo-related
+packages that go through our [open peer review process](/about/intro).
+
 
 If you are submitting a package for review that fits into the Pangeo ecosystem,
 your package will be:
 
 * Reviewed against current pyOpenSci guidelines and checks.
-* Also reviewed against the Pangeo-specific guidelines below.
--->
+* Also reviewed against the Pangeo-specific guidelines listed below.
 
-<!--
-```{admonition} Pangeo Review Guidelines
-:class: note
+### Pangeo Specific Software Peer Review Guidelines
 
-On top of the pyOpenSci review guidelines, we will also perform checks for
-the following:
+In addition to [basic pyOpenSci review checks](https://www.pyopensci.org/software-peer-review/how-to/editor-in-chief-guide.html#editor-checklist-template), when reviewing a
+Pangeo-related package, we will also perform the checks below that are
+defined by the Pangeo community.
 
-* **Consume and produce high-level data structures** (e.g. **Xarray datasets**, **Pandas DataFrames**) wherever feasible:
-* **Operate lazily when called on Dask data structure:** Lazy loading refers to a tool only performing operations on data when it's needed. Lazy loading is ideal for workflows using larger datasets which will quickly consume memory and compute power when you work with them. [Learn more here.](https://saturncloud.io/blog/a-data-scientist-s-guide-to-lazy-evaluation-with-dask/)
-TODO: Is this the best link for an overview of lazy loading - maybe there is a tutorial??
-* **Avoid file I/O unless your package is specifically an I/O package:** I/0 refers to data input and output of data.
-TODO: Ask tom for a better explanation of what this specific means and add a link if there is one ?
-``` -->
+* **Consume and produce high-level data structures** (e.g. **Xarray datasets**, **Pandas DataFrames**) wherever feasible.
+* **Operate lazily when called on Dask data structures:** To support larger-than-memory datasets, many Pangeo workflows use [Dask](https://dask.org) to parallelize the workflow. Doing this efficiently requires lazily loading data and triggering compute only when needed. See the [Dask documentation](https://docs.dask.org/en/stable/user-interfaces.html#laziness-and-computing) for more.
+
+    * A few other resources related to lazy loading:
+
+        * [Dask and stages of computation](https://docs.dask.org/en/stable/phases-of-computation.html): this provides and overview of using Dask effectively to optimize your compute workflow.
+        * [Using Dask and Xarray together:](https://docs.xarray.dev/en/stable/user-guide/dask.html?highlight=lazy#using-dask-with-xarray) this page provides an overview of how to use Dask to optimize working with data arrays in Xarray.
+        * [Tutorial on using Dask and lazy loading]( https://tutorial.dask.org/01_dataframe.html )
+
+* **Use existing data reading and writing libraries rather than creating your own:** In general, your package should use existing libraries for reading and writing data (e.g. xarray, pandas, geopandas, or the libraries those are built on like Zarr, GDAL, pyarrow, etc.) and should not include its own custom code for read/write data operations. These tools already read and write a variety of file types to a variety of file systems that are important to Pangeo users, including Cloud Object storage.
+[See: 2i2c documentation for more on cloud native file format support.](https://docs.2i2c.org/en/latest/data/cloud.html#cloud-native-formats)
