@@ -1,4 +1,4 @@
-sphinx-book-theme
+pydata-sphinx-theme
 myst-nb
 sphinx
 sphinx-autobuild
