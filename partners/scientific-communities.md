@@ -56,4 +56,3 @@ defined by the Pangeo community.
 
 * **Use existing data reading and writing libraries rather than creating your own:** In general, your package should use existing libraries for reading and writing data (e.g. xarray, pandas, geopandas, or the libraries those are built on like Zarr, GDAL, pyarrow, etc.) and should not include its own custom code for read/write data operations. These tools already read and write a variety of file types to a variety of file systems that are important to pangeo users, including Cloud Object storage.
 [See: 2i2c documentation for more on cloud native file format support.](https://docs.2i2c.org/en/latest/data/cloud.html#cloud-native-formats)
-
