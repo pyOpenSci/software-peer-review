@@ -18,8 +18,6 @@ Currently, the packages that pyOpenSci reviews also need to fall into the
 technical and applied scope of our organization. This scope may expand over time
 as the organization grows.
 
-
-
 ## Is Your Package in Scope For pyOpenSci Review?
 
 pyOpenSci only reviews packages that fall within our specified domain and
@@ -30,8 +28,228 @@ open a [pre-submission inquiry using a GitHub Issue](https://github.com/pyOpenSc
 one of our editors. We are happy to look at your package and help you understand
 whether it is in scope or not.
 
-```{include} /appendices/scope.md
+## About the scope of packages that we review
+
+pyOpenSci supports packages that support both open reproducible science,
+data processing and and the various stages of managing the
+data lifecycle. Packages submitted to pyOpenSci should fit into one or
+more of the categories below.
+
+```{admonition} Package Use Metrics Are Not a Requirement for Review
+:class: important
+pyOpenSci has no requirements surrounding the volume community use of your
+package.
+If you package is well developed, the number of GitHub stars or PyPI or conda
+downloads is NOT considered as a part of our scope evaluation.
+
+We welcome young packages that are just entering the scientific Python
+ecosystem to apply for review if they are relevant to the science community and
+fit into at least one scope category below.
 ```
+
+If you are unsure whether your package fits into one of the general or
+statistical categories, please open an issue as a pre-submission inquiry (Examples). <todo add link>
+
+```{note}
+This is a living document. The categories below may change through time.
+This may mean in some cases, some previously peer review-accepted packages
+may not be in-scope today. We strive for consistency in our peer review process. However, we also evaluate packages on a case-by-case basis.
+In some cases exceptions are made.
+```
+
+## Package scope categories
+
+The following categories are the current domain areas that fall into the
+pyOpenSci domain scope. Note that your package should have some level of
+demonstrated scientific application. This could be a use case that you can
+link to or a tutorial that demonstrates it's potential application for science.
+
+Below we provide examples of packages from pyOpenSci ecosystem. Because we
+have growing community of packages, in some cases we link to R packages
+within the rOpenSci community that match the category scope for reference.
+
+We will update this page as our review process evolves.
+
+```{note}
+Many of the example packages below perform tasks that might fit in multiple
+categories. There are just there to provide you with a flavor of the types
+of packages that would fall into that category.
+```
+
+### Data retrieval
+Packages for accessing and downloading data from online sources. This category
+includes wrappers for accessing APIs.
+
+Our definition of scientific applications is broad, including data storage
+services, journals, and other remote servers, as many data sources may be of
+interest to scientists. However, retrieval packages should be focused on data
+sources / topics, rather than services.
+
+*For example a general client for Amazon Web Services data storage would not be in-scope.*
+
+* Examples: [OpenOmics](https://github.com/pyOpenSci/software-submission/issues/31)
+
+
+### Data extraction
+
+These packages aid in retrieving data from unstructured sources such as text,
+images, and PDFs. They might also parse scientific data types and outputs from
+scientific equipment.
+
+* Examples: [devicely](https://github.com/pyOpenSci/software-submission/issues/37), [jointly](https://github.com/pyOpenSci/software-submission/issues/45)
+
+### Data processing & munging
+
+Data munging tools are tools that support processing data discussed above. This
+category focuses on tools for handling data in specific  formats that scientists
+may be interested in working with. These data may also be generated from
+scientific workflows or exported from instruments and wearables.
+
+* Examples: [physcraper](https://github.com/pyOpenSci/software-submission/issues/26)
+
+
+### Data deposition
+
+Tools for depositing data into scientific research repositories.
+
+* Examples: [This is an example from rOpenSci - eml](https://github.com/ropensci/software-review/issues/80)
+
+### Data validation and testing:
+
+Tools that enable automated validation and checking of data quality and
+completeness. These tools should be able to support scientific workflows.
+
+* Example: [pandera](https://github.com/pyOpenSci/software-submission/issues/12)
+
+### Scientific software wrappers
+
+Scientific software wrappers refer to packages that provide a Python interface
+for existing scientific packages written in other languages.
+
+These programs must be specific to scientific domains and not general computing
+utilities. Wrappers must provide significant added value to the scientific
+ecosystem be it in data handling, or improved installation processes for
+Python users.
+
+We strongly encourage submissions that wrap tools that are open-source and
+using an OSI-approved license. Exceptions will be evaluated case-by-case,
+considering whether open-source options exist.
+
+<!-- TODO: need an example for this category -->
+* Examples: We don't have a package in this category yet - *Could be your package?*
+
+### Workflow Automation & versioning
+Tools that automate and link together workflows and as such support
+reproducible workflows. These
+tools may include build systems and tools to manage continuous integration.
+This also includes tools that support version control.
+
+<!-- TODO: marting git package is a good example but it's needs to be sunsetted as it's no longer maintained. hamilton is just starting review but would fit
+well here  - the link below for it is a presubmission not a review   -->
+* Examples: [Hamilton - currently under review](https://github.com/pyOpenSci/software-submission/issues/74), martin's git package (that is no longer maintained.)
+
+### Citation management and bibliometrics:
+
+Tools that facilitate managing references, such as for writing manuscripts,
+creating CVs or otherwise attributing scientific contributions, or accessing,
+manipulating or otherwise working with bibliometric data. (Example: [Example from rOpenSci - RefManageR](https://github.com/ropensci/software-review/issues/119))
+
+### Data visualization & analysis
+These are packages that enhance a scientists experience visualizing and
+analyzing data.
+
+* Examples: [PyGmt - (also spatial and data munging)](https://github.com/pyOpenSci/software-submission/issues/43),
+
+### Database software bindings
+
+ Bindings and wrappers for database APIs.
+
+ * Example: [Example from rOpenSci - rrlite](https://github.com/ropensci/software-review/issues/6)
+
+
+## Specialty topics
+
+In addition, we have some specialty topics with a broad domain focused scope.
+
+### Geospatial
+
+Packages focused on the retrieval, manipulation, and analysis of spatial data.
+
+* Examples: [PyGmt](https://github.com/pyOpenSci/software-submission/issues/43),
+[Moving Pandas ](https://github.com/pyOpenSci/software-submission/issues/18)
+
+### Pangeo
+
+We have a [partnership with Pangeo](../partners/pangeo). Often times packages submitted as a part of that partnership are also in the geospatial domain.
+
+* Examples: [xclim - under review now](https://github.com/pyOpenSci/software-submission/issues/73)
+
+### Education
+
+Packages to aid with instruction.
+<!--TODO -  Earthpy fit in this category but it also needs to be sunsetted -->
+
+## Package technical scope
+
+To be in technical scope for a pyOpenSci review, your package:
+
+* Should have maintenance workflows documented.
+* Should be structured in a way that someone else could contribute to it.
+* Should declare vendor dependencies using standard approaches rather than including code from other packages within your repository.
+
+### Notes on scope categories
+- pyOpenSci is still developing as a community. If your scientific Python
+package does not fit into one of the categories or if you have any other
+questions, we'd encourage you to open a pre-submission inquiry. We're happy to help.
+- Data visualization packages come in many varieties, ranging from small
+hyper-specific methods for one type of data to general, do-it-all packages
+(e.g. matplotlib). pyOpenSci accepts packages that are somewhere in between the
+two. If you're interested in submitting your data visualization package, please
+open a pre-submission inquiry first.
+
+## Python package technical scope
+
+pyOpenSci may continue to update its technical scope criteria for package
+review as more packages with varying structural approaches are reviewed.
+Your package **may not be in technical scope** for us to review at this time if
+fits any of the out-of-technical-scope criteria listed below.
+
+```{important}
+
+**If the code base of your package is exceedingly complex in terms of
+structure of maintenance needs**, we may not be able to review it.
+
+pyOpenSci has a goal of supporting long term maintenance of open source
+Python tools. It is thus important for us to know that if you need to step down as a maintainer, the package infrastructure and documentation is
+in place to support us finding a new maintainer who can take over you
+package's maintenance.
+
+**Examples of technically complex package structures that may be difficult for us to
+review**
+
+## Example 1: Your package is an out of sync fork of another package repository that is being actively maintained.
+
+Sometimes we understand that a package maintainer may need to step down. In
+that case, we strongly suggest that the original package owner, transfer the
+package repository to a new organization along with PyPI credentials. A new
+organization would allow transfer of ownership of package maintenance rather
+than several forks existing.
+
+If your package is a divergent fork of a maintained repository we will encourage you
+to work with the original maintainers to merge efforts.
+
+However, if there is a case where a forked repository is warranted, please
+consider submitting a pre-submission inquiry first and explain why the package is a
+fork rather than an independent parent repository.
+
+### Example 2: Vendored dependencies
+
+If your package is a wrapper that wraps around another tool, we prefer that
+the dependency be added as a dependency to your package. This allows
+maintenance of the original code base to be independent from your package's
+maintenance.
+```
+
 
 (package-overlap)=
 ## Package Overlap
