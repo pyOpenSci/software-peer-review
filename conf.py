@@ -1,19 +1,5 @@
 # Configuration file for the Sphinx documentation builder.
-#
-# This file only contains a selection of the most common options. For a full
-# list see the documentation:
 # https://www.sphinx-doc.org/en/master/usage/configuration.html
-
-# -- Path setup --------------------------------------------------------------
-
-# If extensions (or modules to document with autodoc) are in another directory,
-# add these directories to sys.path here. If the directory is relative to the
-# documentation root, use os.path.abspath to make it absolute, like shown here.
-#
-# import os
-# import sys
-# sys.path.insert(0, os.path.abspath('.'))
-
 
 # -- Project information -----------------------------------------------------
 
@@ -51,15 +37,45 @@ html_baseurl = 'https://www.pyopensci.org/software-peer-review/'
 
 # Link to our repo for easy PR/ editing
 html_theme_options = {
-    "repository_url": "https://github.com/pyopensci/software-peer-review",
-    "use_repository_button": True,
-    "google_analytics_id": "UA-141260825-1",
+    "announcement": "<p><a href='https://www.pyopensci.org/software-peer-review/about/intro.html'>Submit Your Python Package for Peer Review - Learn More!</a></p>",
     "external_links": [
-      {"name": "link-one-name", "url": "https://pyopensci.org"},
-      {"name": "link-two-name", "url": "https://pyopensci.org"}
-  ],
-  "announcement": "🚧 UNDER CONSTRUCTION: this guide is under heavy construction right now. 🚧"
+        {
+            "url": "https://www.pyopensci.org",
+            "name": "pyOpenSci Website",
+        },
+        {
+            "url": "https://www.pyopensci.org/python-package-guide",
+            "name": "Python Packaging Guide",
+        },
+        {
+            "url": "https://pyopensci.org/governance",
+            "name": "Governance",
+        },
+    ],
+    "logo": {
+        "text": "Peer Review Guide",
+        "image_dark": "logo.png",
+        "alt_text": "pyOpenSci Software Peer Review Guide. The pyOpenSci logo is blue and yellow following the Python logo",
+    },
+    "header_links_before_dropdown": 4,
+    "use_edit_page_button": True,
+    "show_toc_level": 1,
+    "navbar_align": "left",  # [left, content, right] For testing that the navbar items align properly
+    "github_url": "https://github.com/pyopensci/governance",
+    "twitter_url": "https://twitter.com/pyopensci",
+    "footer_items": ["copyright"],
 }
+
+html_theme_options["analytics"] = {
+    "google_analytics_id": "UA-141260825-1",
+}
+
+html_context = {
+    "github_user": "pyopensci",
+    "github_repo": "software-peer-review",
+    "github_version": "main",
+}
+
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
@@ -82,7 +98,7 @@ exclude_patterns = [
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 #
-html_theme = 'sphinx_book_theme'
+html_theme = 'pydata_sphinx_theme'
 html_title = "pyOpenSci Software Peer Review Guide"
 html_logo = "images/logo/logo.png"
 
