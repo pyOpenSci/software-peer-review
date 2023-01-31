@@ -29,7 +29,7 @@ drive open science.
 :class-container: text-center
 :gutter: 3
 
-:::{grid-item-card} {octicon}`book;1.5em;sd-mr-1` Learn About Open Peer Review ✏️
+:::{grid-item-card} {octicon}`book;1.5em;sd-mr-1` Learn About Software Peer Review ✏️
 :link: about/intro
 :link-type: doc
 :class-header: bg-light
@@ -113,19 +113,9 @@ This section provides specific guides for each role in our peer review process.
 
 ```{toctree}
 :hidden:
-
-🏠 Home <self>
-```
-
-```{toctree}
-:hidden:
 :caption: About peer review
 
-ABOUT </about/intro>
-Our Goals </about/our-goals>
-Benefits for Package Authors </about/benefits>
-Package Scope (What we review) </about/package-scope>
-OUR PROCESS </our-process/how-review-works>
+About </about/intro>
 ```
 
 
@@ -133,26 +123,13 @@ OUR PROCESS </our-process/how-review-works>
 :hidden:
 :caption: Partners
 
-Scientific Communities <partners/scientific-communities>
-JOSS <partners/joss>
+Partnerships <partners/scientific-communities>
 ```
 
 ```{toctree}
 :hidden:
 :caption: How To Guides
 
-Author Guide <how-to/author-guide>
-Reviewer Guide <how-to/reviewer-guide>
-Editor Guide <how-to/editors-guide>
-Editor in Chief Guide <how-to/editor-in-chief-guide>
-Onboarding Editors & Reviewers <how-to/onboarding-guide>
-Finding Reviewers <how-to/finding-reviewers>
-```
+Review Guides <how-to/author-guide>
 
-```{toctree}
-:hidden:
-:caption: Appendices
-
-Glossary <appendices/glossary>
-Templates <appendices/templates>
 ```

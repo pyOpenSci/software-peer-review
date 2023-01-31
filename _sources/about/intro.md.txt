@@ -6,7 +6,32 @@
 :caption: About peer review
 
 Intro <self>
-Why Open Review </about/why-open-review>
+Our Goals </about/our-goals>
+Benefits for Package Authors </about/benefits>
+Package Scope (What we review) </about/package-scope>
+Why Open Review Matters </about/why-open-review>
+
+```
+
+```{toctree}
+:hidden:
+:caption: Our Process
+
+How Review Works <../our-process/how-review-works>
+Review Timeline <../our-process/review-timeline>
+Peer Review Policies <../our-process/policies>
+
+```
+
+
+
+```{toctree}
+:hidden:
+:caption: Appendices
+
+Changelog <../changelog>
+Glossary <../appendices/glossary>
+Templates <../appendices/templates>
 ```
 
 ## Community-driven software peer review
@@ -108,7 +133,3 @@ pyOpenSci Peer Review Badge
 This badge is added by the package author after the package
 has successfully completed review and ideally links to the specific GitHub issue
 where the tool was reviewed. [See this example from devicely, one of our accepted pyOpenSci ecosystem packages](https://github.com/hpi-dhc/devicely).
-
-
-
-********

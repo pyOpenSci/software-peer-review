@@ -1,5 +1,24 @@
 # pyOpenSci Review Guide for Python Open Source Package Maintainers and Authors
 
+```{toctree}
+:hidden:
+:caption: How To Guides
+
+Author Guide <self>
+Reviewer Guide <reviewer-guide>
+Editor Guide <editors-guide>
+Editor in Chief Guide <editor-in-chief-guide>
+
+```
+
+```{toctree}
+:hidden:
+:caption: Onboarding Editors & Reviewers
+
+Onboarding Editors & Reviewers <onboarding-guide>
+Finding Reviewers <finding-reviewers>
+```
+
 Are you considering submitting a package for review with pyOpenSci? You've
 come to the right place! Below you will find the steps that you need to follow
 to submit a package to pyOpenSci for peer review.
@@ -122,7 +141,7 @@ Once the issue is opened, our editor-in-chief and an editor from our editorial b
 to your package to meet minimal criteria before review. They also may reject your
 package if it does not fall within our scope.
 
-```{button-link} /how-to/editor-in-chief-guide.html#editor-checklist-template
+```{button-link} /editor-in-chief-guide.html#editor-checklist-template
 :color: secondary
 :class: sd-rounded-pill
 Click here to view the editor checks that will be used to evaluate your package.
@@ -141,7 +160,7 @@ package that were triggered by our review process.
 You should respond to reviewers’ comments within **2 weeks** of the
 last-submitted review. You can make updates to your package at any time. We
 encourage ongoing conversations between authors and reviewers. See the
-[guide for package reviewers](reviewer-guide.md) for more details about how reviewers engage with package
+[guide for package reviewers](reviewer-guide.md) for more details about iewers engage with package
 maintainers during a review.
 
 ## 8. Acceptance into pyOpenSci
