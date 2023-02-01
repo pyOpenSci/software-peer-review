@@ -1,4 +1,4 @@
-# pyOpenSci Review Guide for Python Open Source Package Maintainers and Authors
+# Guide for Python Open Source Maintainers and Authors
 
 ```{toctree}
 :hidden:
@@ -141,8 +141,8 @@ Once the issue is opened, our editor-in-chief and an editor from our editorial b
 to your package to meet minimal criteria before review. They also may reject your
 package if it does not fall within our scope.
 
-```{button-link} /editor-in-chief-guide.html#editor-checklist-template
-:color: secondary
+```{button-link} ../how-to/editor-in-chief-guide.html#editor-checklist-template
+:color: primary
 :class: sd-rounded-pill
 Click here to view the editor checks that will be used to evaluate your package.
 ```
