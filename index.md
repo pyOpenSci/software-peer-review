@@ -25,9 +25,10 @@ drive open science.
 ::::
 <!-- I think this is the end of the header - below begins the next grid-->
 
-::::{grid} 1 1 1 2
+::::{grid} 1 2 3 3
 :class-container: text-center
 :gutter: 3
+
 
 :::{grid-item-card} {octicon}`book;1.5em;sd-mr-1` Learn About Software Peer Review ✏️
 :link: about/intro
@@ -40,7 +41,17 @@ software.
 [Click to learn more »](about/intro)
 :::
 
-:::{grid-item-card} {octicon}`code-square;1.5em;sd-mr-1`For Maintainers
+:::{grid-item-card} {octicon}`rocket;1.5em;sd-mr-1` Package Scope (What We Review)
+:link: about/package-scope
+:link-type: doc
+:class-header: bg-light
+
+Learn about the scope of the packages that we review.
++++
+[Click to learn more »](about/package-scope)
+:::
+
+:::{grid-item-card} {octicon}`code-square;1.5em;sd-mr-1`Maintainers Guide
 :link: how-to/author-guide
 :link-type: doc
 :class-header: bg-light
@@ -52,7 +63,7 @@ Learn how to submit a package for peer review with pyOpenSci.
 [Click to learn more »](how-to/author-guide)
 :::
 
-:::{grid-item-card} {octicon}`pencil;1.5em;sd-mr-1`For Editors
+:::{grid-item-card} {octicon}`pencil;1.5em;sd-mr-1`Editors Guide
 :link: how-to/editors-guide
 :link-type: doc
 :class-header: bg-light
@@ -74,6 +85,20 @@ process step-by-step.
 +++
 [Click to learn more »](how-to/editors-guide)
 :::
+
+:::{grid-item-card} {octicon}`people;1.5em;sd-mr-1` Our Partners
+:link: partners/scientific-communities
+:link-type: doc
+:class-header: bg-light
+
+Scientific Community Partnerships ✨
+
+We partner with other scientific communities. Learn about our partnerships with
+JOSS and Pangeo.
++++
+[Click to learn more »](partners/scientific-communities)
+:::
+
 
 ::::
 

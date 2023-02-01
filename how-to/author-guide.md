@@ -1,4 +1,4 @@
-# pyOpenSci Review Guide for Python Open Source Package Maintainers and Authors
+# Guide for Python Open Source Maintainers and Authors
 
 ```{toctree}
 :hidden:
