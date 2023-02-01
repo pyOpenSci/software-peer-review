@@ -62,7 +62,7 @@ In some cases exceptions are made.
 The following categories are the current domain areas that fall into the
 pyOpenSci domain scope. Note that your package should have some level of
 demonstrated scientific application. This could be a use case that you can
-link to or a tutorial that demonstrates it's potential application for science.
+link to or a tutorial that demonstrates its potential application for science.
 
 Below we provide examples of packages from pyOpenSci ecosystem. Because we
 have growing community of packages, in some cases we link to R packages
