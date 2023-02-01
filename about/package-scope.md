@@ -39,7 +39,7 @@ more of the categories below.
 :class: important
 pyOpenSci has no requirements surrounding the volume community use of your
 package.
-If you package is well developed, the number of GitHub stars or PyPI or conda
+If your package is well developed, the number of GitHub stars or PyPI or conda
 downloads is NOT considered as a part of our scope evaluation.
 
 We welcome young packages that are just entering the scientific Python
