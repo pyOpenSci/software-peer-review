@@ -52,6 +52,13 @@ html_theme_options = {
             "name": "Governance",
         },
     ],
+    "icon_links": [
+        {
+            "name": "Mastodon",
+            "url": "https://fosstodon.org/@pyOpenSci",
+            "icon": "fa-brands fa-mastodon",
+        },
+    ],
     "logo": {
         "text": "Peer Review Guide",
         "image_dark": "logo.png",
