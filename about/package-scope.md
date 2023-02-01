@@ -101,7 +101,7 @@ scientific equipment.
 ### Data processing & munging
 
 Data munging tools are tools that support processing data discussed above. This
-category focuses on tools for handling data in specific  formats that scientists
+category focuses on tools for handling data in specific formats that scientists
 may be interested in working with. These data may also be generated from
 scientific workflows or exported from instruments and wearables.
 
