@@ -57,7 +57,7 @@ may not be in-scope today. We strive for consistency in our peer review process.
 In some cases exceptions are made.
 ```
 
-## Package scope categories
+## Package categories
 
 The following categories are the current domain areas that fall into the
 pyOpenSci domain scope. Note that your package should have some level of
