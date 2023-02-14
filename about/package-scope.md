@@ -218,23 +218,24 @@ package's maintenance.
 
 ### Telemetry & user-informed consent
 
-Your package should avoid collecting any sort of use-data (telemetry). With
+Your package should avoid collecting usage analytics. With
 that in mind, we understand that package-use data can be invaluable for the
 development process. If the package does collect such data, it should do so
-by prioritizing user informed-consent. This means that before any data are
+by prioritizing user-informed-consent. This means that before any data are
 collected, the user understands:
 
 1. What data are collected
 2. How the data are collected.
 3. How the data are used
+4. How and where the data are stored
 
-This often entails `opt-in` consent to collect data meaning that the user, once
-informed of what will be collected, needs to agree to have data collected and
-sent to developers prior to it being collected.
+This often entails `opt-in` consent to collect data. `opt-in` means that the
+user, once informed of what will be collected, and how/where that data is
+stored, needs to agree to such collection prior to it being collected.
 
 We will evaluate telemetry data collected by packages on a case-by-case basis
 and reserve the right to not review a package if the data collection is overly
-invasive.  *TODO:UPDATING THIS LANGUAGE*
+invasive.
 
 ### Notes on scope categories
 - pyOpenSci is still developing as a community. If your scientific Python
@@ -248,7 +249,7 @@ open a pre-submission inquiry first.
 
 ## Examples of packages that might be out of technical scope
 
-pyOpenSci may continue to update its criteria for technical scope 
+pyOpenSci may continue to update its criteria for technical scope
 review as more packages with varying structural approaches are reviewed.
 Your package **may not be in technical scope** for us to review at this time if
 fits any of the out-of-technical-scope criteria listed below.
