@@ -131,9 +131,9 @@
       "avatar_url": "https://avatars.githubusercontent.com/u/1839645?v=4",
       "profile": "http://chrisholdgraf.com",
       "contributions": [
-      "review",
-      "code",
-      "design"
+        "review",
+        "code",
+        "design"
       ]
     },
     {
@@ -141,6 +141,16 @@
       "name": "Steve Moss",
       "avatar_url": "https://avatars.githubusercontent.com/u/321291?v=4",
       "profile": "https://www.gawbul.io",
+      "contributions": [
+        "review",
+        "code"
+      ]
+    },
+    {
+      "login": "xmnlab",
+      "name": "Ivan Ogasawara",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5209757?v=4",
+      "profile": "https://github.com/xmnlab",
       "contributions": [
         "review",
         "code"
