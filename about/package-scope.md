@@ -37,7 +37,7 @@ more of the categories below.
 
 ```{admonition} Package Use Metrics Are Not a Requirement for Review
 :class: important
-pyOpenSci has no requirements surrounding the volume community use of your
+pyOpenSci has no requirements surrounding the community use of your
 package.
 If your package is well developed, the number of GitHub stars or PyPI or conda
 downloads is NOT considered as a part of our scope evaluation.
