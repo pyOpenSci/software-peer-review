@@ -166,6 +166,16 @@
         "code",
         "design"
       ]
+    },
+    {
+      "login": "consideRatio",
+      "name": "Erik Sundell",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3837114?v=4",
+      "profile": "https://github.com/consideRatio",
+      "contributions": [
+        "review",
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 6,
