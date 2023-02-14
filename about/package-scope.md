@@ -39,12 +39,14 @@ more of the categories below and should be within our technical scope.
 :class: important
 pyOpenSci has no requirements surrounding the community use of your
 package.
-If your package is well developed, the number of GitHub stars or PyPI or conda
+
+If your package is well developed, the number of GitHub stars or PyPI / Conda
 downloads is NOT considered as a part of our scope evaluation.
 
 We welcome young packages that are just entering the scientific Python
 ecosystem to apply for review if they are relevant to the science community and
-fit into at least one scope category below.
+fit into at least one scope category below. We also welcome mature packages with
+a growing or established community!
 ```
 
 If you are unsure whether your package fits into one of the general or
@@ -126,10 +128,9 @@ completeness. These tools should be able to support scientific workflows.
 Scientific software wrappers refer to packages that provide a Python interface
 for existing scientific packages written in other languages.
 
-These programs must be specific to scientific domains and not general computing
-utilities. Wrappers must provide significant added value to the scientific
-ecosystem be it in data handling, or improved installation processes for
-Python users.
+These packages should have a clear scientific application. Wrappers must provide
+significant added value to the scientific ecosystem be it in data handling, or
+improved installation processes for Python users.
 
 We strongly encourage submissions that wrap tools that are open-source and
 using an OSI-approved license. Exceptions will be evaluated case-by-case,
@@ -196,6 +197,7 @@ To be in technical scope for a pyOpenSci review, your package:
 * Should have maintenance workflows documented.
 * Should be structured in a way that someone else could contribute to it.
 * Should declare vendor dependencies using standard approaches rather than including code from other packages within your repository.
+* Should avoid collecting any sort of user-data (telemetry) and if it does collect such data should use an opt-in approach. Opt-in means that the user needs to agree to have data collected and sent to developers prior to it being collected.
 
 ### Notes on scope categories
 - pyOpenSci is still developing as a community. If your scientific Python
