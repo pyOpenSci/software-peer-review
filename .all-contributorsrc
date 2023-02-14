@@ -38,6 +38,17 @@
         "design",
         "review"
       ]
+    },
+    {
+      "login": "NickleDave",
+      "name": "David Nicholson",
+      "avatar_url": "https://avatars.githubusercontent.com/u/11934090?v=4",
+      "profile": "https://nicholdav.info/",
+      "contributions": [
+        "code",
+        "review",
+        "design"
+      ]
     }
   ],
   "contributorsPerLine": 7,
