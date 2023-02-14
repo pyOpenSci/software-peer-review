@@ -104,6 +104,16 @@
         "design",
         "review"
       ]
+    },
+    {
+      "login": "cosmicBboy",
+      "name": "Niels Bantilan",
+      "avatar_url": "https://avatars.githubusercontent.com/u/2816689?v=4",
+      "profile": "http://cosmicbboy.github.io/",
+      "contributions": [
+        "review",
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,
