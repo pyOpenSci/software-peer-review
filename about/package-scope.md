@@ -20,27 +20,36 @@ as the organization grows.
 
 ## Is Your Package in Scope For pyOpenSci Review?
 
-pyOpenSci only reviews packages that fall within our specified domain and
-technical scope listed below.
+pyOpenSci reviews packages that fall within a list of specified categories and
+domains. Packages must also meet our technical scope requirements.
 
 If you are unsure whether your package is in scope for review, please
 open a [pre-submission inquiry using a GitHub Issue](https://github.com/pyOpenSci/software-review/issues/new?assignees=&labels=0%2Fpresubmission&template=presubmission-inquiry.md&title=) to get feedback from
 one of our editors. We are happy to look at your package and help you understand
 whether it is in scope or not.
 
-## About the scope of packages that we review
+### About the types of packages that we review
 
+<<<<<<< HEAD
 pyOpenSci supports packages that support both open reproducible science,
 data processing and the various stages of managing the
+=======
+pyOpenSci reviews packages that support open reproducible science,
+data processing and and the various stages of managing the
+>>>>>>> b2ad9be (Fix: update typos and add review feedback)
 data lifecycle. Packages submitted to pyOpenSci should fit into one or
 more of the categories below and should be within our technical scope.
 
 ```{admonition} Package Use Metrics Are Not a Requirement for Review
 :class: important
-pyOpenSci has no requirements surrounding the community use of your
-package.
 
-If your package is well developed, the number of GitHub stars or PyPI / Conda
+When we evaluate whether you package is within our scope, we only consider:
+
+1. how the package is developed and
+2. how the package relates to and supports the broader scientific ecosystem
+
+pyOpenSci does not evaluate how much community use your package has.
+As such, the number of GitHub stars or PyPI / Conda
 downloads is NOT considered as a part of our scope evaluation.
 
 We welcome young packages that are just entering the scientific Python
@@ -50,7 +59,7 @@ a growing or established community!
 ```
 
 If you are unsure whether your package fits into one of the general or
-statistical categories, please open an issue as a pre-submission inquiry (Examples). <todo add link>
+statistical categories, please open an issue as a [pre-submission inquiry](https://github.com/pyOpenSci/software-submission/issues/new?assignees=&labels=0%2Fpresubmission&template=presubmission-inquiry.md&title=).
 
 ```{note}
 This is a living document. The categories below may change through time.
@@ -74,7 +83,7 @@ We will update this page as our review process evolves.
 
 ```{note}
 Many of the example packages below perform tasks that might fit in multiple
-categories. The examples are just there to provide you with a flavor of the types
+categories. There examples are there to provide you with a flavor of the types
 of packages that would fall into that category.
 ```
 
@@ -85,9 +94,8 @@ includes wrappers for accessing APIs.
 Our definition of scientific applications is broad, including data storage
 services, journals, and other remote servers, as many data sources may be of
 interest to scientists. However, retrieval packages should be focused on data
-sources / topics, rather than services.
-
-*For example a general client for Amazon Web Services data storage would not be in-scope.*
+sources / topics, rather than services. For example a general client for Amazon
+Web Services data storage would not be in-scope.
 
 * Examples: [OpenOmics](https://github.com/pyOpenSci/software-submission/issues/31)
 
@@ -132,14 +140,14 @@ These packages should have a clear scientific application. Wrappers must provide
 significant added value to the scientific ecosystem be it in data handling, or
 improved installation processes for Python users.
 
-We strongly encourage submissions that wrap tools that are open-source and
-using an OSI-approved license. Exceptions will be evaluated case-by-case,
+We strongly encourage submissions that wrap tools that are open-source with
+an OSI-approved license. Exceptions will be evaluated case-by-case,
 considering whether open-source options exist.
 
 <!-- TODO: need an example for this category -->
 * Examples: We don't have a package in this category yet - *Could be your package?*
 
-### Workflow Automation & versioning
+### Workflow automation & versioning
 Tools that automate and link together workflows and as such support
 reproducible workflows. These
 tools may include build systems and tools to manage continuous integration.
@@ -168,9 +176,12 @@ analyzing data.
  * Example: [Example from rOpenSci - rrlite](https://github.com/ropensci/software-review/issues/6)
 
 
-## Specialty topics
+## Domain areas
 
-In addition, we have some specialty topics with a broad domain focused scope.
+In addition, our scope includes focused domain areas. These areas are based on
+partnerships that we form with communities and also expertise that we hold
+within our organization. As we develop [new community partnerships](/partners/scientific-communities) and grow,
+we will expand this list.
 
 ### Geospatial
 
@@ -195,9 +206,35 @@ Packages to aid with instruction.
 To be in technical scope for a pyOpenSci review, your package:
 
 * Should have maintenance workflows documented.
-* Should be structured in a way that someone else could contribute to it.
 * Should declare vendor dependencies using standard approaches rather than including code from other packages within your repository.
-* Should avoid collecting any sort of user-data (telemetry) and if it does collect such data should use an opt-in approach. Opt-in means that the user needs to agree to have data collected and sent to developers prior to it being collected.
+* Should not have an exceedingly complex structure. Others should be able to contribute and/or take over maintenance if needed.
+
+```{admonition} pyOpenSci's goal is to support long(er) term maintenance
+pyOpenSci has a goal of supporting long term maintenance of open source
+Python tools. It is thus important for us to know that if you need to step down as a maintainer, the package infrastructure and documentation is
+in place to support us finding a new maintainer who can take over you
+package's maintenance.
+```
+
+### Telemetry & user-informed consent
+
+Your package should avoid collecting any sort of use-data (telemetry). With
+that in mind, we understand that package-use data can be invaluable for the
+development process. If the package does collect such data, it should do so
+by prioritizing user informed-consent. This means that before any data are
+collected, the user understands:
+
+1. What data are collected
+2. How the data are collected.
+3. How the data are used
+
+This often entails `opt-in` consent to collect data meaning that the user, once
+informed of what will be collected, needs to agree to have data collected and
+sent to developers prior to it being collected.
+
+We will evaluate telemetry data collected by packages on a case-by-case basis
+and reserve the right to not review a package if the data collection is overly
+invasive.  *TODO:UPDATING THIS LANGUAGE*
 
 ### Notes on scope categories
 - pyOpenSci is still developing as a community. If your scientific Python
@@ -209,27 +246,14 @@ hyper-specific methods for one type of data to general, do-it-all packages
 two. If you're interested in submitting your data visualization package, please
 open a pre-submission inquiry first.
 
-## Python package technical scope
+## Examples of packages that might be out of technical scope
 
 pyOpenSci may continue to update its criteria for technical scope 
 review as more packages with varying structural approaches are reviewed.
 Your package **may not be in technical scope** for us to review at this time if
 fits any of the out-of-technical-scope criteria listed below.
 
-```{important}
-
-**If the code base of your package is exceedingly complex in terms of
-structure or maintenance needs**, we may not be able to review it.
-
-pyOpenSci has a goal of supporting long term maintenance of open source
-Python tools. It is thus important for us to know that if you need to step down as a maintainer, the package infrastructure and documentation is
-in place to support us finding a new maintainer who can take over you
-package's maintenance.
-
-**Examples of technically complex package structures that may be difficult for us to
-review**
-
-## Example 1: Your package is an out of sync fork of another package repository that is being actively maintained.
+### Example 1: Your package is an out of sync fork of another package repository that is being actively maintained.
 
 Sometimes we understand that a package maintainer may need to step down. In
 that case, we strongly suggest that the original package owner, transfer the
@@ -250,8 +274,6 @@ If your package is a wrapper that wraps around another tool, we prefer that
 the dependency be added as a dependency to your package. This allows
 maintenance of the original code base to be independent from your package's
 maintenance.
-```
-
 
 (package-overlap)=
 ## Package Overlap
