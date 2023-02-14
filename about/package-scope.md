@@ -72,7 +72,7 @@ We will update this page as our review process evolves.
 
 ```{note}
 Many of the example packages below perform tasks that might fit in multiple
-categories. There are just there to provide you with a flavor of the types
+categories. The examples are just there to provide you with a flavor of the types
 of packages that would fall into that category.
 ```
 
