@@ -124,6 +124,16 @@
         "review",
         "code"
       ]
+    },
+    {
+      "login": "gawbul",
+      "name": "Steve Moss",
+      "avatar_url": "https://avatars.githubusercontent.com/u/321291?v=4",
+      "profile": "https://www.gawbul.io",
+      "contributions": [
+        "review",
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 6,
