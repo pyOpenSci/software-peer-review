@@ -106,6 +106,16 @@
       ]
     },
     {
+      "login": "cosmicBboy",
+      "name": "Niels Bantilan",
+      "avatar_url": "https://avatars.githubusercontent.com/u/2816689?v=4",
+      "profile": "http://cosmicbboy.github.io/",
+      "contributions": [
+        "code",
+        "review"
+      ]
+    },
+    { 
       "login": "willingc",
       "name": "Carol Willing",
       "avatar_url": "https://avatars.githubusercontent.com/u/2680980?v=4",
@@ -121,12 +131,23 @@
       "avatar_url": "https://avatars.githubusercontent.com/u/1839645?v=4",
       "profile": "http://chrisholdgraf.com",
       "contributions": [
+      "review",
+      "code",
+      "design
+      ]
+    },
+    {
+      "login": "gawbul",
+      "name": "Steve Moss",
+      "avatar_url": "https://avatars.githubusercontent.com/u/321291?v=4",
+      "profile": "https://www.gawbul.io",
+      "contributions": [
         "review",
         "code"
       ]
     }
   ],
-  "contributorsPerLine": 7,
+  "contributorsPerLine": 6,
   "skipCi": true,
   "repoType": "github",
   "repoHost": "https://github.com",
