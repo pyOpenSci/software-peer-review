@@ -111,12 +111,22 @@
       "avatar_url": "https://avatars.githubusercontent.com/u/2816689?v=4",
       "profile": "http://cosmicbboy.github.io/",
       "contributions": [
+        "code",
+        "review"
+      ]
+    },
+    { 
+      "login": "willingc",
+      "name": "Carol Willing",
+      "avatar_url": "https://avatars.githubusercontent.com/u/2680980?v=4",
+      "profile": "https://hachyderm.io/web/@willingc",
+      "contributions": [
         "review",
         "code"
       ]
     }
   ],
-  "contributorsPerLine": 7,
+  "contributorsPerLine": 6,
   "skipCi": true,
   "repoType": "github",
   "repoHost": "https://github.com",
