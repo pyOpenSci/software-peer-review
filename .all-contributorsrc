@@ -60,6 +60,17 @@
         "review",
         "design"
       ]
+    },
+    {
+      "login": "eriknw",
+      "name": "Erik Welch",
+      "avatar_url": "https://avatars.githubusercontent.com/u/2058401?v=4",
+      "profile": "https://fosstodon.org/@eriknw",
+      "contributions": [
+        "code",
+        "review",
+        "design"
+      ]
     }
   ],
   "contributorsPerLine": 7,
