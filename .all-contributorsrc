@@ -93,6 +93,17 @@
         "review",
         "design"
       ]
+    },
+    {
+      "login": "yuvipanda",
+      "name": "Yuvi Panda",
+      "avatar_url": "https://avatars.githubusercontent.com/u/30430?v=4",
+      "profile": "https://github.com/yuvipanda",
+      "contributions": [
+        "code",
+        "design",
+        "review"
+      ]
     }
   ],
   "contributorsPerLine": 7,
