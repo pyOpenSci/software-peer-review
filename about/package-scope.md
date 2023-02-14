@@ -209,7 +209,7 @@ open a pre-submission inquiry first.
 
 ## Python package technical scope
 
-pyOpenSci may continue to update its technical scope criteria for package
+pyOpenSci may continue to update its criteria for technical scope 
 review as more packages with varying structural approaches are reviewed.
 Your package **may not be in technical scope** for us to review at this time if
 fits any of the out-of-technical-scope criteria listed below.
