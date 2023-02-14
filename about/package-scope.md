@@ -221,7 +221,7 @@ collected, the user understands:
 
 1. What data are collected
 2. How the data are collected.
-3. How the data are used
+3. What you plan to do with the data
 4. How and where the data are stored
 
 This often entails `opt-in` consent to collect data. `opt-in` means that the
