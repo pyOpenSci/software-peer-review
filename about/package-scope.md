@@ -228,7 +228,7 @@ This often entails `opt-in` consent to collect data. `opt-in` means that the
 user, once informed of what will be collected, and how/where that data is
 stored, needs to agree to such collection prior to it being collected.
 
-We will evaluate telemetry data collected by packages on a case-by-case basis
+We will evaluate usage data collected by packages on a case-by-case basis
 and reserve the right to not review a package if the data collection is overly
 invasive.
 
