@@ -176,6 +176,16 @@
         "review",
         "code"
       ]
+    },
+    {
+      "login": "ReventonC",
+      "name": "Zehua Chen",
+      "avatar_url": "https://avatars.githubusercontent.com/u/6276623?v=4",
+      "profile": "http://zehuachen.com",
+      "contributions": [
+        "review",
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 6,
