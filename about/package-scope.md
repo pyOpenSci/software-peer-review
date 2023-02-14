@@ -217,7 +217,7 @@ fits any of the out-of-technical-scope criteria listed below.
 ```{important}
 
 **If the code base of your package is exceedingly complex in terms of
-structure of maintenance needs**, we may not be able to review it.
+structure or maintenance needs**, we may not be able to review it.
 
 pyOpenSci has a goal of supporting long term maintenance of open source
 Python tools. It is thus important for us to know that if you need to step down as a maintainer, the package infrastructure and documentation is
