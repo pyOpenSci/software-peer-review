@@ -30,13 +30,8 @@ whether it is in scope or not.
 
 ### About the types of packages that we review
 
-<<<<<<< HEAD
-pyOpenSci supports packages that support both open reproducible science,
-data processing and the various stages of managing the
-=======
 pyOpenSci reviews packages that support open reproducible science,
 data processing and and the various stages of managing the
->>>>>>> b2ad9be (Fix: update typos and add review feedback)
 data lifecycle. Packages submitted to pyOpenSci should fit into one or
 more of the categories below and should be within our technical scope.
 
