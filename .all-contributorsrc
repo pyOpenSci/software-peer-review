@@ -145,6 +145,17 @@
         "review",
         "code"
       ]
+    },
+    {
+      "login": "kysolvik",
+      "name": "Kylen Solvik",
+      "avatar_url": "https://avatars.githubusercontent.com/u/24379590?v=4",
+      "profile": "https://github.com/kysolvik",
+      "contributions": [
+        "review",
+        "code",
+        "design"
+      ]
     }
   ],
   "contributorsPerLine": 6,
