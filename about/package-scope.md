@@ -158,7 +158,7 @@ manipulating or otherwise working with bibliometric data. (Example: [Example fro
 These are packages that enhance a scientists experience visualizing and
 analyzing data.
 
-* Examples: [PyGmt - (also spatial and data munging)](https://github.com/pyOpenSci/software-submission/issues/43),
+* Examples: [PyGMT - (also spatial and data munging)](https://github.com/pyOpenSci/software-submission/issues/43),
 
 ### Database software bindings
 
