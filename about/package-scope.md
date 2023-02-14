@@ -31,7 +31,7 @@ whether it is in scope or not.
 ## About the scope of packages that we review
 
 pyOpenSci supports packages that support both open reproducible science,
-data processing and and the various stages of managing the
+data processing and the various stages of managing the
 data lifecycle. Packages submitted to pyOpenSci should fit into one or
 more of the categories below.
 
