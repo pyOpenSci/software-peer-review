@@ -224,9 +224,7 @@ collected, the user understands:
 3. What you plan to do with the data
 4. How and where the data are stored
 
-This often entails `opt-in` consent to collect data. `opt-in` means that the
-user, once informed of what will be collected, and how/where that data is
-stored, needs to agree to such collection prior to it being collected.
+Once the user is informed of what will be collected and how that data will be handled, stored and used, you can implement `opt-in` consent. `opt-in` means that the user agrees to usage-data collection prior to it being collected (rather than having to opt-out when using your package).
 
 We will evaluate usage data collected by packages on a case-by-case basis
 and reserve the right not to review a package if the data collection is overly
