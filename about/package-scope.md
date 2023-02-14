@@ -229,7 +229,7 @@ user, once informed of what will be collected, and how/where that data is
 stored, needs to agree to such collection prior to it being collected.
 
 We will evaluate usage data collected by packages on a case-by-case basis
-and reserve the right to not review a package if the data collection is overly
+and reserve the right not to review a package if the data collection is overly
 invasive.
 
 ### Notes on scope categories
