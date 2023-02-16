@@ -216,6 +216,16 @@
         "review",
         "code"
       ]
+    },
+    {
+      "login": "arokem",
+      "name": "Ariel Rokem",
+      "avatar_url": "https://avatars.githubusercontent.com/u/118582?v=4",
+      "profile": "http://arokem.org",
+      "contributions": [
+        "review",
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 6,
