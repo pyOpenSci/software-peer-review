@@ -186,6 +186,16 @@
         "review",
         "code"
       ]
+    },
+    {
+      "login": "sumit-158",
+      "name": "Sumit Kashyap",
+      "avatar_url": "https://avatars.githubusercontent.com/u/96618001?v=4",
+      "profile": "https://github.com/sumit-158",
+      "contributions": [
+        "code",
+        "review"
+      ]
     }
   ],
   "contributorsPerLine": 6,
