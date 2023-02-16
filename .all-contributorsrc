@@ -216,6 +216,16 @@
         "review",
         "code"
       ]
+    },
+    {
+      "login": "jmason86",
+      "name": "James Mason",
+      "avatar_url": "https://avatars.githubusercontent.com/u/947614?v=4",
+      "profile": "http://jamespaulmason.com",
+      "contributions": [
+        "review",
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 6,
