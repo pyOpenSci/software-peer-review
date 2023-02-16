@@ -1,6 +1,6 @@
 # <img src="images/logo/logo.png" width=40 /> pyOpenSci Peer Review Guide
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-18-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-19-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 ![GitHub release (latest by date)](https://img.shields.io/github/v/release/pyopensci/peer-review-guide?color=purple&display_name=tag&style=plastic)
@@ -112,6 +112,9 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
       <td align="center" valign="top" width="16.66%"><a href="https://matthew.dynevor.org"><img src="https://avatars.githubusercontent.com/u/67612?v=4?s=100" width="100px;" alt="Matthew Brett"/><br /><sub><b>Matthew Brett</b></sub></a><br /><a href="https://github.com/pyOpenSci/software-peer-review/pulls?q=is%3Apr+reviewed-by%3Amatthew-brett" title="Reviewed Pull Requests">👀</a> <a href="https://github.com/pyOpenSci/software-peer-review/commits?author=matthew-brett" title="Code">💻</a></td>
       <td align="center" valign="top" width="16.66%"><a href="http://zehuachen.com"><img src="https://avatars.githubusercontent.com/u/6276623?v=4?s=100" width="100px;" alt="Zehua Chen"/><br /><sub><b>Zehua Chen</b></sub></a><br /><a href="https://github.com/pyOpenSci/software-peer-review/pulls?q=is%3Apr+reviewed-by%3AReventonC" title="Reviewed Pull Requests">👀</a> <a href="https://github.com/pyOpenSci/software-peer-review/commits?author=ReventonC" title="Code">💻</a></td>
       <td align="center" valign="top" width="16.66%"><a href="https://github.com/sumit-158"><img src="https://avatars.githubusercontent.com/u/96618001?v=4?s=100" width="100px;" alt="Sumit Kashyap"/><br /><sub><b>Sumit Kashyap</b></sub></a><br /><a href="https://github.com/pyOpenSci/software-peer-review/commits?author=sumit-158" title="Code">💻</a> <a href="https://github.com/pyOpenSci/software-peer-review/pulls?q=is%3Apr+reviewed-by%3Asumit-158" title="Reviewed Pull Requests">👀</a></td>
+    </tr>
+    <tr>
+      <td align="center" valign="top" width="16.66%"><a href="https://github.com/consideRatio"><img src="https://avatars.githubusercontent.com/u/3837114?v=4?s=100" width="100px;" alt="Erik Sundell"/><br /><sub><b>Erik Sundell</b></sub></a><br /><a href="https://github.com/pyOpenSci/software-peer-review/pulls?q=is%3Apr+reviewed-by%3AconsideRatio" title="Reviewed Pull Requests">👀</a> <a href="https://github.com/pyOpenSci/software-peer-review/commits?author=consideRatio" title="Code">💻</a></td>
     </tr>
   </tbody>
 </table>
