@@ -1,6 +1,6 @@
 # <img src="images/logo/logo.png" width=40 /> pyOpenSci Peer Review Guide
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-20-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-21-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 ![GitHub release (latest by date)](https://img.shields.io/github/v/release/pyopensci/peer-review-guide?color=purple&display_name=tag&style=plastic)
@@ -116,6 +116,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <tr>
       <td align="center" valign="top" width="16.66%"><a href="https://github.com/consideRatio"><img src="https://avatars.githubusercontent.com/u/3837114?v=4?s=100" width="100px;" alt="Erik Sundell"/><br /><sub><b>Erik Sundell</b></sub></a><br /><a href="https://github.com/pyOpenSci/software-peer-review/pulls?q=is%3Apr+reviewed-by%3AconsideRatio" title="Reviewed Pull Requests">👀</a> <a href="https://github.com/pyOpenSci/software-peer-review/commits?author=consideRatio" title="Code">💻</a></td>
       <td align="center" valign="top" width="16.66%"><a href="https://mbjoseph.github.io"><img src="https://avatars.githubusercontent.com/u/2664564?v=4?s=100" width="100px;" alt="Max Joseph"/><br /><sub><b>Max Joseph</b></sub></a><br /><a href="https://github.com/pyOpenSci/software-peer-review/pulls?q=is%3Apr+reviewed-by%3Ambjoseph" title="Reviewed Pull Requests">👀</a> <a href="https://github.com/pyOpenSci/software-peer-review/commits?author=mbjoseph" title="Code">💻</a></td>
+      <td align="center" valign="top" width="16.66%"><a href="http://arokem.org"><img src="https://avatars.githubusercontent.com/u/118582?v=4?s=100" width="100px;" alt="Ariel Rokem"/><br /><sub><b>Ariel Rokem</b></sub></a><br /><a href="https://github.com/pyOpenSci/software-peer-review/pulls?q=is%3Apr+reviewed-by%3Aarokem" title="Reviewed Pull Requests">👀</a> <a href="https://github.com/pyOpenSci/software-peer-review/commits?author=arokem" title="Code">💻</a></td>
     </tr>
   </tbody>
 </table>
