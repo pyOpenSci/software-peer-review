@@ -206,6 +206,16 @@
         "review",
         "code"
       ]
+    },
+    {
+      "login": "mbjoseph",
+      "name": "Max Joseph",
+      "avatar_url": "https://avatars.githubusercontent.com/u/2664564?v=4",
+      "profile": "https://mbjoseph.github.io",
+      "contributions": [
+        "review",
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 6,
