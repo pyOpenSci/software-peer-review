@@ -35,17 +35,16 @@ data processing and and the various stages of managing the
 data lifecycle. Packages submitted to pyOpenSci should fit into one or
 more of the categories below and should be within our technical scope.
 
-```{admonition} Package Use Metrics Are Not a Requirement for Review
+```{admonition} Your Package Does Not Need to Have Widespread Use to be Reviewed
 :class: important
+
+We review packages with the goal of improving package quality and usability for scientists.
+As such, we review packages across a spectrum of small to large user bases. The popularity of your package is not a consideration in our review process!
 
 When we evaluate whether you package is within our scope, we only consider:
 
 1. how the package is developed and
 2. how the package relates to and supports the broader scientific ecosystem.
-
-pyOpenSci does not evaluate how much community use your package has.
-As such, the number of GitHub stars or PyPI / Conda
-downloads is NOT considered as a part of our scope evaluation.
 
 We welcome young packages that are just entering the scientific Python
 ecosystem to apply for review if they are relevant to the science community and
