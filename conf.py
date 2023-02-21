@@ -8,7 +8,7 @@ copyright = '2023, pyOpenSci'
 author = 'pyOpenSci Editorial Team and Community'
 
 # The full version, including alpha/beta/rc tags
-release = '0.1'
+release = '0.5'
 
 
 # -- General configuration ---------------------------------------------------
@@ -35,7 +35,15 @@ suppress_warnings = ["myst.header"]
 # For generating sitemap
 html_baseurl = 'https://www.pyopensci.org/software-peer-review/'
 
-# Link to our repo for easy PR/ editing
+# The theme to use for HTML and HTML Help pages.  See the documentation for
+# a list of builtin themes.
+#
+html_theme = "pydata_sphinx_theme"
+html_title = "Software Peer Review Guide"
+html_logo = "_static/logo.png"
+html_static_path = ["_static"]
+
+# Theme options
 html_theme_options = {
     "announcement": "<p><a href='https://www.github.com/pyopensci/software-submission/'>Submit Your Python Package for Peer Review!</a></p>",
     "external_links": [
@@ -102,12 +110,6 @@ exclude_patterns = [
 
 # -- Options for HTML output -------------------------------------------------
 
-# The theme to use for HTML and HTML Help pages.  See the documentation for
-# a list of builtin themes.
-#
-html_theme = 'pydata_sphinx_theme'
-html_title = "pyOpenSci Software Peer Review Guide"
-html_logo = "images/logo/logo.png"
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
