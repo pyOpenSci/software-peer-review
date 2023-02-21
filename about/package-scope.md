@@ -92,7 +92,7 @@ interest to scientists. However, retrieval packages should be focused on data
 sources / topics, rather than services. For example a general client for Amazon
 Web Services data storage would not be in-scope.
 
-* Examples: [OpenOmics](https://github.com/pyOpenSci/software-submission/issues/31)
+* Examples: [OpenOmics](https://github.com/pyOpenSci/software-submission/issues/31), [pyDov](https://github.com/pyOpenSci/software-submission/issues/19), [Physcraper](https://github.com/pyOpenSci/software-review/issues/26)
 
 
 ### Data extraction
