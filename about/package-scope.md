@@ -41,7 +41,7 @@ more of the categories below and should be within our technical scope.
 When we evaluate whether you package is within our scope, we only consider:
 
 1. how the package is developed and
-2. how the package relates to and supports the broader scientific ecosystem
+2. how the package relates to and supports the broader scientific ecosystem.
 
 pyOpenSci does not evaluate how much community use your package has.
 As such, the number of GitHub stars or PyPI / Conda
