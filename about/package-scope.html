@@ -14,7 +14,7 @@
 <meta property="og:image:alt" content="What types of packages does pyOpenSci review?: pyOpenSci reviews higher level software packages that support scientific workflows. Image showing the tiers of..." />
 <meta name="description" content="What types of packages does pyOpenSci review?: pyOpenSci reviews higher level software packages that support scientific workflows. Image showing the tiers of software in the python ecosystem starti..." />
 
-    <title>The Scope of Packages that pyOpenSci Reviews &#8212; pyOpenSci Software Peer Review Guide</title>
+    <title>The Scope of Packages that pyOpenSci Reviews &#8212; Software Peer Review Guide</title>
   
   
   
@@ -429,6 +429,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../our-process/how-review-works.html">How Review Works</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../our-process/review-timeline.html">Review Timeline</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../our-process/policies.html">Peer Review Policies</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../code-of-conduct.html">Code of Conduct</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Appendices</span></p>
 <ul class="nav bd-sidenav">
@@ -486,38 +487,198 @@ as the organization grows.</p>
 </section>
 <section id="is-your-package-in-scope-for-pyopensci-review">
 <h2>Is Your Package in Scope For pyOpenSci Review?<a class="headerlink" href="#is-your-package-in-scope-for-pyopensci-review" title="Permalink to this heading">#</a></h2>
-<p>pyOpenSci only reviews packages that fall within our specified domain and
-technical scope listed below.</p>
+<p>pyOpenSci reviews packages that fall within a list of specified categories and
+domains. Packages must also meet our technical scope requirements.</p>
 <p>If you are unsure whether your package is in scope for review, please
 open a <a class="reference external" href="https://github.com/pyOpenSci/software-review/issues/new?assignees=&amp;labels=0%2Fpresubmission&amp;template=presubmission-inquiry.md&amp;title=">pre-submission inquiry using a GitHub Issue</a> to get feedback from
 one of our editors. We are happy to look at your package and help you understand
 whether it is in scope or not.</p>
+<section id="about-the-types-of-packages-that-we-review">
+<h3>About the types of packages that we review<a class="headerlink" href="#about-the-types-of-packages-that-we-review" title="Permalink to this heading">#</a></h3>
+<p>pyOpenSci reviews packages that support open reproducible science,
+data processing and and the various stages of managing the
+data lifecycle. Packages submitted to pyOpenSci should fit into one or
+more of the categories below and should be within our technical scope.</p>
+<div class="important admonition">
+<p class="admonition-title">Your Package Does Not Need to Have Widespread Use to be Reviewed</p>
+<p>We review packages with the goal of improving package quality and usability for scientists.
+As such, we review packages across a spectrum of small to large user bases. The popularity of your package is not a consideration in our review process!</p>
+<p>When we evaluate whether you package is within our scope, we only consider:</p>
+<ol class="arabic simple">
+<li><p>how the package is developed and</p></li>
+<li><p>how the package relates to and supports the broader scientific ecosystem.</p></li>
+</ol>
+<p>We welcome young packages that are just entering the scientific Python
+ecosystem to apply for review if they are relevant to the science community and
+fit into at least one scope category below. We also welcome mature packages with
+a growing or established community!</p>
+</div>
+<p>If you are unsure whether your package fits into one of the general or
+statistical categories, please open an issue as a <a class="reference external" href="https://github.com/pyOpenSci/software-submission/issues/new?assignees=&amp;labels=0%2Fpresubmission&amp;template=presubmission-inquiry.md&amp;title=">pre-submission inquiry</a>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This is a living document. The categories below may change through time.
+This may mean in some cases, some previously peer review-accepted packages
+may not be in-scope today. We strive for consistency in our peer review process. However, we also evaluate packages on a case-by-case basis.
+In some cases exceptions are made.</p>
+</div>
 </section>
-<section id="python-package-domain-scope">
-<h2>Python package domain scope<a class="headerlink" href="#python-package-domain-scope" title="Permalink to this heading">#</a></h2>
-<p>The following categories are the current domain areas that fall into the
-pyOpenSci domain scope.</p>
+</section>
+<section id="package-categories">
+<h2>Package categories<a class="headerlink" href="#package-categories" title="Permalink to this heading">#</a></h2>
+<p>The following are the current categories that fall into scope for
+pyOpenSci. In addition to fitting into one or more of these categories, your package should have some level of
+demonstrated scientific application. This could be a use case that you can
+link to or a tutorial that demonstrates its potential application for science.</p>
+<p>Below we provide examples of packages from pyOpenSci ecosystem. Because we
+have growing community of packages, in some cases we link to R packages
+within the rOpenSci community that match the category scope for reference.</p>
+<p>We will update this page as our review process evolves.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Many of the example packages below perform tasks that might fit in multiple
+categories. There examples are there to provide you with a flavor of the types
+of packages that would fall into that category.</p>
+</div>
+<section id="data-retrieval">
+<h3>Data retrieval<a class="headerlink" href="#data-retrieval" title="Permalink to this heading">#</a></h3>
+<p>Packages for accessing and downloading data from online sources. This category
+includes wrappers for accessing APIs.</p>
+<p>Our definition of scientific applications is broad, including data storage
+services, journals, and other remote servers, as many data sources may be of
+interest to scientists. However, retrieval packages should be focused on data
+sources / topics, rather than services. For example a general client for Amazon
+Web Services data storage would not be in-scope.</p>
 <ul class="simple">
-<li><p><strong>Data retrieval:</strong> Packages for accessing and downloading data from online sources. Includes wrappers for accessing APIs.</p></li>
-<li><p><strong>Data extraction:</strong> Packages that aid in retrieving data from unstructured sources such as text, images and PDFs.</p></li>
-<li><p><strong>Data munging:</strong> Tools for processing data from scientific data formats.</p></li>
-<li><p><strong>Data deposition:</strong> Tools for depositing data in scientific research repositories.</p></li>
-<li><p><strong>Reproducibility:</strong> Tools to scientists ensure that their research is reproducible. E.g. version control, automated testing, or citation tools.</p></li>
-<li><p><strong>Geospatial:</strong> Packages focused on the retrieval, manipulation, and analysis of spatial data.</p></li>
-<li><p><strong>Education:</strong> Packages to aid with instruction.</p></li>
-<li><p><strong>Data visualization:</strong> Packages for visualizing and analyzing data.</p></li>
+<li><p>Examples: <a class="reference external" href="https://github.com/pyOpenSci/software-submission/issues/31">OpenOmics</a>, <a class="reference external" href="https://github.com/pyOpenSci/software-submission/issues/19">pyDov</a>, <a class="reference external" href="https://github.com/pyOpenSci/software-review/issues/26">Physcraper</a></p></li>
 </ul>
+</section>
+<section id="data-extraction">
+<h3>Data extraction<a class="headerlink" href="#data-extraction" title="Permalink to this heading">#</a></h3>
+<p>These packages aid in retrieving data from unstructured sources such as text,
+images, and PDFs. They might also parse scientific data types and outputs from
+scientific equipment.</p>
+<ul class="simple">
+<li><p>Examples: <a class="reference external" href="https://github.com/pyOpenSci/software-submission/issues/37">devicely</a>, <a class="reference external" href="https://github.com/pyOpenSci/software-submission/issues/45">jointly</a></p></li>
+</ul>
+</section>
+<section id="data-processing-munging">
+<h3>Data processing &amp; munging<a class="headerlink" href="#data-processing-munging" title="Permalink to this heading">#</a></h3>
+<p>Data [munging tools transform data in a way that makes further analysis possible (as <a class="reference external" href="https://en.wikipedia.org/wiki/Data_wrangling">defined on Wikipedia</a>). Munging complements the other categories so it’s common for packages to include some functionality to munge data. This
+category focuses on tools for handling data in specific formats that scientists
+may be interested in working with. These data may also be generated from
+scientific workflows or exported from instruments and wearables.</p>
+<ul class="simple">
+<li><p>Examples: <a class="reference external" href="https://github.com/pyOpenSci/software-submission/issues/37">devicely</a>, <a class="reference external" href="https://github.com/pyOpenSci/software-submission/issues/45">jointly</a>, <a class="reference external" href="https://github.com/pyOpenSci/software-submission/issues/18">MovingPandas</a>, <a class="reference external" href="https://github.com/pyOpenSci/software-submission/issues/31">OpenOmics</a>, <a class="reference external" href="https://github.com/pyOpenSci/software-submission/issues/26">Physcraper</a></p></li>
+</ul>
+</section>
+<section id="data-deposition">
+<h3>Data deposition<a class="headerlink" href="#data-deposition" title="Permalink to this heading">#</a></h3>
+<p>Tools for depositing data into scientific research repositories.</p>
+<ul class="simple">
+<li><p>Examples: <a class="reference external" href="https://github.com/ropensci/software-review/issues/80">This is an example from rOpenSci - eml</a></p></li>
+</ul>
+</section>
+<section id="data-validation-and-testing">
+<h3>Data validation and testing:<a class="headerlink" href="#data-validation-and-testing" title="Permalink to this heading">#</a></h3>
+<p>Tools that enable automated validation and checking of data quality and
+completeness. These tools should be able to support scientific workflows.</p>
+<ul class="simple">
+<li><p>Example: <a class="reference external" href="https://github.com/pyOpenSci/software-submission/issues/12">pandera</a></p></li>
+</ul>
+</section>
+<section id="scientific-software-wrappers">
+<h3>Scientific software wrappers<a class="headerlink" href="#scientific-software-wrappers" title="Permalink to this heading">#</a></h3>
+<p>Scientific software wrappers refer to packages that provide a Python interface
+for existing scientific packages written in other languages.</p>
+<p>These packages should have a clear scientific application. Wrappers must provide
+significant added value to the scientific ecosystem be it in data handling, or
+improved installation processes for Python users.</p>
+<p>We strongly encourage submissions that wrap tools that are open-source with
+an OSI-approved license. Exceptions will be evaluated case-by-case,
+considering whether open-source options exist.</p>
+<ul class="simple">
+<li><p>Examples: <a class="reference external" href="https://github.com/pyOpenSci/software-submission/issues/43">PyGMT</a></p></li>
+</ul>
+</section>
+<section id="workflow-automation-versioning">
+<h3>Workflow automation &amp; versioning<a class="headerlink" href="#workflow-automation-versioning" title="Permalink to this heading">#</a></h3>
+<p>Tools that automate and link together workflows and as such support
+reproducible workflows. These
+tools may include build systems and tools to manage continuous integration.
+This also includes tools that support version control.</p>
+<ul class="simple">
+<li><p>Examples: Both of these tools are not pyOpenSci reviewed as of yet but are examples of tools that might be in scope for this category - <a class="reference external" href="https://snakemake.readthedocs.io/en/stable/">snakemake</a>, <a class="reference external" href="https://github.com/PyGithub/PyGithub">pyGitHub </a></p></li>
+</ul>
+</section>
+<section id="citation-management-and-bibliometrics">
+<h3>Citation management and bibliometrics:<a class="headerlink" href="#citation-management-and-bibliometrics" title="Permalink to this heading">#</a></h3>
+<p>Tools that facilitate managing references, such as for writing manuscripts,
+creating CVs or otherwise attributing scientific contributions, or accessing,
+manipulating or otherwise working with bibliometric data. (Example: <a class="reference external" href="https://github.com/ropensci/software-review/issues/119">Example from rOpenSci - RefManageR</a>)</p>
+</section>
+<section id="data-visualization-analysis">
+<h3>Data visualization &amp; analysis<a class="headerlink" href="#data-visualization-analysis" title="Permalink to this heading">#</a></h3>
+<p>These are packages that enhance a scientists experience visualizing and
+analyzing data.</p>
+<ul class="simple">
+<li><p>Examples: <a class="reference external" href="https://github.com/pyOpenSci/software-submission/issues/43">PyGMT - (also spatial and data munging)</a>,</p></li>
+</ul>
+</section>
+<section id="database-software-bindings">
+<h3>Database software bindings<a class="headerlink" href="#database-software-bindings" title="Permalink to this heading">#</a></h3>
+<p>Bindings and wrappers for database APIs.</p>
+<ul class="simple">
+<li><p>Example: <a class="reference external" href="https://github.com/ropensci/software-review/issues/6">Example from rOpenSci - rrlite</a></p></li>
+</ul>
+</section>
+</section>
+<section id="domain-areas">
+<h2>Domain areas<a class="headerlink" href="#domain-areas" title="Permalink to this heading">#</a></h2>
+<p>In addition, our scope includes focused domain areas. These areas are based on
+partnerships that we form with communities and also expertise that we hold
+within our organization. As we develop <a class="reference internal" href="../partners/scientific-communities.html"><span class="doc std std-doc">new community partnerships</span></a> and grow,
+we will expand this list.</p>
+<section id="geospatial">
+<h3>Geospatial<a class="headerlink" href="#geospatial" title="Permalink to this heading">#</a></h3>
+<p>Packages focused on the retrieval, manipulation, and analysis of spatial data.</p>
+<ul class="simple">
+<li><p>Examples: <a class="reference external" href="https://github.com/pyOpenSci/software-submission/issues/43">PyGmt</a>,
+<a class="reference external" href="https://github.com/pyOpenSci/software-submission/issues/18">Moving Pandas </a></p></li>
+</ul>
+</section>
+<section id="pangeo">
+<h3>Pangeo<a class="headerlink" href="#pangeo" title="Permalink to this heading">#</a></h3>
+<p>We have a <a class="reference internal" href="../partners/pangeo.html"><span class="doc std std-doc">partnership with Pangeo</span></a>. Often times packages submitted as a part of that partnership are also in the geospatial domain.</p>
+<ul class="simple">
+<li><p>Examples: <a class="reference external" href="https://github.com/pyOpenSci/software-submission/issues/73">xclim - under review now</a></p></li>
+</ul>
+</section>
+<section id="education">
+<h3>Education<a class="headerlink" href="#education" title="Permalink to this heading">#</a></h3>
+<p>Packages to aid with instruction.</p>
+<ul class="simple">
+<li><p>Examples: <a class="reference external" href="https://github.com/morganjwilliams/pyrolite">pyrolite</a></p></li>
+</ul>
+</section>
 </section>
 <section id="package-technical-scope">
 <h2>Package technical scope<a class="headerlink" href="#package-technical-scope" title="Permalink to this heading">#</a></h2>
 <p>To be in technical scope for a pyOpenSci review, your package:</p>
 <ul class="simple">
 <li><p>Should have maintenance workflows documented.</p></li>
-<li><p>Should be structured in a way that someone else could contribute to it.</p></li>
 <li><p>Should declare vendor dependencies using standard approaches rather than including code from other packages within your repository.</p></li>
+<li><p>Should not have an exceedingly complex structure. Others should be able to contribute and/or take over maintenance if needed.</p></li>
 </ul>
-<section id="notes-on-scope-categories">
-<h3>Notes on scope categories<a class="headerlink" href="#notes-on-scope-categories" title="Permalink to this heading">#</a></h3>
+<div class="admonition-pyopensci-s-goal-is-to-support-long-er-term-maintenance admonition">
+<p class="admonition-title">pyOpenSci’s goal is to support long(er) term maintenance</p>
+<p>pyOpenSci has a goal of supporting long term maintenance of open source
+Python tools. It is thus important for us to know that if you need to step down as a maintainer, the package infrastructure and documentation is
+in place to support us finding a new maintainer who can take over you
+package’s maintenance.</p>
+</div>
+<section id="what-if-my-package-seems-like-its-category-or-domain-is-out-of-scope">
+<h3>What if my package seems like its category or domain is out of scope?<a class="headerlink" href="#what-if-my-package-seems-like-its-category-or-domain-is-out-of-scope" title="Permalink to this heading">#</a></h3>
 <ul class="simple">
 <li><p>pyOpenSci is still developing as a community. If your scientific Python
 package does not fit into one of the categories or if you have any other
@@ -530,23 +691,26 @@ open a pre-submission inquiry first.</p></li>
 </ul>
 </section>
 </section>
-<section id="python-package-technical-scope">
-<h2>Python package technical scope<a class="headerlink" href="#python-package-technical-scope" title="Permalink to this heading">#</a></h2>
-<p>pyOpenSci may continue to update its technical scope criteria for package
+<section id="examples-of-packages-that-might-be-out-of-technical-scope">
+<h2>Examples of packages that might be out of technical scope<a class="headerlink" href="#examples-of-packages-that-might-be-out-of-technical-scope" title="Permalink to this heading">#</a></h2>
+<p>pyOpenSci may continue to update its criteria for technical scope
 review as more packages with varying structural approaches are reviewed.
 Your package <strong>may not be in technical scope</strong> for us to review at this time if
 fits any of the out-of-technical-scope criteria listed below.</p>
-<div class="admonition important">
-<p class="admonition-title">Important</p>
-<p><strong>If the code base of your package is exceedingly complex in terms of
-structure of maintenance needs</strong>, we may not be able to review it.</p>
-<p>pyOpenSci has a goal of supporting long term maintenance of open source
-Python tools. It is thus important for us to know that if you need to step down as a maintainer, the package infrastructure and documentation is
-in place to support us finding a new maintainer who can take over you
-package’s maintenance.</p>
-<p><strong>Examples of technically complex package structures that may be difficult for us to
-review</strong></p>
-<p class="rubric">Example 1: Your package is an out of sync fork of another package repository that is being actively maintained.</p>
+<p>Your package is in technical scope if it is:</p>
+<ul class="simple">
+<li><p>Pure Python or Python with built extensions</p></li>
+<li><p>Available from PyPI and/or community conda channels such as conda-forge or bioconda</p></li>
+</ul>
+<p>Your package might be out of in technical scope if it is:</p>
+<ul class="simple">
+<li><p>Not published in a community channel such as PyPI or a channel on anaconda cloud</p></li>
+<li><p>Exceedingly complex in its structure or maintenance needs</p></li>
+</ul>
+<p>A few examples of packages that may be too technically challenging for us to
+find a new maintainer for in the future are below.</p>
+<section id="example-1-your-package-is-an-out-of-sync-fork-of-another-package-repository-that-is-being-actively-maintained">
+<h3>Example 1: Your package is an out of sync fork of another package repository that is being actively maintained.<a class="headerlink" href="#example-1-your-package-is-an-out-of-sync-fork-of-another-package-repository-that-is-being-actively-maintained" title="Permalink to this heading">#</a></h3>
 <p>Sometimes we understand that a package maintainer may need to step down. In
 that case, we strongly suggest that the original package owner, transfer the
 package repository to a new organization along with PyPI credentials. A new
@@ -557,12 +721,14 @@ to work with the original maintainers to merge efforts.</p>
 <p>However, if there is a case where a forked repository is warranted, please
 consider submitting a pre-submission inquiry first and explain why the package is a
 fork rather than an independent parent repository.</p>
-<p class="rubric">Example 2: Vendored dependencies</p>
+</section>
+<section id="example-2-vendored-dependencies">
+<h3>Example 2: Vendored dependencies<a class="headerlink" href="#example-2-vendored-dependencies" title="Permalink to this heading">#</a></h3>
 <p>If your package is a wrapper that wraps around another tool, we prefer that
 the dependency be added as a dependency to your package. This allows
 maintenance of the original code base to be independent from your package’s
 maintenance.</p>
-</div>
+</section>
 </section>
 <section id="package-overlap">
 <span id="id1"></span><h2>Package Overlap<a class="headerlink" href="#package-overlap" title="Permalink to this heading">#</a></h2>
@@ -639,11 +805,92 @@ consider submittal to other repositories or journals.</p>
   <a class="reference internal nav-link" href="#is-your-package-in-scope-for-pyopensci-review">
    Is Your Package in Scope For pyOpenSci Review?
   </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#about-the-types-of-packages-that-we-review">
+     About the types of packages that we review
+    </a>
+   </li>
+  </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#python-package-domain-scope">
-   Python package domain scope
+  <a class="reference internal nav-link" href="#package-categories">
+   Package categories
   </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#data-retrieval">
+     Data retrieval
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#data-extraction">
+     Data extraction
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#data-processing-munging">
+     Data processing &amp; munging
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#data-deposition">
+     Data deposition
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#data-validation-and-testing">
+     Data validation and testing:
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#scientific-software-wrappers">
+     Scientific software wrappers
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#workflow-automation-versioning">
+     Workflow automation &amp; versioning
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#citation-management-and-bibliometrics">
+     Citation management and bibliometrics:
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#data-visualization-analysis">
+     Data visualization &amp; analysis
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#database-software-bindings">
+     Database software bindings
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#domain-areas">
+   Domain areas
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#geospatial">
+     Geospatial
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#pangeo">
+     Pangeo
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#education">
+     Education
+    </a>
+   </li>
+  </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#package-technical-scope">
@@ -651,16 +898,28 @@ consider submittal to other repositories or journals.</p>
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#notes-on-scope-categories">
-     Notes on scope categories
+    <a class="reference internal nav-link" href="#what-if-my-package-seems-like-its-category-or-domain-is-out-of-scope">
+     What if my package seems like its category or domain is out of scope?
     </a>
    </li>
   </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#python-package-technical-scope">
-   Python package technical scope
+  <a class="reference internal nav-link" href="#examples-of-packages-that-might-be-out-of-technical-scope">
+   Examples of packages that might be out of technical scope
   </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#example-1-your-package-is-an-out-of-sync-fork-of-another-package-repository-that-is-being-actively-maintained">
+     Example 1: Your package is an out of sync fork of another package repository that is being actively maintained.
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#example-2-vendored-dependencies">
+     Example 2: Vendored dependencies
+    </a>
+   </li>
+  </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#package-overlap">

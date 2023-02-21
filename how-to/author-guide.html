@@ -14,7 +14,7 @@
 <meta property="og:image:alt" content="Are you considering submitting a package for review with pyOpenSci? You’ve come to the right place! Below you will find the steps that you need to follow to..." />
 <meta name="description" content="Are you considering submitting a package for review with pyOpenSci? You’ve come to the right place! Below you will find the steps that you need to follow to submit a package to pyOpenSci for peer r..." />
 
-    <title>Guide for Python Open Source Maintainers and Authors &#8212; pyOpenSci Software Peer Review Guide</title>
+    <title>Guide for Python Open Source Maintainers and Authors &#8212; Software Peer Review Guide</title>
   
   
   
@@ -604,77 +604,8 @@ repository. After you submit an inquiry, a pyOpenSci editor will get back to you
 with input regarding the fit of your package for pyOpenSci review. This can take
 up to a week.</p>
 <p>Our current categories for determining package scope are below:</p>
-</section>
-<section id="python-package-domain-scope">
-<h2>Python package domain scope<a class="headerlink" href="#python-package-domain-scope" title="Permalink to this heading">#</a></h2>
-<p>The following categories are the current domain areas that fall into the
-pyOpenSci domain scope.</p>
-<ul class="simple">
-<li><p><strong>Data retrieval:</strong> Packages for accessing and downloading data from online sources. Includes wrappers for accessing APIs.</p></li>
-<li><p><strong>Data extraction:</strong> Packages that aid in retrieving data from unstructured sources such as text, images and PDFs.</p></li>
-<li><p><strong>Data munging:</strong> Tools for processing data from scientific data formats.</p></li>
-<li><p><strong>Data deposition:</strong> Tools for depositing data in scientific research repositories.</p></li>
-<li><p><strong>Reproducibility:</strong> Tools to scientists ensure that their research is reproducible. E.g. version control, automated testing, or citation tools.</p></li>
-<li><p><strong>Geospatial:</strong> Packages focused on the retrieval, manipulation, and analysis of spatial data.</p></li>
-<li><p><strong>Education:</strong> Packages to aid with instruction.</p></li>
-<li><p><strong>Data visualization:</strong> Packages for visualizing and analyzing data.</p></li>
-</ul>
-</section>
-<section id="package-technical-scope">
-<h2>Package technical scope<a class="headerlink" href="#package-technical-scope" title="Permalink to this heading">#</a></h2>
-<p>To be in technical scope for a pyOpenSci review, your package:</p>
-<ul class="simple">
-<li><p>Should have maintenance workflows documented.</p></li>
-<li><p>Should be structured in a way that someone else could contribute to it.</p></li>
-<li><p>Should declare vendor dependencies using standard approaches rather than including code from other packages within your repository.</p></li>
-</ul>
-<section id="notes-on-scope-categories">
-<h3>Notes on scope categories<a class="headerlink" href="#notes-on-scope-categories" title="Permalink to this heading">#</a></h3>
-<ul class="simple">
-<li><p>pyOpenSci is still developing as a community. If your scientific Python
-package does not fit into one of the categories or if you have any other
-questions, we’d encourage you to open a pre-submission inquiry. We’re happy to help.</p></li>
-<li><p>Data visualization packages come in many varieties, ranging from small
-hyper-specific methods for one type of data to general, do-it-all packages
-(e.g. matplotlib). pyOpenSci accepts packages that are somewhere in between the
-two. If you’re interested in submitting your data visualization package, please
-open a pre-submission inquiry first.</p></li>
-</ul>
-</section>
-</section>
-<section id="python-package-technical-scope">
-<h2>Python package technical scope<a class="headerlink" href="#python-package-technical-scope" title="Permalink to this heading">#</a></h2>
-<p>pyOpenSci may continue to update its technical scope criteria for package
-review as more packages with varying structural approaches are reviewed.
-Your package <strong>may not be in technical scope</strong> for us to review at this time if
-fits any of the out-of-technical-scope criteria listed below.</p>
-<div class="admonition important">
-<p class="admonition-title">Important</p>
-<p><strong>If the code base of your package is exceedingly complex in terms of
-structure of maintenance needs</strong>, we may not be able to review it.</p>
-<p>pyOpenSci has a goal of supporting long term maintenance of open source
-Python tools. It is thus important for us to know that if you need to step down as a maintainer, the package infrastructure and documentation is
-in place to support us finding a new maintainer who can take over you
-package’s maintenance.</p>
-<p><strong>Examples of technically complex package structures that may be difficult for us to
-review</strong></p>
-<p class="rubric">Example 1: Your package is an out of sync fork of another package repository that is being actively maintained.</p>
-<p>Sometimes we understand that a package maintainer may need to step down. In
-that case, we strongly suggest that the original package owner, transfer the
-package repository to a new organization along with PyPI credentials. A new
-organization would allow transfer of ownership of package maintenance rather
-than several forks existing.</p>
-<p>If your package is a divergent fork of a maintained repository we will encourage you
-to work with the original maintainers to merge efforts.</p>
-<p>However, if there is a case where a forked repository is warranted, please
-consider submitting a pre-submission inquiry first and explain why the package is a
-fork rather than an independent parent repository.</p>
-<p class="rubric">Example 2: Vendored dependencies</p>
-<p>If your package is a wrapper that wraps around another tool, we prefer that
-the dependency be added as a dependency to your package. This allows
-maintenance of the original code base to be independent from your package’s
-maintenance.</p>
-</div>
+<!-- colors https://github.com/pydata/pydata-sphinx-theme/blob/main/src/pydata_sphinx_theme/assets/styles/variables/_color.scss-->
+<p><a class="sd-sphinx-override sd-btn sd-text-wrap sd-btn-primary sd-rounded-pill reference external" href="/about/package-scope"><span>Click here to view our technical and domain scope requirements.</span></a></p>
 </section>
 <section id="submit-your-package-for-peer-review">
 <h2>4. Submit Your Package for Peer Review<a class="headerlink" href="#submit-your-package-for-peer-review" title="Permalink to this heading">#</a></h2>
@@ -841,28 +772,6 @@ of vetted tools.</p>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#is-your-package-in-scope-for-pyopensci">
    3. Is Your Package in Scope for pyOpenSci?
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#python-package-domain-scope">
-   Python package domain scope
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#package-technical-scope">
-   Package technical scope
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#notes-on-scope-categories">
-     Notes on scope categories
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#python-package-technical-scope">
-   Python package technical scope
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">

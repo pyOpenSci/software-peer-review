@@ -126,8 +126,11 @@ with input regarding the fit of your package for pyOpenSci review. This can take
 up to a week.
 
 Our current categories for determining package scope are below:
-
-```{include} ../appendices/scope.md
+<!-- colors https://github.com/pydata/pydata-sphinx-theme/blob/main/src/pydata_sphinx_theme/assets/styles/variables/_color.scss-->
+```{button-link} /about/package-scope
+:color: primary
+:class: sd-rounded-pill
+Click here to view our technical and domain scope requirements.
 ```
 
 ## 4. Submit Your Package for Peer Review
