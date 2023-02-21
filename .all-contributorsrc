@@ -131,9 +131,9 @@
       "avatar_url": "https://avatars.githubusercontent.com/u/1839645?v=4",
       "profile": "http://chrisholdgraf.com",
       "contributions": [
-      "review",
-      "code",
-      "design"
+        "review",
+        "code",
+        "design"
       ]
     },
     {
@@ -141,6 +141,97 @@
       "name": "Steve Moss",
       "avatar_url": "https://avatars.githubusercontent.com/u/321291?v=4",
       "profile": "https://www.gawbul.io",
+      "contributions": [
+        "review",
+        "code"
+      ]
+    },
+    {
+      "login": "xmnlab",
+      "name": "Ivan Ogasawara",
+      "avatar_url": "https://avatars.githubusercontent.com/u/5209757?v=4",
+      "profile": "https://github.com/xmnlab",
+      "contributions": [
+        "review",
+        "code"
+      ]
+    },
+    {
+      "login": "kysolvik",
+      "name": "Kylen Solvik",
+      "avatar_url": "https://avatars.githubusercontent.com/u/24379590?v=4",
+      "profile": "https://github.com/kysolvik",
+      "contributions": [
+        "review",
+        "code",
+        "design"
+      ]
+    },
+    {
+      "login": "matthew-brett",
+      "name": "Matthew Brett",
+      "avatar_url": "https://avatars.githubusercontent.com/u/67612?v=4",
+      "profile": "https://matthew.dynevor.org",
+      "contributions": [
+        "review",
+        "code"
+      ]
+    },
+    {
+      "login": "ReventonC",
+      "name": "Zehua Chen",
+      "avatar_url": "https://avatars.githubusercontent.com/u/6276623?v=4",
+      "profile": "http://zehuachen.com",
+      "contributions": [
+        "review",
+        "code"
+      ]
+    },
+    {
+      "login": "sumit-158",
+      "name": "Sumit Kashyap",
+      "avatar_url": "https://avatars.githubusercontent.com/u/96618001?v=4",
+      "profile": "https://github.com/sumit-158",
+      "contributions": [
+        "code",
+        "review"
+      ]
+    },
+    {
+      "login": "consideRatio",
+      "name": "Erik Sundell",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3837114?v=4",
+      "profile": "https://github.com/consideRatio",
+      "contributions": [
+        "review",
+        "code"
+      ]
+    },
+    {
+      "login": "mbjoseph",
+      "name": "Max Joseph",
+      "avatar_url": "https://avatars.githubusercontent.com/u/2664564?v=4",
+      "profile": "https://mbjoseph.github.io",
+      "contributions": [
+        "review",
+        "code"
+      ]
+    },
+    {
+      "login": "arokem",
+      "name": "Ariel Rokem",
+      "avatar_url": "https://avatars.githubusercontent.com/u/118582?v=4",
+      "profile": "http://arokem.org",
+      "contributions": [
+        "review",
+        "code"
+      ]
+    },
+    {
+      "login": "jmason86",
+      "name": "James Mason",
+      "avatar_url": "https://avatars.githubusercontent.com/u/947614?v=4",
+      "profile": "http://jamespaulmason.com",
       "contributions": [
         "review",
         "code"

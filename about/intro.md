@@ -20,7 +20,7 @@ Why Open Review Matters </about/why-open-review>
 How Review Works <../our-process/how-review-works>
 Review Timeline <../our-process/review-timeline>
 Peer Review Policies <../our-process/policies>
-
+Code of Conduct <../code-of-conduct>
 ```
 
 

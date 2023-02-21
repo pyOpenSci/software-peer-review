@@ -128,7 +128,7 @@ the aim, goals and functionality of the package.
 
 <optional>
 If a package has overlapping functionality with other packages, we require you
-to mention in your documentation (README) and in this issue [how it is "best in class"](https://www.pyopensci.org/contributing-guide/about/package-scope.md#package-overlap). Please add a more detailed comparison to the packages you mention in the README so we can evaluate?
+to mention in your documentation (README) and in this issue [how it is "best in class"](https://www.pyopensci.org/software-peer-review/about/package-scope.html#package-overlap). Please add a more detailed comparison to the packages you mention in the README so we can evaluate?
 </optional>
 
 ```
