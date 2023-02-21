@@ -105,12 +105,12 @@ scientific equipment.
 
 ### Data processing & munging
 
-Data munging tools are tools that support processing data discussed above. This
+Data [munging tools transform data in a way that makes further analysis possible (as [defined on Wikipedia](https://en.wikipedia.org/wiki/Data_wrangling)). Munging complements the other categories so it's common for packages to include some functionality to munge data. This
 category focuses on tools for handling data in specific formats that scientists
 may be interested in working with. These data may also be generated from
 scientific workflows or exported from instruments and wearables.
 
-* Examples: [physcraper](https://github.com/pyOpenSci/software-submission/issues/26)
+* Examples: [devicely](https://github.com/pyOpenSci/software-submission/issues/37), [jointly](https://github.com/pyOpenSci/software-submission/issues/45), [MovingPandas](https://github.com/pyOpenSci/software-submission/issues/18), [OpenOmics](https://github.com/pyOpenSci/software-submission/issues/31), [Physcraper](https://github.com/pyOpenSci/software-submission/issues/26)
 
 
 ### Data deposition
@@ -140,7 +140,7 @@ an OSI-approved license. Exceptions will be evaluated case-by-case,
 considering whether open-source options exist.
 
 <!-- TODO: need an example for this category -->
-* Examples: We don't have a package in this category yet - *Could be your package?*
+* Examples: [PyGMT](https://github.com/pyOpenSci/software-submission/issues/43)
 
 ### Workflow automation & versioning
 Tools that automate and link together workflows and as such support
@@ -230,7 +230,7 @@ We will evaluate usage data collected by packages on a case-by-case basis
 and reserve the right not to review a package if the data collection is overly
 invasive.
 
-### Notes on scope categories
+### What if my package seems like its category or domain is out of scope?
 - pyOpenSci is still developing as a community. If your scientific Python
 package does not fit into one of the categories or if you have any other
 questions, we'd encourage you to open a pre-submission inquiry. We're happy to help.
