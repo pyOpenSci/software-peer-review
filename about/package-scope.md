@@ -64,7 +64,7 @@ In some cases exceptions are made.
 
 ## Package categories
 
-The following are the current categories that fall into scope for 
+The following are the current categories that fall into scope for
 pyOpenSci. In addition to fitting into one or more of these categories, your package should have some level of
 demonstrated scientific application. This could be a use case that you can
 link to or a tutorial that demonstrates its potential application for science.
@@ -138,7 +138,6 @@ We strongly encourage submissions that wrap tools that are open-source with
 an OSI-approved license. Exceptions will be evaluated case-by-case,
 considering whether open-source options exist.
 
-<!-- TODO: need an example for this category -->
 * Examples: [PyGMT](https://github.com/pyOpenSci/software-submission/issues/43)
 
 ### Workflow automation & versioning
@@ -147,9 +146,7 @@ reproducible workflows. These
 tools may include build systems and tools to manage continuous integration.
 This also includes tools that support version control.
 
-<!-- TODO: marting git package is a good example but it's needs to be sunsetted as it's no longer maintained. hamilton is just starting review but would fit
-well here  - the link below for it is a presubmission not a review   -->
-* Examples: [Hamilton - currently under review](https://github.com/pyOpenSci/software-submission/issues/74), martin's git package (that is no longer maintained.)
+* Examples: Both of these tools are not pyOpenSci reviewed as of yet but are examples of tools that might be in scope for this category - [snakemake](https://snakemake.readthedocs.io/en/stable/), [pyGitHub ](https://github.com/PyGithub/PyGithub)
 
 ### Citation management and bibliometrics:
 
@@ -193,7 +190,8 @@ We have a [partnership with Pangeo](../partners/pangeo). Often times packages su
 ### Education
 
 Packages to aid with instruction.
-<!--TODO -  Earthpy fit in this category but it also needs to be sunsetted -->
+
+* Examples: [pyrolite](https://github.com/morganjwilliams/pyrolite)
 
 ## Package technical scope
 
@@ -245,6 +243,17 @@ pyOpenSci may continue to update its criteria for technical scope
 review as more packages with varying structural approaches are reviewed.
 Your package **may not be in technical scope** for us to review at this time if
 fits any of the out-of-technical-scope criteria listed below.
+
+Your package is in technical scope if it is:
+* Pure Python or Python with built extensions
+* Available from PyPI and/or community conda channels such as conda-forge or bioconda
+
+Your package might be out of in technical scope if it is:
+* Not published in a community channel such as PyPI or a channel on anaconda cloud
+* Exceedingly complex in its structure or maintenance needs
+
+A few examples of packages that may be too technically challenging for us to
+find a new maintainer for in the future are below.
 
 ### Example 1: Your package is an out of sync fork of another package repository that is being actively maintained.
 
