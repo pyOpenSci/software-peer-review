@@ -65,8 +65,8 @@ In some cases exceptions are made.
 
 ## Package categories
 
-The following categories are the current domain areas that fall into the
-pyOpenSci domain scope. Note that your package should have some level of
+The following are the current categories that fall into scope for 
+pyOpenSci. In addition to fitting into one or more of these categories, your package should have some level of
 demonstrated scientific application. This could be a use case that you can
 link to or a tutorial that demonstrates its potential application for science.
 
