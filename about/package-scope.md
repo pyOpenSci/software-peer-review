@@ -35,7 +35,7 @@ data processing and and the various stages of managing the
 data lifecycle. Packages submitted to pyOpenSci should fit into one or
 more of the categories below and should be within our technical scope.
 
-```{admonition} Your Package Does Not Need to Have Widespread Use to be Reviewed
+```{admonition} Your Package Does Not Need to Be In Widespread Use Yet to be Reviewed
 :class: important
 
 We review packages with the goal of improving package quality and usability for scientists.
