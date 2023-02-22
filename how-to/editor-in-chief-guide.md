@@ -93,6 +93,19 @@ the package is in scope for pyOpenSci review, the Editor in Chief will assign an
 editor to the review issue. The editor will begin the process of finding reviewers
 for the package. [Check out the editor guide for more information on this process](editors-guide.md)
 
+
+```{admonition} Diversity in the editorial & reviewer  team is important
+:class: important
+
+Diversity is core to the pyOpenSci mission. As such it's important to have an
+editorial team comprised of an editor + 2 reviewers from diverse backgrounds.
+
+As you select an editor (and guide that editor in finding reviewers),
+ensure that there is diversity
+in the team supporting package review. [Specifically reviewers and the editor should have a mix of gender-identities whenever possible](reviewer-diversity). pyOpenSci [also supports mentoring new reviewers and editors if needed!](review-mentorshipreview-mentorship)
+
+```
+
 ### 5. ✔️ Update the YAML header of the issue
 
 Once all of the above is complete, the Editor in Chief should:
