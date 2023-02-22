@@ -25,6 +25,8 @@ website, Twitter).
 * Some domain experience in the field of the package or data source.
 * No [conflicts of interest](coi).
 
+(reviewer-diversity)=
+### Reviewer diversity should be prioritized
 Try to balance your sense of the potential reviewer’s experience against the complexity of the package.
 
 * **Diversity** - if you have two reviewers, both shouldn’t be cis white males.
@@ -43,6 +45,7 @@ more technical expertise and the other focuses on usability and is less technica
 Read through the Guidelines for Reviewers Section to learn more about finding and
 selecting reviewers.
 
+(review-mentorship)=
 ```{note}
 PyOpenSci has been piloting a new reviewer mentorship program where we pair a
 new reviewer with someone in the community with previous review experience. If

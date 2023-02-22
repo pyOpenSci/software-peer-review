@@ -135,7 +135,9 @@ Repository Link:  REPO-LINK
 Version submitted:  VERSION-SUBMITTED
 ```
 
-```{note}
+```{admonition} Editor in Chief checks for structure & scope should be completed first
+:class: note
+
 The editor in chief who initially engaged with this review should have already evaluated the package level Editor Checks section for `Fit`, `Automated Tests`, `Documentation`, `License`, and `Repository`.
 
 They also should have checked whether the package is [in scope for pyOpenSci](../about/package-scope).
@@ -171,6 +173,18 @@ structure, request changes before assigning reviewers.**
 
 Within **one week of responding to the issue as the editor**, identify two people to
 review the Python package.
+
+```{admonition} Diversity in the editorial & reviewer  team is important
+:class: important
+
+Diversity is core to the pyOpenSci mission. As such it's important to have an
+editorial team comprised of an editor + 2 reviewers from diverse backgrounds.
+
+In your search for reviewers, please ensure ensure that there is diversity
+in the team supporting package review. [Specifically both reviewers should have different backgrounds and different gender-identities whenever possible](reviewer-diversity). pyOpenSci [supports mentoring new reviewers if needed!](review-mentorshipreview-mentorship)
+
+[Read our finding reviewers guide for more on finding reviewers.](finding-reviewers)
+```
 
 If you wish, you can use the email template below to invite reviewers.
 
