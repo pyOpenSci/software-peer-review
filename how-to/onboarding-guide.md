@@ -117,6 +117,7 @@ Best,
 [your-name-here], on behalf of the pyOpenSci Editorial Board
 ```
 
+(onboarding-a-new-editor)=
 ## Onboarding a new editor
 
 To onboard a new editor:
@@ -147,9 +148,13 @@ the `title:` yaml element and update `contributor_type:` as see below:
 
 * If they haven't already done, ask the new editor turn on [two-factor authentication (2FA) for GitHub](https://docs.github.com/en/authentication/securing-your-account-with-two-factor-authentication-2fa).
 
+* Give editors permissions they will need on GitHub to manage reviews:
+  * For ad-hoc guest editors: invite the editor to the `software-submission` repository
+    with "maintain" permissions.
+  * For new editors (not ad-hoc): invite editors to the pyOpenSci GitHub organzation
+    as a member of the [`editorial-board`](https://github.com/orgs/pyOpenSci/teams/editorial-board) team. This will give them appropriate permissions and allow them to get team-specific notifications.
+
 <!-- do we need this?
-* Invite editors to the pyOpenSci GitHub organization as member, as a member of the [`editors` team](https://github.com/orgs/pyopensci/teams/editors).
-This will give them appropriate permissions and allow them to get team-specific notifications.
 * Editors need access to the AirTable database of software review.
 * * In the Slack workspace they need to be added to the editors team so that `@editors` will ping them too.
  -->
