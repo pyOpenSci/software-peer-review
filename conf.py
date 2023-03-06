@@ -3,12 +3,12 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'pyOpenSci Software Peer Review Guide'
-copyright = '2023, pyOpenSci'
-author = 'pyOpenSci Editorial Team and Community'
+project = "pyOpenSci Software Peer Review Guide"
+copyright = "2023, pyOpenSci"
+author = "pyOpenSci Editorial Team and Community"
 
 # The full version, including alpha/beta/rc tags
-release = '0.5'
+release = "0.5"
 
 
 # -- General configuration ---------------------------------------------------
@@ -33,7 +33,7 @@ myst_heading_anchors = 3
 suppress_warnings = ["myst.header"]
 
 # For generating sitemap
-html_baseurl = 'https://www.pyopensci.org/software-peer-review/'
+html_baseurl = "https://www.pyopensci.org/software-peer-review/"
 
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
@@ -42,6 +42,7 @@ html_theme = "pydata_sphinx_theme"
 html_title = "Software Peer Review Guide"
 html_logo = "_static/logo.png"
 html_static_path = ["_static"]
+html_js_files = ["matomo.js"]
 
 # Theme options
 html_theme_options = {
@@ -81,9 +82,9 @@ html_theme_options = {
     "footer_items": ["copyright"],
 }
 
-html_theme_options["analytics"] = {
-    "google_analytics_id": "UA-141260825-1",
-}
+# html_theme_options["analytics"] = {
+#     "google_analytics_id": "UA-141260825-1",
+# }
 
 html_context = {
     "github_user": "pyopensci",
@@ -93,19 +94,12 @@ html_context = {
 
 
 # Add any paths that contain templates here, relative to this directory.
-templates_path = ['_templates']
+templates_path = ["_templates"]
 
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
 # This pattern also affects html_static_path and html_extra_path.
-exclude_patterns = [
-    "_build",
-    "Thumbs.db",
-    ".DS_Store",
-    ".github",
-    ".nox",
-    "README.md"
-    ]
+exclude_patterns = ["_build", "Thumbs.db", ".DS_Store", ".github", ".nox", "README.md"]
 
 
 # -- Options for HTML output -------------------------------------------------
@@ -114,5 +108,5 @@ exclude_patterns = [
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
-html_static_path = ['_static']
-html_css_files = ['pyos.css']
+html_static_path = ["_static"]
+html_css_files = ["pyos.css"]
