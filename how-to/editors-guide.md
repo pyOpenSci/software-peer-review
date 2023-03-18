@@ -157,7 +157,7 @@ Once the above is complete, you are ready to add an editor response to the issue
 This step ensures that the package is ready to be reviewed. It also ensures that
 we are using our volunteer reviewer time effectively.
 
-* Add a comment to the issue that contains a copy of the Editor Response template (see below) filled out with your response to the checks that begin the review.
+* Add a comment to the issue that contains an **exact** copy of the Editor Response template (see below) filled out with your response to the checks that begin the review.
 * Change the label of the issue to `2/seeking-reviewer(s)`
 
 ```{include} ../appendices/editor-initial-response-template.md
@@ -204,6 +204,10 @@ moving.
 
 ```{note}
 [Click here for more information about finding reviewers for a package.](finding-reviewers)
+```
+
+```{warning}
+Make sure to ask the reviewers for their preferred means of contact, or a reliable way to get in touch with them.
 ```
 
 ### ✔️ 4. Onboard reviewers
