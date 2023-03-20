@@ -62,7 +62,7 @@ Package structure should follow general community best-practices. In general ple
 - [ ] **Performance:** Any performance claims of the software been confirmed.
 - [ ] **Automated tests:** 
   - [ ] All tests pass on the local machine for the version corresponding to the submitted version or tag.
-  - [ ] Tests cover essential functions of the package and a reasonable range of inputs and conditions. 
+  - [ ] Tests cover essential functions of the package and a reasonable range of inputs and conditions.
 - [ ] **Continuous Integration:** Has continuous integration setup (We suggest using Github actions but any CI platform is acceptable for review)
 - [ ] **Packaging guidelines**: The package conforms to the pyOpenSci [packaging guidelines](https://www.pyopensci.org/python-package-guide).
     A few notable highlights to look at:

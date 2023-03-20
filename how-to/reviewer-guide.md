@@ -102,6 +102,13 @@ in the review template, please also provide general comments addressing the foll
 
 If you have your own relevant data/problem that you could use the package to solve, work through it with the package. You may find rough edges and use-cases the author didn't think about.
 
+```{important}
+Some maintainers do not ship the tests with their package.
+This means that the dependencies for testing may be missing.
+Check to have at least pytest installed.
+Also, when cloning the repository to run the tests, please check the cloned version aligns with the submitted one.
+```
+
 ## Submit your review
 * When your review is complete, paste it as a comment into the package software-review issue.
 * Additional comments are welcome in the same issue. We hope that package reviews will work as an ongoing conversation with the authors as opposed to a single round of reviews typical of academic manuscripts.
