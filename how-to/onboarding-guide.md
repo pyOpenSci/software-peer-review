@@ -146,7 +146,7 @@ the `title:` yaml element and update `contributor_type:` as see below:
 
 * Next work with the new editor to create a blog post introducing them which will get [posted on the pyOpenSci blog](https://www.pyopensci.org/blog).
 
-* If they haven't already done, ask the new editor turn on [two-factor authentication (2FA) for GitHub](https://docs.github.com/en/authentication/securing-your-account-with-two-factor-authentication-2fa).
+* If they haven't already done, ask the new editor to turn on [two-factor authentication (2FA) for GitHub](https://docs.github.com/en/authentication/securing-your-account-with-two-factor-authentication-2fa).
 
 * Give editors permissions they will need on GitHub to manage reviews:
   * For ad-hoc guest editors: invite the editor to the `software-submission` repository
