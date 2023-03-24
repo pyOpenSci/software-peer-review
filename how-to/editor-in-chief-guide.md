@@ -91,7 +91,7 @@ organization.
 Once the package initial checks are complete, and it is determined that
 the package is in scope for pyOpenSci review, the Editor in Chief will assign an
 editor to the review issue.
-This may involve finding a new editor
+This may involve finding a new (guest) editor
 as described in the [onboarding guide](onboarding-guide.md).
 If you as Editor in Chief do recruit a new editor,
 be sure to complete all the onboarding steps described
@@ -99,9 +99,9 @@ be sure to complete all the onboarding steps described
 has everything they need to manage the review,
 such as GitHub permissions and access to the relevant channels
 in the pyOpenSci Slack team.
-It is the editor that will now begin the process of finding reviewers
+The editor will now begin the process of finding reviewers
 for the package.
-[Check out the editor guide for more information on this process](editors-guide.md)
+[Check out the editor guide for more information on the process that an editor follows](editors-guide.md)
 
 ```{admonition} Diversity in the editorial & reviewer  team is important
 :class: important
