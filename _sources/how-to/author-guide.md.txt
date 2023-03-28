@@ -127,7 +127,7 @@ up to a week.
 
 Our current categories for determining package scope are below:
 <!-- colors https://github.com/pydata/pydata-sphinx-theme/blob/main/src/pydata_sphinx_theme/assets/styles/variables/_color.scss-->
-```{button-link} /about/package-scope
+```{button-link} ../about/package-scope.html
 :color: primary
 :class: sd-rounded-pill
 Click here to view our technical and domain scope requirements.
