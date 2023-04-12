@@ -60,7 +60,7 @@ Package structure should follow general community best-practices. In general ple
 - [ ] **Installation:** Installation succeeds as documented.
 - [ ] **Functionality:** Any functional claims of the software been confirmed.
 - [ ] **Performance:** Any performance claims of the software been confirmed.
-- [ ] **Automated tests:** 
+- [ ] **Automated tests:**
   - [ ] All tests pass on the reviewer's local machine for the package version submitted by the author. Ideally this should be a tagged version making it easy for reviewers to install.
   - [ ] Tests cover essential functions of the package and a reasonable range of inputs and conditions.
 - [ ] **Continuous Integration:** Has continuous integration setup (We suggest using Github actions but any CI platform is acceptable for review)
