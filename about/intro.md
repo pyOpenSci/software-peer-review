@@ -1,6 +1,5 @@
 # About the pyOpenSci software peer review process
 
-
 ```{toctree}
 :hidden:
 :caption: About peer review
@@ -23,8 +22,6 @@ Peer Review Policies <../our-process/policies>
 Code of Conduct <../code-of-conduct>
 ```
 
-
-
 ```{toctree}
 :hidden:
 :caption: Appendices
@@ -32,6 +29,7 @@ Code of Conduct <../code-of-conduct>
 Changelog <../changelog>
 Glossary <../appendices/glossary>
 Templates <../appendices/templates>
+Contributing <../CONTRIBUTING>
 ```
 
 ## Community-driven software peer review
@@ -39,11 +37,11 @@ Templates <../appendices/templates>
 pyOpenSci leads an open, volunteer-based review process for scientific Python
 open source software. Our review process focuses on:
 
-* Code quality and style,
-* Documentation quality,
-* Package usability,
-* Test coverage that supports the maintenance of code function. Test coverage also makes it easier for contributors to see how their contributions impact other parts of the code,
-* Evaluation of infrastructure such as continuous integration that runs rest suites and code format checks on pull requests. This infrastructure supports software quality and reliability. It also makes it easier to contributors to submit changes to code base and know that those changes aren't breaking other parts of the code.
+- Code quality and style,
+- Documentation quality,
+- Package usability,
+- Test coverage that supports the maintenance of code function. Test coverage also makes it easier for contributors to see how their contributions impact other parts of the code,
+- Evaluation of infrastructure such as continuous integration that runs rest suites and code format checks on pull requests. This infrastructure supports software quality and reliability. It also makes it easier to contributors to submit changes to code base and know that those changes aren't breaking other parts of the code.
 
 The overarching goal of this review process is to improve the quality,
 consistency and usability of scientific software tools over time. Further, we
@@ -65,12 +63,11 @@ that are specific to the scientific Python ecosystem:
 
 1. The struggle for scientist to pick the right tool to use for their workflow given often there are multiple packages that have overlapping functionality and varying levels of maintenance. [See this example of the many packages that interface with Twitter on `PyPI`](https://pypi.org/search/?q=twitter)
 1. Packages that are not documented enough to support:
-   * Contributions from others
-   * Directions on how to get started using the package functionality (quick start vignettes or tutorials)
+   - Contributions from others
+   - Directions on how to get started using the package functionality (quick start vignettes or tutorials)
 1. Packages using varying types of packaging and documentation approaches making it more difficult to contribute.
 1. Packages that are well-maintained and used but then maintenance comes to a halt when the maintainer needs to step down (burn-out is common and understandable).
 1. Packages that are missing proper licensing and citation information.
-
 
 Further, pyOpenSci addresses the issue of software maintenance.
 It addresses the question:
@@ -81,7 +78,6 @@ In these cases pyOpenSci will help find a new maintainer(s) for that tool. If
 that is not possible we will help sunset the package in a way that allows
 users to gracefully update their workflows rather than be caught by
 surprise when a new bug arises.
-
 
 ### Peer review of open source software helps maintain consistent quality
 
@@ -108,7 +104,7 @@ We aspire to help scientists find the high quality, documented and
 maintained tools that they need to do their science. And support
 developers in maintaining their tools and getting credit for their work
 
-Our *peer review* badge
+Our _peer review_ badge
 and catalog of tools will help scientists find the tools that they need. Our
 diverse and welcoming community will support maintainers as they maintain their tools. Advocating for citation of software will help maintainers
 get academic credit for their work.

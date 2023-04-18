@@ -70,8 +70,9 @@ html_theme_options = {
     ],
     "logo": {
         "text": "Peer Review Guide",
-        "image_dark": "logo.png",
-        "alt_text": "pyOpenSci Software Peer Review Guide. The pyOpenSci logo is blue and yellow following the Python logo",
+        "image_dark": "logo-dark-mode.png",
+        "image_light": "logo-light-mode.png",
+        "alt_text": "pyOpenSci Software Peer Review Guide. The pyOpenSci logo is a purple flower with pyOpenSci under it. The o in open sci is the center of the flower",
     },
     "header_links_before_dropdown": 4,
     "use_edit_page_button": True,
@@ -99,7 +100,14 @@ templates_path = ["_templates"]
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
 # This pattern also affects html_static_path and html_extra_path.
-exclude_patterns = ["_build", "Thumbs.db", ".DS_Store", ".github", ".nox", "README.md"]
+exclude_patterns = [
+    "_build",
+    "Thumbs.db",
+    ".DS_Store",
+    ".github",
+    ".nox",
+    "README.md",
+]
 
 
 # -- Options for HTML output -------------------------------------------------
