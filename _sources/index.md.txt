@@ -15,20 +15,22 @@ pyOpenSci is a diverse community that supports the open Python tools that
 drive open science.
 
 % The SVG rendering breaks latex builds for the GitHub badge, so only include in HTML
+
 ```{only} html
 ![GitHub release (latest by date)](https://img.shields.io/github/v/release/pyopensci/contributing-guide?color=purple&display_name=tag&style=plastic)
 [![](https://img.shields.io/github/stars/pyopensci/contributing-guide?style=social)](https://github.com/pyopensci/contributing-guide)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7101778.svg)](https://doi.org/10.5281/zenodo.7101778)
 ```
+
 :::
 
 ::::
+
 <!-- I think this is the end of the header - below begins the next grid-->
 
 ::::{grid} 1 2 3 3
 :class-container: text-center
 :gutter: 3
-
 
 :::{grid-item-card} {octicon}`book;1.5em;sd-mr-1` Learn About Software Peer Review ✏️
 :link: about/intro
@@ -68,7 +70,7 @@ Learn how to submit a package for peer review with pyOpenSci.
 :link-type: doc
 :class-header: bg-light
 
- ✨ Our editor guide will walk you through the editorial process. ✨
+✨ Our editor guide will walk you through the editorial process. ✨
 +++
 [Click to learn more »](how-to/editors-guide)
 :::
@@ -99,11 +101,10 @@ JOSS and Pangeo.
 [Click to learn more »](partners/scientific-communities)
 :::
 
-
 ::::
 
-
 ## Why pyOpenSci?
+
 pyOpenSci promotes open and reproducible research through peer-review of
 scientific Python packages. We also build technical capacity by providing a
 curated repository of high-quality packages and enabling scientists to write
@@ -121,20 +122,22 @@ reviewed and vetted by us.**
 :::
 
 ## This Guide
+
 This guidebook contains information for pyOpenSci package authors, reviewers,
 and editors. It is organized into three sections:
 
 ### 1. About Peer Review
+
 This section provides a broad overview of our peer review process.
 
-
 ### 2. Our Partners
+
 This section discusses our partnerships with other scientific and open source
 communities including Pangeo and JOSS.
 
-### 3. How To Guides
-This section provides specific guides for each role in our peer review process.
+### 3. Review Guides
 
+This section provides specific guides for each role in our peer review process.
 
 ```{toctree}
 :hidden:
@@ -142,7 +145,6 @@ This section provides specific guides for each role in our peer review process.
 
 About </about/intro>
 ```
-
 
 ```{toctree}
 :hidden:

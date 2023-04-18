@@ -8,17 +8,19 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
-<meta property="og:title" content="<no title>" />
+<meta property="og:title" content="Contributing Guide for the Python open source software packaging book" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="appendices/package-approval-template.html" />
+<meta property="og:url" content="CONTRIBUTING.html" />
 <meta property="og:site_name" content="pyOpenSci Software Peer Review Guide" />
+<meta property="og:description" content="Important! Before contributing to this repository, please be sure to review our organization-wide contributing guide which contains guidelines for contributions. This is a community resource. We we..." />
 <meta property="og:image:width" content="1146" />
 <meta property="og:image:height" content="600" />
-<meta property="og:image" content="/_images/social_previews/summary_appendices_package-approval-template_c859d9f6.png" />
-<meta property="og:image:alt" content="" />
+<meta property="og:image" content="/_images/social_previews/summary_CONTRIBUTING_be6ab024.png" />
+<meta property="og:image:alt" content="Important! Before contributing to this repository, please be sure to review our organization-wide contributing guide which contains guidelines for contributi..." />
+<meta name="description" content="Important! Before contributing to this repository, please be sure to review our organization-wide contributing guide which contains guidelines for contributions. This is a community resource. We we..." />
 <meta name="twitter:card" content="summary_large_image" />
 
-    <title>&lt;no title&gt; &#8212; Software Peer Review Guide</title>
+    <title>Contributing Guide for the Python open source software packaging book &#8212; Software Peer Review Guide</title>
   
   
   
@@ -28,40 +30,42 @@
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
-<link href="../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link href="_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
 
   
-  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+  <link href="_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
 
-    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/pyos.css" />
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css" />
+    <link rel="stylesheet" type="text/css" href="_static/pyos.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
-<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
 
-    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-    <script src="../_static/jquery.js"></script>
-    <script src="../_static/underscore.js"></script>
-    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
-    <script src="../_static/doctools.js"></script>
-    <script src="../_static/sphinx_highlight.js"></script>
-    <script src="../_static/clipboard.min.js"></script>
-    <script src="../_static/copybutton.js"></script>
-    <script src="../_static/design-tabs.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'appendices/package-approval-template';</script>
-    <script src="../_static/matomo.js"></script>
-    <link rel="canonical" href="https://www.pyopensci.org/software-peer-review/appendices/package-approval-template.html" />
-    <link rel="index" title="Index" href="../genindex.html" />
-    <link rel="search" title="Search" href="../search.html" />
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/sphinx_highlight.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script src="_static/design-tabs.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'CONTRIBUTING';</script>
+    <script src="_static/matomo.js"></script>
+    <link rel="canonical" href="https://www.pyopensci.org/software-peer-review/CONTRIBUTING.html" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="pyOpenSci Software Peer Review Partnerships" href="partners/scientific-communities.html" />
+    <link rel="prev" title="Appendix: Templates" href="appendices/templates.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -89,7 +93,7 @@
     <div class="search-button__overlay"></div>
     <div class="search-button__search-container">
 <form class="bd-search d-flex align-items-center"
-      action="../search.html"
+      action="search.html"
       method="get">
   <i class="fa-solid fa-magnifying-glass"></i>
   <input type="search"
@@ -123,7 +127,7 @@
       <div class="navbar-item">
   
 
-<a class="navbar-brand logo" href="../index.html">
+<a class="navbar-brand logo" href="index.html">
   
   
   
@@ -133,8 +137,8 @@
       
     
     
-    <img src="../_static/logo-light-mode.png" class="logo__image only-light" alt="pyOpenSci Software Peer Review Guide. The pyOpenSci logo is a purple flower with pyOpenSci under it. The o in open sci is the center of the flower"/>
-    <script>document.write(`<img src="../_static/logo-dark-mode.png" class="logo__image only-dark" alt="pyOpenSci Software Peer Review Guide. The pyOpenSci logo is a purple flower with pyOpenSci under it. The o in open sci is the center of the flower"/>`);</script>
+    <img src="_static/logo-light-mode.png" class="logo__image only-light" alt="pyOpenSci Software Peer Review Guide. The pyOpenSci logo is a purple flower with pyOpenSci under it. The o in open sci is the center of the flower"/>
+    <script>document.write(`<img src="_static/logo-dark-mode.png" class="logo__image only-dark" alt="pyOpenSci Software Peer Review Guide. The pyOpenSci logo is a purple flower with pyOpenSci under it. The o in open sci is the center of the flower"/>`);</script>
   
   
     <p class="title logo__title">Peer Review Guide</p>
@@ -157,22 +161,22 @@
   </p>
   <ul class="bd-navbar-elements navbar-nav">
     
-                    <li class="nav-item">
-                      <a class="nav-link nav-internal" href="../about/intro.html">
+                    <li class="nav-item current active">
+                      <a class="nav-link nav-internal" href="about/intro.html">
                         About
                       </a>
                     </li>
                 
 
                     <li class="nav-item">
-                      <a class="nav-link nav-internal" href="../partners/scientific-communities.html">
+                      <a class="nav-link nav-internal" href="partners/scientific-communities.html">
                         Partnerships
                       </a>
                     </li>
                 
 
                     <li class="nav-item">
-                      <a class="nav-link nav-internal" href="../how-to/author-guide.html">
+                      <a class="nav-link nav-internal" href="how-to/author-guide.html">
                         Review Guides
                       </a>
                     </li>
@@ -305,7 +309,7 @@ document.write(`
   <div class="bd-container">
     <div class="bd-container__inner bd-page-width">
       
-      <div class="bd-sidebar-primary bd-sidebar hide-on-wide">
+      <div class="bd-sidebar-primary bd-sidebar">
         
 
   
@@ -323,22 +327,22 @@ document.write(`
   </p>
   <ul class="bd-navbar-elements navbar-nav">
     
-                    <li class="nav-item">
-                      <a class="nav-link nav-internal" href="../about/intro.html">
+                    <li class="nav-item current active">
+                      <a class="nav-link nav-internal" href="about/intro.html">
                         About
                       </a>
                     </li>
                 
 
                     <li class="nav-item">
-                      <a class="nav-link nav-internal" href="../partners/scientific-communities.html">
+                      <a class="nav-link nav-internal" href="partners/scientific-communities.html">
                         Partnerships
                       </a>
                     </li>
                 
 
                     <li class="nav-item">
-                      <a class="nav-link nav-internal" href="../how-to/author-guide.html">
+                      <a class="nav-link nav-internal" href="how-to/author-guide.html">
                         Review Guides
                       </a>
                     </li>
@@ -436,6 +440,36 @@ document.write(`
     
   </div>
   
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item"><nav class="bd-docs-nav bd-links"
+     aria-label="Section Navigation">
+  <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
+  <div class="bd-toc-item navbar-nav"><p aria-level="2" class="caption" role="heading"><span class="caption-text">About peer review</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="about/intro.html">Intro</a></li>
+<li class="toctree-l1"><a class="reference internal" href="about/our-goals.html">Our Goals</a></li>
+<li class="toctree-l1"><a class="reference internal" href="about/benefits.html">Benefits for Package Authors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="about/package-scope.html">Package Scope (What we review)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="about/why-open-review.html">Why Open Review Matters</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Our Process</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="our-process/how-review-works.html">How Review Works</a></li>
+<li class="toctree-l1"><a class="reference internal" href="our-process/review-timeline.html">Review Timeline</a></li>
+<li class="toctree-l1"><a class="reference internal" href="our-process/policies.html">Peer Review Policies</a></li>
+<li class="toctree-l1"><a class="reference internal" href="code-of-conduct.html">Code of Conduct</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Appendices</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="changelog.html">Changelog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="appendices/glossary.html">Glossary</a></li>
+<li class="toctree-l1"><a class="reference internal" href="appendices/templates.html">Templates</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Contributing</a></li>
+</ul>
+</div>
+</nav></div>
+    </div>
+  
   
   <div class="sidebar-primary-items__end sidebar-primary__section">
   </div>
@@ -464,11 +498,14 @@ document.write(`
   <ul class="bd-breadcrumbs" role="navigation" aria-label="Breadcrumb">
     
     <li class="breadcrumb-item breadcrumb-home">
-      <a href="../index.html" class="nav-link" aria-label="Home">
+      <a href="index.html" class="nav-link" aria-label="Home">
         <i class="fa-solid fa-home"></i>
       </a>
     </li>
-    <li class="breadcrumb-item active" aria-current="page">&lt;no title&gt;</li>
+    
+    <li class="breadcrumb-item"><a href="about/intro.html" class="nav-link">About the pyOpenSci software peer review process</a></li>
+    
+    <li class="breadcrumb-item active" aria-current="page">Contributing Guide for the Python open source software packaging book</li>
   </ul>
 </nav>
 </div>
@@ -485,30 +522,53 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span>----------------------------------------------
-🎉 &lt;package-name-here&gt; has been approved by pyOpenSci! Thank you &lt;maintainer-name-here&gt; for submitting &lt;package-name&gt; and many thanks to &lt;reviewer-names-here&gt; for reviewing this package! 😸
-
-There are a few things left to do to wrap up this submission:
-<span class="k">- [ ]</span> Activate [<span class="nt">Zenodo</span>](<span class="na">https://zenodo.org/</span>) watching the repo if you haven&#39;t already done so.
-<span class="k">- [ ]</span> Tag and create a release to create a Zenodo version and DOI.
-<span class="k">- [ ]</span> Add the badge for pyOpenSci peer-review to the README.md of &lt;package-name-here&gt;. The badge should be <span class="sb">`[![pyOpenSci](https://tinyurl.com/y22nb8up)](https://github.com/pyOpenSci/software-review/issues/issue-number)`</span>.
-<span class="k">- [ ]</span> Add &lt;package-name&gt; to the pyOpenSci website. &lt;maintainer-name&gt;, please open a pr to update [<span class="nt">this file</span>](<span class="na">https://github.com/pyOpenSci/pyopensci.github.io/blob/main/_data/packages.yml</span>): to add your package and name to the list of contributors.
-<span class="k">- [ ]</span> &lt;reviewers-and-maintainers&gt; if you have time and are open to being listed on our website, please add yourselves to [<span class="nt">this file</span>](<span class="na">https://github.com/pyOpenSci/pyopensci.github.io/blob/main/_data/contributors.yml</span>) via a pr so we can list you on our website as contributors!
-
-&lt;IF JOSS SUBMISSION&gt;
-It looks like you would like to submit this package to JOSS. Here are the next steps:
-
-<span class="k">- [ ]</span> Login to the JOSS website and fill out the JOSS submission form using your Zenodo DOI. <span class="gs">**When you fill out the form, be sure to mention and link to the approved pyOpenSci review.**</span> JOSS will tag your package for expedited review if it is already pyOpenSci approved.
-<span class="k">- [ ]</span> Wait for a JOSS editor to approve the presubmission (which includes a scope check).
-<span class="k">- [ ]</span> Once the package is approved by JOSS, you will be given instructions by JOSS about updating the citation information in your README file.
-<span class="k">- [ ]</span> When the JOSS review is complete, add a comment to your review in the pyOpenSci software-review repo that it has been approved by JOSS.
-
-🎉 Congratulations! You are now published with both JOSS and pyOpenSci! 🎉
-&lt;IF JOSS SUBMISSION/&gt;
-
-All -- if you have any feedback for us about the review process please feel free to share it here. We are always looking to improve our process and documentation in the [<span class="nt">contributing-guide</span>](<span class="na">https://www.pyopensci.org/contributing-guide</span>). We have also been updating our documentation to improve the process, so all feedback is appreciated!
+  <section id="contributing-guide-for-the-python-open-source-software-packaging-book">
+<h1>Contributing Guide for the Python open source software packaging book<a class="headerlink" href="#contributing-guide-for-the-python-open-source-software-packaging-book" title="Permalink to this heading">#</a></h1>
+<p>Important! Before contributing to this repository, please be sure to review
+our <a class="reference external" href="https://www.pyopensci.org/governance/CONTRIBUTING.html">organization-wide contributing guide</a> which contains guidelines for
+contributions.</p>
+<p>This is a community resource. We welcome contributions in the form of issues and/or pull requests to this guide.</p>
+<ul class="simple">
+<li><p>If you have an idea for something that should be included in the guide, <a class="reference external" href="https://github.com/pyOpenSci/python-package-guide/issues">please open an issue here</a>.</p></li>
+<li><p>If you find a typo, feel free to <a class="reference external" href="https://github.com/pyOpenSci/python-package-guide/pulls">submit a pull request</a> to modify the text directly. Or, if you are less comfortable with pull requests, feel free to open an issue.</p></li>
+<li><p>If you want to see a larger change to the content of the guide book, please submit an issue first!</p></li>
+</ul>
+<section id="how-this-guide-is-structured">
+<h2>How this guide is structured<a class="headerlink" href="#how-this-guide-is-structured" title="Permalink to this heading">#</a></h2>
+<p>This guide is bubilt using <strong>Sphinx</strong>, a documentation engine built in <code class="docutils literal notranslate"><span class="pre">Python</span></code> and the pydata_sphinx_theme. We use <code class="docutils literal notranslate"><span class="pre">myST</span></code> syntax to create each page in this book.</p>
+<p>If you wish to contribute by working on the guide book locally, you
+will first need to</p>
+<ol class="arabic simple">
+<li><p>Fork this repository</p></li>
+<li><p>Clone it locally</p></li>
+<li><p>Build the documentation locally</p></li>
+</ol>
+</section>
+<section id="instructions-for-building-the-documentation-locally-on-your-computer">
+<h2>Instructions for building the documentation locally on your computer<a class="headerlink" href="#instructions-for-building-the-documentation-locally-on-your-computer" title="Permalink to this heading">#</a></h2>
+<p>The easiest way to build the documentation in this repository is to use <code class="docutils literal notranslate"><span class="pre">nox</span></code>,
+a tool for quickly building environments and running commands within them.
+Nox ensures that your environment has all the dependencies needed to build the documentation.</p>
+<p>To do so, follow these steps:</p>
+<ol class="arabic">
+<li><p>Install <code class="docutils literal notranslate"><span class="pre">nox</span></code></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="n">nox</span>
 </pre></div>
 </div>
+</li>
+<li><p>Build the documentation:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">nox</span> <span class="o">-</span><span class="n">s</span> <span class="n">docs_build</span>
+</pre></div>
+</div>
+</li>
+</ol>
+<p>This should create a local environment in a <code class="docutils literal notranslate"><span class="pre">.nox</span></code> folder, build the documentation (as specified in the <code class="docutils literal notranslate"><span class="pre">noxfile.py</span></code> configuration), and the output will be in <code class="docutils literal notranslate"><span class="pre">_build/html</span></code>.</p>
+<p>To build live documentation that updates when you update local files, run the following command:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">nox</span> <span class="o">-</span><span class="n">s</span> <span class="n">docs_live</span>
+</pre></div>
+</div>
+</section>
+</section>
 
 
                 </article>
@@ -521,6 +581,24 @@ All -- if you have any feedback for us about the review process please feel free
   
     <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
+    <a class="left-prev"
+       href="appendices/templates.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Appendix: Templates</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="partners/scientific-communities.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">pyOpenSci Software Peer Review Partnerships</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
 </div></div>
   
 </div>
@@ -538,15 +616,16 @@ All -- if you have any feedback for us about the review process please feel free
     <i class="fa-solid fa-list"></i> On this page
   </div>
   <nav class="bd-toc-nav page-toc">
-    <ul class="simple visible nav section-nav flex-column">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#how-this-guide-is-structured">How this guide is structured</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#instructions-for-building-the-documentation-locally-on-your-computer">Instructions for building the documentation locally on your computer</a></li>
 </ul>
-
   </nav></div>
 
   <div class="sidebar-secondary-item">
   
   <div class="tocsection editthispage">
-    <a href="https://github.com/pyopensci/software-peer-review/edit/main/appendices/package-approval-template.md">
+    <a href="https://github.com/pyopensci/software-peer-review/edit/main/CONTRIBUTING.md">
       <i class="fa-solid fa-pencil"></i>
       
       
@@ -560,7 +639,7 @@ All -- if you have any feedback for us about the review process please feel free
 
   <div class="sidebar-secondary-item">
   <div class="tocsection sourcelink">
-    <a href="../_sources/appendices/package-approval-template.md.txt">
+    <a href="_sources/CONTRIBUTING.md.txt">
       <i class="fa-solid fa-file-lines"></i> Show Source
     </a>
   </div>
@@ -579,8 +658,8 @@ All -- if you have any feedback for us about the review process please feel free
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
-<script src="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+  <script src="_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
 
   <footer class="bd-footer">
 <div class="bd-footer__inner bd-page-width">
