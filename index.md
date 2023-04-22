@@ -121,7 +121,6 @@ programmers and researchers.
 reviewed and vetted by us.**
 :::
 
-
 ```{toctree}
 :hidden:
 :caption: About peer review
