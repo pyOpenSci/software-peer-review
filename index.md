@@ -121,23 +121,6 @@ programmers and researchers.
 reviewed and vetted by us.**
 :::
 
-## This Guide
-
-This guidebook contains information for pyOpenSci package authors, reviewers,
-and editors. It is organized into three sections:
-
-### 1. About Peer Review
-
-This section provides a broad overview of our peer review process.
-
-### 2. Our Partners
-
-This section discusses our partnerships with other scientific and open source
-communities including Pangeo and JOSS.
-
-### 3. Review Guides
-
-This section provides specific guides for each role in our peer review process.
 
 ```{toctree}
 :hidden:
