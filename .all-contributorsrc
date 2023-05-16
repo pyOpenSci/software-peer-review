@@ -256,6 +256,16 @@
         "code",
         "review"
       ]
+    },
+    {
+      "login": "chiinita",
+      "name": "Qin",
+      "avatar_url": "https://avatars.githubusercontent.com/u/17188345?v=4",
+      "profile": "https://github.com/chiinita",
+      "contributions": [
+        "code",
+        "review"
+      ]
     }
   ],
   "contributorsPerLine": 6,
