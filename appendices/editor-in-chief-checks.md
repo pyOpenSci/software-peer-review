@@ -23,7 +23,7 @@ below.
   - [ ] **License** The package has an [OSI approved license](https://opensource.org/licenses).
 NOTE: We prefer that you have development instructions in your documentation too.
 - [ ] **Issue Submission Documentation** All of the information is filled out in the `YAML` header of the issue (located at the top of the issue template).
-- [ ] **Automated tests** Package has a testing suite and is tested via GitHub actions or another Continuous Integration service.
+- [ ] **Automated tests** Package has a testing suite and is tested via a Continuous Integration service.
 - [ ] **Repository** The repository link resolves correctly.
 - [ ] **Package overlap** The package doesn't entirely overlap with the functionality of other packages that have already been submitted to pyOpenSci.
 - [ ] **Archive** (JOSS only, may be post-review): The repository DOI resolves correctly.
