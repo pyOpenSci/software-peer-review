@@ -78,7 +78,7 @@ html_theme_options = {
     "use_edit_page_button": True,
     "show_toc_level": 1,
     "navbar_align": "left",  # [left, content, right] For testing that the navbar items align properly
-    "github_url": "https://github.com/pyopensci/governance",
+    "github_url": "https://github.com/pyOpenSci/software-peer-review",
     "twitter_url": "https://twitter.com/pyopensci",
     "footer_items": ["copyright"],
 }
