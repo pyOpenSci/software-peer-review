@@ -15,7 +15,7 @@ below.
 - [ ] **Documentation** The package has sufficient online documentation to allow us to evaluate package function and scope *without installing the package*. This includes:
   - [ ] User-facing documentation that overviews how to install and start using the package.
   - [ ] Short tutorials that help a user understand how to use the package and what it can do for them.
-  - [ ] API documentation (documentation for your code's functions, classes, methods and attributes): this includes clearly written docstrings with variables defined using a standard docstring format. *We suggest using the [Numpy](https://numpydoc.readthedocs.io/en/latest/format.html#docstring-standard) docstring format*.
+  - [ ] API documentation (documentation for your code's functions, classes, methods and attributes): this includes clearly written docstrings with variables defined using a standard docstring format.
 - [ ] Core GitHub repository Files
   - [ ] **README** The package has a `README.md` file with clear explanation of what the package does, instructions on how to install it, and a link to development instructions.
   - [ ] **Contributing File** The package has a `CONTRIBUTING.md` file that details how to install and contribute to the package.
