@@ -17,23 +17,25 @@ pyOpenSci Python open peer review process.
 
 Editors generally should:
 
-* Have completed a review for *at least* 1 package for pyOpenSci.
-* Have some experience with open source software that supports the scientific
-Python community. This experience could be maintaining or contributing to packages. It also could be experience related to usability of open source software and/or documentation, tutorials etc. Or finally it could be involvement in the scientific Python community in some other way.
+- Have completed a review for _at least_ 1 package for pyOpenSci.
+- Have some experience with open source software that supports the scientific
+  Python community. This experience could be maintaining or contributing to packages. It also could be experience related to usability of open source software and/or documentation, tutorials etc. Or finally it could be involvement in the scientific Python community in some other way.
 
 ## Two types of editors
+
 There are two types of editors involved in our open peer review process:
 
-* Guest editors and
-* Full editors
+- Guest editors and
+- Full editors
 
 Both types of editors are considered a part of the editorial board for
 pyOpenSci. The major difference between guest and full editors is:
 
-* A guest editor may only join the board for a single review.
-* A guest editor may be new to pyOpenSci's review process and thus require a bit more support in their first review.
+- A guest editor may only join the board for a single review.
+- A guest editor may be new to pyOpenSci's review process and thus require a bit more support in their first review.
 
 ### Guest editors
+
 A guest editor is is invited to lead a review in the
 case where we need specific expertise for a single review. We also consider editors who are
 performing their first review as guest editors as they may require more
@@ -48,9 +50,9 @@ healthy fit for them and the organization.
 A full editor is most often someone who has experience with the
 pyOpenSci open package review process. A full editor ideally:
 
-* has completed a review for *at least* 1 package for pyOpenSci
-* and/or has submitted and gone through the pyOpenSci package review process
-* and/or has experience reviewing for an organization such as JOSS or rOpenSci.
+- has completed a review for _at least_ 1 package for pyOpenSci
+- and/or has submitted and gone through the pyOpenSci package review process
+- and/or has experience reviewing for an organization such as JOSS or rOpenSci.
 
 We also appreciate when editors have experience working with or in the
 Python open source software community be it maintaining packages, contributing to
@@ -63,21 +65,23 @@ There could be certain situations when an editor is on boarded with less experie
 ```
 
 ## What does an editor do? (Responsibilities)
+
 An editor is normally recruited by the Editor in Chief, other editors on the
 board, or the software review lead. [More on recruiting editors can be found here](onboarding-guide.md).
 
 An editor is responsible for:
 
-* Leading the review process for 3-4 packages a year
-* Weighing in on group editorial decisions such as whether a package is in-scope, and making updates to the pyOpenSci policies.
+- Leading the review process for 3-4 packages a year
+- Weighing in on group editorial decisions such as whether a package is in-scope, and making updates to the pyOpenSci policies.
 
- ```{note}
+```{note}
 Decisions surrounding policy, updates to peer review guides and decisions
 on package review are generally made in the private `editorial-board` channel in the pyOpenSci Slack organization. Please make sure that you
 are comfortable with checking Slack regularly.
 ```
 
 ## Editor support of other reviews
+
 Editors are not charged with tracking other submissions that they are
 not leading. However, if you are serving as an editor and notice an
 issue with another review, please raise that issue either directly with
@@ -85,6 +89,7 @@ the editor for that review. Or you can raise the issue in the editors
 channel in slack.
 
 ## Editor-in-Chief rotation
+
 The editorial board normally participates in the Editor in Chief rotation.
 You are eligible to enter this rotation after 3 months of serving on the editorial board
 and/or after your first review as it makes sense. [Read more about the roles
@@ -116,14 +121,15 @@ All reviews happen in GitHub issues. The template for the
 referenced multiple times in the steps below:
 
 ```{include} ../appendices/issue-review-template.md
+
 ```
 
 ### ✔️ 1. First, tag the submission issue on GitHub
 
 Once you begin the review process as an editor:
 
-* Tag the submitted GitHub issue with the `1/editor-checks` tag if it hasn't already been tagged by the editor-in-chief.
-* Check the YAML template at top of the submitted GitHub issue, make sure that mandatory parts of the template are filled out.
+- Tag the submitted GitHub issue with the `1/editor-checks` tag if it hasn't already been tagged by the editor-in-chief.
+- Check the YAML template at top of the submitted GitHub issue, make sure that mandatory parts of the template are filled out.
   - If elements are incomplete, direct the authors toward filling in any missing pieces.
 
 ```markdown
@@ -131,8 +137,8 @@ Submitting Author: SUBMITTING AUTHOR NAME HERE (Name @github_handle)
 All current maintainers: ALL CURRENT MAINTAINERS LISTED HERE (Name @github_handle1, Name @github_handle2)
 Package Name: PACKAGE-NAME-HERE
 One-Line Description of Package: DESCRIPTION OF THE PACKAGE HERE
-Repository Link:  REPO-LINK
-Version submitted:  VERSION-SUBMITTED
+Repository Link: REPO-LINK
+Version submitted: VERSION-SUBMITTED
 ```
 
 ```{admonition} Editor in Chief checks for structure & scope should be completed first
@@ -153,16 +159,17 @@ about how to respond.
 ```
 
 ### ✔️ 2. Respond to the submitter in the GitHub issue
+
 Once the above is complete, you are ready to add an editor response to the issue.
 This step ensures that the package is ready to be reviewed. It also ensures that
 we are using our volunteer reviewer time effectively.
 
-* Add a comment to the issue that contains an **exact** copy of the Editor Response template (see below) filled out with your response to the checks that begin the review.
-* Change the label of the issue to `2/seeking-reviewer(s)`
+- Add a comment to the issue that contains an **exact** copy of the Editor Response template (see below) filled out with your response to the checks that begin the review.
+- Change the label of the issue to `2/seeking-reviewer(s)`
 
 ```{include} ../appendices/editor-initial-response-template.md
-```
 
+```
 
 ```{important}
 **Important: If in the initial checks you find any major gaps in the package's
@@ -189,6 +196,7 @@ in the team supporting package review. [Specifically both reviewers should have 
 If you wish, you can use the email template below to invite reviewers.
 
 ```{include} ../appendices/reviewer-request-template.md
+
 ```
 
 When inviting reviewers, include something like "if I don't hear from
@@ -196,11 +204,12 @@ you in a week, I'll assume you are unable to review," so as to give a clear
 deadline when you'll move on to looking for someone else to keep the processing
 moving.
 
-* Once you have assigned reviewers to the review, you will update the editor response above with:
+- Once you have assigned reviewers to the review, you will update the editor response above with:
 
-1) reviewer GitHub handles and
-2) the review deadline date.
-* Change the label on the issue to `3/reviewer(s)-assigned`
+1. reviewer GitHub handles and
+2. the review deadline date.
+
+- Change the label on the issue to `3/reviewer(s)-assigned`
 
 ```{note}
 [Click here for more information about finding reviewers for a package.](finding-reviewers)
@@ -214,9 +223,9 @@ Make sure to ask the reviewers for their preferred means of contact, or a reliab
 
 Once reviewers have been identified:
 
-* Tag issue with `3/reviewer(s)-assigned` tag.
-* Add reviewer names and review due date to the Editor Comment that you left above in step 2.
-* Also add the reviewer names to the YAML template at the very top of the issue.
+- Tag issue with `3/reviewer(s)-assigned` tag.
+- Add reviewer names and review due date to the Editor Comment that you left above in step 2.
+- Also add the reviewer names to the YAML template at the very top of the issue.
 
 ```markdown
 Editor: Full Name (@github_username)
@@ -237,14 +246,14 @@ ensure that things are moving smoothly:
 
 ### ✔️ 5. What to do when reviews are in
 
-* Once all reviews are submitted, change the review status tag to `4/review-in-awaiting-changes`.
+- Once all reviews are submitted, change the review status tag to `4/review-in-awaiting-changes`.
 
-If the author stops responding, refer to [the policies](/our-process/policies) and/or ping the other editors in the Slack channel <*Not available publicly yet*> for discussion.
+If the author stops responding, refer to [the policies](/our-process/policies) and/or ping the other editors in the Slack channel <_Not available publicly yet_> for discussion.
 
 Once the author has responded to the reviews and made appropriate changes made changes:
 
-* Briefly check to ensure that the changes were indeed made.
-* Change the issue status tag to `5/awaiting-reviewer-response`.
+- Briefly check to ensure that the changes were indeed made.
+- Change the issue status tag to `5/awaiting-reviewer-response`.
 
 ```{important}
 If for some reason during the process you need to halt the review and close the issue, be sure to let all parties know (maintainer and reviewers) prior to closing the issue.
@@ -269,8 +278,8 @@ After one year the issue will be closed if there is no movement towards respondi
 
 If the author simply not responding, the editor should:
 
-* Tag the author (`@author-github-handle`) in an issue comment notifying them that we will close the issue in one month if there is no response.
-* Close the issue if one month has passed without a reply.
+- Tag the author (`@author-github-handle`) in an issue comment notifying them that we will close the issue in one month if there is no response.
+- Close the issue if one month has passed without a reply.
 
 If needed you can also chose to email the author. using the email provided in the package metadata file of the package. The email
 could be in any of the three files in the package: `setup.py`, `pyproject.toml` (preferred) or `setup.cfg`.
@@ -289,16 +298,18 @@ energy spent in the first review, goes to waste.
 
 Once the package has been accepted through the review process:
 
-* Use the approval template below in the issue. This template
-asks the authors and reviewers to add themselves and the package that was
-approved to the pyOpenSci website. They can perform this step regardless of the
-JOSS submission process.
+- Use the approval template below in the issue. This template
+  asks the authors and reviewers to add themselves and the package that was
+  approved to the pyOpenSci website. They can perform this step regardless of the
+  JOSS submission process.
 
 ```{include} ../appendices/package-approval-template.md
+
 ```
 
-* Change the status tag of the issue to `6/pyOS-approved6 🚀🚀🚀`.
-* Update the YAML at the top of the issue with the version of the package that was approved, Zenodo DOI for the approved version and the date approved.
+- Don't forget to change the status tag of the issue to `6/pyOS-approved` 🚀🚀🚀`.
+- If the package moves on to JOSS - be sure to continue to update the labels to track the JOSS review process (but do NOT remove the `6/pyOS-approved` label).
+- Update the YAML at the top of the issue with the version of the package that was approved, Zenodo DOI for the approved version and the date approved.
 
 ```markdown
 Archive: UPDATE-THIS-WITH-A-ZENODO-ARCHIVE-BADGE-TBD
@@ -307,32 +318,31 @@ Date accepted (month/day/year): UPDATE-THIS-TBD
 ```
 
 ```{note}
-* `Archive` refers to an archive created through a release. You can use zenodo to create this archive and provide the package with a citable DOI. If zenodo is used, please add the zenodo link and/or badge link here.
+* `Archive` refers to an archive created through a release. You can use zenodo to create this archive and provide the package with a citable DOI. If zenodo is used, please add the Zenodo link and/or badge link here.
 
 * `Version` refers to the final package version that was accepted by pyOpenSci.
 This is the final version as presented after all feedback from the r
 reviews has been considered and implemented
 ```
 
-
 ## Closing notes about the editorial process
-* If the package raises a new issue for pyOpenSci policy, create an issue on [pyOpenSci's governance repo](https://github.com/pyOpenSci/governance).
-* If the package review raises a new issue in our peer review process, please [open an issue in our peer review guide repo.](https://github.com/pyOpenSci/peer-review-guide).
 
+- If the package raises a new issue for pyOpenSci policy, create an issue on [pyOpenSci's governance repo](https://github.com/pyOpenSci/governance).
+- If the package review raises a new issue in our peer review process, please [open an issue in our peer review guide repo.](https://github.com/pyOpenSci/peer-review-guide).
 
-## ✔️ OPTIONAL:  Instructions for Submitting to JOSS
+## ✔️ OPTIONAL: Instructions for Submitting to JOSS
+
 If the package fits within the JOSS Scope, once the package has been approved
 by pyOpenSci:
 
-* Tag the issue `7/under-joss-review`.
-* Instruct the author to <a href="https://joss.readthedocs.io/en/latest/submitting.html#what-should-my-paper-contain" target="_blank">read the `paper.md` file requirements</a> for JOSS and ensure that paper is added to the repo.
-* Direct the package author to [follow the instructions to submit the package to JOSS](https://joss.readthedocs.io/en/latest/submitting.html).
+- Tag the issue `7/under-joss-review`.
+- Instruct the author to <a href="https://joss.readthedocs.io/en/latest/submitting.html#what-should-my-paper-contain" target="_blank">read the `paper.md` file requirements</a> for JOSS and ensure that paper is added to the repo.
+- Direct the package author to [follow the instructions to submit the package to JOSS](https://joss.readthedocs.io/en/latest/submitting.html).
 
 These instructions loosely include:
 
 1. Login to the JOSS website and fill out the JOSS submission form. When you fill out the form, be sure to mention and link to the approved pyOpenSci review.
 2. Wait for a JOSS editor to approve the presubmission (which includes a scope check).
-
 
 ```{important}
 The scope of packages accepted by pyOpenSci is sometimes different from those
@@ -347,18 +357,20 @@ the author will be instructed to add the JOSS DOI badge to their package **READM
 
 Once the package is accepted by JOSS and the DOI badge resolves properly:
 
-* Tag the issue with `9/joss-approved`.
+- Tag the issue with `9/joss-approved`. (please do NOT remove the pyos approved label - simple add the joss approved label)
 
 ## Last Steps Before Closing the Review Issue
+
 Once the review is complete, you can close the issue. Before doing that:
 
-* Be sure that the issue is correctly tagged with `6/pyOS-approved` (and `9/joss-approved` if authors decided to submit to JOSS and were accepted).
-* Check the pyOpenSci website to ensure:
-    * The package was properly added to the [pyOpenSci website](https://www.pyopensci.org/python-packages/).
-    * Reviewers and maintainers are listed on the [contributors page](https://www.pyopensci.org/our-community/).
-    * Make sure the YAML at the top of the issue is fully filled out and up to date.
+- Be sure that the issue is correctly tagged with `6/pyOS-approved` (and `9/joss-approved` if authors decided to submit to JOSS and were accepted).
+- Check the pyOpenSci website to ensure:
 
-* If the package is approved by JOSS, be sure that the issue is tagged with `7/JOSS-approved` and that the archive / DOI information at the top is updated with the JOSS archive before closing the issue.
+  - The package was properly added to the [pyOpenSci website](https://www.pyopensci.org/python-packages/).
+  - Reviewers and maintainers are listed on the [contributors page](https://www.pyopensci.org/our-community/).
+  - Make sure the YAML at the top of the issue is fully filled out and up to date.
+
+- If the package is approved by JOSS, be sure that the issue is tagged with `7/JOSS-approved` and that the archive / DOI information at the top is updated with the JOSS archive before closing the issue.
 
 Congratulations, you have completed a review for pyOpenSci!
 
@@ -366,7 +378,6 @@ Congratulations, you have completed a review for pyOpenSci!
 
 rOpenSci packages often live in the rOpenSci organization. PyOpenSci is still
 figuring out whether this model fits the Python community.  -->
-
 
 <!-- If an author is
 interested in this option, consider doing the following:
@@ -383,7 +394,6 @@ interested in this option, consider doing the following:
         -  For AppVeyor, tell the author to update the GitHub link in their badge, but do not transfer the project: AppVeyor projects should remain under the authors' account. The badge is `[![AppVeyor Build Status](https://ci.appveyor.com/api/projects/status/github/pyOpenSci/pkgname?branch=main&svg=true)](https://ci.appveyor.com/project/individualaccount/pkgname)`.
         -  For Codecov, the webhook may need to be reset by the author.
 -   Add a "peer-reviewed" topic to the repository. -->
-
 
 <!-- ## TODO WHERE DOES THIS FIT? General Review guidelines
 
