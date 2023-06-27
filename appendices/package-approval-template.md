@@ -17,7 +17,7 @@ There are a few things left to do to wrap up this submission:
 <IF JOSS SUBMISSION>
 It looks like you would like to submit this package to JOSS. Here are the next steps:
 
-- [ ] <Editor Task> Once the JOSS issue is opened for the package, we strongly suggest that you subscribe to issue updates. This will allow you to continue to update the issue labels on this review as it goes through the JOSS process. 
+- [ ] <Editor Task> Once the JOSS issue is opened for the package, we strongly suggest that you subscribe to issue updates. This will allow you to continue to update the issue labels on this review as it goes through the JOSS process.
 - [ ] Login to the JOSS website and fill out the JOSS submission form using your Zenodo DOI. **When you fill out the form, be sure to mention and link to the approved pyOpenSci review.** JOSS will tag your package for expedited review if it is already pyOpenSci approved.
 - [ ] Wait for a JOSS editor to approve the presubmission (which includes a scope check).
 - [ ] Once the package is approved by JOSS, you will be given instructions by JOSS about updating the citation information in your README file.
