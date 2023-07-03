@@ -9,9 +9,9 @@ for pyOpenSci! <Add any additional banter here that you wish..>
 
 
 ### Please fill out our pre-review survey
-Before beginning your review, please fill out our [pre-review survey](https://forms.gle/F9mou7S3jhe8DMJ16). This helps us improve all aspects of our review and better understand our community. No personal data will be shared from this survey - it will only be used in an aggregated format by our Executive Director to improve our processes and programs. 
-- [ ] reviewer 1 survey completed. 
-- [ ] reviewer 2 survey completed. 
+Before beginning your review, please fill out our [pre-review survey](https://forms.gle/F9mou7S3jhe8DMJ16). This helps us improve all aspects of our review and better understand our community. No personal data will be shared from this survey - it will only be used in an aggregated format by our Executive Director to improve our processes and programs.
+- [ ] reviewer 1 survey completed.
+- [ ] reviewer 2 survey completed.
 - [ ] reviewer 3 (if applicable)
 
 
