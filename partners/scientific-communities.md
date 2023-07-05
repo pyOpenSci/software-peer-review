@@ -8,6 +8,7 @@
 
 About Our Partnerships <self>
 JOSS <joss>
+Astropy <astropy>
 Pangeo <pangeo>
 :::
 
