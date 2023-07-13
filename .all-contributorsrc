@@ -276,6 +276,16 @@
         "code",
         "review"
       ]
+    },
+    {
+      "login": "pllim",
+      "name": "P. L. Lim",
+      "avatar_url": "https://avatars.githubusercontent.com/u/2090236?v=4",
+      "profile": "https://www.linkedin.com/in/pllim/",
+      "contributions": [
+        "code",
+        "review"
+      ]
     }
   ],
   "contributorsPerLine": 6,
