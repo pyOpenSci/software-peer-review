@@ -1,6 +1,6 @@
 # <img src="images/logo/logo.png" width=40 /> pyOpenSci Peer Review Guide
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-27-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-28-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 ![GitHub release (latest by date)](https://img.shields.io/github/v/release/pyopensci/peer-review-guide?color=purple&display_name=tag&style=plastic)
@@ -125,6 +125,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
       <td align="center" valign="top" width="16.66%"><a href="https://github.com/chiinita"><img src="https://avatars.githubusercontent.com/u/17188345?v=4?s=100" width="100px;" alt="Qin"/><br /><sub><b>Qin</b></sub></a><br /><a href="https://github.com/pyOpenSci/software-peer-review/commits?author=chiinita" title="Code">💻</a> <a href="https://github.com/pyOpenSci/software-peer-review/pulls?q=is%3Apr+reviewed-by%3Achiinita" title="Reviewed Pull Requests">👀</a></td>
       <td align="center" valign="top" width="16.66%"><a href="https://www.davidstansby.com"><img src="https://avatars.githubusercontent.com/u/6197628?v=4?s=100" width="100px;" alt="David Stansby"/><br /><sub><b>David Stansby</b></sub></a><br /><a href="https://github.com/pyOpenSci/software-peer-review/commits?author=dstansby" title="Code">💻</a> <a href="https://github.com/pyOpenSci/software-peer-review/pulls?q=is%3Apr+reviewed-by%3Adstansby" title="Reviewed Pull Requests">👀</a></td>
       <td align="center" valign="top" width="16.66%"><a href="https://www.linkedin.com/in/pllim/"><img src="https://avatars.githubusercontent.com/u/2090236?v=4?s=100" width="100px;" alt="P. L. Lim"/><br /><sub><b>P. L. Lim</b></sub></a><br /><a href="https://github.com/pyOpenSci/software-peer-review/commits?author=pllim" title="Code">💻</a> <a href="https://github.com/pyOpenSci/software-peer-review/pulls?q=is%3Apr+reviewed-by%3Apllim" title="Reviewed Pull Requests">👀</a></td>
+      <td align="center" valign="top" width="16.66%"><a href="https://orcid.org/0000-0001-6628-8033"><img src="https://avatars.githubusercontent.com/u/8931994?v=4?s=100" width="100px;" alt="Nick Murphy"/><br /><sub><b>Nick Murphy</b></sub></a><br /><a href="https://github.com/pyOpenSci/software-peer-review/commits?author=namurphy" title="Code">💻</a> <a href="https://github.com/pyOpenSci/software-peer-review/pulls?q=is%3Apr+reviewed-by%3Anamurphy" title="Reviewed Pull Requests">👀</a></td>
     </tr>
   </tbody>
 </table>
