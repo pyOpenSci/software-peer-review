@@ -110,7 +110,7 @@ diverse and welcoming community will support maintainers as they maintain their 
 receive academic credit for their work.
 
 ```{note}
-[This blog post](https://www.numfocus.org/blog/how-ropensci-uses-code-review-to-promote-reproducible-science/) written by editors from our partner organization, rOpenSci, is a good introduction to the pyOpenSci software peer review.
+[This blog post](https://www.numfocus.org/blog/how-ropensci-uses-code-review-to-promote-reproducible-science/) written by editors from our partner organization, rOpenSci, is a good introduction to the pyOpenSci software peer review process.
 ```
 
 ### How do I know that a Python package has been reviewed by pyOpenSci?
