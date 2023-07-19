@@ -527,15 +527,15 @@ document.write(`
 <p>Python is a flexible programming language that is used across numerous
 disciplines and domains. Python is so flexible that it is
 one of the few languages that can be used to wrap around other languages.</p>
-<p>If you are building a pure Python package, your setup can be simple.
+<p>If you are building a pure Python package, your setup may be simple.
 However, some scientific packages have complex
 requirements as they may need to support extensions or tools written
 in other languages such as C or C++.</p>
-<p>To support the many uses of Python, there are many ways
+<p>To support the myriad uses of Python, there are many ways
 to create a Python package.</p>
 <div class="info admonition">
 <p class="admonition-title">Python supports extensions written in other languages</p>
-<p>The spatial data too stack is a common example of tools that
+<p>The spatial data tool stack is a common example of tools that
 often have complex packaging requirements given they often need to use
 tools like GDAL to support spatial operations.</p>
 </div>
@@ -543,25 +543,25 @@ tools like GDAL to support spatial operations.</p>
 <h2>What makes Python unique and valuable can also make packaging complex<a class="headerlink" href="#what-makes-python-unique-and-valuable-can-also-make-packaging-complex" title="Permalink to this heading">#</a></h2>
 <p>The diversity of packaging options can be confusing, particularly
 if you are new to Python. However, we are working on a <a class="reference external" href="https://www.pyopensci.org/python-package-guide">Python packaging guide</a>
-that will make the packaging landscape easier to navigate.</p>
+that will make the packaging landscape far easier to navigate.</p>
 </section>
 <section id="working-towards-standardized-packaging-practices-in-the-scientific-python-community">
 <h2>Working towards standardized packaging practices in the Scientific Python community<a class="headerlink" href="#working-towards-standardized-packaging-practices-in-the-scientific-python-community" title="Permalink to this heading">#</a></h2>
 <p>While there is no single solution to the diverse needs of developers in the
 Python scientific community, pyOpenSci strives to encourage a standard approach
-to packaging through it’s tutorials, documentation and guides and peer review process. We do this by:</p>
+to packaging through tutorials, documentation and guides as well as its peer review process. We do this by:</p>
 <ol class="arabic simple">
 <li><p>Following and encouraging best practices for Python packaging that follow modern Python Enhancement Protocols (PEPs). PEPs are standards written for the broader Python community to follow.</p></li>
 <li><p>Reinforcing best practices accepted by the scientific community. This community most often develops packages that are not pure Python. Thus, the scientific community has additional layers of complexity in their tool builds that we need to consider.</p></li>
 <li><p>Enforcing documentation best practices in our reviews that support both usability and accessibility. Great documentation is critical for a package to gain more users from varying backgrounds.</p></li>
 </ol>
-<p>As such pyOpenSci embraces community driven standards created by organizations
+<p>As such, pyOpenSci embraces community driven standards created by organizations
 such as <a class="reference external" href="https://scientific-python.org/">Scientific Python</a>.</p>
-<p>We also strive to help maintainers use similar infrastructure for
+<p>We also endeavor to help maintainers use a similar infrastructure for
 their packages. In the long term, consistent infrastructure
 and packaging approaches will:</p>
 <ul class="simple">
-<li><p>Make it easier for those who are new to packaging to get started (and in turn push open science forward)</p></li>
+<li><p>Make it easier for those who are new to packaging to get started (and in turn push open science forward),</p></li>
 <li><p>Make it easier for new contributors to participate given similar infrastructure setup across the ecosystem.</p></li>
 </ul>
 <p>As it makes sense, we recommend (but do not require) packaging
@@ -570,7 +570,7 @@ ecosystem.</p>
 </section>
 <section id="specific-pyopensci-goals">
 <h2>Specific pyOpenSci goals<a class="headerlink" href="#specific-pyopensci-goals" title="Permalink to this heading">#</a></h2>
-<p>In addition to the broader goals laid out above, below are our specific goals for open peer review of Python packages.</p>
+<p>In addition to the broader goals laid out above, our specific goals for open peer review of Python packages are as follows.</p>
 <section id="a-catalog-of-vetted-maintained-tools">
 <h3>1. A catalog of vetted, maintained tools<a class="headerlink" href="#a-catalog-of-vetted-maintained-tools" title="Permalink to this heading">#</a></h3>
 <p>We hope that scientists will look to <a class="reference external" href="https://www.pyopensci.org/python-packages.html">our online catalog of
@@ -578,7 +578,7 @@ maintained and vetted tools</a> to help them find tools that they can
 depend on. Over time as our catalog grows, this will reduce the
 need for searching and sorting through the many packages in various
 states of maintenance on PyPI.</p>
-<p>Through our peer review, we also help maintainer get the word out
+<p>Through our peer review, we also help maintainer with outreach
 about their packages through our website, blog and social media
 presence. Currently, the most popular content on our website are
 the <a class="reference external" href="https://www.pyopensci.org/blog/movingpandas-movement-data-analysis">blogs that maintainers have written about their tools</a>.</p>
@@ -589,32 +589,32 @@ the <a class="reference external" href="https://www.pyopensci.org/blog/movingpan
 During our reviews, we look carefully at:</p>
 <ul class="simple">
 <li><p>documentation,</p></li>
-<li><p>quick start tutorials and code examples to help users get started</p></li>
+<li><p>quick start tutorials and code examples to help users get started,</p></li>
 <li><p>and code documentation (docstrings)</p></li>
 </ul>
-<p>To ensure that the package is user friendly. If you need help with documentation,
-We also have an entire section of our packaging guide devoted to documentation.</p>
+<p>to ensure that the package is user friendly. If you need help with documentation,
+we also have an entire section of our packaging guide devoted to documentation.</p>
 </section>
 <section id="reduce-the-number-of-packages-with-overlapping-functionality">
 <h3>3. Reduce the number of packages with overlapping functionality<a class="headerlink" href="#reduce-the-number-of-packages-with-overlapping-functionality" title="Permalink to this heading">#</a></h3>
-<p>It’s easy to find multiple packages on <code class="docutils literal notranslate"><span class="pre">PyPI</span></code> that perform that same tasks
-(or overlapping tasks). When you submit a package to us, we ask that you know
-about other packages in our system that may do similar things. This check will
+<p>It is easy to find multiple packages on <code class="docutils literal notranslate"><span class="pre">PyPI</span></code> that perform that same tasks
+(or overlapping tasks). When you submit a package to us, we ask that you cross reference
+other packages in our system that may perform similar purposes. This check will
 help us connect maintainers who are working towards similar functionality goals.
 It will also help us in the long term reduce the number of overlapping packages,
 in various states of maintenance on <code class="docutils literal notranslate"><span class="pre">PyPI</span></code>.</p>
-<p>In some cases just added information to your <strong>README.md</strong> about how your
-package varies from others in the ecosystem is valuable to users.</p>
+<p>In some cases just adding information to your <strong>README.md</strong> about how your
+package varies from others in the ecosystem is extremely valuable to users.</p>
 <ul class="simple">
 <li><p><a class="reference internal" href="package-scope.html#package-overlap"><span class="std std-ref">See our discussion of package overlap for more</span></a></p></li>
 </ul>
 </section>
 <section id="support-long-term-maintenance-of-vetted-tools">
 <h3>4. Support long term maintenance of vetted tools<a class="headerlink" href="#support-long-term-maintenance-of-vetted-tools" title="Permalink to this heading">#</a></h3>
-<p>Most maintainers are not paid for their work and thus work on tools
+<p>Most maintainers are not renumerated for their efforts and thus work on tools
 in their free time. So what happens when a maintainer of a commonly used tool wants
-to step down? We help maintainers find someone new to take over the reigns.
-If that doesn’t make sense we will help the maintainer gracefully sunset the
+to step down? We help maintainers identify someone new to take over the reigns.
+If that doesn’t make sense, we will help the maintainer gracefully sunset the
 package.</p>
 <p>One key element in this process is a clear development guide that outlines
 the tools and workflows that you are using to build and maintain your package.</p>
@@ -622,17 +622,17 @@ the tools and workflows that you are using to build and maintain your package.</
 <section id="support-implementation-of-standards-and-best-practices">
 <h3>5. Support implementation of standards and best practices<a class="headerlink" href="#support-implementation-of-standards-and-best-practices" title="Permalink to this heading">#</a></h3>
 <p>Where possible we encourage and help maintainers to update and
-enhance their package infrastructure. Examples of this are moving
+enhance their package infrastructure. Examples of this include moving
 package metadata from the <code class="docutils literal notranslate"><span class="pre">setup.py</span></code> file and into the modern
 <a class="reference external" href="https://snarky.ca/what-the-heck-is-pyproject-toml/"><code class="docutils literal notranslate"><span class="pre">pyproject.toml</span></code> standard format</a>.</p>
 </section>
 <section id="build-a-community-support-system-for-maintainers">
 <h3>6. Build a community support system for maintainers<a class="headerlink" href="#build-a-community-support-system-for-maintainers" title="Permalink to this heading">#</a></h3>
 <p>Many packages that are commonly used by scientists are being maintained by a single person. As devoted as this single maintainer
-may be, it’s always easier to work when you have community support.</p>
+may be, it is always easier to work when you have community support.</p>
 <p>Our online community both on <a class="reference external" href="https://pyopensci.discourse.group/">discourse</a> and more privately on slack, is available for maintainers to interact with each other, ask questions and get support. Core to our
 mission is building a welcoming and diverse community for people
-of both varying technical background and skills and varying cultural background to belong to.</p>
+of both differing technical background and skill as well as varying cultural background.</p>
 </section>
 </section>
 </section>
