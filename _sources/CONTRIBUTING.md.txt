@@ -12,7 +12,7 @@ This is a community resource. We welcome contributions in the form of issues and
 
 ## How this guide is structured
 
-This guide is bubilt using **Sphinx**, a documentation engine built in `Python` and the pydata_sphinx_theme. We use `myST` syntax to create each page in this book.
+This guide is built using **Sphinx**, a documentation engine built in `Python` and the pydata_sphinx_theme. We use `myST` syntax to create each page in this book.
 
 If you wish to contribute by working on the guide book locally, you
 will first need to
