@@ -178,7 +178,7 @@ Once your package is approved, a few things will happen:
 1. We will ask you to ensure that your package is being tracked / archived using
 Zenodo. You will then want to created a tagged release representing the version of the
 package accepted by pyOpenSci.
-   * We will ask you to add the pyOpenSci badge [![pyOpenSci](https://tinyurl.com/y22nb8up)](https://github.com/pyOpenSci/software-review/issues/issue-number) to the
+1. We will ask you to add the pyOpenSci badge [![pyOpenSci](https://tinyurl.com/y22nb8up)](https://github.com/pyOpenSci/software-review/issues/issue-number) to the
 top of your **README.md** file.
 1. We will ask you to add your package to the [pyOpenSci website](https://www.pyopensci.org/our-community/). This will give
 your package more visibility in the community as a vetted pyOpenSci tool.
