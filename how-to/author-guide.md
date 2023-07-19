@@ -7,7 +7,7 @@
 Author Guide <self>
 Reviewer Guide <reviewer-guide>
 Editor Guide <editors-guide>
-Editor in Chief Guide <editor-in-chief-guide>
+Editor-in-Chief Guide <editor-in-chief-guide>
 
 ```
 
@@ -30,7 +30,7 @@ Before you begin this process, [please be sure to read the review process guidel
 **Before you consider submitting to us please consider the following:**
 
 1. Please be sure that you have time to devote to making changes to your
-package. During review, you would get feedback from an editor and two reviewers. Changes could
+package. During review, you will receive feedback from an editor and two reviewers. Changes could
 take time. Please consider this before submitting to us. You can read more about the timeline to make changes in our [peer review policies page](../our-process/policies).
 2. Peer review is lead by a diverse group of volunteer editors and reviewers.
 Please be considerate when engaging with everyone online.
@@ -58,7 +58,7 @@ that the submitting author is the person who "owns" or leads that maintenance.
 That person will become the long term point of contact
 for pyOpenSci.
 * Please also include the names of all maintainers on the project
-as we also want to ensure that everyone working on the project gets full credit
+as we also want to ensure that everyone working on the project receives full credit
 for their effort.
 
 
@@ -75,7 +75,7 @@ publication quality and citation / credit.
 ```
 
 ## 2. Does Your Package Meet Packaging Requirements?
-Before submitting your project for review with pyOpenSci, make sure that you
+Before submitting your project for review with pyOpenSci, make sure that
 your package meets all of the requirements listed in the editor checks (see below).
 We use these checks as a baseline for all submissions and pre-submissions to
 pyOpenSci.
@@ -101,7 +101,7 @@ by the end of Spring 2023.
 ```{hint}
 **Do you have questions about Python packaging or our peer review process?**
 
-[Post your question(s) in our Discourse forum under `coding-help`](https://pyopensci.discourse.group/c/coding-help/10). We will do our best help you with questions
+[Post your question(s) in our Discourse forum under `coding-help`](https://pyopensci.discourse.group/c/coding-help/10). We will do our best to help you with questions
 surrounding:
 
 * Package structure
@@ -118,11 +118,10 @@ Python package.
 ```
 
 ## 3. Is Your Package in Scope for pyOpenSci?
-Next, check to see if your package falls into the topical and technical scope of pyOpenSci. If you aren't
+Next, check to see if your package falls within the topical and technical scope of pyOpenSci. If you aren't
 sure about whether your package fits within pyOpenSci's scope (below), submit
 a [presubmission inquiry issue on the software-review](https://github.com/pyOpenSci/software-review/issues/new?assignees=&labels=0%2Fpresubmission&template=presubmission-inquiry.md&title=)
-repository. After you submit an inquiry, a pyOpenSci editor will get back to you
-with input regarding the fit of your package for pyOpenSci review. This can take
+repository. After you submit an inquiry, a pyOpenSci editor will provide feedback regarding the fit of your package for pyOpenSci review. This can take
 up to a week.
 
 Our current categories for determining package scope are below:
@@ -138,10 +137,10 @@ To submit your package for peer review, you can
 open an issue in our [pyopensci/software-review repo](https://github.com/pyOpenSci/software-review/issues/new/choose/)
 repository and fill out the [Submit Software for Review](https://github.com/pyOpenSci/software-review/issues/new?assignees=&labels=1%2Feditor-checks%2C+New+Submission%21&template=submit-software-for-review.md&title=) issue template.
 
-## 5. Editor in Chief Reviews Package for Scope and Minimal Infrastructure Criteria
+## 5. Editor-in-Chief Reviews Package for Scope and Minimal Infrastructure Criteria
 Once the issue is opened, our editor-in-chief and an editor from our editorial board will review your submission within
 **2 weeks** and respond with next steps. The editor may request that you make updates
-to your package to meet minimal criteria before review. They also may reject your
+to your package to meet minimal criteria before review. They may also reject your
 package if it does not fall within our scope.
 
 ```{button-link} ../how-to/editor-in-chief-guide.html#editor-checklist-template
@@ -153,8 +152,8 @@ Click here to view the editor checks that will be used to evaluate your package.
 ## 6. The Review Begins
 If your package meets minimal criteria for being
 reviewed it may then be given to an editor with appropriate domain experience
-to run the review. That editor will assign 2-3 reviewers to review your
-package. Reviewers will be asked to provide review feedback  as comments on your
+to manage the review process. That editor will assign 2-3 reviewers to review your
+package. Reviewers will be asked to provide review feedback as comments on your
 issue within **3 weeks**. Reviewers also can open issues in your package repository.
 We prefer issues that link back to the review as they document changes made to your
 package that were triggered by our review process.
@@ -163,7 +162,7 @@ package that were triggered by our review process.
 You should respond to reviewers’ comments within **2 weeks** of the
 last-submitted review. You can make updates to your package at any time. We
 encourage ongoing conversations between authors and reviewers. See the
-[guide for package reviewers](reviewer-guide.md) for more details about iewers engage with package
+[guide for package reviewers](reviewer-guide.md) for more details about reviewers engagement with package
 maintainers during a review.
 
 ## 8. Acceptance into pyOpenSci
@@ -179,7 +178,7 @@ Once your package is approved, a few things will happen:
 1. We will ask you to ensure that your package is being tracked / archived using
 Zenodo. You will then want to created a tagged release representing the version of the
 package accepted by pyOpenSci.
-2 We will ask you to add the pyOpenSci badge [![pyOpenSci](https://tinyurl.com/y22nb8up)](https://github.com/pyOpenSci/software-review/issues/issue-number) to the
+1. We will ask you to add the pyOpenSci badge [![pyOpenSci](https://tinyurl.com/y22nb8up)](https://github.com/pyOpenSci/software-review/issues/issue-number) to the
 top of your **README.md** file.
 1. We will ask you to add your package to the [pyOpenSci website](https://www.pyopensci.org/our-community/). This will give
 your package more visibility in the community as a vetted pyOpenSci tool.
@@ -227,12 +226,12 @@ If at any time, you need to step down from maintaining your package,
 or you need help with maintenance, please let us know - preferably
 in advance. We will try to help you by either:
 
-* Find a new maintainer to take over your project (or additional maintainers to support maintenance) or
-* Sunset your package.
+* Finding a new maintainer to take over your project (or additional maintainers to support maintenance) or
+* Sunsetting your package.
 
 If the package is sunsetted, we will remove it from our curated list
 of vetted tools.
 
 ### Communication with pyOpenSci and removing tools from our vetted tool list
 
-To ensure packages that we support and advocate for are maintained, if your package is accepted and we are not able to get in touch with you through normal communication channels (GitHub, email) after reaching our for at least 1-2 months, we will remove your package from our list of vetted tools. We will also remove any blogs written that highlight your tool.
+To ensure packages that we support and advocate are maintained, if your package is accepted and we are not able to get in touch with you through normal communication channels (GitHub, email) after reaching out for at least 1-2 months, we will remove your package from our list of vetted tools. We will also remove any blogs written that highlight your tool.
