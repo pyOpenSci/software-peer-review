@@ -7,10 +7,10 @@ pyOpenSci reviews higher level software packages that support scientific workflo
 
 <img src="../images/python-stack-jupyter-earth.png" alt="Image showing the tiers of software in the python ecosystem starting with Python itself and as you move out packages become more domain specific. In this image packages like xarray and numpy are considered core to scientific python. Packages and distributions like astropy, simpeg and metpy are considered to be domain specific." width="700px">
 
-Diagram showing the tiers of software in the python ecosystem starting with Python itself and as you move out packages become more domain specific. In this image packages like xarray and numpy are considered core to scientific python. Packages and distributions like astropy, simpeg and metpy are considered to be domain specific. pyOpenSci's review
+Diagram showing the tiers of software in the python ecosystem starting with Python itself and as you move out packages become more domain specific. In this image, packages such as xarray and numpy are considered core to scientific python. Packages and distributions like astropy, simpeg and metpy are considered domain specific. pyOpenSci's review
 process focuses on domain specific packages rather than core packages as
 these packages tend to have more variability in long term maintenance and
-package infrastructure and quality compared to established core packages. **Source: ["Jupyter meets earth" project](https://jupytearth.org/jupyter-resources/introduction/ecosystem.html)**
+package infrastructure and quality compared with established core packages. **Source: ["Jupyter meets earth" project](https://jupytearth.org/jupyter-resources/introduction/ecosystem.html)**
 :::
 
 
@@ -24,14 +24,14 @@ pyOpenSci reviews packages that fall within a list of specified categories and
 domains. Packages must also meet our technical scope requirements.
 
 If you are unsure whether your package is in scope for review, please
-open a [pre-submission inquiry using a GitHub Issue](https://github.com/pyOpenSci/software-review/issues/new?assignees=&labels=0%2Fpresubmission&template=presubmission-inquiry.md&title=) to get feedback from
+open a [pre-submission inquiry using a GitHub Issue](https://github.com/pyOpenSci/software-review/issues/new?assignees=&labels=0%2Fpresubmission&template=presubmission-inquiry.md&title=) to solicit feedback from
 one of our editors. We are happy to look at your package and help you understand
 whether it is in scope or not.
 
 ### About the types of packages that we review
 
 pyOpenSci reviews packages that support open reproducible science,
-data processing and and the various stages of managing the
+data processing and the various stages of managing the
 data lifecycle. Packages submitted to pyOpenSci should fit into one or
 more of the categories below and should be within our technical scope.
 
@@ -41,7 +41,7 @@ more of the categories below and should be within our technical scope.
 We review packages with the goal of improving package quality and usability for scientists.
 As such, we review packages across a spectrum of small to large user bases. The popularity of your package is not a consideration in our review process!
 
-When we evaluate whether you package is within our scope, we only consider:
+When we evaluate whether your package is within our scope, we only consider:
 
 1. how the package is developed and
 2. how the package relates to and supports the broader scientific ecosystem.
@@ -69,15 +69,15 @@ pyOpenSci. In addition to fitting into one or more of these categories, your pac
 demonstrated scientific application. This could be a use case that you can
 link to or a tutorial that demonstrates its potential application for science.
 
-Below we provide examples of packages from pyOpenSci ecosystem. Because we
-have growing community of packages, in some cases we link to R packages
+Below we provide examples of packages from pyOpenSci ecosystem. Since we
+have a growing community of packages, in some cases we will link to R packages
 within the rOpenSci community that match the category scope for reference.
 
 We will update this page as our review process evolves.
 
 ```{note}
 Many of the example packages below perform tasks that might fit in multiple
-categories. There examples are there to provide you with a flavor of the types
+categories. Examples are there to provide you with a flavor of the types
 of packages that would fall into that category.
 ```
 
@@ -102,9 +102,9 @@ scientific equipment.
 
 * Examples: [devicely](https://github.com/pyOpenSci/software-submission/issues/37), [jointly](https://github.com/pyOpenSci/software-submission/issues/45)
 
-### Data processing & munging
+### Data processing and munging
 
-Data [munging tools transform data in a way that makes further analysis possible (as [defined on Wikipedia](https://en.wikipedia.org/wiki/Data_wrangling)). Munging complements the other categories so it's common for packages to include some functionality to munge data. This
+Data munging tools transform data in a way that makes further analysis possible (as [defined on Wikipedia](https://en.wikipedia.org/wiki/Data_wrangling)). Munging complements the other categories so it is common for packages to include some functionality to munge data. This
 category focuses on tools for handling data in specific formats that scientists
 may be interested in working with. These data may also be generated from
 scientific workflows or exported from instruments and wearables.
@@ -135,12 +135,12 @@ significant added value to the scientific ecosystem be it in data handling, or
 improved installation processes for Python users.
 
 We strongly encourage submissions that wrap tools that are open-source with
-an OSI-approved license. Exceptions will be evaluated case-by-case,
-considering whether open-source options exist.
+an OSI-approved license. Exceptions will be evaluated on a case-by-case basis,
+taking into consideration whether open-source options exist.
 
 * Examples: [PyGMT](https://github.com/pyOpenSci/software-submission/issues/43)
 
-### Workflow automation & versioning
+### Workflow automation and versioning
 Tools that automate and link together workflows and as such support
 reproducible workflows. These
 tools may include build systems and tools to manage continuous integration.
@@ -154,8 +154,8 @@ Tools that facilitate managing references, such as for writing manuscripts,
 creating CVs or otherwise attributing scientific contributions, or accessing,
 manipulating or otherwise working with bibliometric data. (Example: [Example from rOpenSci - RefManageR](https://github.com/ropensci/software-review/issues/119))
 
-### Data visualization & analysis
-These are packages that enhance a scientists experience visualizing and
+### Data visualization and analysis
+These are packages that enhance a scientist's experience in visualizing and
 analyzing data.
 
 * Examples: [PyGMT - (also spatial and data munging)](https://github.com/pyOpenSci/software-submission/issues/43),
@@ -203,15 +203,15 @@ To be in technical scope for a pyOpenSci review, your package:
 
 ```{admonition} pyOpenSci's goal is to support long(er) term maintenance
 pyOpenSci has a goal of supporting long term maintenance of open source
-Python tools. It is thus important for us to know that if you need to step down as a maintainer, the package infrastructure and documentation is
-in place to support us finding a new maintainer who can take over you
+Python tools. It is thus important for us to know that if you need to step down as a maintainer, and that the package infrastructure and documentation is
+in place to support us finding a new maintainer who can take over your
 package's maintenance.
 ```
 
 ### What if my package seems like its category or domain is out of scope?
 - pyOpenSci is still developing as a community. If your scientific Python
 package does not fit into one of the categories or if you have any other
-questions, we'd encourage you to open a pre-submission inquiry. We're happy to help.
+questions, we encourage you to open a pre-submission inquiry. We're happy to help.
 - Data visualization packages come in many varieties, ranging from small
 hyper-specific methods for one type of data to general, do-it-all packages
 (e.g. matplotlib). pyOpenSci accepts packages that are somewhere in between the
@@ -223,7 +223,7 @@ open a pre-submission inquiry first.
 pyOpenSci may continue to update its criteria for technical scope
 review as more packages with varying structural approaches are reviewed.
 Your package **may not be in technical scope** for us to review at this time if
-fits any of the out-of-technical-scope criteria listed below.
+it fulfills any of the out-of-technical-scope criteria listed below.
 
 Your package is in technical scope if it is:
 * Pure Python or Python with built extensions
