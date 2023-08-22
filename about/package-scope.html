@@ -719,6 +719,23 @@ we will expand this list.</p>
 </section>
 <section id="package-technical-scope">
 <h2>Package technical scope<a class="headerlink" href="#package-technical-scope" title="Permalink to this heading">#</a></h2>
+<section id="telemetry-user-informed-consent">
+<h3>Telemetry &amp; user-informed consent<a class="headerlink" href="#telemetry-user-informed-consent" title="Permalink to this heading">#</a></h3>
+<p>Your package should not collect collecting usage analytics without first informing your users about what data are being collected and what is being done with that data. With
+that in mind, we understand that package-use data can be invaluable for the
+development process. If the package does collect such data, it should do so
+by prioritizing user-informed-consent. This means that before any data are
+collected, the user understands:</p>
+<ol class="arabic simple">
+<li><p>What data are collected</p></li>
+<li><p>How the data are collected.</p></li>
+<li><p>What you plan to do with the data</p></li>
+<li><p>How and where the data are stored</p></li>
+</ol>
+<p>Once the user is informed of what will be collected and how that data will be handled, stored and used, you can implement <code class="docutils literal notranslate"><span class="pre">opt-in</span></code> consent. <code class="docutils literal notranslate"><span class="pre">opt-in</span></code> means that the user agrees to usage-data collection prior to it being collected (rather than having to opt-out when using your package).</p>
+<p>We will evaluate usage data collected by packages on a case-by-case basis
+and reserve the right not to review a package if the data collection is overly
+invasive.</p>
 <p>To be in technical scope for a pyOpenSci review, your package:</p>
 <ul class="simple">
 <li><p>Should have maintenance workflows documented.</p></li>
@@ -732,6 +749,7 @@ Python tools. It is thus important for us to know that if you need to step down 
 in place to support us finding a new maintainer who can take over your
 package’s maintenance.</p>
 </div>
+</section>
 <section id="what-if-my-package-seems-like-its-category-or-domain-is-out-of-scope">
 <h3>What if my package seems like its category or domain is out of scope?<a class="headerlink" href="#what-if-my-package-seems-like-its-category-or-domain-is-out-of-scope" title="Permalink to this heading">#</a></h3>
 <ul class="simple">
@@ -885,6 +903,7 @@ consider submittal to other repositories or journals.</p>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#package-technical-scope">Package technical scope</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#telemetry-user-informed-consent">Telemetry &amp; user-informed consent</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#what-if-my-package-seems-like-its-category-or-domain-is-out-of-scope">What if my package seems like its category or domain is out of scope?</a></li>
 </ul>
 </li>
