@@ -198,7 +198,7 @@ Packages to aid with instruction.
 
 ### Telemetry & user-informed consent
 
-Your package should avoid collecting usage analytics. With
+Your package should not collect collecting usage analytics without first informing your users about what data are being collected and what is being done with that data. With
 that in mind, we understand that package-use data can be invaluable for the
 development process. If the package does collect such data, it should do so
 by prioritizing user-informed-consent. This means that before any data are
