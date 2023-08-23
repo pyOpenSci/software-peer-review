@@ -1,0 +1,899 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+<meta property="og:title" content="Editorial Review Triage Team" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="how-to/review-triage-team.html" />
+<meta property="og:site_name" content="pyOpenSci Software Peer Review Guide" />
+<meta property="og:description" content="The editorial board triage team focuses on ensuring review issues are complete with all metadata filled out in each GitHub review issue. Members of this team are considered a integral part of the p..." />
+<meta property="og:image:width" content="1146" />
+<meta property="og:image:height" content="600" />
+<meta property="og:image" content="/_images/social_previews/summary_how-to_review-triage-team_eda14eb9.png" />
+<meta property="og:image:alt" content="The editorial board triage team focuses on ensuring review issues are complete with all metadata filled out in each GitHub review issue. Members of this team..." />
+<meta name="description" content="The editorial board triage team focuses on ensuring review issues are complete with all metadata filled out in each GitHub review issue. Members of this team are considered a integral part of the p..." />
+<meta name="twitter:card" content="summary_large_image" />
+
+    <title>Editorial Review Triage Team &#8212; Software Peer Review Guide</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/pyos.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/sphinx_highlight.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/design-tabs.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'how-to/review-triage-team';</script>
+    <script src="../_static/matomo.js"></script>
+    <link rel="canonical" href="https://www.pyopensci.org/software-peer-review/how-to/review-triage-team.html" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Onboarding New Editors and Reviewers" href="onboarding-guide.html" />
+    <link rel="prev" title="Editor in Chief Guide" href="editor-in-chief-guide.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search the docs ..."
+         aria-label="Search the docs ..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+
+  <div class="bd-header-announcement container-fluid bd-header-announcement">
+    <div class="bd-header-announcement__content"><p><a href='https://www.github.com/pyopensci/software-submission/'>Submit Your Python Package for Peer Review!</a></p></div>
+  </div>
+
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+<div class="bd-header__inner bd-page-width">
+  <label class="sidebar-toggle primary-toggle" for="__primary">
+    <span class="fa-solid fa-bars"></span>
+  </label>
+  
+  <div class="navbar-header-items__start">
+    
+      <div class="navbar-item">
+  
+
+<a class="navbar-brand logo" href="../index.html">
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/logo-light-mode.png" class="logo__image only-light" alt="pyOpenSci Software Peer Review Guide. The pyOpenSci logo is a purple flower with pyOpenSci under it. The o in open sci is the center of the flower"/>
+    <script>document.write(`<img src="../_static/logo-dark-mode.png" class="logo__image only-dark" alt="pyOpenSci Software Peer Review Guide. The pyOpenSci logo is a purple flower with pyOpenSci under it. The o in open sci is the center of the flower"/>`);</script>
+  
+  
+    <p class="title logo__title">Peer Review Guide</p>
+  
+</a></div>
+    
+  </div>
+  
+  
+  <div class=" navbar-header-items">
+    
+    <div class="me-auto navbar-header-items__center">
+      
+        <div class="navbar-item"><nav class="navbar-nav">
+  <p class="sidebar-header-items__title"
+     role="heading"
+     aria-level="1"
+     aria-label="Site Navigation">
+    Site Navigation
+  </p>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../about/intro.html">
+                        About
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../partners/scientific-communities.html">
+                        Partnerships
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item current active">
+                      <a class="nav-link nav-internal" href="author-guide.html">
+                        Review Guides
+                      </a>
+                    </li>
+                
+
+                <li class="nav-item">
+                  <a class="nav-link nav-external" href="https://www.pyopensci.org">
+                    pyOpenSci Website
+                  </a>
+                </li>
+                
+            <div class="nav-item dropdown">
+                <button class="btn dropdown-toggle nav-item" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    More
+                </button>
+                <div class="dropdown-menu">
+                    
+                <li class="nav-item">
+                  <a class="nav-link nav-external" href="https://www.pyopensci.org/python-package-guide">
+                    Python Packaging Guide
+                  </a>
+                </li>
+                
+
+                <li class="nav-item">
+                  <a class="nav-link nav-external" href="https://pyopensci.org/governance">
+                    Governance
+                  </a>
+                </li>
+                
+                </div>
+            </div>
+            
+  </ul>
+</nav></div>
+      
+    </div>
+    
+    
+    <div class="navbar-header-items__end">
+      
+        <div class="navbar-item navbar-persistent--container">
+          
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+        </div>
+      
+      
+        <div class="navbar-item">
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script></div>
+      
+        <div class="navbar-item"><ul class="navbar-icon-links navbar-nav"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/pyOpenSci/software-peer-review" title="GitHub" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-square-github"></i></span>
+            <label class="sr-only">GitHub</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://twitter.com/pyopensci" title="Twitter" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-square-twitter"></i></span>
+            <label class="sr-only">Twitter</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://fosstodon.org/@pyOpenSci" title="Mastodon" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-mastodon"></i></span>
+            <label class="sr-only">Mastodon</label></a>
+        </li>
+</ul></div>
+      
+    </div>
+    
+  </div>
+  
+  
+    <div class="navbar-persistent--mobile">
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+    </div>
+  
+
+  
+    <label class="sidebar-toggle secondary-toggle" for="__secondary">
+      <span class="fa-solid fa-outdent"></span>
+    </label>
+  
+</div>
+
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+      <div class="sidebar-header-items__center">
+        
+          <div class="navbar-item"><nav class="navbar-nav">
+  <p class="sidebar-header-items__title"
+     role="heading"
+     aria-level="1"
+     aria-label="Site Navigation">
+    Site Navigation
+  </p>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../about/intro.html">
+                        About
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../partners/scientific-communities.html">
+                        Partnerships
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item current active">
+                      <a class="nav-link nav-internal" href="author-guide.html">
+                        Review Guides
+                      </a>
+                    </li>
+                
+
+                <li class="nav-item">
+                  <a class="nav-link nav-external" href="https://www.pyopensci.org">
+                    pyOpenSci Website
+                  </a>
+                </li>
+                
+            <div class="nav-item dropdown">
+                <button class="btn dropdown-toggle nav-item" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    More
+                </button>
+                <div class="dropdown-menu">
+                    
+                <li class="nav-item">
+                  <a class="nav-link nav-external" href="https://www.pyopensci.org/python-package-guide">
+                    Python Packaging Guide
+                  </a>
+                </li>
+                
+
+                <li class="nav-item">
+                  <a class="nav-link nav-external" href="https://pyopensci.org/governance">
+                    Governance
+                  </a>
+                </li>
+                
+                </div>
+            </div>
+            
+  </ul>
+</nav></div>
+        
+      </div>
+    
+    
+    
+      <div class="sidebar-header-items__end">
+        
+          <div class="navbar-item">
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script></div>
+        
+          <div class="navbar-item"><ul class="navbar-icon-links navbar-nav"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/pyOpenSci/software-peer-review" title="GitHub" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-square-github"></i></span>
+            <label class="sr-only">GitHub</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://twitter.com/pyopensci" title="Twitter" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-square-twitter"></i></span>
+            <label class="sr-only">Twitter</label></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://fosstodon.org/@pyOpenSci" title="Mastodon" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-mastodon"></i></span>
+            <label class="sr-only">Mastodon</label></a>
+        </li>
+</ul></div>
+        
+      </div>
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item"><nav class="bd-docs-nav bd-links"
+     aria-label="Section Navigation">
+  <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
+  <div class="bd-toc-item navbar-nav"><p aria-level="2" class="caption" role="heading"><span class="caption-text">How To Guides</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="author-guide.html">Author Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reviewer-guide.html">Reviewer Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="editors-guide.html">Editor Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="editor-in-chief-guide.html">Editor-in-Chief Guide</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Triage Team Guide</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Onboarding Editors &amp; Reviewers</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="onboarding-guide.html">Onboarding Editors &amp; Reviewers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="finding-reviewers.html">Finding Reviewers</a></li>
+</ul>
+</div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item">
+
+
+
+<nav aria-label="Breadcrumbs">
+  <ul class="bd-breadcrumbs" role="navigation" aria-label="Breadcrumb">
+    
+    <li class="breadcrumb-item breadcrumb-home">
+      <a href="../index.html" class="nav-link" aria-label="Home">
+        <i class="fa-solid fa-home"></i>
+      </a>
+    </li>
+    
+    <li class="breadcrumb-item"><a href="author-guide.html" class="nav-link">Guide for Python Open Source Maintainers and Authors</a></li>
+    
+    <li class="breadcrumb-item active" aria-current="page">Editorial Review Triage Team</li>
+  </ul>
+</nav>
+</div>
+      
+    </div>
+  
+  
+</div>
+</div>
+              
+              
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <section id="editorial-review-triage-team">
+<h1>Editorial Review Triage Team<a class="headerlink" href="#editorial-review-triage-team" title="Permalink to this heading">#</a></h1>
+<p>The editorial board triage team focuses on ensuring review issues are complete with all metadata filled out in each GitHub review issue. Members of this team are considered a integral part of the <a class="reference external" href="https://www.pyopensci.org/about-peer-review/index.html#our-editorial-board">pyOpenSci editorial board</a>.</p>
+<section id="estimated-time-allocation-for-this-team">
+<h2>Estimated time allocation for this team<a class="headerlink" href="#estimated-time-allocation-for-this-team" title="Permalink to this heading">#</a></h2>
+<p>It is estimated that the time associated with this role will be a few hours a month given we normally accept 1-2 packages each month.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>There may be (rare) periods where additional time is needed. These include</p>
+<ol class="arabic simple">
+<li><p>when we need to update old, dated reviews and</p></li>
+<li><p>if many submissions are accepted in a particular  month.</p></li>
+</ol>
+<p>In the case that a time-intensive update process is required such as a large
+update to the review metadata structure, we can instill the help of others on
+the editorial board to get caught up.</p>
+<p>This role should never be a burdensome role on any individual community
+volunteer.</p>
+</div>
+</section>
+<section id="why-this-team-is-needed">
+<h2>Why this team is needed<a class="headerlink" href="#why-this-team-is-needed" title="Permalink to this heading">#</a></h2>
+<p>All pyOpenSci reviews happen on GitHub in the <a class="reference external" href="https://github.com/pyOpenSci/software-submission">software-submission repository</a>. The metadata associated with each review is what is used to populate the <a class="reference external" href="https://www.pyopensci.org/python-packages.html">packaging listing on our website</a>.</p>
+<p>This team is important because:</p>
+<ol class="arabic simple">
+<li><p>Often when reviews wrap up, editors and maintainers are excited about the acceptance and forget to update the final metadata information.</p></li>
+<li><p>Sometimes, we recognize the need for new metadata. And as such, we need to update older issues. This is rare but happens occasionally. See notes below on this type of effort as it may require help from the entire editorial team (or we can consider how to automate it).</p></li>
+</ol>
+<p>The metadata for each review looks something like the example below. However, because pyOpenSci has been operating peer review since 2019, some of the older issues may be missing some critical metadata.</p>
+</section>
+<section id="about-the-metadata">
+<h2>About the metadata<a class="headerlink" href="#about-the-metadata" title="Permalink to this heading">#</a></h2>
+<p>The core metadata that should be available in every review includes:</p>
+<ul class="simple">
+<li><p>Submitting Author</p></li>
+<li><p>All current maintainers</p></li>
+<li><p>Package Name</p></li>
+<li><p>One-Line Description of Package</p></li>
+<li><p>Repository Link</p></li>
+<li><p>Version submitted</p></li>
+<li><p>Editor</p></li>
+<li><p>Reviewer 1</p></li>
+<li><p>Reviewer 2</p></li>
+<li><p>Reviewer 3</p>
+<ul>
+<li><p>Sometimes there may be a third reviewer particularly in a mentorship situation or when specific domain expertise is required. We can add that to issues where it’s needed but do NOT need it in every review.</p></li>
+</ul>
+</li>
+<li><p>Archive:</p>
+<ul>
+<li><p>This is a link to either a github tag archive or a zenodo badge</p></li>
+</ul>
+</li>
+<li><p>JOSS DOI</p>
+<ul>
+<li><p>This should be the JOSS badge associated with the JOSS pub</p></li>
+</ul>
+</li>
+<li><p>Version accepted</p></li>
+<li><p>Date accepted (month/day/year)</p></li>
+</ul>
+<section id="example-metadata-in-a-review">
+<h3>Example metadata in a review<a class="headerlink" href="#example-metadata-in-a-review" title="Permalink to this heading">#</a></h3>
+<p>This is an example of a review submission. Notice that information that has not yet been filled out has a TBD next to it. Also notice that the author has added a few items that are not in our core template such as <code class="docutils literal notranslate"><span class="pre">Documentation</span></code>. Extra items are ok. We can ignore extra items.</p>
+<div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span>Submitting Author: Name (@AlexanderJuestel)
+All current maintainers: (@AlexanderJuestel)
+Package Name: GemGIS
+One-Line Description of Package: Spatial Data Processing for Geomodeling
+Repository Link: https://github.com/cgre-aachen/gemgis
+Version submitted: 1.0.11 (soon 1.1 with bug fixes for some methods and the API Reference once it is working, no major functionality changes)
+Documentation: https://gemgis.readthedocs.io/en/latest/
+JOSS Publication: https://joss.theoj.org/papers/10.21105/joss.03709 # We want to add the JOSS publication as well - but let&#39;s figure out a standardized way to do it. I think the JOSS badge would be great to display on our website.
+Editor: TBD
+Reviewer 1: TBD
+Reviewer 2: TBD # Sometimes there may be a third reviewer particularly in a mentorship situation or when specific domain expertise is required
+Archive: TBD
+Version accepted: TBD
+Date accepted (month/day/year): TBD
+</pre></div>
+</div>
+<p>At the end of a review, the completed metadata should look something like the example below with all metadata items containing text.</p>
+<p>Notice in the example below this particular review is missing the archive information and instead has <code class="docutils literal notranslate"><span class="pre">TBD</span></code>. This item should contain either a zenodo link to a tagged release or a tagged release link on GitHub. It is also missing the version accepted. But this review was accepted, as such we will want to update the metadata in the issue.</p>
+<div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span>Submitting Author: Sam Pottinger (@sampottinger)
+All current maintainers: <span class="ni">@sampottinger</span>, <span class="ni">@gizarp</span>
+Package Name: afscgap
+One-Line Description of Package: Community contributed Python-based tools for working with public bottom trawl surveys data from the NOAA Alaska Fisheries Science Center Groundfish Assessment Program ([NOAA AFSC GAP](https://www.fisheries.noaa.gov/contact/groundfish-assessment-program)).
+Repository Link: https://github.com/SchmidtDSE/afscgap
+Version submitted: 0.0.7
+Editor: [<span class="nt">Filipe Fernandes</span>](<span class="na">https://github.com/ocefpaf</span>)
+Reviewer 1: [<span class="nt">Tylar Murray</span>](<span class="na">https://github.com/7yl4r</span>)
+Reviewer 2: [<span class="nt">Ayush Anand</span>](<span class="na">https://github.com/ayushanand18</span>)
+Archive: TBD # TODO: Please add a link to the archive
+Version accepted: TBD # TODO: add the version that was accepted eg 1.4
+Date accepted (month/day/year): TBD # TODO: add the date
+</pre></div>
+</div>
+<p>The issue should also have at least 1 or 2 final labels:</p>
+<ul class="simple">
+<li><p>6/pyOS-approved 🚀🚀🚀</p></li>
+<li><p>9/joss-approved</p></li>
+</ul>
+<p>If it is missing those labels please add them as it makes sense for the state of the review. If there are other, older labels you can remove those.</p>
+</section>
+</section>
+<section id="responsibilities-of-the-triage-team">
+<h2>Responsibilities of the triage team<a class="headerlink" href="#responsibilities-of-the-triage-team" title="Permalink to this heading">#</a></h2>
+<p>The review issue triage team’s role is to do the following:</p>
+<ul class="simple">
+<li><p>Ensure that after each review is closed, all metadata are filled out</p></li>
+<li><p>Ensure that labels are updated accordingly. These labels are what we use to parse reviews that end up posted on our website, if they aren’t labeled correctly they will not get automagically added.</p></li>
+<li><p>Ensure that the <a class="reference external" href="https://docs.google.com/spreadsheets/d/1jEk-DDpkz14Z07OX_o1cN2vHzVbJO6mQ83ihGXsWkLc/edit#gid=0">post-review survey filled out</a> (for issues opened after March 2023)</p></li>
+<li><p>Help the software review lead update older issues when metadata items is missing.</p></li>
+<li><p>Update review status on project board</p></li>
+<li><p>Post on the <a class="reference external" href="https://pyopensci.discourse.group/c/packages/8">pyOpenSci Discourse packages channel</a> announcing &amp; celebrating that a successful review has been completed!</p></li>
+<li><p>Make sure JOSS tracking is happening as expected</p></li>
+</ul>
+<p>The team might also do the following in some cases:</p>
+<ul class="simple">
+<li><p>Close issue if it is open but complete</p></li>
+</ul>
+</section>
+<section id="celebrating-accepted-packages">
+<h2>Celebrating accepted packages<a class="headerlink" href="#celebrating-accepted-packages" title="Permalink to this heading">#</a></h2>
+<p>We like to celebrate when a package is</p>
+<ol class="arabic simple">
+<li><p>accepted by pyOpenSci and</p></li>
+<li><p>accepted by JOSS</p></li>
+</ol>
+<p>As such the editorial triage team will post on the <a class="reference external" href="https://pyopensci.discourse.group/c/packages/8">pyOpenSci discourse site</a> when we have a new accepted package.</p>
+<p>To post on Discourse do the following:</p>
+<ol class="arabic simple">
+<li><p>head to Discourse and create a new post in the packages channel</p></li>
+<li><p>tag the post with <code class="docutils literal notranslate"><span class="pre">pyos-acccepted</span></code></p></li>
+</ol>
+<figure class="align-default" id="fig-target">
+<a class="reference internal image-reference" href="../_images/pyos-discourse-packages-channel.png"><img alt="image showing the top of a discourse post with the title text in the text box that reads - welcome pynteny and crowsetta to the pyOpenSci ecosystem. Below you see two boxes, on the left is a red square with the word packages next to it. on the right is the tag pyos-accepted with an x next to it." src="../_images/pyos-discourse-packages-channel.png" style="width: 700px;" /></a>
+<figcaption>
+<p><span class="caption-text">Image showing the discourse interface when you add a new post. The pyos-accepted tag is found under the the text box where you add the post title.</span><a class="headerlink" href="#fig-target" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<p>Once you create the post, it will be cross-posted into the pyopensci-slack in the <code class="docutils literal notranslate"><span class="pre">software-review</span></code> channel via an automated slack-discourse bridge.</p>
+</section>
+<section id="updating-reviews-contributors-using-github-actions">
+<h2>Updating reviews &amp; contributors using GitHub actions<a class="headerlink" href="#updating-reviews-contributors-using-github-actions" title="Permalink to this heading">#</a></h2>
+<p>The issue review team can also, as they wish update packages and reviewers on the website by enabling the update_reviews and update_contributors workflow. Or by simply merging an open PR as the action will run every few days submitting a new pull request.</p>
+<p>To do this:</p>
+<ol class="arabic simple">
+<li><p><a class="reference external" href="https://github.com/pyOpenSci/pyopensci.github.io/actions/workflows/update-contribs-reviews.yml">Head to the pyOpenSci website repo</a>.</p></li>
+<li><p>Click the run workflow button to trigger a build that will update reviews and also editors, reviewers and associated contributions!</p></li>
+</ol>
+<figure class="align-default" id="id1">
+<a class="reference internal image-reference" href="../_images/github-pyos-contributors-action.png"><img alt="Image on a black background of the GitHub interface. on the right you can see a list of action names - 5 total. the one action Update Contribs &amp; reviewers has a blue line next to it indicating it is the action being viewed on the screen. On the right of the image you see a run workflow button which is what needs to be pressed to manually make that action run" src="../_images/github-pyos-contributors-action.png" style="width: 700px;" /></a>
+<figcaption>
+<p><span class="caption-text">When you go to the actions tab in github, you will see the Update Contribs and reviewers action. You can run that using the “run workflow” button. Once the workflow is run, a pr will be submitted with both an updated contributor list and an updated review list (if there have been new packages accepted and new contributors).</span><a class="headerlink" href="#id1" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<p>Once you trigger this, the action will run and submit a pull request.</p>
+<figure class="align-default" id="id2">
+<a class="reference internal image-reference" href="../_images/pyos-running-contributor-action.png"><img alt="Image showing a pull request with the title Update contributor and review data. The first comment is from the github-actions bot and says automated changes by create-pull-request GitHub action." src="../_images/pyos-running-contributor-action.png" style="width: 700px;" /></a>
+<figcaption>
+<p><span class="caption-text">This shows what a pr by the github actions bot looks like after the update contributor and review action has been run.</span><a class="headerlink" href="#id2" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<p>You may notice that the pull request has a pre-commit failure. You can fix that by adding a comment to the bottom of the issue that says:</p>
+<p><code class="docutils literal notranslate"><span class="pre">pre-commit.ci</span> <span class="pre">autofix</span></code></p>
+<figure class="align-default" id="id3">
+<a class="reference internal image-reference" href="../_images/pyopensci-pre-commit-autofix.png"><img alt="Image showing the github action results on a pull request. the pre-commit.ci - pr check has a failing x next to it." src="../_images/pyopensci-pre-commit-autofix.png" style="width: 700px;" /></a>
+<figcaption>
+<p><span class="caption-text">When you have a failed pr run you can just add a comment with the text pre-commit.ci autofix and the bot will lint and fix the pr.</span><a class="headerlink" href="#id3" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<p>Once checks have passed, you can merge this pr into the website repo to update reviews and contributions!</p>
+<p>Finally, delete the branch associated with the PR.</p>
+</section>
+<section id="how-to-know-when-the-package-was-accepted">
+<h2>How to know when the package was accepted<a class="headerlink" href="#how-to-know-when-the-package-was-accepted" title="Permalink to this heading">#</a></h2>
+<p>In our peer review guide, we have a <a class="reference external" href="https://www.pyopensci.org/software-peer-review/how-to/editors-guide.html">template that editors should use</a> to accept a package in to our ecosystem. In an issue you can look for this comment and use the date that the comment was posted as the date the package was accepted.</p>
+<p>There are cases when editors forget to use this template. But ideally you can figure this out by searching for “accepted” in the review. OR you can simply just ask the editor in the <code class="docutils literal notranslate"><span class="pre">private-editorial</span></code> channel on our Slack.</p>
+<figure class="align-default" id="id4">
+<a class="reference internal image-reference" href="../_images/pyos-accepted-package-message.png"><img alt="Image on a black background of the GitHub interface. Generally what this shows is the template message that is provided by pyOpenSci when a package is accepted. It starts with hey there, username and then congratulates them for being accepted. Finally it provides a list of last steps needed to close out the review." src="../_images/pyos-accepted-package-message.png" style="width: 700px;" /></a>
+<figcaption>
+<p><span class="caption-text">Image showing the generic template text used for accepting a package into the pyOpenSci ecosystem.</span><a class="headerlink" href="#id4" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span>🎉 bibat has been approved by pyOpenSci! Thank you <span class="ni">@teddygroves</span> for submitting bibat and many thanks to <span class="ni">@OriolAbril</span>
+and <span class="ni">@alizma</span> for reviewing this package! 😸
+</pre></div>
+</div>
+</section>
+<section id="how-to-confirm-that-the-post-survey-was-filled-out">
+<h2>How to confirm that the post-survey was filled out<a class="headerlink" href="#how-to-confirm-that-the-post-survey-was-filled-out" title="Permalink to this heading">#</a></h2>
+<p>At the end of each review we ask reviewers and the maintainers to fill out the post survey. You can check whether this has been completed by <a class="reference external" href="https://docs.google.com/spreadsheets/d/1jEk-DDpkz14Z07OX_o1cN2vHzVbJO6mQ83ihGXsWkLc/edit?usp=sharing">looking at this document</a>. NOTE: only editors have access to view this document. It simply contains a list of GitHub usernames that have completed the survey and the associated date. It will allow you to confirm that step was completed!</p>
+</section>
+<section id="adjusting-labels-the-project-board-on-an-issue">
+<h2>Adjusting labels &amp; the project board on an issue<a class="headerlink" href="#adjusting-labels-the-project-board-on-an-issue" title="Permalink to this heading">#</a></h2>
+<p>Every issue has a label associated with it that tells us what
+part of the process the review is in. Our automated workflow,
+finds packages that were accepted using the <code class="docutils literal notranslate"><span class="pre">6/pyOS-approved</span></code>
+tag (see below).</p>
+<figure class="align-default" id="id5">
+<a class="reference internal image-reference" href="../_images/pyopensci-accepted-review-labels.png"><img alt="Image that shows an accepted review. The editor is the assignee. The labels on the review say 6/pyos-approved with 3 rocket emojis next to it. below is 7/under-joss review which is a green label." src="../_images/pyopensci-accepted-review-labels.png" style="width: 700px;" /></a>
+<figcaption>
+<p><span class="caption-text">If a package has been accepted it should have at least the pyos-approved label. If the package moves on to joss and is accepted it should have the joss label as well. If the package is actively in joss review it should have the under-joss review. Otherwise if it has been accepted it should have the 9/joss-accepted label.</span><a class="headerlink" href="#id5" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<p>Often times it’s easy for an editor to celebrate a review ending and forget to add that final tag. Or sometimes they might forget that they need to follow the package as it goes through the JOSS process (if it goes on to that process).</p>
+<p>The triage team should ensure that all accepted packages have the <code class="docutils literal notranslate"><span class="pre">6/pyOS-approved</span></code> label associated with them. You can remove any other labels on the issue once a package is approved. We can assume it’s gone through all of the appropriate checks!</p>
+<p>In the case of a JOSS submission after our review, you can make sure that the editor is updating the label on the issue associated with JOSS. the final label once the package is JOSS accepted is
+9/JOSS-approved</p>
+<figure class="align-default" id="id6">
+<a class="reference internal image-reference" href="../_images/pyopensci-joss-review-labels.png"><img alt="Image that shows the three options for joss labels. 7/under-joss-review, 8-joss-review-complete and 9/joss-approved." src="../_images/pyopensci-joss-review-labels.png" style="width: 700px;" /></a>
+<figcaption>
+<p><span class="caption-text">The joss labels indicate the state that a package is in.
+Once JOSS has accepted the package, you should ensure that 9/joss-approved if the final label. At this point the package review issue can be closed if all lose ends are complete!</span><a class="headerlink" href="#id6" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<section id="updating-the-software-review-project-board">
+<h3>Updating the software-review project board<a class="headerlink" href="#updating-the-software-review-project-board" title="Permalink to this heading">#</a></h3>
+<p>We keep track of our reviews using the peer-review-status project board.</p>
+<figure class="align-default" id="id7">
+<a class="reference internal image-reference" href="../_images/pyos-review-starting.png"><img alt="Image that shows the empty assignees section for a new review. Also there are 2 labels 1/editor checks and new submission. Finally there is a project board available however the status is not yet set." src="../_images/pyos-review-starting.png" style="width: 700px;" /></a>
+<figcaption>
+<p><span class="caption-text">When a review is just starting, the assignee should be the editor leading the review. The labels will begin with editor-checks. You can also set the peer-review state on the project board.</span><a class="headerlink" href="#id7" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<p>When a package is accepted you can also update the project board to the “pyos-accepted” (or JOSS accepted) status. Given the nature of our partnership with JOSS, we can always assume that if a package got to the JOSS stage it was already accepted by pyOpenSci.</p>
+<figure class="align-default" id="id8">
+<a class="reference internal image-reference" href="../_images/pyos-under-review-project-board.png"><img alt="Image showing the project board in a review. the project board says peer-review-status. It also shows the drop down options which include under-review which is checked, pyos-accepted, pre-submission and joss accepted." src="../_images/pyos-under-review-project-board.png" style="width: 700px;" /></a>
+<figcaption>
+<p><span class="caption-text">We use the project board to track the status of reviews.</span><a class="headerlink" href="#id8" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+</section>
+<section id="organization-permissions-needed-for-the-editorial-triage-team">
+<h2>Organization permissions needed for the editorial triage team<a class="headerlink" href="#organization-permissions-needed-for-the-editorial-triage-team" title="Permalink to this heading">#</a></h2>
+<p>The triage team will need the following permissions within the <a class="reference external" href="https://github.com/pyOpenSci">pyOpenSci
+GitHub organization</a> to complete their responsibilities.</p>
+<p>Team members will need:</p>
+<ul class="simple">
+<li><p>to be a part of the pyOpenSci GitHub organization</p></li>
+<li><p>merge permissions on <a class="reference external" href="https://github.com/pyOpenSci/pyopensci.github.io">pyopensci.github.io repository.</a></p></li>
+<li><p>edit permissions for reviews in the software-submission repository</p></li>
+<li><p>access to post in the slack pyos-updates channel</p></li>
+<li><p>an account in the <a class="reference external" href="https://pyopensci.discourse.group/c/pyopensci-updates/13">pyOpenSci discourse</a> to post updates there.</p></li>
+</ul>
+</section>
+</section>
+
+
+                </article>
+              
+              
+              
+                <footer class="bd-footer-article">
+                  
+<div class="footer-article-items footer-article__inner">
+  
+    <div class="footer-article-item"><!-- Previous / next buttons -->
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="editor-in-chief-guide.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Editor in Chief Guide</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="onboarding-guide.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Onboarding New Editors and Reviewers</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div></div>
+  
+</div>
+
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> On this page
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#estimated-time-allocation-for-this-team">Estimated time allocation for this team</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#why-this-team-is-needed">Why this team is needed</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#about-the-metadata">About the metadata</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-metadata-in-a-review">Example metadata in a review</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#responsibilities-of-the-triage-team">Responsibilities of the triage team</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#celebrating-accepted-packages">Celebrating accepted packages</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#updating-reviews-contributors-using-github-actions">Updating reviews &amp; contributors using GitHub actions</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to-know-when-the-package-was-accepted">How to know when the package was accepted</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to-confirm-that-the-post-survey-was-filled-out">How to confirm that the post-survey was filled out</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#adjusting-labels-the-project-board-on-an-issue">Adjusting labels &amp; the project board on an issue</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#updating-the-software-review-project-board">Updating the software-review project board</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#organization-permissions-needed-for-the-editorial-triage-team">Organization permissions needed for the editorial triage team</a></li>
+</ul>
+  </nav></div>
+
+  <div class="sidebar-secondary-item">
+  
+  <div class="tocsection editthispage">
+    <a href="https://github.com/pyopensci/software-peer-review/edit/main/how-to/review-triage-team.md">
+      <i class="fa-solid fa-pencil"></i>
+      
+      
+        
+          Edit on GitHub
+        
+      
+    </a>
+  </div>
+</div>
+
+  <div class="sidebar-secondary-item">
+  <div class="tocsection sourcelink">
+    <a href="../_sources/how-to/review-triage-team.md.txt">
+      <i class="fa-solid fa-file-lines"></i> Show Source
+    </a>
+  </div>
+</div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+          </footer>
+        
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+
+  <footer class="bd-footer">
+<div class="bd-footer__inner bd-page-width">
+  
+    <div class="footer-items__start">
+      
+        <div class="footer-item">
+  <p class="copyright">
+    
+      © Copyright 2023, pyOpenSci.
+      <br/>
+    
+  </p>
+</div>
+      
+    </div>
+  
+  
+    <div class="footer-items__end">
+      
+        <div class="footer-item"><p class="theme-version">
+  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.13.3.
+</p></div>
+      
+    </div>
+  
+</div>
+
+  </footer>
+  </body>
+</html>
