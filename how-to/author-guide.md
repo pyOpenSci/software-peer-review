@@ -88,11 +88,6 @@ for Python packaging including discussions of:
 - Tools for creating and publishing documentation.
 - Resources for creating files such as the README file, code of conduct, contributing guide and more.
 
-```{note}
-This document is under construction currently (Jan 2023). It should be completed
-by the end of Spring 2023.
-```
-
 ```{include} ../appendices/editor-in-chief-checks.md
 
 ```
