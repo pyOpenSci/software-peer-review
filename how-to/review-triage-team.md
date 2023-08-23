@@ -138,13 +138,13 @@ Image showing the discourse interface when you add a new post. The pyos-accepted
 
 Once you create the post, it will be cross-posted into the pyopensci-slack in the `software-review` channel via an automated slack-discourse bridge.
 
-## Updating reviews & associated contributors on our website using the website GitHub action
+## Updating reviews & contributors using GitHub actions
 
 The issue review team can also, as they wish update packages and reviewers on the website by enabling the update_reviews and update_contributors workflow. Or by simply merging an open PR as the action will run every few days submitting a new pull request.
 
 To do this:
 
-1. [Head to the pyOpenSci website repo here.](https://github.com/pyOpenSci/pyopensci.github.io/actions/workflows/update-contribs-reviews.yml).
+1. [Head to the pyOpenSci website repo](https://github.com/pyOpenSci/pyopensci.github.io/actions/workflows/update-contribs-reviews.yml).
 2. Click the run workflow button to trigger a build that will update reviews and also editors, reviewers and associated contributions!
 
 :::{figure-md} fig-target
@@ -156,13 +156,23 @@ When you go to the actions tab in github, you will see the Update Contribs and r
 
 Once you trigger this, the action will run and submit a pull request.
 
-![](https://hackmd.io/_uploads/SkPwqEW32.png)
+:::{figure-md} fig-target
+
+<img src="../images/pyos-running-contributor-action.png" alt="Image showing a pull request with the title Update contributor and review data. The first comment is from the github-actions bot and says automated changes by create-pull-request GitHub action." width="700px">
+
+This shows what a pr by the github actions bot looks like after the update contributor and review action has been run.
+:::
 
 You may notice that the pull request has a pre-commit failure. You can fix that by adding a comment to the bottom of the issue that says:
 
 `pre-commit.ci autofix`
 
-![](https://hackmd.io/_uploads/r1aYqV-n2.png)
+:::{figure-md} fig-target
+
+<img src="../images/pyopensci-pre-commit-autofix.png" alt="Image showing the github action results on a pull request. the pre-commit.ci - pr check has a failing x next to it. " width="700px">
+
+When you have a failed pr run you can just add a comment with the text pre-commit.ci autofix and the bot will lint and fix the pr.
+:::
 
 Once checks have passed, you can merge this pr into the website repo to update reviews and contributions!
 
@@ -174,7 +184,12 @@ In our peer review guide, we have a [template that editors should use](https://w
 
 There are cases when editors forget to use this template. But ideally you can figure this out by searching for "accepted" in the review. OR you can simply just ask the editor in the `private-editorial` channel on our Slack.
 
-![Image showing the generic template text used for accepting a package into the ecosystem](https://hackmd.io/_uploads/B1cdbXE3h.png)
+:::{figure-md} fig-target
+
+<img src="../images/pyos-accepted-package-message.png" alt="Image on a black background of the GitHub interface. Generally what this shows is the template message that is provided by pyOpenSci when a package is accepted. It starts with hey there, username and then congratulates them for being accepted. Finally it provides a list of last steps needed to close out the review." width="700px">
+
+Image showing the generic template text used for accepting a package into the pyOpenSci ecosystem.
+:::
 
 ```markdown
 🎉 bibat has been approved by pyOpenSci! Thank you @teddygroves for submitting bibat and many thanks to @OriolAbril
@@ -192,7 +207,12 @@ part of the process the review is in. Our automated workflow,
 finds packages that were accepted using the `6/pyOS-approved`
 tag (see below).
 
-![](https://hackmd.io/_uploads/HyFgMRz22.png)
+:::{figure-md} fig-target
+
+<img src="../images/pyopensci-accepted-review-labels.png" alt="Image that shows an accepted review. The editor is the assignee. The labels on the review say 6/pyos-approved with 3 rocket emojis next to it. below is 7/under-joss review which is a green label." width="700px">
+
+If a package has been accepted it should have at least the pyos-approved label. If the package moves on to joss and is accepted it should have the joss label as well. If the package is actively in joss review it should have the under-joss review. Otherwise if it has been accepted it should have the 9/joss-accepted label.
+:::
 
 Often times it's easy for an editor to celebrate a review ending and forget to add that final tag. Or sometimes they might forget that they need to follow the package as it goes through the JOSS process (if it goes on to that process).
 
@@ -201,17 +221,33 @@ The triage team should ensure that all accepted packages have the `6/pyOS-approv
 In the case of a JOSS submission after our review, you can make sure that the editor is updating the label on the issue associated with JOSS. the final label once the package is JOSS accepted is
 9/JOSS-approved
 
-![](https://hackmd.io/_uploads/r1xYMXEhn.png)
+:::{figure-md} fig-target
+
+<img src="../images/pyopensci-joss-review-labels.png" alt="Image that shows the three options for joss labels. 7/under-joss-review, 8-joss-review-complete and 9/joss-approved." width="700px">
+
+The joss labels indicate the state that a package is in.
+Once JOSS has accepted the package, you should ensure that 9/joss-approved if the final label. At this point the package review issue can be closed if all lose ends are complete!
+:::
 
 ### Updating the software-review project board
 
 We keep track of our reviews using the peer-review-status project board.
 
-![](https://hackmd.io/_uploads/BkdhMXE2n.png)
+:::{figure-md} fig-target
+
+<img src="../images/pyos-review-starting.png" alt="Image that shows the empty assignees section for a new review. Also there are 2 labels 1/editor checks and new submission. Finally there is a project board available however the status is not yet set." width="700px">
+
+When a review is just starting, the assignee should be the editor leading the review. The labels will begin with editor-checks. You can also set the peer-review state on the project board.
+:::
 
 When a package is accepted you can also update the project board to the "pyos-accepted" (or JOSS accepted) status. Given the nature of our partnership with JOSS, we can always assume that if a package got to the JOSS stage it was already accepted by pyOpenSci.
 
-![](https://hackmd.io/_uploads/HyVgX743n.png)
+:::{figure-md} fig-target
+
+<img src="../images/pyos-under-review-project-board.png" alt="Image showing the project board in a review. the project board says peer-review-status. It also shows the drop down options which include under-review which is checked, pyos-accepted, pre-submission and joss accepted." width="700px">
+
+We use the project board to track the status of reviews.
+:::
 
 ## Organization permissions needed for the editorial triage team
 
