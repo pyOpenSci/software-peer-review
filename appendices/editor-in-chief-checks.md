@@ -10,7 +10,7 @@ Please check our [Python packaging guide](https://www.pyopensci.org/python-packa
 below.
 
 - [ ] **Installation** The package can be installed from a community repository such as PyPI (preferred), and/or a community channel on conda (e.g. conda-forge, bioconda).
-  - [ ] The package imports properly into a standard Python environment `import package-name`.
+  - [ ] The package imports properly into a standard Python environment `import package`.
 - [ ] **Fit** The package meets criteria for [fit](https://www.pyopensci.org/software-peer-review/about/package-scope.html#what-types-of-packages-does-pyopensci-review) and [overlap](https://www.pyopensci.org/software-peer-review/about/package-scope.html#package-overlap).
 - [ ] **Documentation** The package has sufficient online documentation to allow us to evaluate package function and scope *without installing the package*. This includes:
   - [ ] User-facing documentation that overviews how to install and start using the package.
@@ -19,7 +19,7 @@ below.
 - [ ] Core GitHub repository Files
   - [ ] **README** The package has a `README.md` file with clear explanation of what the package does, instructions on how to install it, and a link to development instructions.
   - [ ] **Contributing File** The package has a `CONTRIBUTING.md` file that details how to install and contribute to the package.
-  - [ ] **Code of Conduct** The package has a `Code of Conduct` file.
+  - [ ] **Code of Conduct** The package has a `Code_of_Conduct.md` file.
   - [ ] **License** The package has an [OSI approved license](https://opensource.org/licenses).
 NOTE: We prefer that you have development instructions in your documentation too.
 - [ ] **Issue Submission Documentation** All of the information is filled out in the `YAML` header of the issue (located at the top of the issue template).
