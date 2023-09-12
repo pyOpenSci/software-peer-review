@@ -6,13 +6,13 @@ from start to finish.
 
 ### Step 0. *optional* : Author submits pre-submission inquiry
 A **presubmission inquiry** is useful if you are unsure whether your package
-is in scope. To submit a pre-submission inquiry, open up an issue using the presubmission template in our [pyopensci/software-review repository](https://github.com/pyOpenSci/software-review/issues/new/choose/). During this time an Editor-in-Chief will review for scope and perform
+is in scope. To submit a pre-submission inquiry, open up an issue using the presubmission template in our [pyopensci/software-review repository](https://github.com/pyOpenSci/software-review/issues/new/choose/). During this time an editor in chief will review for scope and perform
 a basic check for package infrastructure.
 
 - Estimated time: ~1-2 weeks
 
 **Below, are the basic checks that your package should have prior to being
-submitted for peer review.** These are the checks that an Editor-in-Chief and/or
+submitted for peer review.** These are the checks that an editor in chief and/or
 editor will look at when evaluating your package for review.
 
 ```{include} /appendices/editor-in-chief-checks.md
@@ -23,15 +23,15 @@ editor will look at when evaluating your package for review.
 To do this, you open an issue using the software submission template in our
 [pyopensci/software-review repository](https://github.com/pyOpenSci/software-review/issues/new/choose/).
 
-### 2. Editor-in-Chief reviews package submission
+### 2. Editor in chief reviews package submission
 
-The Editor-in-Chief will review your submission at this point for both package scope and minimal infrastructure criteria
+The editor in chief will review your submission at this point for both package scope and minimal infrastructure criteria
 (listed above).
 - TIME ~2 weeks (or longer if editor requests changes that take the author longer to implement)
 
 ### 3. Editor finds reviewers for package
 At this point if your package has the minimal infrastructure
-requirements and is in scope, the Editor-in-Chief will assign an editor
+requirements and is in scope, the editor in chief will assign an editor
 to review your package. That editor will then identify
 suitable reviewers.
 
@@ -123,12 +123,12 @@ a Python package for pyOpenSci.
 Learn more »
 :::
 
-:::{grid-item-card} {octicon}`pencil;1.5em;sd-mr-1` ✨ Editor in Chief Guide
+:::{grid-item-card} {octicon}`pencil;1.5em;sd-mr-1` ✨ Editor in chief Guide
 :link: /how-to/editor-in-chief-guide
 :link-type: doc
 :class-header: bg-light
 
-The Editor-in-Chief is a rotating position within pyOpenSci held by members
+The editor in chief is a rotating position within pyOpenSci held by members
 of the pyOpenSci editorial board. Learn more about the processes involved with
 being an editor in chief for pyOpenSci.
 +++
