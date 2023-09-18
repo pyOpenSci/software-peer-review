@@ -94,6 +94,12 @@ and identities.
 pyOpenSci’s has a [statement around COI here](https://www.pyopensci.org/software-peer-review/our-process/policies.html#conflict-of-interest-for-reviews-and-editors).
 :::
 
+:::{dropdown} How do I know that a review is community-affiliated?
+:animate: fade-in-slide-down
+
+We will add your community name as a label to our review repository here. This will allow anyone to filter for reviews specific to your community. Here is an example of the [community tag for Pangeo](https://github.com/pyOpenSci/software-submission/issues?q=is%3Aissue+label%3Apangeo+).
+:::
+
 ### Affiliated review / pyOpenSci integration questions
 
 :::{dropdown} Where do affiliated guidelines get published?
