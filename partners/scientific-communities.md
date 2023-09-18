@@ -91,7 +91,7 @@ and identities.
 :::{dropdown} What if there is a conflict of interest
 :animate: fade-in-slide-down
 
-pyOpenSci’s has a [statement around COI here](https://www.pyopensci.org/software-peer-review/our-process/policies.html#conflict-of-interest-for-reviews-and-editors).
+pyOpenSci's [conflict of interest policy can be found here](https://www.pyopensci.org/software-peer-review/our-process/policies.html#conflict-of-interest-for-reviews-and-editors).
 :::
 
 :::{dropdown} How do I know that a review is community-affiliated?
