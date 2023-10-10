@@ -1,4 +1,4 @@
-# pyOpenSci Software Peer Review Partnerships
+# Scientific Python Partnerships
 
 ```{toctree}
 :hidden:
@@ -8,13 +8,6 @@ About Our Partnerships <self>
 JOSS <joss>
 Pangeo <pangeo>
 ```
-
-pyOpenSci collaborates with organizations that support the
-scientific community. This page focuses on domain-specific community
-partnerships with communities that want to add affiliated packages to
-their ecosystem through a review process.
-
-## How does the pyOpenSci / domain community partnership work?
 
 Numerous scientific Python communities are developing their own peer review
 processes for affiliated packages. Communities with their own package
@@ -26,35 +19,98 @@ step that adds your specific requirements for package affiliation.
 Through this single end-to-end review process, a package can potentially:
 
 - Be accepted by pyOpenSci.
-- Undergo a fast-track review and get published with JOSS.
+- Undergo a fast-track review and get published with JOSS (if in scope).
 - Achieve affiliation with your domain-specific community.
 
-This page outlines policies for community partners collaborating with us.
-For more information, please visit our website.
+Here we discuss our process for
+supporting this community affiliation partnership.
+
+:::{figure-md} pyos-badge-home
+:class: myclass
+
+<img src="../images/peer-review-partners-process.png" alt="Add alt here">
+
+**Add caption**
+:::
 
 ## What do we get when we become a pyOpenSci partner?
 
 In addition to [the core benefits that pyOpenSci peer review provides](/about/benefits),
 we will provide you with the following:
 
-1. A community page in this peer review guide where you can define your guidelines for a package to become affiliated with your community. Check out the
-   [pangeo example](pangeo). On this page, each community can define the
-   peer review guidelines specific to becoming an affiliated package
-   within the community.
+**Visibility**
+
+1. We will create a community page in this peer review guide where you can define your guidelines for a package to become affiliated with your community. Check out the
+   [pangeo example](pangeo) as an example of what this looks like.
 2. A dedicated community page on the pyOpenSci website. Here, we will
    list your community along with all affiliated packages that have
    successfully undergone our review process. You can add descriptive text and graphics and branding to the page as you wish.
-3. [Coming in 2024] Access to metric dashboards for all accepted packages in the
+
+**Packaging Support**
+
+Our vibrant community is filled with experts in the Python packaging space. A
+partnership with us means that you will always have support if you run into
+issues with packaging.
+
+**Coming in 2024**
+
+1. Access to metric dashboards for all accepted packages in the
    ecosystem.
-4. Access to a vibrant and diverse Python community with tremendous expertise in packaging best practices.
 
 ## Partnership benefits to the broader scientific community
 
-The benefit for the broader scientific community include:
+The benefits for the broader scientific Python community include:
 
-- We also have broader reach to users of scientific software across the ecosystem.
-- We have a broad view across all scientific ecosystems which will help us to better identify overlap of package functionality.
-- A consolidated peer review process will help enforce standardization of scientific Python packaging and best practices across the ecosystem.
+- We have broad reach across the entire scientific Python ecosystem which will allow us to promote your community and associated packages.
+- We have a broad view across all domains within the scientific Python ecosystem which will help us to identify overlap of package functionality across domains and potentially aggregate efforts in the future as it makes sense (i.e. if a maintainer needs to step down).
+- We offer an established peer review process will help enforce standardization of scientific Python packaging and best practices across the ecosystem. Our volunteer-lead peer review process has been operating since 2019.
+
+## How peer review works for partners
+
+The pyOpenSci peer review process can be broken down into 5 steps when a package is submitted for review:
+
+1. To kick things off, an Editor-in-Chief (EiC) checks that the package passes our [bare-minimum checks](https://www.pyopensci.org/software-peer-review/how-to/editor-in-chief-guide.html#editor-checklist-template).
+2. Once EiC checks are passed, the EiC assigns a domain-expert editor to the review. Here we have two options. As a part of our partnership, at this time we can ask the editor, and or someone authorized from your community to make a decision as to whether the package should be consider "in-scope" to become affiliated with your community through our review.
+3. The editor finds 2 reviewers to begin the review.
+4. The review begins and is a conversation between the package maintainer and the reviewer with the goal of improving the package usability and quality.
+5. Once the package is accepted by pyOpenSci, authors can opt to be published in the Journal of Open Source Software (JOSS) if their package is in scope for JOSS. JOSS will accept the pyOpenSci review and only reviews the JOSS paper making it a quick and easy final step.
+
+Through the above steps, an accepted package can become pyOpenSci accepted, JOSS
+published and an official affiliated package with your community.
+
+**The editor for the package review then makes the final decision on acceptance into the community ecosystem as affiliated.**
+
+## How we find editors and reviewers
+
+One of the most common concerns that communities have is finding editors and
+reviewers. While finding volunteer editor and reviewers takes time, we are
+confident that we can figure this out together.
+
+For every review we like to have an editor and at least 1 reviewer with some
+scientific domain expertise associated with the submitted package (and your
+community). Where possible we will make calls within your community to find
+editors and reviewers who understand your domain. However, we also have a broad
+pool of editors and reviewers across scientific domains that will allow us to
+fill gaps as needed. For instance, if your community is from the bio-medical
+single-cell domain we may be able to find editors in the broader field
+of genomics that could easily manage leading a review as an editor.
+
+We have been running peer review since 2019 and have never not been able to
+review a package because of editor / reviewer availability. However, sometimes
+it might take a bit longer to find the right people to begin the review.
+
+### How can people sign up to review?
+
+pyOpenSci maintains a reviewer database with individuals who have signed
+up using our [reviewer sign-up form](https://forms.gle/GHfxvmS47nQFDcBM6).
+Our goal is to assign two reviewers for each package. Typically, one
+reviewer possesses domain-specific expertise while the second may
+focus on usability, installation, documentation, or packaging
+infrastructure, without necessarily needing domain expertise.
+
+We prioritize diversity among contributors in every review, ensuring
+inclusion of individuals with different gender, cultural backgrounds,
+and identities.
 
 ## Frequently asked questions
 
@@ -71,21 +127,6 @@ We are always open to new partners. Please feel free to ask questions or to
 leave a post on [our discourse forum](https://pyopensci.discourse.group/). We
 can connect with you from there. You can also email us directly at
 admin at pyopensci.org.
-:::
-
-:::{dropdown} How do you find reviewers?
-:animate: fade-in-slide-down
-
-pyOpenSci maintains a reviewer database with individuals who have signed
-up using our [reviewer sign-up form](https://forms.gle/GHfxvmS47nQFDcBM6).
-Our goal is to assign two reviewers for each package. Typically, one
-reviewer possesses domain-specific expertise while the second may
-focus on usability, installation, documentation, or packaging
-infrastructure, without necessarily needing domain expertise.
-
-We prioritize diversity among contributors in every review, ensuring
-inclusion of individuals with different gender, cultural backgrounds,
-and identities.
 :::
 
 :::{dropdown} What if there is a conflict of interest
@@ -138,10 +179,9 @@ the criteria for affiliated status.
 :::{dropdown} How do we list pyOpenSci-accepted packages on our website post-review?
 :animate: fade-in-slide-down
 
-We will provide you with a link to a [.yml file similar to the one that drives
-our website here](https://github.com/pyOpenSci/pyopensci.github.io/blob/main/_data/packages.yml)
-that is updated via a GitHub action cron job. This file will contain a list of
-packages for your community.
+YOu can also access are most recent list of accepted packages using this [.yml file which drives
+our website here](https://github.com/pyOpenSci/pyopensci.github.io/blob/main/_data/packages.yml).
+This file is updated using a cron job several times a month and can be filtered by your specific community to support your website development workflow.
 :::
 
 ### Package maintenance
@@ -158,11 +198,10 @@ Chief, Editor, and two reviewers, for packages that have already been
 accepted.
 
 :::{note}
+
 We intend to establish automated checks to monitor the "health" and
 maintenance status of packages over time. These checks aim to identify
-unmaintained packages. [View our process for this here:](https://www.
-pyopensci.org/software-peer-review/our-process/policies.html#maintainer-
-responsiveness).
+unmaintained packages. [View our process for this here](https://www.pyopensci.org/software-peer-review/our-process/policies.html#maintainer-responsiveness).
 
 Once we identify a tool requiring additional maintenance, we will flag it
 for our user community.
@@ -170,9 +209,7 @@ for our user community.
 :::
 
 In the event that a package becomes unmaintained, we will adhere to
-the [current pyOpenSci policies regarding package maintenance
-post-review](https://www.pyopensci.org/software-peer-review/our-process/
-policies.html#after-acceptance-package-ownership-and-maintenance).
+the [current pyOpenSci policies regarding package maintenance post-review](https://www.pyopensci.org/software-peer-review/our-process/policies.html#after-acceptance-package-ownership-and-maintenance).
 
 If it's a widely-used package and the maintainer wishes to see it
 continue, we will make efforts to assist the maintainer in finding a
