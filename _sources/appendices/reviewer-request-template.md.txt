@@ -10,7 +10,8 @@ The package, [PACKAGE] by [AUTHOR(S)], does [FUNCTION]. You can find it on GitHu
 
 If you accept, note that we ask reviewers to complete reviews in three weeks (We’ve found it takes a similar amount of time to review a package as an academic paper.).
 
-Our [reviewers guide](https://www.pyopensci.org/peer-review-guide/how-to/reviewer-guide.html) details what we look for in a package review, and includes links to example reviews. We also include a reviewer template on that page that you can use to guide your review. Our Python packaging standards are detailed in our [packaging guide](https://www.pyopensci.org/python-package-guide).
+Our [reviewers guide](https://www.pyopensci.org/software-peer-review/how-to/reviewer-guide.html) details what we look for in a package review, and includes links to example reviews.
+We also include a reviewer template on that page that you can use to guide your review. Our Python packaging standards are detailed in our [packaging guide](https://www.pyopensci.org/python-package-guide).
 
 If you have time, please have a look at the package first, to make
 sure that you do not have a conflict of interest with the package authors.
