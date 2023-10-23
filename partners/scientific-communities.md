@@ -189,8 +189,8 @@ This file is updated using a cron job several times a month and can be filtered 
 ::::{dropdown} “Rereview” of packages & package maintenance
 :animate: fade-in-slide-down
 
-A core goal of pyOpenSci is to support long-term maintenance of Python
-scientific packages. To achieve this, we monitor repository activity for all
+A core goal of pyOpenSci is to support long-term maintenance of scientific Python
+packages. To achieve this, we monitor repository activity for all
 our packages to detect any signs of becoming unmaintained.
 
 However, pyOpenSci does not conduct full re-reviews, involving the Editor-in-
