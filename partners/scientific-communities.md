@@ -179,7 +179,7 @@ the criteria for affiliated status.
 :::{dropdown} How do we list pyOpenSci-accepted packages on our website post-review?
 :animate: fade-in-slide-down
 
-YOu can also access are most recent list of accepted packages using this [.yml file which drives
+You can also access are most recent list of accepted packages using this [.yml file which drives
 our website here](https://github.com/pyOpenSci/pyopensci.github.io/blob/main/_data/packages.yml).
 This file is updated using a cron job several times a month and can be filtered by your specific community to support your website development workflow.
 :::
