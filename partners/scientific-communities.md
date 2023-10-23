@@ -28,9 +28,9 @@ supporting this community affiliation partnership.
 :::{figure-md} pyos-badge-home
 :class: myclass
 
-<img src="../images/peer-review-partners-process.png" alt="Add alt here">
+<img src="../images/peer-review-partners-process.png" alt="Diagram showing the pyOpenSci peer review process. At the top there are 4 boxes labeled submit package for review, package review, package accepted and fast track in JOSS. Each of these are steps in our review process. At the bottom of the diagram are yellow boxes highlighting the fact that in the package review, an additional layer of review is added that contains criteria for a package to become affiliated with a specific community. The outcome is that a package can become a part of the pyOpenSci ecosystem, published in JOSS and also community affiliated with a single end-to-end review process.">
 
-**Add caption**
+Scientific communities can leverage our peer review process by adding a layer of review associated with requirements each community has for packages to be labeled as "affiliated" with that specific community. To see an example of such requirements, look at the [Pangeo partner page in this guide](pangeo).
 :::
 
 ## What do we get when we become a pyOpenSci partner?
@@ -38,7 +38,7 @@ supporting this community affiliation partnership.
 In addition to [the core benefits that pyOpenSci peer review provides](/about/benefits),
 we will provide you with the following:
 
-**Visibility**
+### Visibility for your community and associated Python packages
 
 1. We will create a community page in this peer review guide where you can define your guidelines for a package to become affiliated with your community. Check out the
    [pangeo example](pangeo) as an example of what this looks like.
@@ -46,22 +46,24 @@ we will provide you with the following:
    list your community along with all affiliated packages that have
    successfully undergone our review process. You can add descriptive text and graphics and branding to the page as you wish.
 
-**Packaging Support**
+### Packaging Support
 
 Our vibrant community is filled with experts in the Python packaging space. A
 partnership with us means that you will always have support if you run into
-issues with packaging.
+Python packaging issues.
 
-**Coming in 2024**
+### Future work
 
-1. Access to metric dashboards for all accepted packages in the
-   ecosystem.
+We are currently working on several items to improve our review process and followup activities with package maintainers including:.
+
+- Collecting metrics and will be creating small dashboards that track package health for all accepted packages in our ecosystem.
+- Working on a bot adapted from the JOSS bot that will streamline the editorial process for peer review.
 
 ## Partnership benefits to the broader scientific community
 
 The benefits for the broader scientific Python community include:
 
-- We have broad reach across the entire scientific Python ecosystem which will allow us to promote your community and associated packages.
+- We have broad reach across the entire scientific Python ecosystem which allows us to promote your community and associated packages.
 - We have a broad view across all domains within the scientific Python ecosystem which will help us to identify overlap of package functionality across domains and potentially aggregate efforts in the future as it makes sense (i.e., if a maintainer needs to step down).
 - We offer an established peer review process will help enforce standardization of scientific Python packaging and best practices across the ecosystem. Our volunteer-lead peer review process has been operating since 2019.
 
@@ -69,16 +71,21 @@ The benefits for the broader scientific Python community include:
 
 The pyOpenSci peer review process can be broken down into 5 steps when a package is submitted for review:
 
-1. To kick things off, an Editor-in-Chief (EiC) checks that the package passes our [bare-minimum checks](https://www.pyopensci.org/software-peer-review/how-to/editor-in-chief-guide.html#editor-checklist-template).
-2. Once EiC checks are passed, the EiC assigns a domain-expert editor to the review. Here we have two options. As a part of our partnership, at this time we can ask the editor, and or someone authorized from your community to make a decision as to whether the package should be consider "in-scope" to become affiliated with your community through our review.
-3. The editor finds 2 reviewers to begin the review.
+1. To kick things off, an Editor-in-Chief checks that the package passes our [bare-minimum checks](https://www.pyopensci.org/software-peer-review/how-to/editor-in-chief-guide.html#editor-checklist-template).
+2. Once Editor-in-Chief checks are passed, they assign a domain-expert editor to the review.
+
+Through our partnership, we have two options when selecting an editor.
+
+- If the editor is someone from your partner community who has authority, they can determine whether the package meets the decided-upon criteria to become affiliated with your community.
+
+* If we have a domain specific editor who is not authorized by your community to make this decision, we can ask someone from your community to make the decision around affiliated status. Once the decision is made, the review can proceed as normal.
+
+3. Once affiliated status has been determined, the editor finds 2 reviewers to begin the review.
 4. The review begins and is a conversation between the package maintainer and the reviewer with the goal of improving the package usability and quality.
-5. Once the package is accepted by pyOpenSci, authors can opt to be published in the Journal of Open Source Software (JOSS) if their package is in scope for JOSS. JOSS will accept the pyOpenSci review and only reviews the JOSS paper making it a quick and easy final step.
+5. Once the package is accepted by pyOpenSci, authors can opt to be published in the Journal of Open Source Software (JOSS) if their package is in scope for JOSS. JOSS will accept the pyOpenSci review and will only review the JOSS paper. If the package is within JOSS's scope, the JOSS fast-track process is normally a quick final step.
 
 Through the above steps, an accepted package can become pyOpenSci accepted, JOSS
 published and an official affiliated package with your community.
-
-**The editor for the package review then makes the final decision on acceptance into the community ecosystem as affiliated.**
 
 ## How we find editors and reviewers
 
@@ -95,7 +102,7 @@ fill gaps as needed. For instance, if your community is from the bio-medical
 single-cell domain we may be able to find editors in the broader field
 of genomics that could easily manage leading a review as an editor.
 
-We have been running peer review since 2019 and have never not been able to
+We have been running software peer review since 2019 and have never not been able to
 review a package because of editor / reviewer availability. However, sometimes
 it might take a bit longer to find the right people to begin the review.
 
@@ -146,7 +153,7 @@ We will add your community name as a label to our review repository here. This w
 :::{dropdown} Where do affiliated guidelines get published?
 :animate: fade-in-slide-down
 
-The criteria for a package becoming affiliated with a community needs to be clearly communicated on the partner landing page in our peer review guide. These are the criteria that will then be evaluated at the end of a review once the package has been accepted by pyOpenSci.
+The criteria for a package becoming affiliated with a community needs to be clearly communicated on the partner landing page in our peer review guide. These are the criteria that will be evaluated during our review process to determine whether a package should gain affiliated status with your community.
 :::
 
 :::{dropdown} Can a package be accepted by pyOpenSci but not affiliated?
@@ -163,16 +170,14 @@ community can list it on their page.
 
 :::
 
-:::{dropdown} When do the affiliated get evaluated in the peer review process?
+:::{dropdown} When does the package get evaluated for affiliation in your peer review process?
 :animate: fade-in-slide-down
 
 We request that your community appoint a minimum of two individuals to
 serve on our editorial board. During the initial Editor-in-Chief phase
 of our peer review process, we assess whether a package aligns with the
 scope of pyOpenSci. For potential community-affiliated packages, the
-editor, who is a member of your community, will evaluate the package
-both at the beginning and end of the review to determine if it meets
-the criteria for affiliated status.
+editor, who is a member of your community, will evaluate the package at the beginning of the review process. We can also perform a second review at the end of the process if requests were made for changes to the package that would allow it to become affiliated with your community.
 
 :::
 
@@ -181,7 +186,7 @@ the criteria for affiliated status.
 
 You can also access are most recent list of accepted packages using this [.yml file which drives
 our website here](https://github.com/pyOpenSci/pyopensci.github.io/blob/main/_data/packages.yml).
-This file is updated using a cron job several times a month and can be filtered by your specific community to support your website development workflow.
+This file is updated using a cron job several times a month and can be filtered by your specific community to support your website development workflow. [The full listing of packages can be found here.](https://www.pyopensci.org/python-packages.html)
 :::
 
 ### Package maintenance
