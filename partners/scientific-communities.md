@@ -62,7 +62,7 @@ issues with packaging.
 The benefits for the broader scientific Python community include:
 
 - We have broad reach across the entire scientific Python ecosystem which will allow us to promote your community and associated packages.
-- We have a broad view across all domains within the scientific Python ecosystem which will help us to identify overlap of package functionality across domains and potentially aggregate efforts in the future as it makes sense (i.e. if a maintainer needs to step down).
+- We have a broad view across all domains within the scientific Python ecosystem which will help us to identify overlap of package functionality across domains and potentially aggregate efforts in the future as it makes sense (i.e., if a maintainer needs to step down).
 - We offer an established peer review process will help enforce standardization of scientific Python packaging and best practices across the ecosystem. Our volunteer-lead peer review process has been operating since 2019.
 
 ## How peer review works for partners
