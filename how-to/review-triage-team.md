@@ -105,7 +105,7 @@ The review issue triage team's role is to do the following:
 
 - Ensure that after each review is closed, all metadata are filled out
 - Ensure that labels are updated accordingly. These labels are what we use to parse reviews that end up posted on our website, if they aren't labeled correctly they will not get automagically added.
-- Ensure that the [post-review survey filled out](https://docs.google.com/spreadsheets/d/1jEk-DDpkz14Z07OX_o1cN2vHzVbJO6mQ83ihGXsWkLc/edit#gid=0) (for issues opened after March 2023)
+- Ensure that the [post-review survey filled out](https://docs.google.com/spreadsheets/d/1jEk-DDpkz14Z07OX_o1cN2vHzVbJO6mQ83ihGXsWkLc/edit#gid=0) (for issues opened after March 2023). Note this page is only accessible to our editorial team and only contains names / gh user names of people who filled out the survey rather than any survey data.
 - Help the software review lead update older issues when metadata items is missing.
 - Update review status on project board
 - Post on the [pyOpenSci Discourse packages channel](https://pyopensci.discourse.group/c/packages/8) announcing & celebrating that a successful review has been completed!

@@ -56,7 +56,11 @@ jobs:
           directory: ./_build/html
           arguments: |
             --ignore-files "/.+\/_static\/.+/"
-            --ignore-status-codes "403, 503, 200, 301, 0"
+<<<<<<< HEAD
+            --ignore-status-codes "0, 200, 301, 401, 403, 503"
+=======
+            --ignore-status-codes "401, 403, 503, 200"
+>>>>>>> 9417d38 (Fix: a few broken urls)
             --ignore-urls "https://github.com/pyOpenSci/software-review/issues/18#issuecomment-581752433"
 
       # Save html as artifact
