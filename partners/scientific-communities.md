@@ -1,4 +1,4 @@
-# Scientific Python Partnerships
+# Partnerships with Scientific Python Communities
 
 ```{toctree}
 :hidden:
@@ -78,7 +78,7 @@ Through our partnership, we have two options when selecting an editor.
 
 - If the editor is someone from your partner community who has authority, they can determine whether the package meets the decided-upon criteria to become affiliated with your community.
 
-* If we have a domain specific editor who is not authorized by your community to make this decision, we can ask someone from your community to make the decision around affiliated status. Once the decision is made, the review can proceed as normal.
+- If we have a domain specific editor who is not authorized by your community to make this decision, we can ask someone from your community to make the decision around affiliated status. Once the decision is made, the review can proceed as normal.
 
 3. Once affiliated status has been determined, the editor finds 2 reviewers to begin the review.
 4. The review begins and is a conversation between the package maintainer and the reviewer with the goal of improving the package usability and quality.
@@ -296,5 +296,5 @@ and code makes your package more accessible and welcoming to contributors.
 Over time, this investment will yield significant rewards.
 
 All our reviews are open on GitHub, ensuring transparency. Everyone
-participating in the peer review process is also expected to adhere to our
-code of conduct.
+participating in the peer review process is also expected to adhere to [our
+code of conduct.](https://www.pyopensci.org/governance/CODE_OF_CONDUCT.html)
