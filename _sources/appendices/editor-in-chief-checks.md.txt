@@ -19,7 +19,7 @@ below.
 - [ ] Core GitHub repository Files
   - [ ] **README** The package has a `README.md` file with clear explanation of what the package does, instructions on how to install it, and a link to development instructions.
   - [ ] **Contributing File** The package has a `CONTRIBUTING.md` file that details how to install and contribute to the package.
-  - [ ] **Code of Conduct** The package has a `Code_of_Conduct.md` file.
+  - [ ] **Code of Conduct** The package has a `CODE_OF_CONDUCT.md` file.
   - [ ] **License** The package has an [OSI approved license](https://opensource.org/licenses).
 NOTE: We prefer that you have development instructions in your documentation too.
 - [ ] **Issue Submission Documentation** All of the information is filled out in the `YAML` header of the issue (located at the top of the issue template).
