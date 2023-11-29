@@ -53,7 +53,7 @@ Learn about the scope of the packages that we review.
 [Click to learn more »](about/package-scope)
 :::
 
-:::{grid-item-card} {octicon}`code-square;1.5em;sd-mr-1`Maintainers Guide
+:::{grid-item-card} {octicon}`code-square;1.5em;sd-mr-1`Authors Guide
 :link: how-to/author-guide
 :link-type: doc
 :class-header: bg-light

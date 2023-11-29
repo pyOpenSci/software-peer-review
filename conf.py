@@ -46,6 +46,13 @@ html_js_files = ["matomo.js"]
 
 # Theme options
 html_theme_options = {
+    "favicons": [
+      {
+         "rel": "icon",
+         "sizes": "16x16",
+         "href": "https://www.pyopensci.org/images/favicon.ico",
+      },
+   ],
     "announcement": "<p><a href='https://www.github.com/pyopensci/software-submission/'>Submit Your Python Package for Peer Review!</a></p>",
     "external_links": [
         {
