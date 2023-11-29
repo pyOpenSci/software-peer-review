@@ -1,4 +1,4 @@
-# pyOpenSci Guide for Peer Review Editors
+# pyOpenSci Software Review Editor Guide
 
 <!--
 ```{note}
