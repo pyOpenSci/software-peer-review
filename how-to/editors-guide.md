@@ -207,7 +207,7 @@ appreciate the communication and understand it's a volunteer-lead process.
 Diversity is core to the pyOpenSci mission. As such it's important to have an
 editorial team comprised of an editor + 2 reviewers from diverse backgrounds.
 
-In your search for reviewers, please ensure ensure that there is diversity
+In your search for reviewers, please ensure that there is diversity
 in the team supporting package review. Specifically both reviewers should have [different backgrounds and different gender-identities](reviewer-diversity) whenever possible. pyOpenSci [supports mentoring new reviewers if needed!](review-mentorship)
 
 [Read our finding reviewers guide for more on finding reviewers.](finding-reviewers)
