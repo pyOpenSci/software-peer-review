@@ -176,10 +176,30 @@ we are using our volunteer reviewer time effectively.
 structure, request changes before assigning reviewers.**
 ```
 
-### ✔️ 3. Identify Python package reviewers
+### ✔️ 3. Identify scientific Python package reviewers
 
-Within **one week of responding to the issue as the editor**, identify two people to
-review the Python package.
+Each review should have at least 2 reviewers.
+
+- One reviewer should have expertise in both Python and the scientific domain related to the package submitted.
+- The second reviewer can be a more generally focused on the package's usability, accessibility and packaging infrastructure.
+
+A review consisting of a domain expert and a Pythonista is ideal as it provides two distinct perspectives for review. Further it can often be difficult to find two people with both the specific domain expertise AND packaging expertise.
+
+#### Finding package reviewers
+
+Often times, finding reviewers for a package can be the trickiest part
+of the review process. Expect this to take a bit of time. [Check out this page for tips related to finding reviewers.](finding-reviewers)
+
+If you can, try to find two people to serve as reviewers within **two weeks
+of responding to the issue as the editor**. If it takes longer, as
+often does, make a point to keep the author posted on the issue
+as you continue your search. You may add language such as:
+
+> Hey, @authorGithubHandle I just wanted to drop in to let you know that I'm searching for reviewers for your package. It may take a bit more time.
+
+This type of communication just lets the author know that the process is
+moving forward. Even if it takes longer to find reviews, authors generally
+appreciate the communication and understand it's a volunteer-lead process.
 
 ```{admonition} Diversity in the editorial & reviewer  team is important
 :class: important
@@ -188,7 +208,7 @@ Diversity is core to the pyOpenSci mission. As such it's important to have an
 editorial team comprised of an editor + 2 reviewers from diverse backgrounds.
 
 In your search for reviewers, please ensure ensure that there is diversity
-in the team supporting package review. [Specifically both reviewers should have different backgrounds and different gender-identities whenever possible](reviewer-diversity). pyOpenSci [supports mentoring new reviewers if needed!](review-mentorshipreview-mentorship)
+in the team supporting package review. Specifically both reviewers should have [different backgrounds and different gender-identities](reviewer-diversity) whenever possible. pyOpenSci [supports mentoring new reviewers if needed!](review-mentorship)
 
 [Read our finding reviewers guide for more on finding reviewers.](finding-reviewers)
 ```
@@ -210,10 +230,6 @@ moving.
 2. the review deadline date.
 
 - Change the label on the issue to `3/reviewer(s)-assigned`
-
-```{note}
-[Click here for more information about finding reviewers for a package.](finding-reviewers)
-```
 
 ```{warning}
 Make sure to ask the reviewers for their preferred means of contact, or a reliable way to get in touch with them.
@@ -309,7 +325,10 @@ Once the package has been accepted through the review process:
 
 - Don't forget to change the status tag of the issue to `6/pyOS-approved` 🚀🚀🚀`.
 - If the package moves on to JOSS - be sure to continue to update the labels to track the JOSS review process (but do NOT remove the `6/pyOS-approved` label).
-- Update the YAML at the top of the issue with the version of the package that was approved, Zenodo DOI for the approved version and the date approved.
+- Update the YAML at the top of the issue with the:
+  - version of the package that was approved,
+  - Zenodo DOI for the approved version and
+  - the date approved.
 
 ```markdown
 Archive: UPDATE-THIS-WITH-A-ZENODO-ARCHIVE-BADGE-TBD

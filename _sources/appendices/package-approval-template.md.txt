@@ -31,7 +31,9 @@ Please complete the final steps to wrap up this review. Editor, please do the fo
 - [ ] Make sure that the maintainers filled out the [post-review survey](https://forms.gle/BLGVCfUdiJHS5YJY7)
 - [ ] Invite the maintainers to submit a blog post highlighting their package. Feel free to use / adapt [language found in this comment](https://github.com/pyOpenSci/software-submission/issues/93#issuecomment-1591687581) to help guide the author.
 - [ ] Change the status tag of the issue to `6/pyOS-approved6 🚀🚀🚀`.
+- [ ] Invite the package maintainer(s) and both reviewers to slack if they wish to join.
 - [ ] If the author submits to JOSS, please continue to update the labels for JOSS on this issue until the author is accepted (do not remove the `6/pyOS-approved` label). Once accepted add the label `9/joss-approved` to the issue. Skip this check if the package is not submitted to JOSS.
+- [ ] If the package is JOSS-accepted please add the JOSS doi to the YAML at the top of the issue.
 
 ---
 
