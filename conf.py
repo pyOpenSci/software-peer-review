@@ -87,7 +87,8 @@ html_theme_options = {
     "navbar_align": "left",  # [left, content, right] For testing that the navbar items align properly
     "github_url": "https://github.com/pyOpenSci/software-peer-review",
     "twitter_url": "https://twitter.com/pyopensci",
-    "footer_items": ["copyright"],
+    "footer_start": ["copyright"],
+    "footer_end": [],
 }
 
 # html_theme_options["analytics"] = {
