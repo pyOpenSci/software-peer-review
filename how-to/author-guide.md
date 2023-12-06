@@ -1,4 +1,4 @@
-# Guide for Python Open Source Maintainers and Authors
+# Peer Review Guide for Python Open Source Authors / Authors
 
 ```{toctree}
 :hidden:
@@ -22,7 +22,77 @@ Finding Reviewers <finding-reviewers>
 
 Are you considering submitting a package for review with pyOpenSci? You've
 come to the right place! Below you will find the steps that you need to follow
-to submit a package to pyOpenSci for peer review.
+to submit a package to pyOpenSci for peer review along with some additional resources that you may find useful.
+
+## Peer review resources
+
+::::{grid} 1 2 3 3
+:class-container: text-center
+:gutter: 3
+
+:::{grid-item-card} <i class="fa-solid fa-crosshairs"></i> Package scope
+:link: ../about/package-scope
+:link-type: doc
+:class-header: bg-light
+
+Learn about the requirements and scope of packages that pyOpenSci reviews.
++++
+<i class="fa-solid fa-link"></i> Learn more
+:::
+
+:::{grid-item-card} <i class="fa-solid fa-magnifying-glass"></i> How review works
+:link: ../our-process/how-review-works
+:link-type: doc
+:class-header: bg-light
+
+We review packages openly using GitHub Issues.
++++
+<i class="fa-solid fa-link"></i> Learn more
+:::
+
+:::{grid-item-card}  <i class="fa-solid fa-timeline"></i> Review timeline
+:link: ../our-process/review-timeline
+:link-type: doc
+:class-header: bg-light
+
+Curious about the general timeline for pyOpenSci reviews?
++++
+<i class="fa-solid fa-link"></i> Learn more here
+:::
+
+
+:::{grid-item-card} Review Guidelines & Policies
+:link: ../our-process/policies
+:link-type: doc
+:class-header: bg-light
+
+Read about our peer review policies.
++++
+<i class="fa-solid fa-link"></i> Learn more
+:::
+
+
+:::{grid-item-card} <i class="fa-solid fa-handshake-angle"></i></i> Need packaging guidance?
+:link: https://www.pyopensci.org/python-package-guide/
+:link-type: doc
+:class-header: bg-light
+
+If you want to learn more about packaging best practices, you can check out our packaging guide.
++++
+<i class="fa-solid fa-arrow-up-right-from-square"></i> Go there now
+:::
+
+:::{grid-item-card} <i class="fa-solid fa-clipboard-question"></i> Questions?
+:link: https://pyopensci.discourse.group/c/review-process/7
+:link-type: doc
+:class-header: bg-light
+
+If you have questions about our process or packaging in general, please ask them on our discourse! We are here to help you.
++++
+<i class="fa-solid fa-arrow-up-right-from-square"></i> Go there now
+:::
+::::
+
 
 Before you begin this process, [please be sure to read the review process guidelines](../our-process/policies).
 
