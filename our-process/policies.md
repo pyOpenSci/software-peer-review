@@ -104,7 +104,7 @@ fixes or messages from the pyOpenSci team, we will initiate discussions about
 the package's future within the pyOpenSci ecosystem.
 
 In cases where a package is heavily used by the community, we may collaborate
-with the community to identify a new maintainer. Otherwise, the package will be
+with the community to identify reasonable next steps, such as assisting in finding a new maintainer. If a solution for ongoing package maintenance is not found, the package will be
 archived within the pyOpenSci ecosystem.
 
 If a sub-community decides to fork and maintain the package, we are open to
