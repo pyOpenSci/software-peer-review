@@ -92,7 +92,7 @@ the last release and last commit to the package repository. Based on activity in
 the repository:
 
 - Packages not updated within 6 months will receive a flag on the website in the form of a small icon.
-- After a year of no updates, the package will be flagged as potentially
+- Packages with low activity (no new commits or releases) for the past 12 months will be flagged for potential archive.
   archived. At this point, a member of the pyOpenSci team will contact the
   package maintainers to assess the maintenance status and their intentions
   regarding the tool.
