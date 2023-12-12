@@ -22,15 +22,15 @@ When submitting a package, please make sure that your GitHub notification settin
 
 ## Submitting your package for review in other venues
 
-We strongly suggest submitting your package for review with pyOpenSci before:
+We recommend submitting your package for review with pyOpenSci before:
 
-- publishing on `PyPI` or `conda`;
+- publishing to a package repository, such as `PyPI` and `conda-forge`;
 - submitting a software paper describing the package to a journal.
 
 Review feedback may result in major improvements and updates to your package,
 including changes that could be break package functionality.
 
-We do not consider previous publication on `PyPI` or `conda` or in other venues
+We do not consider previous publication on `PyPI` or `conda-forge` or in other venues
 sufficient reason to not adopt reviewer or editor recommendations provided in
 our review.
 
@@ -87,15 +87,13 @@ and to see if there are any updates we can highlight through our social channels
 
 ### Maintenance Tracking
 
-pyOpenSci is building a system to track package metrics, including issues, pull requests, and dates of
-the last release and last commit to the package repository. Based on activity in
-the repository:
+pyOpenSci is building a system to track package metrics and activity, including issues, pull requests, and dates of
+the last release and last commit to the package repository. Activity is defined as a repository commit, pull request or release.
 
-- Packages not updated within 6 months will receive a flag on the website in the form of a small icon.
-- Packages with low activity (no new commits or releases) for the past 12 months will be flagged for potential archive.
-  A pyOpenSci team member will contact the
-  package maintainers to assess the maintenance status and their intentions
-  regarding the tool.
+We will flag packages that haven't been updated on a 6-12 month time period based on activity as follows:
+
+- Packages with no activity for at least 6 months will receive a green flag on the website indicating that the package is still potentially maintained but no activity has been recorded in that time frame.
+- Packages with no activity after 12 months will be flagged. At that time, pyOpenSci editorial team member will contact the package maintainers to evaluate the maintenance status of their package.
 
 ## Package Maintenance and Maintainer Responsiveness
 
