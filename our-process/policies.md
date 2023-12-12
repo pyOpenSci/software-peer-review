@@ -108,7 +108,7 @@ with the community to identify a new maintainer. Otherwise, the package will be
 archived within the pyOpenSci ecosystem.
 
 If a sub-community decides to fork and maintain the package, we are open to
-working with the new maintainers to keep the package within our ecosystem.
+working with the new maintainers to register the newly forked package within our ecosystem. The original package will be archived with a link to the new fork.
 
 ### Quality Commitment
 
