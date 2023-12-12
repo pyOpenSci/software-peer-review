@@ -83,7 +83,7 @@ will collaborate with you to either:
   package.
 
 We will reach out to our package maintainers each year to verify the package is actively maintained
-maintenance and to see if there are any updates we can highlight through our social channels.
+and to see if there are any updates we can highlight through our social channels.
 
 ### Maintenance Tracking
 
