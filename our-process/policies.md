@@ -93,7 +93,7 @@ the repository:
 
 - Packages not updated within 6 months will receive a flag on the website in the form of a small icon.
 - Packages with low activity (no new commits or releases) for the past 12 months will be flagged for potential archive.
-  archived. At this point, a member of the pyOpenSci team will contact the
+  A pyOpenSci team member will contact the
   package maintainers to assess the maintenance status and their intentions
   regarding the tool.
 
