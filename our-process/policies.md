@@ -90,10 +90,7 @@ and to see if there are any updates we can highlight through our social channels
 pyOpenSci is building a system to track package metrics and activity, including issues, pull requests, and dates of
 the last release and last commit to the package repository. Activity is defined as a repository commit, pull request or release.
 
-We will flag packages that haven't been updated on a 6-12 month time period based on activity as follows:
-
-- Packages with no activity for at least 6 months will receive a green flag on the website indicating that the package is still potentially maintained but no activity has been recorded in that time frame.
-- Packages with no activity after 12 months will be flagged. At that time, pyOpenSci editorial team member will contact the package maintainers to evaluate the maintenance status of their package.
+We will flag packages that haven't been updated within a 1 year/ 12 month time period based on activity. Packages with no activity after 12 months will be flagged. At that time, pyOpenSci editorial team member will contact the package maintainers to evaluate the maintenance status of their package.
 
 ## Package Maintenance and Maintainer Responsiveness
 
@@ -123,5 +120,4 @@ to step down from maintaining a tool.
 ### Requesting package removal from the pyOpenSci ecosystem
 
 In the unlikely scenario that a contributor of a package requests removal of their
-package from our ecosystem, we retain the right to archive a version of the package in our
-ecosystem for archival purposes only.
+package from our ecosystem, we retain the right offer the last / most recently released version of that package in our ecosystem for archival purposes only.
