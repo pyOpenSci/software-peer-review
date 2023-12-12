@@ -82,7 +82,7 @@ will collaborate with you to either:
 - Archive the tool, depending on what best suits your specific scientific Python
   package.
 
-We will reach out to our package maintainers each year to assess the status of
+We will reach out to our package maintainers each year to verify the package is actively maintained
 maintenance and to see if there are any updates we can highlight through our social channels.
 
 ### Maintenance Tracking
