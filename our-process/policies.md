@@ -88,7 +88,7 @@ and to see if there are any updates we can highlight through our social channels
 ### Maintenance Tracking
 
 pyOpenSci is building a system to track package metrics, including issues, pull requests, and dates of
-the last release and commits to the package repository. Based on activity in
+the last release and last commit to the package repository. Based on activity in
 the repository:
 
 - Packages not updated within 6 months will receive a flag on the website in the form of a small icon.
