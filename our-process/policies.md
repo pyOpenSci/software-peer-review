@@ -30,9 +30,8 @@ We recommend submitting your package for review with pyOpenSci before:
 Review feedback may result in major improvements and updates to your package,
 including changes that could be break package functionality.
 
-We do not consider previous publication on `PyPI` or `conda-forge` or in other venues
-sufficient reason to not adopt reviewer or editor recommendations provided in
-our review.
+Applying reviewer or editor recommendations to your package can improve your user's experience with future versions of your package
+even if your package is already published on `PyPI` or `conda-forge`.
 
 > Please do not submit your package for review while it or an associated manuscript is
 > also under review at another venue, as this may result on conflicting requests
@@ -47,7 +46,6 @@ submit it to pyOpenSci for review. This provides:
 - We will also keep in touch with you as a maintainer to support long term maintenance. If you need to step down from maintaining your package we will help find a new maintainer and/or help sunset the tool.
 
 (coi)=
-
 ### Conflict of interest for reviews and editors
 
 Following criteria are meant to be a guide for what constitutes a conflict of interest
