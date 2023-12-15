@@ -42,7 +42,7 @@ reviewing locally to test it out.
 To install the package, you can either:
 
 * fork the package repository and install it in
-development/ editable mode `pip install -e .`
+development/ editable mode `pip install --editable .`
 * or you can install it directly from `pip` or `conda-forge`.
 
 ```{important}
