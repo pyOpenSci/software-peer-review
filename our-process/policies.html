@@ -557,16 +557,15 @@ place on GitHub. You can, however choose to contact the editor by email if neede
 </section>
 <section id="submitting-your-package-for-review-in-other-venues">
 <h2>Submitting your package for review in other venues<a class="headerlink" href="#submitting-your-package-for-review-in-other-venues" title="Link to this heading">#</a></h2>
-<p>We strongly suggest submitting your package for review with pyOpenSci before:</p>
+<p>We recommend submitting your package for review with pyOpenSci before:</p>
 <ul class="simple">
-<li><p>publishing on <code class="docutils literal notranslate"><span class="pre">PyPI</span></code> or <code class="docutils literal notranslate"><span class="pre">conda</span></code>;</p></li>
+<li><p>publishing to a package repository, such as <code class="docutils literal notranslate"><span class="pre">PyPI</span></code> and <code class="docutils literal notranslate"><span class="pre">conda-forge</span></code>;</p></li>
 <li><p>submitting a software paper describing the package to a journal.</p></li>
 </ul>
 <p>Review feedback may result in major improvements and updates to your package,
 including changes that could be break package functionality.</p>
-<p>We do not consider previous publication on <code class="docutils literal notranslate"><span class="pre">PyPI</span></code> or <code class="docutils literal notranslate"><span class="pre">conda</span></code> or in other venues
-sufficient reason to not adopt reviewer or editor recommendations provided in
-our review.</p>
+<p>Applying reviewer or editor recommendations to your package can improve your user’s experience with future versions of your package
+even if your package is already published on <code class="docutils literal notranslate"><span class="pre">PyPI</span></code> or <code class="docutils literal notranslate"><span class="pre">conda-forge</span></code>.</p>
 <blockquote>
 <div><p>Please do not submit your package for review while it or an associated manuscript is
 also under review at another venue, as this may result on conflicting requests
@@ -602,37 +601,38 @@ external guest editor will be recruited to lead the package review.</p>
 </section>
 <section id="after-acceptance-package-ownership-and-maintenance">
 <h2>After Acceptance: Package Ownership and Maintenance<a class="headerlink" href="#after-acceptance-package-ownership-and-maintenance" title="Link to this heading">#</a></h2>
-<p>Authors of contributed packages essentially maintain the same ownership they
-had prior to their package joining the pyOpenSci suite. Package authors will
-continue to maintain
-and develop their software after acceptance into pyOpenSci. Unless explicitly added as
-collaborators, the pyOpenSci team will not interfere with day to day operations.</p>
+<p>Package authors are expected to maintain and develop their software and retain
+ownership of it after acceptance into pyOpenSci, as per the peer review agreement
+acknowledged upon submission. This maintenance commitment should last for at
+least two years. The pyOpenSci team will not interfere with day-to-day tool
+maintenance unless explicitly added as collaborators.</p>
 <p>If you need to step down from maintaining your accepted pyOpenSci package, please
-please notify the EiC / software review lead of this as soon as you can. We
-will talk with you about your tool and work together to either find a new maintainer or sunset the tool depending upon what makes the most sense.</p>
-<p>We will reach out to our package maintainers each year to check in on how
-maintenance is going.</p>
-<section id="maintainer-responsiveness">
-<h3>Maintainer Responsiveness<a class="headerlink" href="#maintainer-responsiveness" title="Link to this heading">#</a></h3>
-<p>If package maintainers do not respond in a timely manner to requests for
-package fixes, we will remind the maintainer a number of times. After 3 months
-(or shorter time frame, depending on how critical the fix is) we will discuss
-the future of the package as a part of our pyOpenSci ecosystem.</p>
+promptly notify the pyOpenSci Editor-in-Chief or Software Review Lead. pyOpenSci
+will collaborate with you to either:</p>
 <ul class="simple">
-<li><p>If a package becomes completely un-maintained we will highlight that fact and
-remove it as a vetted tool in our ecosystem.</p></li>
-<li><p>If a sub-community decides to fork and maintain that package we are open to working with the new maintainers to keep the package within our ecosystem.</p></li>
+<li><p>Find a new maintainer or</p></li>
+<li><p>Archive the tool, depending on what best suits your specific scientific Python
+package.</p></li>
 </ul>
-<!-- Should authors abandon the maintenance of an actively used package in our suite,
-we will consider petitioning PyPI to transfer package maintainer status to pyOpenSci. -->
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Note from the Executive Director: Please note that we are reviewing the text
-below and will be updating our policy
-surrounding package quality and long term maintenance in the upcoming weeks
-(Fall 2022).</p>
-</div>
+<p>We will reach out to our package maintainers each year to verify the package is actively maintained
+and to see if there are any updates we can highlight through our social channels.</p>
+<section id="maintenance-tracking">
+<h3>Maintenance Tracking<a class="headerlink" href="#maintenance-tracking" title="Link to this heading">#</a></h3>
+<p>pyOpenSci is building a system to track package metrics and activity, including issues, pull requests, and dates of
+the last release and last commit to the package repository. Activity is defined as a repository commit, pull request or release.</p>
+<p>We will flag packages that haven’t been updated within a 1 year/ 12 month time period based on activity. Packages with no activity after 12 months will be flagged. At that time, pyOpenSci editorial team member will contact the package maintainers to evaluate the maintenance status of their package.</p>
 </section>
+</section>
+<section id="package-maintenance-and-maintainer-responsiveness">
+<h2>Package Maintenance and Maintainer Responsiveness<a class="headerlink" href="#package-maintenance-and-maintainer-responsiveness" title="Link to this heading">#</a></h2>
+<p>If, after one year, package maintainers are unresponsive to requests for package
+fixes or messages from the pyOpenSci team, we will initiate discussions about
+the package’s ongoing inclusion within the pyOpenSci ecosystem.</p>
+<p>In cases where a package is heavily used by the community, we may collaborate
+with the community to identify reasonable next steps, such as assisting in finding a new maintainer. If a solution for ongoing package maintenance is not found, the package will be
+archived within the pyOpenSci ecosystem.</p>
+<p>If a sub-community decides to fork and maintain the package, we are open to
+working with the new maintainers to register the newly forked package within our ecosystem. The original package will be archived with a link to the new fork.</p>
 <section id="quality-commitment">
 <h3>Quality Commitment<a class="headerlink" href="#quality-commitment" title="Link to this heading">#</a></h3>
 <p>pyOpenSci strives to develop and promote high quality research software. To ensure that
@@ -644,11 +644,10 @@ of individual maintainers. Buggy, unmaintained software may be removed from our 
 any time. We also ask maintainers that they get in touch with us if they do need
 to step down from maintaining a tool.</p>
 </section>
-<section id="requesting-package-removal">
-<h3>Requesting Package Removal<a class="headerlink" href="#requesting-package-removal" title="Link to this heading">#</a></h3>
+<section id="requesting-package-removal-from-the-pyopensci-ecosystem">
+<h3>Requesting package removal from the pyOpenSci ecosystem<a class="headerlink" href="#requesting-package-removal-from-the-pyopensci-ecosystem" title="Link to this heading">#</a></h3>
 <p>In the unlikely scenario that a contributor of a package requests removal of their
-package from the suite, we retain the right to maintain a version of the package in our
-suite for archival purposes.</p>
+package from our ecosystem, we retain the right offer the last / most recently released version of that package in our ecosystem for archival purposes only.</p>
 </section>
 </section>
 </section>
@@ -705,9 +704,12 @@ suite for archival purposes.</p>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#after-acceptance-package-ownership-and-maintenance">After Acceptance: Package Ownership and Maintenance</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#maintainer-responsiveness">Maintainer Responsiveness</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#maintenance-tracking">Maintenance Tracking</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#package-maintenance-and-maintainer-responsiveness">Package Maintenance and Maintainer Responsiveness</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#quality-commitment">Quality Commitment</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#requesting-package-removal">Requesting Package Removal</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#requesting-package-removal-from-the-pyopensci-ecosystem">Requesting package removal from the pyOpenSci ecosystem</a></li>
 </ul>
 </li>
 </ul>

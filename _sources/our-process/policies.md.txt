@@ -22,31 +22,32 @@ When submitting a package, please make sure that your GitHub notification settin
 
 ## Submitting your package for review in other venues
 
-We strongly suggest submitting your package for review with pyOpenSci before:
+We recommend submitting your package for review with pyOpenSci before:
 
-*  publishing on `PyPI` or `conda`;
-*  submitting a software paper describing the package to a journal.
+- publishing to a package repository, such as `PyPI` and `conda-forge`;
+- submitting a software paper describing the package to a journal.
 
 Review feedback may result in major improvements and updates to your package,
 including changes that could be break package functionality.
 
-We do not consider previous publication on `PyPI` or `conda` or in other venues
-sufficient reason to not adopt reviewer or editor recommendations provided in
-our review.
+Applying reviewer or editor recommendations to your package can improve your user's experience with future versions of your package
+even if your package is already published on `PyPI` or `conda-forge`.
 
->Please do not submit your package for review while it or an associated manuscript is
+> Please do not submit your package for review while it or an associated manuscript is
 > also under review at another venue, as this may result on conflicting requests
 > for changes from two sets of reviewers.
 
 ### Publication with Journal of Open Source Software (JOSS)
+
 If you have previously published your software package with JOSS, you can still
 submit it to pyOpenSci for review. This provides:
 
-* Increased visibility of your package as a vetted tool within the scientific python ecosystem
-* We will also keep in touch with you as a maintainer to support long term maintenance. If you need to step down from maintaining your package we will help find a new maintainer and/or help sunset the tool.
+- Increased visibility of your package as a vetted tool within the scientific python ecosystem
+- We will also keep in touch with you as a maintainer to support long term maintenance. If you need to step down from maintaining your package we will help find a new maintainer and/or help sunset the tool.
 
 (coi)=
 ### Conflict of interest for reviews and editors
+
 Following criteria are meant to be a guide for what constitutes a conflict of interest
 for an editor or reviewer. The potential editor or reviewer has a conflict of interest
 if:
@@ -65,41 +66,45 @@ external guest editor will be recruited to lead the package review.
 
 ## After Acceptance: Package Ownership and Maintenance
 
-Authors of contributed packages essentially maintain the same ownership they
-had prior to their package joining the pyOpenSci suite. Package authors will
-continue to maintain
-and develop their software after acceptance into pyOpenSci. Unless explicitly added as
-collaborators, the pyOpenSci team will not interfere with day to day operations.
+Package authors are expected to maintain and develop their software and retain
+ownership of it after acceptance into pyOpenSci, as per the peer review agreement
+acknowledged upon submission. This maintenance commitment should last for at
+least two years. The pyOpenSci team will not interfere with day-to-day tool
+maintenance unless explicitly added as collaborators.
 
 If you need to step down from maintaining your accepted pyOpenSci package, please
-please notify the EiC / software review lead of this as soon as you can. We
-will talk with you about your tool and work together to either find a new maintainer or sunset the tool depending upon what makes the most sense.
+promptly notify the pyOpenSci Editor-in-Chief or Software Review Lead. pyOpenSci
+will collaborate with you to either:
 
-We will reach out to our package maintainers each year to check in on how
-maintenance is going.
+- Find a new maintainer or
+- Archive the tool, depending on what best suits your specific scientific Python
+  package.
 
-### Maintainer Responsiveness
-If package maintainers do not respond in a timely manner to requests for
-package fixes, we will remind the maintainer a number of times. After 3 months
-(or shorter time frame, depending on how critical the fix is) we will discuss
-the future of the package as a part of our pyOpenSci ecosystem.
+We will reach out to our package maintainers each year to verify the package is actively maintained
+and to see if there are any updates we can highlight through our social channels.
 
-* If a package becomes completely un-maintained we will highlight that fact and
-remove it as a vetted tool in our ecosystem.
-* If a sub-community decides to fork and maintain that package we are open to working with the new maintainers to keep the package within our ecosystem.
+### Maintenance Tracking
 
-<!-- Should authors abandon the maintenance of an actively used package in our suite,
-we will consider petitioning PyPI to transfer package maintainer status to pyOpenSci. -->
+pyOpenSci is building a system to track package metrics and activity, including issues, pull requests, and dates of
+the last release and last commit to the package repository. Activity is defined as a repository commit, pull request or release.
 
+We will flag packages that haven't been updated within a 1 year/ 12 month time period based on activity. Packages with no activity after 12 months will be flagged. At that time, pyOpenSci editorial team member will contact the package maintainers to evaluate the maintenance status of their package.
 
-```{note}
-Note from the Executive Director: Please note that we are reviewing the text
-below and will be updating our policy
-surrounding package quality and long term maintenance in the upcoming weeks
-(Fall 2022).
-```
+## Package Maintenance and Maintainer Responsiveness
+
+If, after one year, package maintainers are unresponsive to requests for package
+fixes or messages from the pyOpenSci team, we will initiate discussions about
+the package's ongoing inclusion within the pyOpenSci ecosystem.
+
+In cases where a package is heavily used by the community, we may collaborate
+with the community to identify reasonable next steps, such as assisting in finding a new maintainer. If a solution for ongoing package maintenance is not found, the package will be
+archived within the pyOpenSci ecosystem.
+
+If a sub-community decides to fork and maintain the package, we are open to
+working with the new maintainers to register the newly forked package within our ecosystem. The original package will be archived with a link to the new fork.
 
 ### Quality Commitment
+
 pyOpenSci strives to develop and promote high quality research software. To ensure that
 your software meets our criteria, we review all of our submissions as part of the
 Software Peer Review process. We expect that you will continue to maintain a
@@ -110,9 +115,7 @@ of individual maintainers. Buggy, unmaintained software may be removed from our 
 any time. We also ask maintainers that they get in touch with us if they do need
 to step down from maintaining a tool.
 
+### Requesting package removal from the pyOpenSci ecosystem
 
-
-### Requesting Package Removal
 In the unlikely scenario that a contributor of a package requests removal of their
-package from the suite, we retain the right to maintain a version of the package in our
-suite for archival purposes.
+package from our ecosystem, we retain the right offer the last / most recently released version of that package in our ecosystem for archival purposes only.
