@@ -4,7 +4,7 @@
 # -- Project information -----------------------------------------------------
 
 project = "pyOpenSci Software Peer Review Guide"
-copyright = "2023, pyOpenSci"
+copyright = "2024, pyOpenSci"
 author = "pyOpenSci Editorial Team and Community"
 
 # The full version, including alpha/beta/rc tags
@@ -34,6 +34,7 @@ suppress_warnings = ["myst.header"]
 
 # For generating sitemap
 html_baseurl = "https://www.pyopensci.org/software-peer-review/"
+sitemap_url_scheme = "{link}"
 
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
