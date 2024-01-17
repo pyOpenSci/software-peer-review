@@ -1,4 +1,4 @@
-# <img src="images/logo/logo.png" width=40 /> pyOpenSci Peer Review Guide
+# <img src="[images/logo/logo.png](https://www.pyopensci.org/software-peer-review/_static/logo-light-mode.png)" width=40 /> pyOpenSci Peer Review Guide
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
 [![All Contributors](https://img.shields.io/badge/all_contributors-33-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
