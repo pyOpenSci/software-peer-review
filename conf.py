@@ -1,14 +1,27 @@
 # Configuration file for the Sphinx documentation builder.
 # https://www.sphinx-doc.org/en/master/usage/configuration.html
 
+
+from datetime import datetime
+import subprocess
+
+current_year = datetime.now().year
+organization_name = "pyOpenSci"
 # -- Project information -----------------------------------------------------
 
-project = "pyOpenSci Software Peer Review Guide"
-copyright = "2024, pyOpenSci"
-author = "pyOpenSci Editorial Team and Community"
+project = "pyOpenSci Python Package Guide"
+copyright = f"{current_year}, {organization_name}"
+author = "pyOpenSci Community"
 
-# The full version, including alpha/beta/rc tags
-release = "0.5"
+# Get the latest Git tag - there might be a prettier way to do this but...
+try:
+    release_value = subprocess.check_output(["git", "describe", "--tags"]).decode("utf-8").strip()
+    release_value = release_value[:4]
+except subprocess.CalledProcessError:
+    release_value = "0.1"  # Default value in case there's no tag
+
+# Update the release value
+release = release_value
 
 
 # -- General configuration ---------------------------------------------------
@@ -87,7 +100,6 @@ html_theme_options = {
     "show_toc_level": 1,
     "navbar_align": "left",  # [left, content, right] For testing that the navbar items align properly
     "github_url": "https://github.com/pyOpenSci/software-peer-review",
-    "twitter_url": "https://twitter.com/pyopensci",
     "footer_start": ["copyright"],
     "footer_end": [],
 }
