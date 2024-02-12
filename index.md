@@ -10,7 +10,8 @@
 
 :::{grid-item}
 :columns: 12
-:class: sd-fs-3
+:class: sd-fs-5
+
 pyOpenSci is a diverse community that supports the open Python tools that
 drive open science.
 
@@ -26,34 +27,33 @@ drive open science.
 
 ::::
 
-<!-- I think this is the end of the header - below begins the next grid-->
-
-::::{grid} 1 2 3 3
+:::::{grid} 1 2 3 3
 :class-container: text-center
 :gutter: 3
 
-:::{grid-item-card} {octicon}`book;1.5em;sd-mr-1` Learn About Software Peer Review ✏️
+::::{grid-item}
+:::{card} {octicon}`book;1.5em;sd-mr-1` Learn About Software Peer Review
+:class-card: left-aligned
 :link: about/intro
 :link-type: doc
-:class-header: bg-light
 
 Get a basic overview of our open peer review process for Python scientific open source
 software.
-+++
-[Click to learn more »](about/intro)
 :::
+::::
 
-:::{grid-item-card} {octicon}`rocket;1.5em;sd-mr-1` Package Scope (What We Review)
+::::{grid-item}
+:::{card} {octicon}`rocket;1.5em;sd-mr-1` Package Scope (What We Review)
 :link: about/package-scope
 :link-type: doc
 :class-header: bg-light
 
 Learn about the scope of the packages that we review.
-+++
-[Click to learn more »](about/package-scope)
 :::
+::::
 
-:::{grid-item-card} {octicon}`code-square;1.5em;sd-mr-1`Authors Guide
+::::{grid-item}
+:::{card} {octicon}`code-square;1.5em;sd-mr-1`Authors Guide
 :link: how-to/author-guide
 :link-type: doc
 :class-header: bg-light
@@ -61,21 +61,21 @@ Learn about the scope of the packages that we review.
 Are you a package author / maintainer? ✨
 
 Learn how to submit a package for peer review with pyOpenSci.
-+++
-[Click to learn more »](how-to/author-guide)
 :::
+::::
 
-:::{grid-item-card} {octicon}`pencil;1.5em;sd-mr-1`Editors Guide
+::::{grid-item}
+:::{card} {octicon}`pencil;1.5em;sd-mr-1`Editors Guide
 :link: how-to/editors-guide
 :link-type: doc
 :class-header: bg-light
 
 ✨ Our editor guide will walk you through the editorial process. ✨
-+++
-[Click to learn more »](how-to/editors-guide)
 :::
+::::
 
-:::{grid-item-card} {octicon}`codescan-checkmark;1.5em;sd-mr-1` For Reviewers
+::::{grid-item}
+:::{card} {octicon}`codescan-checkmark;1.5em;sd-mr-1` For Reviewers
 :link: how-to/reviewer-guide
 :link-type: doc
 :class-header: bg-light
@@ -84,11 +84,11 @@ Are you a reviewer? ✨
 
 Click here to read our reviewer guide which will walk you through the review
 process step-by-step.
-+++
-[Click to learn more »](how-to/editors-guide)
 :::
+::::
 
-:::{grid-item-card} {octicon}`people;1.5em;sd-mr-1` Our Partners
+::::{grid-item}
+:::{card} {octicon}`people;1.5em;sd-mr-1` Our Partners
 :link: partners/scientific-communities
 :link-type: doc
 :class-header: bg-light
@@ -97,11 +97,10 @@ Scientific Community Partnerships ✨
 
 We partner with other scientific communities. Learn about our partnerships with
 JOSS and Pangeo.
-+++
-[Click to learn more »](partners/scientific-communities)
 :::
-
 ::::
+
+:::::
 
 ## Why pyOpenSci?
 
