@@ -1,37 +1,46 @@
-# Partnerships with Scientific Python Communities
+# Partnerships with scientific Python Communities
 
-```{toctree}
+
+
+:::{toctree}
 :hidden:
 :caption: Our Partners
 
 About Our Partnerships <self>
 JOSS <joss>
 Pangeo <pangeo>
-```
+:::
 
-Numerous scientific Python communities are developing their own peer review
-processes for affiliated packages. Communities with their own package
-review processes can leverage our existing peer review process, which is
-built on community-driven package standards. In partnership with these
-communities, we enhance our standard review process with a community-specific
+
+:::{figure-md} pyopensci-3-pillars
+
+<img src="../images/pyopensci-pillars-flower.png" alt="Flower" width="500">
+
+pyOpenSci has three core programs. Community partnerships is a program that allows domain specific scientific Python communities to leverage our peer review process rather than creating their own process. Through this partnership maintainers can become affiliated with both a domain specific community, published in the Journal of Open Source Software and also become a part if the pyOpenSci community.
+:::
+
+Numerous science domain-specific scientific Python communities are developing and maintaining their own peer review
+processes to track and recommend packages that relevant to their science domain.
+However, running a high quality peer review process takes time and resources.
+
+pyOpenSci offers a program where communities can partner with us, and leverage our peer review process, which is
+built on community-driven packaging guidelines and standards. Through this partnership, we enhance our standard review process with a community-specific
 step that adds your specific requirements for package affiliation.
 
-Through this single end-to-end review process, a package can potentially:
+:::{figure-md} pyopensci-partners
 
-- Be accepted by pyOpenSci.
-- Undergo a fast-track review and get published with JOSS (if in scope).
-- Achieve affiliation with your domain-specific community.
+<img src="../images/peer-review-partners-process.png" alt="." width="500">
 
-Here we discuss our process for
-supporting this community affiliation partnership.
-
-:::{figure-md} pyos-badge-home
-:class: myclass
-
-<img src="../images/peer-review-partners-process.png" alt="Diagram showing the pyOpenSci peer review process. At the top there are 4 boxes labeled submit package for review, package review, package accepted and fast track in JOSS. Each of these are steps in our review process. At the bottom of the diagram are yellow boxes highlighting the fact that in the package review, an additional layer of review is added that contains criteria for a package to become affiliated with a specific community. The outcome is that a package can become a part of the pyOpenSci ecosystem, published in JOSS and also community affiliated with a single end-to-end review process.">
-
-Scientific communities can leverage our peer review process by adding a layer of review associated with requirements each community has for packages to be labeled as "affiliated" with that specific community. To see an example of such requirements, look at the [Pangeo partner page in this guide](pangeo).
+Through this partnership we add an additional layer of checks to our peer review process that align with a domain specific communities needs. Often these checks are around packages using existing core functionality of community tools, and adhering to community specific data structure formats.
 :::
+
+:::{figure-md} pyopensci-joss-community
+
+<img src="../images/pyos-partnerships-peer-review.png" alt="" width="400">
+
+Through this single end-to-end review process, a package can become vetted and affiliated with a domain-specific community, part of the pyOpenSci ecosystem and also published in JOSS.
+:::
+
 
 ## What do we get when we become a pyOpenSci partner?
 
@@ -52,12 +61,15 @@ Our vibrant community is filled with experts in the Python packaging space. A
 partnership with us means that you will always have support if you run into
 Python packaging issues.
 
-### Future work
+:::{admonition} What's in the works
+:class: note
 
-We are currently working on several items to improve our review process and followup activities with package maintainers including:.
+We are currently enhancing our peer review process and working together on:
 
-- Collecting metrics and will be creating small dashboards that track package health for all accepted packages in our ecosystem.
-- Working on a bot adapted from the JOSS bot that will streamline the editorial process for peer review.
+-Adding an editorial bot to our peer review infrastructure to further streamline our processes.
+- Collecting metrics around package maintenance to track health and to help identify when packages become unmaintained.
+
+:::
 
 ## Partnership benefits to the broader scientific community
 
