@@ -5,7 +5,7 @@
 
 <img src="/images/astropy_project_logo.svg" alt="The astropy logo. The logo is an orange egg shape with a white snake spiraling in it. The text of the image says The Astropy Project on three lines." class="mb-1" width="400px">
 
-...
+.
 :::
 
 pyOpenSci has a collaboration with the [Astropy scientific community](https://www.astropy.org/). Through this collaboration we add an additional layer of peer review checks to Astropy-related packages that go through our [open peer review process](https://www.pyopensci.org/software-peer-review/about/intro.html). If the package meets both the Astropy criteria and our pyOpenSci peer review criteria, it can then become both an astropy affiliated package and a pyOpenSci ecosystem package.
