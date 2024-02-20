@@ -14,9 +14,9 @@ Pangeo <pangeo>
 
 :::{figure-md} pyopensci-3-pillars
 
-<img src="../images/pyopensci-pillars-flower.png" alt="Flower" width="500">
+<img src="../images/pyopensci-pillars-flower.png" alt="A graphic showing the top of a flower with the center circle and 3 petals. The center circle says Diverse, Inclusive community. The petals have text that says Software Peer Review, Community Partnerships and Community-driven Packaging Resources & Standards. The flower is purple to match the pyOpenSci colors." width="500">
 
-pyOpenSci has three core programs. Community partnerships is a program that allows domain specific scientific Python communities to leverage our peer review process rather than creating their own process. Through this partnership maintainers can become affiliated with both a domain specific community, published in the Journal of Open Source Software and also become a part if the pyOpenSci community.
+pyOpenSci has three core programs. 1. Our community partnerships program allows domain specific scientific Python communities to leverage our peer review process rather than creating their own process. Through this partnership maintainers can become affiliated with both a domain specific community, published in the Journal of Open Source Software and also become a part if the pyOpenSci community. 2. The community partnerships program leverages our software peer review program. 3. We create packaging and open science related tutorials and guidance. All of these programs are supported and driven by a diverse, inclusive community.
 :::
 
 Numerous science domain-specific scientific Python communities are developing and maintaining their own peer review
@@ -29,14 +29,14 @@ step that adds your specific requirements for package affiliation.
 
 :::{figure-md} pyopensci-partners
 
-<img src="../images/peer-review-partners-process.png" alt="." width="500">
+<img src="../images/peer-review-partners-process.png" alt="Graphic showing the three steps of peer review. The graphic is linear with arrow pointing to the right and a box with an arrow for each step. The steps are as follows 1. Submit your package, 2. Review pyOpenSci standards and finally 3. Accepted pyOpenSci and community affiliated. Below the second box that says Review, there is a box that says Your Community Standards."  width="500">
 
 Through this partnership we add an additional layer of checks to our peer review process that align with a domain specific communities needs. Often these checks are around packages using existing core functionality of community tools, and adhering to community specific data structure formats.
 :::
 
 :::{figure-md} pyopensci-joss-community
 
-<img src="../images/pyos-partnerships-peer-review.png" alt="" width="400">
+<img src="../images/pyos-partnerships-peer-review.png" alt="Graphic with three boxes. One the left is says pyOpenSci accepted with a check mark and a pyOpenSci flower. There are then two arrows pointing to two boxes aligned vertically. the top box says JOSS published with a check and the bottom says community affiliated with a check. " width="400">
 
 Through this single end-to-end review process, a package can become vetted and affiliated with a domain-specific community, part of the pyOpenSci ecosystem and also published in JOSS.
 :::
@@ -58,16 +58,16 @@ we will provide you with the following:
 ### Packaging Support
 
 Our vibrant community is filled with experts in the Python packaging space. A
-partnership with us means that you will always have support if you run into
-Python packaging issues.
+partnership with us means that you will always have support from our diverse community of Pythonistas if you run into
+Python packaging and software maintenance challenges.
 
 :::{admonition} What's in the works
 :class: note
 
-We are currently enhancing our peer review process and working together on:
+pyOpenSci is enhancing our peer review process and working on:
 
--Adding an editorial bot to our peer review infrastructure to further streamline our processes.
-- Collecting metrics around package maintenance to track health and to help identify when packages become unmaintained.
+- Adding an editorial bot to our peer review infrastructure to streamline our review processes.
+- Collecting package metrics to track health and also understand maintenance status.
 
 :::
 
