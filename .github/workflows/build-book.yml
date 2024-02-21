@@ -11,10 +11,10 @@ jobs:
   build-test-book:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
 
       - name: Setup Python
-        uses: actions/setup-python@v2
+        uses: actions/setup-python@v5
         with:
           python-version: "3.9"
 
@@ -27,7 +27,7 @@ jobs:
         run: echo "::set-output name=dir::$(pip cache dir)"
 
       - name: Cache dependencies
-        uses: actions/cache@v2
+        uses: actions/cache@v4
         with:
           path: ${{ steps.pip-cache.outputs.dir }}
           key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
@@ -44,7 +44,7 @@ jobs:
       - name: Push to GitHub Pages
         # Only push if on main branch
         if: github.ref == 'refs/heads/main'
-        uses: peaceiris/actions-gh-pages@v3.8.0
+        uses: peaceiris/actions-gh-pages@v3.9.3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: "./_build/html"
@@ -61,7 +61,7 @@ jobs:
 
       # Save html as artifact
       - name: Save book html as artifact for viewing
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: book-html
           path: |
