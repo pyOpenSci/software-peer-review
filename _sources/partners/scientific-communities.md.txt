@@ -1,37 +1,46 @@
-# Partnerships with Scientific Python Communities
+# Partnerships with scientific Python Communities
 
-```{toctree}
+
+
+:::{toctree}
 :hidden:
 :caption: Our Partners
 
 About Our Partnerships <self>
 JOSS <joss>
 Pangeo <pangeo>
-```
+:::
 
-Numerous scientific Python communities are developing their own peer review
-processes for affiliated packages. Communities with their own package
-review processes can leverage our existing peer review process, which is
-built on community-driven package standards. In partnership with these
-communities, we enhance our standard review process with a community-specific
+
+:::{figure-md} pyopensci-3-pillars
+
+<img src="../images/pyopensci-pillars-flower.png" alt="A graphic showing the top of a flower with the center circle and 3 petals. The center circle says Diverse, Inclusive community. The petals have text that says Software Peer Review, Community Partnerships and Community-driven Packaging Resources & Standards. The flower is purple to match the pyOpenSci colors." width="500">
+
+pyOpenSci has three core programs. 1. Our community partnerships program allows domain specific scientific Python communities to leverage our peer review process rather than creating their own process. Through this partnership maintainers can become affiliated with both a domain specific community, published in the Journal of Open Source Software and also become a part if the pyOpenSci community. 2. The community partnerships program leverages our software peer review program. 3. We create packaging and open science related tutorials and guidance. All of these programs are supported and driven by a diverse, inclusive community.
+:::
+
+Numerous science domain-specific scientific Python communities are developing and maintaining their own peer review
+processes to track and recommend packages that relevant to their science domain.
+However, running a high quality peer review process takes time and resources.
+
+pyOpenSci offers a program where communities can partner with us, and leverage our peer review process, which is
+built on community-driven packaging guidelines and standards. Through this partnership, we enhance our standard review process with a community-specific
 step that adds your specific requirements for package affiliation.
 
-Through this single end-to-end review process, a package can potentially:
+:::{figure-md} pyopensci-partners
 
-- Be accepted by pyOpenSci.
-- Undergo a fast-track review and get published with JOSS (if in scope).
-- Achieve affiliation with your domain-specific community.
+<img src="../images/peer-review-partners-process.png" alt="Graphic showing the three steps of peer review. The graphic is linear with arrow pointing to the right and a box with an arrow for each step. The steps are as follows 1. Submit your package, 2. Review pyOpenSci standards and finally 3. Accepted pyOpenSci and community affiliated. Below the second box that says Review, there is a box that says Your Community Standards."  width="500">
 
-Here we discuss our process for
-supporting this community affiliation partnership.
-
-:::{figure-md} pyos-badge-home
-:class: myclass
-
-<img src="../images/peer-review-partners-process.png" alt="Diagram showing the pyOpenSci peer review process. At the top there are 4 boxes labeled submit package for review, package review, package accepted and fast track in JOSS. Each of these are steps in our review process. At the bottom of the diagram are yellow boxes highlighting the fact that in the package review, an additional layer of review is added that contains criteria for a package to become affiliated with a specific community. The outcome is that a package can become a part of the pyOpenSci ecosystem, published in JOSS and also community affiliated with a single end-to-end review process.">
-
-Scientific communities can leverage our peer review process by adding a layer of review associated with requirements each community has for packages to be labeled as "affiliated" with that specific community. To see an example of such requirements, look at the [Pangeo partner page in this guide](pangeo).
+Through this partnership we add an additional layer of checks to our peer review process that align with a domain specific communities needs. Often these checks are around packages using existing core functionality of community tools, and adhering to community specific data structure formats.
 :::
+
+:::{figure-md} pyopensci-joss-community
+
+<img src="../images/pyos-partnerships-peer-review.png" alt="Graphic with three boxes. One the left is says pyOpenSci accepted with a check mark and a pyOpenSci flower. There are then two arrows pointing to two boxes aligned vertically. the top box says JOSS published with a check and the bottom says community affiliated with a check. " width="400">
+
+Through this single end-to-end review process, a package can become vetted and affiliated with a domain-specific community, part of the pyOpenSci ecosystem and also published in JOSS.
+:::
+
 
 ## What do we get when we become a pyOpenSci partner?
 
@@ -49,15 +58,18 @@ we will provide you with the following:
 ### Packaging Support
 
 Our vibrant community is filled with experts in the Python packaging space. A
-partnership with us means that you will always have support if you run into
-Python packaging issues.
+partnership with us means that you will always have support from our diverse community of Pythonistas if you run into
+Python packaging and software maintenance challenges.
 
-### Future work
+:::{admonition} What's in the works
+:class: note
 
-We are currently working on several items to improve our review process and followup activities with package maintainers including:.
+pyOpenSci is enhancing our peer review process and working on:
 
-- Collecting metrics and will be creating small dashboards that track package health for all accepted packages in our ecosystem.
-- Working on a bot adapted from the JOSS bot that will streamline the editorial process for peer review.
+- Adding an editorial bot to our peer review infrastructure to streamline our review processes.
+- Collecting package metrics to track health and also understand maintenance status.
+
+:::
 
 ## Partnership benefits to the broader scientific community
 
