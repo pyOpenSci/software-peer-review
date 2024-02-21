@@ -252,8 +252,6 @@ Once your package is approved, a few things will happen:
    package accepted by pyOpenSci.
 1. We will ask you to add the pyOpenSci badge [![pyOpenSci](https://tinyurl.com/y22nb8up)](https://github.com/pyOpenSci/software-review/issues/issue-number) to the
    top of your **README.md** file.
-1. We will ask you to add your package to the [pyOpenSci website](https://www.pyopensci.org/our-community/). This will give
-   your package more visibility in the community as a vetted pyOpenSci tool. \* We also will ask you (and those who reviewed your package) to add yourself to our list of [pyOpenSci community members](https://www.pyopensci.org/our-community/)!
 1. We will promote your package on our social media channels!
 1. We will invite you to write a blog on our website spotlighting your package. The blogs that our maintainers write are some of the most popular content on the website!
 
