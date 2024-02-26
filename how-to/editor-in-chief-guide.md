@@ -17,10 +17,10 @@ to support finding a new EiC.
 - Raises scope/overlap issue with all editors if they see an ambiguous submission.
 This may also be done by handling editors if appropriate (see note below). If
 the scope of a package is in question, the EiC should post to the pyOpenSci
-Slack `software-review` channel, tagging all editors.
+Slack `#software-review` channel, tagging all editors.
 - Assigns package submissions to other editors to handle. Assigning may be based upon domain background or just who has bandwidth to lead the review. The editor in chief can assign packages to themself for review.
 - Responds to pre-submission inquiries posted to the software-review repository
-and similarly pings editors in the `software-review` Slack channel if discussion
+and similarly pings editors in the `#software-review` Slack channel if discussion
 is needed. Any editor should feel free to communicate with package authors as it
 makes sense. See [this section](#responding-to-out-of-scope-submissions) about
 how to respond to out-of-scope (pre-) submissions.
@@ -40,7 +40,7 @@ the scope and readiness of a package to be reviewed, they may opt to assign an e
 
 When a new package is submitted for review, the Editor in Chief will:
 
-### 1. ✔️ Tag the issue with `1/editor-checks` tag in GitHub
+### 1. ✔️ Tag the issue with `0/pre-review-checks` tag in GitHub
 
 ### 2. ✔️ Add the editor checks to the issue
 
@@ -86,11 +86,11 @@ information to stay in touch about package maintenance. We also
 want to track their experience with our review process and
 organization.
 
-### 4. ✔️ Assign an editor to the issue to manage the rest of the review
+### 4. ✔️ Assign an editor to the issue to manage the rest of the review and tag the issue with the `1/editor-assigned` tag in GitHub
 
 Once the package initial checks are complete, and it is determined that
 the package is in scope for pyOpenSci review, the Editor in Chief will assign an
-editor to the review issue.
+editor to the review issue and add the `1/editor-assigned` tag in GitHub.
 This may involve finding a new (guest) editor
 as described in the [onboarding guide](onboarding-guide.md).
 If you as Editor in Chief do recruit a new editor,
