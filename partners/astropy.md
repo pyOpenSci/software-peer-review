@@ -6,18 +6,12 @@
 :align: center
 :::
 
-
 pyOpenSci has a collaboration with the [Astropy scientific community](https://www.astropy.org/). Through this collaboration we add an additional layer of peer review checks to Astropy-related packages that go through our [open peer review process](https://www.pyopensci.org/software-peer-review/about/intro.html). If the package meets both the [Astropy criteria for becoming an affiliated package](https://www.astropy.org/affiliated/#becoming-an-affiliated-package) and our pyOpenSci peer review criteria, it can then become both an Astropy-affiliated package and a pyOpenSci ecosystem package.
 
 If you are submitting a package for review and wish to also apply for Astropy affiliation, your package will be:
 
 * Reviewed against current pyOpenSci guidelines and checks.
 * Also reviewed against the Astropy-specific guidelines listed below.
-
-If you are submitting a package for review and wish to also apply for Astropy affiliation, your package will be:
-
-- Reviewed against current pyOpenSci guidelines and checks.
-- Also reviewed against the Astropy-specific guidelines listed below.
 
 (astropy-collaboration)=
 ### Astropy Specific Software Peer Review Guidelines
@@ -37,5 +31,12 @@ Your package should clearly integrate into the broader Astropy ecosystem. It sho
 
 ## Long-term maintenance & affiliate status over time
 
-Note however that if packages become unmaintained or do not meet the standards anymore, they may be removed from the list of affiliated packages.
-This rule applies to any package that applies for affiliated status with a specific domain community through the pyOpenSci partnership program.
+All packages accepted into the pyOpenSci ecosystem will follow the [pyOpenSci
+policies](archive-process) associated with package maintenance.
+
+They will also need to follow the Astropy standards as follows:
+
+If packages become unmaintained or do not meet the standards anymore, they may be removed from the list of affiliated packages.
+
+This rule also applies to any package that applies for affiliated status with a
+specific domain community through the pyOpenSci partnership program.

@@ -90,6 +90,7 @@ the last release and last commit to the package repository. Activity is defined 
 
 We will flag packages that haven't been updated within a 1 year/ 12 month time period based on activity. Packages with no activity after 12 months will be flagged. At that time, pyOpenSci editorial team member will contact the package maintainers to evaluate the maintenance status of their package.
 
+(archive-process)=
 ## Package Maintenance and Maintainer Responsiveness
 
 If, after one year, package maintainers are unresponsive to requests for package
