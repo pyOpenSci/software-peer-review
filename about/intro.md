@@ -133,5 +133,5 @@ where the tool was reviewed. [See this example from devicely, one of our accepte
 
 ### Partnership with JOSS
 
-pyOpenSci collaborates with organizations that support the scientific community, for example, Journal of Open Source Software (JOSS). 
+pyOpenSci collaborates with organizations that support the scientific community, for example, Journal of Open Source Software (JOSS).
 We are not a publisher, but rather a community that supports Python-specific packages. You don't have to choose between JOSS and us since we are complementary. See details [here](https://www.pyopensci.org/software-peer-review/partners/pangeo.html).
