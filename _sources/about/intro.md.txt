@@ -129,3 +129,9 @@ pyOpenSci Peer Review Badge
 This badge is added by the package author after the package
 has successfully completed review and ideally links to the specific GitHub issue
 where the tool was reviewed. [See this example from devicely, one of our accepted pyOpenSci ecosystem packages](https://github.com/hpi-dhc/devicely).
+
+
+### Partnership with JOSS
+
+pyOpenSci collaborates with organizations that support the scientific community, for example, Journal of Open Source Software (JOSS).
+We are not a publisher, but rather a community that supports Python-specific packages. You don't have to choose between JOSS and us since we are complementary. See details [here](https://www.pyopensci.org/software-peer-review/partners/pangeo.html).
