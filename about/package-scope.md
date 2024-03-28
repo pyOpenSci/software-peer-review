@@ -67,8 +67,6 @@ link to or a tutorial that demonstrates its potential application for science.
 
 Below we provide examples of packages from pyOpenSci ecosystem.
 
-We will update this page as our review process evolves.
-
 ```{note}
 Many of the example packages below perform tasks that might fit in multiple
 categories. Examples are there to provide you with a flavor of the types
