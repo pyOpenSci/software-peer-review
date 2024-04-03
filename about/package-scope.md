@@ -184,7 +184,7 @@ The review for this package:
 * requires at least 1 domain specialist
 * will never vet the analytical method itself.
 
-2. If your package introduces a novel or newer analytic approach that is not yet known/ vetted/ accepted, we can not review it. We cannot review projects that exist as a proof-of-concept demonstration of a model or analytical approach that might accompany a paper. In this case, the approach should be sent to a scientific journal for vetting.
+2. If your package introduces a novel or newer analytic approach that is not yet vetted/ accepted by a scientific journal, we can not review it. We cannot review projects that exist as a proof-of-concept demonstration of a model or analytical approach that might accompany a paper. In this case, the approach should be sent to a scientific journal for vetting.
 
 If your package introduces a new(er) approach that has been community vetted via a scientific Journal then we can potentially review the package for usability, documentation and packaging quality. Please submit a pre-submission inquiry first.
 
