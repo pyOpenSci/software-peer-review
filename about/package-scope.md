@@ -1,5 +1,14 @@
 # The Scope of  Packages that pyOpenSci Reviews
 
+The mission of pyOpenSci's open peer review process is to:
+
+1. Support improving the quality, usability and discoverability of maintained scientific Python software in support of open science.
+2. We also support maintainers in navigating the Python packaging ecosystem.
+
+We do not operate like a Journal, but we do partner with the Journal
+of Open Source software for those who wish to obtain a Journal paper
+through our review.
+
 ## What types of packages does pyOpenSci review?
 pyOpenSci reviews higher level software packages that support scientific workflows.
 
@@ -160,11 +169,6 @@ analyzing data.
 
 
 ## Scope for packages that support analytics, statistics and modeling
-
-The mission of pyOpenSci's open peer review process is to:
-
-1. support improving the quality, usability and discoverability of maintained scientific Python software in support of open science.
-2. We also support maintainers in navigating the python packaging ecosystem.
 
 pyOpenSci is not a scientific journal. As such we are not able to review
 software packages that present novel or new models and statistical /
