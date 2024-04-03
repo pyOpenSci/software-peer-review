@@ -1,5 +1,14 @@
 # The Scope of  Packages that pyOpenSci Reviews
 
+The mission of pyOpenSci's open peer review process is to:
+
+1. Support improving the quality, usability and discoverability of maintained scientific Python software in support of open science.
+2. We also support maintainers in navigating the Python packaging ecosystem.
+
+We do not operate like a Journal, but we do partner with the Journal
+of Open Source software for those who wish to obtain a Journal paper
+through our review.
+
 ## What types of packages does pyOpenSci review?
 pyOpenSci reviews higher level software packages that support scientific workflows.
 
@@ -14,9 +23,14 @@ package infrastructure and quality compared with established core packages. **So
 :::
 
 
-Currently, the packages that pyOpenSci reviews also need to fall into the
-technical and applied scope of our organization. This scope may expand over time
-as the organization grows.
+:::{admonition} This is a living document
+:class: note
+
+The categories below may change through time.
+This may mean in some cases, some previously peer review-accepted packages
+may not be in-scope today. We strive for consistency in our peer review process. However, we also evaluate packages on a case-by-case basis.
+In some cases exceptions are made.
+:::
 
 ## Is Your Package in Scope For pyOpenSci Review?
 
@@ -35,7 +49,7 @@ data processing and the various stages of managing the
 data lifecycle. Packages submitted to pyOpenSci should fit into one or
 more of the categories below and should be within our technical scope.
 
-```{admonition} Your Package Does Not Need to Be In Widespread Use Yet to be Reviewed
+```{admonition} Your Package Does Not Need to Widely Used to be Reviewed
 :class: important
 
 We review packages with the goal of improving package quality and usability for scientists.
@@ -43,8 +57,8 @@ As such, we review packages across a spectrum of small to large user bases. The 
 
 When we evaluate whether your package is within our scope, we only consider:
 
-1. how the package is developed and
-2. how the package relates to and supports the broader scientific ecosystem.
+1. How the package is developed and
+2. How the package relates to and supports the broader scientific ecosystem.
 
 We welcome young packages that are just entering the scientific Python
 ecosystem to apply for review if they are relevant to the science community and
@@ -52,28 +66,15 @@ fit into at least one scope category below. We also welcome mature packages with
 a growing or established community!
 ```
 
-If you are unsure whether your package fits into one of the general or
-statistical categories, please open an issue as a [pre-submission inquiry](https://github.com/pyOpenSci/software-submission/issues/new?assignees=&labels=0%2Fpresubmission&template=presubmission-inquiry.md&title=).
 
-```{note}
-This is a living document. The categories below may change through time.
-This may mean in some cases, some previously peer review-accepted packages
-may not be in-scope today. We strive for consistency in our peer review process. However, we also evaluate packages on a case-by-case basis.
-In some cases exceptions are made.
-```
-
-## Package categories
+## Package categories that are in-scope for pyOpenSci
 
 The following are the current categories that fall into scope for
 pyOpenSci. In addition to fitting into one or more of these categories, your package should have some level of
 demonstrated scientific application. This could be a use case that you can
 link to or a tutorial that demonstrates its potential application for science.
 
-Below we provide examples of packages from pyOpenSci ecosystem. Since we
-have a growing community of packages, in some cases we will link to R packages
-within the rOpenSci community that match the category scope for reference.
-
-We will update this page as our review process evolves.
+Below we provide examples of packages from pyOpenSci ecosystem.
 
 ```{note}
 Many of the example packages below perform tasks that might fit in multiple
@@ -138,7 +139,7 @@ We strongly encourage submissions that wrap tools that are open-source with
 an OSI-approved license. Exceptions will be evaluated on a case-by-case basis,
 taking into consideration whether open-source options exist.
 
-* Examples: [PyGMT](https://github.com/pyOpenSci/software-submission/issues/43)
+* Examples: [PyGMT](https://github.com/pyOpenSci/software-submission/issues/43), [python-graphblas](https://github.com/pyOpenSci/software-submission/issues/81)
 
 ### Workflow automation and versioning
 Tools that automate and link together workflows and as such support
@@ -167,6 +168,29 @@ analyzing data.
  * Example: [Example from rOpenSci - rrlite](https://github.com/ropensci/software-review/issues/6)
 
 
+## Scope for packages that support analytics, statistics and modeling
+
+pyOpenSci is not a scientific journal. As such we are not able to review
+software packages that present novel or new models and statistical /
+analytics approaches without previous review of the analytical approach by a
+credible journal.
+
+We consider the following when determining whether an analytics-related package is within our review scope:
+
+1. If your package facilitates a scientist using a **known or vetted statistical, AI or  Analytical approach** we consider that in-scope. Before submitting to us, please ensure that your package's documentation directs users to existing paper(s) or pre-print(s) that document that approach's application. Further, be sure to link to these publications in your package review submission.
+
+The review for this package:
+
+* requires at least 1 domain specialist
+* will never vet the analytical method itself.
+
+2. If your package introduces a novel or newer analytic approach that is not yet vetted/ accepted by a scientific journal, we can not review it. We cannot review projects that exist as a proof-of-concept demonstration of a model or analytical approach that might accompany a paper. In this case, the approach should be sent to a scientific journal for vetting.
+
+If your package introduces a new(er) approach that has been community vetted via a scientific Journal then we can potentially review the package for usability, documentation and packaging quality. Please submit a pre-submission inquiry first.
+
+If you are unsure whether your package fits into one of the general or
+statistical categories, please open an issue as a [pre-submission inquiry](https://github.com/pyOpenSci/software-submission/issues/new?assignees=&labels=0%2Fpresubmission&template=presubmission-inquiry.md&title=).
+
 ## Domain areas
 
 In addition, our scope includes focused domain areas. These areas are based on
@@ -181,17 +205,28 @@ Packages focused on the retrieval, manipulation, and analysis of spatial data.
 * Examples: [PyGmt](https://github.com/pyOpenSci/software-submission/issues/43),
 [Moving Pandas ](https://github.com/pyOpenSci/software-submission/issues/18)
 
-### Pangeo
-
-We have a [partnership with Pangeo](../partners/pangeo). Often times packages submitted as a part of that partnership are also in the geospatial domain.
-
-* Examples: [xclim - under review now](https://github.com/pyOpenSci/software-submission/issues/73)
 
 ### Education
 
 Packages to aid with instruction.
 
 * Examples: [pyrolite](https://github.com/morganjwilliams/pyrolite)
+
+
+
+## Partnerships
+
+### Astropy
+
+We have a [community affiliated package partnership with Astropy](../partners/astropy). Check out [packages that are under review and will
+be considered for Astropy affiliated status here](https://github.com/pyOpenSci/software-submission/issues?q=is%3Aopen+is%3Aissue+label%3Aastropy).
+
+
+### Pangeo
+
+We have a [partnership with Pangeo](../partners/pangeo). Often times packages submitted as a part of that partnership are also in the geospatial domain.
+
+* Examples: [xclim](https://github.com/pyOpenSci/software-submission/issues/73)
 
 ## Package technical scope
 

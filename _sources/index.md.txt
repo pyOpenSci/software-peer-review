@@ -48,6 +48,7 @@ software.
 :link-type: doc
 :class-header: bg-light
 
+We review packages that support scientists creating open science workflows.
 Learn about the scope of the packages that we review.
 :::
 ::::
