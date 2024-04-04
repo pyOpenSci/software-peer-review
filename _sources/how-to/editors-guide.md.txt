@@ -346,7 +346,7 @@ reviews has been considered and implemented
 
 ## Closing notes about the editorial process
 
-- If the package raises a new issue for pyOpenSci policy, create an issue on [pyOpenSci's governance repo](https://github.com/pyOpenSci/governance).
+- If the package raises a new issue for pyOpenSci policy, create an issue on [pyOpenSci's handbook repo](https://github.com/pyOpenSci/handbook).
 - If the package review raises a new issue in our peer review process, please [open an issue in our peer review guide repo.](https://github.com/pyOpenSci/peer-review-guide).
 
 ## ✔️ OPTIONAL: Instructions for Submitting to JOSS
