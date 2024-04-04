@@ -310,4 +310,4 @@ Over time, this investment will yield significant rewards.
 
 All our reviews are open on GitHub, ensuring transparency. Everyone
 participating in the peer review process is also expected to adhere to [our
-code of conduct.](https://www.pyopensci.org/governance/CODE_OF_CONDUCT.html)
+code of conduct.](https://www.pyopensci.org/handbook/CODE_OF_CONDUCT.html)

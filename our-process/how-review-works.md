@@ -20,7 +20,7 @@ that package reviews move through the review process efficiently;
 * Authors create, submit and improve their package;
 * Reviewers, two per submission, examine the software code and user experience.
 
-Our [governance documentation](https://www.pyopensci.org/governance) clarifies
+Our [handbook documentation](https://www.pyopensci.org/handbook/) clarifies
 the various roles that support running our peer review process.
 
 ## Software reviews are contained within [GitHub](https://www.github.com/pyOpenSci) issues
