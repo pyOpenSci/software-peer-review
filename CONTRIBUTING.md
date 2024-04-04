@@ -1,7 +1,7 @@
 # Contributing Guide for the Python open source software packaging book
 
 Important! Before contributing to this repository, please be sure to review
-our [organization-wide contributing guide](https://www.pyopensci.org/governance/CONTRIBUTING.html) which contains guidelines for
+our [organization-wide contributing guide](https://www.pyopensci.org/handbook/CONTRIBUTING.html) which contains guidelines for
 contributions.
 
 This is a community resource. We welcome contributions in the form of issues and/or pull requests to this guide.

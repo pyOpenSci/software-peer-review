@@ -15,7 +15,9 @@ author = "pyOpenSci Community"
 
 # Get the latest Git tag - there might be a prettier way to do this but...
 try:
-    release_value = subprocess.check_output(["git", "describe", "--tags"]).decode("utf-8").strip()
+    release_value = (
+        subprocess.check_output(["git", "describe", "--tags"]).decode("utf-8").strip()
+    )
     release_value = release_value[:4]
 except subprocess.CalledProcessError:
     release_value = "0.1"  # Default value in case there's no tag
@@ -61,12 +63,12 @@ html_js_files = ["matomo.js"]
 # Theme options
 html_theme_options = {
     "favicons": [
-      {
-         "rel": "icon",
-         "sizes": "16x16",
-         "href": "https://www.pyopensci.org/images/favicon.ico",
-      },
-   ],
+        {
+            "rel": "icon",
+            "sizes": "16x16",
+            "href": "https://www.pyopensci.org/images/favicon.ico",
+        },
+    ],
     "announcement": "<p><a href='https://www.github.com/pyopensci/software-submission/'>Submit Your Python Package for Peer Review!</a></p>",
     "external_links": [
         {
@@ -78,8 +80,8 @@ html_theme_options = {
             "name": "Python Packaging Guide",
         },
         {
-            "url": "https://pyopensci.org/governance",
-            "name": "Governance",
+            "url": "https://pyopensci.org/handbook",
+            "name": "Handbook",
         },
     ],
     "icon_links": [
