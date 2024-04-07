@@ -11,6 +11,17 @@ Please be respectful and kind to the authors in your reviews. Our
 [code of conduct](https://www.pyopensci.org/handbook/CODE_OF_CONDUCT.html) is mandatory for everyone involved in our
 review process.
 
+```{admonition} Not yet a pyOpenSci reviewer? Join us!
+:class: note
+
+We could use your help! Fill out our reviewer form.
+We will contact you if we have a package that we need reviewers for.
+It’s OK if you’ve never reviewed a package before! We’ll walk you through it.
+
+[Sign-up Here (Google Form)](https://forms.gle/GHfxvmS47nQFDcBM6)
+```
+
+
 ## A guide for new reviewers
 
 Thank you for considering reviewing for pyOpenSci. We welcome reviewers
