@@ -28,10 +28,15 @@ Chief. In the future we hope to find someone with interest in leading peer revie
 
 The pyOpenSci community continues to grow rapidly, and as such we now have a much stronger reach on social media than ever before. While you will collaborate closely with the pyOpenSci Community Manager to recruit editors through social media campaigns, also consider the following sources:
 
+The pyOpenSci community continues to grow rapidly, and as such we now have a much stronger reach on social media than ever before. While you will collaborate closely with the pyOpenSci Community Manager to recruit editors through social media campaigns, also consider the following sources:
+
 * Contributors who have reviewed for pyOpenSci
 * Contributors who have submitted a package to pyOpenSci
 * Contributors who have served as a guest editor
 * Colleagues that you know who have reviewed for JOSS or rOpenSci who have Python expertise
+
+pyOpenSci maintains a database of contributors, and the Community Manager can assist you in identifying individuals who may be a good fit. Please reach out to them either in a private Slack message or via email, at [media@pyopensci.org](mailto:media@pyopensci.org). 
+
 
 pyOpenSci maintains a database of contributors, and the Community Manager can assist you in identifying individuals who may be a good fit. Please reach out to them either in a private Slack message or via email, at [media@pyopensci.org](mailto:media@pyopensci.org). 
 
@@ -42,7 +47,27 @@ In an ideal world, you’d be able to start your search well in advance of when 
 
 ### The Editorial Team
 It’s helpful to first check with the existing [Editorial Team](https://www.pyopensci.org/about-peer-review/index.html#meet-our-editorial-board), in order to see if anyone can identify reviewers who excelled and may be a good editorial candidate. Do this in a private Slack channel as follows:
+In an ideal world, you’d be able to start your search well in advance of when you think you may need to expand the editorial team. However, due to the influx of new packages, this isn’t always possible. As such, when you begin your search, start with the existing editorial team as well as the pyOpenSci Community Manager.
 
+### The Editorial Team
+It’s helpful to first check with the existing [Editorial Team](https://www.pyopensci.org/about-peer-review/index.html#meet-our-editorial-board), in order to see if anyone can identify reviewers who excelled and may be a good editorial candidate. Do this in a private Slack channel as follows:
+
+* Start a private channel for discussion. This ensures there is not a visible history in a public channel that a new editor may see in the future (this could be awkward for someone to see!)
+* Ping editors using @here to be sure they get a notification, as this is an important topic.
+* Wait for a majority of editors to chime in before inviting someone. Provide editors one week to respond on Slack.
+
+### The pyOpenSci Community Manager
+The Community Manager is available to assist with editor recruitment at any stage in the process, even if it’s before you think you might need editors. Standard recruitment involves targeted social media posts [(similar to this)](https://fosstodon.org/@pyOpenSci/112497485980274296), a blog post, and call-outs in both our monthly and weekly newsletters. To kick off this process, or to request additional ideas for recruitment, reach out to the Community Manager via private message in Slack to let them know:
+
+* That you’re looking for editors!
+* Which type(s) of editors you’re looking for (full, guest).
+* Any specific domains or technical skills you need an editor to have, or if it’s a general call for editors.
+* Any specific packages that need an editor.
+* Any additional promotion you’d like, beyond social media posts, a blog post, and newsletter updates.
+
+```{note}
+pyOpenSci anticipates being able to send targeted emails to community members that meet certain criteria related to domain expertise by the Fall of 2024. Please reach out to the pyOpenSci Community Manager with any questions about this process!
+```
 * Start a private channel for discussion. This ensures there is not a visible history in a public channel that a new editor may see in the future (this could be awkward for someone to see!)
 * Ping editors using @here to be sure they get a notification, as this is an important topic.
 * Wait for a majority of editors to chime in before inviting someone. Provide editors one week to respond on Slack.
@@ -66,7 +91,9 @@ We prefer that editors have some experience with reviewing software. This experi
 could come from a previous review they worked on with pyOpenSci, rOpenSci or JOSS.
 
 If they do not have experience, as may be the case when we receive a large number of package submissions while also establishing a robust editorial board, we do offer a "mentorship" process. Editor mentorship is where someone with existing editorial experience mentors the new editor through their first review(s).
+If they do not have experience, as may be the case when we receive a large number of package submissions while also establishing a robust editorial board, we do offer a "mentorship" process. Editor mentorship is where someone with existing editorial experience mentors the new editor through their first review(s).
 
+A new editor will be considered a guest editor for the first 3 months of their tenure
 A new editor will be considered a guest editor for the first 3 months of their tenure
 and/or until they have completed their first review. Once they have a completed
 a review they can be considered to be a full editor as deemed appropriate by the
@@ -84,6 +111,24 @@ In this case, you may consider using our internal reviewer signup list to see if
 
 ## Process for inviting a first-time community member
 
+### Through the EIC
+
+The Editor in Chief is ultimately the individual responsible for inviting a first-time editor, and when the EIC has identified an editor who is not currently part of the pyOpenSci community, they should:
+
+* Extend a Slack invitation to the individual
+* Welcome the individual in Slack, and provide them with access to the #private-editorial-team and any other channels as needed. 
+
+Both the Community Manager and the Executive Director receive a notification whenever someone joins the Slack group, and the Community Manager will ensure that the new member is welcomed and set up with anything they need for Slack. 
+
+### Through the Community Manager
+
+Although the EIC is responsible for inviting identified editors to the Slack group, it’s common for the Community Manager to interact with prospective community members that may make good reviewers or editors in the future. As such, at the Community Manager’s discretion they may invite members to Slack, and share the member’s background with the EIC, letting them know if the new community member may make a good reviewer or editor.
+
+In addition, the Community Manager will have the new member fill out the [reviewer form](https://docs.google.com/forms/d/e/1FAIpQLSeVf-L_1-jYeO84OvEE8UemEoCmIiD5ddP_aO8S90vb7srADQ/viewform) or the [editor form](https://docs.google.com/forms/d/17NW0P_h8gpmzf7Fr0cAd8aEbIUWPljPfg4d7Rjs1UIE/edit), as appropriate.
+
+### Through the Executive Director
+
+The Executive Director may invite community members to the Slack group at their discretion, and similar to the Community Manager, may have the member completed the [reviewer form](https://docs.google.com/forms/d/e/1FAIpQLSeVf-L_1-jYeO84OvEE8UemEoCmIiD5ddP_aO8S90vb7srADQ/viewform) or the [editor form](https://docs.google.com/forms/d/17NW0P_h8gpmzf7Fr0cAd8aEbIUWPljPfg4d7Rjs1UIE/edit), as appropriate, while also keeping the EIC up-to-date.
 
 ## Process for inviting a new editor
 
@@ -157,7 +202,7 @@ the `title:` yaml element and update `contributor_type:` as see below:
 ```
 
 
-* Next work with the new editor to create a blog post introducing them which will get [posted on the pyOpenSci blog](https://www.pyopensci.org/blog).
+* Next, message the pyOpenSci Community Manager and the new editor in Slack, introducing them to one another. The Community Manager will collaborate with the new editor to create a blog post introducing them, which will in turn get posted on the pyOpenSci blog, promoted on social media, and included in an upcoming newsletter.
 
 * If they haven't already done, ask the new editor to turn on [two-factor authentication (2FA) for GitHub](https://docs.github.com/en/authentication/securing-your-account-with-two-factor-authentication-2fa).
 
@@ -168,7 +213,7 @@ the `title:` yaml element and update `contributor_type:` as see below:
     as a member of the [`editorial-board`](https://github.com/orgs/pyOpenSci/teams/editorial-board) team. This will give them appropriate permissions and allow them to get team-specific notifications.
 
 <!-- do we need this?
-* Editors need access to the AirTable database of software review.
+* Editors need access to the AirTable database of software review. 
 * * In the Slack workspace they need to be added to the editors team so that `@editors` will ping them too.
  -->
 * Add the new editor to the pyOpenSci Slack workspace and specifically the private editors channel.
