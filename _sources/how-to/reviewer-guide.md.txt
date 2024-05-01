@@ -105,7 +105,7 @@ in the review template, please also provide general comments addressing the foll
   * Are there performance improvements that could be made?
   * Are functions and arguments named to work together to form a common, logical programming API that is easy to read, and autocomplete?
 
-* Does the package comply with the pyOpenSci packaging guide](https://www.pyopensci.org/python-package-guide)?
+* Does the package comply with [the pyOpenSci packaging guide](https://www.pyopensci.org/python-package-guide)?
 
 * Are there user interface improvements that could be made?
 * Is the documentation (installation instructions/vignettes/examples/demos) clear and sufficient?

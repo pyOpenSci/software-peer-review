@@ -47,7 +47,7 @@
   <script src="../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=5b4479735964841361fd"></script>
 
     <script src="../_static/documentation_options.js?v=2709fde1"></script>
-    <script src="../_static/doctools.js?v=888ff710"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
     <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
     <script src="../_static/copybutton.js?v=f281be69"></script>
@@ -639,7 +639,8 @@ Date accepted (month/day/year): TBD # TODO: add the date
 <li><p>tag the post with <code class="docutils literal notranslate"><span class="pre">pyos-acccepted</span></code></p></li>
 </ol>
 <figure class="align-default" id="fig-target">
-<a class="reference internal image-reference" href="../_images/pyos-discourse-packages-channel.png"><img alt="image showing the top of a discourse post with the title text in the text box that reads - welcome pynteny and crowsetta to the pyOpenSci ecosystem. Below you see two boxes, on the left is a red square with the word packages next to it. on the right is the tag pyos-accepted with an x next to it." src="../_images/pyos-discourse-packages-channel.png" style="width: 700px;" /></a>
+<a class="reference internal image-reference" href="../_images/pyos-discourse-packages-channel.png"><img alt="image showing the top of a discourse post with the title text in the text box that reads - welcome pynteny and crowsetta to the pyOpenSci ecosystem. Below you see two boxes, on the left is a red square with the word packages next to it. on the right is the tag pyos-accepted with an x next to it." src="../_images/pyos-discourse-packages-channel.png" style="width: 700px;" />
+</a>
 <figcaption>
 <p><span class="caption-text">Image showing the discourse interface when you add a new post. The pyos-accepted tag is found under the the text box where you add the post title.</span><a class="headerlink" href="#fig-target" title="Link to this image">#</a></p>
 </figcaption>
@@ -655,14 +656,16 @@ Date accepted (month/day/year): TBD # TODO: add the date
 <li><p>Click the run workflow button to trigger a build that will update reviews and also editors, reviewers and associated contributions!</p></li>
 </ol>
 <figure class="align-default" id="id1">
-<a class="reference internal image-reference" href="../_images/github-pyos-contributors-action.png"><img alt="Image on a black background of the GitHub interface. on the right you can see a list of action names - 5 total. the one action Update Contribs &amp; reviewers has a blue line next to it indicating it is the action being viewed on the screen. On the right of the image you see a run workflow button which is what needs to be pressed to manually make that action run" src="../_images/github-pyos-contributors-action.png" style="width: 700px;" /></a>
+<a class="reference internal image-reference" href="../_images/github-pyos-contributors-action.png"><img alt="Image on a black background of the GitHub interface. on the right you can see a list of action names - 5 total. the one action Update Contribs &amp; reviewers has a blue line next to it indicating it is the action being viewed on the screen. On the right of the image you see a run workflow button which is what needs to be pressed to manually make that action run" src="../_images/github-pyos-contributors-action.png" style="width: 700px;" />
+</a>
 <figcaption>
 <p><span class="caption-text">When you go to the actions tab in github, you will see the Update Contribs and reviewers action. You can run that using the “run workflow” button. Once the workflow is run, a pr will be submitted with both an updated contributor list and an updated review list (if there have been new packages accepted and new contributors).</span><a class="headerlink" href="#id1" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>Once you trigger this, the action will run and submit a pull request.</p>
 <figure class="align-default" id="id2">
-<a class="reference internal image-reference" href="../_images/pyos-running-contributor-action.png"><img alt="Image showing a pull request with the title Update contributor and review data. The first comment is from the github-actions bot and says automated changes by create-pull-request GitHub action." src="../_images/pyos-running-contributor-action.png" style="width: 700px;" /></a>
+<a class="reference internal image-reference" href="../_images/pyos-running-contributor-action.png"><img alt="Image showing a pull request with the title Update contributor and review data. The first comment is from the github-actions bot and says automated changes by create-pull-request GitHub action." src="../_images/pyos-running-contributor-action.png" style="width: 700px;" />
+</a>
 <figcaption>
 <p><span class="caption-text">This shows what a pr by the github actions bot looks like after the update contributor and review action has been run.</span><a class="headerlink" href="#id2" title="Link to this image">#</a></p>
 </figcaption>
@@ -670,7 +673,8 @@ Date accepted (month/day/year): TBD # TODO: add the date
 <p>You may notice that the pull request has a pre-commit failure. You can fix that by adding a comment to the bottom of the issue that says:</p>
 <p><code class="docutils literal notranslate"><span class="pre">pre-commit.ci</span> <span class="pre">autofix</span></code></p>
 <figure class="align-default" id="id3">
-<a class="reference internal image-reference" href="../_images/pyopensci-pre-commit-autofix.png"><img alt="Image showing the github action results on a pull request. the pre-commit.ci - pr check has a failing x next to it." src="../_images/pyopensci-pre-commit-autofix.png" style="width: 700px;" /></a>
+<a class="reference internal image-reference" href="../_images/pyopensci-pre-commit-autofix.png"><img alt="Image showing the github action results on a pull request. the pre-commit.ci - pr check has a failing x next to it." src="../_images/pyopensci-pre-commit-autofix.png" style="width: 700px;" />
+</a>
 <figcaption>
 <p><span class="caption-text">When you have a failed pr run you can just add a comment with the text pre-commit.ci autofix and the bot will lint and fix the pr.</span><a class="headerlink" href="#id3" title="Link to this image">#</a></p>
 </figcaption>
@@ -683,7 +687,8 @@ Date accepted (month/day/year): TBD # TODO: add the date
 <p>In our peer review guide, we have a <a class="reference external" href="https://www.pyopensci.org/software-peer-review/how-to/editors-guide.html">template that editors should use</a> to accept a package in to our ecosystem. In an issue you can look for this comment and use the date that the comment was posted as the date the package was accepted.</p>
 <p>There are cases when editors forget to use this template. But ideally you can figure this out by searching for “accepted” in the review. OR you can simply just ask the editor in the <code class="docutils literal notranslate"><span class="pre">private-editorial</span></code> channel on our Slack.</p>
 <figure class="align-default" id="id4">
-<a class="reference internal image-reference" href="../_images/pyos-accepted-package-message.png"><img alt="Image on a black background of the GitHub interface. Generally what this shows is the template message that is provided by pyOpenSci when a package is accepted. It starts with hey there, username and then congratulates them for being accepted. Finally it provides a list of last steps needed to close out the review." src="../_images/pyos-accepted-package-message.png" style="width: 700px;" /></a>
+<a class="reference internal image-reference" href="../_images/pyos-accepted-package-message.png"><img alt="Image on a black background of the GitHub interface. Generally what this shows is the template message that is provided by pyOpenSci when a package is accepted. It starts with hey there, username and then congratulates them for being accepted. Finally it provides a list of last steps needed to close out the review." src="../_images/pyos-accepted-package-message.png" style="width: 700px;" />
+</a>
 <figcaption>
 <p><span class="caption-text">Image showing the generic template text used for accepting a package into the pyOpenSci ecosystem.</span><a class="headerlink" href="#id4" title="Link to this image">#</a></p>
 </figcaption>
@@ -704,7 +709,8 @@ part of the process the review is in. Our automated workflow,
 finds packages that were accepted using the <code class="docutils literal notranslate"><span class="pre">6/pyOS-approved</span></code>
 tag (see below).</p>
 <figure class="align-default" id="id5">
-<a class="reference internal image-reference" href="../_images/pyopensci-accepted-review-labels.png"><img alt="Image that shows an accepted review. The editor is the assignee. The labels on the review say 6/pyos-approved with 3 rocket emojis next to it. below is 7/under-joss review which is a green label." src="../_images/pyopensci-accepted-review-labels.png" style="width: 700px;" /></a>
+<a class="reference internal image-reference" href="../_images/pyopensci-accepted-review-labels.png"><img alt="Image that shows an accepted review. The editor is the assignee. The labels on the review say 6/pyos-approved with 3 rocket emojis next to it. below is 7/under-joss review which is a green label." src="../_images/pyopensci-accepted-review-labels.png" style="width: 700px;" />
+</a>
 <figcaption>
 <p><span class="caption-text">If a package has been accepted it should have at least the pyos-approved label. If the package moves on to joss and is accepted it should have the joss label as well. If the package is actively in joss review it should have the under-joss review. Otherwise if it has been accepted it should have the 9/joss-accepted label.</span><a class="headerlink" href="#id5" title="Link to this image">#</a></p>
 </figcaption>
@@ -714,7 +720,8 @@ tag (see below).</p>
 <p>In the case of a JOSS submission after our review, you can make sure that the editor is updating the label on the issue associated with JOSS. the final label once the package is JOSS accepted is
 9/JOSS-approved</p>
 <figure class="align-default" id="id6">
-<a class="reference internal image-reference" href="../_images/pyopensci-joss-review-labels.png"><img alt="Image that shows the three options for joss labels. 7/under-joss-review, 8-joss-review-complete and 9/joss-approved." src="../_images/pyopensci-joss-review-labels.png" style="width: 700px;" /></a>
+<a class="reference internal image-reference" href="../_images/pyopensci-joss-review-labels.png"><img alt="Image that shows the three options for joss labels. 7/under-joss-review, 8-joss-review-complete and 9/joss-approved." src="../_images/pyopensci-joss-review-labels.png" style="width: 700px;" />
+</a>
 <figcaption>
 <p><span class="caption-text">The joss labels indicate the state that a package is in.
 Once JOSS has accepted the package, you should ensure that 9/joss-approved if the final label. At this point the package review issue can be closed if all lose ends are complete!</span><a class="headerlink" href="#id6" title="Link to this image">#</a></p>
@@ -724,14 +731,16 @@ Once JOSS has accepted the package, you should ensure that 9/joss-approved if th
 <h3>Updating the software-review project board<a class="headerlink" href="#updating-the-software-review-project-board" title="Link to this heading">#</a></h3>
 <p>We keep track of our reviews using the peer-review-status project board.</p>
 <figure class="align-default" id="id7">
-<a class="reference internal image-reference" href="../_images/pyos-review-starting.png"><img alt="Image that shows the empty assignees section for a new review. Also there are 2 labels 1/editor checks and new submission. Finally there is a project board available however the status is not yet set." src="../_images/pyos-review-starting.png" style="width: 700px;" /></a>
+<a class="reference internal image-reference" href="../_images/pyos-review-starting.png"><img alt="Image that shows the empty assignees section for a new review. Also there are 2 labels 1/editor checks and new submission. Finally there is a project board available however the status is not yet set." src="../_images/pyos-review-starting.png" style="width: 700px;" />
+</a>
 <figcaption>
 <p><span class="caption-text">When a review is just starting, the assignee should be the editor leading the review. The labels will begin with editor-checks. You can also set the peer-review state on the project board.</span><a class="headerlink" href="#id7" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <p>When a package is accepted you can also update the project board to the “pyos-accepted” (or JOSS accepted) status. Given the nature of our partnership with JOSS, we can always assume that if a package got to the JOSS stage it was already accepted by pyOpenSci.</p>
 <figure class="align-default" id="id8">
-<a class="reference internal image-reference" href="../_images/pyos-under-review-project-board.png"><img alt="Image showing the project board in a review. the project board says peer-review-status. It also shows the drop down options which include under-review which is checked, pyos-accepted, pre-submission and joss accepted." src="../_images/pyos-under-review-project-board.png" style="width: 700px;" /></a>
+<a class="reference internal image-reference" href="../_images/pyos-under-review-project-board.png"><img alt="Image showing the project board in a review. the project board says peer-review-status. It also shows the drop down options which include under-review which is checked, pyos-accepted, pre-submission and joss accepted." src="../_images/pyos-under-review-project-board.png" style="width: 700px;" />
+</a>
 <figcaption>
 <p><span class="caption-text">We use the project board to track the status of reviews.</span><a class="headerlink" href="#id8" title="Link to this image">#</a></p>
 </figcaption>
