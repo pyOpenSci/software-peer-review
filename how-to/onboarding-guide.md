@@ -26,37 +26,48 @@ Chief. In the future we hope to find someone with interest in leading peer revie
 
 ## Where to find new editors
 
-As we build our pyOpenSci community our pool of potential editors will grow.
-A few options to consider include:
+The pyOpenSci community continues to grow rapidly, and as such we now have a much stronger reach on social media than ever before. While you will collaborate closely with the pyOpenSci Community Manager to recruit editors through social media campaigns, also consider the following sources:
+
 * Contributors who have reviewed for pyOpenSci
 * Contributors who have submitted a package to pyOpenSci
 * Contributors who have served as a guest editor
 * Colleagues that you know who have reviewed for JOSS or rOpenSci who have Python expertise
 
+pyOpenSci maintains a database of contributors, and the Community Manager can assist you in identifying individuals who may be a good fit. Please reach out to them either in a private Slack message or via email, at [media@pyopensci.org](mailto:media@pyopensci.org). 
+
+
 ## Starting the editorial search
 
-To begin, start your search well in advance of when you think you may need new
-editor(s). When you begin your search, start with the existing editorial team.
-See if anyone can identify reviewers who excelled and may be a good editorial candidate. Do this in a private channels on Slack as follows:
+In an ideal world, you’d be able to start your search well in advance of when you think you may need to expand the editorial team. However, due to the influx of new packages, this isn’t always possible. As such, when you begin your search, start with the existing editorial team as well as the pyOpenSci Community Manager.
 
-* Start a private channel for discussion. This ensures there is not a visible
-history in a public channel that a new editor may see in the future (this could
-be awkward for someone to see!).
-* Ping editors to be sure they get a notification as this is an important topic.
-* Wait for a majority of editors to chime in before inviting someone. Provide
-editors one week to respond on slack.
+### The Editorial Team
+It’s helpful to first check with the existing [Editorial Team](https://www.pyopensci.org/about-peer-review/index.html#meet-our-editorial-board), in order to see if anyone can identify reviewers who excelled and may be a good editorial candidate. Do this in a private Slack channel as follows:
+
+* Start a private channel for discussion. This ensures there is not a visible history in a public channel that a new editor may see in the future (this could be awkward for someone to see!)
+* Ping editors using @here to be sure they get a notification, as this is an important topic.
+* Wait for a majority of editors to chime in before inviting someone. Provide editors one week to respond on Slack.
+
+### The pyOpenSci Community Manager
+The Community Manager is available to assist with editor recruitment at any stage in the process, even if it’s before you think you might need editors. Standard recruitment involves targeted social media posts [(similar to this)](https://fosstodon.org/@pyOpenSci/112497485980274296), a blog post, and call-outs in both our monthly and weekly newsletters. To kick off this process, or to request additional ideas for recruitment, reach out to the Community Manager via private message in Slack to let them know:
+
+* That you’re looking for editors!
+* Which type(s) of editors you’re looking for (full, guest).
+* Any specific domains or technical skills you need an editor to have, or if it’s a general call for editors.
+* Any specific packages that need an editor.
+* Any additional promotion you’d like, beyond social media posts, a blog post, and newsletter updates.
+
+```{note}
+pyOpenSci anticipates being able to send targeted emails to community members that meet certain criteria related to domain expertise by the Fall of 2024. Please reach out to the pyOpenSci Community Manager with any questions about this process!
+```
 
 ## Experience required to be an editor
 
 We prefer that editors have some experience with reviewing software. This experience
 could come from a previous review they worked on with pyOpenSci, rOpenSci or JOSS.
 
-If they do not have experience as may be the case in the early months or establishing
-a robust editorial board, we  offer a "mentorship" process. Editor mentorship
-is where someone with existing editorial experience, mentors the new editor
-through their first review(s).
+If they do not have experience, as may be the case when we receive a large number of package submissions while also establishing a robust editorial board, we do offer a "mentorship" process. Editor mentorship is where someone with existing editorial experience mentors the new editor through their first review(s).
 
-A new editor will be considered "guest" for the first 3 months of their tenure
+A new editor will be considered a guest editor for the first 3 months of their tenure
 and/or until they have completed their first review. Once they have a completed
 a review they can be considered to be a full editor as deemed appropriate by the
 software review lead and the current editorial board.
@@ -69,8 +80,10 @@ type of situation). Examples of when this might happen include:
 * if there a conflict of interest between a package submitter and the editorial team (e.g. a close colleague of everyone on the team)
 * if the editorial board is at capacity handling the current review load
 
-In this case, you may consider using our internal reviewer signup list to see
-if someone who signed up to be a reviewer might want to serve as an editor.
+In this case, you may consider using our internal reviewer signup list to see if someone who signed up to be a reviewer might want to serve as an editor.
+
+## Process for inviting a first-time community member
+
 
 ## Process for inviting a new editor
 
