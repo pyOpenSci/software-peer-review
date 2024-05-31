@@ -35,10 +35,10 @@ The pyOpenSci community continues to grow rapidly, and as such we now have a muc
 * Contributors who have served as a guest editor
 * Colleagues that you know who have reviewed for JOSS or rOpenSci who have Python expertise
 
-pyOpenSci maintains a database of contributors, and the Community Manager can assist you in identifying individuals who may be a good fit. Please reach out to them either in a private Slack message or via email, at [media@pyopensci.org](mailto:media@pyopensci.org). 
+pyOpenSci maintains a database of contributors, and the Community Manager can assist you in identifying individuals who may be a good fit. Please reach out to them either in a private Slack message or via email, at [media@pyopensci.org](mailto:media@pyopensci.org).
 
 
-pyOpenSci maintains a database of contributors, and the Community Manager can assist you in identifying individuals who may be a good fit. Please reach out to them either in a private Slack message or via email, at [media@pyopensci.org](mailto:media@pyopensci.org). 
+pyOpenSci maintains a database of contributors, and the Community Manager can assist you in identifying individuals who may be a good fit. Please reach out to them either in a private Slack message or via email, at [media@pyopensci.org](mailto:media@pyopensci.org).
 
 
 ## Starting the editorial search
@@ -116,9 +116,9 @@ In this case, you may consider using our internal reviewer signup list to see if
 The Editor in Chief is ultimately the individual responsible for inviting a first-time editor, and when the EIC has identified an editor who is not currently part of the pyOpenSci community, they should:
 
 * Extend a Slack invitation to the individual
-* Welcome the individual in Slack, and provide them with access to the #private-editorial-team and any other channels as needed. 
+* Welcome the individual in Slack, and provide them with access to the #private-editorial-team and any other channels as needed.
 
-Both the Community Manager and the Executive Director receive a notification whenever someone joins the Slack group, and the Community Manager will ensure that the new member is welcomed and set up with anything they need for Slack. 
+Both the Community Manager and the Executive Director receive a notification whenever someone joins the Slack group, and the Community Manager will ensure that the new member is welcomed and set up with anything they need for Slack.
 
 ### Through the Community Manager
 
@@ -213,7 +213,7 @@ the `title:` yaml element and update `contributor_type:` as see below:
     as a member of the [`editorial-board`](https://github.com/orgs/pyOpenSci/teams/editorial-board) team. This will give them appropriate permissions and allow them to get team-specific notifications.
 
 <!-- do we need this?
-* Editors need access to the AirTable database of software review. 
+* Editors need access to the AirTable database of software review.
 * * In the Slack workspace they need to be added to the editors team so that `@editors` will ping them too.
  -->
 * Add the new editor to the pyOpenSci Slack workspace and specifically the private editors channel.
