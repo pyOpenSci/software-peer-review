@@ -15,8 +15,8 @@ Triage Team Guide <review-triage-team>
 :hidden:
 :caption: Onboarding Editors & Reviewers
 
-Onboarding Editors & Reviewers <onboarding-guide>
-Finding Reviewers <finding-reviewers>
+Finding & Onboarding Editors <onboarding-guide>
+Finding & Onboarding Reviewers <finding-reviewers>
 ```
 
 Are you considering submitting a package for review with pyOpenSci? You've
