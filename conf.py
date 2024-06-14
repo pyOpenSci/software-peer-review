@@ -16,7 +16,9 @@ author = "pyOpenSci Community"
 # Get the latest Git tag - there might be a prettier way to do this but...
 try:
     release_value = (
-        subprocess.check_output(["git", "describe", "--tags"]).decode("utf-8").strip()
+        subprocess.check_output(["git", "describe", "--tags"])
+        .decode("utf-8")
+        .strip()
     )
     release_value = release_value[:4]
 except subprocess.CalledProcessError:
@@ -38,6 +40,7 @@ extensions = [
     "sphinx_sitemap",
     "sphinxext.opengraph",
     "sphinx_copybutton",
+    "sphinx.ext.todo",
 ]
 
 # colon fence for card support in md
