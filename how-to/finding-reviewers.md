@@ -51,7 +51,7 @@ website, social media profiles).
 Try to balance your sense of the potential reviewer’s experience against the
 complexity of the package.
 
-* **Diversity** - if you have two reviewers, only one should be a cis white male.
+* **Diversity:** Try to find reviewers from different backgrounds and gender identities. For example, if you have two reviewers, only one should be a cis white male.
 * **Openness** - reviewers should also have demonstrated interest in open
   source or Python community activities, although blind emailing is fine.
 

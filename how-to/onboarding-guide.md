@@ -30,7 +30,7 @@ from different backgrounds, cultures, genders, and domains.
 A new editor will be considered a guest editor for the first 3 months of their
 tenure and/or until they have completed their first review. Once they have
 completed a review, they can be considered a full editor as deemed appropriate
-by the software review lead and the current editorial board.
+by the Software Review Lead and the current editorial board.
 
 #### _ad hoc_ Guest Editors
 
@@ -76,7 +76,7 @@ pyOpenSci.
 
 ## Where to Find New Editors
 
-Typically the Editor in Chief will work with the Peer Review Lead to find and
+Typically the Editor in Chief will work with the Software Review Lead to find and
 onboard new editors in scientific topical areas where pyOpenSci has existing
 gaps.
 
@@ -102,7 +102,7 @@ allow you to cast an even wider net to find new interested editors.
 
 :::{todo}
 Ideally, we want to have an online interface for the editors / EiC to own the
-process. When we have a link that will allow the EiC / peer review lead to
+process. When we have a link that will allow the EiC / Software Review Lead to
 search through something online, we should add it --
 
 pyOpenSci maintains a database of contributors, and the Community Manager can
@@ -155,7 +155,7 @@ an individual Direct Message (DM) because:
 * It allows other community members who may know of potential editors to see the request and potentially respond.
 :::
 
-Our Community Manager interacts with the broader community and partner communities and as such often interacts with people who may be interested in joining our pyOpenSci review team. The Community Manager may from time to time meet community members who might make great editors or reviewers. In those cases they will share that information with the current Editor in Chief and Peer Review Lead.
+Our Community Manager interacts with the broader community and partner communities and as such often interacts with people who may be interested in joining our pyOpenSci review team. The Community Manager may from time to time meet community members who might make great editors or reviewers. In those cases they will share that information with the current Editor in Chief and Software Review Lead.
 
 :::{todo}
 pyOpenSci anticipates being able to send targeted emails to community members that meet certain criteria related to domain expertise by the Fall of 2024. Please reach out to the pyOpenSci Community Manager with any questions about this process!
@@ -175,7 +175,7 @@ It is important that a new reviewer or a new editor fill out the appropriate for
 
 ## On-boarding a new editor
 
-The Editor in Chief, working closely with the Peer Review Lead, is responsible for inviting and onboarding a new editor to our peer review process.
+The Editor in Chief, working closely with the Software Review Lead, is responsible for inviting and onboarding a new editor to our peer review process.
 
 When the EIC has identified an editor who is not currently part of the pyOpenSci community, they should:
 
@@ -190,7 +190,7 @@ The Community Manager will ensure that any new member that joins our Slack works
 ## Process for inviting a new editor
 
 * Editorial board candidates most often start as guest editors.
-* After 3 months or their first review (which ever comes first), the Peer Review Lead working with the EiC will assess how the
+* After 3 months or their first review (which ever comes first), the Software Review Lead working with the EiC will assess how the
 review process went. Allow other editors to provide input as well.
 * Once it is determined that the guest editor is committed to support the pyOpenSci
 review process, you can email them to fully participate on the editorial board
