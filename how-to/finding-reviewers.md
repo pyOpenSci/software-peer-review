@@ -22,7 +22,7 @@ When the above doesn't work and you still need to find a reviewer:
 * Post in the pyOpenSci Slack `#software-review` channel.
 * Look for users of the package or the data source/upstream service the
   package connects to (via their opening issues in the repository, starring
-  it, citing it in papers, talking about it on Twitter).
+  it, citing it in papers, talking about it on social media).
 * Search for authors/maintainers of related packages on [PyPI](https://pypi.org/search/).
 * Coordinate with our Community Manager to post a call for reviewers on our
   pyOpenSci social channels.
@@ -51,7 +51,7 @@ website, social media profiles).
 Try to balance your sense of the potential reviewer’s experience against the
 complexity of the package.
 
-* **Diversity** - if you have two reviewers, both shouldn’t be cis white males.
+* **Diversity** - if you have two reviewers, only one should be a cis white male.
 * **Openness** - reviewers should also have demonstrated interest in open
   source or Python community activities, although blind emailing is fine.
 
@@ -84,12 +84,12 @@ for usability.
 If a new reviewer is interested in becoming a reviewer but would like some
 support, do the following:
 
-1. Reach out to the **editor in chief** & **peer review lead** to let them
+1. Reach out to the **Editor in Chief** & **Peer Review Lead** to let them
    know that you have a reviewer that would like to work with a mentor.
 2. They will then post in the `#software-review` channel to see if anyone is
    available to provide support to the new reviewer.
 3. If you don't get any responses from the post above, reach out to our
-   community manager who will try to find someone to fill the mentorship role!
+   Community Manager who will try to find someone to fill the mentorship role!
 
 ### Once a Mentor is Identified
 

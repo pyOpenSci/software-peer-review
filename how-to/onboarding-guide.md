@@ -32,10 +32,10 @@ tenure and/or until they have completed their first review. Once they have
 completed a review, they can be considered a full editor as deemed appropriate
 by the software review lead and the current editorial board.
 
-#### Adhoc Guest Editors
+#### _ad hoc_ Guest Editors
 
 Adhoc editors are editors with specific skill sets that are brought in to lead
-a single review. Examples of when there might be a need for an ad-hoc editor
+a single review. Examples of when there might be a need for an _ad hoc_ editor
 include:
 
 * If there is a conflict of interest between a package submitter and the
@@ -95,7 +95,7 @@ You might find good candidates to be an editor through:
   `#software-review` channel)
 
 When all of the above fails to return a good new editor candidate, you can find
-support from our pyOpenSci community manager who will post an open call on our
+support from our pyOpenSci Community Manager who will post an open call on our
 [social media channels](https://www.pyopensci.org/handbook/community/social.html)
 with a link to our editorial board sign-up form. Using our online network will
 allow you to cast an even wider net to find new interested editors.
@@ -151,11 +151,11 @@ To get support from the Community Manager in recruiting editors (or reviewers) f
 It's helpful to post in our `#software-review` channel rather than
 an individual Direct Message (DM) because:
 
-* It allows other editors to see the type of expertise that you are requesting and that we offer this support from our community manager.
+* It allows other editors to see the type of expertise that you are requesting and that we offer this support from our Community Manager.
 * It allows other community members who may know of potential editors to see the request and potentially respond.
 :::
 
-Our Community Manager interacts with the broader community and partner communities and as such often interacts with people who may be interested in joining our pyOpenSci review team. The community manager may from time to time meet community members who might make great editors or reviewers. In those cases they will share that information with the current EiC and peer review lead.
+Our Community Manager interacts with the broader community and partner communities and as such often interacts with people who may be interested in joining our pyOpenSci review team. The Community Manager may from time to time meet community members who might make great editors or reviewers. In those cases they will share that information with the current Editor in Chief and Peer Review Lead.
 
 :::{todo}
 pyOpenSci anticipates being able to send targeted emails to community members that meet certain criteria related to domain expertise by the Fall of 2024. Please reach out to the pyOpenSci Community Manager with any questions about this process!
@@ -190,7 +190,7 @@ The Community Manager will ensure that any new member that joins our Slack works
 ## Process for inviting a new editor
 
 * Editorial board candidates most often start as guest editors.
-* After 3 months or their first review (which ever comes first), the peer review lead working with the EiC will assess how the
+* After 3 months or their first review (which ever comes first), the Peer Review Lead working with the EiC will assess how the
 review process went. Allow other editors to provide input as well.
 * Once it is determined that the guest editor is committed to support the pyOpenSci
 review process, you can email them to fully participate on the editorial board
@@ -255,7 +255,7 @@ To onboard a new editor:
 :::{note}
 We have a bi-weekly cron job that parses through existing issues and grabs the names of editors, reviewers and authors. However, if you want the editors name to be listed on the website prior to a review beginning and/or sooner than the cron job might pick up their name, then we suggest that you add their name, and GitHub username and title to the contributors.yml file through a pull request.
 
-You do not need to fill out all of the elements of the YAML file - only the name, github user field and the `editorial_board: true` key:value pair.
+You do not need to fill out all of the elements of the YAML file - only the name, GitHub user field and the `editorial_board: true` key:value pair.
 
 :::
 
