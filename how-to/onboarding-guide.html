@@ -7,14 +7,14 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
-<meta property="og:title" content="Onboarding New Editors and Reviewers" />
+<meta property="og:title" content="Onboarding New Editors" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="how-to/onboarding-guide.html" />
 <meta property="og:site_name" content="pyOpenSci Python Package Guide" />
-<meta property="og:description" content="The pyOpenSci open peer review process is supported by volunteer editors. Here we discuss processes for onboarding new editors. The success of our peer review process is dependent upon a well-balan..." />
-<meta name="description" content="The pyOpenSci open peer review process is supported by volunteer editors. Here we discuss processes for onboarding new editors. The success of our peer review process is dependent upon a well-balan..." />
+<meta property="og:description" content="The pyOpenSci open peer review process is driven and led by volunteer editors and reviewers. Finding new volunteers to take on editorial and reviewer roles can sometimes be the trickiest part of th..." />
+<meta name="description" content="The pyOpenSci open peer review process is driven and led by volunteer editors and reviewers. Finding new volunteers to take on editorial and reviewer roles can sometimes be the trickiest part of th..." />
 
-    <title>Onboarding New Editors and Reviewers &#8212; Software Peer Review Guide</title>
+    <title>Onboarding New Editors &#8212; Software Peer Review Guide</title>
   
   
   
@@ -37,7 +37,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=a746c00c" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=87e54e7c" />
     <link rel="icon" sizes="16x16" type="image/ico" href="https://www.pyopensci.org/images/favicon.ico" />
     <link rel="stylesheet" type="text/css" href="../_static/pyos.css?v=d6812f4d" />
   
@@ -51,13 +51,13 @@
     <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
     <script src="../_static/copybutton.js?v=f281be69"></script>
-    <script src="../_static/design-tabs.js?v=36754332"></script>
+    <script src="../_static/design-tabs.js?v=f930bc37"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'how-to/onboarding-guide';</script>
     <script src="../_static/matomo.js?v=918da087"></script>
     <link rel="canonical" href="https://www.pyopensci.org/software-peer-review/how-to/onboarding-guide.html" />
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Reviewer Resources" href="finding-reviewers.html" />
+    <link rel="next" title="Finding Reviewers" href="finding-reviewers.html" />
     <link rel="prev" title="Editorial Review Triage Team" href="review-triage-team.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -445,8 +445,8 @@ document.write(`
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Onboarding Editors &amp; Reviewers</span></p>
 <ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Onboarding Editors &amp; Reviewers</a></li>
-<li class="toctree-l1"><a class="reference internal" href="finding-reviewers.html">Finding Reviewers</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Finding &amp; Onboarding Editors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="finding-reviewers.html">Finding &amp; Onboarding Reviewers</a></li>
 </ul>
 </div>
 </nav></div>
@@ -504,85 +504,178 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <section id="onboarding-new-editors-and-reviewers">
-<h1>Onboarding New Editors and Reviewers<a class="headerlink" href="#onboarding-new-editors-and-reviewers" title="Link to this heading">#</a></h1>
-<p>The pyOpenSci open peer review process is supported by volunteer editors. Here we discuss processes for onboarding new editors.</p>
-<p>The success of our peer review process is dependent upon a
-well-balanced editorial board. Our board needs to have combined expertise in:</p>
+  <section id="onboarding-new-editors">
+<h1>Onboarding New Editors<a class="headerlink" href="#onboarding-new-editors" title="Link to this heading">#</a></h1>
+<p>The pyOpenSci open peer review process is driven and led by volunteer editors
+and reviewers. Finding new volunteers to take on editorial and reviewer roles
+can sometimes be the trickiest part of the review process. However, we have
+resources available to help you in that effort!</p>
+<p>Below we discuss processes for finding and onboarding new volunteers to our
+peer review process.</p>
+<section id="about-the-editorial-board">
+<h2>About the Editorial Board<a class="headerlink" href="#about-the-editorial-board" title="Link to this heading">#</a></h2>
+<p>The success of our peer review process is dependent upon a well-balanced
+editorial board. Our board needs to have combined expertise in:</p>
 <ul class="simple">
-<li><p>A suite of specific science domains that fall within the scope of our peer review process</p></li>
-<li><p>Technical expertise in Python packaging.</p></li>
-<li><p>Awareness of the importance of documentation and package usability.</p></li>
-<li><p>Awareness of the importance of CI / test suites to ensure robust software development.</p></li>
+<li><p>A suite of specific science domains that fall within the scope of our peer
+review process</p></li>
+<li><p>Technical expertise in Python packaging</p></li>
+<li><p>Awareness of the importance of documentation and package usability</p></li>
+<li><p>Awareness of the importance of CI / test suites to ensure robust software
+development</p></li>
 </ul>
+<p>We also strive to ensure our editorial team is diverse and comprised of people
+from different backgrounds, cultures, genders, and domains.</p>
+<section id="types-of-editors">
+<h3>Types of Editors<a class="headerlink" href="#types-of-editors" title="Link to this heading">#</a></h3>
+<section id="new-editors-start-as-guests">
+<h4>New Editors Start as “Guests”<a class="headerlink" href="#new-editors-start-as-guests" title="Link to this heading">#</a></h4>
+<p>A new editor will be considered a guest editor for the first 3 months of their
+tenure and/or until they have completed their first review. Once they have
+completed a review, they can be considered a full editor as deemed appropriate
+by the Software Review Lead and the current editorial board.</p>
+</section>
+<section id="ad-hoc-guest-editors">
+<h4><em>ad hoc</em> Guest Editors<a class="headerlink" href="#ad-hoc-guest-editors" title="Link to this heading">#</a></h4>
+<p>Adhoc editors are editors with specific skill sets that are brought in to lead
+a single review. Examples of when there might be a need for an <em>ad hoc</em> editor
+include:</p>
+<ul class="simple">
+<li><p>If there is a conflict of interest between a package submitter and the
+editorial team (e.g., a close colleague of everyone on the team)</p></li>
+<li><p>If the editorial board is at capacity handling the current review load</p></li>
+<li><p>If a very specialized skill set is needed (in a one-off type of situation)</p></li>
+</ul>
+<p>In this case, you may consider using our internal reviewer sign-up list to see
+if someone who signed up to be a reviewer might want to serve as an editor.</p>
+</section>
+</section>
+<section id="experience-required-to-be-an-editor">
+<h3>Experience Required to Be an Editor<a class="headerlink" href="#experience-required-to-be-an-editor" title="Link to this heading">#</a></h3>
+<p>We prefer that editors have some experience with reviewing software. This
+experience could come from a previous review they worked on with pyOpenSci,
+rOpenSci, or JOSS.</p>
+</section>
+<section id="editorial-mentorship">
+<h3>Editorial Mentorship<a class="headerlink" href="#editorial-mentorship" title="Link to this heading">#</a></h3>
+<p>If a potential volunteer does not have prior software editorial experience, we
+offer a <strong>mentorship process</strong>. Editor mentorship is where someone with
+existing editorial experience mentors the new editor through their first
+review(s).</p>
+</section>
 <section id="recruiting-new-editors">
-<h2>Recruiting new editors<a class="headerlink" href="#recruiting-new-editors" title="Link to this heading">#</a></h2>
-<p>Recruiting new editors and maintaining a sufficient and well-balanced editorial
-board is the responsibility of the software review lead (position to be
-defined) with support and advice from the editorial board.</p>
+<h3>Recruiting New Editors<a class="headerlink" href="#recruiting-new-editors" title="Link to this heading">#</a></h3>
+<p>Recruiting new editors and maintaining a sufficient and well-balanced
+editorial board is the responsibility of the
+<a class="reference external" href="https://www.pyopensci.org/handbook/governance/structure.html#software-review-lead">Software Review Lead</a>
+with support and advice from the editorial board.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>pyOpenSci is a newly restructured organization. While we’ve been performing peer
-review for almost 4 years, we are now beginning to formalize our process thanks to
-funding support from the Sloan foundation. In these early months, this software
-review lead role will be completed largely by the Executive Director with support from the Editor in
-Chief. In the future we hope to find someone with interest in leading peer review for pyOpenSci</p>
+<p>For the time being, the Software Review Lead role is being filled by the
+Executive Director with support from the Editor in Chief as we define our
+process and track the volume of submissions that we need to support. In the
+future, we will find someone with interest in leading peer review for
+pyOpenSci.</p>
 </div>
 </section>
+</section>
 <section id="where-to-find-new-editors">
-<h2>Where to find new editors<a class="headerlink" href="#where-to-find-new-editors" title="Link to this heading">#</a></h2>
-<p>As we build our pyOpenSci community our pool of potential editors will grow.
-A few options to consider include:</p>
+<h2>Where to Find New Editors<a class="headerlink" href="#where-to-find-new-editors" title="Link to this heading">#</a></h2>
+<p>Typically the Editor in Chief will work with the Software Review Lead to find and
+onboard new editors in scientific topical areas where pyOpenSci has existing
+gaps.</p>
+<p>You might find good candidates to be an editor through:</p>
 <ul class="simple">
-<li><p>Contributors who have reviewed for pyOpenSci</p></li>
-<li><p>Contributors who have submitted a package to pyOpenSci</p></li>
-<li><p>Contributors who have served as a guest editor</p></li>
-<li><p>Colleagues that you know who have reviewed for JOSS or rOpenSci who have Python expertise</p></li>
+<li><p>Your professional network: you may know people in a specific domain that
+might be a good fit to be an editor for pyOpenSci.</p></li>
+<li><p>Our <a class="reference external" href="https://www.pyopensci.org/our-community/index.html#pyopensci-community-contributors">pyOpenSci list of contributor pool</a> which includes:</p>
+<ul>
+<li><p>Package authors and maintainers who have already submitted a package for
+review to pyOpenSci</p></li>
+<li><p>Reviewers who have already led reviews for pyOpenSci</p></li>
+<li><p>Past guest editors</p></li>
 </ul>
+</li>
+<li><p>Colleagues that you know who have reviewed for the Journal of Open Source
+Software (JOSS) or rOpenSci who have Python expertise</p></li>
+<li><p>Community members in the pyOpenSci Slack (please post a call in our
+<code class="docutils literal notranslate"><span class="pre">#software-review</span></code> channel)</p></li>
+</ul>
+<p>When all of the above fails to return a good new editor candidate, you can find
+support from our pyOpenSci Community Manager who will post an open call on our
+<a class="reference external" href="https://www.pyopensci.org/handbook/community/social.html">social media channels</a>
+with a link to our editorial board sign-up form. Using our online network will
+allow you to cast an even wider net to find new interested editors.</p>
 </section>
 <section id="starting-the-editorial-search">
 <h2>Starting the editorial search<a class="headerlink" href="#starting-the-editorial-search" title="Link to this heading">#</a></h2>
-<p>To begin, start your search well in advance of when you think you may need new
-editor(s). When you begin your search, start with the existing editorial team.
-See if anyone can identify reviewers who excelled and may be a good editorial candidate. Do this in a private channels on Slack as follows:</p>
+<p>To begin, first post in our <code class="docutils literal notranslate"><span class="pre">private-editorial-team</span></code> slack channel to see if any of our existing <a class="reference external" href="https://www.pyopensci.org/about-peer-review/index.html#meet-our-editorial-board">Editorial Team</a> members can identify past reviewers or other people they know that might be a good editorial candidate.</p>
+<p>If there is a discussion around specific candidates, be sure to:</p>
 <ul class="simple">
-<li><p>Start a private channel for discussion. This ensures there is not a visible
-history in a public channel that a new editor may see in the future (this could
-be awkward for someone to see!).</p></li>
-<li><p>Ping editors to be sure they get a notification as this is an important topic.</p></li>
-<li><p>Wait for a majority of editors to chime in before inviting someone. Provide
-editors one week to respond on slack.</p></li>
+<li><p>Start a private group message for discussion about particular candidates. This ensures there is not a visible history in a public channel that a new editor may see in the future (this could be awkward for someone to see!)</p></li>
+<li><p>Ping editors using &#64;here to be sure they get a notification, as this is an important topic.</p></li>
 </ul>
-</section>
-<section id="experience-required-to-be-an-editor">
-<h2>Experience required to be an editor<a class="headerlink" href="#experience-required-to-be-an-editor" title="Link to this heading">#</a></h2>
-<p>We prefer that editors have some experience with reviewing software. This experience
-could come from a previous review they worked on with pyOpenSci, rOpenSci or JOSS.</p>
-<p>If they do not have experience as may be the case in the early months or establishing
-a robust editorial board, we  offer a “mentorship” process. Editor mentorship
-is where someone with existing editorial experience, mentors the new editor
-through their first review(s).</p>
-<p>A new editor will be considered “guest” for the first 3 months of their tenure
-and/or until they have completed their first review. Once they have a completed
-a review they can be considered to be a full editor as deemed appropriate by the
-software review lead and the current editorial board.</p>
-</section>
-<section id="adhoc-guest-editors">
-<h2>Adhoc guest editors<a class="headerlink" href="#adhoc-guest-editors" title="Link to this heading">#</a></h2>
-<p>In some cases you may require a guest editor for a single package (a one-off
-type of situation). Examples of when this might happen include:</p>
+<p><strong>IMPORTANT:</strong> Provide up to a week of time for editors to chime in before onboarding a new editor.</p>
+<section id="leverage-pyopensci-social-channels-to-find-editors">
+<h3>Leverage pyOpenSci social channels to find editors<a class="headerlink" href="#leverage-pyopensci-social-channels-to-find-editors" title="Link to this heading">#</a></h3>
+<p>If you have tried all of the above and still aren’t able to find a new
+candidate, then the pyOpenSci Community Manager can assist you by:</p>
 <ul class="simple">
-<li><p>if there a conflict of interest between a package submitter and the editorial team (e.g. a close colleague of everyone on the team)</p></li>
-<li><p>if the editorial board is at capacity handling the current review load</p></li>
+<li><p>Posting on our social media channels about the position.</p></li>
+<li><p>Writing a <a class="reference external" href="https://www.pyopensci.org/blog/pyos-call-for-editors-may-2024.html">call for editors blog post</a> about our current editorial needs.</p></li>
 </ul>
-<p>In this case, you may consider using our internal reviewer signup list to see
-if someone who signed up to be a reviewer might want to serve as an editor.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><a class="reference external" href="https://fosstodon.org/&#64;pyOpenSci/112497485980274296">See an example here of a post that seeks to recruit editors</a>, a blog post, and call-outs in both our monthly and weekly newsletters.</p>
+</div>
+<p>To get support from the Community Manager in recruiting editors (or reviewers) follow the process below:</p>
+<ul class="simple">
+<li><p>Post in our public <code class="docutils literal notranslate"><span class="pre">#software-review</span></code> slack channel pinging the community manager (<code class="docutils literal notranslate"><span class="pre">&#64;username</span></code>). In your post, include the following details:</p>
+<ul>
+<li><p>That you’re looking for editors.</p></li>
+<li><p>Any specific domains or technical skills you need an editor to have, or if it’s a general call for editors.</p></li>
+<li><p>Any specific packages that need an editor (include links to a package submission that they would lead if possible).</p></li>
+</ul>
+</li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>It’s helpful to post in our <code class="docutils literal notranslate"><span class="pre">#software-review</span></code> channel rather than
+an individual Direct Message (DM) because:</p>
+<ul class="simple">
+<li><p>It allows other editors to see the type of expertise that you are requesting and that we offer this support from our Community Manager.</p></li>
+<li><p>It allows other community members who may know of potential editors to see the request and potentially respond.</p></li>
+</ul>
+</div>
+<p>Our Community Manager interacts with the broader community and partner communities and as such often interacts with people who may be interested in joining our pyOpenSci review team. The Community Manager may from time to time meet community members who might make great editors or reviewers. In those cases they will share that information with the current Editor in Chief and Software Review Lead.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>It is important that a new reviewer or a new editor fill out the appropriate form prior to onboarding.</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://docs.google.com/forms/d/e/1FAIpQLSeVf-L_1-jYeO84OvEE8UemEoCmIiD5ddP_aO8S90vb7srADQ/viewform">reviewer signup form</a></p></li>
+<li><p><a class="reference external" href="https://docs.google.com/forms/d/17NW0P_h8gpmzf7Fr0cAd8aEbIUWPljPfg4d7Rjs1UIE/edit">editor signup form</a></p></li>
+</ul>
+</div>
+</section>
+</section>
+<section id="on-boarding-a-new-editor">
+<h2>On-boarding a new editor<a class="headerlink" href="#on-boarding-a-new-editor" title="Link to this heading">#</a></h2>
+<p>The Editor in Chief, working closely with the Software Review Lead, is responsible for inviting and onboarding a new editor to our peer review process.</p>
+<p>When the EIC has identified an editor who is not currently part of the pyOpenSci community, they should:</p>
+<ul class="simple">
+<li><p>Extend a Slack invitation to the individual (or ask our Community Manager to do so)</p></li>
+<li><p>Welcome the individual in Slack, and provide them with access to the <code class="docutils literal notranslate"><span class="pre">#private-editorial-team</span></code> and any other channels as needed.</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The Community Manager will ensure that any new member that joins our Slack workspace is welcomed and set up with anything they need in our pyOpenSci Slack workspace.</p>
+</div>
 </section>
 <section id="process-for-inviting-a-new-editor">
 <h2>Process for inviting a new editor<a class="headerlink" href="#process-for-inviting-a-new-editor" title="Link to this heading">#</a></h2>
 <ul class="simple">
 <li><p>Editorial board candidates most often start as guest editors.</p></li>
-<li><p>After 3 months or their first review (which ever comes first) assess how the
+<li><p>After 3 months or their first review (which ever comes first), the Software Review Lead working with the EiC will assess how the
 review process went. Allow other editors to provide input as well.</p></li>
 <li><p>Once it is determined that the guest editor is committed to support the pyOpenSci
 review process, you can email them to fully participate on the editorial board
@@ -590,7 +683,7 @@ using the template below.</p></li>
 </ul>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>Hi [NAME HERE]:
 
-We would like to invite you to join the pyOpenSci editorial board as a full
+We would like to formally invite you to join the pyOpenSci editorial board as a full
 member. [*SPECIFIC REASONS FOR INVITATION (mention contributions TO pyOpenSci)*].
 We think you will make a wonderful addition to our pyOpenSci open review team!
 
@@ -625,82 +718,63 @@ Best,
 </div>
 </section>
 <section id="onboarding-a-new-editor">
-<span id="id1"></span><h2>Onboarding a new editor<a class="headerlink" href="#onboarding-a-new-editor" title="Link to this heading">#</a></h2>
+<span id="id3"></span><h2>Onboarding a new editor<a class="headerlink" href="#onboarding-a-new-editor" title="Link to this heading">#</a></h2>
 <p>To onboard a new editor:</p>
 <ul class="simple">
-<li><p>Ask them to add themselves to the <a class="reference external" href="https://github.com/pyOpenSci/pyopensci.github.io/blob/main/_data/contributors.yml">pyOpenSci website</a> using a pull request. If they are already listed on our website, then they only need to add
-the <code class="docutils literal notranslate"><span class="pre">title:</span></code> yaml element and update <code class="docutils literal notranslate"><span class="pre">contributor_type:</span></code> as see below:</p></li>
-</ul>
-<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">FirstName LastName</span>
-<span class="w">  </span><span class="nt">sort</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">2</span>
-<span class="w">  </span><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Editor&quot;</span><span class="w"> </span><span class="c1"># Make sure this says Editor</span>
-<span class="w">  </span><span class="nt">bio</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;&#39;</span>
-<span class="w">  </span><span class="nt">organization</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;&quot;</span>
-<span class="w">  </span><span class="nt">github_username</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ghusernamehere</span>
-<span class="w">  </span><span class="nt">github_image_id</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">11934090</span><span class="w"> </span><span class="c1"># You can find this value by opening your github profile image</span>
-<span class="w">  </span><span class="c1"># in a new browser tab and grabbing the id https://avatars.githubusercontent.com/u/7649194?v=4 &lt;-</span>
-<span class="w">  </span><span class="c1"># in this example 7649194 is the image_id</span>
-<span class="w">  </span><span class="nt">contributor_type</span><span class="p">:</span>
-<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">current editor</span><span class="w"> </span><span class="c1"># Make sure current editor is added here</span>
-<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">contributor</span>
-<span class="w">  </span><span class="nt">packages-submitted</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="s">&quot;&quot;</span><span class="p p-Indicator">]</span>
-<span class="w">  </span><span class="nt">packages-reviewed</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="s">&quot;pystiche&quot;</span><span class="p p-Indicator">]</span>
-<span class="w">  </span><span class="nt">packages-editor</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="s">&quot;&quot;</span><span class="p p-Indicator">]</span>
-</pre></div>
-</div>
-<ul class="simple">
-<li><p>Next work with the new editor to create a blog post introducing them which will get <a class="reference external" href="https://www.pyopensci.org/blog">posted on the pyOpenSci blog</a>.</p></li>
-<li><p>If they haven’t already done, ask the new editor to turn on <a class="reference external" href="https://docs.github.com/en/authentication/securing-your-account-with-two-factor-authentication-2fa">two-factor authentication (2FA) for GitHub</a>.</p></li>
+<li><p>Message the pyOpenSci Community Manager and the new editor in Slack, introducing them to one another. The Community Manager will collaborate with the new editor to create a blog post introducing them, which will in turn get posted on the pyOpenSci blog, promoted on social media, and included in an upcoming newsletter.</p></li>
+<li><p>Ask the new editor to turn on <a class="reference external" href="https://docs.github.com/en/authentication/securing-your-account-with-two-factor-authentication-2fa">two-factor authentication (2FA) for GitHub</a> if they haven’t already done so.</p></li>
 <li><p>Give editors permissions they will need on GitHub to manage reviews:</p>
 <ul>
 <li><p>For ad-hoc guest editors: invite the editor to the <code class="docutils literal notranslate"><span class="pre">software-submission</span></code> repository
 with “maintain” permissions.</p></li>
-<li><p>For new editors (not ad-hoc): invite editors to the pyOpenSci GitHub organzation
+<li><p>For new editors (not ad-hoc): invite editors to the pyOpenSci GitHub organization
 as a member of the <a class="reference external" href="https://github.com/orgs/pyOpenSci/teams/editorial-board"><code class="docutils literal notranslate"><span class="pre">editorial-board</span></code></a> team. This will give them appropriate permissions and allow them to get team-specific notifications.</p></li>
 </ul>
 </li>
-</ul>
-<!-- do we need this?
-* Editors need access to the AirTable database of software review.
-* * In the Slack workspace they need to be added to the editors team so that `@editors` will ping them too.
- -->
-<ul class="simple">
-<li><p>Add the new editor to the pyOpenSci Slack workspace and specifically the private editors channel.</p></li>
+<li><p>Add the new editor to the pyOpenSci Slack workspace and specifically the <code class="docutils literal notranslate"><span class="pre">private-editorial</span></code> channel.</p></li>
 <li><p>Post a welcome message for the new editor in the editor channel, pinging all editors.</p></li>
+<li><p>Update the <a class="reference external" href="https://github.com/pyOpenSci/pyopensci.github.io/blob/main/_data/contributors.yml">website contributors.yml</a> file with the name of the new editor.</p></li>
 </ul>
-<!--
-This is what ROS does... i need to think this through. it doesn't make sense
-to add names in so many places manually... maybe there is a better way
-* We add editors' names to
-    * [dev_guide authors list](https://github.com/ropensci/dev_guide/blob/main/index.Rmd)
-    * [dev_guide chapter introducing software review](https://github.com/ropensci/dev_guide/blob/main/softwarereview_intro.Rmd) (at two locations in this file, as editors and a bit below to remove them from the reviewers list)
-    * [software-review README](https://github.com/ropensci/software-review/blob/main/README.Rmd) (in two places in this file as well)
-Both the dev_guide and software-review README are automatically knit via continuous integration. -->
-<!-- * Add editors to https://github.com/orgs/ropensci/teams/editors/members -->
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>We have a bi-weekly cron job that parses through existing issues and grabs the names of editors, reviewers and authors. However, if you want the editors name to be listed on the website prior to a review beginning and/or sooner than the cron job might pick up their name, then we suggest that you add their name, and GitHub username and title to the contributors.yml file through a pull request.</p>
+<p>You do not need to fill out all of the elements of the YAML file - only the name, GitHub user field and the <code class="docutils literal notranslate"><span class="pre">editorial_board:</span> <span class="pre">true</span></code> key:value pair.</p>
+</div>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">FirstName LastName</span>
+<span class="w">  </span><span class="nt">github_username</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ghuser</span>
+<span class="w">  </span><span class="nt">github_image_id</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1234566</span>
+<span class="w">  </span><span class="nt">title</span><span class="p">:</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Editor</span><span class="w"> </span><span class="c1"># Title to be listed under their name</span>
+<span class="w">  </span><span class="c1"># ..... #</span>
+<span class="w">  </span><span class="nt">editorial_board</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span><span class="w"> </span><span class="c1"># Be sure editorial_board is set to true</span>
+<span class="w">  </span><span class="nt">emeritus_editor</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">false</span><span class="w"> </span><span class="c1"># Emeritus is initially set to false</span>
+<span class="w">  </span><span class="c1"># ..... #</span>
+<span class="w">  </span><span class="nt">contributor_type</span><span class="p">:</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">editor</span><span class="w"> </span><span class="c1"># This field will be automatically updated after their first review</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">guidebook-contrib</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">reviewer</span>
+</pre></div>
+</div>
 </section>
-<section id="offboarding-an-editor">
-<h2>Offboarding an editor<a class="headerlink" href="#offboarding-an-editor" title="Link to this heading">#</a></h2>
-<p>When it’s time for an editor to step down:</p>
+<section id="off-boarding-an-editor">
+<h2>Off-boarding an editor<a class="headerlink" href="#off-boarding-an-editor" title="Link to this heading">#</a></h2>
+<p>When it is time for an editor to step down, do the following:</p>
 <ul class="simple">
 <li><p>Thank them for their work!</p></li>
-<li><p>Remove them from the editors-only channel and the editors Slack team.</p></li>
-<li><p>Moved them to alumni-editor on the <a class="reference external" href="https://github.com/pyOpenSci/pyopensci.github.io/blob/main/_data/contributors.yml">pyOpenSci website</a> as follows:</p></li>
+<li><p>Remove them from the editors-only Slack channel and the editors GitHub team.</p></li>
+<li><p>Move them to emeritus-editor on the <a class="reference external" href="https://github.com/pyOpenSci/pyopensci.github.io/blob/main/_data/contributors.yml">pyOpenSci website</a> as follows:</p></li>
 </ul>
 <div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">FirstName LastName</span>
-<span class="w">  </span><span class="nt">sort</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">2</span>
-<span class="w">  </span><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;Emeritus</span><span class="nv"> </span><span class="s">Editor&quot;</span><span class="w"> </span><span class="c1"># Modify this to say Emeritus Editor</span>
-<span class="w">  </span><span class="nt">bio</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;&#39;</span>
-<span class="w">  </span><span class="nt">organization</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;&quot;</span>
-<span class="w">  </span><span class="nt">github_username</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ghusernamehere</span>
-<span class="w">  </span><span class="nt">github_image_id</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">11934090</span><span class="w"> </span><span class="c1"># You can find this value by opening your github profile image</span>
-<span class="w">  </span><span class="c1"># in a new browser tab and grabbing the id https://avatars.githubusercontent.com/u/7649194?v=4 &lt;-</span>
-<span class="w">  </span><span class="c1"># in this example 7649194 is the image_id</span>
+<span class="w">  </span><span class="nt">github_username</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ghuser</span>
+<span class="w">  </span><span class="nt">github_image_id</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1234566</span>
+<span class="w">  </span><span class="c1"># ..... more here ... #</span>
+<span class="w">  </span><span class="nt">editorial_board</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">false</span><span class="w"> </span><span class="c1"># Be sure editorial_board is set to FALSE</span>
+<span class="w">  </span><span class="nt">emeritus_editor</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span><span class="w"> </span><span class="c1"># Emeritus is now true if they&#39;ve served as an editor</span>
+<span class="w">  </span><span class="c1"># .. #</span>
 <span class="w">  </span><span class="nt">contributor_type</span><span class="p">:</span>
-<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">current editor</span><span class="w"> </span><span class="c1"># Make sure emeritus editor is here</span>
-<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">contributor</span>
-<span class="w">  </span><span class="nt">packages-submitted</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="s">&quot;&quot;</span><span class="p p-Indicator">]</span>
-<span class="w">  </span><span class="nt">packages-reviewed</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="s">&quot;pystiche&quot;</span><span class="p p-Indicator">]</span>
-<span class="w">  </span><span class="nt">packages-editor</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="s">&quot;&quot;</span><span class="p p-Indicator">]</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">editor</span><span class="w"> </span><span class="c1"># This field will be automatically updated after their first review</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">guidebook-contrib</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">reviewer</span>
 </pre></div>
 </div>
 </section>
@@ -730,7 +804,7 @@ Both the dev_guide and software-review README are automatically knit via continu
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Reviewer Resources</p>
+        <p class="prev-next-title">Finding Reviewers</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -750,14 +824,26 @@ Both the dev_guide and software-review README are automatically knit via continu
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#recruiting-new-editors">Recruiting new editors</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#where-to-find-new-editors">Where to find new editors</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#starting-the-editorial-search">Starting the editorial search</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#experience-required-to-be-an-editor">Experience required to be an editor</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#adhoc-guest-editors">Adhoc guest editors</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#about-the-editorial-board">About the Editorial Board</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#types-of-editors">Types of Editors</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#new-editors-start-as-guests">New Editors Start as “Guests”</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#ad-hoc-guest-editors"><em>ad hoc</em> Guest Editors</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#experience-required-to-be-an-editor">Experience Required to Be an Editor</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#editorial-mentorship">Editorial Mentorship</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#recruiting-new-editors">Recruiting New Editors</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#where-to-find-new-editors">Where to Find New Editors</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#starting-the-editorial-search">Starting the editorial search</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#leverage-pyopensci-social-channels-to-find-editors">Leverage pyOpenSci social channels to find editors</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#on-boarding-a-new-editor">On-boarding a new editor</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#process-for-inviting-a-new-editor">Process for inviting a new editor</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#onboarding-a-new-editor">Onboarding a new editor</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#offboarding-an-editor">Offboarding an editor</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#off-boarding-an-editor">Off-boarding an editor</a></li>
 </ul>
   </nav></div>
 

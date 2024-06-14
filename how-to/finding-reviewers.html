@@ -7,14 +7,14 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
-<meta property="og:title" content="Reviewer Resources" />
+<meta property="og:title" content="Finding Reviewers" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="how-to/finding-reviewers.html" />
 <meta property="og:site_name" content="pyOpenSci Python Package Guide" />
-<meta property="og:description" content="Where to Look for Reviewers?: As a (guest) editor, you can find reviewers through: Suggestions made by the submitter(s) (although submitters may have a narrow view of the types of expertise needed...." />
-<meta name="description" content="Where to Look for Reviewers?: As a (guest) editor, you can find reviewers through: Suggestions made by the submitter(s) (although submitters may have a narrow view of the types of expertise needed...." />
+<meta property="og:description" content="Sometimes the most challenging part of our pyOpenSci open peer review process is finding reviewers. This page provides tips and tricks to help you find the right people to review a scientific Pytho..." />
+<meta name="description" content="Sometimes the most challenging part of our pyOpenSci open peer review process is finding reviewers. This page provides tips and tricks to help you find the right people to review a scientific Pytho..." />
 
-    <title>Reviewer Resources &#8212; Software Peer Review Guide</title>
+    <title>Finding Reviewers &#8212; Software Peer Review Guide</title>
   
   
   
@@ -37,7 +37,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=a746c00c" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="../_static/design-style.1e8bd061cd6da7fc9cf755528e8ffc24.min.css?v=0a3b3ea7" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=87e54e7c" />
     <link rel="icon" sizes="16x16" type="image/ico" href="https://www.pyopensci.org/images/favicon.ico" />
     <link rel="stylesheet" type="text/css" href="../_static/pyos.css?v=d6812f4d" />
   
@@ -51,13 +51,13 @@
     <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
     <script src="../_static/copybutton.js?v=f281be69"></script>
-    <script src="../_static/design-tabs.js?v=36754332"></script>
+    <script src="../_static/design-tabs.js?v=f930bc37"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'how-to/finding-reviewers';</script>
     <script src="../_static/matomo.js?v=918da087"></script>
     <link rel="canonical" href="https://www.pyopensci.org/software-peer-review/how-to/finding-reviewers.html" />
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="prev" title="Onboarding New Editors and Reviewers" href="onboarding-guide.html" />
+    <link rel="prev" title="Onboarding New Editors" href="onboarding-guide.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -444,8 +444,8 @@ document.write(`
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Onboarding Editors &amp; Reviewers</span></p>
 <ul class="current nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="onboarding-guide.html">Onboarding Editors &amp; Reviewers</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Finding Reviewers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="onboarding-guide.html">Finding &amp; Onboarding Editors</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Finding &amp; Onboarding Reviewers</a></li>
 </ul>
 </div>
 </nav></div>
@@ -486,7 +486,7 @@ document.write(`
     
     <li class="breadcrumb-item"><a href="author-guide.html" class="nav-link">Peer Review Guide for Python Open Source Authors / Authors</a></li>
     
-    <li class="breadcrumb-item active" aria-current="page">Reviewer Resources</li>
+    <li class="breadcrumb-item active" aria-current="page">Finding Reviewers</li>
   </ul>
 </nav>
 </div>
@@ -503,30 +503,46 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <section id="reviewer-resources">
-<h1>Reviewer Resources<a class="headerlink" href="#reviewer-resources" title="Link to this heading">#</a></h1>
+  <section id="finding-reviewers">
+<h1>Finding Reviewers<a class="headerlink" href="#finding-reviewers" title="Link to this heading">#</a></h1>
+<p>Sometimes the most challenging part of our pyOpenSci open peer review process
+is finding reviewers. This page provides tips and tricks to help you find the
+right people to review a scientific Python package.</p>
 <section id="where-to-look-for-reviewers">
 <h2>Where to Look for Reviewers?<a class="headerlink" href="#where-to-look-for-reviewers" title="Link to this heading">#</a></h2>
-<p>As a (guest) editor, you can find reviewers through:</p>
+<p>As an editor, you can find reviewers through:</p>
 <ul class="simple">
-<li><p>Suggestions made by the submitter(s) (although submitters may have a narrow view of the types of expertise needed. We suggest not using more than one of the suggested reviewers).</p></li>
+<li><p>Suggestions made by the submitting package authors. We suggest only using
+one of the suggested reviewers if this is the case.</p></li>
 <li><p>Authors of existing <a class="reference external" href="https://www.pyopensci.org/python-packages/">pyOpenSci packages</a>.</p></li>
-<li><p>Other <a class="reference external" href="https://www.pyopensci.org/our-community/">contributors to pyOpenSci</a>.</p></li>
+<li><p>Other <a class="reference external" href="https://www.pyopensci.org/our-community/">pyOpenSci contributors</a>.</p></li>
 </ul>
-<p>When these sources of information are not enough:</p>
+<p>When the above doesn’t work and you still need to find a reviewer:</p>
 <ul class="simple">
+<li><p>Check our reviewer sign-up spreadsheet for names of people who have already
+volunteered to review for pyOpenSci. The link for this document is pinned to
+the pyOpenSci Slack <code class="docutils literal notranslate"><span class="pre">#private-editorial-channel</span></code>.</p></li>
 <li><p>Ping other editors for ideas.</p></li>
-<li><p>Look for users of the package or the data source/upstream service the package connects to (via their opening issues in the repository, starring it, citing it in papers, talking about it on Twitter).</p></li>
-<li><p>You can also search for authors/maintainers of related packages on <a class="reference external" href="https://pypi.org/search/">PyPI</a>.</p></li>
-<li><p>Post on Twitter and ensure pyOpenSci retweets your post.</p></li>
+<li><p>Post in the pyOpenSci Slack <code class="docutils literal notranslate"><span class="pre">#software-review</span></code> channel.</p></li>
+<li><p>Look for users of the package or the data source/upstream service the
+package connects to (via their opening issues in the repository, starring
+it, citing it in papers, talking about it on social media).</p></li>
+<li><p>Search for authors/maintainers of related packages on <a class="reference external" href="https://pypi.org/search/">PyPI</a>.</p></li>
+<li><p>Coordinate with our Community Manager to post a call for reviewers on our
+pyOpenSci social channels.</p></li>
 </ul>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>If you do a reviewer search, please be sure to have new reviewers first sign
+up using our <a class="reference external" href="https://docs.google.com/forms/d/e/1FAIpQLSeVf-L_1-jYeO84OvEE8UemEoCmIiD5ddP_aO8S90vb7srADQ/viewform">reviewer signup form</a>.</p>
+</div>
 </section>
 <section id="criteria-for-choosing-reviewers">
 <h2>Criteria for Choosing Reviewers<a class="headerlink" href="#criteria-for-choosing-reviewers" title="Link to this heading">#</a></h2>
 <p>Here are criteria to keep in mind when choosing a reviewer. You might need to
-piece this information together by searching <code class="docutils literal notranslate"><span class="pre">PyPI</span></code>, <code class="docutils literal notranslate"><span class="pre">Conda</span></code> / <code class="docutils literal notranslate"><span class="pre">Conda-forge</span></code> and
-the potential reviewer’s GitHub page and general online presence (personal
-website, Twitter).</p>
+piece this information together by searching <code class="docutils literal notranslate"><span class="pre">PyPI</span></code>, <code class="docutils literal notranslate"><span class="pre">Conda</span></code> / <code class="docutils literal notranslate"><span class="pre">Conda-forge</span></code>
+and the potential reviewer’s GitHub page and general online presence (personal
+website, social media profiles).</p>
 <ul class="simple">
 <li><p>Has not reviewed a package for us within the last 6 months.</p></li>
 <li><p>Some package development / contribution experience.</p></li>
@@ -534,29 +550,55 @@ website, Twitter).</p>
 <li><p>No <a class="reference internal" href="../our-process/policies.html#coi"><span class="std std-ref">conflicts of interest</span></a>.</p></li>
 </ul>
 <section id="reviewer-diversity-should-be-prioritized">
-<span id="reviewer-diversity"></span><h3>Reviewer diversity should be prioritized<a class="headerlink" href="#reviewer-diversity-should-be-prioritized" title="Link to this heading">#</a></h3>
-<p>Try to balance your sense of the potential reviewer’s experience against the complexity of the package.</p>
+<span id="reviewer-diversity"></span><h3>Reviewer Diversity Should Be Prioritized<a class="headerlink" href="#reviewer-diversity-should-be-prioritized" title="Link to this heading">#</a></h3>
+<p>Try to balance your sense of the potential reviewer’s experience against the
+complexity of the package.</p>
 <ul class="simple">
-<li><p><strong>Diversity</strong> - if you have two reviewers, both shouldn’t be cis white males.</p></li>
-<li><p><strong>Openness</strong> - reviewers should also have demonstrated interest in open source or Python community activities, although blind emailing is fine.</p></li>
+<li><p><strong>Diversity:</strong> Try to find reviewers from different backgrounds and gender identities. For example, if you have two reviewers, only one should be a cis white male.</p></li>
+<li><p><strong>Openness</strong> - reviewers should also have demonstrated interest in open
+source or Python community activities, although blind emailing is fine.</p></li>
 </ul>
 <p>Each submission should be reviewed by <em>two</em> package reviewers. Although it is
-fine for one of them to have less package development experience and more domain
-knowledge, the review should not be split into two parts. Both reviewers need to review
-the package comprehensively, from their particular perspectives. In
-general, at least one reviewer should have prior reviewing experience, and of
-course inviting one new reviewer expands our pool of reviewers.</p>
-<p>Reviewers should ideally have some subject matter expertise associated
-with the package functionality. It is ok and even welcome if one reviewer has
-more technical expertise and the other focuses on usability and is less technical.
-Read through the Guidelines for Reviewers Section to learn more about finding and
-selecting reviewers.</p>
-<div class="admonition note" id="review-mentorship">
-<p class="admonition-title">Note</p>
-<p>PyOpenSci has been piloting a new reviewer mentorship program where we pair a
-new reviewer with someone in the community with previous review experience. If
-a new reviewer is interested in this, get in touch with the <strong>editor in chief</strong>.</p>
-</div>
+fine for one of them to have less package development experience and more
+domain knowledge, the review should not be split into two parts. Both
+reviewers need to review the package comprehensively, from their particular
+perspectives. In general, at least one reviewer should have prior reviewing
+experience, and of course inviting one new reviewer expands our pool of
+reviewers.</p>
+<p>Reviewers should ideally have some subject matter expertise associated with
+the package functionality. It is ok and even welcome if one reviewer has more
+technical expertise and the other focuses on usability and is less technical.
+Read through the Guidelines for Reviewers Section to learn more about finding
+and selecting reviewers.</p>
+</section>
+</section>
+<section id="peer-review-mentorship">
+<span id="review-mentorship"></span><h2>Peer Review Mentorship<a class="headerlink" href="#peer-review-mentorship" title="Link to this heading">#</a></h2>
+<p>pyOpenSci encourages those who are newer to review to become involved in our
+open peer review process. As such, we offer a reviewer mentorship program
+where we pair a new reviewer with someone in the community that has previous
+review experience.</p>
+<p>It is useful for reviewers to not only review the technical content of a
+package, but also to review the documentation and package installation process
+for usability.</p>
+<p>If a new reviewer is interested in becoming a reviewer but would like some
+support, do the following:</p>
+<ol class="arabic simple">
+<li><p>Reach out to the <strong>Editor in Chief</strong> &amp; <strong>Peer Review Lead</strong> to let them
+know that you have a reviewer that would like to work with a mentor.</p></li>
+<li><p>They will then post in the <code class="docutils literal notranslate"><span class="pre">#software-review</span></code> channel to see if anyone is
+available to provide support to the new reviewer.</p></li>
+<li><p>If you don’t get any responses from the post above, reach out to our
+Community Manager who will try to find someone to fill the mentorship role!</p></li>
+</ol>
+<section id="once-a-mentor-is-identified">
+<h3>Once a Mentor is Identified<a class="headerlink" href="#once-a-mentor-is-identified" title="Link to this heading">#</a></h3>
+<ol class="arabic simple">
+<li><p>Invite the new reviewer to our pyOpenSci Slack.</p></li>
+<li><p>Start a private DM group chat with the new reviewer and the mentor(s) so
+they are introduced.</p></li>
+<li><p>Let the review proceed from there.</p></li>
+</ol>
 </section>
 </section>
 </section>
@@ -577,7 +619,7 @@ a new reviewer is interested in this, get in touch with the <strong>editor in ch
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Onboarding New Editors and Reviewers</p>
+        <p class="prev-next-title">Onboarding New Editors</p>
       </div>
     </a>
 </div>
@@ -598,7 +640,11 @@ a new reviewer is interested in this, get in touch with the <strong>editor in ch
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#where-to-look-for-reviewers">Where to Look for Reviewers?</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#criteria-for-choosing-reviewers">Criteria for Choosing Reviewers</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#reviewer-diversity-should-be-prioritized">Reviewer diversity should be prioritized</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#reviewer-diversity-should-be-prioritized">Reviewer Diversity Should Be Prioritized</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#peer-review-mentorship">Peer Review Mentorship</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#once-a-mentor-is-identified">Once a Mentor is Identified</a></li>
 </ul>
 </li>
 </ul>
