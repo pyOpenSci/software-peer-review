@@ -407,7 +407,7 @@ interested in this option, consider doing the following:
     -   Go to the repository settings in the "pyOpenSci" GitHub organization and give the author "Admin" access to the repository.
 -   Ask the author to:
     -  Change any needed links, such as those for CI badges.
-    -  Add pyOpenSci badge: `[![pyOpenSci Peer Reviewed](https://pyopensci.org/images/badges/peer-reviewed.svg)](link-to-issue)`.
+    -  Add pyOpenSci badge: `[![pyOpenSci Peer Reviewed](https://pyopensci.org/badges/peer-reviewed.svg)](link-to-issue)`.
     -   Re-activate CI services:
         -  For Travis, activating the project in the pyOpenSci account should be sufficient.
         -  For AppVeyor, tell the author to update the GitHub link in their badge, but do not transfer the project: AppVeyor projects should remain under the authors' account. The badge is `[![AppVeyor Build Status](https://ci.appveyor.com/api/projects/status/github/pyOpenSci/pkgname?branch=main&svg=true)](https://ci.appveyor.com/project/individualaccount/pkgname)`.
