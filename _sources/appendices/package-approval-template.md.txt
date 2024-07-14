@@ -9,7 +9,7 @@ There are a few things left to do to wrap up this submission:
 
 - [ ] Activate [Zenodo](https://zenodo.org/) watching the repo if you haven't already done so.
 - [ ] Tag and create a release to create a Zenodo version and DOI.
-- [ ] Add the badge for pyOpenSci peer-review to the README.md of <package-name-here>. The badge should be `[![pyOpenSci](https://tinyurl.com/y22nb8up)](https://github.com/pyOpenSci/software-review/issues/issue-number)`.
+- [ ] Add the badge for pyOpenSci peer-review to the README.md of <package-name-here>. The badge should be `[![pyOpenSci Peer-Reviewed](https://pyopensci.org/badges/peer-reviewed.svg)](https://github.com/pyOpenSci/software-review/issues/issue-number)`.
 - [ ] Please fill out the [post-review survey](https://forms.gle/BLGVCfUdiJHS5YJY7). All maintainers and reviewers should fill this out.
 
 <IF JOSS SUBMISSION>

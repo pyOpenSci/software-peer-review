@@ -115,7 +115,7 @@ programmers and researchers.
 :::{figure-md} pyos-badge-home
 :class: myclass
 
-<img src="https://tinyurl.com/y22nb8up" alt="The pyOpenSci badge- On the left is the badge in grey and it says pyOpenSci. On the right it is bright green and says Peer Reviewed." class="bg-primary mb-1" width="200px">
+<img src="https://pyopensci.org/badges/peer-reviewed.svg" alt="The pyOpenSci badge- On the left is the badge in grey and it says pyOpenSci. On the right it is bright green and says Peer Reviewed." class="bg-primary mb-1" width="200px">
 
 **pyOpenSci Peer Review Badge will appear on the README.md file of packages that have been
 reviewed and vetted by us.**

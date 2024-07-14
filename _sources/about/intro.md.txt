@@ -121,7 +121,7 @@ You can identify pyOpenSci packages that have been peer-reviewed by the green
 :::{figure-md} pyos-badge
 :class: myclass
 
-<img src="https://tinyurl.com/y22nb8up" alt="The pyOpenSci badge" class="bg-primary mb-1" width="200px">
+<img src="https://pyopensci.org/badges/peer-reviewed.svg" alt="The pyOpenSci Peer Reviewed badge" class="bg-primary mb-1" width="200px">
 
 pyOpenSci Peer Review Badge
 :::
