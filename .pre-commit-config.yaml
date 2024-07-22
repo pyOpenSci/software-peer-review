@@ -23,7 +23,7 @@ repos:
 
   # Misc commit checks
   - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v4.5.0
+    rev: v4.6.0
     # ref: https://github.com/pre-commit/pre-commit-hooks#hooks-available
     hooks:
       # Autoformat: Makes sure files end in a newline and only a newline.
@@ -34,6 +34,6 @@ repos:
       - id: trailing-whitespace
 
   - repo: https://github.com/codespell-project/codespell
-    rev: v2.2.6
+    rev: v2.3.0
     hooks:
     - id: codespell
