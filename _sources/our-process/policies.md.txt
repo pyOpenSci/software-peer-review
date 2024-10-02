@@ -22,10 +22,8 @@ When submitting a package, please make sure that your GitHub notification settin
 
 ## Submitting your package for review in other venues
 
-We recommend submitting your package for review with pyOpenSci before:
-
-- publishing to a package repository, such as `PyPI` and `conda-forge`;
-- submitting a software paper describing the package to a journal.
+We recommend submitting your package for review with pyOpenSci before
+submitting a software paper describing the package to a journal.
 
 Review feedback may result in major improvements and updates to your package,
 including changes that could be break package functionality.
@@ -46,6 +44,7 @@ submit it to pyOpenSci for review. This provides:
 - We will also keep in touch with you as a maintainer to support long term maintenance. If you need to step down from maintaining your package we will help find a new maintainer and/or help sunset the tool.
 
 (coi)=
+
 ### Conflict of interest for reviews and editors
 
 Following criteria are meant to be a guide for what constitutes a conflict of interest
@@ -63,6 +62,10 @@ if:
 
 In the case where none of the associate editors can serve as editor, an
 external guest editor will be recruited to lead the package review.
+
+## Review timelines and on-hold reviews
+
+At any time, an author can choose to have their submission put on hold (the editor applies the `on-hold` label to the GitHub issue). The `on-hold` status will be revisited every 3 months. If after one year there has been no movement on the review, then the issue will be closed.
 
 ## After Acceptance: Package Ownership and Maintenance
 
@@ -91,6 +94,7 @@ the last release and last commit to the package repository. Activity is defined 
 We will flag packages that haven't been updated within a 1 year/ 12 month time period based on activity. Packages with no activity after 12 months will be flagged. At that time, pyOpenSci editorial team member will contact the package maintainers to evaluate the maintenance status of their package.
 
 (archive-process)=
+
 ## Package Maintenance and Maintainer Responsiveness
 
 If, after one year, package maintainers are unresponsive to requests for package
