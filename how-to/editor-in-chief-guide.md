@@ -27,6 +27,7 @@ how to respond to out-of-scope (pre-) submissions.
 - Responds to review referrals from JOSS or other publication partners.
 - Monitors pace of review process and reminds other editors to move packages along as needed.
 - Requests a new EiC when their rotation is up (set a calendar reminder ahead of your expected end date and ask for volunteers in the editors’ Slack channel)
+- Once or twice during the EiC rotation, the EiC should check to see if any packages in our pyOpenSci list are potentially no longer maintained. If a package is no longer maintained, follow the process in the [package archive section](https://www.pyopensci.org/software-peer-review/our-process/policies.html#package-maintenance-and-maintainer-responsiveness) of our peer review guide
 
 This Editor in Chief position rotates between different pyOpenSci editors.
 
