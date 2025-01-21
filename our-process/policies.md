@@ -127,8 +127,8 @@ package from our ecosystem, we retain the right offer the last / most recently r
 
 ### Archiving a Package
 
-If a package appears to be longer maintained, we may move to mark it as archived which will list it separately from other active, approved packages.
+If a package appears to be longer maintained, we may move to mark it as archived which move the package from our [main package listing](https://www.pyopensci.org/python-packages.html#all-packages) to our [archived packaging](https://www.pyopensci.org/python-packages.html#archived-packages) listing section.  
 
-Archiving a pyOpenSci approved package simply requires adding the [archive label](https://github.com/pyOpenSci/software-submission/issues?q=label%3Aarchived) to the original review issue. Once this label is applied to the issue, the website will automatically update to reflect this status. If at any point in the future, an archived package undergoes active maintenance again, this label can be removed from the issue to move the package back to an active status.
+To archive a pyOpenSci approved package, ad the [archive label](https://github.com/pyOpenSci/software-submission/issues?q=label%3Aarchived) to the original review issue. Once this label is applied to the issue, the website will automatically update to reflect this status. If at any point in the future, an archived package undergoes active maintenance again, this label can be removed from the issue to move the package back to an active status.
 
 We opt to archive inactive packages rather than remove them to preserve the history and contributions of the software, ensuring that others can still access and learn from it. This approach maintains the integrity of the scientific record and allows for potential future reactivation or forking of the project. By archiving rather than removing, we provide a clear status of the package while keeping its legacy intact for reference and educational purposes.
