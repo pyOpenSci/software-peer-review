@@ -323,7 +323,6 @@ Once the package has been accepted through the review process:
 
 ```
 
-- Don't forget to change the status tag of the issue to `6/pyOS-approved` 🚀🚀🚀`.
 - If the package moves on to JOSS - be sure to continue to update the labels to track the JOSS review process (but do NOT remove the `6/pyOS-approved` label).
 - Update the YAML at the top of the issue with the:
   - version of the package that was approved,
@@ -336,12 +335,17 @@ Version accepted: UPDATE-THIS-TBD
 Date accepted (month/day/year): UPDATE-THIS-TBD
 ```
 
+- Once the YAML is updated, change the status tag of the issue to `6/pyOS-approved` 🚀🚀🚀`.
+  - The [listing on the PyOpenSci website](https://www.pyopensci.org/python-packages.html) is updated by a cron job that parses the YAML in all issues with the tag `6/pyOS-approved` 🚀🚀🚀`, so a new package might take a few days to appear; in particular, if there are formatting errors in the YAML that need to be corrected.
+  - Editors should be able to manually trigger the [cron job](https://github.com/pyOpenSci/pyopensci.github.io/actions/workflows/update-contribs-reviews.yml) and/or check the output of the last run to see if there are any YAML formatting errors.
+  - Other "after review" tasks like the post-review survey can be done after the package is accepted; the cron job does not depend on them.
+
 ```{note}
 * `Archive` refers to an archive created through a release. You can use zenodo to create this archive and provide the package with a citable DOI. If zenodo is used, please add the Zenodo link and/or badge link here.
 
 * `Version` refers to the final package version that was accepted by pyOpenSci.
-This is the final version as presented after all feedback from the r
-reviews has been considered and implemented
+This is the final version as presented after all feedback from the
+reviews has been considered and implemented.
 ```
 
 ## Closing notes about the editorial process
