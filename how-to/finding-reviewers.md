@@ -84,7 +84,7 @@ for usability.
 If a new reviewer is interested in becoming a reviewer but would like some
 support, do the following:
 
-1. The Editor can lead the effort to find mentors for the new reviewers by posting in the `#software-review` Slack channel for help. 
+1. The Editor can lead the effort to find mentors for the new reviewers by posting in the `#software-review` Slack channel for help.
 2. If the Editor needs support in finding a mentor, they can contact the **EiC** or **peer review lead** for guidance.
 
 ### Once a Mentor is Identified
