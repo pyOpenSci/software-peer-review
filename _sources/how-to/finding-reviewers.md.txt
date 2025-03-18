@@ -84,12 +84,8 @@ for usability.
 If a new reviewer is interested in becoming a reviewer but would like some
 support, do the following:
 
-1. Reach out to the **Editor in Chief** & **Peer Review Lead** to let them
-   know that you have a reviewer that would like to work with a mentor.
-2. They will then post in the `#software-review` channel to see if anyone is
-   available to provide support to the new reviewer.
-3. If you don't get any responses from the post above, reach out to our
-   Community Manager who will try to find someone to fill the mentorship role!
+1. The Editor can lead the effort to find mentors for the new reviewers by posting in the `#software-review` Slack channel for help.
+2. If the Editor needs support in finding a mentor, they can contact the **EiC** or **peer review lead** for guidance.
 
 ### Once a Mentor is Identified
 

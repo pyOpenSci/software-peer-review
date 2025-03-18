@@ -218,10 +218,7 @@ Packages to aid with instruction.
 
 ### Astropy
 
-We have a [community affiliated package partnership with Astropy](../partners/astropy). Check out [packages that are under review and will
-be considered for Astropy affiliated status here](https://github.com/pyOpenSci/software-submission/issues?q=is%3Aopen+is%3Aissue+label%3Aastropy).
-
-
+We have a [community affiliated package partnership with Astropy](../partners/astropy). To see packages currently under review for Astropy affiliation, visit the [open issues page](https://github.com/pyOpenSci/software-submission/issues?q=is%3Aissue+is%3Aopen) and select the `astropy` label.
 ### Pangeo
 
 We have a [partnership with Pangeo](../partners/pangeo). Often times packages submitted as a part of that partnership are also in the geospatial domain.
