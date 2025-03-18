@@ -386,6 +386,16 @@
         "code",
         "review"
       ]
+    },
+    {
+      "login": "ab93",
+      "name": "Avik Basu",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3485425?v=4",
+      "profile": "https://github.com/ab93",
+      "contributions": [
+        "code",
+        "review"
+      ]
     }
   ],
   "contributorsPerLine": 6,
