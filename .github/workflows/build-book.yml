@@ -51,7 +51,7 @@ jobs:
 
       # Test for bad links and ensure alt tags for usability
       - name: Check HTML using htmlproofer
-        uses: chabad360/htmlproofer@master
+        uses: chabad360/htmlproofer@v5.0.9
         with:
           directory: ./_build/html
           arguments: |
