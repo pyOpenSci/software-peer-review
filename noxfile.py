@@ -1,8 +1,9 @@
 import nox
 
-nox.options.reuse_existing_virtualenvs = True
+# nox.options.reuse_existing_virtualenvs = True
 
 build_command = ["-b", "html", ".", "_build/html"]
+
 
 @nox.session
 def docs(session):
@@ -12,7 +13,7 @@ def docs(session):
     session.run(*cmd)
 
 
-@nox.session(name="docs-live")
+@nox.session(name="docs-serve")
 def docs_live(session):
     session.install("-r", "requirements.txt")
 
