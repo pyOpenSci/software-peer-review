@@ -1,3 +1,4 @@
+(partner-communities)=
 # Partnerships with scientific Python Communities
 
 
