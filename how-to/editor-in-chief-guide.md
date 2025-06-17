@@ -10,7 +10,7 @@ Here are some helpful resources to support you in your Editor in Chief role:
   ecosystem, plus tutorials for building and publishing a package.
 * [**pyOpenSci metrics dashboard**](https://www.pyopensci.org/metrics/):
   View the current state of peer reviews and track review activity over time.
-* [**pyOpenSci Python package template**](https://github.com/pyOpenSci/python-package-template):
+* [**pyOpenSci Python package template**](https://github.com/pyOpenSci/pyos-package-template):
   A Copier-powered template for creating a new Python package that follows
   pyOpenSci best practices.
 :::
