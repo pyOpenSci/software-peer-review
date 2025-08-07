@@ -406,6 +406,16 @@
         "ideas",
         "review"
       ]
+    },
+    {
+      "login": "coatless",
+      "name": "James J Balamuta",
+      "avatar_url": "https://avatars.githubusercontent.com/u/833642?v=4",
+      "profile": "https://thecoatlessprofessor.com",
+      "contributions": [
+        "code",
+        "review"
+      ]
     }
   ],
   "contributorsPerLine": 6,
