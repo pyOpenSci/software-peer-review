@@ -1,6 +1,6 @@
 # Peer Review Guidelines & Policies
 
-## Review Process Guidelines
+## Review process guidelines
 
 pyOpenSci packages are reviewed for quality, fit, scope, documentation, and
 usability. The review process is similar to a manuscript review, however, it
@@ -17,7 +17,7 @@ ecosystem after review & revision.
 It is ultimately the editor’s decision on whether or not to reject the package
 based on how the reviews are addressed.
 
-## Review Communication Approach
+## Review communication approach
 
 Communication between authors, reviewers, and editors takes
 place on GitHub. You can, however choose to contact the editor by email if
@@ -26,7 +26,7 @@ needed.
 When submitting a package, please make sure that your GitHub notification
 settings are setup to notify you when you receive feedback on the review issue.
 
-## Submitting Your Package for Review in Other Venues
+## Submitting your package for review in other venues
 
 We recommend submitting your package for review with pyOpenSci before
 submitting a software paper describing the package to a journal.
@@ -55,7 +55,7 @@ submit it to pyOpenSci for review. This provides:
 
 (coi)=
 
-## Conflict of Interest for Reviews and Editors
+## Conflict of interest for reviews and editors
 
 Following criteria are meant to be a guide for what constitutes a conflict of
 interest (COI) for an editor or reviewer. The potential editor or reviewer has
@@ -78,14 +78,14 @@ a conflict of interest if:
 In the case where none of the associate editors can serve as editor, an
 external guest editor will be recruited to lead the package review.
 
-## Review Timelines and On-Hold Reviews
+## Review timelines and on-hold reviews
 
 At any time, an author can choose to have their submission put on hold
 (the editor applies the `on-hold` label to the GitHub issue). The `on-hold`
 status will be revisited every 3 months. If after one year there has been
 no movement on the review, the issue will be closed.
 
-## After Acceptance: Package Ownership and Maintenance
+## After acceptance: package ownership and maintenance
 
 Package authors are expected to maintain and develop their software and
 retain
@@ -106,7 +106,7 @@ We will reach out to our package maintainers each year to verify the
 package is actively maintained and to see if there are any updates we can
 highlight through our social channels.
 
-### Maintenance Tracking
+### Maintenance tracking
 
 pyOpenSci is building a system to track package metrics and activity,
 including issues, pull requests, and dates of the last release and last commit
@@ -120,7 +120,7 @@ maintainers to evaluate the maintenance status of their package.
 
 (archive-process)=
 
-### Package Maintenance and Maintainer Responsiveness
+### Package maintenance and maintainer responsiveness
 
 If, after one year, package maintainers are unresponsive to requests for
 package fixes or messages from the pyOpenSci team, we will initiate
@@ -138,7 +138,7 @@ working with the new maintainers to register the newly forked package within
 our ecosystem. The original package will be archived with a link to the new
 fork.
 
-### Quality Commitment
+### Quality commitment
 
 pyOpenSci strives to develop and promote high quality research software. To
 ensure that your software meets our criteria, we review all of our submissions
@@ -157,7 +157,7 @@ their package from our ecosystem, we retain the right offer the last / most
 recently released version of that package in our ecosystem for archival
 purposes only.
 
-### Archiving a Package
+### Archiving a package
 
 If a package appears to be no longer maintained, we will mark it as
 archived which moves the package from our
