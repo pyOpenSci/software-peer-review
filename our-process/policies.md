@@ -159,7 +159,7 @@ purposes only.
 
 ### Archiving a Package
 
-If a package appears to be no longer maintained, we may move to mark it as
+If a package appears to be no longer maintained, we will mark it as
 archived which moves the package from our
 [main package listing](https://www.pyopensci.org/python-packages.html#all-packages)
 to our [archived packaging](https://www.pyopensci.org/python-packages.html#archived-packages)
