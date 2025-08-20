@@ -166,6 +166,7 @@ we are using our volunteer reviewer time effectively.
 
 - Add a comment to the issue that contains an **exact** copy of the Editor Response template (see below) filled out with your response to the checks that begin the review.
 - Change the label of the issue to `2/seeking-reviewer(s)`
+- Note that, at this stage, you likely do not have reviewers yet!
 
 ```{include} ../appendices/editor-initial-response-template.md
 
@@ -201,7 +202,7 @@ This type of communication just lets the author know that the process is
 moving forward. Even if it takes longer to find reviews, authors generally
 appreciate the communication and understand it's a volunteer-lead process.
 
-```{admonition} Diversity in the editorial & reviewer  team is important
+```{admonition} Diversity in the editorial & reviewer team is important
 :class: important
 
 Diversity is core to the pyOpenSci mission. As such it's important to have an
@@ -225,9 +226,14 @@ deadline when you'll move on to looking for someone else to keep the processing
 moving.
 
 - Once you have assigned reviewers to the review, you will update the editor response above with:
-
 1. reviewer GitHub handles and
 2. the review deadline date.
+
+```{info}
+At this point you can add the following to the **Editor Response to Review** under **Editor Comments**:
+`:wave: Hi @reviewer-one and @reviewer-two! Thank you for volunteering to review
+for pyOpenSci!`
+```
 
 - Change the label on the issue to `3/reviewer(s)-assigned`
 
@@ -387,6 +393,7 @@ Once the package is accepted by JOSS and the DOI badge resolves properly:
 Once the review is complete, you can close the issue. Before doing that:
 
 - Be sure that the issue is correctly tagged with `6/pyOS-approved` (and `9/joss-approved` if authors decided to submit to JOSS and were accepted).
+
 - Check the pyOpenSci website to ensure:
 
   - The package was properly added to the [pyOpenSci website](https://www.pyopensci.org/python-packages/).
