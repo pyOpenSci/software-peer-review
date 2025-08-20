@@ -395,7 +395,7 @@ Once the review is complete, you can close the issue. Before doing that:
 - Be sure that the issue is correctly tagged with `6/pyOS-approved` (and `9/joss-approved` if authors decided to submit to JOSS and were accepted).
 
 - Check the pyOpenSci website to ensure:
-  
+
   - The package was properly added to the [pyOpenSci website](https://www.pyopensci.org/python-packages/).
   - Reviewers and maintainers are listed on the [contributors page](https://www.pyopensci.org/our-community/).
   - Make sure the YAML at the top of the issue is fully filled out and up to date.
