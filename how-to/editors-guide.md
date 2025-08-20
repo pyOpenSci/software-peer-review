@@ -120,7 +120,7 @@ All reviews happen in GitHub issues. The template for the
 `yaml` header of a review submission below will be
 referenced multiple times in the steps below:
 
-```{include}
+```{include} ../appendices/issue-review-template.md
 
 ```
 
@@ -141,7 +141,7 @@ Repository Link: REPO-LINK
 Version submitted: VERSION-SUBMITTED
 ```
 
-```{admonition}
+```{admonition} Editor in Chief checks for structure & scope should be completed first
 :class: note
 
 The editor in chief who initially engaged with this review should have already evaluated the package level Editor Checks section for `Fit`, `Automated Tests`, `Documentation`, `License`, and `Repository`.
@@ -168,7 +168,7 @@ we are using our volunteer reviewer time effectively.
 - Change the label of the issue to `2/seeking-reviewer(s)`
 - Note that, at this stage, you likely do not have reviewers yet!
 
-```{include}
+```{include} ../appendices/editor-initial-response-template.md
 
 ```
 
@@ -202,7 +202,7 @@ This type of communication just lets the author know that the process is
 moving forward. Even if it takes longer to find reviews, authors generally
 appreciate the communication and understand it's a volunteer-lead process.
 
-```{admonition}
+```{admonition} Diversity in the editorial & reviewer team is important
 :class: important
 
 Diversity is core to the pyOpenSci mission. As such it's important to have an
@@ -216,7 +216,7 @@ in the team supporting package review. Specifically both reviewers should have [
 
 If you wish, you can use the email template below to invite reviewers.
 
-```{include}
+```{include} ../appendices/reviewer-request-template.md
 
 ```
 
@@ -325,7 +325,7 @@ Once the package has been accepted through the review process:
   approved to the pyOpenSci website. They can perform this step regardless of the
   JOSS submission process.
 
-```{include}
+```{include} ../appendices/package-approval-template.md
 
 ```
 
