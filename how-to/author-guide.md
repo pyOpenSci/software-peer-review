@@ -9,6 +9,7 @@ Reviewer Guide <reviewer-guide>
 Editor Guide <editors-guide>
 Editor-in-Chief Guide <editor-in-chief-guide>
 Triage Team Guide <review-triage-team>
+pyOS Bot <pyos-bot>
 :::
 
 ```{toctree}
@@ -71,7 +72,7 @@ Read about our peer review policies.
 
 ::::{grid-item}
 :::{card} <i class="fa-solid fa-handshake-angle"></i></i> Need packaging guidance?
-:link: https://www.pyopensci.org/python-package-guide/
+:link: <https://www.pyopensci.org/python-package-guide/>
 :link-type: doc
 :class-card: left-aligned
 
@@ -83,7 +84,7 @@ If you want to learn more about packaging best practices, you can check out our 
 
 ::::{grid-item}
 :::{card} <i class="fa-solid fa-clipboard-question"></i> Questions?
-:link: https://pyopensci.discourse.group/c/review-process/7
+:link: <https://pyopensci.discourse.group/c/review-process/7>
 :link-type: doc
 
 If you have questions about our process or packaging in general, please ask them on our discourse! We are here to help you.
@@ -92,7 +93,6 @@ If you have questions about our process or packaging in general, please ask them
 :::
 
 :::::
-
 
 Before you begin this process, [please be sure to read the review process guidelines](../our-process/policies).
 
