@@ -1,4 +1,4 @@
-pydata-sphinx-theme==0.14.4
+pyos-sphinx-theme
 myst-nb
 sphinx
 sphinx-autobuild

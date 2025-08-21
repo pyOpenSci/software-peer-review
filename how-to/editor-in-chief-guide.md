@@ -10,7 +10,7 @@ Here are some helpful resources to support you in your Editor in Chief role:
   ecosystem, plus tutorials for building and publishing a package.
 * [**pyOpenSci metrics dashboard**](https://www.pyopensci.org/metrics/):
   View the current state of peer reviews and track review activity over time.
-* [**pyOpenSci Python package template**](https://github.com/pyOpenSci/python-package-template):
+* [**pyOpenSci Python package template**](https://github.com/pyOpenSci/pyos-package-template):
   A Copier-powered template for creating a new Python package that follows
   pyOpenSci best practices.
 :::
@@ -312,7 +312,12 @@ As your term ends, help onboard the next Editor in Chief.
 * Set a calendar reminder 2–3 weeks before your term ends and begin to communicate with the incoming editor-in-chief about the transition.
 * Craft a summary of where peer review is, and where the incoming Editor in Chief will need to pick up.
 * Let the Peer Review Lead know that a transition is coming soon so they can support as needed.
+<<<<<<< HEAD
 * If you can, try to be available after your term has ended to answer questions and support a smooth transition for the new editor in chief
+=======
+* If you can, try to be available after your term has ended to answer questions and support a smooth transition for the new Editor in Chief
+
+>>>>>>> 2f46a28 (ENH: Fix more typos)
 
 :::{important}
 If you are leading any active reviews as EiC, you must hand them off to the
@@ -336,10 +341,15 @@ the peer review lead directly.
 
 ### EiC Transition Checklist
 
-* [ ] Set calendar reminder 3 weeks before term end
-* [ ] Contact peer review lead about successor
-* [ ] Document active reviews and their status  
-* [ ] Hand off any reviews you're personally handling
-* [ ] Write reflection summary
-* [ ] Schedule handoff meeting with incoming EiC
-the Peer Review Lead directly.
+You can use the checklist below to manage the tasks.
+
+```markdown
+### EiC Transition Checklist
+
+- [ ] Set calendar reminder 3 weeks before term end
+- [ ] Contact peer review lead about successor
+- [ ] Document active reviews and their status
+- [ ] Hand off any reviews you're personally handling
+- [ ] Write reflection summary
+- [ ] Schedule handoff meeting with incoming EiC
+```
