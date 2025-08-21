@@ -1,15 +1,6 @@
 # pyOpenSci Software Review Editor Guide
 
-<!--
-```{note}
-PyOpenSci has a partnership with JOSS where packages that are in-scope for JOSS
-can be directly accepted into the JOSS ecosystem through the pyOpenSci review.
-The JOSS component of the review happens after all of the review on the
-pyOpenSci side is complete and it begins through direct communication with a
-JOSS editor.
-``` -->
-
-Thank you for your time in serving as an editor for a PyOpenSci package! Below you will find some
+Thank you for your time in serving as an editor for a pyOpenSci package! Below, you will find some
 information about the role that editors have in the
 pyOpenSci Python open peer review process.
 
@@ -18,8 +9,8 @@ pyOpenSci Python open peer review process.
 Editors generally should:
 
 - Have completed a review for _at least_ 1 package for pyOpenSci.
-- Have some experience with open source software that supports the scientific
-  Python community. This experience could be maintaining or contributing to packages. It also could be experience related to usability of open source software and/or documentation, tutorials etc. Or finally it could be involvement in the scientific Python community in some other way.
+- Have some experience with open-source software that supports the scientific
+  Python community. This experience could be maintaining or contributing to packages. It could also be experience related to usability of open-source software and/or documentation, tutorials, etc. Alternatively, it could involve participation in the broader scientific Python community in another capacity.
 
 ## Two types of editors
 
@@ -29,16 +20,16 @@ There are two types of editors involved in our open peer review process:
 - Full editors
 
 Both types of editors are considered a part of the editorial board for
-pyOpenSci. The major difference between guest and full editors is:
+pyOpenSci. The significant difference between guest and full editors are:
 
 - A guest editor may only join the board for a single review.
 - A guest editor may be new to pyOpenSci's review process and thus require a bit more support in their first review.
 
 ### Guest editors
 
-A guest editor is is invited to lead a review in the
+A guest editor is invited to lead a review in the
 case where we need specific expertise for a single review. We also consider editors who are
-performing their first review as guest editors as they may require more
+performing their first review as guest editors, as they may require more
 guidance or mentorship to complete the review (if they are new to our organization).
 
 New editors who wish to continue on as full editors for pyOpenSci may do so
@@ -284,36 +275,45 @@ Be sure to:
 
 * explain why the decision was made
 * thank them for their work
-* make a note <TBD where this will be documented> to assign the reviewer to another submission with high chance of smooth
-review next time (e.g. a package author who has already submitted packages to us).
+* make a note <TBD where this will be documented> to assign the reviewer to another submission with a high chance of smooth
+review next time (for example, a package author who has already submitted packages to us).
 ```
+
+(reviewer-response-time)=
+## What to do if reviewers become quiet
+In some cases, the reviewers get busy and stop responding to the issue. If a reviewer hasn't responded to a direct ping `@reviewer-user-name` on the issue, try to email them (if an email is available). If email doesn't work and they haven't responded in over a month, do the following:
+
+1. If they have already submitted a review, you can move the review forward by making sure the review comments were addressed by the author yourself.
+2. If the reviewer has not yet submitted a review in the issue, leave a note on the review that you will look for a new reviewer. When you find a new reviewer, replace the old reviewer's name with the new reviewer's name in the YAML at the top of the issue.
+
+In some cases, you may be able to find an editor or reviewers in the pyOpenSci Slack community that can help move the review forward.
 
 ## Putting a review on hold & handling non-responsive authors
 
 In some cases, an author may need more time to respond to
 review comments. In this case, the author can choose to have
-their submission put on hold. As an editor you should apply the `holding label` to the GitHub issue.
+their submission put on hold. As an editor, you should apply the `holding label` to the GitHub issue.
 
 The holding status will be revisited every 3 months.
 
-After one year the issue will be closed if there is no movement towards responding to reviews by the author.
+After one year, the issue will be closed if there is no movement towards responding to reviews by the author.
 
-If the author simply not responding, the editor should:
+If the author is not responding, the editor should:
 
 - Tag the author (`@author-github-handle`) in an issue comment notifying them that we will close the issue in one month if there is no response.
-- Close the issue if one month has passed without a reply.
+- Close the issue if two months have passed without a reply.
 
-If needed you can also chose to email the author. using the email provided in the package metadata file of the package. The email
-could be in any of the three files in the package: `setup.py`, `pyproject.toml` (preferred) or `setup.cfg`.
+Before closing the issue email the author using the email provided in the package metadata file of the package. The email
+could be in any of the three files in the package: `setup.py`, `pyproject.toml` (preferred), or `setup.cfg`.
 
 ```{important}
-If a submission is closed and the author wishes to re-submit, they will have to start a new submission.
+If a submission is closed and the author wishes to resubmit, they will have to start a new submission.
 
 If the package is still in scope, the author will have to
 respond to the first round of reviews first. After that is
 complete, you can begin looking for new reviewers to
-evaluated the package. This ensures that none of the review
-energy spent in the first review, goes to waste.
+evaluate the package. This ensures that none of the review
+energy spent in the first review goes to waste.
 ```
 
 ### ✔️ 6. How to accept a package into the pyOpenSci ecosystem

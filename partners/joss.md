@@ -1,3 +1,4 @@
+(joss)=
 # pyOpenSci and Journal of Open Source Software (JOSS) Partnership
 
 pyOpenSci has a formal partnership with

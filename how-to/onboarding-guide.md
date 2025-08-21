@@ -112,9 +112,6 @@ to them either in a private Slack message or via email, at
 :::
 
 
-
-
-
 ## Starting the editorial search
 
 To begin, first post in our `private-editorial-team` slack channel to see if any of our existing [Editorial Team](https://www.pyopensci.org/about-peer-review/index.html#meet-our-editorial-board) members can identify past reviewers or other people they know that might be a good editorial candidate.
@@ -155,13 +152,11 @@ an individual Direct Message (DM) because:
 * It allows other community members who may know of potential editors to see the request and potentially respond.
 :::
 
-Our Community Manager interacts with the broader community and partner communities and as such often interacts with people who may be interested in joining our pyOpenSci review team. The Community Manager may from time to time meet community members who might make great editors or reviewers. In those cases they will share that information with the current Editor in Chief and Software Review Lead.
+Our Community Manager engages with the broader community and partner communities, frequently interacting with individuals interested in joining our pyOpenSci review team. The Community Manager may, from time to time, meet community members who might make great editors or reviewers. In those cases, they will share that information with the current Editor in Chief and Software Review Lead.
 
 :::{todo}
 pyOpenSci anticipates being able to send targeted emails to community members that meet certain criteria related to domain expertise by the Fall of 2024. Please reach out to the pyOpenSci Community Manager with any questions about this process!
 :::
-
-
 
 :::{note}
 
@@ -183,27 +178,29 @@ When the EIC has identified an editor who is not currently part of the pyOpenSci
 * Welcome the individual in Slack, and provide them with access to the `#private-editorial-team` and any other channels as needed.
 
 :::{note}
-The Community Manager will ensure that any new member that joins our Slack workspace is welcomed and set up with anything they need in our pyOpenSci Slack workspace.
+The Community Manager will ensure that any new member who joins our Slack workspace is welcomed and set up with anything they need in our pyOpenSci Slack workspace.
 :::
 
 
 ## Process for inviting a new editor
 
 * Editorial board candidates most often start as guest editors.
-* After 3 months or their first review (which ever comes first), the Software Review Lead working with the EiC will assess how the
+* After 3 months or their first review (whichever comes first), the Software Review Lead working with the EiC will assess how the
 review process went. Allow other editors to provide input as well.
-* Once it is determined that the guest editor is committed to support the pyOpenSci
-review process, you can email them to fully participate on the editorial board
+* Once it is determined that the guest editor is committed to supporting the pyOpenSci
+review process, you can email them to participate on the editorial board
 using the template below.
 
 ```
 Hi [NAME HERE]:
 
 We would like to formally invite you to join the pyOpenSci editorial board as a full
-member. [*SPECIFIC REASONS FOR INVITATION (mention contributions TO pyOpenSci)*].
+member. [*SPECIFIC REASONS FOR INVITATION (mention contributions to pyOpenSci)*].
 We think you will make a wonderful addition to our pyOpenSci open review team!
 
-[IF GUEST EDITOR: You are familiar with the editor's role as you've been a guest editor].  We aim for editors to handle reviews for four packages per year
+[Here is an onboarding document to help you navigate your first weeks in this role.](https://docs.google.com/document/d/1UfG1Fe5wSiEAObvqNMT4etZ5sx7QXzW0f8mozKyK1NE/edit?tab=t.0)
+
+[IF GUEST EDITOR: You are familiar with the editor's role, as you've been a guest editor].  We aim for editors to handle reviews for four packages per year
 ([IF GUEST EDITOR including the one that you just finished!]).
 We ask that editors make an informal commitment to serve for two years and
 re-evaluate their participation after that.
@@ -211,16 +208,16 @@ On a short-term basis, any editor can decline to handle a package or say,
 "I'm pretty busy, I can't handle a new package for a few weeks."
 
 In addition to handling packages, editors weigh in on group editorial decisions,
-such as whether a package is in-scope, and determining updates to our policies.
+such as whether a package is in scope, and support updates to our policies.
 We generally do this through Slack, which we expect editors to be able to check
 regularly. We have editorial board calls annually.
 
-Every 3-6 months the Editor-in-Chief responsibilities rotate to a new editor.
+Every 3-6 months, the Editor-in-Chief's responsibilities rotate to a new editor.
 You'll have the opportunity to enter this rotation once you have been on the
 editorial board for at least 6 months.
 
 OPTIONAL: Some editors also take on bigger projects to support pyOpenSci and
-improve the peer-review process. This is entirely optional but please let us
+improve the peer-review process. This is entirely optional, but please let us
 know if you are interested in additional activities that support the organization.
 
 We hope that you'll join our growing editorial board!
