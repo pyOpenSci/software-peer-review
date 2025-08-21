@@ -57,21 +57,15 @@ sitemap_url_scheme = "{link}"
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 #
-html_theme = "pydata_sphinx_theme"
+html_theme = "pyos_sphinx_theme"
 html_title = "Software Peer Review Guide"
 html_logo = "_static/logo.png"
 html_static_path = ["_static"]
 html_js_files = ["matomo.js"]
+html_favicon = 'https://www.pyopensci.org/images/favicon.ico'
 
 # Theme options
 html_theme_options = {
-    "favicons": [
-        {
-            "rel": "icon",
-            "sizes": "16x16",
-            "href": "https://www.pyopensci.org/images/favicon.ico",
-        },
-    ],
     "announcement": "<p><a href='https://www.github.com/pyopensci/software-submission/'>Submit Your Python Package for Peer Review!</a></p>",
     "external_links": [
         {
@@ -133,6 +127,8 @@ exclude_patterns = [
     ".github",
     ".nox",
     "README.md",
+    ".pytest_cache",
+    ".pytest_cache/*",
 ]
 
 

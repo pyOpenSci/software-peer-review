@@ -46,27 +46,27 @@ pyOpenSci open package review process. A full editor ideally:
 - and/or has experience reviewing for an organization such as JOSS or rOpenSci.
 
 We also appreciate when editors have experience working with or in the
-Python open source software community be it maintaining packages, contributing to
-packages, or supporting the community. This is certainly
-not a requirement however if you are interested in getting involved with
+Python open source software community, be it maintaining packages, contributing to
+packages, or supporting the community. This is
+not a requirement, however if you are interested in getting involved with
 pyOpenSci!
 
 ```{note}
-There could be certain situations when an editor is on boarded with less experience! The above are simply guidelines that we like to follow.
+There could be certain situations when an editor is onboarded with less experience! The above are simply guidelines that we like to follow.
 ```
 
 ## What does an editor do? (Responsibilities)
 
-An editor is normally recruited by the Editor in Chief, other editors on the
+An editor is usually recruited by the Editor in Chief, other editors on the
 board, or the software review lead. [More on recruiting editors can be found here](onboarding-guide.md).
 
 An editor is responsible for:
 
 - Leading the review process for 3-4 packages a year
-- Weighing in on group editorial decisions such as whether a package is in-scope, and making updates to the pyOpenSci policies.
+- Weighing in on group editorial decisions such as whether a package is in scope, and making updates to the pyOpenSci policies.
 
 ```{note}
-Decisions surrounding policy, updates to peer review guides and decisions
+Decisions surrounding policy, updates to peer review guides, and decisions
 on package review are generally made in the private `editorial-board` channel in the pyOpenSci Slack organization. Please make sure that you
 are comfortable with checking Slack regularly.
 ```
@@ -76,8 +76,8 @@ are comfortable with checking Slack regularly.
 Editors are not charged with tracking other submissions that they are
 not leading. However, if you are serving as an editor and notice an
 issue with another review, please raise that issue either directly with
-the editor for that review. Or you can raise the issue in the editors
-channel in slack.
+the editor for that review. Or you can raise the issue in the `private-editorial-team` Slack
+channel.
 
 ## Editor-in-Chief rotation
 
@@ -196,35 +196,36 @@ appreciate the communication and understand it's a volunteer-lead process.
 ```{admonition} Diversity in the editorial & reviewer team is important
 :class: important
 
-Diversity is core to the pyOpenSci mission. As such it's important to have an
+Diversity is core to the pyOpenSci mission. As such, it's important to have an
 editorial team comprised of an editor + 2 reviewers from diverse backgrounds.
 
 In your search for reviewers, please ensure that there is diversity
-in the team supporting package review. Specifically both reviewers should have [different backgrounds and different gender-identities](reviewer-diversity) whenever possible. pyOpenSci [supports mentoring new reviewers if needed!](review-mentorship)
+in the team supporting package review. Reviewers should have [different backgrounds and different gender identities](reviewer-diversity) whenever possible. pyOpenSci [supports mentoring new reviewers if needed!](review-mentorship)
 
 [Read our finding reviewers guide for more on finding reviewers.](finding-reviewers)
 ```
 
-If you wish, you can use the email template below to invite reviewers.
+If you'd like to, you can use the email template below to invite reviewers.
 
 ```{include} ../appendices/reviewer-request-template.md
 
 ```
 
-When inviting reviewers, include something like "if I don't hear from
-you in a week, I'll assume you are unable to review," so as to give a clear
+When inviting reviewers, include something like "If I don't hear from
+you in a week, I'll assume you are unable to review," to give a clear
 deadline when you'll move on to looking for someone else to keep the processing
 moving.
 
 - Once you have assigned reviewers to the review, you will update the editor response above with:
-1. reviewer GitHub handles and
-2. the review deadline date.
 
-```{info}
-At this point you can add the following to the **Editor Response to Review** under **Editor Comments**:
+1. Reviewer GitHub handles and
+2. The review deadline date.
+
+:::{tip}
+At this point, you can add the following to the **Editor Response to Review** under **Editor Comments**:
 `:wave: Hi @reviewer-one and @reviewer-two! Thank you for volunteering to review
 for pyOpenSci!`
-```
+:::
 
 - Change the label on the issue to `3/reviewer(s)-assigned`
 
@@ -254,8 +255,8 @@ During the review process, it is important to check in with the reviewers to
 ensure that things are moving smoothly:
 
 - Check in with reviewers and authors occasionally. Offer clarification and help as needed.
-- In general aim for 3 weeks for review, 2 weeks for subsequent changes, and 1 week for reviewer approval of changes.
-- If a review has not been submitted after 2 weeks, ping the reviewer(s) within the review issue to ensure they are aware of the 3 week deadline.
+- Aim for ~3 weeks for review, 2 weeks for subsequent changes, and 1 week for reviewer approval of changes.
+- If a review has not been submitted after 2 weeks, ping the reviewer(s) within the review issue to ensure they are aware of the 3-week deadline.
 
 ### ✔️ 5. What to do when reviews are in
 
@@ -263,13 +264,13 @@ ensure that things are moving smoothly:
 
 If the author stops responding, refer to [the policies](/our-process/policies) and/or ping the other editors in the Slack channel <_Not available publicly yet_> for discussion.
 
-Once the author has responded to the reviews and made appropriate changes made changes:
+Once the author has responded to the reviews and made appropriate changes:
 
 - Briefly check to ensure that the changes were indeed made.
 - Change the issue status tag to `5/awaiting-reviewer-response`.
 
 ```{important}
-If for some reason during the process you need to halt the review and close the issue, be sure to let all parties know (maintainer and reviewers) prior to closing the issue.
+If you need to stop the review and close the issue for some reason during the process, please be sure to let all parties know (the maintainer and reviewers) before closing the issue.
 
 Be sure to:
 
@@ -303,7 +304,7 @@ If the author is not responding, the editor should:
 - Tag the author (`@author-github-handle`) in an issue comment notifying them that we will close the issue in one month if there is no response.
 - Close the issue if two months have passed without a reply.
 
-Before closing the issue email the author using the email provided in the package metadata file of the package. The email
+Before closing the issue, email the author using the email provided in the package metadata file of the package. The email
 could be in any of the three files in the package: `setup.py`, `pyproject.toml` (preferred), or `setup.cfg`.
 
 ```{important}
@@ -343,11 +344,11 @@ Date accepted (month/day/year): UPDATE-THIS-TBD
 
 - Once the YAML is updated, change the status tag of the issue to `6/pyOS-approved` 🚀🚀🚀`.
   - The [listing on the PyOpenSci website](https://www.pyopensci.org/python-packages.html) is updated by a cron job that parses the YAML in all issues with the tag `6/pyOS-approved` 🚀🚀🚀`, so a new package might take a few days to appear; in particular, if there are formatting errors in the YAML that need to be corrected.
-  - Editors should be able to manually trigger the [cron job](https://github.com/pyOpenSci/pyopensci.github.io/actions/workflows/update-contribs-reviews.yml) and/or check the output of the last run to see if there are any YAML formatting errors.
-  - Other "after review" tasks like the post-review survey can be done after the package is accepted; the cron job does not depend on them.
+  - Editors can manually trigger the [cron job](https://github.com/pyOpenSci/pyopensci.github.io/actions/workflows/update-contribs-reviews.yml) and/or check the output of the last run to see if there are any YAML formatting errors.
+  - Other "after review" tasks, like the post-review survey, can be done after the package is accepted; the cron job does not depend on them.
 
 ```{note}
-* `Archive` refers to an archive created through a release. You can use zenodo to create this archive and provide the package with a citable DOI. If zenodo is used, please add the Zenodo link and/or badge link here.
+* `Archive` refers to an archive created through a release. You can [use Zenodo to create this archive](https://www.pyopensci.org/lessons/package-share-code/publish-share-code/cite-code.html#cite-your-code) and provide the package with a citable DOI. If Zenodo is used, please add the Zenodo link and/or badge link here.
 
 * `Version` refers to the final package version that was accepted by pyOpenSci.
 This is the final version as presented after all feedback from the
@@ -381,12 +382,12 @@ eligible to be published with JOSS unless **significant** changes and improvemen
 to package functionality have been made.
 ```
 
-JOSS will accept the pyOpenSci review and direct the author to check their `paper.md` file. Once the package is accepted by JOSS,
+JOSS will accept the pyOpenSci review and direct the author to check their `paper.md` file. Once JOSS accepts the package,
 the author will be instructed to add the JOSS DOI badge to their package **README** file.
 
 Once the package is accepted by JOSS and the DOI badge resolves properly:
 
-- Tag the issue with `9/joss-approved`. (please do NOT remove the pyos approved label - simple add the joss approved label)
+- Tag the issue with `9/joss-approved`. (Please do NOT remove the `pyos-approved` label, instead add the `JOSS-approved` label)
 
 ## Last Steps Before Closing the Review Issue
 
@@ -396,36 +397,10 @@ Once the review is complete, you can close the issue. Before doing that:
 
 - Check the pyOpenSci website to ensure:
 
-  - The package was properly added to the [pyOpenSci website](https://www.pyopensci.org/python-packages/).
+  - The package was added to the [pyOpenSci website](https://www.pyopensci.org/python-packages/).
   - Reviewers and maintainers are listed on the [contributors page](https://www.pyopensci.org/our-community/).
-  - Make sure the YAML at the top of the issue is fully filled out and up to date.
+  - Make sure the YAML at the top of the issue is filled out and up to date.
 
-- If the package is approved by JOSS, be sure that the issue is tagged with `7/JOSS-approved` and that the archive / DOI information at the top is updated with the JOSS archive before closing the issue.
+- If JOSS approves the package, be sure that the issue is tagged with `7/JOSS-approved` and that the archive / DOI information at the top is updated with the JOSS archive before closing the issue.
 
 Congratulations, you have completed a review for pyOpenSci!
-
-<!-- ## Optional - Move Package to PyOpenSci Organization (BETA)
-
-rOpenSci packages often live in the rOpenSci organization. PyOpenSci is still
-figuring out whether this model fits the Python community.  -->
-
-<!-- If an author is
-interested in this option, consider doing the following:
-
--   If the package will be migrated to `pyOpenSci`:
-    -   Create a two-person team in pyOpenSci's "pyOpenSci" GitHub organization, named for the package, with yourself and the package author as members.
-    -   Have the author transfer the repository to `pyOpenSci`.
-    -   Go to the repository settings in the "pyOpenSci" GitHub organization and give the author "Admin" access to the repository.
--   Ask the author to:
-    -  Change any needed links, such as those for CI badges.
-    -  Add pyOpenSci badge: `[![pyOpenSci Peer Reviewed](https://pyopensci.org/badges/peer-reviewed.svg)](link-to-issue)`.
-    -   Re-activate CI services:
-        -  For Travis, activating the project in the pyOpenSci account should be sufficient.
-        -  For AppVeyor, tell the author to update the GitHub link in their badge, but do not transfer the project: AppVeyor projects should remain under the authors' account. The badge is `[![AppVeyor Build Status](https://ci.appveyor.com/api/projects/status/github/pyOpenSci/pkgname?branch=main&svg=true)](https://ci.appveyor.com/project/individualaccount/pkgname)`.
-        -  For Codecov, the webhook may need to be reset by the author.
--   Add a "peer-reviewed" topic to the repository. -->
-
-<!-- ## TODO WHERE DOES THIS FIT? General Review guidelines
-
-- For packages needing continuous integration on multiple platforms ([criteria in this section of the packaging chapter](../authoring/overview#continuous-integration)), make sure the package gets tested on multiple platforms (e.g. MAC, Windows, Linux).
-- Wherever possible when asking for changes in the review process, direct authors to automatic tools and online resources. -->
