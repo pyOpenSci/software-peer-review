@@ -11,8 +11,8 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="how-to/editor-in-chief-guide.html" />
 <meta property="og:site_name" content="pyOpenSci Python Package Guide" />
-<meta property="og:description" content="Editor in Chief (EiC) role &amp; responsibilities: The Editor in Chief (EiC) is a rotating position that serves for 3 to 6 months or a time agreed to by all members of the editorial board. If the E..." />
-<meta name="description" content="Editor in Chief (EiC) role &amp; responsibilities: The Editor in Chief (EiC) is a rotating position that serves for 3 to 6 months or a time agreed to by all members of the editorial board. If the E..." />
+<meta property="og:description" content="Editor in Chief (EiC) role &amp; responsibilities: The Editor in Chief (EiC) is a rotating position, typically selected from the current editorial team. It may also be held by a member of the broad..." />
+<meta name="description" content="Editor in Chief (EiC) role &amp; responsibilities: The Editor in Chief (EiC) is a rotating position, typically selected from the current editorial team. It may also be held by a member of the broad..." />
 
     <title>Editor in Chief Guide &#8212; Software Peer Review Guide</title>
   
@@ -20,31 +20,35 @@
   
   <script data-cfasync="false">
     document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
-    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
   </script>
+  <!-- 
+    this give us a css class that will be invisible only if js is disabled 
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../_static/styles/theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
-<link href="../_static/styles/bootstrap.css?digest=5b4479735964841361fd" rel="stylesheet" />
-<link href="../_static/styles/pydata-sphinx-theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
-
-  
-  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=5b4479735964841361fd" rel="stylesheet" />
-  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
-<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+  <link href="../_static/styles/theme.css?digest=26a4bc78f4c0ddb94549" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=26a4bc78f4c0ddb94549" rel="stylesheet" />
 
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=8f2a1f02" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/pyos-sphinx-theme.css?v=fb569b27" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Itim&family=Poppins:wght@400;700&family=Work+Sans:wght@400;700" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
-    <link rel="icon" sizes="16x16" type="image/ico" href="https://www.pyopensci.org/images/favicon.ico" />
     <link rel="stylesheet" type="text/css" href="../_static/pyos.css?v=d6812f4d" />
   
+  <!-- So that users can add custom icons -->
+  <script src="../_static/scripts/fontawesome.js?digest=26a4bc78f4c0ddb94549"></script>
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=5b4479735964841361fd" />
-<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd" />
-  <script src="../_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=5b4479735964841361fd"></script>
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=26a4bc78f4c0ddb94549" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=26a4bc78f4c0ddb94549" />
 
     <script src="../_static/documentation_options.js?v=2709fde1"></script>
     <script src="../_static/doctools.js?v=9a2dae69"></script>
@@ -55,12 +59,14 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'how-to/editor-in-chief-guide';</script>
     <script src="../_static/matomo.js?v=918da087"></script>
     <link rel="canonical" href="https://www.pyopensci.org/software-peer-review/how-to/editor-in-chief-guide.html" />
+    <link rel="icon" href="https://www.pyopensci.org/images/favicon.ico"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Editorial Review Triage Team" href="review-triage-team.html" />
     <link rel="prev" title="pyOpenSci Software Review Editor Guide" href="editors-guide.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
   </head>
   
   
@@ -68,32 +74,16 @@
 
   
   
-  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
   
   <div id="pst-scroll-pixel-helper"></div>
-
   
   <button type="button" class="btn rounded-pill" id="pst-back-to-top">
-    <i class="fa-solid fa-arrow-up"></i>
-    Back to top
-  </button>
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
 
   
-  <input type="checkbox"
-          class="sidebar-toggle"
-          name="__primary"
-          id="__primary"/>
-  <label class="overlay overlay-primary" for="__primary"></label>
-  
-  <input type="checkbox"
-          class="sidebar-toggle"
-          name="__secondary"
-          id="__secondary"/>
-  <label class="overlay overlay-secondary" for="__secondary"></label>
-  
-  <div class="search-button__wrapper">
-    <div class="search-button__overlay"></div>
-    <div class="search-button__search-container">
+  <dialog id="pst-search-dialog">
+    
 <form class="bd-search d-flex align-items-center"
       action="../search.html"
       method="get">
@@ -101,7 +91,6 @@
   <input type="search"
          class="form-control"
          name="q"
-         id="search-input"
          placeholder="Search the docs ..."
          aria-label="Search the docs ..."
          autocomplete="off"
@@ -109,26 +98,30 @@
          autocapitalize="off"
          spellcheck="false"/>
   <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
-</form></div>
-  </div>
+</form>
+  </dialog>
 
-
-  <div class="bd-header-announcement container-fluid bd-header-announcement">
-    <div class="bd-header-announcement__content"><p><a href='https://www.github.com/pyopensci/software-submission/'>Submit Your Python Package for Peer Review!</a></p></div>
-  </div>
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+<aside class="bd-header-announcement" aria-label="Announcement">
+  <div class="bd-header-announcement__content"><p><a href='https://www.github.com/pyopensci/software-submission/'>Submit Your Python Package for Peer Review!</a></p></div>
+</aside>
 
   
-    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
 <div class="bd-header__inner bd-page-width">
-  <label class="sidebar-toggle primary-toggle" for="__primary">
+  <button class="pst-navbar-icon sidebar-toggle primary-toggle" aria-label="Site navigation">
     <span class="fa-solid fa-bars"></span>
-  </label>
+  </button>
   
   
   <div class=" navbar-header-items__start">
     
       <div class="navbar-item">
 
+  
+    
   
 
 <a class="navbar-brand logo" href="../index.html">
@@ -143,7 +136,7 @@
     
     
     <img src="../_static/logo-light-mode.png" class="logo__image only-light" alt="pyOpenSci Software Peer Review Guide. The pyOpenSci logo is a purple flower with pyOpenSci under it. The o in open sci is the center of the flower"/>
-    <script>document.write(`<img src="../_static/logo-dark-mode.png" class="logo__image only-dark" alt="pyOpenSci Software Peer Review Guide. The pyOpenSci logo is a purple flower with pyOpenSci under it. The o in open sci is the center of the flower"/>`);</script>
+    <img src="../_static/logo-dark-mode.png" class="logo__image only-dark pst-js-only" alt="pyOpenSci Software Peer Review Guide. The pyOpenSci logo is a purple flower with pyOpenSci under it. The o in open sci is the center of the flower"/>
   
   
     <p class="title logo__title">Peer Review Guide</p>
@@ -157,61 +150,55 @@
     <div class="me-auto navbar-header-items__center">
       
         <div class="navbar-item">
-<nav class="navbar-nav">
-  <p class="sidebar-header-items__title"
-     role="heading"
-     aria-level="1"
-     aria-label="Site Navigation">
-    Site Navigation
-  </p>
+<nav>
   <ul class="bd-navbar-elements navbar-nav">
     
-                    <li class="nav-item">
-                      <a class="nav-link nav-internal" href="../about/intro.html">
-                        About
-                      </a>
-                    </li>
-                
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../about/intro.html">
+    About
+  </a>
+</li>
 
-                    <li class="nav-item">
-                      <a class="nav-link nav-internal" href="../partners/scientific-communities.html">
-                        Partnerships
-                      </a>
-                    </li>
-                
 
-                    <li class="nav-item current active">
-                      <a class="nav-link nav-internal" href="author-guide.html">
-                        Review Guides
-                      </a>
-                    </li>
-                
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../partners/scientific-communities.html">
+    Partnerships
+  </a>
+</li>
 
-                <li class="nav-item">
-                  <a class="nav-link nav-external" href="https://www.pyopensci.org">
-                    pyOpenSci Website
-                  </a>
-                </li>
-                
+
+<li class="nav-item current active">
+  <a class="nav-link nav-internal" href="author-guide.html">
+    Review Guides
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-external" href="https://www.pyopensci.org">
+    pyOpenSci Website
+  </a>
+</li>
+
             <li class="nav-item dropdown">
                 <button class="btn dropdown-toggle nav-item" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-controls="pst-nav-more-links">
                     More
                 </button>
                 <ul id="pst-nav-more-links" class="dropdown-menu">
                     
-                <li class="nav-item">
-                  <a class="nav-link dropdown-item nav-external" href="https://www.pyopensci.org/python-package-guide">
-                    Python Packaging Guide
-                  </a>
-                </li>
-                
+<li class=" ">
+  <a class="nav-link dropdown-item nav-external" href="https://www.pyopensci.org/python-package-guide">
+    Python Packaging Guide
+  </a>
+</li>
 
-                <li class="nav-item">
-                  <a class="nav-link dropdown-item nav-external" href="https://pyopensci.org/handbook">
-                    Handbook
-                  </a>
-                </li>
-                
+
+<li class=" ">
+  <a class="nav-link dropdown-item nav-external" href="https://pyopensci.org/handbook">
+    Handbook
+  </a>
+</li>
+
                 </ul>
             </li>
             
@@ -226,31 +213,23 @@
         <div class="navbar-item navbar-persistent--container">
           
 
- <script>
- document.write(`
-   <button class="btn navbar-btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="fa-solid fa-magnifying-glass"></i>
-    <span class="search-button__default-text">Search</span>
-    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
-   </button>
- `);
- </script>
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
         </div>
       
       
         <div class="navbar-item">
 
-<script>
-document.write(`
-  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
-    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
-    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
-  </button>
-`);
-</script></div>
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button></div>
       
-        <div class="navbar-item"><ul class="navbar-icon-links navbar-nav"
+        <div class="navbar-item"><ul class="navbar-icon-links"
     aria-label="Icon Links">
         <li class="nav-item">
           
@@ -261,7 +240,7 @@ document.write(`
           
           
           
-          <a href="https://github.com/pyOpenSci/software-peer-review" title="GitHub" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-square-github fa-lg" aria-hidden="true"></i></span>
+          <a href="https://github.com/pyOpenSci/software-peer-review" title="GitHub" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-square-github fa-lg" aria-hidden="true"></i>
             <span class="sr-only">GitHub</span></a>
         </li>
         <li class="nav-item">
@@ -273,7 +252,7 @@ document.write(`
           
           
           
-          <a href="https://fosstodon.org/@pyOpenSci" title="Mastodon" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-mastodon fa-lg" aria-hidden="true"></i></span>
+          <a href="https://fosstodon.org/@pyOpenSci" title="Mastodon" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-mastodon fa-lg" aria-hidden="true"></i>
             <span class="sr-only">Mastodon</span></a>
         </li>
 </ul></div>
@@ -285,31 +264,31 @@ document.write(`
   
     <div class="navbar-persistent--mobile">
 
- <script>
- document.write(`
-   <button class="btn navbar-btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <i class="fa-solid fa-magnifying-glass"></i>
-    <span class="search-button__default-text">Search</span>
-    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
-   </button>
- `);
- </script>
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
     </div>
   
 
   
-    <label class="sidebar-toggle secondary-toggle" for="__secondary" tabindex="0">
+    <button class="pst-navbar-icon sidebar-toggle secondary-toggle" aria-label="On this page">
       <span class="fa-solid fa-outdent"></span>
-    </label>
+    </button>
   
 </div>
 
-    </nav>
+    </header>
   
+
   <div class="bd-container">
     <div class="bd-container__inner bd-page-width">
       
-      <div class="bd-sidebar-primary bd-sidebar">
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
         
 
   
@@ -318,67 +297,56 @@ document.write(`
     
       <div class="sidebar-header-items__center">
         
-          <div class="navbar-item">
-<nav class="navbar-nav">
-  <p class="sidebar-header-items__title"
-     role="heading"
-     aria-level="1"
-     aria-label="Site Navigation">
-    Site Navigation
-  </p>
+          
+          
+            <div class="navbar-item">
+<nav>
   <ul class="bd-navbar-elements navbar-nav">
     
-                    <li class="nav-item">
-                      <a class="nav-link nav-internal" href="../about/intro.html">
-                        About
-                      </a>
-                    </li>
-                
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../about/intro.html">
+    About
+  </a>
+</li>
 
-                    <li class="nav-item">
-                      <a class="nav-link nav-internal" href="../partners/scientific-communities.html">
-                        Partnerships
-                      </a>
-                    </li>
-                
 
-                    <li class="nav-item current active">
-                      <a class="nav-link nav-internal" href="author-guide.html">
-                        Review Guides
-                      </a>
-                    </li>
-                
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../partners/scientific-communities.html">
+    Partnerships
+  </a>
+</li>
 
-                <li class="nav-item">
-                  <a class="nav-link nav-external" href="https://www.pyopensci.org">
-                    pyOpenSci Website
-                  </a>
-                </li>
-                
-            <li class="nav-item dropdown">
-                <button class="btn dropdown-toggle nav-item" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-controls="pst-nav-more-links-2">
-                    More
-                </button>
-                <ul id="pst-nav-more-links-2" class="dropdown-menu">
-                    
-                <li class="nav-item">
-                  <a class="nav-link dropdown-item nav-external" href="https://www.pyopensci.org/python-package-guide">
-                    Python Packaging Guide
-                  </a>
-                </li>
-                
 
-                <li class="nav-item">
-                  <a class="nav-link dropdown-item nav-external" href="https://pyopensci.org/handbook">
-                    Handbook
-                  </a>
-                </li>
-                
-                </ul>
-            </li>
-            
+<li class="nav-item current active">
+  <a class="nav-link nav-internal" href="author-guide.html">
+    Review Guides
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-external" href="https://www.pyopensci.org">
+    pyOpenSci Website
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-external" href="https://www.pyopensci.org/python-package-guide">
+    Python Packaging Guide
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-external" href="https://pyopensci.org/handbook">
+    Handbook
+  </a>
+</li>
+
   </ul>
 </nav></div>
+          
         
       </div>
     
@@ -388,17 +356,13 @@ document.write(`
         
           <div class="navbar-item">
 
-<script>
-document.write(`
-  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
-    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
-    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
-  </button>
-`);
-</script></div>
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button></div>
         
-          <div class="navbar-item"><ul class="navbar-icon-links navbar-nav"
+          <div class="navbar-item"><ul class="navbar-icon-links"
     aria-label="Icon Links">
         <li class="nav-item">
           
@@ -409,7 +373,7 @@ document.write(`
           
           
           
-          <a href="https://github.com/pyOpenSci/software-peer-review" title="GitHub" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-square-github fa-lg" aria-hidden="true"></i></span>
+          <a href="https://github.com/pyOpenSci/software-peer-review" title="GitHub" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-square-github fa-lg" aria-hidden="true"></i>
             <span class="sr-only">GitHub</span></a>
         </li>
         <li class="nav-item">
@@ -421,7 +385,7 @@ document.write(`
           
           
           
-          <a href="https://fosstodon.org/@pyOpenSci" title="Mastodon" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-mastodon fa-lg" aria-hidden="true"></i></span>
+          <a href="https://fosstodon.org/@pyOpenSci" title="Mastodon" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-mastodon fa-lg" aria-hidden="true"></i>
             <span class="sr-only">Mastodon</span></a>
         </li>
 </ul></div>
@@ -461,22 +425,20 @@ document.write(`
 
       </div>
       
-      <main id="main-content" class="bd-main">
+      <main id="main-content" class="bd-main" role="main">
         
         
           <div class="bd-content">
             <div class="bd-article-container">
               
-              <div class="bd-header-article">
+              <div class="bd-header-article d-print-none">
 <div class="header-article-items header-article__inner">
   
     <div class="header-article-items__start">
       
         <div class="header-article-item">
 
-
-
-<nav aria-label="Breadcrumb">
+<nav aria-label="Breadcrumb" class="d-print-none">
   <ul class="bd-breadcrumbs">
     
     <li class="breadcrumb-item breadcrumb-home">
@@ -487,7 +449,7 @@ document.write(`
     
     <li class="breadcrumb-item"><a href="author-guide.html" class="nav-link">Peer Review Guide for Python Open Source Authors / Authors</a></li>
     
-    <li class="breadcrumb-item active" aria-current="page">Editor in...</li>
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">Editor in Chief Guide</span></li>
   </ul>
 </nav>
 </div>
@@ -502,84 +464,165 @@ document.write(`
               
                 
 <div id="searchbox"></div>
-                <article class="bd-article" role="main">
+                <article class="bd-article">
                   
   <section id="editor-in-chief-guide">
 <h1>Editor in Chief Guide<a class="headerlink" href="#editor-in-chief-guide" title="Link to this heading">#</a></h1>
+<div class="tip admonition">
+<p class="admonition-title">Useful pyOpenSci resources</p>
+<p>Here are some helpful resources to support you in your Editor in Chief role:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://www.pyopensci.org/python-package-guide/"><strong>Python Package Guide</strong></a>:
+A community-developed guide offering an overview of the Python packaging
+ecosystem, plus tutorials for building and publishing a package.</p></li>
+<li><p><a class="reference external" href="https://www.pyopensci.org/metrics/"><strong>pyOpenSci metrics dashboard</strong></a>:
+View the current state of peer reviews and track review activity over time.</p></li>
+<li><p><a class="reference external" href="https://github.com/pyOpenSci/pyos-package-template"><strong>pyOpenSci Python package template</strong></a>:
+A Copier-powered template for creating a new Python package that follows
+pyOpenSci best practices.</p></li>
+</ul>
+</div>
 <section id="editor-in-chief-eic-role-responsibilities">
 <h2>Editor in Chief (EiC) role &amp; responsibilities<a class="headerlink" href="#editor-in-chief-eic-role-responsibilities" title="Link to this heading">#</a></h2>
-<p>The Editor in Chief (EiC) is a rotating position that serves
-for 3 to 6 months or a time agreed to by all members of the editorial
-board.</p>
-<p>If the EiC needs to step down at any time before the agreed-upon
-duration of their tenure, pyOpenSci requests and appreciates 2 weeks notice
-to support finding a new EiC.</p>
-<section id="the-editor-in-chief-fulfills-the-following-roles">
-<h3>The Editor in Chief fulfills the following roles:<a class="headerlink" href="#the-editor-in-chief-fulfills-the-following-roles" title="Link to this heading">#</a></h3>
+<p>The Editor in Chief (EiC) is a rotating position, typically selected from the
+current editorial team. It may also be held by a member of the broader
+pyOpenSci community, who is familiar with our organization and software peer
+review.</p>
+<p>The EiC term lasts <strong>3 to 6 months</strong>, or another duration agreed upon with the
+<a class="reference external" href="https://www.pyopensci.org/handbook/governance/structure.html#peer-review-lead">Peer Review Lead (currently the Executive Director)</a>. If the EiC needs to step down early, we request at least
+<strong>two weeks’ notice</strong> to allow time to identify and onboard a replacement.</p>
+<p>The Editor in Chief fulfills the roles discussed below:</p>
+<section id="manage-incoming-reviews">
+<h3>1. Manage incoming reviews<a class="headerlink" href="#manage-incoming-reviews" title="Link to this heading">#</a></h3>
 <ul class="simple">
-<li><p>Watches all issues posted to the <a class="reference external" href="https://github.com/pyOpenSci/software-review/issues">software-review repository</a> (by “watching” it on GitHub to receive notifications, and by joining the <code class="docutils literal notranslate"><span class="pre">#feed-software-review</span></code> channel on Slack).</p></li>
-<li><p>Performs an initial set of editor checks on new package submissions (see <a class="reference internal" href="#editor-checklist-template"><span class="std std-ref">template</span></a> for these checks below)</p></li>
-<li><p>Raises scope/overlap issue with all editors if they see an ambiguous submission.
-This may also be done by handling editors if appropriate (see note below). If
-the scope of a package is in question, the EiC should post to the pyOpenSci
-Slack <code class="docutils literal notranslate"><span class="pre">#software-review</span></code> channel, tagging all editors.</p></li>
-<li><p>Assigns package submissions to other editors to handle. Assigning may be based upon domain background or just who has bandwidth to lead the review. The editor in chief can assign packages to themself for review.</p></li>
-<li><p>Responds to pre-submission inquiries posted to the software-review repository
-and similarly pings editors in the <code class="docutils literal notranslate"><span class="pre">#software-review</span></code> Slack channel if discussion
-is needed. Any editor should feel free to communicate with package authors as it
-makes sense. See <a class="reference internal" href="#responding-to-out-of-scope-submissions">this section</a> about
-how to respond to out-of-scope (pre-) submissions.</p></li>
-<li><p>Responds to review referrals from JOSS or other publication partners.</p></li>
-<li><p>Monitors pace of review process and reminds other editors to move packages along as needed.</p></li>
-<li><p>Requests a new EiC when their rotation is up (set a calendar reminder ahead of your expected end date and ask for volunteers in the editors’ Slack channel)</p></li>
-<li><p>Once or twice during the EiC rotation, the EiC should check to see if any packages in our pyOpenSci list are potentially no longer maintained. If a package is no longer maintained, follow the process in the <a class="reference external" href="https://www.pyopensci.org/software-peer-review/our-process/policies.html#package-maintenance-and-maintainer-responsiveness">package archive section</a> of our peer review guide</p></li>
+<li><p>Watch all issues in the
+<a class="reference external" href="https://github.com/pyOpenSci/software-review/issues">software-review repo</a></p></li>
 </ul>
-<p>This Editor in Chief position rotates between different pyOpenSci editors.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Enable GitHub notifications and join the <code class="docutils literal notranslate"><span class="pre">#feed-software-review</span></code> Slack channel
+to stay up to date on new submissions.</p>
+</div>
+<ul class="simple">
+<li><p>Perform the <strong>initial editor checks</strong> on new submissions using the
+<a class="reference internal" href="#pre-review-checks"><span class="std std-ref">editor checklist</span></a>.</p></li>
+<li><p>Flag scope or overlap concerns. Raise questions by tagging editors in
+<code class="docutils literal notranslate"><span class="pre">#software-review</span></code> or, if needed, in <code class="docutils literal notranslate"><span class="pre">#private-editorial-team</span></code>.</p></li>
+<li><p>Assign submissions to handling editors based on:</p>
+<ul>
+<li><p>subject matter fit</p></li>
+<li><p>editor availability</p></li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<div><p>The EiC may assign a package to themselves if they have capacity and want to
+lead the review.</p>
+</div></blockquote>
+</section>
+<section id="manage-pre-submission-inquiries">
+<h3>2. Manage pre-submission inquiries<a class="headerlink" href="#manage-pre-submission-inquiries" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Respond to pre-submission inquiries and assess package scope or structure.</p></li>
+<li><p>Handle or delegate review referrals from the <a class="reference internal" href="../partners/joss.html#joss"><span class="std std-ref">Journal of Open Source Software
+(JOSS)</span></a> or other partners.</p></li>
+</ul>
+</section>
+<section id="monitor-review-progress">
+<h3>3. Monitor review progress<a class="headerlink" href="#monitor-review-progress" title="Link to this heading">#</a></h3>
+<p>Check the status of active reviews <strong>monthly</strong>. Use the
+<a class="reference external" href="https://www.pyopensci.org/metrics/peer-review/peer-review-status-dashboard.html">peer review dashboard</a>
+to identify stalled reviews or submissions needing editors or reviewers.</p>
+<p>The dashboard highlights:</p>
+<ul class="simple">
+<li><p>Packages still seeking reviewers</p></li>
+<li><p>Packages needing an editor</p></li>
+<li><p>Open pre-submission inquiries</p></li>
+<li><p>Stale issues with no recent comments</p></li>
+</ul>
+<p>If a review has been inactive for 3–4 weeks, message the editor in Slack to
+check in. You or the <a class="reference external" href="https://www.pyopensci.org/handbook/governance/structure.html#peer-review-lead">Peer Review Lead</a> can help move things forward. If needed,
+discuss in the <code class="docutils literal notranslate"><span class="pre">#private-editorial-team</span></code> channel.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Need help unblocking a review? Contact the acting Peer Review Lead.</p>
+</div>
+</section>
+<section id="monitor-package-maintenance">
+<h3>4. Monitor package maintenance<a class="headerlink" href="#monitor-package-maintenance" title="Link to this heading">#</a></h3>
+<p>Once or twice during your term, review our list of accepted packages and flag
+any that appear unmaintained. If needed, follow the
+<a class="reference external" href="https://www.pyopensci.org/software-peer-review/our-process/policies.html#package-maintenance-and-maintainer-responsiveness">archiving process</a>.</p>
+</section>
+<section id="support-eic-transition">
+<h3>5. Support EiC transition<a class="headerlink" href="#support-eic-transition" title="Link to this heading">#</a></h3>
+<p>As your term nears its end, discuss with the peer-review lead the process of identifying your successor.
+Set a calendar reminder 2–3 weeks in advance to start the transition process.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>In some cases, if the EiC is unable to support review of a particular package due to
-conflicts OR if they simply believe another editor is better suited to assess
-the scope and readiness of a package to be reviewed, they may opt to assign an editor to perform initial checks.</p>
+<p>See <a class="reference internal" href="#responding-to-out-of-scope-submissions">this section</a> for guidance on
+responding to out-of-scope pre-submissions.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If the EiC has limited time to handle <a class="reference internal" href="#pre-review-checks"><span class="std std-ref">pre-review checks</span></a> for a package, a conflict of interest, or lacks relevant expertise, they may ask another editor to perform initial checks on a package at any time.</p>
 </div>
 </section>
 </section>
 <section id="editor-in-chief-checklist">
 <h2>Editor in Chief checklist<a class="headerlink" href="#editor-in-chief-checklist" title="Link to this heading">#</a></h2>
-<p>When a new package is submitted for review, the Editor in Chief will:</p>
-<section id="tag-the-issue-with-0-pre-review-checks-tag-in-github">
-<h3>1. ✔️ Tag the issue with <code class="docutils literal notranslate"><span class="pre">0/pre-review-checks</span></code> tag in GitHub<a class="headerlink" href="#tag-the-issue-with-0-pre-review-checks-tag-in-github" title="Link to this heading">#</a></h3>
+<p>When a new package is submitted for review, the Editor in Chief should:</p>
+<section id="tag-the-issue-with-the-0-pre-review-checks-label-in-github">
+<h3>1. ✔️ Tag the issue with the <code class="docutils literal notranslate"><span class="pre">0/pre-review-checks</span></code> label in GitHub<a class="headerlink" href="#tag-the-issue-with-the-0-pre-review-checks-label-in-github" title="Link to this heading">#</a></h3>
 </section>
-<section id="add-the-editor-checks-to-the-issue">
-<h3>2. ✔️ Add the editor checks to the issue<a class="headerlink" href="#add-the-editor-checks-to-the-issue" title="Link to this heading">#</a></h3>
+<section id="add-a-partner-tag-if-the-author-selected-a-partner-affiliation">
+<h3>2. ✔️ Add a partner tag if the author selected a partner affiliation<a class="headerlink" href="#add-a-partner-tag-if-the-author-selected-a-partner-affiliation" title="Link to this heading">#</a></h3>
+<p>pyOpenSci supports
+<a class="reference internal" href="../partners/scientific-communities.html#partner-communities"><span class="std std-ref">partnerships with other communities</span></a>. Astropy is our only active partner.</p>
+<p>If the author selects a partner in the submission template,</p>
+<ol class="arabic simple">
+<li><p>Notify an editor from that community that a review may be forthcoming. — they will typically take
+the lead on that review.</p></li>
+<li><p>Add the appropriate partner label to the issue.</p></li>
+</ol>
+<p>The partner section of the submission looks like this:</p>
+<div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span><span class="gu">## Community Partnerships</span>
+If your package is associated with an
+existing community, please check below:
+
+<span class="k">- [ ]</span> Astropy:[My package adheres to Astropy community standards](https://www.pyopensci.org/software-peer-review/partners/astropy.html)
+<span class="k">- [ ]</span> Pangeo: My package adheres to the [<span class="nt">Pangeo standards listed in the pyOpenSci peer review guidebook</span>][<span class="nl">PangeoCollaboration</span>]
+</pre></div>
+</div>
+</section>
+<section id="add-the-pre-review-checks-to-the-issue">
+<span id="pre-review-checks"></span><h3>3. ✔️ Add the pre-review checks to the issue<a class="headerlink" href="#add-the-pre-review-checks-to-the-issue" title="Link to this heading">#</a></h3>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
-<p>It is important that this step occur in one post rather than a string of
-conversational feedback that is more difficult to follow. This allows the author to address all issues at
-one time. Thus the EIC should:</p>
+<p>Post your complete pre-review/editor checks in <strong>one single comment</strong>, rather than in multiple
+comments. This keeps the review easy to follow and lets the author address
+everything at once.</p>
+<p>Before posting:</p>
 <ol class="arabic simple">
-<li><p>Review the checklist.</p></li>
-<li><p>Give the author a rough estimate of how long the checks might take to complete.</p></li>
-<li><p>Perform all of the checks locally.</p></li>
-<li><p>When all of the above are complete, post the checklist with any feedback for the author in the issue. This should be one single post.</p></li>
+<li><p>Review the editor-in-chief checklist.</p></li>
+<li><p>Estimate how long the checks might take and share that with the author.</p></li>
+<li><p>Perform all checks locally.</p></li>
+<li><p>Post the completed checklist and any feedback in a <strong>single GitHub comment</strong>.</p></li>
 </ol>
 </div>
-<p>Copy the <a class="reference internal" href="#editor-checklist-template"><span class="std std-ref">template below</span></a>
-and add it to the issue.</p>
-<p>Editor checks ensure that the package has
-the bare minimum requirements to initiate a review.
-We hope that even the process of going through these checks will
-improve the quality of the package.</p>
-<p>In some situations, the editor-in-chief initial checks may be passed down to an editor as follows:</p>
+<p>Copy the template below and add it to the issue.</p>
+<p>These checks confirm that the package meets the <strong>minimum standards for
+review</strong>. In many cases, going through this process improves the package itself.</p>
+<p>The EiC may ask another editor to complete the checks if:</p>
 <ul class="simple">
-<li><p>If the Editor in Chief is overwhelmed with package submissions to evaluate.</p></li>
-<li><p>If the Editor in Chief simply is busy at the time and needs support with checks.</p></li>
-<li><p>If the Editor in Chief thinks that the checks might be better served if done by an Editor
-(For instance, if a specific domain or technical expertise would support more effective checks).</p></li>
+<li><p>They are overwhelmed with new submissions.</p></li>
+<li><p>They are temporarily unavailable.</p></li>
+<li><p>Another editor has relevant domain or technical expertise.</p></li>
 </ul>
 </section>
 <section id="editor-checklist-template">
 <span id="id1"></span><h3>Editor-in-chief checklist<a class="headerlink" href="#editor-checklist-template" title="Link to this heading">#</a></h3>
-<p>Copy the template below to use it in the issue.</p>
+<p>Copy the template below and use it in the review issue.</p>
 <div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span><span class="gu">## Editor in Chief checks</span>
 
 Hi there! Thank you for submitting your package for pyOpenSci
@@ -622,84 +665,198 @@ We appreciate each maintainer of the package filling out this survey individuall
 </pre></div>
 </div>
 </section>
-<section id="ensure-that-the-package-onboarding-survey-is-filled-out">
-<h3>3. ✔️ Ensure that the package onboarding survey is filled out.<a class="headerlink" href="#ensure-that-the-package-onboarding-survey-is-filled-out" title="Link to this heading">#</a></h3>
-<p>Thank the authors graciously for filling out our survey. They can
-skip sections of it if they wish. We do need their contact
-information to stay in touch about package maintenance. We also
-want to track their experience with our review process and
-organization.</p>
+<section id="ensure-that-the-package-onboarding-survey-is-complete">
+<h3>4. ✔️ Ensure that the package onboarding survey is complete<a class="headerlink" href="#ensure-that-the-package-onboarding-survey-is-complete" title="Link to this heading">#</a></h3>
+<p>Use <a class="reference external" href="https://docs.google.com/spreadsheets/d/1jEk-DDpkz14Z07OX_o1cN2vHzVbJO6mQ83ihGXsWkLc/edit?gid=930774086#gid=930774086">this spreadsheet</a>
+to check whether the author—and ideally all maintainers—have completed the
+pre-review survey. You can search using their GitHub handle.</p>
+<p>Thank the author for completing the survey. While some sections are optional,
+we do need contact information to follow up about package maintenance. The
+survey also helps us track and improve our peer review process.</p>
 </section>
-<section id="assign-an-editor-to-the-issue-to-manage-the-rest-of-the-review-and-tag-the-issue-with-the-1-editor-assigned-tag-in-github">
-<h3>4. ✔️ Assign an editor to the issue to manage the rest of the review and tag the issue with the <code class="docutils literal notranslate"><span class="pre">1/editor-assigned</span></code> tag in GitHub<a class="headerlink" href="#assign-an-editor-to-the-issue-to-manage-the-rest-of-the-review-and-tag-the-issue-with-the-1-editor-assigned-tag-in-github" title="Link to this heading">#</a></h3>
-<p>Once the package initial checks are complete, and it is determined that
-the package is in scope for pyOpenSci review, the Editor in Chief will assign an
-editor to the review issue and add the <code class="docutils literal notranslate"><span class="pre">1/editor-assigned</span></code> tag in GitHub.
-This may involve finding a new (guest) editor
-as described in the <a class="reference internal" href="onboarding-guide.html"><span class="std std-doc">onboarding guide</span></a>.
-If you as Editor in Chief do recruit a new editor,
-be sure to complete all the onboarding steps described
-<a class="reference internal" href="onboarding-guide.html#onboarding-a-new-editor"><span class="std std-ref">here</span></a> so that the new editor
-has everything they need to manage the review,
-such as GitHub permissions and access to the relevant channels
-in the pyOpenSci Slack team.
-The editor will now begin the process of finding reviewers
-for the package.
-<a class="reference internal" href="editors-guide.html"><span class="std std-doc">Check out the editor guide for more information on the process that an editor follows</span></a></p>
+<section id="assign-an-editor-and-add-the-1-editor-assigned-label-to-the-github-issue">
+<h3>5. ✔️  Assign an editor and add the <code class="docutils literal notranslate"><span class="pre">1/editor-assigned</span></code> label to the GitHub issue<a class="headerlink" href="#assign-an-editor-and-add-the-1-editor-assigned-label-to-the-github-issue" title="Link to this heading">#</a></h3>
+<p>Once the package is determined to be in scope, the pre-review surveys are complete, and pre-review checks
+are done, it’s time to assign an editor.</p>
+<p>Use the <a class="reference external" href="https://www.pyopensci.org/metrics/peer-review/editorial-dashboard.html">editorial dashboard</a>
+to check which editors are currently available and what domains those editors are familiar with.</p>
+<p>Once you’ve selected an editor:</p>
+<ol class="arabic simple">
+<li><p>Assign the issue to them in GitHub</p></li>
+<li><p>Update the YAML at the top of the issue with their GitHub username</p></li>
+<li><p>Add the <code class="docutils literal notranslate"><span class="pre">1/editor-assigned</span></code> label to the issue</p></li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If there isn’t an available editor with relevant expertise for a review, work with the <a class="reference external" href="https://www.pyopensci.org/handbook/governance/structure.html#peer-review-lead">Peer
+Review Lead</a> to recruit a guest editor or onboard someone new.</p>
+<p>Follow the <a class="reference internal" href="onboarding-guide.html"><span class="std std-doc">onboarding guide</span></a>, and complete the full
+<a class="reference internal" href="onboarding-guide.html#onboarding-a-new-editor"><span class="std std-ref">onboarding process</span></a> to ensure they have:</p>
+<ul class="simple">
+<li><p>GitHub access</p></li>
+<li><p>Slack access</p></li>
+<li><p>Everything needed to manage the review</p></li>
+</ul>
+<p><a class="reference external" href="https://docs.google.com/document/d/1UfG1Fe5wSiEAObvqNMT4etZ5sx7QXzW0f8mozKyK1NE/edit?tab=t.0">Share this document with any new editor to help them get started.</a></p>
+<p>See the <a class="reference internal" href="editors-guide.html"><span class="std std-doc">editor guide</span></a> for more on an editor’s responsibilities. Once the editor is assigned, your
+work on the review is complete, and they will now begin identifying reviewers.</p>
+</div>
 <div class="important admonition">
 <p class="admonition-title">Diversity in the editorial &amp; reviewer  team is important</p>
-<p>Diversity is core to the pyOpenSci mission. As such it’s important to have an
-editorial team comprised of an editor + 2 reviewers from diverse backgrounds.</p>
+<p>Inclusion is core to the pyOpenSci mission. It’s important to have an
+editorial team comprised of an editor + 2 reviewers from different backgrounds and identities to enrich the review process.</p>
 <p>As you select an editor (and guide that editor in finding reviewers),
-ensure that there is diversity
-in the team supporting package review. <a class="reference internal" href="finding-reviewers.html#reviewer-diversity"><span class="std std-ref">Specifically reviewers and the editor should have a mix of gender-identities whenever possible</span></a>. pyOpenSci <a class="reference internal" href="finding-reviewers.html#review-mentorship"><span class="std std-ref">also supports mentoring new reviewers and editors if needed!</span></a></p>
+seek diversity in the team supporting package review. <a class="reference internal" href="finding-reviewers.html#reviewer-diversity"><span class="std std-ref">Specifically, reviewers and the editor should have a mix of gender identities whenever possible</span></a>. pyOpenSci <a class="reference internal" href="finding-reviewers.html#review-mentorship"><span class="std std-ref">also supports mentoring new reviewers and editors if needed!</span></a></p>
 </div>
 </section>
-<section id="update-the-yaml-header-of-the-issue">
-<h3>5. ✔️ Update the YAML header of the issue<a class="headerlink" href="#update-the-yaml-header-of-the-issue" title="Link to this heading">#</a></h3>
-<p>Once all of the above is complete, the Editor in Chief should:</p>
+<section id="update-the-yaml-header">
+<h3>6. ✔️ Update the YAML header<a class="headerlink" href="#update-the-yaml-header" title="Link to this heading">#</a></h3>
+<p>After assigning the editor to the issue and adding the <code class="docutils literal notranslate"><span class="pre">1/editor-assigned</span></code> label:</p>
 <ul class="simple">
-<li><p>Add any comments to the bottom of your editor checks comment.</p></li>
-<li><p>Update the YAML in the issue’s header with the editor assigned to the review.</p></li>
-<li><p>Add the tag <code class="docutils literal notranslate"><span class="pre">2/seeking-reviewer(s)</span></code> to the issue.</p></li>
+<li><p>Update the YAML at the top of the issue with the editor’s GitHub username</p></li>
+<li><p>Add any final comments to the bottom of your pre-review checklist comment</p></li>
 </ul>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>Be sure to update both the <strong>GitHub assignment</strong> and the <strong>YAML header</strong> with the editor’s name. Our <a class="reference external" href="https://www.pyopensci.org/metrics/peer-review/current-review-status.html">peer
+review dashboard</a> depends on both!</p>
+</div>
 </section>
 </section>
-<section id="a-note-about-submissions-that-are-incomplete-or-vague">
-<h2>A note about submissions that are incomplete or vague<a class="headerlink" href="#a-note-about-submissions-that-are-incomplete-or-vague" title="Link to this heading">#</a></h2>
-<p>In some cases:</p>
+<section id="handling-submissions-that-are-incomplete-or-vague">
+<h2>Handling submissions that are incomplete or vague<a class="headerlink" href="#handling-submissions-that-are-incomplete-or-vague" title="Link to this heading">#</a></h2>
+<p>Sometimes a submission lacks enough information to assess whether it’s in
+scope. For example:</p>
 <ul class="simple">
-<li><p>Online documentation of a package is sparse.</p></li>
-<li><p>README is minimal or hard to understand.</p></li>
-<li><p>No clear documentation setup.</p></li>
-<li><p>Elements of the YAML template at the top of the issue are not filled out.</p></li>
+<li><p>Online documentation is sparse</p></li>
+<li><p>The README is minimal or unclear</p></li>
+<li><p>There’s no documentation structure</p></li>
+<li><p>The YAML template at the top of the issue is incomplete</p></li>
 </ul>
-<p>This makes assessment of the package’s scope much harder.
-In this case, please ask the author for more information. Even if the package is deemed
-out-of-scope, the package documentation will improve as a result of your questions.</p>
-<p>Example text:</p>
-<div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span>Hello &lt;username&gt; and many thanks for your submission.
+<p>In these cases, ask the author for more information. Even if the package is
+ultimately out of scope, this will still help improve its documentation.</p>
+<p>You can adapt the message below when requesting more details:</p>
+<div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span>Hello &lt;username&gt;, and thank you for your submission!
 
-We are discussing whether the package is in scope and need a bit more
-information.
+We are reviewing whether your package fits within pyOpenSci’s scope and
+could use a bit more information.
 
-Please add more details and context to your <span class="sb">`README`</span> file.
-After reading it, someone with little domain knowledge should understand
-the aim, goals and functionality of the package.
+Please expand your <span class="sb">`README`</span> to give more context. After reading it, someone
+without domain expertise should understand the package’s goals, use cases,
+and core functionality.
 
 &lt;optional&gt;
-If a package has overlapping functionality with other packages, we require you
-to mention in your documentation (README) and in this issue [<span class="nt">how it is &quot;best in class&quot;</span>](<span class="na">https://www.pyopensci.org/software-peer-review/about/package-scope.html#package-overlap</span>). Please add a more detailed comparison to the packages you mention in the README so we can evaluate?
+If your package overlaps with others, please explain in the README and in
+this issue how your package is &quot;best in class.&quot; You can refer to our
+[<span class="nt">guidance on package overlap</span>](<span class="na">https://www.pyopensci.org/software-peer-review/about/package-scope.html#package-overlap</span>).
 &lt;/optional&gt;
 </pre></div>
 </div>
 </section>
+<section id="addressing-challenges-in-the-review-process">
+<h2>Addressing challenges in the review process<a class="headerlink" href="#addressing-challenges-in-the-review-process" title="Link to this heading">#</a></h2>
+<p>During the review, you may encounter challenges that require resolution.</p>
+<ul class="simple">
+<li><p>For <strong>technical issues</strong> such as repository access, GitHub integration, or platform problems, post in the <code class="docutils literal notranslate"><span class="pre">#pyos-infrastructure</span></code> Slack channel where our technical team can assist you.</p></li>
+<li><p>For <strong>behavior concerns</strong> including unprofessional communication, harassment, or guideline violations, use our <a class="reference external" href="https://www.pyopensci.org/handbook/CODE_OF_CONDUCT.html">pyOpenSci Code of Conduct</a> as guidance. Follow the Code of Conduct reporting procedures and notify the Peer Review Lead of the issue.</p></li>
+<li><p>For <strong>conflicts of interest</strong> involving financial, professional, or personal conflicts between reviewers and authors, you can post in the <code class="docutils literal notranslate"><span class="pre">private-editorial-channel</span></code> Slack channel or contact the Peer Review Lead directly if you prefer a more confidential approach.</p></li>
+<li><p>For <strong>all other questions</strong> related to the review process, you can contact the Peer Review Lead for guidance and support.</p></li>
+</ul>
+</section>
+<section id="keeping-the-review-process-moving-forward">
+<h2>Keeping the review process moving forward<a class="headerlink" href="#keeping-the-review-process-moving-forward" title="Link to this heading">#</a></h2>
+<p>The pyOpenSci peer review metrics dashboard can help you keep tabs on review status.</p>
+<section id="keeping-track-of-reviews-that-need-editors">
+<h3>Keeping track of reviews that need editors<a class="headerlink" href="#keeping-track-of-reviews-that-need-editors" title="Link to this heading">#</a></h3>
+<p>The <a class="reference external" href="https://www.pyopensci.org/metrics/peer-review/current-review-status.html#editors-needed">editors needed table</a> and <a class="reference external" href="https://www.pyopensci.org/metrics/peer-review/current-review-status.html#reviewers-needed">reviewers needed table</a> lists reviews that are still searching for editors and reviewers.</p>
+</section>
+<section id="how-to-handle-stalled-reviews">
+<h3>How to handle stalled reviews<a class="headerlink" href="#how-to-handle-stalled-reviews" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p><a class="reference external" href="https://www.pyopensci.org/metrics/peer-review/current-review-status.html#all-open-reviews">This table contains a list of all open reviews (and pre-review submissions).</a>. You can sort it by <strong>last comment date</strong> to understand better what reviews have been “quiet” and might need a nudge to move forward.</p></li>
+</ul>
+<p>If you notice that a review hasn’t been active in over 1+ months, do the following:</p>
+<ol class="arabic simple">
+<li><p>Leave a note on the review to see what the state of the review is.</p></li>
+<li><p>If no one responds to the comment within ~2 weeks, consider DM’ing the editor in the pyOpenSci Slack to see if they are still able to move the review forward.</p></li>
+<li><p>If a DM to the editor doesn’t work, consider sending an email next. Oftentimes, people lose track of GitHub notifications, but they respond to emails.</p></li>
+<li><p>If all of the above fail and there is no movement on the review, post in the <code class="docutils literal notranslate"><span class="pre">#private-editorial-team</span></code> channel in our Slack, and the peer review lead can help you move things forward. In some cases, you may need to find a new editor who has more bandwidth to complete the review. In other cases, the editor will step back in and get things moving again.</p></li>
+</ol>
+<p>If you need to find a new editor, the <a class="reference external" href="https://www.pyopensci.org/metrics/peer-review/current-review-status.html#editors-available-for-a-review">editors available for a review</a> lists editors that are not currently running a review.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>If the editor is struggling with reviewers not responding, see <a class="reference internal" href="editors-guide.html#reviewer-response-time"><span class="std std-ref">the editor guide for more information on how to manage this</span></a></p>
+</div>
+</section>
+</section>
 <section id="responding-to-out-of-scope-submissions">
 <h2>Responding to out-of-scope submissions<a class="headerlink" href="#responding-to-out-of-scope-submissions" title="Link to this heading">#</a></h2>
-<p>If the package is determined to be out-of-scope, the Editor in Chief should
-thank authors for their submission, explain the reasons for the decision, and
-direct them to other publication venues if relevant. If further discussion is
-warranted that can take place within the issue.</p>
+<p>If a package is determined to be out of scope, thank the author for their
+submission, briefly explain why it is not in scope, and suggest other venues
+for review if relevant.</p>
+<p>Keep the conversation respectful and transparent. If the author has questions,
+continue the discussion in the GitHub issue.</p>
+</section>
+<section id="stepping-down-from-the-eic-role">
+<h2>Stepping down from the EiC role<a class="headerlink" href="#stepping-down-from-the-eic-role" title="Link to this heading">#</a></h2>
+<p>As your term ends, help onboard the next Editor in Chief.</p>
+<ul class="simple">
+<li><p>Set a calendar reminder 2–3 weeks before your term ends and begin to communicate with the incoming editor-in-chief about the transition.</p></li>
+<li><p>Craft a summary of where peer review is, and where the incoming Editor in Chief will need to pick up.</p></li>
+<li><p>Let the Peer Review Lead know that a transition is coming soon so they can support as needed.
+&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD</p></li>
+<li><p>If you can, try to be available after your term has ended to answer questions and support a smooth transition for the new editor in chief
+=======</p></li>
+<li><p>If you can, try to be available after your term has ended to answer questions and support a smooth transition for the new Editor in Chief</p></li>
+</ul>
+<blockquote>
+<div><blockquote>
+<div><blockquote>
+<div><blockquote>
+<div><blockquote>
+<div><blockquote>
+<div><blockquote>
+<div><p>2f46a28 (ENH: Fix more typos)</p>
+</div></blockquote>
+</div></blockquote>
+</div></blockquote>
+</div></blockquote>
+</div></blockquote>
+</div></blockquote>
+</div></blockquote>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>If you are leading any active reviews as EiC, you must hand them off to the
+incoming Editor in Chief before stepping down. This ensures continuity and
+prevents reviews from stalling.</p>
+</div>
+<p>The new EiC assumes full responsibility for all active reviews and
+pre-submission inquiries previously managed by the outgoing EiC.</p>
+<section id="share-your-reflections">
+<h3>Share your reflections<a class="headerlink" href="#share-your-reflections" title="Link to this heading">#</a></h3>
+<p>Before stepping down, write a summary of:</p>
+<ul class="simple">
+<li><p>What went well</p></li>
+<li><p>What could be improved</p></li>
+<li><p>Any challenges or ideas you’d recommend to future EiCs</p></li>
+</ul>
+<p>Post your reflection in the <code class="docutils literal notranslate"><span class="pre">#private-editorial-team</span></code> Slack channel or share it with
+the peer review lead directly.</p>
+</section>
+<section id="eic-transition-checklist">
+<h3>EiC Transition Checklist<a class="headerlink" href="#eic-transition-checklist" title="Link to this heading">#</a></h3>
+<p>You can use the checklist below to manage the tasks.</p>
+<div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span><span class="gu">### EiC Transition Checklist</span>
+
+<span class="k">- [ ]</span> Set calendar reminder 3 weeks before term end
+<span class="k">- [ ]</span> Contact peer review lead about successor
+<span class="k">- [ ]</span> Document active reviews and their status
+<span class="k">- [ ]</span> Hand off any reviews you&#39;re personally handling
+<span class="k">- [ ]</span> Write reflection summary
+<span class="k">- [ ]</span> Schedule handoff meeting with incoming EiC
+</pre></div>
+</div>
+</section>
 </section>
 </section>
 
@@ -710,7 +867,7 @@ warranted that can take place within the issue.</p>
               
               
               
-                <footer class="prev-next-footer">
+                <footer class="prev-next-footer d-print-none">
                   
 <div class="prev-next-area">
     <a class="left-prev"
@@ -738,30 +895,49 @@ warranted that can take place within the issue.</p>
             
             
               
-                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
 
   <div class="sidebar-secondary-item">
-
-  <div class="page-toc tocsection onthispage">
+<div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
     <i class="fa-solid fa-list"></i> On this page
   </div>
-  <nav class="bd-toc-nav page-toc">
+  <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#editor-in-chief-eic-role-responsibilities">Editor in Chief (EiC) role &amp; responsibilities</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#the-editor-in-chief-fulfills-the-following-roles">The Editor in Chief fulfills the following roles:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#manage-incoming-reviews">1. Manage incoming reviews</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#manage-pre-submission-inquiries">2. Manage pre-submission inquiries</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#monitor-review-progress">3. Monitor review progress</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#monitor-package-maintenance">4. Monitor package maintenance</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#support-eic-transition">5. Support EiC transition</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#editor-in-chief-checklist">Editor in Chief checklist</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tag-the-issue-with-0-pre-review-checks-tag-in-github">1. ✔️ Tag the issue with <code class="docutils literal notranslate"><span class="pre">0/pre-review-checks</span></code> tag in GitHub</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#add-the-editor-checks-to-the-issue">2. ✔️ Add the editor checks to the issue</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tag-the-issue-with-the-0-pre-review-checks-label-in-github">1. ✔️ Tag the issue with the <code class="docutils literal notranslate"><span class="pre">0/pre-review-checks</span></code> label in GitHub</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#add-a-partner-tag-if-the-author-selected-a-partner-affiliation">2. ✔️ Add a partner tag if the author selected a partner affiliation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#add-the-pre-review-checks-to-the-issue">3. ✔️ Add the pre-review checks to the issue</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#editor-checklist-template">Editor-in-chief checklist</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ensure-that-the-package-onboarding-survey-is-filled-out">3. ✔️ Ensure that the package onboarding survey is filled out.</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#assign-an-editor-to-the-issue-to-manage-the-rest-of-the-review-and-tag-the-issue-with-the-1-editor-assigned-tag-in-github">4. ✔️ Assign an editor to the issue to manage the rest of the review and tag the issue with the <code class="docutils literal notranslate"><span class="pre">1/editor-assigned</span></code> tag in GitHub</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#update-the-yaml-header-of-the-issue">5. ✔️ Update the YAML header of the issue</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ensure-that-the-package-onboarding-survey-is-complete">4. ✔️ Ensure that the package onboarding survey is complete</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#assign-an-editor-and-add-the-1-editor-assigned-label-to-the-github-issue">5. ✔️  Assign an editor and add the <code class="docutils literal notranslate"><span class="pre">1/editor-assigned</span></code> label to the GitHub issue</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#update-the-yaml-header">6. ✔️ Update the YAML header</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#a-note-about-submissions-that-are-incomplete-or-vague">A note about submissions that are incomplete or vague</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#handling-submissions-that-are-incomplete-or-vague">Handling submissions that are incomplete or vague</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#addressing-challenges-in-the-review-process">Addressing challenges in the review process</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#keeping-the-review-process-moving-forward">Keeping the review process moving forward</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#keeping-track-of-reviews-that-need-editors">Keeping track of reviews that need editors</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to-handle-stalled-reviews">How to handle stalled reviews</a></li>
+</ul>
+</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#responding-to-out-of-scope-submissions">Responding to out-of-scope submissions</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#stepping-down-from-the-eic-role">Stepping down from the EiC role</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#share-your-reflections">Share your reflections</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#eic-transition-checklist">EiC Transition Checklist</a></li>
+</ul>
+</li>
 </ul>
   </nav></div>
 
@@ -803,8 +979,8 @@ warranted that can take place within the issue.</p>
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../_static/scripts/bootstrap.js?digest=5b4479735964841361fd"></script>
-<script src="../_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd"></script>
+  <script defer src="../_static/scripts/bootstrap.js?digest=26a4bc78f4c0ddb94549"></script>
+<script defer src="../_static/scripts/pydata-sphinx-theme.js?digest=26a4bc78f4c0ddb94549"></script>
 
   <footer class="bd-footer">
 <div class="bd-footer__inner bd-page-width">
