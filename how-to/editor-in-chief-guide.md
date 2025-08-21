@@ -295,3 +295,12 @@ Before stepping down, write a summary of:
 
 Post your reflection in the `#private-editorial-team` Slack channel or share it with
 the peer review lead directly.
+
+### EiC Transition Checklist
+
+- [ ] Set calendar reminder 3 weeks before term end
+- [ ] Contact peer review lead about successor
+- [ ] Document active reviews and their status  
+- [ ] Hand off any reviews you're personally handling
+- [ ] Write reflection summary
+- [ ] Schedule handoff meeting with incoming EiC
