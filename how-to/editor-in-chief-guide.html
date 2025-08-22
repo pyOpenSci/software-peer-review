@@ -575,17 +575,17 @@ responding to out-of-scope pre-submissions.</p>
 <section id="tag-the-issue-with-the-0-pre-review-checks-label-in-github">
 <h3>1. ✔️ Tag the issue with the <code class="docutils literal notranslate"><span class="pre">0/pre-review-checks</span></code> label in GitHub<a class="headerlink" href="#tag-the-issue-with-the-0-pre-review-checks-label-in-github" title="Link to this heading">#</a></h3>
 </section>
-<section id="add-a-partner-tag-if-the-author-selected-a-partner-affiliation">
-<h3>2. ✔️ Add a partner tag if the author selected a partner affiliation<a class="headerlink" href="#add-a-partner-tag-if-the-author-selected-a-partner-affiliation" title="Link to this heading">#</a></h3>
+<section id="add-a-partner-label-to-the-issue-if-the-author-selected-a-partner-affiliation">
+<h3>2. ✔️ Add a partner label to the issue if the author selected a partner affiliation<a class="headerlink" href="#add-a-partner-label-to-the-issue-if-the-author-selected-a-partner-affiliation" title="Link to this heading">#</a></h3>
 <p>pyOpenSci supports
 <a class="reference internal" href="../partners/scientific-communities.html#partner-communities"><span class="std std-ref">partnerships with other communities</span></a>. Astropy is our only active partner.</p>
-<p>If the author selects a partner in the submission template,</p>
+<p>If the author selects a partner in the software submission template,</p>
 <ol class="arabic simple">
-<li><p>Notify an editor from that community that a review may be forthcoming. — they will typically take
+<li><p>Notify an editor from that community that a review may be forthcoming. They will typically take
 the lead on that review.</p></li>
-<li><p>Add the appropriate partner label to the issue.</p></li>
+<li><p>Add the <strong>appropriate partner label</strong> to the issue. Example <code class="docutils literal notranslate"><span class="pre">Astropy</span></code>.</p></li>
 </ol>
-<p>The partner section of the submission looks like this:</p>
+<p>The partner section of the software submission form looks like this:</p>
 <div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span><span class="gu">## Community Partnerships</span>
 If your package is associated with an
 existing community, please check below:
@@ -633,15 +633,15 @@ to work on them before the review process begins.
 Please check our [<span class="nt">Python packaging guide</span>](<span class="na">https://www.pyopensci.org/python-package-guide</span>) for more information on the elements
 below.
 
-<span class="k">- [ ]</span> <span class="gs">**Installation**</span> The package can be installed from a community repository such as PyPI (preferred), and/or a community channel on conda (e.g. conda-forge, bioconda).
+<span class="k">- [ ]</span> <span class="gs">**Installation**</span> The package can be installed from a community repository such as PyPI (preferred), and/or a community channel on conda (e.g., conda-forge, bioconda).
 <span class="w">  </span><span class="k">- [ ]</span> The package imports properly into a standard Python environment <span class="sb">`import package`</span>.
 <span class="k">- [ ]</span> <span class="gs">**Fit**</span> The package meets criteria for [<span class="nt">fit</span>](<span class="na">https://www.pyopensci.org/software-peer-review/about/package-scope.html#what-types-of-packages-does-pyopensci-review</span>) and [<span class="nt">overlap</span>](<span class="na">https://www.pyopensci.org/software-peer-review/about/package-scope.html#package-overlap</span>).
-<span class="k">- [ ]</span> <span class="gs">**Documentation**</span> The package has sufficient online documentation to allow us to evaluate package function and scope <span class="ge">*without installing the package*</span>. This includes:
+<span class="k">- [ ]</span> <span class="gs">**Documentation**</span> The package has sufficient online documentation to allow us to evaluate the package&#39;s function and scope <span class="ge">*without installing the package*</span>. This includes:
 <span class="w">  </span><span class="k">- [ ]</span> User-facing documentation that overviews how to install and start using the package.
-<span class="w">  </span><span class="k">- [ ]</span> Short tutorials that help a user understand how to use the package and what it can do for them.
-<span class="w">  </span><span class="k">- [ ]</span> API documentation (documentation for your code&#39;s functions, classes, methods and attributes): this includes clearly written docstrings with variables defined using a standard docstring format.
+<span class="w">  </span><span class="k">- [ ]</span> Short quickstart tutorials that help a user understand how to use the package and what it can do for them.
+<span class="w">  </span><span class="k">- [ ]</span> API documentation (documentation for your code&#39;s functions, classes, methods, and attributes): this includes clearly written docstrings with variables defined using a standard docstring format.
 <span class="k">- [ ]</span> Core GitHub repository Files
-<span class="w">  </span><span class="k">- [ ]</span> <span class="gs">**README**</span> The package has a <span class="sb">`README.md`</span> file with clear explanation of what the package does, instructions on how to install it, and a link to development instructions.
+<span class="w">  </span><span class="k">- [ ]</span> <span class="gs">**README**</span> The package has a <span class="sb">`README.md`</span> file with a clear explanation of what the package does, instructions on how to install it, and a link to development instructions.
 <span class="w">  </span><span class="k">- [ ]</span> <span class="gs">**Contributing File**</span> The package has a <span class="sb">`CONTRIBUTING.md`</span> file that details how to install and contribute to the package.
 <span class="w">  </span><span class="k">- [ ]</span> <span class="gs">**Code of Conduct**</span> The package has a <span class="sb">`CODE_OF_CONDUCT.md`</span> file.
 <span class="w">  </span><span class="k">- [ ]</span> <span class="gs">**License**</span> The package has an [<span class="nt">OSI approved license</span>](<span class="na">https://opensource.org/licenses</span>).
@@ -653,10 +653,12 @@ NOTE: We prefer that you have development instructions in your documentation too
 <span class="k">- [ ]</span> <span class="gs">**Archive**</span> (JOSS only, may be post-review): The repository DOI resolves correctly.
 <span class="k">- [ ]</span> <span class="gs">**Version**</span> (JOSS only, may be post-review): Does the release version given match the GitHub release (v1.0.0)?
 
+<span class="gs">**Optional:**</span> Let projects know that it&#39;s a great idea for projects to have a .github repository for the project organization where they can host a commonly used LICENSE, Code of Conduct, and even a YAML file with label definitions. These items will then be automatically applied to every repository in the organization to ensure consistency (but can be customized within repos too). The [<span class="nt">SunPy project</span>](<span class="na">https://github.com/sunpy/.github/</span>) has a great example of this.
+
 ---
 <span class="k">- [ ]</span> [<span class="nt">Initial onboarding survey was filled out </span>](<span class="na">https://forms.gle/F9mou7S3jhe8DMJ16</span>)
 We appreciate each maintainer of the package filling out this survey individually. :raised_hands:
-<span class="gu">Thank you authors in advance for setting aside five to ten minutes to do this. It truly helps our organization. :raised_hands:</span>
+<span class="gu">Thank you, authors, in advance for setting aside five to ten minutes to do this. It truly helps our organization. :raised_hands:</span>
 <span class="gu">---</span>
 
 *******
@@ -899,7 +901,7 @@ the peer review lead directly.</p>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#editor-in-chief-checklist">Editor in Chief checklist</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tag-the-issue-with-the-0-pre-review-checks-label-in-github">1. ✔️ Tag the issue with the <code class="docutils literal notranslate"><span class="pre">0/pre-review-checks</span></code> label in GitHub</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#add-a-partner-tag-if-the-author-selected-a-partner-affiliation">2. ✔️ Add a partner tag if the author selected a partner affiliation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#add-a-partner-label-to-the-issue-if-the-author-selected-a-partner-affiliation">2. ✔️ Add a partner label to the issue if the author selected a partner affiliation</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#add-the-pre-review-checks-to-the-issue">3. ✔️ Add the pre-review checks to the issue</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#editor-checklist-template">Editor-in-chief checklist</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ensure-that-the-package-onboarding-survey-is-complete">4. ✔️ Ensure that the package onboarding survey is complete</a></li>
