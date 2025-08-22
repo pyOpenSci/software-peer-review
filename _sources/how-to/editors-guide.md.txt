@@ -115,11 +115,21 @@ referenced multiple times in the steps below:
 
 ```
 
-### ✔️ 1. First, tag the submission issue on GitHub
+### ✔️ 1. First, tag the submission issue on GitHub & assign yourself to the issue
 
 Once you begin the review process as an editor:
 
 - Tag the submitted GitHub issue with the `1/editor-checks` tag if it hasn't already been tagged by the editor-in-chief.
+- Make sure that you are assigned to the issue on GitHub (ie, your name is on the right-hand side of the issue as the person running it).
+
+:::{figure-md} assign-editor
+
+<img src="../images/assign-issue.png" alt="Screenshot showing the right-hand side of a GitHub issue with the editor assigned to the issue." width="700px">
+
+Make sure that your name is both listed in the YAML at the top of the issue and also that you are assigned to the issue on GitHub (on the right-hand side of the issue).
+:::
+
+
 - Check the YAML template at top of the submitted GitHub issue, make sure that mandatory parts of the template are filled out.
   - If elements are incomplete, direct the authors toward filling in any missing pieces.
 
@@ -135,17 +145,17 @@ Version submitted: VERSION-SUBMITTED
 ```{admonition} Editor in Chief checks for structure & scope should be completed first
 :class: note
 
-The editor in chief who initially engaged with this review should have already evaluated the package level Editor Checks section for `Fit`, `Automated Tests`, `Documentation`, `License`, and `Repository`.
+The editor in chief who initially engaged with this review should have already evaluated the package-level Editor Checks section for `Fit`, `Automated Tests`, `Documentation`, `License`, and `Repository`.
 
 They also should have checked whether the package is [in scope for pyOpenSci](../about/package-scope).
 And whether there is [functionality overlap with functionality of any other existing Python packages](package-overlap).
 
-However, in some instances the editor-in-chief may request that an editor
-perform these tasks. Be sure to check the issue to ensure the above checks have been implemented prior to initiating the review.
+However, in some instances, the editor-in-chief may request that an editor
+perform these tasks. Be sure to check the issue to ensure the above checks have been implemented before initiating the review.
 
 If the package does not fit the pyOpenSci scope and policies and needs to be
 rejected, see
-[this section in the editor in chief guide](editor-in-chief-guide.md#responding-to-out-of-scope-submissions)
+[this section in the editor-in-chief guide](editor-in-chief-guide.md#responding-to-out-of-scope-submissions)
 about how to respond.
 ```
 
@@ -257,6 +267,7 @@ ensure that things are moving smoothly:
 - Check in with reviewers and authors occasionally. Offer clarification and help as needed.
 - Aim for ~3 weeks for review, 2 weeks for subsequent changes, and 1 week for reviewer approval of changes.
 - If a review has not been submitted after 2 weeks, ping the reviewer(s) within the review issue to ensure they are aware of the 3-week deadline.
+- If you are waiting for a maintainer to respond to you, be sure to add the label `pending-maintainer-response` to the issue.
 
 ### ✔️ 5. What to do when reviews are in
 

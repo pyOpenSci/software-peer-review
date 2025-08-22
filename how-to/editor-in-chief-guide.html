@@ -569,8 +569,22 @@ responding to out-of-scope pre-submissions.</p>
 </div>
 </section>
 </section>
-<section id="editor-in-chief-checklist">
-<h2>Editor in Chief checklist<a class="headerlink" href="#editor-in-chief-checklist" title="Link to this heading">#</a></h2>
+<section id="editor-in-chief-pre-review-submission-checklist">
+<h2>Editor in Chief pre-review submission checklist<a class="headerlink" href="#editor-in-chief-pre-review-submission-checklist" title="Link to this heading">#</a></h2>
+<p>The EiC is also responsible for determining the scope of packages submitted via a pre-submission inquiry.</p>
+<p>The steps include:</p>
+<ol class="arabic simple">
+<li><p><strong>Determine if the package is in scope for review:</strong> Have a look at the pre-submission inquiry. Use our <a class="reference external" href="https://www.pyopensci.org/software-peer-review/about/package-scope.html">project scope page</a> to determine whether that package is in scope for pyOpenSci review.</p></li>
+<li><p>If the package is in scope, add the <code class="docutils literal notranslate"><span class="pre">submission-requested</span></code> label to the pre-submission inquiry.</p></li>
+<li><p>Let the author know that <code class="docutils literal notranslate"><span class="pre">pre-review</span></code> checks are next and will happen in the full submission issue. At this stage, it’s a good idea to let the author know that the package will undergo pre-review checks upon submission for review. You can share the <a class="reference internal" href="#editor-checklist-template"><span class="std std-ref">pre-review checks template with the author at this time if you wish</span></a></p></li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>It is OK to perform pre-review checks in the pre-review submission if you wish. However, for documentation purposes, you will need to perform them in the full submission issue, as that is what JOSS and other partners look at. Be sure that you aren’t duplicating your time!</p>
+</div>
+</section>
+<section id="editor-in-chief-peer-review-checklist">
+<h2>Editor in Chief peer review checklist<a class="headerlink" href="#editor-in-chief-peer-review-checklist" title="Link to this heading">#</a></h2>
 <p>When a new package is submitted for review, the Editor in Chief should:</p>
 <section id="tag-the-issue-with-the-0-pre-review-checks-label-in-github">
 <h3>1. ✔️ Tag the issue with the <code class="docutils literal notranslate"><span class="pre">0/pre-review-checks</span></code> label in GitHub<a class="headerlink" href="#tag-the-issue-with-the-0-pre-review-checks-label-in-github" title="Link to this heading">#</a></h3>
@@ -597,6 +611,8 @@ existing community, please check below:
 </section>
 <section id="add-the-pre-review-checks-to-the-issue">
 <span id="pre-review-checks"></span><h3>3. ✔️ Add the pre-review checks to the issue<a class="headerlink" href="#add-the-pre-review-checks-to-the-issue" title="Link to this heading">#</a></h3>
+<p>When you add <code class="docutils literal notranslate"><span class="pre">pre-review</span></code> checks to the issue, remove the <code class="docutils literal notranslate"><span class="pre">New</span> <span class="pre">Submission!</span></code> label from the issue.
+This lets people know that someone is working on the issue and moving it forward.</p>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
 <p>Post your complete pre-review/editor checks in <strong>one single comment</strong>, rather than in multiple
@@ -620,8 +636,8 @@ review</strong>. In many cases, going through this process improves the package 
 <li><p>Another editor has relevant domain or technical expertise.</p></li>
 </ul>
 </section>
-<section id="editor-checklist-template">
-<span id="id1"></span><h3>Editor-in-chief checklist<a class="headerlink" href="#editor-checklist-template" title="Link to this heading">#</a></h3>
+<section id="editor-in-chief-checklist">
+<span id="editor-checklist-template"></span><h3>Editor-in-chief checklist<a class="headerlink" href="#editor-in-chief-checklist" title="Link to this heading">#</a></h3>
 <p>Copy the template below and use it in the review issue.</p>
 <div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span><span class="gu">## Editor in Chief checks</span>
 
@@ -684,8 +700,8 @@ are done, it’s time to assign an editor.</p>
 to check which editors are currently available and what domains those editors are familiar with.</p>
 <p>Once you’ve selected an editor:</p>
 <ol class="arabic simple">
-<li><p>Assign the issue to them in GitHub</p></li>
-<li><p>Update the YAML at the top of the issue with their GitHub username</p></li>
+<li><p><strong>Assign the issue to that editor in GitHub</strong> This step helps us keep track of who is running which reviews. Please do not forget to do this!</p></li>
+<li><p>Update the editor section of the YAML at the top of the issue with their GitHub username</p></li>
 <li><p>Add the <code class="docutils literal notranslate"><span class="pre">1/editor-assigned</span></code> label to the issue</p></li>
 </ol>
 <div class="admonition note">
@@ -899,11 +915,12 @@ the peer review lead directly.</p>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#support-eic-transition">5. Support EiC transition</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#editor-in-chief-checklist">Editor in Chief checklist</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#editor-in-chief-pre-review-submission-checklist">Editor in Chief pre-review submission checklist</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#editor-in-chief-peer-review-checklist">Editor in Chief peer review checklist</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tag-the-issue-with-the-0-pre-review-checks-label-in-github">1. ✔️ Tag the issue with the <code class="docutils literal notranslate"><span class="pre">0/pre-review-checks</span></code> label in GitHub</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#add-a-partner-label-to-the-issue-if-the-author-selected-a-partner-affiliation">2. ✔️ Add a partner label to the issue if the author selected a partner affiliation</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#add-the-pre-review-checks-to-the-issue">3. ✔️ Add the pre-review checks to the issue</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#editor-checklist-template">Editor-in-chief checklist</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#editor-in-chief-checklist">Editor-in-chief checklist</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ensure-that-the-package-onboarding-survey-is-complete">4. ✔️ Ensure that the package onboarding survey is complete</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#assign-an-editor-and-add-the-1-editor-assigned-label-to-the-github-issue">5. ✔️  Assign an editor and add the <code class="docutils literal notranslate"><span class="pre">1/editor-assigned</span></code> label to the GitHub issue</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#update-the-yaml-header">6. ✔️ Update the YAML header</a></li>

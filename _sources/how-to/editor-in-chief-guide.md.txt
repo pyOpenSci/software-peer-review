@@ -96,7 +96,21 @@ responding to out-of-scope pre-submissions.
 If the EiC has limited time to handle [pre-review checks](pre-review-checks) for a package, a conflict of interest, or lacks relevant expertise, they may ask another editor to perform initial checks on a package at any time.
 :::
 
-## Editor in Chief checklist
+## Editor in Chief pre-review submission checklist
+
+The EiC is also responsible for determining the scope of packages submitted via a pre-submission inquiry.
+
+The steps include:
+
+1. **Determine if the package is in scope for review:** Have a look at the pre-submission inquiry. Use our [project scope page](https://www.pyopensci.org/software-peer-review/about/package-scope.html) to determine whether that package is in scope for pyOpenSci review.
+2. If the package is in scope, add the `submission-requested` label to the pre-submission inquiry.
+3. Let the author know that `pre-review` checks are next and will happen in the full submission issue. At this stage, it's a good idea to let the author know that the package will undergo pre-review checks upon submission for review. You can share the [pre-review checks template with the author at this time if you wish](editor-checklist-template)
+
+:::{note}
+It is OK to perform pre-review checks in the pre-review submission if you wish. However, for documentation purposes, you will need to perform them in the full submission issue, as that is what JOSS and other partners look at. Be sure that you aren't duplicating your time!
+:::
+
+## Editor in Chief peer review checklist
 
 When a new package is submitted for review, the Editor in Chief should:
 
@@ -126,6 +140,9 @@ existing community, please check below:
 
 (pre-review-checks)=
 ### 3. ✔️ Add the pre-review checks to the issue
+
+When you add `pre-review` checks to the issue, remove the `New Submission!` label from the issue.
+This lets people know that someone is working on the issue and moving it forward.
 
 :::{important}
 Post your complete pre-review/editor checks in **one single comment**, rather than in multiple
@@ -179,8 +196,8 @@ to check which editors are currently available and what domains those editors ar
 
 Once you’ve selected an editor:
 
-1. Assign the issue to them in GitHub
-2. Update the YAML at the top of the issue with their GitHub username
+1. **Assign the issue to that editor in GitHub** This step helps us keep track of who is running which reviews. Please do not forget to do this!
+2. Update the editor section of the YAML at the top of the issue with their GitHub username
 3. Add the `1/editor-assigned` label to the issue
 
 :::{note}
