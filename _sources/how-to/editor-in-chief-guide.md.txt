@@ -125,7 +125,6 @@ existing community, please check below:
 ```
 
 (pre-review-checks)=
-
 ### 3. ✔️ Add the pre-review checks to the issue
 
 :::{important}
@@ -153,7 +152,6 @@ The EiC may ask another editor to complete the checks if:
 * Another editor has relevant domain or technical expertise.
 
 (editor-checklist-template)=
-
 ### Editor-in-chief checklist
 
 Copy the template below and use it in the review issue.
@@ -312,12 +310,7 @@ As your term ends, help onboard the next Editor in Chief.
 * Set a calendar reminder 2–3 weeks before your term ends and begin to communicate with the incoming editor-in-chief about the transition.
 * Craft a summary of where peer review is, and where the incoming Editor in Chief will need to pick up.
 * Let the Peer Review Lead know that a transition is coming soon so they can support as needed.
-<<<<<<< HEAD
-* If you can, try to be available after your term has ended to answer questions and support a smooth transition for the new editor in chief
-=======
 * If you can, try to be available after your term has ended to answer questions and support a smooth transition for the new Editor in Chief
-
->>>>>>> 2f46a28 (ENH: Fix more typos)
 
 :::{important}
 If you are leading any active reviews as EiC, you must hand them off to the
