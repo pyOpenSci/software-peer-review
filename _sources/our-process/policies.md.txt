@@ -54,7 +54,6 @@ submit it to pyOpenSci for review. This provides:
   find a new maintainer and/or help sunset the tool.
 
 (coi)=
-
 ## Conflict of interest for reviews and editors
 
 Following criteria are meant to be a guide for what constitutes a conflict of
@@ -85,14 +84,16 @@ At any time, an author can choose to have their submission put on hold
 status will be revisited every 3 months. If after one year there has been
 no movement on the review, the issue will be closed.
 
+(post-review-process)=
 ## After acceptance: package ownership and maintenance
 
 Package authors are expected to maintain and develop their software and
 retain
-ownership of it after acceptance into pyOpenSci, as per the peer review
+ownership of it after acceptance into pyOpenSci, according to the peer review
 agreement acknowledged upon submission. This maintenance commitment should
 last for at least two years. The pyOpenSci team will not interfere with
-day-to-day tool maintenance unless explicitly added as collaborators.
+day-to-day tool maintenance unless someone in the community is explicitly added as
+a project collaborator.
 
 If you need to step down from maintaining your accepted pyOpenSci package,
 please promptly notify the pyOpenSci Editor-in-Chief or Software Review Lead.
@@ -119,7 +120,6 @@ flagged. At that time, pyOpenSci editorial team member will contact the package
 maintainers to evaluate the maintenance status of their package.
 
 (archive-process)=
-
 ### Package maintenance and maintainer responsiveness
 
 If, after one year, package maintainers are unresponsive to requests for
@@ -127,9 +127,9 @@ package fixes or messages from the pyOpenSci team, we will initiate
 discussions about the package's ongoing inclusion within the pyOpenSci
 ecosystem.
 
-In cases where a package is heavily used by the community, we may
+In cases where the community heavily uses a package, we may
 collaborate with the community to identify reasonable next steps, such as
-assisting in finding a new maintainer. If a solution for ongoing package
+assisting in finding a new maintainer. If a solution for the ongoing package
 maintenance is not found, the package will be archived within the pyOpenSci
 ecosystem.
 
@@ -138,9 +138,12 @@ working with the new maintainers to register the newly forked package within
 our ecosystem. The original package will be archived with a link to the new
 fork.
 
+We will also add a note to any blogs written that highlight your tool that
+the package is no longer maintained.
+
 ### Quality commitment
 
-pyOpenSci strives to develop and promote high quality research software. To
+pyOpenSci strives to develop and promote high-quality research software. To
 ensure that your software meets our criteria, we review all of our submissions
 as part of the Software Peer Review process. We expect that you will continue
 to maintain a package that has been accepted continually.
