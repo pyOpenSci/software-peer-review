@@ -102,18 +102,18 @@ When a new package is submitted for review, the Editor in Chief should:
 
 ### 1. ✔️ Tag the issue with the `0/pre-review-checks` label in GitHub
 
-### 2. ✔️ Add a partner tag if the author selected a partner affiliation
+### 2. ✔️ Add a partner label to the issue if the author selected a partner affiliation
 
 pyOpenSci supports
 [partnerships with other communities](partner-communities). Astropy is our only active partner.
 
-If the author selects a partner in the submission template,
+If the author selects a partner in the software submission template,
 
-1. Notify an editor from that community that a review may be forthcoming. — they will typically take
+1. Notify an editor from that community that a review may be forthcoming. They will typically take
 the lead on that review.
-2. Add the appropriate partner label to the issue.
+2. Add the **appropriate partner label** to the issue. Example `Astropy`.
 
-The partner section of the submission looks like this:
+The partner section of the software submission form looks like this:
 
 ```markdown
 ## Community Partnerships
