@@ -247,7 +247,7 @@ If you'd like to submit your package to JOSS, you can do so now. Remember that J
 
 ### Journal of Open Source Software (JOSS) Submission
 
-pyOpenSci has a [partnership with JOSS](joss), where our review is accepted by JOSS by
+pyOpenSci has a [partnership with JOSS](JOSS), where our review is accepted by JOSS by
 default if the package fits into the JOSS scope.
 
 - When you submit your package for pyOpenSci review, you can opt to include a
