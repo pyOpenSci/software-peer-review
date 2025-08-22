@@ -1,6 +1,6 @@
 # <img src="https://www.pyopensci.org/software-peer-review/_static/logo-dark-mode.png" width=200 /> pyOpenSci Peer Review Guide
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-42-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-43-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 ![GitHub release (latest by date)](https://img.shields.io/github/v/release/pyopensci/peer-review-guide?color=purple&display_name=tag&style=plastic)
@@ -144,6 +144,9 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
       <td align="center" valign="top" width="16.66%"><a href="https://thecoatlessprofessor.com"><img src="https://avatars.githubusercontent.com/u/833642?v=4?s=100" width="100px;" alt="James J Balamuta"/><br /><sub><b>James J Balamuta</b></sub></a><br /><a href="https://github.com/pyOpenSci/software-peer-review/commits?author=coatless" title="Code">💻</a> <a href="https://github.com/pyOpenSci/software-peer-review/pulls?q=is%3Apr+reviewed-by%3Acoatless" title="Reviewed Pull Requests">👀</a></td>
       <td align="center" valign="top" width="16.66%"><a href="https://github.com/jonas-eschle"><img src="https://avatars.githubusercontent.com/u/17454848?v=4?s=100" width="100px;" alt="Jonas Eschle"/><br /><sub><b>Jonas Eschle</b></sub></a><br /><a href="https://github.com/pyOpenSci/software-peer-review/pulls?q=is%3Apr+reviewed-by%3Ajonas-eschle" title="Reviewed Pull Requests">👀</a></td>
       <td align="center" valign="top" width="16.66%"><a href="https://github.com/InessaPawson"><img src="https://avatars.githubusercontent.com/u/43481325?v=4?s=100" width="100px;" alt="Inessa Pawson"/><br /><sub><b>Inessa Pawson</b></sub></a><br /><a href="https://github.com/pyOpenSci/software-peer-review/commits?author=InessaPawson" title="Code">💻</a> <a href="https://github.com/pyOpenSci/software-peer-review/pulls?q=is%3Apr+reviewed-by%3AInessaPawson" title="Reviewed Pull Requests">👀</a></td>
+    </tr>
+    <tr>
+      <td align="center" valign="top" width="16.66%"><a href="https://eliotwrobson.github.io/"><img src="https://avatars.githubusercontent.com/u/1345068?v=4?s=100" width="100px;" alt="Eliot Robson"/><br /><sub><b>Eliot Robson</b></sub></a><br /><a href="https://github.com/pyOpenSci/software-peer-review/pulls?q=is%3Apr+reviewed-by%3Aeliotwrobson" title="Reviewed Pull Requests">👀</a></td>
     </tr>
   </tbody>
 </table>
