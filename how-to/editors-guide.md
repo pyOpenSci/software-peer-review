@@ -20,7 +20,7 @@ There are two types of editors involved in our open peer review process:
 - Full editors
 
 Both types of editors are considered a part of the editorial board for
-pyOpenSci. The significant difference between guest and full editors are:
+pyOpenSci. The significant differences between guest and full editors are:
 
 - A guest editor may only join the board for a single review.
 - A guest editor may be new to pyOpenSci's review process and thus require a bit more support in their first review.
@@ -32,7 +32,7 @@ case where we need specific expertise for a single review. We also consider edit
 performing their first review as guest editors, as they may require more
 guidance or mentorship to complete the review (if they are new to our organization).
 
-New editors who wish to continue on as full editors for pyOpenSci may do so
+New editors who wish to continue as full editors for pyOpenSci may do so
 as long as both parties (pyOpenSci and the guest editors) feel like it is a
 healthy fit for them and the organization.
 
@@ -90,12 +90,12 @@ If the Editor in Chief role feels like too much responsibility, an editor can al
 
 ## How long does an editor serve on the editorial board?
 
-Ideally an editor can commit to serving for **at least** one year as an editor
-for pyOpenSci. During that year we expect that you will lead review of 3-4 packages. However, we understand that in certain situations, an editor
+Ideally, an editor can commit to serving for **at least** one year as an editor
+for pyOpenSci. During that year, we expect that you will lead the review of 3-4 packages. However, we understand that in certain situations, an editor
 may need to step down before the 1 year time period has ended.
 
-We also understand that life gets busy and you are always welcome to "say no"
-to a review during a particularly busy time.
+We also understand that life gets busy. You are always welcome to "say no"
+to a review during a busy time.
 
 We welcome
 editors staying on for longer as long as they are happy serving with us and
@@ -168,19 +168,19 @@ we are using our volunteer reviewer time effectively.
 structure, request changes before assigning reviewers.**
 ```
 
-### ✔️ 3. Identify scientific Python package reviewers
+### ✔️ 3. Identify reviewers for the Python package
 
-Each review should have at least 2 reviewers.
+Each review should have at least two reviewers.
 
 - One reviewer should have expertise in both Python and the scientific domain related to the package submitted.
-- The second reviewer can be a more generally focused on the package's usability, accessibility and packaging infrastructure.
+- The second reviewer can be more generally focused on the package's usability, accessibility, and packaging infrastructure. This allows people who are newer to review to get involved while also providing a critical usability check for the package.
 
-A review consisting of a domain expert and a Pythonista is ideal as it provides two distinct perspectives for review. Further it can often be difficult to find two people with both the specific domain expertise AND packaging expertise.
+A review consisting of a domain expert and a Pythonista is ideal as it provides two distinct perspectives for review. Furthermore, it can often be challenging to find individuals with both the specific domain expertise and packaging expertise.
 
 #### Finding package reviewers
 
-Often times, finding reviewers for a package can be the trickiest part
-of the review process. Expect this to take a bit of time. [Check out this page for tips related to finding reviewers.](finding-reviewers)
+Oftentimes, finding reviewers for a package can be the trickiest part
+of the review process. Expect this step to take time and patience. [Check out this page for tips related to finding and onboarding reviewers.](finding-reviewers)
 
 If you can, try to find two people to serve as reviewers within **two weeks
 of responding to the issue as the editor**. If it takes longer, as
@@ -191,7 +191,7 @@ as you continue your search. You may add language such as:
 
 This type of communication just lets the author know that the process is
 moving forward. Even if it takes longer to find reviews, authors generally
-appreciate the communication and understand it's a volunteer-lead process.
+appreciate the communication and understand it's a volunteer-led process.
 
 ```{admonition} Diversity in the editorial & reviewer team is important
 :class: important
@@ -230,7 +230,7 @@ for pyOpenSci!`
 - Change the label on the issue to `3/reviewer(s)-assigned`
 
 ```{warning}
-Make sure to ask the reviewers for their preferred means of contact, or a reliable way to get in touch with them.
+Make sure to ask the reviewers for their preferred means of contact or a reliable way to get in touch with them.
 ```
 
 ### ✔️ 4. Onboard reviewers
@@ -285,7 +285,7 @@ review next time (for example, a package author who has already submitted packag
 In some cases, the reviewers get busy and stop responding to the issue. If a reviewer hasn't responded to a direct ping `@reviewer-user-name` on the issue, try to email them (if an email is available). If email doesn't work and they haven't responded in over a month, do the following:
 
 1. If they have already submitted a review, you can move the review forward by making sure the review comments were addressed by the author yourself.
-2. If the reviewer has not yet submitted a review in the issue, leave a note on the review that you will look for a new reviewer. When you find a new reviewer, replace the old reviewer's name with the new reviewer's name in the YAML at the top of the issue.
+2. If the reviewer has not yet submitted a review on the issue, leave a note on the review that you will look for a new reviewer. When you find a new reviewer, replace the old reviewer's name with the new reviewer's name in the YAML at the top of the issue.
 
 In some cases, you may be able to find an editor or reviewers in the pyOpenSci Slack community that can help move the review forward.
 
