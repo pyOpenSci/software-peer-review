@@ -436,6 +436,15 @@
         "code",
         "review"
       ]
+    },
+    {
+      "login": "eliotwrobson",
+      "name": "Eliot Robson",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1345068?v=4",
+      "profile": "https://eliotwrobson.github.io/",
+      "contributions": [
+        "review"
+      ]
     }
   ],
   "contributorsPerLine": 6,
