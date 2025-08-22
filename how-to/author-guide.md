@@ -188,7 +188,7 @@ Click here to view our technical and domain scope requirements.
 
 To submit your package for peer review, you can
 open an issue in our [pyopensci/software-review repo](https://github.com/pyOpenSci/software-review/issues/new/choose/)
-repository and fill out the [Submit Software for Review](https://github.com/pyOpenSci/software-review/issues/new?assignees=&labels=1%2Feditor-checks%2C+New+Submission%21&template=submit-software-for-review.md&title=) issue template.
+repository and fill out the [Submit Software for Review](https://github.com/pyOpenSci/software-submission/issues/new?template=submit-software-for-review.md) issue template.
 
 ## 5. Editor-in-Chief Reviews Package for Scope and Minimal Infrastructure Criteria
 
