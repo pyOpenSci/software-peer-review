@@ -64,8 +64,8 @@ We offer two pathways for packages previously reviewed by JOSS:
    through our pyOpenSci submission checklist to ensure all our specific requirements are met.
 
 2. Expedited Review (Editor + One Reviewer):
-   If your package's JOSS publication is over a year old or if it has had major changes as described above
-   since its JOSS publication, it will undergo an expedited review with one editor and one external reviewer.
+   If your package's JOSS publication is over a year old, or if it has had major changes as described above
+   since publication, it will undergo an expedited review with one editor and one external reviewer.
    The editor and reviewer will focus on any significant changes and ensure the package meets all current pyOpenSci
    standards. This approach reduces the burden of a full review while ensuring the quality of the package
    reflects its most recent version.
