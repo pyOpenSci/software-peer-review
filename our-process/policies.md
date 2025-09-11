@@ -51,6 +51,7 @@ Python ecosystem and access to our long-term maintenance support.
 
 Since your package has already undergone a JOSS review, we have a specific,
 expedited review process to streamline the submission process and save time.
+Once accepted, your package will be treated like any other package in our ecosystem.
 
 #### Expedited Review Process
 
@@ -68,8 +69,6 @@ We offer two pathways for packages previously reviewed by JOSS:
    The editor and reviewer will focus on any significant changes and ensure the package meets all current pyOpenSci
    standards. This approach reduces the burden of a full review while ensuring the quality of the package
    reflects its most recent version.
-
-We will also keep in touch with you as a maintainer to support long-term maintenance. If you need to step down from maintaining your package, we will help find a new maintainer and/or help sunset the tool.
 
 (coi)=
 
