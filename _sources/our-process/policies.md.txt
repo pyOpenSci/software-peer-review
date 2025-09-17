@@ -44,16 +44,34 @@ already published on `PyPI` or `conda-forge`.
 
 ### Publication with Journal of Open Source Software (JOSS)
 
-If you have previously published your software package with JOSS, you can still
-submit it to pyOpenSci for review. This provides:
+If you have previously published your software package with the Journal of Open
+Source Software (JOSS), you can still submit it to pyOpenSci for review. This
+provides increased visibility for your package as a vetted tool within the scientific
+Python ecosystem and access to our long-term maintenance support.
 
-- Increased visibility of your package as a vetted tool within the scientific Python
-  ecosystem
-- We will also keep in touch with you as a maintainer to support long-term
-  maintenance. If you need to step down from maintaining your package, we will help
-  find a new maintainer and/or help sunset the tool.
+Since your package has already undergone a JOSS review, we have a specific,
+expedited review process to streamline the submission process and save time.
+Once accepted, your package will be treated like any other package in our ecosystem.
+
+#### Expedited Review Process
+
+We offer two pathways for packages previously reviewed by JOSS:
+
+1. Fast-Track Review (Editor-Only):
+   Your package is eligible for this fast-track review if it has been published by
+   JOSS within the last year and has not undergone major changes in dependencies, design, or API
+   since its JOSS publication. In this case, an editor will conduct the review by going
+   through our pyOpenSci submission checklist to ensure all our specific requirements are met.
+
+2. Expedited Review (Editor + One Reviewer):
+   If your package's JOSS publication is over a year old, or if it has had major changes as described above
+   since publication, it will undergo an expedited review with one editor and one external reviewer.
+   The editor and reviewer will focus on any significant changes and ensure the package meets all current pyOpenSci
+   standards. This approach reduces the burden of a full review while ensuring the quality of the package
+   reflects its most recent version.
 
 (coi)=
+
 ## Conflict of interest for reviews and editors
 
 Following criteria are meant to be a guide for what constitutes a conflict of
@@ -85,6 +103,7 @@ status will be revisited every 3 months. If after one year there has been
 no movement on the review, the issue will be closed.
 
 (post-review-process)=
+
 ## After acceptance: package ownership and maintenance
 
 Package authors are expected to maintain and develop their software and
@@ -120,6 +139,7 @@ flagged. At that time, pyOpenSci editorial team member will contact the package
 maintainers to evaluate the maintenance status of their package.
 
 (archive-process)=
+
 ### Package maintenance and maintainer responsiveness
 
 If, after one year, package maintainers are unresponsive to requests for
