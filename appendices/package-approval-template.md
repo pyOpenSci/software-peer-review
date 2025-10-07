@@ -33,6 +33,7 @@ Please complete the final steps to wrap up this review. Editor, please do the fo
 - [ ] Change the status tag of the issue to `6/pyOS-approved6 🚀🚀🚀`.  (You can remove all other labels; If the the package is moving on to JOSS then add a JOSS label)
 - [ ] Update the header of this issue with the date accepted, the version accepted, and the accepted version DOI (from Zenodo) to the header of this issue.
 - [ ] Invite the package maintainer(s) and both reviewers to the pyOpenSci Slack.
+- [ ]  If the review is complete (not submitting to JOSS), close the issue when all items on this checklist are complete. If it's moving to JOSS, please close the issue once the JOSS review is complete and you've performed the task below.
 - [ ] If the author submits to JOSS, please continue to update the labels for JOSS on this issue until the author is accepted (do not remove the `6/pyOS-approved` label). Once accepted add the label `9/joss-approved` to the issue. Skip this check if the package is not submitted to JOSS.
 - [ ] If the package is JOSS-accepted please add the JOSS DOI to the YAML at the top of the issue.
 
