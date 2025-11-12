@@ -9,6 +9,7 @@ Reviewer Guide <reviewer-guide>
 Editor Guide <editors-guide>
 Editor-in-Chief Guide <editor-in-chief-guide>
 Triage Team Guide <review-triage-team>
+Peer Review Lead <peer-review-lead>
 :::
 
 ```{toctree}
@@ -271,7 +272,7 @@ are usually not accepted by JOSS. Be sure to review JOSS's
 before writing up a paper about your package.
 ```
 
-## Post review - welcome to the pyOpenSci community!
+## Post review - welcome to the pyOpenSci community
 
 Congratulations! Once your package has been accepted into the pyOpenSci ecosystem, you'll be invited to join our [community Slack](https://join.slack.com/t/pyopensci/shared_invite/zt-39qitgkqb-gZTIo79xCJhS5kSxW1yNfg) where you can connect with other package maintainers, get help with maintenance questions, and stay updated on community developments.
 
