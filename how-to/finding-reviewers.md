@@ -1,6 +1,7 @@
+(finding-reviewers)=
 # Finding Reviewers
 
-Sometimes the most challenging part of our pyOpenSci open peer review process
+Sometimes, the most challenging part of our pyOpenSci software peer review process
 is finding reviewers. This page provides tips and tricks to help you find the
 right people to review a scientific Python package.
 
@@ -35,13 +36,13 @@ up using our [reviewer signup form](https://docs.google.com/forms/d/e/1FAIpQLSeV
 
 ## Criteria for Choosing Reviewers
 
-Here are criteria to keep in mind when choosing a reviewer. You might need to
+Here are the key criteria to consider when selecting a reviewer. You might need to
 piece this information together by searching `PyPI`, `Conda` / `Conda-forge`
 and the potential reviewer’s GitHub page and general online presence (personal
 website, social media profiles).
 
 * Has not reviewed a package for us within the last 6 months.
-* Some package development / contribution experience.
+* Some package development/contribution experience.
 * Some domain experience in the field of the package or data source.
 * No [conflicts of interest](coi).
 
@@ -55,18 +56,18 @@ complexity of the package.
 * **Openness** - reviewers should also have demonstrated interest in open
   source or Python community activities, although blind emailing is fine.
 
-Each submission should be reviewed by _two_ package reviewers. Although it is
+Two package reviewers should review each submission. Although it is
 fine for one of them to have less package development experience and more
 domain knowledge, the review should not be split into two parts. Both
 reviewers need to review the package comprehensively, from their particular
-perspectives. In general, at least one reviewer should have prior reviewing
-experience, and of course inviting one new reviewer expands our pool of
+perspectives. If possible, at least one reviewer should have prior reviewing
+experience, and of course, inviting one new reviewer expands our pool of
 reviewers.
 
-Reviewers should ideally have some subject matter expertise associated with
+At least one reviewer of the two should have some subject matter expertise associated with
 the package functionality. It is ok and even welcome if one reviewer has more
-technical expertise and the other focuses on usability and is less technical.
-Read through the Guidelines for Reviewers Section to learn more about finding
+technical knowledge and the other focuses on usability and is less technical.
+Read through the [Guidelines for Reviewers Section](reviewer-guide-sphinx) to learn more about finding
 and selecting reviewers.
 
 (review-mentorship)=
@@ -74,7 +75,7 @@ and selecting reviewers.
 
 pyOpenSci encourages those who are newer to review to become involved in our
 open peer review process. As such, we offer a reviewer mentorship program
-where we pair a new reviewer with someone in the community that has previous
+where we pair a new reviewer with someone in the community who has previous
 review experience.
 
 It is useful for reviewers to not only review the technical content of a
