@@ -456,6 +456,16 @@
         "doc",
         "review"
       ]
+    },
+    {
+      "login": "jedbrown",
+      "name": "Jed Brown",
+      "avatar_url": "https://avatars.githubusercontent.com/u/3303?v=4",
+      "profile": "https://jedbrown.org",
+      "contributions": [
+        "doc",
+        "review"
+      ]
     }
   ],
   "contributorsPerLine": 6,
