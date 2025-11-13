@@ -7,14 +7,14 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
-<meta property="og:title" content="Finding Reviewers" />
+<meta property="og:title" content="Peer Review Lead Guide" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="how-to/finding-reviewers.html" />
+<meta property="og:url" content="how-to/peer-review-lead.html" />
 <meta property="og:site_name" content="pyOpenSci Python Package Guide" />
-<meta property="og:description" content="Sometimes, the most challenging part of our pyOpenSci software peer review process is finding reviewers. This page provides tips and tricks to help you find the right people to review a scientific ..." />
-<meta name="description" content="Sometimes, the most challenging part of our pyOpenSci software peer review process is finding reviewers. This page provides tips and tricks to help you find the right people to review a scientific ..." />
+<meta property="og:description" content="The Peer Review Lead is responsible for keeping the software review process moving forward. They are responsible for: Keeping the review process moving forward by checking in on stalled reviews and..." />
+<meta name="description" content="The Peer Review Lead is responsible for keeping the software review process moving forward. They are responsible for: Keeping the review process moving forward by checking in on stalled reviews and..." />
 
-    <title>Finding Reviewers &#8212; Software Peer Review Guide</title>
+    <title>Peer Review Lead Guide &#8212; Software Peer Review Guide</title>
   
   
   
@@ -56,13 +56,14 @@
     <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
     <script src="../_static/copybutton.js?v=f281be69"></script>
     <script src="../_static/design-tabs.js?v=f930bc37"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'how-to/finding-reviewers';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'how-to/peer-review-lead';</script>
     <script src="../_static/matomo.js?v=918da087"></script>
-    <link rel="canonical" href="https://www.pyopensci.org/software-peer-review/how-to/finding-reviewers.html" />
+    <link rel="canonical" href="https://www.pyopensci.org/software-peer-review/how-to/peer-review-lead.html" />
     <link rel="icon" href="https://www.pyopensci.org/images/favicon.ico"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="prev" title="Onboarding New Editors" href="onboarding-guide.html" />
+    <link rel="next" title="Onboarding New Editors" href="onboarding-guide.html" />
+    <link rel="prev" title="Editorial Review Triage Team" href="review-triage-team.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -399,18 +400,18 @@
      aria-label="Section Navigation">
   <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
   <div class="bd-toc-item navbar-nav"><p aria-level="2" class="caption" role="heading"><span class="caption-text">How To Guides</span></p>
-<ul class="nav bd-sidenav">
+<ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="author-guide.html">Author Guide</a></li>
 <li class="toctree-l1"><a class="reference internal" href="reviewer-guide.html">Reviewer Guide</a></li>
 <li class="toctree-l1"><a class="reference internal" href="editors-guide.html">Editor Guide</a></li>
 <li class="toctree-l1"><a class="reference internal" href="editor-in-chief-guide.html">Editor-in-Chief Guide</a></li>
 <li class="toctree-l1"><a class="reference internal" href="review-triage-team.html">Triage Team Guide</a></li>
-<li class="toctree-l1"><a class="reference internal" href="peer-review-lead.html">Peer Review Lead</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Peer Review Lead</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Onboarding Editors &amp; Reviewers</span></p>
-<ul class="current nav bd-sidenav">
+<ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="onboarding-guide.html">Finding &amp; Onboarding Editors</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Finding &amp; Onboarding Reviewers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="finding-reviewers.html">Finding &amp; Onboarding Reviewers</a></li>
 </ul>
 </div>
 </nav></div>
@@ -449,7 +450,7 @@
     
     <li class="breadcrumb-item"><a href="author-guide.html" class="nav-link">Guide for Python Package Authors &amp; Maintainers</a></li>
     
-    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">Finding Reviewers</span></li>
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">Peer Review Lead Guide</span></li>
   </ul>
 </nav>
 </div>
@@ -466,98 +467,62 @@
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="finding-reviewers">
-<span id="id1"></span><h1>Finding Reviewers<a class="headerlink" href="#finding-reviewers" title="Link to this heading">#</a></h1>
-<p>Sometimes, the most challenging part of our pyOpenSci software peer review process
-is finding reviewers. This page provides tips and tricks to help you find the
-right people to review a scientific Python package.</p>
-<section id="where-to-look-for-reviewers">
-<h2>Where to Look for Reviewers?<a class="headerlink" href="#where-to-look-for-reviewers" title="Link to this heading">#</a></h2>
-<p>As an editor, you can find reviewers through:</p>
+  <section id="peer-review-lead-guide">
+<h1>Peer Review Lead Guide<a class="headerlink" href="#peer-review-lead-guide" title="Link to this heading">#</a></h1>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>There are several resources that will help you with this role.
+Make sure that you have access to the:</p>
 <ul class="simple">
-<li><p>Suggestions made by the submitting package authors. We suggest only using
-one of the suggested reviewers if this is the case.</p></li>
-<li><p>Authors of existing <a class="reference external" href="https://www.pyopensci.org/python-packages/">pyOpenSci packages</a>.</p></li>
-<li><p>Other <a class="reference external" href="https://www.pyopensci.org/our-community/">pyOpenSci contributors</a>.</p></li>
+<li><p>shared Google folder that contains a list of editors and reviewers who have recently signed up to participate in our review process</p></li>
+<li><p>Check out our <a class="reference external" href="https://www.pyopensci.org/metrics/peer-review/peer-review-status-dashboard.html">peer review status dashboard</a> for the state of peer review</p></li>
+<li><p><a class="reference external" href="https://www.pyopensci.org/metrics/peer-review/editorial-dashboard.html">Check out our editorial dashboard</a> to get a sense of how many of our editors are busy, and who might be available to lead a review.</p></li>
+<li><p>Check out the current review status for the <a class="reference external" href="https://www.pyopensci.org/metrics/peer-review/current-review-status.html">current state of peer review</a></p></li>
 </ul>
-<p>When the above doesn’t work and you still need to find a reviewer:</p>
-<ul class="simple">
-<li><p>Check our reviewer sign-up spreadsheet for names of people who have already
-volunteered to review for pyOpenSci. The link for this document is pinned to
-the pyOpenSci Slack <code class="docutils literal notranslate"><span class="pre">#private-editorial-channel</span></code>.</p></li>
-<li><p>Ping other editors for ideas.</p></li>
-<li><p>Post in the pyOpenSci Slack <code class="docutils literal notranslate"><span class="pre">#software-review</span></code> channel.</p></li>
-<li><p>Look for users of the package or the data source/upstream service the
-package connects to (via their opening issues in the repository, starring
-it, citing it in papers, talking about it on social media).</p></li>
-<li><p>Search for authors/maintainers of related packages on <a class="reference external" href="https://pypi.org/search/">PyPI</a>.</p></li>
-<li><p>Coordinate with our Community Manager to post a call for reviewers on our
-pyOpenSci social channels.</p></li>
-</ul>
-<div class="admonition important">
-<p class="admonition-title">Important</p>
-<p>If you do a reviewer search, please be sure to have new reviewers first sign
-up using our <a class="reference external" href="https://docs.google.com/forms/d/e/1FAIpQLSeVf-L_1-jYeO84OvEE8UemEoCmIiD5ddP_aO8S90vb7srADQ/viewform">reviewer signup form</a>.</p>
 </div>
-</section>
-<section id="criteria-for-choosing-reviewers">
-<h2>Criteria for Choosing Reviewers<a class="headerlink" href="#criteria-for-choosing-reviewers" title="Link to this heading">#</a></h2>
-<p>Here are the key criteria to consider when selecting a reviewer. You might need to
-piece this information together by searching <code class="docutils literal notranslate"><span class="pre">PyPI</span></code>, <code class="docutils literal notranslate"><span class="pre">Conda</span></code> / <code class="docutils literal notranslate"><span class="pre">Conda-forge</span></code>
-and the potential reviewer’s GitHub page and general online presence (personal
-website, social media profiles).</p>
+<p>The Peer Review Lead is responsible for keeping the software review process moving forward. They are responsible for:</p>
 <ul class="simple">
-<li><p>Has not reviewed a package for us within the last 6 months.</p></li>
-<li><p>Some package development/contribution experience.</p></li>
-<li><p>Some domain experience in the field of the package or data source.</p></li>
-<li><p>No <a class="reference internal" href="../our-process/policies.html#coi"><span class="std std-ref">conflicts of interest</span></a>.</p></li>
+<li><p>Keeping the review process moving forward by checking in on stalled reviews and supporting the editorial team.</p></li>
+<li><p>Ensuring a diverse and active editorial board.</p></li>
+<li><p>Onboarding and offboarding new editors.</p></li>
+<li><p>Making updates to the <a class="reference external" href="https://www.pyopensci.org/software-peer-review/">pyOpenSci Software Peer Review Guide</a> as needed.</p></li>
+<li><p>Updating <a class="reference external" href="https://www.pyopensci.org/software-peer-review/our-process/policies.html">software peer review policies</a> as needed.</p></li>
+<li><p>Helping editors find reviewers as necessary.</p></li>
 </ul>
-<section id="reviewer-diversity-should-be-prioritized">
-<span id="reviewer-diversity"></span><h3>Reviewer Diversity Should Be Prioritized<a class="headerlink" href="#reviewer-diversity-should-be-prioritized" title="Link to this heading">#</a></h3>
-<p>Try to balance your sense of the potential reviewer’s experience against the
-complexity of the package.</p>
-<ul class="simple">
-<li><p><strong>Diversity:</strong> Try to find reviewers from different backgrounds and gender identities. For example, if you have two reviewers, only one should be a cis white male.</p></li>
-<li><p><strong>Openness</strong> - reviewers should also have demonstrated interest in open
-source or Python community activities, although blind emailing is fine.</p></li>
-</ul>
-<p>Two package reviewers should review each submission. Although it is
-fine for one of them to have less package development experience and more
-domain knowledge, the review should not be split into two parts. Both
-reviewers need to review the package comprehensively, from their particular
-perspectives. If possible, at least one reviewer should have prior reviewing
-experience, and of course, inviting one new reviewer expands our pool of
-reviewers.</p>
-<p>At least one reviewer of the two should have some subject matter expertise associated with
-the package functionality. It is ok and even welcome if one reviewer has more
-technical knowledge and the other focuses on usability and is less technical.
-Read through the <a class="reference internal" href="reviewer-guide.html#reviewer-guide-sphinx"><span class="std std-ref">Guidelines for Reviewers Section</span></a> to learn more about finding
-and selecting reviewers.</p>
+<p>This role will also help manage conflicts that may arise in the software peer review process.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The pyOpenSci Executive Director has historically held the lead role in peer review. However, we are transitioning this role to a stipend position, which a community volunteer with excellent organizational and communication skills will hold.</p>
+<p>Ideally, this person has experience with our peer review process as an editor or has been part of our community for some time and is familiar with the process.</p>
+</div>
+<section id="how-to-keep-peer-review-moving-forward">
+<h2>How to keep peer review moving forward<a class="headerlink" href="#how-to-keep-peer-review-moving-forward" title="Link to this heading">#</a></h2>
+<p>A volunteer editorial team runs software peer review; it also relies on volunteer community reviewers. As with any volunteer-led effort, it is common for the review process to stall or slow down.</p>
+<p>As Peer Review Lead, you should monitor the status of reviews and help editors move stalled reviews forward. Our <a class="reference external" href="https://www.pyopensci.org/metrics/peer-review/current-review-status.html">review status dashboard</a> will help you stay informed about the overall review process.</p>
+<p>Ideally, you should check in on peer reviews weekly or every other week, depending on the volume of reviews submitted. We anticipate that your time allocation in this role will be 4-8 hours a month. Some months may require additional hours if we are working on new policies. Others you may simply be checking in on the review process.</p>
+<p>Keep an eye on a few things when you check in:</p>
+<section id="dashboard-check-the-date-the-comment-date-for-every-review">
+<h3>1. Dashboard: check the date the comment date for every review<a class="headerlink" href="#dashboard-check-the-date-the-comment-date-for-every-review" title="Link to this heading">#</a></h3>
+<p>Before you begin, ensure the peer review dashboard is up to date. At the top of the dashboard, you will see the <strong>Last Updated</strong> date. The metrics repository has a cron job that runs weekly to update review status metrics. If the date at the top of the page is older than 1-2 weeks, likely, a pull request, <a class="reference external" href="https://github.com/pyOpenSci/metrics/pull/147">similar to this one</a> needs to be merged. Go ahead and merge that PR if one exists. If the dashboard date is old and there is no open PR to merge, our cron job has likely failed. In that case, please leave a note in our Slack <code class="docutils literal notranslate"><span class="pre">#pyos-infrastructure</span></code> channel. Our infrastructure lead can investigate and resolve any issues that arise with our build.</p>
+<img alt="Dashboard last updated date" src="../_images/peer-review-metrics-dashboard.png" />
 </section>
+<section id="check-in-on-prereview-checks">
+<h3>2. Check in on prereview checks<a class="headerlink" href="#check-in-on-prereview-checks" title="Link to this heading">#</a></h3>
+<p>Next, check in on the prereview checks by sorting the <a class="reference external" href="https://www.pyopensci.org/metrics/peer-review/current-review-status.html#all-open-reviews">all-open-reviews table</a> table on the <strong>Active_Status</strong> column. Sometimes our Editor in Chief becomes overwhelmed with too many submissions at once. It’s easy to forget that they are also able to <a class="reference internal" href="editor-in-chief-guide.html#pre-review-checks"><span class="std std-ref">delegate the prereview checks to another editor on the team</span></a> if they fall behind. You can remind them and even help them find other editors to step in if needed.</p>
 </section>
-<section id="peer-review-mentorship">
-<span id="review-mentorship"></span><h2>Peer Review Mentorship<a class="headerlink" href="#peer-review-mentorship" title="Link to this heading">#</a></h2>
-<p>pyOpenSci encourages those who are newer to review to become involved in our
-open peer review process. As such, we offer a reviewer mentorship program
-where we pair a new reviewer with someone in the community who has previous
-review experience.</p>
-<p>It is useful for reviewers to not only review the technical content of a
-package, but also to review the documentation and package installation process
-for usability.</p>
-<p>If a new reviewer is interested in becoming a reviewer but would like some
-support, do the following:</p>
-<ol class="arabic simple">
-<li><p>The Editor can lead the effort to find mentors for the new reviewers by posting in the <code class="docutils literal notranslate"><span class="pre">#software-review</span></code> Slack channel for help.</p></li>
-<li><p>If the Editor needs support in finding a mentor, they can contact the <strong>EiC</strong> or <strong>peer review lead</strong> for guidance.</p></li>
-</ol>
-<section id="once-a-mentor-is-identified">
-<h3>Once a Mentor is Identified<a class="headerlink" href="#once-a-mentor-is-identified" title="Link to this heading">#</a></h3>
-<ol class="arabic simple">
-<li><p>Invite the new reviewer to our pyOpenSci Slack.</p></li>
-<li><p>Start a private DM group chat with the new reviewer and the mentor(s) so
-they are introduced.</p></li>
-<li><p>Let the review proceed from there.</p></li>
-</ol>
+<section id="identify-and-check-in-on-stalled-reviews">
+<h3>3. Identify and check in on stalled reviews<a class="headerlink" href="#identify-and-check-in-on-stalled-reviews" title="Link to this heading">#</a></h3>
+<p>The <a class="reference external" href="https://www.pyopensci.org/metrics/peer-review/current-review-status.html#all-open-reviews">All Open Reviews</a> section of this page will also help you keep tabs on the current activity status of our reviews.</p>
+<p>Check out the <strong>The last date a comment was left on a review.</strong> You can sort the table by this column to see the date that someone last commented on the issue.</p>
+<p>If a review has been quiet for over a month, it’s a good idea to check in on things. You can either leave a note on the issue to see if anyone responds (this is ideal, as you can then track when someone responds to the issue or if you were the last person to respond!). If momentum is not gained by leaving a note for the editor and reviewers on the issue, then follow up with the editor in Slack after 2 weeks to see if they need some support. If Slack doesn’t work normally, email works as a last attempt to connect with the editor.</p>
+<p>Also, check out the days open column. Keep an eye out for reviews that have been open for longer than 6 months. In some cases, you may want to check in with the editor to see how things are going and whether there is a way to move the review forward.</p>
+<p>In some cases a review hasn’t moved forward because the editor is struggling to find reviewers. <a class="reference internal" href="finding-reviewers.html#finding-reviewers"><span class="std std-ref">This page</span></a> will help you with some tips on helping an editor find reviewers. Sometimes this is as easy as posting in our pyOpenSci #software-review channel. Other times we might need to run a call for reviewers.</p>
+</section>
+<section id="check-the-reviews-seeking-editors-section">
+<h3>4. Check the reviews seeking editors section<a class="headerlink" href="#check-the-reviews-seeking-editors-section" title="Link to this heading">#</a></h3>
+<p>The <a class="reference external" href="https://www.pyopensci.org/metrics/peer-review/current-review-status.html#editors-needed"><strong>Editors Needed</strong> section of the dashboard</a> is useful for you to check in and see how the Editor in Chief (EiC) is doing. In some cases, the Editor in Chief needs support in onboarding a new editor. If packages are seeking editors for more than a month, it’s time to check in. Sometimes, all that is needed is for the package to have an editor, but the YAML at the top of the issue hasn’t been filled out properly. This is an easy fix - just add the editor to the <code class="docutils literal notranslate"><span class="pre">editor:</span></code> field at the top of the issue. In other cases, we may need to run a call for more editors. In that case, you can consult
+* Post in the software-review channel to see if anyone in our Slack community is interested in stepping into an editorial role
+* Please reach out to the Executive Director about posting on social media to find a new editor to join our team. <a class="reference external" href="https://forms.gle/VEUxEzN6YmeWSb6t8">The editorial signup form can be found here</a>, and the responses (names, emails, and domains only) to that form can be provided to you by the Executive Director upon request. It’s not publicly shared to maintain the privacy of those who sign up to volunteer with us.</p>
 </section>
 </section>
 </section>
@@ -573,13 +538,22 @@ they are introduced.</p></li>
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="onboarding-guide.html"
+       href="review-triage-team.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Editorial Review Triage Team</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="onboarding-guide.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
         <p class="prev-next-title">Onboarding New Editors</p>
       </div>
+      <i class="fa-solid fa-angle-right"></i>
     </a>
 </div>
                 </footer>
@@ -600,13 +574,11 @@ they are introduced.</p></li>
   </div>
   <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#where-to-look-for-reviewers">Where to Look for Reviewers?</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#criteria-for-choosing-reviewers">Criteria for Choosing Reviewers</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#reviewer-diversity-should-be-prioritized">Reviewer Diversity Should Be Prioritized</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#peer-review-mentorship">Peer Review Mentorship</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#once-a-mentor-is-identified">Once a Mentor is Identified</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#how-to-keep-peer-review-moving-forward">How to keep peer review moving forward</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#dashboard-check-the-date-the-comment-date-for-every-review">1. Dashboard: check the date the comment date for every review</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#check-in-on-prereview-checks">2. Check in on prereview checks</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#identify-and-check-in-on-stalled-reviews">3. Identify and check in on stalled reviews</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#check-the-reviews-seeking-editors-section">4. Check the reviews seeking editors section</a></li>
 </ul>
 </li>
 </ul>
@@ -616,7 +588,7 @@ they are introduced.</p></li>
 
   
   <div class="tocsection editthispage">
-    <a href="https://github.com/pyopensci/software-peer-review/edit/main/how-to/finding-reviewers.md">
+    <a href="https://github.com/pyopensci/software-peer-review/edit/main/how-to/peer-review-lead.md">
       <i class="fa-solid fa-pencil"></i>
       
       
@@ -631,7 +603,7 @@ they are introduced.</p></li>
   <div class="sidebar-secondary-item">
 
   <div class="tocsection sourcelink">
-    <a href="../_sources/how-to/finding-reviewers.md.txt">
+    <a href="../_sources/how-to/peer-review-lead.md.txt">
       <i class="fa-solid fa-file-lines"></i> Show Source
     </a>
   </div>
