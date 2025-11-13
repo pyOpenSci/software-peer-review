@@ -11,7 +11,7 @@ Make sure that you have access to the:
 :::
 
 
-The Peer Review Lead is responsible for overseeing the entire software review process.  They are responsible for:
+The Peer Review Lead is responsible for keeping the software review process moving forward. They are responsible for:
 
 * Keeping the review process moving forward by checking in on stalled reviews and supporting the editorial team.
 * Ensuring a diverse and active editorial board.
