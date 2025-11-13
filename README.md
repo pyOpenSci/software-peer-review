@@ -146,7 +146,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
       <td align="center" valign="top" width="16.66%"><a href="https://github.com/InessaPawson"><img src="https://avatars.githubusercontent.com/u/43481325?v=4?s=100" width="100px;" alt="Inessa Pawson"/><br /><sub><b>Inessa Pawson</b></sub></a><br /><a href="https://github.com/pyOpenSci/software-peer-review/commits?author=InessaPawson" title="Code">💻</a> <a href="https://github.com/pyOpenSci/software-peer-review/pulls?q=is%3Apr+reviewed-by%3AInessaPawson" title="Reviewed Pull Requests">👀</a></td>
     </tr>
     <tr>
-      <td align="center" valign="top" width="16.66%"><a href="https://eliotwrobson.github.io/"><img src="https://avatars.githubusercontent.com/u/1345068?v=4?s=100" width="100px;" alt="Eliot Robson"/><br /><sub><b>Eliot Robson</b></sub></a><br /><a href="https://github.com/pyOpenSci/software-peer-review/pulls?q=is%3Apr+reviewed-by%3Aeliotwrobson" title="Reviewed Pull Requests">👀</a></td>
+      <td align="center" valign="top" width="16.66%"><a href="https://eliotwrobson.github.io/"><img src="https://avatars.githubusercontent.com/u/1345068?v=4?s=100" width="100px;" alt="Eliot Robson"/><br /><sub><b>Eliot Robson</b></sub></a><br /><a href="https://github.com/pyOpenSci/software-peer-review/pulls?q=is%3Apr+reviewed-by%3Aeliotwrobson" title="Reviewed Pull Requests">👀</a> <a href="https://github.com/pyOpenSci/software-peer-review/commits?author=eliotwrobson" title="Documentation">📖</a></td>
     </tr>
   </tbody>
 </table>
