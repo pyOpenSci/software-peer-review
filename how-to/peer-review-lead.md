@@ -34,7 +34,7 @@ A volunteer editorial team runs software peer review; it also relies on voluntee
 
 As Peer Review Lead, you should monitor the status of reviews and help editors move stalled reviews forward. Our [review status dashboard](https://www.pyopensci.org/metrics/peer-review/current-review-status.html) will help you stay informed about the overall review process.
 
-Ideally, you should check in on peer reviews weekly or every other week, depending on the volume of reviews submitted. We anticipate that your time allocation in this role will be 4-8 hours a month.
+Ideally, you should check in on peer reviews weekly or every other week, depending on the volume of reviews submitted. We anticipate that your time allocation in this role will be 4-8 hours a month. Some months may require addiitonal hours if we are working on new policies. Others you may simply be checking in on the review process.
 
 Keep an eye on a few things when you check in:
 
