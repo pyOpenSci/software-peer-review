@@ -9,7 +9,7 @@ to work on them before the review process begins.
 Please check our [Python packaging guide](https://www.pyopensci.org/python-package-guide) for more information on the elements
 below.
 
-- [ ] **Installation** The package can be installed from a community repository such as PyPI (preferred), and/or a community channel on conda (for example, conda-forge, bioconda).
+- [ ] **Installation** The package can be installed from a community repository such as PyPI (preferred), and/or a community channel on conda (for example, conda-forge, bioconda) or other forges for example, pixi's `rg-forge`.
   - [ ] The package imports properly into a standard Python environment `import package`.
 - [ ] **Fit** The package meets criteria for [fit](https://www.pyopensci.org/software-peer-review/about/package-scope.html#what-types-of-packages-does-pyopensci-review) and [overlap](https://www.pyopensci.org/software-peer-review/about/package-scope.html#package-overlap).
 - [ ] **Documentation** The package has sufficient online documentation to allow us to evaluate the package's function and scope *without installing the package*. This includes:
