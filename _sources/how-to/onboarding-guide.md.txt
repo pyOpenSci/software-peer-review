@@ -5,7 +5,7 @@ and reviewers. Finding new volunteers to take on editorial and reviewer roles
 can sometimes be the trickiest part of the review process. However, we have
 resources available to help you in that effort!
 
-Below we discuss processes for finding and onboarding new volunteers to our
+Below, we discuss processes for finding and onboarding new volunteers to our
 peer review process.
 
 ## About the Editorial Board
@@ -17,49 +17,49 @@ editorial board. Our board needs to have combined expertise in:
   review process
 * Technical expertise in Python packaging
 * Awareness of the importance of documentation and package usability
-* Awareness of the importance of CI / test suites to ensure robust software
+* Awareness of the importance of CI/test suites to ensure robust software
   development
 
 We also strive to ensure our editorial team is diverse and comprised of people
 from different backgrounds, cultures, genders, and domains.
 
-### Types of Editors
+### Types of editors
 
-#### New Editors Start as "Guests"
+#### New editors start as "Guests"
 
 A new editor will be considered a guest editor for the first 3 months of their
-tenure and/or until they have completed their first review. Once they have
-completed a review, they can be considered a full editor as deemed appropriate
+tenure and/or until they have completed their first review. Once a Guest Editor has
+completed a review, they are considered a full editor as deemed appropriate
 by the Software Review Lead and the current editorial board.
 
-#### _ad hoc_ Guest Editors
+#### _ad hoc_ guest editors
 
-Adhoc editors are editors with specific skill sets that are brought in to lead
-a single review. Examples of when there might be a need for an _ad hoc_ editor
+An ad hoc editor has specific skill sets that are required to lead
+a single review. Examples of when pyOpenSci needs an _ad hoc_ editor
 include:
 
 * If there is a conflict of interest between a package submitter and the
-  editorial team (e.g., a close colleague of everyone on the team)
-* If the editorial board is at capacity handling the current review load
+  editorial team (for example, a close colleague of everyone on the team)
+* If the editorial board is at capacity, handling the current review load
 * If a very specialized skill set is needed (in a one-off type of situation)
 
 In this case, you may consider using our internal reviewer sign-up list to see
-if someone who signed up to be a reviewer might want to serve as an editor.
+if someone who signed up to be a reviewer wants to serve as an editor.
 
-### Experience Required to Be an Editor
+### Experience required to be an editor
 
 We prefer that editors have some experience with reviewing software. This
 experience could come from a previous review they worked on with pyOpenSci,
 rOpenSci, or JOSS.
 
-### Editorial Mentorship
+### Editorial mentorship
 
 If a potential volunteer does not have prior software editorial experience, we
 offer a **mentorship process**. Editor mentorship is where someone with
 existing editorial experience mentors the new editor through their first
 review(s).
 
-### Recruiting New Editors
+### Recruiting new editors
 
 Recruiting new editors and maintaining a sufficient and well-balanced
 editorial board is the responsibility of the
@@ -74,7 +74,7 @@ future, we will find someone with interest in leading peer review for
 pyOpenSci.
 :::
 
-## Where to Find New Editors
+## Where to find new editors
 
 Typically the Editor in Chief will work with the Software Review Lead to find and
 onboard new editors in scientific topical areas where pyOpenSci has existing
@@ -200,7 +200,7 @@ We think you will make a wonderful addition to our pyOpenSci open review team!
 
 [Here is an onboarding document to help you navigate your first weeks in this role.](https://docs.google.com/document/d/1UfG1Fe5wSiEAObvqNMT4etZ5sx7QXzW0f8mozKyK1NE/edit?tab=t.0)
 
-[IF GUEST EDITOR: You are familiar with the editor's role, as you've been a guest editor].  We aim for editors to handle reviews for four packages per year
+[IF GUEST EDITOR: You are familiar with the editor's role, as you've been a guest editor]. We aim for editors to handle reviews for four packages per year
 ([IF GUEST EDITOR including the one that you just finished!]).
 We ask that editors make an informal commitment to serve for two years and
 re-evaluate their participation after that.
@@ -277,8 +277,9 @@ You do not need to fill out all of the elements of the YAML file - only the name
 When it is time for an editor to step down, do the following:
 
 * Thank them for their work!
-* Remove them from the editors-only Slack channel and the editors GitHub team.
-* Move them to emeritus-editor on the [pyOpenSci website](https://github.com/pyOpenSci/pyopensci.github.io/blob/main/_data/contributors.yml) as follows:
+* Announce that they are stepping down, and than them in the private editors-only Slack channel. Then, remove them from the editors-only Slack channel.
+* Remove them from the [Editorial-Board GitHub team](https://github.com/orgs/pyOpenSci/teams/editorial-board).
+* Move them to `emeritus-editor` on the [pyOpenSci website](https://github.com/pyOpenSci/pyopensci.github.io/blob/main/_data/contributors.yml) by editing the yaml file as follows:
 
 ```yaml
 - name: FirstName LastName
@@ -288,8 +289,4 @@ When it is time for an editor to step down, do the following:
   editorial_board: false # Be sure editorial_board is set to FALSE
   emeritus_editor: true # Emeritus is now true if they've served as an editor
   # .. #
-  contributor_type:
-    - editor # This field will be automatically updated after their first review
-    - guidebook-contrib
-    - reviewer
 ```
