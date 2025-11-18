@@ -87,7 +87,7 @@ Before you begin this process, [please be sure to read the review process guidel
 
 1. Please be sure that you have time to devote to making changes to your
 package. During review, you will receive feedback from an editor and two reviewers. Changes could
-take time. Please consider this before submitting to us. You can read more about the timeline for making changes on our [peer review policies page](../our-process/policies).
+take time. Please consider this before submitting. You can read more about the timeline for making changes on our [peer review policies page](../our-process/policies).
 2. A diverse group of volunteer editors and reviewers leads peer review.
 Please be considerate when engaging with everyone online.
 3. All participants in our peer review process need to follow the [pyOpenSci Code of Conduct](https://www.pyopensci.org/handbook/CODE_OF_CONDUCT.html). Please review it before submitting to us.
