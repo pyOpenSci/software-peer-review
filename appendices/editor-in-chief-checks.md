@@ -35,7 +35,7 @@ NOTE: We prefer that you have development instructions in your documentation too
 ---
 - [ ] [Initial onboarding survey was filled out ](https://forms.gle/F9mou7S3jhe8DMJ16)
 We appreciate each maintainer of the package filling out this survey individually. :raised_hands:
-Thank you, authors, in advance, xwfor setting aside five to ten minutes to do this. It truly helps our organization. :raised_hands:
+A big thank you in advance to authors for setting aside five to ten minutes to do this. It truly helps our organization! :raised_hands:
 ---
 
 *******
