@@ -112,7 +112,7 @@ The policy below was co-developed by the pyOpenSci community. Its goals are:
 
 ### Disclosure of generative AI use in pyOpenSci reviewed packages
 
-* When you submit a package to pyOpenSci, please disclose any use of LLMs (Large Language Models) in your package’s generation by checking the appropriate boxes on our software submission form. Disclosure should generally include what parts of your package were developed using LLM tools.
+* When you submit a package to pyOpenSci, please disclose any use of LLMs (Large Language Models) in your package’s development by checking the appropriate boxes on our software submission form. Disclosure should generally include what parts of your package were developed using LLM tools.
   * Please also disclose this use of Generative AI tools in your package's `README.md` file and in any modules where generative AI contributions have been implemented.
 * We require that all aspects of your package have been reviewed carefully by a human on your maintainer team. Please ensure all text and code have been carefully checked for bias, bugs, and issues before submitting to pyOpenSci.
 * Your acknowledgment of using Generative AI will not impact the success of your submission unless you have blindly copied text and code into your package without careful review and evaluation of its accuracy, and for any systemic bias.
