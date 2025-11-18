@@ -20,7 +20,7 @@ based on how the reviews are addressed.
 ## Review communication approach
 
 Communication between authors, reviewers, and editors takes
-place on GitHub. You can, however, choose to contact the editor by email if
+place on GitHub. However, you may contact the editor by email if
 needed.
 
 When submitting a package, please make sure that your GitHub notification
