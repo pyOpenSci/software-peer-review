@@ -104,7 +104,7 @@ external guest editor will be recruited to lead the package review.
 
 The policy below was co-developed by the pyOpenSci community. Its goals are:
 
-* Acknowledgment of and transparency around the widespread use of Generative AI tools (with a focus on Large Language Models (LLMs) in Open Source.
+* Acknowledgment of and transparency around the widespread use of Generative AI tools, with a focus on Large Language Models (LLMs) in Open Source development.
 * Protect peer review efficiency: Ensure human review of any LLM-generated contributions to a package to protect editor and reviewer volunteer time in our peer review process.
 * Raise awareness of challenges that Generative AI tools present to the scientific (and broader) open source community.
 [Please see this GitHub issue for a discussion of the topic.](https://github.com/pyOpenSci/software-peer-review/issues/331)
