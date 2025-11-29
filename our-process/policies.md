@@ -26,6 +26,38 @@ needed.
 When submitting a package, please make sure that your GitHub notification
 settings are setup to notify you when you receive feedback on the review issue.
 
+## Submission volume and maintainer overlap
+
+To protect our volunteer peer review team and ensure quality reviews for all
+packages, we have policies regarding the volume of simultaneous submissions.
+
+### Unique point of contact requirement
+
+Each submission to pyOpenSci should have one unique point of contact per package.
+At any given time, all points of contact across all active submissions (those
+under review) should be unique.
+
+This policy ensures that:
+
+- Review feedback receives appropriate attention from maintainers
+- Maintainers don't become overwhelmed managing multiple concurrent reviews
+- Our volunteer reviewers and editors can focus their efforts effectively
+
+### Multiple submissions with overlapping maintainer teams
+
+If multiple packages are submitted simultaneously with overlapping maintainer
+teams, we will evaluate our volunteer reviewer capacity and may request
+staggered submissions to ensure quality review for all packages and to protect
+the time and availability of our volunteer editorial team.
+
+### Edge cases and exceptions
+
+We recognize that some situations may warrant exceptions to these guidelines.
+For example, two closely related packages that would benefit from review by
+the same editorial team may be handled together. We will evaluate edge cases
+to this policy as they arise, and decisions will be made by the Editor-in-Chief
+based on reviewer capacity and the specific circumstances of the submission.
+
 ## Submitting your package for review in other venues
 
 We recommend submitting your package for review with pyOpenSci before

@@ -51,7 +51,7 @@ We review packages openly using GitHub Issues.
 ::::
 
 ::::{grid-item}
-:::{card}  <i class="fa-solid fa-timeline"></i> Review timeline
+:::{card} <i class="fa-solid fa-timeline"></i> Review timeline
 :link: ../our-process/review-timeline
 :link-type: doc
 :class-card: left-aligned
@@ -116,6 +116,15 @@ for pyOpenSci.
 - Please also include the names of all maintainers on the project
   as we also want to ensure that everyone working on the project receives full credit
   for their effort.
+
+```{note}
+**Important**: To ensure quality reviews for all submissions and protect our
+volunteer review team, each active submission must have a unique point of contact.
+If you are currently the point of contact for another package under review, please
+wait until that review is complete before submitting another package.
+
+For more details, see our [submission volume policy](../our-process/policies.html#submission-volume-and-maintainer-overlap).
+```
 
 ```{note}
 If your package is more of a tool to support a specific workflow that
