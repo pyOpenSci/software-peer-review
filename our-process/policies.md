@@ -82,7 +82,6 @@ for more details.
 :::
 
 (coi)=
-
 ## Conflict of interest for reviews and editors
 
 Following criteria are meant to be a guide for what constitutes a conflict of
