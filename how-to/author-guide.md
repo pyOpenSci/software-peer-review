@@ -149,8 +149,8 @@ If you have questions about any of the elements listed below, you can
 check out our [pyOpenSci Python packaging guide](https://www.pyopensci.org/python-package-guide) which includes an overview discussion of best practices
 for Python packaging, including discussions of:
 
-- Tools that you can use to create your package
-- Tools for creating and publishing documentation.
+- Tools that you can use to create your package,
+- Tools for creating and publishing documentation,
 - Resources for creating files such as the README file, code of conduct, contributing guide, and more.
 
 ```{include} ../appendices/editor-in-chief-checks.md
@@ -262,7 +262,7 @@ default if the package fits into the JOSS scope.
 
 - When you submit your package for pyOpenSci review, you can opt to include a
   submission to JOSS after passing pyOpenSci review. In this case, your package
-  will be evaluated by JOSS through the pyOpenSci review
+  will be evaluated by JOSS through the pyOpenSci review.
 - To complete the JOSS submission, you will also need to craft a **paper.md**
   file describing the package following JOSS' standards (see below). More details on the requirements for JOSS can be found on [their website](https://joss.readthedocs.io/en/latest/submitting.html#what-should-my-paper-contain).
 - If you choose to opt into the pyOpenSci/JOSS partnership in your review,
