@@ -123,7 +123,7 @@ volunteer review team, each active submission must have a unique point of contac
 If you are currently the point of contact for another package under review, please
 wait until that review is complete before submitting another package.
 
-For more details, see our [submission volume policy](../our-process/policies.html#submission-volume-and-maintainer-overlap).
+For more details, see our [submission volume policy](submission-volume).
 ```
 
 ```{note}
