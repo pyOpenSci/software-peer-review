@@ -224,6 +224,7 @@ We have a [partnership with Pangeo](../partners/pangeo). Often times packages su
 
 ## Package technical scope
 
+(package-size-effort)=
 ### Package size and scholarly effort
 
 pyOpenSci reviews packages that represent substantial scholarly effort and provide
