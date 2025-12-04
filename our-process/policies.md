@@ -77,7 +77,7 @@ While pyOpenSci's scope may be more flexible than JOSS in certain areas (such as
 package size requirements), packages must still meet JOSS's specific criteria to
 be eligible for JOSS fast-track submission. If your package is accepted by pyOpenSci
 but does not meet JOSS requirements (e.g., minimum lines of code), it will not be
-eligible for JOSS fast-track review. See our [package scope guidelines](../about/package-scope.html#package-size-and-scholarly-effort)
+eligible for JOSS fast-track review. See our [package scope guidelines](package-size-effort)
 for more details.
 :::
 
