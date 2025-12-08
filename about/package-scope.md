@@ -225,6 +225,7 @@ We have a [partnership with Pangeo](../partners/pangeo). Often times packages su
 ## Package technical scope
 
 (package-size-effort)=
+
 ### Package size and scholarly effort
 
 pyOpenSci reviews packages that represent substantial scholarly effort and provide
@@ -240,6 +241,8 @@ functionality to warrant a comprehensive peer review.
   small packages solely to generate multiple submissions
 - Packages with fewer than approximately 1,000 non-comment, non-whitespace lines
   of code will receive additional scrutiny from editors
+- Note: Unit tests are not counted toward the 1,000 line minimum, but comprehensive
+  test coverage is expected for all packages
 
 **Our approach to smaller packages:**
 
