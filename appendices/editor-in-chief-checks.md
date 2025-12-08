@@ -29,6 +29,11 @@ NOTE: We prefer that you have development instructions in your documentation too
 - [ ] **Archive** (JOSS only, may be post-review): The repository DOI resolves correctly.
 - [ ] **Version** (JOSS only, may be post-review): Does the release version given match the GitHub release (v1.0.0)?
 
+**Optional but recommended:**
+- [ ] **Linting** The package uses automated linting (e.g., [ruff](https://docs.astral.sh/ruff/)) to enforce code style and quality standards, ideally integrated with CI.
+- [ ] **Type checking** The package includes type hints and uses a type checker (e.g., [mypy](https://mypy-lang.org/)) to catch type-related issues, ideally integrated with CI.
+- [ ] **Modern tooling** The package uses modern Python development tools (e.g., [uv](https://docs.astral.sh/uv/) for dependency management and virtual environments) to streamline development workflows.
+
 **Optional:** Let projects know that it's a great idea for projects to have a .github repository for the project organization where they can host a commonly used LICENSE, Code of Conduct, and even a YAML file with label definitions. These items will then be automatically applied to every repository in the organization to ensure consistency (but can be customized within repos too). The [SunPy project](https://github.com/sunpy/.github/) has a great example of this.
 
 ---
