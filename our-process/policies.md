@@ -97,6 +97,7 @@ In the case where none of the associate editors can serve as editor, an
 external guest editor will be recruited to lead the package review.
 
 (generative-ai-policy)=
+
 ## Policy for use of generative AI / LLMs
 
 :::{admonition} How this policy was developed
@@ -104,23 +105,26 @@ external guest editor will be recruited to lead the package review.
 
 The policy below was co-developed by the pyOpenSci community. Its goals are:
 
-* Acknowledgment of and transparency around the widespread use of Generative AI tools, with a focus on Large Language Models (LLMs) in Open Source development.
-* Protect peer review efficiency: Ensure human review of any LLM-generated contributions to a package to protect editor and reviewer volunteer time in our peer review process.
-* Raise awareness of challenges that Generative AI tools present to the scientific (and broader) open source community.
+- Acknowledgment of and transparency around the widespread use of Generative AI tools, with a focus on Large Language Models (LLMs) in Open Source development.
+- Ensure an equitable balance of effort in the peer review process: Authors acknowledge that a human has carefully reviewed parts of the package that are AI-generated. Generated material should be in a state that minimizes review time. Our reviewers are not responsible for correcting errors in machine-generated content.
+- Disclosure allows reviewers and editors to make informed decisions around the types of packages that they wish to review code for.
+- Raise awareness of challenges that Generative AI tools present to the scientific (and broader) open source community.
+
 [Please see this GitHub issue for a discussion of the topic.](https://github.com/pyOpenSci/software-peer-review/issues/331)
 :::
 
 ### Disclosure of generative AI use in pyOpenSci reviewed packages
 
-* When you submit a package to pyOpenSci, please disclose any use of LLMs (Large Language Models) in your package’s development by checking the appropriate boxes on our software submission form. Disclosure should generally include what parts of your package were developed using LLM tools.
-  * Please also disclose this use of Generative AI tools in your package's `README.md` file and in any modules where generative AI contributions have been implemented.
-* We require that all aspects of your package have been reviewed carefully by a human on your maintainer team. Please ensure all text and code have been carefully checked for bias, bugs, and issues before submitting to pyOpenSci.
-* Your acknowledgment of using Generative AI will not impact the success of your submission unless you have blindly copied text and code into your package without careful review and evaluation of its accuracy, and for any systemic bias.
-* If the review team (comprised of the editor and reviewers) determines that the code and text in the package are too challenging to review, they can decide to pause and/or discontinue the review following this policy’s guidelines.
+- When you submit a package to pyOpenSci, please disclose any use of LLMs (Large Language Models) in your package's development by checking the appropriate box and describing your use of generative AI in its development and/or maintenance on our software submission form. Disclosure should include what parts of your package were developed using Generative AI tools.
+  - Please also disclose this use of Generative AI tools in your package's `README.md` file and in any modules where generative AI contributions have been implemented.
+- We require that all aspects of your package have been reviewed carefully by a human on your maintainer team. Please ensure all text and code have been carefully checked for bugs and issues before submitting to pyOpenSci.
+- Your acknowledgment of using Generative AI will not prejudice the success of your submission. However, a reviewer can and will ask you to revisit your package's content if it appears that sections have been copied and pasted from other sources without human review.
+- If the review team (comprised of the editor and reviewers) determines that the code and text in the package are too challenging to review, they can decide to pause and/or discontinue the review following this policy’s guidelines.
 
 Below is the checklist that you will need to respond to in our submission form:
 
 ```{include} ../appendices/gen-ai-checklist.md
+
 ```
 
 ## Review timelines and on-hold reviews
@@ -209,6 +213,7 @@ recently released version of that package in our ecosystem for archival
 purposes only.
 
 (package-archive)=
+
 ### Archiving a package
 
 If a package appears to be no longer maintained, we will mark it as
