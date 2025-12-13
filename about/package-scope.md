@@ -62,7 +62,7 @@ data processing and the various stages of managing the
 data lifecycle. Packages submitted to pyOpenSci should fit into one or
 more of the categories below and should be within our technical scope.
 
-```{admonition} Your Package Does Not Need to Widely Used to be Reviewed
+:::{admonition} Your Package Does Not Need to Widely Used to be Reviewed
 :class: important
 
 We review packages with the goal of improving package quality and usability for scientists.
@@ -77,7 +77,7 @@ We welcome young packages that are just entering the scientific Python
 ecosystem to apply for review if they are relevant to the science community and
 fit into at least one scope category below. We also welcome mature packages with
 a growing or established community!
-```
+:::
 
 ## Package categories that are in-scope for pyOpenSci
 
@@ -97,11 +97,11 @@ automation, reproducibility).
 
 Below we provide examples of packages from the pyOpenSci ecosystem.
 
-```{note}
+:::{note}
 Many of the example packages below perform tasks that might fit in multiple
 categories. Examples are there to provide you with a flavor of the types
 of packages that would fall into that category.
-```
+:::
 
 ### Data retrieval
 
@@ -247,6 +247,54 @@ We have a [partnership with Pangeo](../partners/pangeo). Often times packages su
 
 ## Package technical scope
 
+(package-size-effort)=
+
+### Package size and scholarly effort
+
+pyOpenSci reviews packages that represent substantial scholarly effort and provide
+meaningful value to the scientific community. While we do not enforce a strict
+minimum line count, we expect packages to demonstrate sufficient complexity and
+functionality to warrant a comprehensive peer review.
+
+**General expectations:**
+
+- Packages should generally represent at least three months of development work
+  for an individual developer
+- We discourage "salami slicing" - breaking up functionality into artificially
+  small packages solely to generate multiple submissions
+- Packages with fewer than approximately 1,000 non-comment, non-whitespace lines
+  of code will receive additional scrutiny from editors
+- Note: Unit tests are not counted toward the 1,000 line minimum, but comprehensive
+  test coverage is expected for all packages
+
+**Our approach to smaller packages:**
+
+We recognize that some highly focused, well-designed packages can be extremely
+valuable to the scientific community even with a smaller codebase. If you are
+submitting a package with a smaller codebase, please provide extra detail in your
+submission's landscape analysis section explaining:
+
+- The previously unmet need your package fills
+- Why this functionality warrants a standalone package
+- The specific scientific workflows it enables
+- How it differs from or complements existing tools
+
+The final decision on whether a package represents sufficient scholarly effort
+rests with the editor and will be made on a case-by-case basis.
+
+:::{note}
+**Relationship to JOSS requirements:**
+
+The Journal of Open Source Software (JOSS) has a [substantial scholarly effort requirement](https://joss.readthedocs.io/en/latest/submitting.html#substantial-scholarly-effort)
+for all submitted packages. While pyOpenSci may review packages that don't meet JOSS's
+minimum requirements, such packages will not be eligible for the fast-track
+JOSS submission process described in our [partnership with JOSS](../partners/joss).
+
+Our more flexible approach allows us to support useful scientific packages
+that may be outside JOSS scope while maintaining our partnership for
+packages that meet both organizations' criteria.
+:::
+
 ### Telemetry & user-informed consent
 
 Your package should not collect collecting usage analytics without first informing your users about what data are being collected and what is being done with that data. With
@@ -272,12 +320,12 @@ To be in technical scope for a pyOpenSci review, your package:
 - Should declare vendor dependencies using standard approaches rather than including code from other packages within your repository.
 - Should not have an exceedingly complex structure. Others should be able to contribute and/or take over maintenance if needed.
 
-```{admonition} pyOpenSci's goal is to support long(er) term maintenance
+:::{admonition} pyOpenSci's goal is to support long(er) term maintenance
 pyOpenSci has a goal of supporting long term maintenance of open source
 Python tools. It is thus important for us to know that if you need to step down as a maintainer, and that the package infrastructure and documentation is
 in place to support us finding a new maintainer who can take over your
 package's maintenance.
-```
+:::
 
 ### What if my package seems like its category or domain is out of scope?
 
