@@ -103,8 +103,18 @@ We offer two pathways for packages previously reviewed by JOSS:
    standards. This approach reduces the burden of a full review while ensuring the quality of the package
    reflects its most recent version.
 
-(coi)=
+:::{note}
+**Submitting to JOSS after pyOpenSci review:**
 
+While pyOpenSci's scope may be more flexible than JOSS in certain areas (such as
+package size requirements), packages must still meet JOSS's specific criteria to
+be eligible for JOSS fast-track submission. If your package is accepted by pyOpenSci
+but does not meet JOSS requirements (e.g., minimum lines of code), it will not be
+eligible for JOSS fast-track review. See our [package scope guidelines](package-size-effort)
+for more details.
+:::
+
+(coi)=
 ## Conflict of interest for reviews and editors
 
 Following criteria are meant to be a guide for what constitutes a conflict of
