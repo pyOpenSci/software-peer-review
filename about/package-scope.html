@@ -7,7 +7,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
-<meta property="og:title" content="The Scope of  Packages that pyOpenSci Reviews" />
+<meta property="og:title" content="The Scope of Packages that pyOpenSci Reviews" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="about/package-scope.html" />
 <meta property="og:site_name" content="pyOpenSci Python Package Guide" />
@@ -458,7 +458,7 @@
     
     <li class="breadcrumb-item"><a href="intro.html" class="nav-link">About the pyOpenSci software peer review process</a></li>
     
-    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">The Scope of  Packages that pyOpenSci Reviews</span></li>
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">The Scope of Packages that pyOpenSci Reviews</span></li>
   </ul>
 </nav>
 </div>
@@ -476,7 +476,7 @@
                 <article class="bd-article">
                   
   <section id="the-scope-of-packages-that-pyopensci-reviews">
-<h1>The Scope of  Packages that pyOpenSci Reviews<a class="headerlink" href="#the-scope-of-packages-that-pyopensci-reviews" title="Link to this heading">#</a></h1>
+<h1>The Scope of Packages that pyOpenSci Reviews<a class="headerlink" href="#the-scope-of-packages-that-pyopensci-reviews" title="Link to this heading">#</a></h1>
 <p>The mission of pyOpenSci’s open peer review process is to:</p>
 <ol class="arabic simple">
 <li><p>Support improving the quality, usability and discoverability of maintained scientific Python software in support of open science.</p></li>
@@ -650,7 +650,7 @@ analytics approaches without previous review of the analytical approach by a
 credible journal.</p>
 <p>We consider the following when determining whether an analytics-related package is within our review scope:</p>
 <ol class="arabic simple">
-<li><p>If your package facilitates a scientist using a <strong>known or vetted statistical, AI or  Analytical approach</strong> we consider that in-scope. Before submitting to us, please ensure that your package’s documentation directs users to existing paper(s) or pre-print(s) that document that approach’s application. Further, be sure to link to these publications in your package review submission.</p></li>
+<li><p>If your package facilitates a scientist using a <strong>known or vetted statistical, AI or Analytical approach</strong> we consider that in-scope. Before submitting to us, please ensure that your package’s documentation directs users to existing paper(s) or pre-print(s) that document that approach’s application. Further, be sure to link to these publications in your package review submission.</p></li>
 </ol>
 <p>The review for this package:</p>
 <ul class="simple">
@@ -702,6 +702,48 @@ we will expand this list.</p>
 </section>
 <section id="package-technical-scope">
 <h2>Package technical scope<a class="headerlink" href="#package-technical-scope" title="Link to this heading">#</a></h2>
+<section id="package-size-and-scholarly-effort">
+<span id="package-size-effort"></span><h3>Package size and scholarly effort<a class="headerlink" href="#package-size-and-scholarly-effort" title="Link to this heading">#</a></h3>
+<p>pyOpenSci reviews packages that represent substantial scholarly effort and provide
+meaningful value to the scientific community. While we do not enforce a strict
+minimum line count, we expect packages to demonstrate sufficient complexity and
+functionality to warrant a comprehensive peer review.</p>
+<p><strong>General expectations:</strong></p>
+<ul class="simple">
+<li><p>Packages should generally represent at least three months of development work
+for an individual developer</p></li>
+<li><p>We discourage “salami slicing” - breaking up functionality into artificially
+small packages solely to generate multiple submissions</p></li>
+<li><p>Packages with fewer than approximately 1,000 non-comment, non-whitespace lines
+of code will receive additional scrutiny from editors</p></li>
+<li><p>Note: Unit tests are not counted toward the 1,000 line minimum, but comprehensive
+test coverage is expected for all packages</p></li>
+</ul>
+<p><strong>Our approach to smaller packages:</strong></p>
+<p>We recognize that some highly focused, well-designed packages can be extremely
+valuable to the scientific community even with a smaller codebase. If you are
+submitting a package with a smaller codebase, please provide extra detail in your
+submission’s landscape analysis section explaining:</p>
+<ul class="simple">
+<li><p>The previously unmet need your package fills</p></li>
+<li><p>Why this functionality warrants a standalone package</p></li>
+<li><p>The specific scientific workflows it enables</p></li>
+<li><p>How it differs from or complements existing tools</p></li>
+</ul>
+<p>The final decision on whether a package represents sufficient scholarly effort
+rests with the editor and will be made on a case-by-case basis.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>Relationship to JOSS requirements:</strong></p>
+<p>The Journal of Open Source Software (JOSS) has a <a class="reference external" href="https://joss.readthedocs.io/en/latest/submitting.html#substantial-scholarly-effort">substantial scholarly effort requirement</a>
+for all submitted packages. While pyOpenSci may review packages that don’t meet JOSS’s
+minimum requirements, such packages will not be eligible for the fast-track
+JOSS submission process described in our <a class="reference internal" href="../partners/joss.html"><span class="doc std std-doc">partnership with JOSS</span></a>.</p>
+<p>Our more flexible approach allows us to support useful scientific packages
+that may be outside JOSS scope while maintaining our partnership for
+packages that meet both organizations’ criteria.</p>
+</div>
+</section>
 <section id="telemetry-user-informed-consent">
 <h3>Telemetry &amp; user-informed consent<a class="headerlink" href="#telemetry-user-informed-consent" title="Link to this heading">#</a></h3>
 <p>Your package should not collect collecting usage analytics without first informing your users about what data are being collected and what is being done with that data. With
@@ -891,6 +933,7 @@ consider submittal to other repositories or journals.</p>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#package-technical-scope">Package technical scope</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#package-size-and-scholarly-effort">Package size and scholarly effort</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#telemetry-user-informed-consent">Telemetry &amp; user-informed consent</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#what-if-my-package-seems-like-its-category-or-domain-is-out-of-scope">What if my package seems like its category or domain is out of scope?</a></li>
 </ul>
