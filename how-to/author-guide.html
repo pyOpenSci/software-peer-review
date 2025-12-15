@@ -509,7 +509,7 @@ to submit a package to pyOpenSci for peer review.</p>
 <div class="sd-card-body docutils">
 <div class="sd-card-title sd-font-weight-bold docutils">
 Review Guidelines &amp; Policies</div>
-<p class="sd-card-text">Read about our peer review policies.</p>
+<p class="sd-card-text">Read through our peer review policies before submitting a package to us.</p>
 </div>
 <a class="sd-stretched-link sd-hide-link-text reference internal" href="../our-process/policies.html"><span class="doc">Peer Review Guidelines &amp; Policies</span></a></div>
 </div>
@@ -531,9 +531,10 @@ Review Guidelines &amp; Policies</div>
 <ol class="arabic simple">
 <li><p>Please be sure that you have time to devote to making changes to your
 package. During review, you will receive feedback from an editor and two reviewers. Changes could
-take time. Please consider this before submitting to us. You can read more about the timeline to make changes in our <a class="reference internal" href="../our-process/policies.html"><span class="doc std std-doc">peer review policies page</span></a>.</p></li>
+take time. Please consider this before submitting. You can read more about the timeline for making changes on our <a class="reference internal" href="../our-process/policies.html"><span class="doc std std-doc">peer review policies page</span></a>.</p></li>
 <li><p>A diverse group of volunteer editors and reviewers leads peer review.
 Please be considerate when engaging with everyone online.</p></li>
+<li><p>All participants in our peer review process need to follow the <a class="reference external" href="https://www.pyopensci.org/handbook/CODE_OF_CONDUCT.html">pyOpenSci Code of Conduct</a>. Please review it before submitting to us.</p></li>
 </ol>
 </div>
 </section>
@@ -575,7 +576,7 @@ publication quality and citation/credit.</p>
 </section>
 </section>
 <section id="does-your-package-meet-packaging-requirements">
-<h2>2. Does Your Package Meet Packaging Requirements?<a class="headerlink" href="#does-your-package-meet-packaging-requirements" title="Link to this heading">#</a></h2>
+<h2>2. Does your package meet packaging requirements?<a class="headerlink" href="#does-your-package-meet-packaging-requirements" title="Link to this heading">#</a></h2>
 <p>Before submitting your project for review with pyOpenSci, make sure that
 your package meets all of the requirements listed in the editor checks (see below).
 We use these checks as a baseline for all submissions and pre-submissions to
@@ -598,12 +599,12 @@ to work on them before the review process begins.
 Please check our [<span class="nt">Python packaging guide</span>](<span class="na">https://www.pyopensci.org/python-package-guide</span>) for more information on the elements
 below.
 
-<span class="k">- [ ]</span> <span class="gs">**Installation**</span> The package can be installed from a community repository such as PyPI (preferred), and/or a community channel on conda (e.g., conda-forge, bioconda).
+<span class="k">- [ ]</span> <span class="gs">**Installation**</span> The package can be installed from a community repository such as PyPI (preferred), and/or a community channel on conda (for example, conda-forge, bioconda).
 <span class="w">  </span><span class="k">- [ ]</span> The package imports properly into a standard Python environment <span class="sb">`import package`</span>.
 <span class="k">- [ ]</span> <span class="gs">**Fit**</span> The package meets criteria for [<span class="nt">fit</span>](<span class="na">https://www.pyopensci.org/software-peer-review/about/package-scope.html#what-types-of-packages-does-pyopensci-review</span>) and [<span class="nt">overlap</span>](<span class="na">https://www.pyopensci.org/software-peer-review/about/package-scope.html#package-overlap</span>).
 <span class="k">- [ ]</span> <span class="gs">**Documentation**</span> The package has sufficient online documentation to allow us to evaluate the package&#39;s function and scope <span class="ge">*without installing the package*</span>. This includes:
 <span class="w">  </span><span class="k">- [ ]</span> User-facing documentation that overviews how to install and start using the package.
-<span class="w">  </span><span class="k">- [ ]</span> Short quickstart tutorials that help a user understand how to use the package and what it can do for them.
+<span class="w">  </span><span class="k">- [ ]</span> Short, quickstart tutorials that help a user understand how to use the package and what it can do for them.
 <span class="w">  </span><span class="k">- [ ]</span> API documentation (documentation for your code&#39;s functions, classes, methods, and attributes): this includes clearly written docstrings with variables defined using a standard docstring format.
 <span class="k">- [ ]</span> Core GitHub repository Files
 <span class="w">  </span><span class="k">- [ ]</span> <span class="gs">**README**</span> The package has a <span class="sb">`README.md`</span> file with a clear explanation of what the package does, instructions on how to install it, and a link to development instructions.
@@ -617,19 +618,24 @@ NOTE: We prefer that you have development instructions in your documentation too
 <span class="k">- [ ]</span> <span class="gs">**Package overlap**</span> The package doesn&#39;t entirely overlap with the functionality of other packages that have already been submitted to pyOpenSci.
 <span class="k">- [ ]</span> <span class="gs">**Archive**</span> (JOSS only, may be post-review): The repository DOI resolves correctly.
 <span class="k">- [ ]</span> <span class="gs">**Version**</span> (JOSS only, may be post-review): Does the release version given match the GitHub release (v1.0.0)?
+<span class="k">- [ ]</span> The package authors have disclosed the use of Generative AI tools in the development and/or maintenance of their package.
 
 <span class="gs">**Optional:**</span> Let projects know that it&#39;s a great idea for projects to have a .github repository for the project organization where they can host a commonly used LICENSE, Code of Conduct, and even a YAML file with label definitions. These items will then be automatically applied to every repository in the organization to ensure consistency (but can be customized within repos too). The [<span class="nt">SunPy project</span>](<span class="na">https://github.com/sunpy/.github/</span>) has a great example of this.
 
 ---
 <span class="k">- [ ]</span> [<span class="nt">Initial onboarding survey was filled out </span>](<span class="na">https://forms.gle/F9mou7S3jhe8DMJ16</span>)
 We appreciate each maintainer of the package filling out this survey individually. :raised_hands:
-<span class="gu">Thank you, authors, in advance for setting aside five to ten minutes to do this. It truly helps our organization. :raised_hands:</span>
+<span class="gu">A big thank you in advance to authors for setting aside five to ten minutes to do this. It truly helps our organization! :raised_hands:</span>
 <span class="gu">---</span>
 
 *******
 
 <span class="gu">## Editor comments</span>
 </pre></div>
+</div>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>Given the increased use of Generative AI tools (LLMs), we have developed a disclosure policy for all packages submitted to pyOpenSci (generative-ai-policy). Please review this before submitting to us.</p>
 </div>
 <div class="admonition hint">
 <p class="admonition-title">Hint</p>
@@ -655,7 +661,7 @@ Python package.</a></p></li>
 </div>
 </section>
 <section id="is-your-package-in-scope-for-pyopensci">
-<h2>3. Is Your Package in Scope for pyOpenSci?<a class="headerlink" href="#is-your-package-in-scope-for-pyopensci" title="Link to this heading">#</a></h2>
+<h2>3. Is your package in scope for pyOpenSci?<a class="headerlink" href="#is-your-package-in-scope-for-pyopensci" title="Link to this heading">#</a></h2>
 <p>Next, check to see if your package falls within the topical and technical scope of pyOpenSci. If you aren’t
 sure about whether your package fits within pyOpenSci’s scope (below), submit
 a <a class="reference external" href="https://github.com/pyOpenSci/software-review/issues/new?assignees=&amp;amp;labels=0%2Fpresubmission&amp;amp;template=presubmission-inquiry.md&amp;amp;title=">presubmission inquiry issue on the software-review</a>
@@ -666,13 +672,13 @@ up to a week.</p>
 <p><a class="sd-sphinx-override sd-btn sd-text-wrap sd-btn-primary sd-rounded-pill reference external" href="../about/package-scope.html"><span>Click here to view our technical and domain scope requirements.</span></a></p>
 </section>
 <section id="submit-your-package-for-peer-review">
-<h2>4. Submit Your Package for Peer Review<a class="headerlink" href="#submit-your-package-for-peer-review" title="Link to this heading">#</a></h2>
+<h2>4. Submit your package for peer review<a class="headerlink" href="#submit-your-package-for-peer-review" title="Link to this heading">#</a></h2>
 <p>To submit your package for peer review, you can
 open an issue in our <a class="reference external" href="https://github.com/pyOpenSci/software-review/issues/new/choose/">pyopensci/software-review repo</a>
 repository and fill out the <a class="reference external" href="https://github.com/pyOpenSci/software-submission/issues/new?template=submit-software-for-review.md">Submit Software for Review</a> issue template.</p>
 </section>
 <section id="editor-in-chief-reviews-package-for-scope-and-minimal-infrastructure-criteria">
-<h2>5. Editor-in-Chief Reviews Package for Scope and Minimal Infrastructure Criteria<a class="headerlink" href="#editor-in-chief-reviews-package-for-scope-and-minimal-infrastructure-criteria" title="Link to this heading">#</a></h2>
+<h2>5. Editor-in-Chief reviews package for scope and minimal infrastructure criteria<a class="headerlink" href="#editor-in-chief-reviews-package-for-scope-and-minimal-infrastructure-criteria" title="Link to this heading">#</a></h2>
 <p>Once the issue is opened, our editor-in-chief and an editor from our editorial board will review your submission within
 <strong>2 weeks</strong> and respond with next steps. The editor may request that you make updates
 to your package to meet minimal criteria before review. They may also reject your
@@ -680,7 +686,7 @@ package if it does not fall within our scope.</p>
 <p><a class="sd-sphinx-override sd-btn sd-text-wrap sd-btn-primary sd-rounded-pill reference external" href="../how-to/editor-in-chief-guide.html#editor-checklist-template"><span>Click here to view the editor checks that will be used to evaluate your package.</span></a></p>
 </section>
 <section id="the-review-begins">
-<h2>6. The Review Begins<a class="headerlink" href="#the-review-begins" title="Link to this heading">#</a></h2>
+<h2>6. The review begins<a class="headerlink" href="#the-review-begins" title="Link to this heading">#</a></h2>
 <p>If your package meets the minimal criteria for being
 reviewed, it may then be given to an editor with appropriate domain experience
 to manage the review process. That editor will assign 2-3 reviewers to review your
@@ -690,7 +696,7 @@ We prefer issues that link back to the review as they document changes made to y
 package that were triggered by our review process.</p>
 </section>
 <section id="response-to-reviews">
-<h2>7. Response to Reviews<a class="headerlink" href="#response-to-reviews" title="Link to this heading">#</a></h2>
+<h2>7. Response to reviews<a class="headerlink" href="#response-to-reviews" title="Link to this heading">#</a></h2>
 <p>You should respond to reviewers’ comments within <strong>2 weeks</strong> of the
 last-submitted review. You can make updates to your package at any time. We
 encourage ongoing conversations between authors and reviewers. See the
@@ -704,7 +710,7 @@ editor will review everything and accept your package into the pyOpenSci ecosyst
 Congratulations! You are almost done!</p>
 </section>
 <section id="my-package-is-approved-now-what">
-<h2>My Package is Approved, Now What?<a class="headerlink" href="#my-package-is-approved-now-what" title="Link to this heading">#</a></h2>
+<h2>My package is approved, now what?<a class="headerlink" href="#my-package-is-approved-now-what" title="Link to this heading">#</a></h2>
 <p>Congratulations on being accepted into the pyOpenSci community of maintainers!
 Once your package is approved, a few things will happen:</p>
 <ol class="arabic simple">
@@ -718,7 +724,7 @@ top of your <strong>README.md</strong> file.</p></li>
 </ol>
 <p>If you’d like to submit your package to JOSS, you can do so now. Remember that JOSS will accept our review as theirs, so <strong>you DO NOT need to go through another review</strong>. Read more below.</p>
 <section id="journal-of-open-source-software-joss-submission">
-<h3>Journal of Open Source Software (JOSS) Submission<a class="headerlink" href="#journal-of-open-source-software-joss-submission" title="Link to this heading">#</a></h3>
+<h3>Journal of Open Source Software (JOSS) submission<a class="headerlink" href="#journal-of-open-source-software-joss-submission" title="Link to this heading">#</a></h3>
 <p>pyOpenSci has a <a class="reference internal" href="../partners/joss.html#joss"><span class="std std-ref">partnership with JOSS</span></a>, where our review is accepted by JOSS by
 default if the package fits into the JOSS scope.</p>
 <ul class="simple">
@@ -828,15 +834,15 @@ of vetted tools.</p>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#who-should-submit-the-package-for-review">Who should submit the package for review?</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#does-your-package-meet-packaging-requirements">2. Does Your Package Meet Packaging Requirements?</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#is-your-package-in-scope-for-pyopensci">3. Is Your Package in Scope for pyOpenSci?</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#submit-your-package-for-peer-review">4. Submit Your Package for Peer Review</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#editor-in-chief-reviews-package-for-scope-and-minimal-infrastructure-criteria">5. Editor-in-Chief Reviews Package for Scope and Minimal Infrastructure Criteria</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-review-begins">6. The Review Begins</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#response-to-reviews">7. Response to Reviews</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#does-your-package-meet-packaging-requirements">2. Does your package meet packaging requirements?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#is-your-package-in-scope-for-pyopensci">3. Is your package in scope for pyOpenSci?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#submit-your-package-for-peer-review">4. Submit your package for peer review</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#editor-in-chief-reviews-package-for-scope-and-minimal-infrastructure-criteria">5. Editor-in-Chief reviews package for scope and minimal infrastructure criteria</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-review-begins">6. The review begins</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#response-to-reviews">7. Response to reviews</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#acceptance-into-pyopensci">8. Acceptance into pyOpenSci</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#my-package-is-approved-now-what">My Package is Approved, Now What?</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#journal-of-open-source-software-joss-submission">Journal of Open Source Software (JOSS) Submission</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#my-package-is-approved-now-what">My package is approved, now what?</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#journal-of-open-source-software-joss-submission">Journal of Open Source Software (JOSS) submission</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#post-review-welcome-to-the-pyopensci-community">Post review - welcome to the pyOpenSci community</a><ul class="nav section-nav flex-column">

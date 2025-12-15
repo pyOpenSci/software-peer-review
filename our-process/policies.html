@@ -11,8 +11,8 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="our-process/policies.html" />
 <meta property="og:site_name" content="pyOpenSci Python Package Guide" />
-<meta property="og:description" content="Review process guidelines: pyOpenSci packages are reviewed for quality, fit, scope, documentation, and usability. The review process is similar to a manuscript review, however, it has a stronger fo..." />
-<meta name="description" content="Review process guidelines: pyOpenSci packages are reviewed for quality, fit, scope, documentation, and usability. The review process is similar to a manuscript review, however, it has a stronger fo..." />
+<meta property="og:description" content="Review process guidelines: pyOpenSci packages are reviewed for quality, fit, scope, documentation, and usability. The review process is similar to a manuscript review; however, it has a stronger fo..." />
+<meta name="description" content="Review process guidelines: pyOpenSci packages are reviewed for quality, fit, scope, documentation, and usability. The review process is similar to a manuscript review; however, it has a stronger fo..." />
 
     <title>Peer Review Guidelines &amp; Policies &#8212; Software Peer Review Guide</title>
   
@@ -480,13 +480,13 @@
 <section id="review-process-guidelines">
 <h2>Review process guidelines<a class="headerlink" href="#review-process-guidelines" title="Link to this heading">#</a></h2>
 <p>pyOpenSci packages are reviewed for quality, fit, scope, documentation, and
-usability. The review process is similar to a manuscript review, however, it
+usability. The review process is similar to a manuscript review; however, it
 has a stronger focus on Python packaging best practices.</p>
 <p>Unlike a manuscript review, our peer review process is an ongoing conversation.
-Once all major issues and questions are addressed, the review editor will make
-a decision to accept, hold, or reject the package.</p>
+Once all major issues and questions are addressed, the review editor will decide
+to accept, hold, or reject the package.</p>
 <p>Rejections are usually done early in the process, before the review process
-begins. In rare cases, a package may also not be on-boarded into the pyOpenSci
+begins. In rare cases, a package may also not be onboarded into the pyOpenSci
 ecosystem after review &amp; revision.</p>
 <p>It is ultimately the editor’s decision on whether or not to reject the package
 based on how the reviews are addressed.</p>
@@ -494,23 +494,24 @@ based on how the reviews are addressed.</p>
 <section id="review-communication-approach">
 <h2>Review communication approach<a class="headerlink" href="#review-communication-approach" title="Link to this heading">#</a></h2>
 <p>Communication between authors, reviewers, and editors takes
-place on GitHub. You can, however choose to contact the editor by email if
+place on GitHub. However, you may contact the editor by email if
 needed.</p>
 <p>When submitting a package, please make sure that your GitHub notification
-settings are setup to notify you when you receive feedback on the review issue.</p>
+settings are turned on for the software-submission repository to notify you
+when you receive feedback on a review issue.</p>
 </section>
 <section id="submitting-your-package-for-review-in-other-venues">
 <h2>Submitting your package for review in other venues<a class="headerlink" href="#submitting-your-package-for-review-in-other-venues" title="Link to this heading">#</a></h2>
 <p>We recommend submitting your package for review with pyOpenSci before
 submitting a software paper describing the package to a journal.</p>
-<p>Review feedback may result in major improvements and updates to your package,
-including changes that could be break package functionality.</p>
+<p>Review feedback may result in significant improvements and updates to your package,
+including changes that could break package functionality.</p>
 <p>Applying reviewer or editor recommendations to your package can improve your
-users’ experience with future versions of your package even if your package is
+users’ experience with future versions of your package, even if your package is
 already published on <code class="docutils literal notranslate"><span class="pre">PyPI</span></code> or <code class="docutils literal notranslate"><span class="pre">conda-forge</span></code>.</p>
 <blockquote>
 <div><p>Please do not submit your package for review while it or an associated
-manuscript is also under review at another venue, as this may result on
+manuscript is also under review at another venue, as this may result in
 conflicting requests for changes from two sets of reviewers.</p>
 </div></blockquote>
 <section id="publication-with-journal-of-open-source-software-joss">
@@ -574,6 +575,48 @@ thesis students/advisors, or mentors.</p></li>
 <p>In the case where none of the associate editors can serve as editor, an
 external guest editor will be recruited to lead the package review.</p>
 </section>
+<section id="policy-for-use-of-generative-ai-llms">
+<span id="generative-ai-policy"></span><h2>Policy for use of generative AI / LLMs<a class="headerlink" href="#policy-for-use-of-generative-ai-llms" title="Link to this heading">#</a></h2>
+<div class="important admonition">
+<p class="admonition-title">How this policy was developed</p>
+<p>The policy below was co-developed by the pyOpenSci community. Its goals are:</p>
+<ul class="simple">
+<li><p>Acknowledgment of and transparency around the widespread use of Generative AI tools, with a focus on Large Language Models (LLMs) in Open Source development.</p></li>
+<li><p>Ensure an equitable balance of effort in the peer review process: Authors acknowledge that a human has carefully reviewed parts of the package that are AI-generated. Generated material should be in a state that minimizes review time. Our reviewers are not responsible for correcting errors in machine-generated content.</p></li>
+<li><p>Disclosure allows reviewers and editors to make informed decisions around the types of packages that they wish to review code for.</p></li>
+<li><p>Raise awareness of challenges that Generative AI tools present to the scientific (and broader) open source community.</p></li>
+</ul>
+<p><a class="reference external" href="https://github.com/pyOpenSci/software-peer-review/issues/331">Please see this GitHub issue for a discussion of the topic.</a></p>
+</div>
+<section id="disclosure-of-generative-ai-use-in-pyopensci-reviewed-packages">
+<h3>Disclosure of generative AI use in pyOpenSci reviewed packages<a class="headerlink" href="#disclosure-of-generative-ai-use-in-pyopensci-reviewed-packages" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>When you submit a package to pyOpenSci, please disclose any use of LLMs (Large Language Models) in your package’s development by checking the appropriate box and describing your use of generative AI in its development and/or maintenance on our software submission form. Disclosure should include what parts of your package were developed using Generative AI tools.</p>
+<ul>
+<li><p>Please also disclose this use of Generative AI tools in your package’s <code class="docutils literal notranslate"><span class="pre">README.md</span></code> file and in any modules where generative AI contributions have been implemented.</p></li>
+</ul>
+</li>
+<li><p>We require that all aspects of your package have been reviewed carefully by a human on your maintainer team. Please ensure all text and code have been carefully checked for bugs and issues before submitting to pyOpenSci.</p></li>
+<li><p>Your acknowledgment of using Generative AI will not prejudice the success of your submission. However, a reviewer can and will ask you to revisit your package’s content if it appears that sections have been copied and pasted from other sources without human review.</p></li>
+<li><p>If the review team (comprised of the editor and reviewers) determines that the code and text in the package are too challenging to review, they can decide to pause and/or discontinue the review following this policy’s guidelines.</p></li>
+</ul>
+<p>Below is the checklist that you will need to respond to in our submission form:</p>
+<div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span><span class="k">- [ ]</span> Generative AI was used to produce some of the material in this submission.
+<span class="k">- [ ]</span> If generative AI was used in this project, the authors affirm that all generated material has been reviewed and edited for clarity, correctness, and completeness. The authors are responsible for the content of their work and affirm that it is in a state where reviewers will not be responsible for primary editing and review of machine-generated material.
+
+If you checked the first box above, please describe how generative AI was used, including:
+
+<span class="k">-</span><span class="w"> </span><span class="gs">**Which parts**</span> of the submission were generated (e.g., documentation, tests, code). In addition to a general description, please specifically indicate any substantial portions of code (classes, modules, subpackages) that were wholly or primarily generated by AI.
+<span class="k">-</span><span class="w"> </span><span class="gs">**The approximate scale**</span> of the generated portions (e.g., &quot;all of the tests were generated and then checked by a human,&quot; &quot;small routines were generated and copied into the code&quot;).
+<span class="k">-</span><span class="w"> </span><span class="gs">**How the generative AI was used**</span> (e.g., line completion, help with translation, queried separately and integrated, agentic workflow).
+
+If you have a policy around generative AI use in your project, please provide a link to it below:
+
+<span class="k">-</span><span class="w"> </span><span class="ge">_Your link here (remove this line if you don&#39;t have a link)_</span>
+</pre></div>
+</div>
+</section>
+</section>
 <section id="review-timelines-and-on-hold-reviews">
 <h2>Review timelines and on-hold reviews<a class="headerlink" href="#review-timelines-and-on-hold-reviews" title="Link to this heading">#</a></h2>
 <p>At any time, an author can choose to have their submission put on hold
@@ -607,9 +650,9 @@ highlight through our social channels.</p>
 including issues, pull requests, and dates of the last release and last commit
 to the package repository. Activity is defined as a repository commit, pull
 request, or release.</p>
-<p>We will flag packages that haven’t been updated within a 1 year/ 12 month time
+<p>We will flag packages that haven’t been updated within a 1-year/12-month time
 period based on activity. Packages with no activity after 12 months will be
-flagged. At that time, pyOpenSci editorial team member will contact the package
+flagged. At that time, a pyOpenSci editorial team member will contact the package
 maintainers to evaluate the maintenance status of their package.</p>
 </section>
 <section id="package-maintenance-and-maintainer-responsiveness">
@@ -621,13 +664,13 @@ ecosystem.</p>
 <p>In cases where the community heavily uses a package, we may
 collaborate with the community to identify reasonable next steps, such as
 assisting in finding a new maintainer. If a solution for the ongoing package
-maintenance is not found, the package will be archived within the pyOpenSci
-ecosystem.</p>
+maintenance of your package is not found, the package will be archived within
+the pyOpenSci ecosystem. <a class="reference internal" href="#package-archive"><span class="std std-ref">See section on archiving below.</span></a></p>
 <p>If a sub-community decides to fork and maintain the package, we are open to
 working with the new maintainers to register the newly forked package within
 our ecosystem. The original package will be archived with a link to the new
 fork.</p>
-<p>We will also add a note to any blogs written that highlight your tool that
+<p>We will also add a note to any blogs written that highlight your tool, that
 the package is no longer maintained.</p>
 </section>
 <section id="quality-commitment">
@@ -644,18 +687,18 @@ in touch with us if they do need to step down from maintaining a tool.</p>
 <section id="requesting-package-removal-from-the-pyopensci-ecosystem">
 <h3>Requesting Package Removal from the pyOpenSci Ecosystem<a class="headerlink" href="#requesting-package-removal-from-the-pyopensci-ecosystem" title="Link to this heading">#</a></h3>
 <p>In the unlikely scenario that a contributor of a package requests removal of
-their package from our ecosystem, we retain the right offer the last / most
+their package from our ecosystem, we retain the right to offer the last/most
 recently released version of that package in our ecosystem for archival
 purposes only.</p>
 </section>
 <section id="archiving-a-package">
-<h3>Archiving a package<a class="headerlink" href="#archiving-a-package" title="Link to this heading">#</a></h3>
+<span id="package-archive"></span><h3>Archiving a package<a class="headerlink" href="#archiving-a-package" title="Link to this heading">#</a></h3>
 <p>If a package appears to be no longer maintained, we will mark it as
-archived which moves the package from our
+archived, which moves the package from our
 <a class="reference external" href="https://www.pyopensci.org/python-packages.html#all-packages">main package listing</a>
 to our <a class="reference external" href="https://www.pyopensci.org/python-packages.html#archived-packages">archived packaging</a>
 listing section.</p>
-<p>To archive a pyOpenSci approved package, add the
+<p>To archive a pyOpenSci-approved package, add the
 <a class="reference external" href="https://github.com/pyOpenSci/software-submission/issues?q=label%3Aarchived">archive label</a>
 to the original review issue. Once this label is applied to the issue, the
 website will automatically update to reflect this status. If at any point
@@ -730,6 +773,10 @@ educational purposes.</p>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#conflict-of-interest-for-reviews-and-editors">Conflict of interest for reviews and editors</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#policy-for-use-of-generative-ai-llms">Policy for use of generative AI / LLMs</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#disclosure-of-generative-ai-use-in-pyopensci-reviewed-packages">Disclosure of generative AI use in pyOpenSci reviewed packages</a></li>
+</ul>
+</li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#review-timelines-and-on-hold-reviews">Review timelines and on-hold reviews</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#after-acceptance-package-ownership-and-maintenance">After acceptance: package ownership and maintenance</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#maintenance-tracking">Maintenance tracking</a></li>
