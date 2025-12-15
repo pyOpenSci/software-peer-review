@@ -3,15 +3,15 @@
 ## Review process guidelines
 
 pyOpenSci packages are reviewed for quality, fit, scope, documentation, and
-usability. The review process is similar to a manuscript review, however, it
+usability. The review process is similar to a manuscript review; however, it
 has a stronger focus on Python packaging best practices.
 
 Unlike a manuscript review, our peer review process is an ongoing conversation.
-Once all major issues and questions are addressed, the review editor will make
-a decision to accept, hold, or reject the package.
+Once all major issues and questions are addressed, the review editor will decide
+to accept, hold, or reject the package.
 
 Rejections are usually done early in the process, before the review process
-begins. In rare cases, a package may also not be on-boarded into the pyOpenSci
+begins. In rare cases, a package may also not be onboarded into the pyOpenSci
 ecosystem after review & revision.
 
 It is ultimately the editor’s decision on whether or not to reject the package
@@ -20,26 +20,27 @@ based on how the reviews are addressed.
 ## Review communication approach
 
 Communication between authors, reviewers, and editors takes
-place on GitHub. You can, however choose to contact the editor by email if
+place on GitHub. However, you may contact the editor by email if
 needed.
 
 When submitting a package, please make sure that your GitHub notification
-settings are setup to notify you when you receive feedback on the review issue.
+settings are turned on for the software-submission repository to notify you
+when you receive feedback on a review issue.
 
 ## Submitting your package for review in other venues
 
 We recommend submitting your package for review with pyOpenSci before
 submitting a software paper describing the package to a journal.
 
-Review feedback may result in major improvements and updates to your package,
-including changes that could be break package functionality.
+Review feedback may result in significant improvements and updates to your package,
+including changes that could break package functionality.
 
 Applying reviewer or editor recommendations to your package can improve your
-users' experience with future versions of your package even if your package is
+users' experience with future versions of your package, even if your package is
 already published on `PyPI` or `conda-forge`.
 
 > Please do not submit your package for review while it or an associated
-> manuscript is also under review at another venue, as this may result on
+> manuscript is also under review at another venue, as this may result in
 > conflicting requests for changes from two sets of reviewers.
 
 ### Publication with Journal of Open Source Software (JOSS)
@@ -105,6 +106,37 @@ a conflict of interest if:
 In the case where none of the associate editors can serve as editor, an
 external guest editor will be recruited to lead the package review.
 
+(generative-ai-policy)=
+
+## Policy for use of generative AI / LLMs
+
+:::{admonition} How this policy was developed
+:class: important
+
+The policy below was co-developed by the pyOpenSci community. Its goals are:
+
+- Acknowledgment of and transparency around the widespread use of Generative AI tools, with a focus on Large Language Models (LLMs) in Open Source development.
+- Ensure an equitable balance of effort in the peer review process: Authors acknowledge that a human has carefully reviewed parts of the package that are AI-generated. Generated material should be in a state that minimizes review time. Our reviewers are not responsible for correcting errors in machine-generated content.
+- Disclosure allows reviewers and editors to make informed decisions around the types of packages that they wish to review code for.
+- Raise awareness of challenges that Generative AI tools present to the scientific (and broader) open source community.
+
+[Please see this GitHub issue for a discussion of the topic.](https://github.com/pyOpenSci/software-peer-review/issues/331)
+:::
+
+### Disclosure of generative AI use in pyOpenSci reviewed packages
+
+- When you submit a package to pyOpenSci, please disclose any use of LLMs (Large Language Models) in your package's development by checking the appropriate box and describing your use of generative AI in its development and/or maintenance on our software submission form. Disclosure should include what parts of your package were developed using Generative AI tools.
+  - Please also disclose this use of Generative AI tools in your package's `README.md` file and in any modules where generative AI contributions have been implemented.
+- We require that all aspects of your package have been reviewed carefully by a human on your maintainer team. Please ensure all text and code have been carefully checked for bugs and issues before submitting to pyOpenSci.
+- Your acknowledgment of using Generative AI will not prejudice the success of your submission. However, a reviewer can and will ask you to revisit your package's content if it appears that sections have been copied and pasted from other sources without human review.
+- If the review team (comprised of the editor and reviewers) determines that the code and text in the package are too challenging to review, they can decide to pause and/or discontinue the review following this policy’s guidelines.
+
+Below is the checklist that you will need to respond to in our submission form:
+
+```{include} ../appendices/gen-ai-checklist.md
+
+```
+
 ## Review timelines and on-hold reviews
 
 At any time, an author can choose to have their submission put on hold
@@ -143,9 +175,9 @@ including issues, pull requests, and dates of the last release and last commit
 to the package repository. Activity is defined as a repository commit, pull
 request, or release.
 
-We will flag packages that haven't been updated within a 1 year/ 12 month time
+We will flag packages that haven't been updated within a 1-year/12-month time
 period based on activity. Packages with no activity after 12 months will be
-flagged. At that time, pyOpenSci editorial team member will contact the package
+flagged. At that time, a pyOpenSci editorial team member will contact the package
 maintainers to evaluate the maintenance status of their package.
 
 (archive-process)=
@@ -160,15 +192,15 @@ ecosystem.
 In cases where the community heavily uses a package, we may
 collaborate with the community to identify reasonable next steps, such as
 assisting in finding a new maintainer. If a solution for the ongoing package
-maintenance is not found, the package will be archived within the pyOpenSci
-ecosystem.
+maintenance of your package is not found, the package will be archived within
+the pyOpenSci ecosystem. [See section on archiving below.](package-archive)
 
 If a sub-community decides to fork and maintain the package, we are open to
 working with the new maintainers to register the newly forked package within
 our ecosystem. The original package will be archived with a link to the new
 fork.
 
-We will also add a note to any blogs written that highlight your tool that
+We will also add a note to any blogs written that highlight your tool, that
 the package is no longer maintained.
 
 ### Quality commitment
@@ -186,19 +218,21 @@ in touch with us if they do need to step down from maintaining a tool.
 ### Requesting Package Removal from the pyOpenSci Ecosystem
 
 In the unlikely scenario that a contributor of a package requests removal of
-their package from our ecosystem, we retain the right offer the last / most
+their package from our ecosystem, we retain the right to offer the last/most
 recently released version of that package in our ecosystem for archival
 purposes only.
+
+(package-archive)=
 
 ### Archiving a package
 
 If a package appears to be no longer maintained, we will mark it as
-archived which moves the package from our
+archived, which moves the package from our
 [main package listing](https://www.pyopensci.org/python-packages.html#all-packages)
 to our [archived packaging](https://www.pyopensci.org/python-packages.html#archived-packages)
 listing section.
 
-To archive a pyOpenSci approved package, add the
+To archive a pyOpenSci-approved package, add the
 [archive label](https://github.com/pyOpenSci/software-submission/issues?q=label%3Aarchived)
 to the original review issue. Once this label is applied to the issue, the
 website will automatically update to reflect this status. If at any point
