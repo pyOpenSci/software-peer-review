@@ -51,7 +51,7 @@ We review packages openly using GitHub Issues.
 ::::
 
 ::::{grid-item}
-:::{card}  <i class="fa-solid fa-timeline"></i> Review timeline
+:::{card} <i class="fa-solid fa-timeline"></i> Review timeline
 :link: ../our-process/review-timeline
 :link-type: doc
 :class-card: left-aligned
@@ -66,7 +66,7 @@ Curious about the general timeline for pyOpenSci reviews?
 :link-type: doc
 :class-card: left-aligned
 
-Read about our peer review policies.
+Read through our peer review policies before submitting a package to us.
 :::
 ::::
 
@@ -87,9 +87,10 @@ Before you begin this process, [please be sure to read the review process guidel
 
 1. Please be sure that you have time to devote to making changes to your
 package. During review, you will receive feedback from an editor and two reviewers. Changes could
-take time. Please consider this before submitting to us. You can read more about the timeline to make changes in our [peer review policies page](../our-process/policies).
+take time. Please consider this before submitting. You can read more about the timeline for making changes on our [peer review policies page](../our-process/policies).
 2. A diverse group of volunteer editors and reviewers leads peer review.
 Please be considerate when engaging with everyone online.
+3. All participants in our peer review process need to follow the [pyOpenSci Code of Conduct](https://www.pyopensci.org/handbook/CODE_OF_CONDUCT.html). Please review it before submitting to us.
 ```
 
 ## 1. Do you plan to continue to maintain your package?
@@ -118,6 +119,15 @@ for pyOpenSci.
   for their effort.
 
 ```{note}
+**Important**: To ensure quality reviews for all submissions and protect our
+volunteer review team, each active submission must have a unique point of contact.
+If you are currently the point of contact for another package under review, please
+wait until that review is complete before submitting another package.
+
+For more details, see our [submission volume policy](submission-volume).
+```
+
+```{note}
 If your package is more of a tool to support a specific workflow that
 either:
 * may not be maintained long term or
@@ -129,7 +139,7 @@ emphasis on long-term software maintenance and focuses more on
 publication quality and citation/credit.
 ```
 
-## 2. Does Your Package Meet Packaging Requirements?
+## 2. Does your package meet packaging requirements?
 
 Before submitting your project for review with pyOpenSci, make sure that
 your package meets all of the requirements listed in the editor checks (see below).
@@ -140,13 +150,18 @@ If you have questions about any of the elements listed below, you can
 check out our [pyOpenSci Python packaging guide](https://www.pyopensci.org/python-package-guide) which includes an overview discussion of best practices
 for Python packaging, including discussions of:
 
-- Tools that you can use to create your package
-- Tools for creating and publishing documentation.
+- Tools that you can use to create your package,
+- Tools for creating and publishing documentation,
 - Resources for creating files such as the README file, code of conduct, contributing guide, and more.
 
 ```{include} ../appendices/editor-in-chief-checks.md
 
 ```
+
+:::{important}
+Given the increased use of Generative AI tools (LLMs), we have developed a disclosure policy for all packages submitted to pyOpenSci (generative-ai-policy). Please review this before submitting to us.
+:::
+
 
 ```{hint}
 **Do you have questions about Python packaging or our peer review process?**
@@ -170,7 +185,7 @@ that you can use to create a high-quality
 Python package.](https://www.pyopensci.org/python-package-guide/package-structure-code/python-package-build-tools.html)
 ```
 
-## 3. Is Your Package in Scope for pyOpenSci?
+## 3. Is your package in scope for pyOpenSci?
 
 Next, check to see if your package falls within the topical and technical scope of pyOpenSci. If you aren't
 sure about whether your package fits within pyOpenSci's scope (below), submit
@@ -188,13 +203,13 @@ Our current categories for determining package scope are below:
 Click here to view our technical and domain scope requirements.
 ```
 
-## 4. Submit Your Package for Peer Review
+## 4. Submit your package for peer review
 
 To submit your package for peer review, you can
 open an issue in our [pyopensci/software-review repo](https://github.com/pyOpenSci/software-review/issues/new/choose/)
 repository and fill out the [Submit Software for Review](https://github.com/pyOpenSci/software-submission/issues/new?template=submit-software-for-review.md) issue template.
 
-## 5. Editor-in-Chief Reviews Package for Scope and Minimal Infrastructure Criteria
+## 5. Editor-in-Chief reviews package for scope and minimal infrastructure criteria
 
 Once the issue is opened, our editor-in-chief and an editor from our editorial board will review your submission within
 **2 weeks** and respond with next steps. The editor may request that you make updates
@@ -207,7 +222,7 @@ package if it does not fall within our scope.
 Click here to view the editor checks that will be used to evaluate your package.
 ```
 
-## 6. The Review Begins
+## 6. The review begins
 
 If your package meets the minimal criteria for being
 reviewed, it may then be given to an editor with appropriate domain experience
@@ -217,7 +232,7 @@ issue within **3 weeks**. Reviewers can also open issues in your package reposit
 We prefer issues that link back to the review as they document changes made to your
 package that were triggered by our review process.
 
-## 7. Response to Reviews
+## 7. Response to reviews
 
 You should respond to reviewers’ comments within **2 weeks** of the
 last-submitted review. You can make updates to your package at any time. We
@@ -231,7 +246,7 @@ Once the reviewers are happy with the changes that you've made to the package, t
 editor will review everything and accept your package into the pyOpenSci ecosystem.
 Congratulations! You are almost done!
 
-## My Package is Approved, Now What?
+## My package is approved, now what?
 
 Congratulations on being accepted into the pyOpenSci community of maintainers!
 Once your package is approved, a few things will happen:
@@ -246,14 +261,14 @@ Once your package is approved, a few things will happen:
 
 If you'd like to submit your package to JOSS, you can do so now. Remember that JOSS will accept our review as theirs, so **you DO NOT need to go through another review**. Read more below.
 
-### Journal of Open Source Software (JOSS) Submission
+### Journal of Open Source Software (JOSS) submission
 
 pyOpenSci has a [partnership with JOSS](JOSS), where our review is accepted by JOSS by
 default if the package fits into the JOSS scope.
 
 - When you submit your package for pyOpenSci review, you can opt to include a
   submission to JOSS after passing pyOpenSci review. In this case, your package
-  will be evaluated by JOSS through the pyOpenSci review
+  will be evaluated by JOSS through the pyOpenSci review.
 - To complete the JOSS submission, you will also need to craft a **paper.md**
   file describing the package following JOSS' standards (see below). More details on the requirements for JOSS can be found on [their website](https://joss.readthedocs.io/en/latest/submitting.html#what-should-my-paper-contain).
 - If you choose to opt into the pyOpenSci/JOSS partnership in your review,
