@@ -202,7 +202,7 @@ Our current categories for determining package scope are below:
 Click here to view our technical and domain scope requirements.
 ```
 
-## 4. Is your package ready for review?
+## 4. Prepare your package for peer review
 
 Please consider the best time in your package's development to submit for review. Your package should be sufficiently mature so that reviewers can review all essential aspects. Keep in mind that review may result in major changes.
 
