@@ -278,7 +278,7 @@ this issue how your package is "best in class." You can refer to our
 
 During the review, you may encounter challenges that require resolution.
 
-* For **technical issues** such as repository access, GitHub integration, or platform problems, post in the `#pyos-infrastructure` Slack channel where our technical team can assist you.
+* For **technical issues** such as repository access, GitHub integration, or platform problems, post in the `#pyos-maintainers-infrastructure` Slack channel where our technical team can assist you.
 
 * For **behavior concerns** including unprofessional communication, harassment, or guideline violations, use our [pyOpenSci Code of Conduct](https://www.pyopensci.org/handbook/CODE_OF_CONDUCT.html) as guidance. Follow the Code of Conduct reporting procedures and notify the Peer Review Lead of the issue.
 
