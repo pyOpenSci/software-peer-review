@@ -31,6 +31,7 @@ NOTE: We prefer that you have development instructions in your documentation too
 - [ ] The package authors have disclosed the use of Generative AI tools in the development and/or maintenance of their package.
 
 **Optional but recommended:**
+
 - [ ] **Linting** The package uses automated linting (e.g., [ruff](https://docs.astral.sh/ruff/)) to enforce code style and quality standards, ideally integrated with CI.
 - [ ] **Type checking** The package includes type hints and uses a type checker (e.g., [mypy](https://mypy-lang.org/)) to catch type-related issues, ideally integrated with CI.
 - [ ] **Modern tooling** The package uses modern Python development tools (e.g., [uv](https://docs.astral.sh/uv/) for dependency management and virtual environments) to streamline development workflows.
