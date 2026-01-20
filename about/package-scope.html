@@ -487,15 +487,27 @@ of Open Source software for those who wish to obtain a Journal paper
 through our review.</p>
 <section id="what-types-of-packages-does-pyopensci-review">
 <h2>What types of packages does pyOpenSci review?<a class="headerlink" href="#what-types-of-packages-does-pyopensci-review" title="Link to this heading">#</a></h2>
-<p>pyOpenSci reviews higher level software packages that support scientific workflows.</p>
+<p>pyOpenSci reviews Python packages that support scientific workflows and research.
+Our scope is intentionally broad to accommodate the diverse ways scientists use
+Python in their work.</p>
+<p><strong>Scientific workflows</strong> include activities such as:</p>
+<ul class="simple">
+<li><p>Data collection, retrieval, and processing</p></li>
+<li><p>Data analysis, modeling, and simulation</p></li>
+<li><p>Data visualization and exploration</p></li>
+<li><p>Research reproducibility and automation</p></li>
+<li><p>Scientific communication and collaboration</p></li>
+</ul>
+<p>Packages that enable, enhance, or streamline these activities for researchers
+across any scientific domain are within our scope.</p>
 <figure class="align-default" id="fig-target">
 <a class="reference internal image-reference" href="../_images/python-stack-jupyter-earth.png"><img alt="Image showing the tiers of software in the python ecosystem starting with Python itself and as you move out packages become more domain specific. In this image packages like xarray and numpy are considered core to scientific python. Packages and distributions like astropy, simpeg and metpy are considered to be domain specific." src="../_images/python-stack-jupyter-earth.png" style="width: 700px;" />
 </a>
 <figcaption>
-<p><span class="caption-text">Diagram showing the tiers of software in the python ecosystem starting with Python itself and as you move out packages become more domain specific. In this image, packages such as xarray and numpy are considered core to scientific python. Packages and distributions like astropy, simpeg and metpy are considered domain specific. pyOpenSci’s review
-process focuses on domain specific packages rather than core packages as
-these packages tend to have more variability in long term maintenance and
-package infrastructure and quality compared with established core packages. <strong>Source: <a class="reference external" href="https://jupytearth.org/jupyter-resources/introduction/ecosystem.html">“Jupyter meets earth” project</a></strong></span><a class="headerlink" href="#fig-target" title="Link to this image">#</a></p>
+<p><span class="caption-text">Diagram showing the tiers of software in the Python ecosystem starting with Python itself and as you move out, packages become more domain specific. In this image, packages such as xarray and numpy are considered core to scientific Python. Packages and distributions like Astropy, SunPy, and MetPy are considered domain specific. pyOpenSci’s review
+process focuses on domain-specific packages and tools that support scientific workflows rather than core infrastructure packages, as
+these packages tend to have more variability in long-term maintenance and
+package infrastructure and quality compared with established core packages. Examples of pyOpenSci-reviewed packages include MovingPandas (geospatial data), Pandera (data validation), PyGMT (geophysical mapping), and xclim (climate data analysis). <strong>Source: <a class="reference external" href="https://jupytearth.org/jupyter-resources/introduction/ecosystem.html">“Jupyter meets earth” project</a></strong></span><a class="headerlink" href="#fig-target" title="Link to this image">#</a></p>
 </figcaption>
 </figure>
 <div class="note admonition">
@@ -539,10 +551,19 @@ a growing or established community!</p>
 <section id="package-categories-that-are-in-scope-for-pyopensci">
 <h2>Package categories that are in-scope for pyOpenSci<a class="headerlink" href="#package-categories-that-are-in-scope-for-pyopensci" title="Link to this heading">#</a></h2>
 <p>The following are the current categories that fall into scope for
-pyOpenSci. In addition to fitting into one or more of these categories, your package should have some level of
-demonstrated scientific application. This could be a use case that you can
-link to or a tutorial that demonstrates its potential application for science.</p>
-<p>Below we provide examples of packages from pyOpenSci ecosystem.</p>
+pyOpenSci. In addition to fitting into one or more of these categories, your package should support
+scientific or research activities. This support can be demonstrated through:</p>
+<ul class="simple">
+<li><p>Documentation showing how the package is used in research workflows</p></li>
+<li><p>Examples or tutorials demonstrating scientific applications</p></li>
+<li><p>Use cases in scientific publications or projects</p></li>
+<li><p>Relevance to data collection, analysis, or visualization in research contexts</p></li>
+</ul>
+<p>We interpret “scientific application” broadly to include any research domain—from
+physical and life sciences to social sciences, digital humanities, and beyond—as well
+as tools that support general research infrastructure (e.g., data validation, workflow
+automation, reproducibility).</p>
+<p>Below we provide examples of packages from the pyOpenSci ecosystem.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Many of the example packages below perform tasks that might fit in multiple
@@ -553,11 +574,12 @@ of packages that would fall into that category.</p>
 <h3>Data retrieval<a class="headerlink" href="#data-retrieval" title="Link to this heading">#</a></h3>
 <p>Packages for accessing and downloading data from online sources. This category
 includes wrappers for accessing APIs.</p>
-<p>Our definition of scientific applications is broad, including data storage
-services, journals, and other remote servers, as many data sources may be of
-interest to scientists. However, retrieval packages should be focused on data
-sources / topics, rather than services. For example a general client for Amazon
-Web Services data storage would not be in-scope.</p>
+<p>We interpret scientific application broadly for data retrieval packages, recognizing
+that many data sources—including data storage services, journals, repositories, and
+other remote servers—may be valuable to researchers. However, retrieval packages should
+be focused on data sources or topics relevant to research rather than general-purpose
+services. For example, a general client for Amazon Web Services data storage would not
+be in scope, but a package that retrieves specific scientific datasets from AWS would be.</p>
 <ul class="simple">
 <li><p>Examples: <a class="reference external" href="https://github.com/pyOpenSci/software-submission/issues/31">OpenOmics</a>, <a class="reference external" href="https://github.com/pyOpenSci/software-submission/issues/19">pyDov</a>, <a class="reference external" href="https://github.com/pyOpenSci/software-review/issues/26">Physcraper</a></p></li>
 </ul>
