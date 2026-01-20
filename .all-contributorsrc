@@ -476,6 +476,17 @@
         "doc",
         "review"
       ]
+    },
+    {
+      "login": "eigenbrot",
+      "name": "Arthur Eigenbrot",
+      "avatar_url": "https://avatars.githubusercontent.com/u/2183757?v=4",
+      "profile": "https://github.com/eigenbrot",
+      "contributions": [
+        "doc",
+        "bug",
+        "review"
+      ]
     }
   ],
   "contributorsPerLine": 6,

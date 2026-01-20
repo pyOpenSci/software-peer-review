@@ -1,6 +1,6 @@
 # <img src="https://www.pyopensci.org/software-peer-review/_static/logo-dark-mode.png" width=200 /> pyOpenSci Peer Review Guide
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-46-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-47-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 ![GitHub release (latest by date)](https://img.shields.io/github/v/release/pyopensci/peer-review-guide?color=purple&display_name=tag&style=plastic)
@@ -150,6 +150,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
       <td align="center" valign="top" width="16.66%"><a href="https://rgoswami.me"><img src="https://avatars.githubusercontent.com/u/4336207?v=4?s=100" width="100px;" alt="Rohit Goswami"/><br /><sub><b>Rohit Goswami</b></sub></a><br /><a href="https://github.com/pyOpenSci/software-peer-review/commits?author=HaoZeke" title="Documentation">📖</a> <a href="https://github.com/pyOpenSci/software-peer-review/pulls?q=is%3Apr+reviewed-by%3AHaoZeke" title="Reviewed Pull Requests">👀</a></td>
       <td align="center" valign="top" width="16.66%"><a href="https://jedbrown.org"><img src="https://avatars.githubusercontent.com/u/3303?v=4?s=100" width="100px;" alt="Jed Brown"/><br /><sub><b>Jed Brown</b></sub></a><br /><a href="https://github.com/pyOpenSci/software-peer-review/commits?author=jedbrown" title="Documentation">📖</a> <a href="https://github.com/pyOpenSci/software-peer-review/pulls?q=is%3Apr+reviewed-by%3Ajedbrown" title="Reviewed Pull Requests">👀</a></td>
       <td align="center" valign="top" width="16.66%"><a href="http://www.mapdatascience.com"><img src="https://avatars.githubusercontent.com/u/12127746?v=4?s=100" width="100px;" alt="Lauren Yee"/><br /><sub><b>Lauren Yee</b></sub></a><br /><a href="https://github.com/pyOpenSci/software-peer-review/commits?author=yeelauren" title="Documentation">📖</a> <a href="https://github.com/pyOpenSci/software-peer-review/pulls?q=is%3Apr+reviewed-by%3Ayeelauren" title="Reviewed Pull Requests">👀</a></td>
+      <td align="center" valign="top" width="16.66%"><a href="https://github.com/eigenbrot"><img src="https://avatars.githubusercontent.com/u/2183757?v=4?s=100" width="100px;" alt="Arthur Eigenbrot"/><br /><sub><b>Arthur Eigenbrot</b></sub></a><br /><a href="https://github.com/pyOpenSci/software-peer-review/commits?author=eigenbrot" title="Documentation">📖</a> <a href="https://github.com/pyOpenSci/software-peer-review/issues?q=author%3Aeigenbrot" title="Bug reports">🐛</a></td>
     </tr>
   </tbody>
 </table>
