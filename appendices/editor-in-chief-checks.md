@@ -34,7 +34,7 @@ NOTE: We prefer that you have development instructions in your documentation too
 
 - [ ] **Linting** The package uses automated linting (e.g., [ruff](https://docs.astral.sh/ruff/)) to enforce code style and quality standards, ideally integrated with CI.
 - [ ] **Type checking** The package includes type hints and uses a type checker (e.g., [mypy](https://mypy-lang.org/)) to catch type-related issues, ideally integrated with CI.
-- [ ] **Modern tooling** The package uses modern Python development tools (e.g., [uv](https://docs.astral.sh/uv/) for dependency management and virtual environments) to streamline development workflows.
+- [ ] **Modern tooling** The package uses modern Python development tools (e.g., [uv](https://docs.astral.sh/uv/) for dependency management) and [Hatch](https://www.pyopensci.org/python-package-guide/package-structure-code/python-package-build-tools.html#about-hatch) for building publishing and running development tasks to streamline development workflows. See the pyOpenSci packaging guide for more on [modern packaging tools](https://www.pyopensci.org/python-package-guide/package-structure-code/python-package-build-tools.html). 
 
 **Optional:** Let projects know that it's a great idea for projects to have a .github repository for the project organization where they can host a commonly used LICENSE, Code of Conduct, and even a YAML file with label definitions. These items will then be automatically applied to every repository in the organization to ensure consistency (but can be customized within repos too). The [SunPy project](https://github.com/sunpy/.github/) has a great example of this.
 
