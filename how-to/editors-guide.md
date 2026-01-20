@@ -143,7 +143,7 @@ For example:
 This approach keeps the issue labels clean and makes it easy to see at a glance what stage each review is currently in.
 
 - Check the YAML template at top of the submitted GitHub issue, make sure that mandatory parts of the template are filled out.
-  - If elements are incomplete, direct the authors toward filling in any missing pieces.
+- If elements are incomplete, direct the authors toward filling in any missing pieces.
 
 ```markdown
 Submitting Author: SUBMITTING AUTHOR NAME HERE (Name @github_handle)
