@@ -213,7 +213,7 @@ Your package is ready for review when:
 - **Functions and classes (the API) are stable or close to reaching stability**. "Stable" means that the scope of the package is settled and well defined. Future, backwards-incompatible changes to the API will be managed carefully.
 - **Major changes and refactoring can still be carried out after review** but should not be a frequent occurrence.
 - **Most functionality should be clearly documented and tested**. At the submission stage, all major functions should be stable enough to be fully documented and tested. The README should make a strong case for the package.
-- **The README provides enough information** about your package (goals, usage, similar packages) for the editors to assess its scope without having to install the package. The README file should also make a strong case for why the package adds value to the scientific Python ecosystem. 
+- **The README provides enough information** about your package (goals, usage, similar packages) for the editors to assess its scope without having to install the package. The README file should also make a strong case for why the package adds value to the scientific Python ecosystem.
 
 ### Review before publication
 
@@ -227,7 +227,7 @@ Your package will continue to evolve after review. For guidance on this topic, s
 
 ## 5. Submit your package for peer review
 
-To submit your package for peer review, 
+To submit your package for peer review,
 open an issue in our [pyopensci/software-review repo](https://github.com/pyOpenSci/software-review/issues/new/choose/)
 repository and fill out the [Submit Software for Review](https://github.com/pyOpenSci/software-submission/issues/new?template=submit-software-for-review.md) issue template.
 
