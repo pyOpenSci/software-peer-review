@@ -612,11 +612,8 @@ Version accepted: TBD
 </figcaption>
 </figure>
 <ul class="simple">
-<li><p>Check the YAML template at top of the submitted GitHub issue, make sure that mandatory parts of the template are filled out.</p>
-<ul>
+<li><p>Check the YAML template at top of the submitted GitHub issue, make sure that mandatory parts of the template are filled out.</p></li>
 <li><p>If elements are incomplete, direct the authors toward filling in any missing pieces.</p></li>
-</ul>
-</li>
 </ul>
 <div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span>Submitting Author: SUBMITTING AUTHOR NAME HERE (Name <span class="ni">@github_handle</span>)
 All current maintainers: ALL CURRENT MAINTAINERS LISTED HERE (Name <span class="ni">@github_handle1</span>, Name <span class="ni">@github_handle2</span>)
@@ -799,6 +796,18 @@ ensure that things are moving smoothly:</p>
 <li><p>If a review has not been submitted after 2 weeks, ping the reviewer(s) within the review issue to ensure they are aware of the 3-week deadline.</p></li>
 <li><p>If you are waiting for a maintainer to respond to you, be sure to add the label <code class="docutils literal notranslate"><span class="pre">pending-maintainer-response</span></code> to the issue.</p></li>
 </ul>
+<section id="managing-labels-throughout-the-review-process">
+<h3>Managing labels throughout the review process<a class="headerlink" href="#managing-labels-throughout-the-review-process" title="Link to this heading">#</a></h3>
+<p>As the review progresses through different stages, you should update the labels to reflect the current state of the review. <strong>Remove older labels</strong> and keep only the label(s) that represent the most recent step in the review process.</p>
+<p>For example:</p>
+<ul class="simple">
+<li><p>When you complete the editor checks and begin seeking reviewers, remove <code class="docutils literal notranslate"><span class="pre">1/editor-checks</span></code> and add <code class="docutils literal notranslate"><span class="pre">2/seeking-reviewer(s)</span></code>.</p></li>
+<li><p>When reviewers are assigned, remove <code class="docutils literal notranslate"><span class="pre">2/seeking-reviewer(s)</span></code> and add <code class="docutils literal notranslate"><span class="pre">3/reviewer(s)-assigned</span></code>.</p></li>
+<li><p>When reviews are submitted, remove <code class="docutils literal notranslate"><span class="pre">3/reviewer(s)-assigned</span></code> and add <code class="docutils literal notranslate"><span class="pre">4/review-in-awaiting-changes</span></code>.</p></li>
+<li><p>If the review is put on hold, add the <code class="docutils literal notranslate"><span class="pre">holding</span></code> label. You can keep other status labels to indicate where in the process the review was paused.</p></li>
+</ul>
+<p>This approach keeps the issue labels clean and makes it easy to see at a glance what stage each review is currently in.</p>
+</section>
 <section id="what-to-do-when-reviews-are-in">
 <h3>✔️ 5. What to do when reviews are in<a class="headerlink" href="#what-to-do-when-reviews-are-in" title="Link to this heading">#</a></h3>
 <ul class="simple">
@@ -1064,6 +1073,7 @@ the author will be instructed to add the JOSS DOI badge to their package <strong
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#editor-responsibilities-during-the-review">Editor responsibilities during the review</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#managing-labels-throughout-the-review-process">Managing labels throughout the review process</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#what-to-do-when-reviews-are-in">✔️ 5. What to do when reviews are in</a></li>
 </ul>
 </li>
