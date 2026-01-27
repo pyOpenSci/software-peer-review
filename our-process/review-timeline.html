@@ -523,6 +523,12 @@ NOTE: We prefer that you have development instructions in your documentation too
 <span class="k">- [ ]</span> <span class="gs">**Version**</span> (JOSS only, may be post-review): Does the release version given match the GitHub release (v1.0.0)?
 <span class="k">- [ ]</span> The package authors have disclosed the use of Generative AI tools in the development and/or maintenance of their package.
 
+<span class="gs">**Optional but recommended:**</span>
+
+<span class="k">- [ ]</span> <span class="gs">**Linting**</span> The package uses automated linting (e.g., [<span class="nt">ruff</span>](<span class="na">https://docs.astral.sh/ruff/</span>)) to enforce code style and quality standards, ideally integrated with CI.
+<span class="k">- [ ]</span> <span class="gs">**Type checking**</span> The package includes type hints and uses a type checker (e.g., [<span class="nt">mypy</span>](<span class="na">https://mypy-lang.org/</span>)) to catch type-related issues, ideally integrated with CI.
+<span class="k">- [ ]</span> <span class="gs">**Modern tooling**</span> The package uses modern Python development tools (e.g., [<span class="nt">uv</span>](<span class="na">https://docs.astral.sh/uv/</span>) for dependency management) and [<span class="nt">Hatch</span>](<span class="na">https://www.pyopensci.org/python-package-guide/package-structure-code/python-package-build-tools.html#about-hatch</span>) for building publishing and running development tasks to streamline development workflows. See the pyOpenSci packaging guide for more on [<span class="nt">modern packaging tools</span>](<span class="na">https://www.pyopensci.org/python-package-guide/package-structure-code/python-package-build-tools.html</span>).
+
 <span class="gs">**Optional:**</span> Let projects know that it&#39;s a great idea for projects to have a .github repository for the project organization where they can host a commonly used LICENSE, Code of Conduct, and even a YAML file with label definitions. These items will then be automatically applied to every repository in the organization to ensure consistency (but can be customized within repos too). The [<span class="nt">SunPy project</span>](<span class="na">https://github.com/sunpy/.github/</span>) has a great example of this.
 
 ---
