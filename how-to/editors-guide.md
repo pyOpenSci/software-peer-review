@@ -129,9 +129,8 @@ Once you begin the review process as an editor:
 Make sure that your name is both listed in the YAML at the top of the issue and also that you are assigned to the issue on GitHub (on the right-hand side of the issue).
 :::
 
-
 - Check the YAML template at top of the submitted GitHub issue, make sure that mandatory parts of the template are filled out.
-  - If elements are incomplete, direct the authors toward filling in any missing pieces.
+- If elements are incomplete, direct the authors toward filling in any missing pieces.
 
 ```markdown
 Submitting Author: SUBMITTING AUTHOR NAME HERE (Name @github_handle)
@@ -269,6 +268,19 @@ ensure that things are moving smoothly:
 - If a review has not been submitted after 2 weeks, ping the reviewer(s) within the review issue to ensure they are aware of the 3-week deadline.
 - If you are waiting for a maintainer to respond to you, be sure to add the label `pending-maintainer-response` to the issue.
 
+### Managing labels throughout the review process
+
+As the review progresses through different stages, you should update the labels to reflect the current state of the review. **Remove older labels** and keep only the label(s) that represent the most recent step in the review process.
+
+For example:
+
+- When you complete the editor checks and begin seeking reviewers, remove `1/editor-checks` and add `2/seeking-reviewer(s)`.
+- When reviewers are assigned, remove `2/seeking-reviewer(s)` and add `3/reviewer(s)-assigned`.
+- When reviews are submitted, remove `3/reviewer(s)-assigned` and add `4/review-in-awaiting-changes`.
+- If the review is put on hold, add the `holding` label. You can keep other status labels to indicate where in the process the review was paused.
+
+This approach keeps the issue labels clean and makes it easy to see at a glance what stage each review is currently in.
+
 ### ✔️ 5. What to do when reviews are in
 
 - Once all reviews are submitted, change the review status tag to `4/review-in-awaiting-changes`.
@@ -292,7 +304,9 @@ review next time (for example, a package author who has already submitted packag
 ```
 
 (reviewer-response-time)=
+
 ## What to do if reviewers become quiet
+
 In some cases, the reviewers get busy and stop responding to the issue. If a reviewer hasn't responded to a direct ping `@reviewer-user-name` on the issue, try to email them (if an email is available). If email doesn't work and they haven't responded in over a month, do the following:
 
 1. If they have already submitted a review, you can move the review forward by making sure the review comments were addressed by the author yourself.
@@ -407,7 +421,6 @@ Once the review is complete, you can close the issue. Before doing that:
 - Be sure that the issue is correctly tagged with `6/pyOS-approved` (and `9/joss-approved` if authors decided to submit to JOSS and were accepted).
 
 - Check the pyOpenSci website to ensure:
-
   - The package was added to the [pyOpenSci website](https://www.pyopensci.org/python-packages/).
   - Reviewers and maintainers are listed on the [contributors page](https://www.pyopensci.org/our-community/).
   - Make sure the YAML at the top of the issue is filled out and up to date.
