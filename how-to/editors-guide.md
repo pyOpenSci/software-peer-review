@@ -130,7 +130,7 @@ Make sure that your name is both listed in the YAML at the top of the issue and 
 :::
 
 - Check the YAML template at top of the submitted GitHub issue, make sure that mandatory parts of the template are filled out.
-  - If elements are incomplete, direct the authors toward filling in any missing pieces.
+- If elements are incomplete, direct the authors toward filling in any missing pieces.
 
 ```markdown
 Submitting Author: SUBMITTING AUTHOR NAME HERE (Name @github_handle)

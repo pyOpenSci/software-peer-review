@@ -40,7 +40,7 @@ Keep an eye on a few things when you check in:
 
 ### 1. Dashboard: check the date the comment date for every review
 
-Before you begin, ensure the peer review dashboard is up to date. At the top of the dashboard, you will see the **Last Updated** date. The metrics repository has a cron job that runs weekly to update review status metrics. If the date at the top of the page is older than 1-2 weeks, likely, a pull request, [similar to this one](https://github.com/pyOpenSci/metrics/pull/147) needs to be merged. Go ahead and merge that PR if one exists. If the dashboard date is old and there is no open PR to merge, our cron job has likely failed. In that case, please leave a note in our Slack `#pyos-infrastructure` channel. Our infrastructure lead can investigate and resolve any issues that arise with our build.
+Before you begin, ensure the peer review dashboard is up to date. At the top of the dashboard, you will see the **Last Updated** date. The metrics repository has a cron job that runs weekly to update review status metrics. If the date at the top of the page is older than 1-2 weeks, likely, a pull request, [similar to this one](https://github.com/pyOpenSci/metrics/pull/147) needs to be merged. Go ahead and merge that PR if one exists. If the dashboard date is old and there is no open PR to merge, our cron job has likely failed. In that case, please leave a note in our Slack `#pyos-maintainers-infrastructure` channel. Our infrastructure lead can investigate and resolve any issues that arise with our build.
 
 :::{image} /images/peer-review-metrics-dashboard.png
 :alt: Dashboard last updated date

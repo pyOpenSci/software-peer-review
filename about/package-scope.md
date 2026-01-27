@@ -11,16 +11,29 @@ through our review.
 
 ## What types of packages does pyOpenSci review?
 
-pyOpenSci reviews higher level software packages that support scientific workflows.
+pyOpenSci reviews Python packages that support scientific workflows and research.
+Our scope is intentionally broad to accommodate the diverse ways scientists use
+Python in their work.
+
+**Scientific workflows** include activities such as:
+
+- Data collection, retrieval, and processing
+- Data analysis, modeling, and simulation
+- Data visualization and exploration
+- Research reproducibility and automation
+- Scientific communication and collaboration
+
+Packages that enable, enhance, or streamline these activities for researchers
+across any scientific domain are within our scope.
 
 :::{figure-md} fig-target
 
 <img src="../images/python-stack-jupyter-earth.png" alt="Image showing the tiers of software in the python ecosystem starting with Python itself and as you move out packages become more domain specific. In this image packages like xarray and numpy are considered core to scientific python. Packages and distributions like astropy, simpeg and metpy are considered to be domain specific." width="700px">
 
-Diagram showing the tiers of software in the python ecosystem starting with Python itself and as you move out packages become more domain specific. In this image, packages such as xarray and numpy are considered core to scientific python. Packages and distributions like astropy, simpeg and metpy are considered domain specific. pyOpenSci's review
-process focuses on domain specific packages rather than core packages as
-these packages tend to have more variability in long term maintenance and
-package infrastructure and quality compared with established core packages. **Source: ["Jupyter meets earth" project](https://jupytearth.org/jupyter-resources/introduction/ecosystem.html)**
+Diagram showing the tiers of software in the Python ecosystem starting with Python itself and as you move out, packages become more domain specific. In this image, packages such as xarray and numpy are considered core to scientific Python. Packages and distributions like Astropy, SunPy, and MetPy are considered domain specific. pyOpenSci's review
+process focuses on domain-specific packages and tools that support scientific workflows rather than core infrastructure packages, as
+these packages tend to have more variability in long-term maintenance and
+package infrastructure and quality compared with established core packages. Examples of pyOpenSci-reviewed packages include MovingPandas (geospatial data), Pandera (data validation), PyGMT (geophysical mapping), and xclim (climate data analysis). **Source: ["Jupyter meets earth" project](https://jupytearth.org/jupyter-resources/introduction/ecosystem.html)**
 :::
 
 :::{admonition} This is a living document
@@ -69,11 +82,20 @@ a growing or established community!
 ## Package categories that are in-scope for pyOpenSci
 
 The following are the current categories that fall into scope for
-pyOpenSci. In addition to fitting into one or more of these categories, your package should have some level of
-demonstrated scientific application. This could be a use case that you can
-link to or a tutorial that demonstrates its potential application for science.
+pyOpenSci. In addition to fitting into one or more of these categories, your package should support
+scientific or research activities. This support can be demonstrated through:
 
-Below we provide examples of packages from pyOpenSci ecosystem.
+- Documentation showing how the package is used in research workflows
+- Examples or tutorials demonstrating scientific applications
+- Use cases in scientific publications or projects
+- Relevance to data collection, analysis, or visualization in research contexts
+
+We interpret "scientific application" broadly to include any research domain—from
+physical and life sciences to social sciences, digital humanities, and beyond—as well
+as tools that support general research infrastructure (e.g., data validation, workflow
+automation, reproducibility).
+
+Below we provide examples of packages from the pyOpenSci ecosystem.
 
 :::{note}
 Many of the example packages below perform tasks that might fit in multiple
@@ -86,11 +108,12 @@ of packages that would fall into that category.
 Packages for accessing and downloading data from online sources. This category
 includes wrappers for accessing APIs.
 
-Our definition of scientific applications is broad, including data storage
-services, journals, and other remote servers, as many data sources may be of
-interest to scientists. However, retrieval packages should be focused on data
-sources / topics, rather than services. For example a general client for Amazon
-Web Services data storage would not be in-scope.
+We interpret scientific application broadly for data retrieval packages, recognizing
+that many data sources—including data storage services, journals, repositories, and
+other remote servers—may be valuable to researchers. However, retrieval packages should
+be focused on data sources or topics relevant to research rather than general-purpose
+services. For example, a general client for Amazon Web Services data storage would not
+be in scope, but a package that retrieves specific scientific datasets from AWS would be.
 
 - Examples: [OpenOmics](https://github.com/pyOpenSci/software-submission/issues/31), [pyDov](https://github.com/pyOpenSci/software-submission/issues/19), [Physcraper](https://github.com/pyOpenSci/software-review/issues/26)
 
