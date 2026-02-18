@@ -15,7 +15,7 @@ The Peer Review Lead is responsible for keeping the software review process movi
 
 * Keeping the review process moving forward by checking in on stalled reviews and supporting the editorial team.
 * Ensuring a diverse and active editorial board.
-* Onboarding and offboarding new editors.
+* Onboarding and offboarding editors (see the [Onboarding & Offboarding Guide](onboarding-guide)).
 * Making updates to the [pyOpenSci Software Peer Review Guide](https://www.pyopensci.org/software-peer-review/) as needed.
 * Updating [software peer review policies](https://www.pyopensci.org/software-peer-review/our-process/policies.html) as needed.
 * Helping editors find reviewers as necessary.
@@ -67,3 +67,13 @@ In some cases a review hasn't moved forward because the editor is struggling to 
 The [**Editors Needed** section of the dashboard](https://www.pyopensci.org/metrics/peer-review/current-review-status.html#editors-needed) is useful for you to check in and see how the Editor in Chief (EiC) is doing. In some cases, the Editor in Chief needs support in onboarding a new editor. If packages are seeking editors for more than a month, it's time to check in. Sometimes, all that is needed is for the package to have an editor, but the YAML at the top of the issue hasn't been filled out properly. This is an easy fix - just add the editor to the `editor:` field at the top of the issue. In other cases, we may need to run a call for more editors. In that case, you can consult
     * Post in the software-review channel to see if anyone in our Slack community is interested in stepping into an editorial role
     * Please reach out to the Executive Director about posting on social media to find a new editor to join our team. [The editorial signup form can be found here](https://forms.gle/VEUxEzN6YmeWSb6t8), and the responses (names, emails, and domains only) to that form can be provided to you by the Executive Director upon request. It's not publicly shared to maintain the privacy of those who sign up to volunteer with us.
+
+### 5. Annual editorial team engagement check
+
+Once a year, the Peer Review Lead should check in with the editorial team to ensure editors are still engaged and available to continue in their roles. This can be done by:
+
+* Sending an email to the editorial team, or
+* Posting in the `#private-editorial-team` Slack channel, or
+* Opening a GitHub issue in the private editorial repository
+
+Ask editors to confirm they are still able to participate and handle reviews. If an editor is no longer engaged or available, work with them to gracefully offboard them following the process in the [Onboarding & Offboarding Guide](onboarding-guide#off-boarding-an-editor).
