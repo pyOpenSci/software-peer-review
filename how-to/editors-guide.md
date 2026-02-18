@@ -406,7 +406,7 @@ Further, packages that have been previously published elsewhere may not be
 eligible to be published with JOSS unless **significant** changes and improvements
 to package functionality have been made.
 
-The PyOpenSci reviewers are not responsible for the paper. Therefore, they are not required to read/review the `paper.md` file. 
+pyOpenSci reviewers are not responsible for reviewing the JOSS paper. Therefore, they are not required to read/review the `paper.md` file. The JOSS paper review will occur after you submit your package for fast-tracking through JOSS's review process.
 ```
 
 JOSS will accept the pyOpenSci review and direct the author to check their `paper.md` file. Once JOSS accepts the package,
