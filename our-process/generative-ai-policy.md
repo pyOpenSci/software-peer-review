@@ -5,7 +5,7 @@
 
 The Generative AI policy below was co-developed by the pyOpenSci community. Its goals are:
 
-* To **acknowledge the widespread use of Generative AI tools** (LLMs) and promote transparency and responsible use that ensures better software outputs that support sound open source development practices.
+* **Acknowledge the widespread use of Generative AI tools** (LLMs) and promote transparency and responsible use that ensures better software outputs that support sound open source development practices.
 * **Ensure equitable balance of effort in peer review** — authors are responsible for human review of AI-generated content before submission; our volunteer reviewers are not responsible for identifying and/or correcting machine-generated errors or issues.
 * **Protect volunteer reviewers** from being the first line of review for generated code.
 * Give reviewers and editors the information they need to make informed decisions about what they choose to review.
