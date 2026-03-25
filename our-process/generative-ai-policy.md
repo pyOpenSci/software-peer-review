@@ -11,7 +11,7 @@ The Generative AI policy below was co-developed by the pyOpenSci community. Its 
 * Give reviewers and editors the information they need to make informed decisions about what they choose to review.
 * **Support and promote packages that follow sustainable software practices** that enable future discovery and uphold the foundational principles of scientific open source.
 * Raise awareness of the broader challenges Generative AI presents to the scientific open source community.
-* To promote transparency and privacy in user data
+* Promote transparency and privacy in user data
 
 [Please see this GitHub issue for a discussion of the topic.](https://github.com/pyOpenSci/software-peer-review/issues/331)
 
