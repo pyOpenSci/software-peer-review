@@ -12,7 +12,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-
+        with:
+          fetch-depth: 0 # Fetch all history to get all tags
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
