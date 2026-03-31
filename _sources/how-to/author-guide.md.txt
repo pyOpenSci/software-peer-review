@@ -292,7 +292,7 @@ default if the package fits into the JOSS scope.
   submission to JOSS after passing pyOpenSci review. In this case, your package
   will be evaluated by JOSS through the pyOpenSci review.
 - To complete the JOSS submission, you will also need to craft a **paper.md**
-  file describing the package following JOSS' standards (see below). More details on the requirements for JOSS can be found on [their website](https://joss.readthedocs.io/en/latest/submitting.html#what-should-my-paper-contain).
+  file describing the package following JOSS' standards (see below). More details on the requirements for JOSS can be found on [their website](https://joss.readthedocs.io/en/latest/submitting.html#what-should-my-paper-contain). *This is not a requirement for the PyOpenSci submission even if you plan on submitting to PyOpenSci*.
 - If you choose to opt into the pyOpenSci/JOSS partnership in your review,
   you DO NOT need to go through a second review with JOSS. JOSS accepts our review
   as theirs. Please start a review process with JOSS and reference the pyOpenSci
