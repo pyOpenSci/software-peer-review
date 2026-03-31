@@ -58,8 +58,7 @@ jobs:
           arguments: |
             --ignore-files "/.+\/_static\/.+/"
             --ignore-status-codes "0, 200, 301, 302, 401, 403, 429, 503"
-            --ignore-urls "https://github.com/pyOpenSci/software-review/issues/18#issuecomment-581752433,https://github.com/pyOpenSci/software-review/issues/18#issuecomment-579520816,https://github.com/hpi-dhc/devicely"
-
+            --ignore-urls "https://github.com/pyOpenSci/software-review/issues/18#issuecomment-581752433,https://github.com/pyOpenSci/software-review/issues/18#issuecomment-579520816,https://github.com/hpi-dhc/devicely,https://github.com/pyOpenSci/pyos-package-template"
       # Save html as artifact
       - name: Save book html as artifact for viewing
         uses: actions/upload-artifact@v4
