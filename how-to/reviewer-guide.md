@@ -138,9 +138,9 @@ experiences of other reviewers. In general you can find submission threads of
 onboarded packages here. Here are a few chosen examples of reviews (note that
 your reviews do not need to be as long as these examples):
 
-* `MovingPandas` [review 1](https://github.com/pyOpenSci/software-review/issues/18#issuecomment-579520816) and [review 2](https://github.com/pyOpenSci/software-review/issues/18#issuecomment-581752433)
+* `MovingPandas` [review 1](https://github.com/pyOpenSci/software-review/issues/18) and [review 2](https://github.com/pyOpenSci/software-review/issues/18)
 
-* `Pandera` [review 1](https://github.com/pyOpenSci/software-review/issues/12#issuecomment-527622205) and [review 2](https://github.com/pyOpenSci/software-review/issues/12#issuecomment-531491008)
+* `Pandera` [review 1](https://github.com/pyOpenSci/software-review/issues/12) and [review 2](https://github.com/pyOpenSci/software-review/issues/12)
 
 ## Lessons Learned from rOpenSci
 You can read blog posts written by reviewers about their experiences [via this link](https://ropensci.org/tags/reviewer/). In particular, in [this blog post by Mara Averick](https://ropensci.org/blog/2017/08/22/first-package-review/) read about the "naive user" role a reviewer can take to provide useful feedback even without being experts of the package's topic or implementation, by asking themselves _"What did I think this thing would do? Does it do it? What are things that scare me off?"_. In [another blog post](https://ropensci.org/blog/2017/09/08/first-review-experiences/) Verena Haunschmid explains how she alternated between using the package and checking its code.
