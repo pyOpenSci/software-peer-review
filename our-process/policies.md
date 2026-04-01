@@ -2,33 +2,44 @@
 
 ## Review process guidelines
 
-pyOpenSci packages are reviewed for quality, fit, scope, documentation, and
-usability. The review process is similar to a manuscript review; however, it
-has a stronger focus on Python packaging best practices.
+[pyOpenSci](https://www.pyopensci.org) packages are reviewed for quality, fit,
+scope, documentation, and usability. The review process is similar to a
+manuscript review; however, it has a stronger focus on Python packaging best
+practices.
 
 Unlike a manuscript review, our peer review process is an ongoing conversation.
-Once all major issues and questions are addressed, the review editor will decide
-to accept, hold, or reject the package.
+Once all major issues and questions are addressed, the review editor will
+decide to accept, hold, or reject the package.
 
 Rejections are usually done early in the process, before the review process
 begins. In rare cases, a package may also not be onboarded into the pyOpenSci
-ecosystem after review & revision.
+ecosystem after review and revision.
 
 It is ultimately the editor’s decision on whether or not to reject the package
 based on how the reviews are addressed.
 
 ## Review communication approach
 
-Communication between authors, reviewers, and editors takes
-place on GitHub. However, you may contact the editor by email if
-needed.
+Communication between authors, reviewers, and editors takes place on GitHub.
+However, you may contact the editor by email if needed.
 
 When submitting a package, please make sure that your GitHub notification
 settings are turned on for the software-submission repository to notify you
 when you receive feedback on a review issue.
 
-(submission-volume)=
+## Summary of our generative AI policy
 
+We support thoughtful use of Generative AI tools in software development, but we
+require transparency and meaningful human oversight for any code or
+documentation submitted to our peer review process. Packages should demonstrate
+sustained, human-driven design and maintenance, rather than short-lived or
+largely machine-generated codebases.
+
+This page provides a high-level overview of our review policies. For detailed
+guidance on expectations, disclosure, and examples related to Generative AI and
+LLMs, please see our dedicated [generative-ai-policy](generative-ai-policy).
+
+(submission-volume)=
 ## Submission volume and maintainer overlap
 
 To protect our volunteer peer review team and ensure quality reviews for all
@@ -42,9 +53,9 @@ review at a time.
 
 This policy ensures that:
 
-- Review feedback receives appropriate attention from maintainers.
-- Maintainers don't become overwhelmed managing multiple concurrent reviews.
-- Our volunteer reviewers and editors can focus their efforts effectively.
+* Review feedback receives appropriate attention from maintainers.
+* Maintainers don't become overwhelmed managing multiple concurrent reviews.
+* Our volunteer reviewers and editors can focus their efforts effectively.
 
 ### Multiple submissions with overlapping maintainer teams
 
@@ -87,7 +98,7 @@ Since your package has already undergone a JOSS review, we have a specific,
 expedited review process to streamline the submission process and save time.
 Once accepted, your package will be treated like any other package in our ecosystem.
 
-#### Expedited Review Process
+#### Expedited review process
 
 We offer two pathways for packages previously reviewed by JOSS:
 
@@ -122,53 +133,94 @@ Following criteria are meant to be a guide for what constitutes a conflict of
 interest (COI) for an editor or reviewer. The potential editor or reviewer has
 a conflict of interest if:
 
-- The authors with a major role are from the potential reviewer/editor’s
+* The authors with a major role are from the potential reviewer/editor's
   institution or institutional component (e.g., department).
-- Within the past three years, the potential reviewer/editor has been a
+* Within the past three years, the potential reviewer/editor has been a
   collaborator or has had any other professional relationship with any person
   on the package who has a major role.
-- The potential reviewer/editor serves as a member of the advisory board for
+* The potential reviewer/editor serves as a member of the advisory board for
   the project under review.
-- The potential reviewer/editor would receive a direct or indirect financial
+* The potential reviewer/editor would receive a direct or indirect financial
   benefit if the package is accepted.
-- The potential reviewer/editor has significantly contributed to a competitor
+* The potential reviewer/editor has significantly contributed to a competitor
   project.
-- There is also a lifetime COI for family members, business partners,
+* There is also a lifetime COI for family members, business partners,
   thesis students/advisors, or mentors.
 
 In the case where none of the associate editors can serve as editor, an
 external guest editor will be recruited to lead the package review.
 
 (generative-ai-policy)=
-
 ## Policy for use of generative AI / LLMs
 
 :::{admonition} How this policy was developed
 :class: important
 
-The policy below was co-developed by the pyOpenSci community. Its goals are:
+The Generative AI policy below was co-developed by the pyOpenSci community. Its goals are:
 
-- Acknowledgment of and transparency around the widespread use of Generative AI tools, with a focus on Large Language Models (LLMs) in Open Source development.
-- Ensure an equitable balance of effort in the peer review process: Authors acknowledge that a human has carefully reviewed parts of the package that are AI-generated. Generated material should be in a state that minimizes review time. Our reviewers are not responsible for correcting errors in machine-generated content.
-- Disclosure allows reviewers and editors to make informed decisions around the types of packages that they wish to review code for.
-- Raise awareness of challenges that Generative AI tools present to the scientific (and broader) open source community.
+* To **acknowledge the widespread use of Generative AI tools** (LLMs) and promote transparency and responsible use that ensures better software outputs that support sound open source development practices.
+* **Ensure equitable balance of effort in peer review** — authors are responsible for human review of AI-generated content before submission; our volunteer reviewers are not responsible for identifying and/or correcting machine-generated errors or issues.
+* **Protect volunteer reviewers** from being the first line of review for generated code.
+* Give reviewers and editors the information they need to make informed decisions about what they choose to review.
+* **Support and promote packages that follow sustainable software practices** that enable future discovery and uphold the foundational principles of scientific open source.
+* Raise awareness of the broader challenges Generative AI presents to the scientific open source community.
+* To promote transparency and privacy in user data
 
 [Please see this GitHub issue for a discussion of the topic.](https://github.com/pyOpenSci/software-peer-review/issues/331)
+
+In generating our Generative AI policy, we acknowledge some of the other policies in the open source ecosystem that inspired our work here, including:
+
+* [FastAPI docs](https://fastapi.tiangolo.com/contributing/#automated-code-and-ai)
+* [JOSS AI Policy](https://blog.joss.theoj.org/2026/01/preparing-joss-for-a-generative-ai-future)
+* [Scikit-Learn Policy](https://scikit-learn.org/dev/developers/contributing.html#automated-contributions-policy)
+* [Melissa Mendonça’s Collection of GenAI Policies](https://github.com/melissawm/open-source-ai-contribution-policies)
+
 :::
 
-### Disclosure of generative AI use in pyOpenSci reviewed packages
+## Generative AI and open source development
 
-- When you submit a package to pyOpenSci, please disclose any use of LLMs (Large Language Models) in your package's development by checking the appropriate box and describing your use of generative AI in its development and/or maintenance on our software submission form. Disclosure should include what parts of your package were developed using Generative AI tools.
-  - Please also disclose this use of Generative AI tools in your package's `README.md` file and in any modules where generative AI contributions have been implemented.
-- We require that all aspects of your package have been reviewed carefully by a human on your maintainer team. Please ensure all text and code have been carefully checked for bugs and issues before submitting to pyOpenSci.
-- Your acknowledgment of using Generative AI will not prejudice the success of your submission. However, a reviewer can and will ask you to revisit your package's content if it appears that sections have been copied and pasted from other sources without human review.
-- If the review team (comprised of the editor and reviewers) determines that the code and text in the package are too challenging to review, they can decide to pause and/or discontinue the review following this policy’s guidelines.
+We understand and support your use of Generative AI tools to improve software development workflows and to make your developer workflows more efficient. We want you to use them thoughtfully and effectively, and in ways that improve both the open source ecosystem and your development trajectory.
+
+We expect that all code and documentation submitted to our peer review process should have meaningful human review, intervention, judgment, and context. We understand that the use of current Generative AI tools is often tightly woven into development workflows, making disclosure challenging. But **we still require disclosure** to support both transparency and to allow reviewers and editors to understand what they are reviewing.
+
+The policies below support adherence to thoughtful open source development best practices. A pyOpenSci package submission should demonstrate both need and sustained value to the research community. **Short-lived, single-use codebases are out of scope for pyOpenSci.**
+
+## Communication in review issues
+
+* We prefer that all communication in our software review issues are written by a human. We embrace the use of LLMs for translation and grammar correction. We prefer honest interactions over ones that prioritize perfect language and grammar. As little aid from an LLM as possible.
+* We will block accounts that spam our repositories or burden our volunteers with repeated, automated comments that aren't directly related to and in support of productive conversations in a review.
+
+## Package development and design approach
+
+* **Development History Timeline:** Projects should have at least **3-6 months of public development history**, with evidence of releases, public issues, and pull requests that reflect **iterative, thoughtful development** rather than rapid and recent code generation.
+* If the human effort put into the package is less than the effort required to review it, please don't submit the package.
+* Software should be developed openly, rather than developed in private and then moved to a public repository with an OSI-approved license to meet minimal open source requirements.
+* **Development History Approach:** We encourage thoughtful development history and patterns, including tightly scoped commits with clear commit messages that follow iterative development best practices, rather than large commits that address multiple issues in a package and affect large volumes of files throughout the package. These workflows signal careful design and development, and changes to a codebase that could be reviewed by a human.
+* Projects with very short, rapid development timelines (weeks to a few months) will face higher scrutiny by our review teams than those that have a significant development history (more than 6 months)
+* **Package Scope & Design:** We value packages with a thoughtful, well-scoped design. When submitting, we will ask you to describe the key design decisions behind your package — the tradeoffs you considered and why you built it the way you did.
+* We place greater value on packages that have been adopted or used by a wide user base, since this demonstrates that the package has design and performance characteristics that meet multiple use cases.
+* Be sure to situate your package within the broader Python ecosystem: identify related tools, explain how your package differs from them, and explain how it complements, extends, or builds upon them.
+* We particularly value **work that builds upon or extends existing tools rather than reinventing solutions** where quality alternatives already exist.
 
 Below is the checklist that you will need to respond to in our submission form:
 
 ```{include} ../appendices/gen-ai-checklist.md
 
 ```
+
+(telemetry)=
+### Telemetry & user-informed consent
+
+Your package should not collect usage analytics without first informing your users about what data are being collected and what is being done with that data. With that in mind, we understand that package-use data can be invaluable for the development process. If the package collects such data, it should do so by prioritizing user-informed consent. This means that before any data are collected, the user understands:
+
+1. What data are collected
+2. How the data are collected.
+3. What you plan to do with the data
+4. How and where the data are stored
+
+Once the user is informed of what will be collected and how that data will be handled, stored and used, you can implement opt-in consent. opt-in means that the user agrees to usage-data collection prior to it being collected (rather than having to opt-out when using your package).
+
+We will evaluate usage data collected by packages on a case-by-case basis and reserve the right not to review a package if the data collection is overly invasive.
 
 ## Review timelines and on-hold reviews
 
@@ -178,7 +230,6 @@ status will be revisited every 3 months. If after one year there has been
 no movement on the review, the issue will be closed.
 
 (post-review-process)=
-
 ## After acceptance: package ownership and maintenance
 
 Package authors are expected to maintain and develop their software and
@@ -193,8 +244,8 @@ If you need to step down from maintaining your accepted pyOpenSci package,
 please promptly notify the pyOpenSci Editor-in-Chief or Software Review Lead.
 pyOpenSci will collaborate with you to either:
 
-- Find a new maintainer or
-- Archive the tool, depending on what best suits your specific scientific
+* Find a new maintainer or
+* Archive the tool, depending on what best suits your specific scientific
   Python package.
 
 We will reach out to our package maintainers each year to verify the
@@ -214,7 +265,6 @@ flagged. At that time, a pyOpenSci editorial team member will contact the packag
 maintainers to evaluate the maintenance status of their package.
 
 (archive-process)=
-
 ### Package maintenance and maintainer responsiveness
 
 If, after one year, package maintainers are unresponsive to requests for
@@ -248,7 +298,7 @@ responsibility of individual maintainers. Buggy, unmaintained software may
 be removed from our suite at any time. We also ask maintainers that they get
 in touch with us if they do need to step down from maintaining a tool.
 
-### Requesting Package Removal from the pyOpenSci Ecosystem
+### Requesting package removal from the pyOpenSci ecosystem
 
 In the unlikely scenario that a contributor of a package requests removal of
 their package from our ecosystem, we retain the right to offer the last/most
@@ -256,7 +306,6 @@ recently released version of that package in our ecosystem for archival
 purposes only.
 
 (package-archive)=
-
 ### Archiving a package
 
 If a package appears to be no longer maintained, we will mark it as

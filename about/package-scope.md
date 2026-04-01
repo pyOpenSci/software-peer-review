@@ -140,7 +140,7 @@ Tools for depositing data into scientific research repositories.
 
 - Examples: [This is an example from rOpenSci - eml](https://github.com/ropensci/software-review/issues/80)
 
-### Data validation and testing:
+### Data validation and testing
 
 Tools that enable automated validation and checking of data quality and
 completeness. These tools should be able to support scientific workflows.
@@ -169,9 +169,9 @@ reproducible workflows. These
 tools may include build systems and tools to manage continuous integration.
 This also includes tools that support version control.
 
-- Examples: Both of these tools are not pyOpenSci reviewed as of yet but are examples of tools that might be in scope for this category - [snakemake](https://snakemake.readthedocs.io/en/stable/), [pyGitHub ](https://github.com/PyGithub/PyGithub)
+- Examples: Both of these tools are not pyOpenSci reviewed as of yet but are examples of tools that might be in scope for this category - [snakemake](https://snakemake.readthedocs.io/en/stable/), [pyGitHub](https://github.com/PyGithub/PyGithub)
 
-### Citation management and bibliometrics:
+### Citation management and bibliometrics
 
 Tools that facilitate managing references, such as for writing manuscripts,
 creating CVs or otherwise attributing scientific contributions, or accessing,
@@ -206,7 +206,7 @@ The review for this package:
 - requires at least 1 domain specialist
 - will never vet the analytical method itself.
 
-2. If your package introduces a novel or newer analytic approach that is not yet vetted/ accepted by a scientific journal, we can not review it. We cannot review projects that exist as a proof-of-concept demonstration of a model or analytical approach that might accompany a paper. In this case, the approach should be sent to a scientific journal for vetting.
+1. If your package introduces a novel or newer analytic approach that is not yet vetted/ accepted by a scientific journal, we can not review it. We cannot review projects that exist as a proof-of-concept demonstration of a model or analytical approach that might accompany a paper. In this case, the approach should be sent to a scientific journal for vetting.
 
 If your package introduces a new(er) approach that has been community vetted via a scientific Journal then we can potentially review the package for usability, documentation and packaging quality. Please submit a pre-submission inquiry first.
 
@@ -225,7 +225,7 @@ we will expand this list.
 Packages focused on the retrieval, manipulation, and analysis of spatial data.
 
 - Examples: [PyGmt](https://github.com/pyOpenSci/software-submission/issues/43),
-  [Moving Pandas ](https://github.com/pyOpenSci/software-submission/issues/18)
+  [Moving Pandas](https://github.com/pyOpenSci/software-submission/issues/18)
 
 ### Education
 
@@ -295,30 +295,13 @@ that may be outside JOSS scope while maintaining our partnership for
 packages that meet both organizations' criteria.
 :::
 
-### Telemetry & user-informed consent
-
-Your package should not collect collecting usage analytics without first informing your users about what data are being collected and what is being done with that data. With
-that in mind, we understand that package-use data can be invaluable for the
-development process. If the package does collect such data, it should do so
-by prioritizing user-informed-consent. This means that before any data are
-collected, the user understands:
-
-1. What data are collected
-2. How the data are collected.
-3. What you plan to do with the data
-4. How and where the data are stored
-
-Once the user is informed of what will be collected and how that data will be handled, stored and used, you can implement `opt-in` consent. `opt-in` means that the user agrees to usage-data collection prior to it being collected (rather than having to opt-out when using your package).
-
-We will evaluate usage data collected by packages on a case-by-case basis
-and reserve the right not to review a package if the data collection is overly
-invasive.
-
 To be in technical scope for a pyOpenSci review, your package:
 
 - Should have maintenance workflows documented.
 - Should declare vendor dependencies using standard approaches rather than including code from other packages within your repository.
 - Should not have an exceedingly complex structure. Others should be able to contribute and/or take over maintenance if needed.
+
+See our [policy for use of generative AI / LLMs](../our-process/policies.md#generative-ai-and-open-source-development) for additional expectations regarding AI-generated code and documentation.
 
 :::{admonition} pyOpenSci's goal is to support long(er) term maintenance
 pyOpenSci has a goal of supporting long term maintenance of open source
@@ -358,7 +341,7 @@ Your package might be out of in technical scope if it is:
 A few examples of packages that may be too technically challenging for us to
 find a new maintainer for in the future are below.
 
-### Example 1: Your package is an out of sync fork of another package repository that is being actively maintained.
+### Example 1: Your package is an out of sync fork of another package repository that is being actively maintained
 
 Sometimes we understand that a package maintainer may need to step down. In
 that case, we strongly suggest that the original package owner, transfer the
