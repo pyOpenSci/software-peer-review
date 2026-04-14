@@ -215,9 +215,21 @@ Your package is ready for review when:
 - **Most functionality should be clearly documented and tested**. At the submission stage, all major functions should be stable enough to be fully documented and tested. The README should make a strong case for the package.
 - **The README provides enough information** about your package (goals, usage, similar packages) for the editors to assess its scope without having to install the package. The README file should also make a strong case for why the package adds value to the scientific Python ecosystem.
 
-### Review before publication
+### Review and publication ordering
 
-We strongly suggest that you submit your package for review to pyOpenSci **before submitting a software paper** describing the package to a journal. Review feedback may result in major improvements and updates to your package, including renaming, refactoring and breaking changes to classes, methods and functions.
+For most packages, we encourage you to **submit to a journal first** if you plan to publish a
+software paper. A package that has already undergone journal review has a stronger development
+history and more established use cases — both things we value in a pyOpenSci submission.
+pyOpenSci focuses on the Python packaging ecosystem and software best practices, while journal
+review provides deeper scientific and methodological scrutiny.
+
+If your package has been published in a peer-reviewed journal and the publication covers its core
+methodology, you may be eligible for our [publication fast-track review](publication-fast-track).
+
+For packages without an associated journal publication, you can still submit to pyOpenSci at
+any time. Keep in mind that review feedback may result in significant improvements, including
+renaming, refactoring, and breaking changes to classes, methods, and functions — so submitting
+before finalising a software paper can help you avoid rework.
 
 :::{note}
 Many Python packages are published to PyPI in alpha/beta stages to attract early users and contributors and to make installation easier. Publishing to PyPI before review is acceptable and often beneficial for package development.

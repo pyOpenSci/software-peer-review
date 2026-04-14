@@ -62,11 +62,16 @@ of the submission.
 
 ## Submitting your package for review in other venues
 
-We recommend submitting your package for review with pyOpenSci before
-submitting a software paper describing the package to a journal.
+If you are considering submitting your package to a scientific journal, we encourage you to
+**submit to the journal first**. A package that has already gone through a rigorous journal
+review typically has a longer development history, more established use cases, and has already
+undergone deeper scientific and methodological scrutiny than pyOpenSci alone can provide.
+pyOpenSci's focus is on the Python packaging ecosystem and software best practices, and a
+package that arrives with that foundation in place makes for a stronger submission.
 
-Review feedback may result in significant improvements and updates to your package,
-including changes that could break package functionality.
+Once your package has been published (or accepted) by a journal, you can submit to pyOpenSci.
+If the publication covers the package's core methodology, you may be eligible for our
+[fast-track review pathway](publication-fast-track).
 
 Applying reviewer or editor recommendations to your package can improve your
 users' experience with future versions of your package, even if your package is
@@ -130,8 +135,9 @@ documentation, and adherence to our standards.
 **Policy change:** Previously, pyOpenSci declined to review packages whose core method or algorithm
 had not yet been vetted by the scientific community, since pyOpenSci is not a journal and cannot
 review novel science itself. This fast-track pathway extends our scope: packages whose method *has*
-been peer-reviewed and published can now be reviewed under this streamlined process. See the
-[analytics and statistics scope section](package-scope) for more detail.
+been peer-reviewed and published can now be reviewed under this streamlined process. For these
+packages, journal review naturally comes first — and that ordering is expected and encouraged.
+See the [analytics and statistics scope section](package-scope) for more detail.
 :::
 
 ### Eligibility
