@@ -206,9 +206,13 @@ The review for this package:
 - requires at least 1 domain specialist
 - will never vet the analytical method itself.
 
-2. If your package introduces a novel or newer analytic approach that is not yet vetted/ accepted by a scientific journal, we can not review it. We cannot review projects that exist as a proof-of-concept demonstration of a model or analytical approach that might accompany a paper. In this case, the approach should be sent to a scientific journal for vetting.
+2. If your package introduces a novel or newer analytic approach that is **not yet vetted/accepted by a scientific journal**, we cannot review it. We cannot review projects that exist as a proof-of-concept demonstration of a model or analytical approach that might accompany a paper. In this case, the approach should be submitted to a scientific journal for vetting first.
 
-If your package introduces a new(er) approach that has been community vetted via a scientific Journal then we can potentially review the package for usability, documentation and packaging quality. Please submit a pre-submission inquiry first.
+3. If your package implements a novel approach that **has** been peer-reviewed and accepted by a credible scientific journal, it may be eligible for our [publication fast-track review](publication-fast-track): a streamlined review with one reviewer focused on software quality and packaging standards, rather than the usual two. Since the domain/scientific component has already been vetted by the journal, the pyOpenSci reviewer is not expected to re-evaluate the underlying method. Please submit a pre-submission inquiry first and include the publication details.
+
+:::{note}
+This fast-track pathway for packages with an associated publication is a policy update. Previously, packages proposing novel methods were declined regardless of publication status, as pyOpenSci does not have the capacity to vet new scientific approaches itself. The fast-track pathway resolves this by relying on the journal's review of the science and focusing our review on packaging quality and usability.
+:::
 
 If you are unsure whether your package fits into one of the general or
 statistical categories, please open an issue as a [pre-submission inquiry](https://github.com/pyOpenSci/software-submission/issues/new?assignees=&labels=0%2Fpresubmission&template=presubmission-inquiry.md&title=).

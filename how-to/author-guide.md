@@ -231,6 +231,21 @@ To submit your package for peer review,
 open an issue in our [pyopensci/software-review repo](https://github.com/pyOpenSci/software-review/issues/new/choose/)
 repository and fill out the [Submit Software for Review](https://github.com/pyOpenSci/software-submission/issues/new?template=submit-software-for-review.md) issue template.
 
+:::{tip}
+**Package with an associated peer-reviewed publication?**
+
+If your package has an associated peer-reviewed publication covering its core methodology or
+algorithm, it may qualify for a [fast-track review with one reviewer](publication-fast-track).
+Include the following front matter in your submission issue so editors can assess eligibility:
+
+```yaml
+publication:
+  title:
+  doi:
+  journal:
+```
+:::
+
 ## 6. Editor-in-Chief reviews package for scope and minimal infrastructure criteria
 
 Once the issue is opened, our editor-in-chief and an editor from our editorial board will review your submission within

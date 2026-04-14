@@ -115,6 +115,75 @@ eligible for JOSS fast-track review. See our [package scope guidelines](package-
 for more details.
 :::
 
+(publication-fast-track)=
+## Fast-track review for packages with an associated peer-reviewed publication
+
+If your package has an associated peer-reviewed publication—such as a journal article—that covers
+the primary domain methodology or algorithm implemented by the package, it may be eligible for a
+**fast-track review** with one reviewer instead of the usual two.
+
+The rationale is that the domain and algorithmic components have already been vetted through
+the publication's peer review. pyOpenSci review then focuses on packaging quality,
+documentation, and adherence to our standards.
+
+:::{note}
+**Policy change:** Previously, pyOpenSci declined to review packages whose core method or algorithm
+had not yet been vetted by the scientific community, since pyOpenSci is not a journal and cannot
+review novel science itself. This fast-track pathway extends our scope: packages whose method *has*
+been peer-reviewed and published can now be reviewed under this streamlined process. See the
+[analytics and statistics scope section](package-scope) for more detail.
+:::
+
+### Eligibility
+
+Your package may be eligible for fast-track review if:
+
+- It has an associated peer-reviewed publication that covers the primary method or algorithm
+  it implements.
+- The publication is directly relevant to the core scientific functionality of the package.
+
+:::{note}
+Accepted publication venues and any additional eligibility criteria are still being finalized.
+There is no fixed list of qualifying journals — in general, any credible, quality peer-reviewed
+venue is acceptable. Common examples include [SoftwareX](https://www.sciencedirect.com/journal/softwarex)
+and [JOSS](https://joss.theoj.org/). The final decision on eligibility rests with the
+pyOpenSci Editor-in-Chief. If you believe your package qualifies, note this in your
+pre-submission inquiry or submission.
+:::
+
+### What fast-track means
+
+In a standard pyOpenSci review, two reviewers are assigned: typically one with domain-specific
+scientific expertise and one focused on software usability, packaging, and infrastructure. For
+packages with an associated peer-reviewed publication, the domain/scientific component has
+already been externally vetted.
+
+Under this pathway:
+
+- **One reviewer** (rather than two) will review the package, focusing on software quality,
+  usability, documentation, and pyOpenSci packaging standards — the role that does not require
+  deep domain expertise.
+- The reviewer is **not** expected to deeply evaluate the underlying scientific method or algorithm,
+  which has already been covered by the associated publication. However, they should perform a
+  cursory check to verify that the methods implemented in the package appear consistent with
+  what is described in the publication.
+- The editor conducts their standard checks as usual.
+
+Issues using this pathway are labeled `publication-fast-track` to signal the modified
+review scope.
+
+### Including publication details in your submission
+
+If your package has an associated publication, include the following front matter in your
+submission issue to help editors assess eligibility:
+
+```yaml
+publication:
+  title:
+  doi:
+  journal:
+```
+
 (coi)=
 ## Conflict of interest for reviews and editors
 
