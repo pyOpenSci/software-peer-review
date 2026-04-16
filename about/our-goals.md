@@ -112,9 +112,11 @@ package metadata from the `setup.py` file and into the modern
 
 ### 6. Build a community support system for maintainers
 
-Many packages that are commonly used by scientists are being maintained by a single person. As devoted as this single maintainer
-may be, it is always easier to work when you have community support.
+Many packages that are commonly used by scientists are being maintained by a 
+single person. As devoted as this single maintainer may be, 
+it is always easier to work when you have community support.
 
-Our online community both on [discourse](https://pyopensci.discourse.group/) and more privately on slack, is available for maintainers to interact with each other, ask questions and get support. Core to our
-mission is building a welcoming and diverse community for people
-of both differing technical background and skill as well as varying cultural background.
+Our online community on Slack is available for maintainers to connect with peers, 
+ask questions and get support. Core to our mission is building a 
+welcoming and diverse community for people of both differing technical background 
+and skill as well as varying cultural background.
