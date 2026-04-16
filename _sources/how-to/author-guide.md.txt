@@ -165,7 +165,8 @@ Given the increased use of Generative AI tools (LLMs), we have developed a discl
 ```{hint}
 **Do you have questions about Python packaging or our peer review process?**
 
-[Post your question(s) in our Discourse forum under `coding-help`](https://pyopensci.discourse.group/c/coding-help/10). We will do our best to help you with questions
+[Post your question(s) in our GitHub Discussions](https://github.com/orgs/pyOpenSci/discussions).
+We will do our best to help you with questions
 surrounding:
 
 * Package structure
