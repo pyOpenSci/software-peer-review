@@ -5,7 +5,7 @@
 Thank you for taking the time to review a package for pyOpenSci and for contributing
 to making open source scientific software easier to use by the community! If you
 have any questions about the review process, feel free to reach out to one of
-our editors or to post a question on our [discourse forum](https://pyopensci.discourse.group/).
+our editors or to post a question on our [GitHub Discussions](https://github.com/orgs/pyOpenSci/discussions).
 ```
 
 Please be respectful and kind to the authors in your reviews. Our
@@ -157,4 +157,4 @@ offer."
 
 ### Feedback on the pyOpenSci open peer review process
 
-We welcome any feedback and/or questions about the review process! We encourage you to post any issues, feedback or questions in our [Discourse forum](https://pyopensci.discourse.group/c/review-process/7).
+We welcome any feedback and/or questions about the review process! We encourage you to post any issues, feedback or questions in our [GitHub Discussions](https://github.com/orgs/pyOpenSci/discussions).
