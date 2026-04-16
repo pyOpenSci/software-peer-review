@@ -136,7 +136,7 @@ and identities.
 ## Frequently asked questions
 
 Below is a list of questions that we get asked about our community partnerships.
-If you have a question that is now answered here, feel free to post it on our
+If you have a question that is not answered here, feel free to post it on our
 [GitHub Discussions](https://github.com/orgs/pyOpenSci/discussions).
 
 ### General peer review questions
