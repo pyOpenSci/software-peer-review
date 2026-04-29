@@ -227,9 +227,8 @@ If your package has been published in a peer-reviewed journal and the publicatio
 methodology, you may be eligible for our [publication fast-track review](publication-fast-track).
 
 For packages without an associated journal publication, you can still submit to pyOpenSci at
-any time. Keep in mind that review feedback may result in significant improvements, including
-renaming, refactoring, and breaking changes to classes, methods, and functions — so submitting
-before finalising a software paper can help you avoid rework.
+any time. Please keep in mind that review feedback may request significant improvements, including
+renaming, refactoring, and breaking changes to classes, methods, and functions. So, submitting to pyOpenSci before finalizing a software paper can help you avoid rework.
 
 :::{note}
 Many Python packages are published to PyPI in alpha/beta stages to attract early users and contributors and to make installation easier. Publishing to PyPI before review is acceptable and often beneficial for package development.
