@@ -206,7 +206,7 @@ The review for this package:
 - requires at least 1 domain specialist
 - will never vet the analytical method itself.
 
-2. If your package introduces a novel or newer analytic approach that is **not yet vetted/accepted by a scientific journal**, we cannot review it. We cannot review projects that exist as a proof-of-concept demonstration of a model or analytical approach that might accompany a paper. In this case, the approach should be submitted to a scientific journal for vetting first.
+2. For packages that introduce a novel or newer analytic approach, we cannot review them unless they are already **vetted/accepted by a scientific journal**. We cannot review projects that exist as a proof-of-concept demonstration of a model or analytical approach that might accompany a paper. If your package falls into this case, please submit it to a scientific journal for vetting before asking for review here.
 
 3. If your package implements a novel approach that **has** been peer-reviewed and accepted by a credible scientific journal, it may be eligible for our [publication fast-track review](publication-fast-track): a streamlined review with one reviewer focused on software quality and packaging standards, rather than the usual two. Since the domain/scientific component has already been vetted by the journal, the pyOpenSci reviewer is not expected to re-evaluate the underlying method. Please submit a pre-submission inquiry first and include the publication details.
 
