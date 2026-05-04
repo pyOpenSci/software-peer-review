@@ -62,7 +62,7 @@ of the submission.
 
 ## Submitting your package for review in other venues
 
-If you are considering submitting your package to a scientific journal, we encourage you to
+If you are considering submitting your package to a software Journal, you may want to submit to us first because our review may result in significant updates to your package. If you are considering submitting your package to a scientific journal which focuses on the methods, then we encourage you to
 **submit to the journal first**. A package that has already gone through a rigorous journal
 review typically has a longer development history, more established use cases, and has already
 undergone deeper scientific and methodological scrutiny than pyOpenSci alone can provide.
