@@ -190,6 +190,7 @@ Bindings and wrappers for database APIs.
 
 - Example: [Example from rOpenSci - rrlite](https://github.com/ropensci/software-review/issues/6)
 
+(analytics-statistics-scope)=
 ## Scope for packages that support analytics, statistics and modeling
 
 pyOpenSci is not a scientific journal. As such we are not able to review

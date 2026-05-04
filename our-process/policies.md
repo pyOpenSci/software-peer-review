@@ -137,7 +137,7 @@ had not yet been vetted by the scientific community, since pyOpenSci is not a jo
 review novel science itself. This fast-track pathway extends our scope: packages whose method *has*
 been peer-reviewed and published can now be reviewed under this streamlined process. For these
 packages, journal review naturally comes first — and that ordering is expected and encouraged.
-See the [analytics and statistics scope section](package-scope) for more detail.
+See the [analytics and statistics scope section](analytics-statistics-scope) for more detail.
 :::
 
 ### Eligibility
