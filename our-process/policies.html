@@ -537,10 +537,15 @@ of the submission.</p>
 </section>
 <section id="submitting-your-package-for-review-in-other-venues">
 <h2>Submitting your package for review in other venues<a class="headerlink" href="#submitting-your-package-for-review-in-other-venues" title="Link to this heading">#</a></h2>
-<p>We recommend submitting your package for review with pyOpenSci before
-submitting a software paper describing the package to a journal.</p>
-<p>Review feedback may result in significant improvements and updates to your package,
-including changes that could break package functionality.</p>
+<p>If you are considering submitting your package to a software journal, you may want to submit to us first because our review may result in significant updates to your package. If you are considering submitting your package to a scientific journal which focuses on the methods, then we encourage you to
+<strong>submit to the journal first</strong>. A package that has already gone through a rigorous journal
+review typically has a longer development history, more established use cases, and has already
+undergone deeper scientific and methodological scrutiny than pyOpenSci alone can provide.
+pyOpenSci’s focus is on the Python packaging ecosystem and software best practices, and a
+package that arrives with that foundation in place makes for a stronger submission.</p>
+<p>Once your package has been published (or accepted) by a journal, you can submit to pyOpenSci.
+If the publication covers the package’s core methodology, you may be eligible for our
+<a class="reference internal" href="#publication-fast-track"><span class="std std-ref">fast-track review pathway</span></a>.</p>
 <p>Applying reviewer or editor recommendations to your package can improve your
 users’ experience with future versions of your package, even if your package is
 already published on <code class="docutils literal notranslate"><span class="pre">PyPI</span></code> or <code class="docutils literal notranslate"><span class="pre">conda-forge</span></code>.</p>
@@ -585,6 +590,73 @@ eligible for JOSS fast-track review. See our <a class="reference internal" href=
 for more details.</p>
 </div>
 </section>
+</section>
+</section>
+<section id="fast-track-review-for-packages-with-an-associated-peer-reviewed-publication">
+<span id="publication-fast-track"></span><h2>Fast-track review for packages with an associated peer-reviewed publication<a class="headerlink" href="#fast-track-review-for-packages-with-an-associated-peer-reviewed-publication" title="Link to this heading">#</a></h2>
+<p>If your package has an associated peer-reviewed publication—such as a journal article—that covers
+the primary domain methodology or algorithm implemented by the package, it may be eligible for a
+<strong>fast-track review</strong> with one reviewer instead of the usual two.</p>
+<p>The rationale is that the domain and algorithmic components have already been vetted through
+the publication’s peer review. pyOpenSci review then focuses on packaging quality,
+documentation, and adherence to our standards.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>Policy change:</strong> Previously, pyOpenSci declined to review packages whose core method or algorithm
+had not yet been vetted by the scientific community, since pyOpenSci is not a journal and cannot
+review novel science itself. This fast-track pathway extends our scope: packages whose method <em>has</em>
+been peer-reviewed and published can now be reviewed under this streamlined process. For these
+packages, journal review naturally comes first — and that ordering is expected and encouraged.
+See the <a class="reference internal" href="../about/package-scope.html#analytics-statistics-scope"><span class="std std-ref">analytics and statistics scope section</span></a> for more detail.</p>
+</div>
+<section id="eligibility">
+<h3>Eligibility<a class="headerlink" href="#eligibility" title="Link to this heading">#</a></h3>
+<p>Your package may be eligible for fast-track review if:</p>
+<ul class="simple">
+<li><p>It has an associated peer-reviewed publication that covers the primary method or algorithm
+it implements.</p></li>
+<li><p>The publication is directly relevant to the core scientific functionality of the package.</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Accepted publication venues and any additional eligibility criteria are still being finalized.
+There is no fixed list of qualifying journals — in general, any credible, quality peer-reviewed
+venue is acceptable. Common examples include <a class="reference external" href="https://www.sciencedirect.com/journal/softwarex">SoftwareX</a>
+and <a class="reference external" href="https://joss.theoj.org/">JOSS</a>. The final decision on eligibility rests with the
+pyOpenSci Editor-in-Chief. If you believe your package qualifies, note this in your
+pre-submission inquiry or submission.</p>
+</div>
+</section>
+<section id="what-fast-track-means">
+<h3>What fast-track means<a class="headerlink" href="#what-fast-track-means" title="Link to this heading">#</a></h3>
+<p>In a standard pyOpenSci review, two reviewers are assigned: typically one with domain-specific
+scientific expertise and one focused on software usability, packaging, and infrastructure. For
+packages with an associated peer-reviewed publication, the domain/scientific component has
+already been externally vetted.</p>
+<p>Under this pathway:</p>
+<ul class="simple">
+<li><p><strong>One reviewer</strong> (rather than two) will review the package, focusing on software quality,
+usability, documentation, and pyOpenSci packaging standards — the role that does not require
+deep domain expertise.</p></li>
+<li><p>The reviewer is <strong>not</strong> expected to deeply evaluate the underlying scientific method or algorithm,
+which has already been covered by the associated publication. However, they should perform a
+cursory check to verify that the methods implemented in the package appear consistent with
+what is described in the publication.</p></li>
+<li><p>The editor conducts their standard checks as usual.</p></li>
+</ul>
+<p>Issues using this pathway are labeled <code class="docutils literal notranslate"><span class="pre">publication-fast-track</span></code> to signal the modified
+review scope.</p>
+</section>
+<section id="including-publication-details-in-your-submission">
+<h3>Including publication details in your submission<a class="headerlink" href="#including-publication-details-in-your-submission" title="Link to this heading">#</a></h3>
+<p>If your package has an associated publication, include the following front matter in your
+submission issue to help editors assess eligibility:</p>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">publication</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">title</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">doi</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">journal</span><span class="p">:</span>
+</pre></div>
+</div>
 </section>
 </section>
 <section id="conflict-of-interest-for-reviews-and-editors">
@@ -810,6 +882,12 @@ educational purposes.</p>
 <li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#expedited-review-process">Expedited Review Process</a></li>
 </ul>
 </li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#fast-track-review-for-packages-with-an-associated-peer-reviewed-publication">Fast-track review for packages with an associated peer-reviewed publication</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#eligibility">Eligibility</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#what-fast-track-means">What fast-track means</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#including-publication-details-in-your-submission">Including publication details in your submission</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#conflict-of-interest-for-reviews-and-editors">Conflict of interest for reviews and editors</a></li>

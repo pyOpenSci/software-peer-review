@@ -704,9 +704,18 @@ up to a week.</p>
 <li><p><strong>The README provides enough information</strong> about your package (goals, usage, similar packages) for the editors to assess its scope without having to install the package. The README file should also make a strong case for why the package adds value to the scientific Python ecosystem.</p></li>
 </ul>
 </section>
-<section id="review-before-publication">
-<h3>Review before publication<a class="headerlink" href="#review-before-publication" title="Link to this heading">#</a></h3>
-<p>We strongly suggest that you submit your package for review to pyOpenSci <strong>before submitting a software paper</strong> describing the package to a journal. Review feedback may result in major improvements and updates to your package, including renaming, refactoring and breaking changes to classes, methods and functions.</p>
+<section id="review-and-publication-ordering">
+<h3>Review and publication ordering<a class="headerlink" href="#review-and-publication-ordering" title="Link to this heading">#</a></h3>
+<p>For most packages, we encourage you to <strong>submit to a journal first</strong> if you plan to publish a
+software paper. A package that has already undergone scientific journal review has a stronger development
+history and more established use cases — both things we value in a pyOpenSci submission.
+pyOpenSci focuses on the Python packaging ecosystem and software best practices, while journal
+review provides deeper scientific and methodological scrutiny.</p>
+<p>If your package has been published in a peer-reviewed journal and the publication covers its core
+methodology, you may be eligible for our <a class="reference internal" href="../our-process/policies.html#publication-fast-track"><span class="std std-ref">publication fast-track review</span></a>.</p>
+<p>For packages without an associated journal publication, you can still submit to pyOpenSci at
+any time. Please keep in mind that review feedback may request significant improvements, including
+renaming, refactoring, and breaking changes to classes, methods, and functions. So, submitting to pyOpenSci before finalizing a software paper can help you avoid rework.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Many Python packages are published to PyPI in alpha/beta stages to attract early users and contributors and to make installation easier. Publishing to PyPI before review is acceptable and often beneficial for package development.</p>
@@ -719,6 +728,19 @@ up to a week.</p>
 <p>To submit your package for peer review,
 open an issue in our <a class="reference external" href="https://github.com/pyOpenSci/software-review/issues/new/choose/">pyopensci/software-review repo</a>
 repository and fill out the <a class="reference external" href="https://github.com/pyOpenSci/software-submission/issues/new?template=submit-software-for-review.md">Submit Software for Review</a> issue template.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p><strong>Package with an associated peer-reviewed publication?</strong></p>
+<p>If your package has an associated peer-reviewed publication covering its core methodology or
+algorithm, it may qualify for a <a class="reference internal" href="../our-process/policies.html#publication-fast-track"><span class="std std-ref">fast-track review with one reviewer</span></a>.
+Include the following front matter in your submission issue so editors can assess eligibility:</p>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">publication</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">title</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">doi</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">journal</span><span class="p">:</span>
+</pre></div>
+</div>
+</div>
 </section>
 <section id="editor-in-chief-reviews-package-for-scope-and-minimal-infrastructure-criteria">
 <h2>6. Editor-in-Chief reviews package for scope and minimal infrastructure criteria<a class="headerlink" href="#editor-in-chief-reviews-package-for-scope-and-minimal-infrastructure-criteria" title="Link to this heading">#</a></h2>
@@ -881,7 +903,7 @@ of vetted tools.</p>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#is-your-package-in-scope-for-pyopensci">3. Is your package in scope for pyOpenSci?</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#prepare-your-package-for-peer-review">4. Prepare your package for peer review</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#when-to-submit">When to submit</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#review-before-publication">Review before publication</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#review-and-publication-ordering">Review and publication ordering</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#submit-your-package-for-peer-review">5. Submit your package for peer review</a></li>
