@@ -219,7 +219,7 @@ Your package is ready for review when:
 ### Review and publication ordering
 
 For most packages, we encourage you to **submit to a journal first** if you plan to publish a
-software paper. A package that has already undergone journal review has a stronger development
+software paper. A package that has already undergone scientific journal review has a stronger development
 history and more established use cases — both things we value in a pyOpenSci submission.
 pyOpenSci focuses on the Python packaging ecosystem and software best practices, while journal
 review provides deeper scientific and methodological scrutiny.
