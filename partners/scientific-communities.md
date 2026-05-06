@@ -94,7 +94,7 @@ Through our partnership, we have two options when selecting an editor.
 
 - If we have a domain specific editor who is not authorized by your community to make this decision, we can ask someone from your community to make the decision around affiliated status. Once the decision is made, the review can proceed as normal.
 
-3. Once affiliated status has been determined, the editor finds 2 reviewers to begin the review.
+3. Once affiliated status has been determined, the editor finds reviewers to begin the review. Standard reviews typically have two reviewers, while publication fast-track reviews may have one.
 4. The review begins and is a conversation between the package maintainer and the reviewer with the goal of improving the package usability and quality.
 5. Once the package is accepted by pyOpenSci, authors can opt to be published in the Journal of Open Source Software (JOSS) if their package is in scope for JOSS. JOSS will accept the pyOpenSci review and will only review the JOSS paper. If the package is within JOSS's scope, the JOSS fast-track process is normally a quick final step.
 
@@ -124,7 +124,7 @@ it might take a bit longer to find the right people to begin the review.
 
 pyOpenSci maintains a reviewer database with individuals who have signed
 up using our [reviewer sign-up form](https://forms.gle/GHfxvmS47nQFDcBM6).
-Our goal is to assign two reviewers for each package. Typically, one
+Our goal is to assign two reviewers for each standard package review. Typically, one
 reviewer possesses domain-specific expertise while the second may
 focus on usability, installation, documentation, or packaging
 infrastructure, without necessarily needing domain expertise.
@@ -214,7 +214,7 @@ packages. To achieve this, we monitor repository activity for all
 our packages to detect any signs of becoming unmaintained.
 
 However, pyOpenSci does not conduct full re-reviews, involving the Editor-in-
-Chief, Editor, and two reviewers, for packages that have already been
+Chief, Editor, and a full reviewer team, for packages that have already been
 accepted.
 
 :::{note}

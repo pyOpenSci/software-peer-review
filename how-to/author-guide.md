@@ -86,7 +86,7 @@ Before you begin this process, [please be sure to read the review process guidel
 **Before you consider submitting to us, please consider the following:**
 
 1. Please be sure that you have time to devote to making changes to your
-package. During review, you will receive feedback from an editor and two reviewers. Changes could
+package. During review, you will receive feedback from an editor and one or more reviewers. Most reviews involve two reviewers, but eligible packages in our publication fast-track pathway may have one. Changes could
 take time. Please consider this before submitting. You can read more about the timeline for making changes on our [peer review policies page](../our-process/policies).
 2. A diverse group of volunteer editors and reviewers leads peer review.
 Please be considerate when engaging with everyone online.
@@ -275,7 +275,7 @@ Click here to view the editor checks that will be used to evaluate your package.
 
 If your package meets the minimal criteria for being
 reviewed, it may then be given to an editor with appropriate domain experience
-to manage the review process. That editor will assign 2-3 reviewers to review your
+to manage the review process. That editor will assign reviewers to review your
 package. Reviewers will be asked to provide review feedback as comments on your
 issue within **3 weeks**. Reviewers can also open issues in your package repository.
 We prefer issues that link back to the review as they document changes made to your

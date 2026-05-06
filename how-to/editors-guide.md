@@ -184,7 +184,7 @@ Authors may opt to submit to JOSS after a successful PyOpenSci submission. If th
 
 ### ✔️ 3. Identify reviewers for the Python package
 
-Each review should have at least two reviewers.
+Standard reviews should have at least two reviewers. Packages eligible for the publication fast-track pathway may proceed with one reviewer.
 
 - One reviewer should have expertise in both Python and the scientific domain related to the package submitted.
 - The second reviewer can be more generally focused on the package's usability, accessibility, and packaging infrastructure. This allows people who are newer to review to get involved while also providing a critical usability check for the package.
@@ -211,7 +211,7 @@ appreciate the communication and understand it's a volunteer-led process.
 :class: important
 
 Diversity is core to the pyOpenSci mission. As such, it's important to have an
-editorial team comprised of an editor + 2 reviewers from diverse backgrounds.
+editorial team with diverse backgrounds. Standard reviews usually involve an editor plus two reviewers, while publication fast-track reviews may use one reviewer.
 
 In your search for reviewers, please ensure that there is diversity
 in the team supporting package review. Reviewers should have [different backgrounds and different gender identities](reviewer-diversity) whenever possible. pyOpenSci [supports mentoring new reviewers if needed!](review-mentorship)
