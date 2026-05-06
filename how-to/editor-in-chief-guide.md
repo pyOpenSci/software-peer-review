@@ -222,7 +222,7 @@ work on the review is complete, and they will now begin identifying reviewers.
 :class: important
 
 Inclusion is core to the pyOpenSci mission. It's important to have an
-editorial team comprised of an editor + 2 reviewers from different backgrounds and identities to enrich the review process.
+editorial team with diverse backgrounds and identities to enrich the review process. Standard reviews usually involve an editor plus two reviewers, while publication fast-track reviews may use one reviewer.
 
 As you select an editor (and guide that editor in finding reviewers),
 seek diversity in the team supporting package review. [Specifically, reviewers and the editor should have a mix of gender identities whenever possible](reviewer-diversity). pyOpenSci [also supports mentoring new reviewers and editors if needed!](review-mentorship)
