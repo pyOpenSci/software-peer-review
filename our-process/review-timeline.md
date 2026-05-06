@@ -38,7 +38,7 @@ suitable reviewers.
 Time: ~2-3 weeks
 
 ### 4. Peer review of submitted Python Package begins
-Once we have an editor and 2 reviewers on board, review begins. **Reviewers have 3 weeks to return a review.** To do this,
+Once we have an editor and reviewers on board, review begins. Standard reviews typically have two reviewers, but eligible publication fast-track reviews may have one. **Reviewers have 3 weeks to return a review.** To do this,
 they will use our reviewer template in the [reviewer guide](/how-to/reviewer-guide.md) and paste that, filled out, into the issue.
 
 TIME: ~3 weeks
