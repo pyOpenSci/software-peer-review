@@ -616,7 +616,7 @@ scientific workflows or exported from instruments and wearables.</p>
 </ul>
 </section>
 <section id="data-validation-and-testing">
-<h3>Data validation and testing:<a class="headerlink" href="#data-validation-and-testing" title="Link to this heading">#</a></h3>
+<h3>Data validation and testing<a class="headerlink" href="#data-validation-and-testing" title="Link to this heading">#</a></h3>
 <p>Tools that enable automated validation and checking of data quality and
 completeness. These tools should be able to support scientific workflows.</p>
 <ul class="simple">
@@ -644,11 +644,11 @@ reproducible workflows. These
 tools may include build systems and tools to manage continuous integration.
 This also includes tools that support version control.</p>
 <ul class="simple">
-<li><p>Examples: Both of these tools are not pyOpenSci reviewed as of yet but are examples of tools that might be in scope for this category - <a class="reference external" href="https://snakemake.readthedocs.io/en/stable/">snakemake</a>, <a class="reference external" href="https://github.com/PyGithub/PyGithub">pyGitHub </a></p></li>
+<li><p>Examples: Both of these tools are not pyOpenSci reviewed as of yet but are examples of tools that might be in scope for this category - <a class="reference external" href="https://snakemake.readthedocs.io/en/stable/">snakemake</a>, <a class="reference external" href="https://github.com/PyGithub/PyGithub">pyGitHub</a></p></li>
 </ul>
 </section>
 <section id="citation-management-and-bibliometrics">
-<h3>Citation management and bibliometrics:<a class="headerlink" href="#citation-management-and-bibliometrics" title="Link to this heading">#</a></h3>
+<h3>Citation management and bibliometrics<a class="headerlink" href="#citation-management-and-bibliometrics" title="Link to this heading">#</a></h3>
 <p>Tools that facilitate managing references, such as for writing manuscripts,
 creating CVs or otherwise attributing scientific contributions, or accessing,
 manipulating or otherwise working with bibliometric data. (Example: <a class="reference external" href="https://github.com/ropensci/software-review/issues/119">Example from rOpenSci - RefManageR</a>)</p>
@@ -684,8 +684,28 @@ credible journal.</p>
 <li><p>requires at least 1 domain specialist</p></li>
 <li><p>will never vet the analytical method itself.</p></li>
 </ul>
-<ol class="arabic simple" start="2">
+<p>&lt;&lt;&lt;&lt;&lt;&lt;&lt; genai-2</p>
+<ol class="arabic simple">
+<li><p>If your package introduces a novel or newer analytic approach that is not yet vetted/ accepted by a scientific journal, we can not review it. We cannot review projects that exist as a proof-of-concept demonstration of a model or analytical approach that might accompany a paper. In this case, the approach should be sent to a scientific journal for vetting.
+=======</p></li>
 <li><p>We cannot review a package that introduces a new or novel analytic approach unless they have already been <strong>vetted or accepted by a scientific journal</strong>. We also cannot review projects that serve as proof-of-concept demonstrations of a model or analytical approach that might accompany a paper. If your package falls under either of these cases, please submit it to a scientific journal for peer review before requesting a review here.</p></li>
+</ol>
+<blockquote>
+<div><blockquote>
+<div><blockquote>
+<div><blockquote>
+<div><blockquote>
+<div><blockquote>
+<div><blockquote>
+<div><p>main</p>
+</div></blockquote>
+</div></blockquote>
+</div></blockquote>
+</div></blockquote>
+</div></blockquote>
+</div></blockquote>
+</div></blockquote>
+<ol class="arabic simple" start="3">
 <li><p>If your package implements a novel approach that <strong>has</strong> been peer-reviewed and accepted by a credible scientific journal, it may be eligible for our <a class="reference internal" href="../our-process/policies.html#publication-fast-track"><span class="std std-ref">publication fast-track review</span></a>. Fast-track review is a streamlined review process focused on software quality and packaging standards. A fast-track review is performed by one reviewer rather than two, focusing solely on packaging rather than the scientific methods applied. Since the domain/scientific component has already been vetted by the journal, the pyOpenSci fast-track reviewer is not expected to re-evaluate the underlying scientific method. To apply for the fast track route, please first submit a pre-submission inquiry and include the publication details.</p></li>
 </ol>
 <div class="admonition note">
@@ -706,7 +726,7 @@ we will expand this list.</p>
 <p>Packages focused on the retrieval, manipulation, and analysis of spatial data.</p>
 <ul class="simple">
 <li><p>Examples: <a class="reference external" href="https://github.com/pyOpenSci/software-submission/issues/43">PyGmt</a>,
-<a class="reference external" href="https://github.com/pyOpenSci/software-submission/issues/18">Moving Pandas </a></p></li>
+<a class="reference external" href="https://github.com/pyOpenSci/software-submission/issues/18">Moving Pandas</a></p></li>
 </ul>
 </section>
 <section id="education">
@@ -774,30 +794,13 @@ JOSS submission process described in our <a class="reference internal" href="../
 that may be outside JOSS scope while maintaining our partnership for
 packages that meet both organizations’ criteria.</p>
 </div>
-</section>
-<section id="telemetry-user-informed-consent">
-<h3>Telemetry &amp; user-informed consent<a class="headerlink" href="#telemetry-user-informed-consent" title="Link to this heading">#</a></h3>
-<p>Your package should not collect collecting usage analytics without first informing your users about what data are being collected and what is being done with that data. With
-that in mind, we understand that package-use data can be invaluable for the
-development process. If the package does collect such data, it should do so
-by prioritizing user-informed-consent. This means that before any data are
-collected, the user understands:</p>
-<ol class="arabic simple">
-<li><p>What data are collected</p></li>
-<li><p>How the data are collected.</p></li>
-<li><p>What you plan to do with the data</p></li>
-<li><p>How and where the data are stored</p></li>
-</ol>
-<p>Once the user is informed of what will be collected and how that data will be handled, stored and used, you can implement <code class="docutils literal notranslate"><span class="pre">opt-in</span></code> consent. <code class="docutils literal notranslate"><span class="pre">opt-in</span></code> means that the user agrees to usage-data collection prior to it being collected (rather than having to opt-out when using your package).</p>
-<p>We will evaluate usage data collected by packages on a case-by-case basis
-and reserve the right not to review a package if the data collection is overly
-invasive.</p>
 <p>To be in technical scope for a pyOpenSci review, your package:</p>
 <ul class="simple">
 <li><p>Should have maintenance workflows documented.</p></li>
 <li><p>Should declare vendor dependencies using standard approaches rather than including code from other packages within your repository.</p></li>
 <li><p>Should not have an exceedingly complex structure. Others should be able to contribute and/or take over maintenance if needed.</p></li>
 </ul>
+<p>See our <a class="reference internal" href="../our-process/policies.html#generative-ai-and-open-source-development"><span class="std std-ref">policy for use of generative AI / LLMs</span></a> for additional expectations regarding AI-generated code and documentation.</p>
 <div class="admonition-pyopensci-s-goal-is-to-support-long-er-term-maintenance admonition">
 <p class="admonition-title">pyOpenSci’s goal is to support long(er) term maintenance</p>
 <p>pyOpenSci has a goal of supporting long term maintenance of open source
@@ -839,7 +842,7 @@ it fulfills any of the out-of-technical-scope criteria listed below.</p>
 <p>A few examples of packages that may be too technically challenging for us to
 find a new maintainer for in the future are below.</p>
 <section id="example-1-your-package-is-an-out-of-sync-fork-of-another-package-repository-that-is-being-actively-maintained">
-<h3>Example 1: Your package is an out of sync fork of another package repository that is being actively maintained.<a class="headerlink" href="#example-1-your-package-is-an-out-of-sync-fork-of-another-package-repository-that-is-being-actively-maintained" title="Link to this heading">#</a></h3>
+<h3>Example 1: Your package is an out of sync fork of another package repository that is being actively maintained<a class="headerlink" href="#example-1-your-package-is-an-out-of-sync-fork-of-another-package-repository-that-is-being-actively-maintained" title="Link to this heading">#</a></h3>
 <p>Sometimes we understand that a package maintainer may need to step down. In
 that case, we strongly suggest that the original package owner, transfer the
 package repository to a new organization along with PyPI credentials. A new
@@ -944,10 +947,10 @@ consider submittal to other repositories or journals.</p>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#data-extraction">Data extraction</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#data-processing-and-munging">Data processing and munging</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#data-deposition">Data deposition</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#data-validation-and-testing">Data validation and testing:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#data-validation-and-testing">Data validation and testing</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#scientific-software-wrappers">Scientific software wrappers</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#workflow-automation-and-versioning">Workflow automation and versioning</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#citation-management-and-bibliometrics">Citation management and bibliometrics:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#citation-management-and-bibliometrics">Citation management and bibliometrics</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#data-visualization-and-analysis">Data visualization and analysis</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#database-software-bindings">Database software bindings</a></li>
 </ul>
@@ -965,12 +968,11 @@ consider submittal to other repositories or journals.</p>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#package-technical-scope">Package technical scope</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#package-size-and-scholarly-effort">Package size and scholarly effort</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#telemetry-user-informed-consent">Telemetry &amp; user-informed consent</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#what-if-my-package-seems-like-its-category-or-domain-is-out-of-scope">What if my package seems like its category or domain is out of scope?</a></li>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#examples-of-packages-that-might-be-out-of-technical-scope">Examples of packages that might be out of technical scope</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-1-your-package-is-an-out-of-sync-fork-of-another-package-repository-that-is-being-actively-maintained">Example 1: Your package is an out of sync fork of another package repository that is being actively maintained.</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-1-your-package-is-an-out-of-sync-fork-of-another-package-repository-that-is-being-actively-maintained">Example 1: Your package is an out of sync fork of another package repository that is being actively maintained</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-2-vendored-dependencies">Example 2: Vendored dependencies</a></li>
 </ul>
 </li>
