@@ -34,7 +34,7 @@ The policies below support adherence to thoughtful open source development best 
 
 ## Communication in review issues
 
-* We prefer that all communication in our software review issues are written by a human. We embrace the use of LLMs for translation and grammar correction. We prefer honest interactions over ones that prioritize perfect language and grammar. As little aid from an LLM as possible.
+* We prefer that all communication in our software review issues are written by a human. We embrace the use of LLMs for translation and grammar correction. We prefer honest interactions over ones that prioritize perfect language and grammar. Use as little aid from an LLM as possible.
 * We will block accounts that spam our repositories or burden our volunteers with repeated, automated comments that aren't directly related to and in support of productive conversations in a review.
 
 ## Package development and design approach
