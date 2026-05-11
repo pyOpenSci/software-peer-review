@@ -2,8 +2,9 @@
 # https://www.sphinx-doc.org/en/master/usage/configuration.html
 
 
-from datetime import datetime
+import os
 import subprocess
+from datetime import datetime
 
 current_year = datetime.now().year
 organization_name = "pyOpenSci"
@@ -12,13 +13,12 @@ organization_name = "pyOpenSci"
 project = "pyOpenSci Python Package Guide"
 copyright = f"{current_year}, {organization_name}"
 author = "pyOpenSci Community"
-
+# Allow building without Git tags
+os.environ["SPHINX_GIT_DESCRIBE_MISSING"] = "true"
 # Get the latest Git tag - there might be a prettier way to do this but...
 try:
     release_value = (
-        subprocess.check_output(["git", "describe", "--tags"])
-        .decode("utf-8")
-        .strip()
+        subprocess.check_output(["git", "describe", "--tags"]).decode("utf-8").strip()
     )
     release_value = release_value[:4]
 except subprocess.CalledProcessError:
@@ -62,7 +62,7 @@ html_title = "Software Peer Review Guide"
 html_logo = "_static/logo.png"
 html_static_path = ["_static"]
 html_js_files = ["matomo.js"]
-html_favicon = 'https://www.pyopensci.org/images/favicon.ico'
+html_favicon = "https://www.pyopensci.org/images/favicon.ico"
 
 # Theme options
 html_theme_options = {

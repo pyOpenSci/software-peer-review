@@ -158,6 +158,7 @@ rejected, see
 about how to respond.
 ```
 
+
 ### ✔️ 2. Respond to the submitter in the GitHub issue
 
 Once the above is complete, you are ready to add an editor response to the issue.
@@ -175,6 +176,10 @@ we are using our volunteer reviewer time effectively.
 ```{important}
 **Important: If in the initial checks you find any major gaps in the package's
 structure, request changes before assigning reviewers.**
+```
+
+```{note}
+Authors may opt to submit to JOSS after a successful PyOpenSci submission. If this is the case, please note that they are not required to have the `paper.md` file before the JOSS submission.
 ```
 
 ### ✔️ 3. Identify reviewers for the Python package

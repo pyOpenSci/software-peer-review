@@ -73,11 +73,16 @@ of the submission.
 
 ## Submitting your package for review in other venues
 
-We recommend submitting your package for review with pyOpenSci before
-submitting a software paper describing the package to a journal.
+If you are considering submitting your package to a software journal, you may want to submit to us first because our review may result in significant updates to your package. If you are considering submitting your package to a scientific journal which focuses on the methods, then we encourage you to
+**submit to the journal first**. A package that has already gone through a rigorous journal
+review typically has a longer development history, more established use cases, and has already
+undergone deeper scientific and methodological scrutiny than pyOpenSci alone can provide.
+pyOpenSci's focus is on the Python packaging ecosystem and software best practices, and a
+package that arrives with that foundation in place makes for a stronger submission.
 
-Review feedback may result in significant improvements and updates to your package,
-including changes that could break package functionality.
+Once your package has been published (or accepted) by a journal, you can submit to pyOpenSci.
+If the publication covers the package's core methodology, you may be eligible for our
+[fast-track review pathway](publication-fast-track).
 
 Applying reviewer or editor recommendations to your package can improve your
 users' experience with future versions of your package, even if your package is
@@ -125,6 +130,76 @@ but does not meet JOSS requirements (e.g., minimum lines of code), it will not b
 eligible for JOSS fast-track review. See our [package scope guidelines](package-size-effort)
 for more details.
 :::
+
+(publication-fast-track)=
+## Fast-track review for packages with an associated peer-reviewed publication
+
+If your package has an associated peer-reviewed publication—such as a journal article—that covers
+the primary domain methodology or algorithm implemented by the package, it may be eligible for a
+**fast-track review** with one reviewer instead of the usual two.
+
+The rationale is that the domain and algorithmic components have already been vetted through
+the publication's peer review. pyOpenSci review then focuses on packaging quality,
+documentation, and adherence to our standards.
+
+:::{note}
+**Policy change:** Previously, pyOpenSci declined to review packages whose core method or algorithm
+had not yet been vetted by the scientific community, since pyOpenSci is not a journal and cannot
+review novel science itself. This fast-track pathway extends our scope: packages whose method *has*
+been peer-reviewed and published can now be reviewed under this streamlined process. For these
+packages, journal review naturally comes first — and that ordering is expected and encouraged.
+See the [analytics and statistics scope section](analytics-statistics-scope) for more detail.
+:::
+
+### Eligibility
+
+Your package may be eligible for fast-track review if:
+
+- It has an associated peer-reviewed publication that covers the primary method or algorithm
+  it implements.
+- The publication is directly relevant to the core scientific functionality of the package.
+
+:::{note}
+Accepted publication venues and any additional eligibility criteria are still being finalized.
+There is no fixed list of qualifying journals — in general, any credible, quality peer-reviewed
+venue is acceptable. Common examples include [SoftwareX](https://www.sciencedirect.com/journal/softwarex)
+and [JOSS](https://joss.theoj.org/). The final decision on eligibility rests with the
+pyOpenSci Editor-in-Chief. If you believe your package qualifies, note this in your
+pre-submission inquiry or submission.
+:::
+
+### What fast-track means
+
+In a standard pyOpenSci review, two reviewers are assigned: typically one with domain-specific
+scientific expertise and one focused on software usability, packaging, and infrastructure. For
+packages with an associated peer-reviewed publication, the domain/scientific component has
+already been externally vetted.
+
+Under this pathway:
+
+- **One reviewer** (rather than two) will review the package, focusing on software quality,
+  usability, documentation, and pyOpenSci packaging standards — the role that does not require
+  deep domain expertise.
+- The reviewer is **not** expected to deeply evaluate the underlying scientific method or algorithm,
+  which has already been covered by the associated publication. However, they should perform a
+  cursory check to verify that the methods implemented in the package appear consistent with
+  what is described in the publication.
+- The editor conducts their standard checks as usual.
+
+Issues using this pathway are labeled `publication-fast-track` to signal the modified
+review scope.
+
+### Including publication details in your submission
+
+If your package has an associated publication, include the following front matter in your
+submission issue to help editors assess eligibility:
+
+```yaml
+publication:
+  title:
+  doi:
+  journal:
+```
 
 (coi)=
 ## Conflict of interest for reviews and editors

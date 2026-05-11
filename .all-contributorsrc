@@ -487,6 +487,16 @@
         "bug",
         "review"
       ]
+    },
+    {
+      "login": "agriyakhetarpal",
+      "name": "agriya khetarpal",
+      "avatar_url": "https://avatars.githubusercontent.com/u/74401230?v=4",
+      "profile": "http://agriyakhetarp.al",
+      "contributions": [
+        "bug",
+        "doc"
+      ]
     }
   ],
   "contributorsPerLine": 6,

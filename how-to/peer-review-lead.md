@@ -76,4 +76,4 @@ Once a year, the Peer Review Lead should check in with the editorial team to ens
 * Posting in the `#private-editorial-team` Slack channel, or
 * Opening a GitHub issue in the private editorial repository
 
-Ask editors to confirm they are still able to participate and manage reviews. If an editor is no longer engaged or available, work with them to gracefully offboard them following the process in the [Onboarding & Offboarding Guide](onboarding-guide#off-boarding-an-editor).
+Ask editors to confirm they are still able to participate and manage reviews. If an editor is no longer engaged or available, work with them to gracefully offboard them following the process in the [Onboarding & Offboarding Guide](onboarding-guide).

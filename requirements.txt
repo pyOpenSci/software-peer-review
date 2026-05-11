@@ -8,3 +8,4 @@ sphinx-design
 sphinx-sitemap
 # Support for social / adds meta tags
 sphinxext-opengraph
+matplotlib
