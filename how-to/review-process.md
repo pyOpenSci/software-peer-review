@@ -1,3 +1,6 @@
+# Review Process
+
+Below will go through the process of a review for pyOpenSci
 
 ## Editor checklist: Get Started With Leading a Package Review
 
@@ -81,28 +84,10 @@ Authors may opt to submit to JOSS after a successful PyOpenSci submission. If th
 
 ### ✔️ 3. Identify reviewers for the Python package
 
-Each review should have at least two reviewers.
+There are more details in the [finding reviewers](finding-reviewers.md) page. In general:
 
-- One reviewer should have expertise in both Python and the scientific domain related to the package submitted.
-- The second reviewer can be more generally focused on the package's usability, accessibility, and packaging infrastructure. This allows people who are newer to review to get involved while also providing a critical usability check for the package.
-
-A review consisting of a domain expert and a Pythonista is ideal as it provides two distinct perspectives for review. Furthermore, it can often be challenging to find individuals with both the specific domain expertise and packaging expertise.
-
-#### Finding package reviewers
-
-Oftentimes, finding reviewers for a package can be the trickiest part
-of the review process. Expect this step to take time and patience. [Check out this page for tips related to finding and onboarding reviewers.](finding-reviewers)
-
-If you can, try to find two people to serve as reviewers within **two weeks
-of responding to the issue as the editor**. If it takes longer, as
-often does, make a point to keep the author posted on the issue
-as you continue your search. You may add language such as:
-
-> Hey, @authorGithubHandle I just wanted to drop in to let you know that I'm searching for reviewers for your package. It may take a bit more time.
-
-This type of communication just lets the author know that the process is
-moving forward. Even if it takes longer to find reviews, authors generally
-appreciate the communication and understand it's a volunteer-led process.
+- Each review should have at least two reviewers, one with Python and scientific domain expertiese, and one with focused on package's usability, accessibility, and packaging infrastructure.
+- find two people to serve as reviewers within **two weeks of responding to the issue as the editor**
 
 ```{admonition} Diversity in the editorial & reviewer team is important
 :class: important
@@ -112,20 +97,7 @@ editorial team comprised of an editor + 2 reviewers from diverse backgrounds.
 
 In your search for reviewers, please ensure that there is diversity
 in the team supporting package review. Reviewers should have [different backgrounds and different gender identities](reviewer-diversity) whenever possible. pyOpenSci [supports mentoring new reviewers if needed!](review-mentorship)
-
-[Read our finding reviewers guide for more on finding reviewers.](finding-reviewers)
 ```
-
-If you'd like to, you can use the email template below to invite reviewers.
-
-```{include} ../appendices/reviewer-request-template.md
-
-```
-
-When inviting reviewers, include something like "If I don't hear from
-you in a week, I'll assume you are unable to review," to give a clear
-deadline when you'll move on to looking for someone else to keep the processing
-moving.
 
 - Once you have assigned reviewers to the review, you will update the editor response above with:
 
@@ -145,6 +117,8 @@ Make sure to ask the reviewers for their preferred means of contact or a reliabl
 ```
 
 ### ✔️ 4. Onboard reviewers
+
+See [onboarding-reviewers](onboarding-reviewers.md) to learn more about inviting reviewers and providing support.
 
 Once reviewers have been identified:
 
