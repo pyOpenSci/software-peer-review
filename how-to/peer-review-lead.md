@@ -60,7 +60,7 @@ If a review has been quiet for over a month, it's a good idea to check in on thi
 
 Also, check out the days open column. Keep an eye out for reviews that have been open for longer than 6 months. In some cases, you may want to check in with the editor to see how things are going and whether there is a way to move the review forward.
 
-In some cases a review hasn't moved forward because the editor is struggling to find reviewers. [This page](finding-reviewers) will help you with some tips on helping an editor find reviewers. Sometimes this is as easy as posting in our pyOpenSci #software-review channel. Other times we might need to run a call for reviewers.
+In some cases a review hasn't moved forward because the editor is struggling to find reviewers. [This page](finding-reviewers.md) will help you with some tips on helping an editor find reviewers. Sometimes this is as easy as posting in our pyOpenSci #software-review channel. Other times we might need to run a call for reviewers.
 
 ### 4. Check the reviews seeking editors section
 

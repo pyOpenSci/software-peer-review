@@ -5,7 +5,7 @@ and reviewers. Finding new volunteers to take on editorial and reviewer roles
 can sometimes be the trickiest part of the review process. However, we have
 resources available to help you in that effort!
 
-For finding reviewers please look at yhe [finding-reviewers](finding-reviewers.md) guide
+For finding reviewers please look at the [finding-reviewers](finding-reviewers.md) guide
 
 Below, we discuss processes for onboarding reviewers and making sure they are supported during the peer review process.
 
