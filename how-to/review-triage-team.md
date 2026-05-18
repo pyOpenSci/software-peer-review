@@ -165,7 +165,7 @@ Finally, delete the branch associated with the PR.
 
 ## How to know when the package was accepted
 
-In our peer review guide, we have a [template that editors should use](https://www.pyopensci.org/software-peer-review/how-to/editors-guide.html) to accept a package into our ecosystem. In an issue, you can look for this comment and use the date that the comment was posted as the date the package was accepted.
+In our peer review guide, we have a [template that editors should use](https://www.pyopensci.org/software-peer-review/how-to/review-process.html) to accept a package into our ecosystem. In an issue, you can look for this comment and use the date that the comment was posted as the date the package was accepted.
 
 There are cases when editors forget to use this template. But ideally, you can figure this out by searching for "accepted" in the review. OR you can simply just ask the editor in the `private-editorial` channel on our Slack.
 
