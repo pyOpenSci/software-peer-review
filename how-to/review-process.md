@@ -1,6 +1,9 @@
+<<<<<<< HEAD
 # Review Process
 
 Below will go through the process of a review for pyOpenSci
+=======
+>>>>>>> 251b187 (splitting up editors guide, reorg pages)
 
 ## Editor checklist: Get Started With Leading a Package Review
 

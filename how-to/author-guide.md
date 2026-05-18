@@ -19,7 +19,11 @@ Position Description <editor-description>
 Finding & Onboarding Editors <onboarding-guide>
 Review Process <review-process>
 Finding Reviewers <finding-reviewers>
+<<<<<<< HEAD
 Onboarding Reviewers <onboarding-reviewers>
+=======
+Ondboarding Reviewers <onboarding-reviewers>
+>>>>>>> 251b187 (splitting up editors guide, reorg pages)
 ```
 
 Are you considering submitting a package for review with pyOpenSci? You've
