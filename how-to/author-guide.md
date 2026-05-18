@@ -6,7 +6,6 @@
 
 Author Guide <self>
 Reviewer Guide <reviewer-guide>
-Editor Guide <editors-guide>
 Editor-in-Chief Guide <editor-in-chief-guide>
 Triage Team Guide <review-triage-team>
 Peer Review Lead <peer-review-lead>
@@ -14,10 +13,13 @@ Peer Review Lead <peer-review-lead>
 
 ```{toctree}
 :hidden:
-:caption: Onboarding Editors & Reviewers
+:caption: Editor Guide
 
+Position Description <editor-description>
 Finding & Onboarding Editors <onboarding-guide>
-Finding & Onboarding Reviewers <finding-reviewers>
+Review Process <review-process>
+Finding Reviewers <finding-reviewers>
+Onboarding Reviewers <onboarding-reviewers>
 ```
 
 Are you considering submitting a package for review with pyOpenSci? You've

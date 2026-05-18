@@ -46,6 +46,26 @@ website, social media profiles).
 * Some domain experience in the field of the package or data source.
 * No [conflicts of interest](coi).
 
+Each review should have at least two reviewers.
+
+- One reviewer should have expertise in both Python and the scientific domain related to the package submitted.
+- The second reviewer can be more generally focused on the package's usability, accessibility, and packaging infrastructure. This allows people who are newer to review to get involved while also providing a critical usability check for the package.
+
+A review consisting of a domain expert and a Pythonista is ideal as it provides two distinct perspectives for review. Furthermore, it can often be challenging to find individuals with both the specific domain expertise and packaging expertise.
+
+### Timeline for finding reviewers
+
+If you can, try to find two people to serve as reviewers within **two weeks
+of responding to the issue as the editor**. If it takes longer, as
+often does, make a point to keep the author posted on the issue
+as you continue your search. You may add language such as:
+
+> Hey, @authorGithubHandle I just wanted to drop in to let you know that I'm searching for reviewers for your package. It may take a bit more time.
+
+This type of communication just lets the author know that the process is
+moving forward. Even if it takes longer to find reviews, authors generally
+appreciate the communication and understand it's a volunteer-led process.
+
 (reviewer-diversity)=
 ### Reviewer Diversity Should Be Prioritized
 
@@ -69,28 +89,3 @@ the package functionality. It is ok and even welcome if one reviewer has more
 technical knowledge and the other focuses on usability and is less technical.
 Read through the [Guidelines for Reviewers Section](reviewer-guide-sphinx) to learn more about finding
 and selecting reviewers.
-
-(review-mentorship)=
-## Peer Review Mentorship
-
-pyOpenSci encourages those who are newer to review to become involved in our
-open peer review process. As such, we offer a reviewer mentorship program
-where we pair a new reviewer with someone in the community who has previous
-review experience.
-
-It is useful for reviewers to not only review the technical content of a
-package, but also to review the documentation and package installation process
-for usability.
-
-If a new reviewer is interested in becoming a reviewer but would like some
-support, do the following:
-
-1. The Editor can lead the effort to find mentors for the new reviewers by posting in the `#software-review` Slack channel for help.
-2. If the Editor needs support in finding a mentor, they can contact the **EiC** or **peer review lead** for guidance.
-
-### Once a Mentor is Identified
-
-1. Invite the new reviewer to our pyOpenSci Slack.
-2. Start a private DM group chat with the new reviewer and the mentor(s) so
-   they are introduced.
-3. Let the review proceed from there.

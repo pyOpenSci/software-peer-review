@@ -100,7 +100,7 @@ Learn more »
 :::
 
 :::{grid-item-card} {octicon}`pencil;1.5em;sd-mr-1` Editor Guide
-:link: /how-to/editors-guide
+:link: /how-to/editor-description
 :link-type: doc
 :class-header: bg-light
 +++
