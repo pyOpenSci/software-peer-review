@@ -1,6 +1,6 @@
 # <img src="https://www.pyopensci.org/software-peer-review/_static/logo-dark-mode.png" width=200 /> pyOpenSci Peer Review Guide
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-49-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-50-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 ![GitHub release (latest by date)](https://img.shields.io/github/v/release/pyopensci/peer-review-guide?color=purple&display_name=tag&style=plastic)
@@ -155,6 +155,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     </tr>
     <tr>
       <td align="center" valign="top" width="16.66%"><a href="https://github.com/MicahGale"><img src="https://avatars.githubusercontent.com/u/12405772?v=4?s=100" width="100px;" alt="Micah Gale"/><br /><sub><b>Micah Gale</b></sub></a><br /><a href="https://github.com/pyOpenSci/software-peer-review/commits?author=MicahGale" title="Documentation">📖</a> <a href="https://github.com/pyOpenSci/software-peer-review/pulls?q=is%3Apr+reviewed-by%3AMicahGale" title="Reviewed Pull Requests">👀</a></td>
+      <td align="center" valign="top" width="16.66%"><a href="https://github.com/zenon18"><img src="https://avatars.githubusercontent.com/u/32108590?v=4?s=100" width="100px;" alt="Mark W."/><br /><sub><b>Mark W.</b></sub></a><br /><a href="https://github.com/pyOpenSci/software-peer-review/commits?author=zenon18" title="Documentation">📖</a> <a href="https://github.com/pyOpenSci/software-peer-review/pulls?q=is%3Apr+reviewed-by%3Azenon18" title="Reviewed Pull Requests">👀</a></td>
     </tr>
   </tbody>
 </table>
