@@ -507,6 +507,16 @@
         "doc",
         "review"
       ]
+    },
+    {
+      "login": "zenon18",
+      "name": "Mark W.",
+      "avatar_url": "https://avatars.githubusercontent.com/u/32108590?v=4",
+      "profile": "https://github.com/zenon18",
+      "contributions": [
+        "doc",
+        "review"
+      ]
     }
   ],
   "contributorsPerLine": 6,
