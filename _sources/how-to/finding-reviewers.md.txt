@@ -56,7 +56,7 @@ complexity of the package.
 * **Openness** - reviewers should also have demonstrated interest in open
   source or Python community activities, although blind emailing is fine.
 
-Two package reviewers should review each submission. Although it is
+Standard package reviews should have two reviewers, though publication fast-track reviews may proceed with one. Although it is
 fine for one of them to have less package development experience and more
 domain knowledge, the review should not be split into two parts. Both
 reviewers need to review the package comprehensively, from their particular
@@ -64,7 +64,7 @@ perspectives. If possible, at least one reviewer should have prior reviewing
 experience, and of course, inviting one new reviewer expands our pool of
 reviewers.
 
-At least one reviewer of the two should have some subject matter expertise associated with
+For standard two-reviewer workflows, at least one reviewer should have some subject matter expertise associated with
 the package functionality. It is ok and even welcome if one reviewer has more
 technical knowledge and the other focuses on usability and is less technical.
 Read through the [Guidelines for Reviewers Section](reviewer-guide-sphinx) to learn more about finding
