@@ -47,6 +47,8 @@ learn more and empower yourself with code review skills. Software review skills
 are generally useful in data science, so they are skills worth investing in!
 ```
 
+If this is your first review with us, please check out the [first-time reviewer guide](first-time-reviewer.md).
+
 ## Get Started With Your Review
 As a new reviewer you should start by installing the package that you are
 reviewing locally to test it out.
