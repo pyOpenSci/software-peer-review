@@ -207,11 +207,9 @@ The review for this package:
 - requires at least 1 domain specialist
 - will never vet the analytical method itself.
 
-<<<<<<< genai-2
 1. If your package introduces a novel or newer analytic approach that is not yet vetted/ accepted by a scientific journal, we can not review it. We cannot review projects that exist as a proof-of-concept demonstration of a model or analytical approach that might accompany a paper. In this case, the approach should be sent to a scientific journal for vetting.
-=======
+
 2. We cannot review a package that introduces a new or novel analytic approach unless they have already been **vetted or accepted by a scientific journal**. We also cannot review projects that serve as proof-of-concept demonstrations of a model or analytical approach that might accompany a paper. If your package falls under either of these cases, please submit it to a scientific journal for peer review before requesting a review here.
->>>>>>> main
 
 3. If your package implements a novel approach that **has** been peer-reviewed and accepted by a credible scientific journal, it may be eligible for our [publication fast-track review](publication-fast-track). Fast-track review is a streamlined review process focused on software quality and packaging standards. A fast-track review is performed by one reviewer rather than two, focusing solely on packaging rather than the scientific methods applied. Since the domain/scientific component has already been vetted by the journal, the pyOpenSci fast-track reviewer is not expected to re-evaluate the underlying scientific method. To apply for the fast track route, please first submit a pre-submission inquiry and include the publication details.
 
