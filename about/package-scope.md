@@ -202,14 +202,14 @@ We consider the following when determining whether an analytics-related package 
 
 1. If your package facilitates a scientist using a **known or vetted statistical, AI or Analytical approach** we consider that in-scope. Before submitting to us, please ensure that your package's documentation directs users to existing paper(s) or pre-print(s) that document that approach's application. Further, be sure to link to these publications in your package review submission.
 
-The review for this package:
+    The review for this package:
 
-- requires at least 1 domain specialist
-- will never vet the analytical method itself.
+    - requires at least 1 domain specialist
+    - will never vet the analytical method itself.
 
-1. If your package introduces a novel or newer analytic approach that is not yet vetted/ accepted by a scientific journal, we can not review it. We cannot review projects that exist as a proof-of-concept demonstration of a model or analytical approach that might accompany a paper. In this case, the approach should be sent to a scientific journal for vetting.
+2. If your package introduces a novel or newer analytic approach that is not yet vetted/ accepted by a scientific journal, we can not review it. We cannot review projects that exist as a proof-of-concept demonstration of a model or analytical approach that might accompany a paper. In this case, the approach should be sent to a scientific journal for vetting.
 
-2. If your package implements a novel approach that **has** been peer-reviewed and accepted by a credible scientific journal, it may be eligible for our [publication fast-track review](publication-fast-track). Fast-track review is a streamlined review process focused on software quality and packaging standards. A fast-track review is performed by one reviewer rather than two, focusing solely on packaging rather than the scientific methods applied. Since the domain/scientific component has already been vetted by the journal, the pyOpenSci fast-track reviewer is not expected to re-evaluate the underlying scientific method. To apply for the fast track route, please first submit a pre-submission inquiry and include the publication details.
+3. If your package implements a novel approach that **has** been peer-reviewed and accepted by a credible scientific journal, it may be eligible for our [publication fast-track review](publication-fast-track). Fast-track review is a streamlined review process focused on software quality and packaging standards. A fast-track review is performed by one reviewer rather than two, focusing solely on packaging rather than the scientific methods applied. Since the domain/scientific component has already been vetted by the journal, the pyOpenSci fast-track reviewer is not expected to re-evaluate the underlying scientific method. To apply for the fast track route, please first submit a pre-submission inquiry and include the publication details.
 
 :::{note}
 This fast-track pathway for packages with an associated scientific publication is a policy update that took effect in May 2026. Previously, we declined packages proposing novel methods, regardless of publication status, because pyOpenSci doesn't have the capacity to vet new scientific approaches itself. The fast-track pathway resolves this by relying on a scientific journal's review of the scientific methodology. pyOpenSci then focuses our review on packaging quality and usability.
