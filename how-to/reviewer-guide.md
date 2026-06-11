@@ -145,7 +145,8 @@ your reviews do not need to be as long as these examples):
 ## Lessons Learned from rOpenSci
 You can read blog posts written by reviewers about their experiences [via this link](https://ropensci.org/tags/reviewer/). In particular, in [this blog post by Mara Averick](https://ropensci.org/blog/2017/08/22/first-package-review/) read about the "naive user" role a reviewer can take to provide useful feedback even without being experts of the package's topic or implementation, by asking themselves _"What did I think this thing would do? Does it do it? What are things that scare me off?"_. In [another blog post](https://ropensci.org/blog/2017/09/08/first-review-experiences/) Verena Haunschmid explains how she alternated between using the package and checking its code.
 
-As both a former reviewer and package author [Adam Sparks](https://adamhsparks.com) [wrote this](https://twitter.com/adamhsparks/status/898132036451303425) "[write] a good critique of the package structure
+As both a former reviewer and package author [Adam Sparks](https://adamhsparks.netlify.app/)
+said:  "[write] a good critique of the package structure
 and best coding practices. If you know how to do something better, tell
 me. It’s easy to miss documentation opportunities as a developer, as a
 reviewer, you have a different view. You’re a user that can give
