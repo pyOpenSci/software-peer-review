@@ -200,7 +200,7 @@ editor, who is a member of your community, will evaluate the package at the begi
 :animate: fade-in-slide-down
 
 You can also access are most recent list of accepted packages using this [.yml file which drives
-our website here](https://github.com/pyOpenSci/pyopensci.github.io/blob/main/_data/packages.yml).
+our website here](https://github.com/pyOpenSci/pyopensci.github.io/blob/main/data/packages.yml).
 This file is updated using a cron job several times a month and can be filtered by your specific community to support your website development workflow. [The full listing of packages can be found here.](https://www.pyopensci.org/python-packages.html)
 :::
 
