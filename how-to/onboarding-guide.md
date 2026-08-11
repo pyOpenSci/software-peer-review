@@ -247,7 +247,7 @@ To onboard a new editor:
 * Add the new editor to the pyOpenSci Slack workspace and specifically the `private-editorial` channel.
 
 * Post a welcome message for the new editor in the editor channel, pinging all editors.
-* Update the [website contributors.yml](https://github.com/pyOpenSci/pyopensci.github.io/blob/main/_data/contributors.yml) file with the name of the new editor.
+* Update the [website contributors.yml](https://github.com/pyOpenSci/pyopensci.github.io/blob/main/data/contributors.yml) file with the name of the new editor.
 
 :::{note}
 We have a bi-weekly cron job that parses through existing issues and grabs the names of editors, reviewers and authors. However, if you want the editors name to be listed on the website prior to a review beginning and/or sooner than the cron job might pick up their name, then we suggest that you add their name, and GitHub username and title to the contributors.yml file through a pull request.
@@ -279,7 +279,7 @@ When it is time for an editor to step down, do the following:
 * Thank them for their work!
 * Announce that they are stepping down, and than them in the private editors-only Slack channel. Then, remove them from the editors-only Slack channel.
 * Remove them from the [Editorial-Board GitHub team](https://github.com/orgs/pyOpenSci/teams/editorial-board).
-* Move them to `emeritus-editor` on the [pyOpenSci website](https://github.com/pyOpenSci/pyopensci.github.io/blob/main/_data/contributors.yml) by editing the yaml file as follows:
+* Move them to `emeritus-editor` on the [pyOpenSci website](https://github.com/pyOpenSci/pyopensci.github.io/blob/main/data/contributors.yml) by editing the yaml file as follows:
 
 ```yaml
 - name: FirstName LastName
