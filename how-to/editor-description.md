@@ -1,6 +1,5 @@
 # Editor Role Description
 
-
 Thank you for your time in serving as an editor for a pyOpenSci package! Below, you will find some
 information about the role that editors have in the
 pyOpenSci Python open peer review process.
@@ -48,9 +47,7 @@ pyOpenSci open package review process. A full editor ideally:
 
 We also appreciate when editors have experience working with or in the
 Python open source software community, be it maintaining packages, contributing to
-packages, or supporting the community. This is
-not a requirement, however if you are interested in getting involved with
-pyOpenSci!
+packages, or supporting the community. However, prior open source experience is not required. pyOpenSci offers many opportunities to get started as a contributor to open source.
 
 ```{note}
 There could be certain situations when an editor is onboarded with less experience! The above are simply guidelines that we like to follow.
