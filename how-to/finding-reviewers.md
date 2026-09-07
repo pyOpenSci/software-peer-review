@@ -46,7 +46,7 @@ website, social media profiles).
 * Some domain experience in the field of the package or data source.
 * No [conflicts of interest](coi).
 
-Each review should have at least two reviewers.
+Standard reviews should have at least two reviewers; publication fast-track reviews may proceed with one.
 
 - One reviewer should have expertise in both Python and the scientific domain related to the package submitted.
 - The second reviewer can be more generally focused on the package's usability, accessibility, and packaging infrastructure. This allows people who are newer to review to get involved while also providing a critical usability check for the package.
