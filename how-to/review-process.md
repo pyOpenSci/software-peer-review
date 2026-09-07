@@ -94,7 +94,7 @@ There are more details in the [finding reviewers](finding-reviewers.md) page. In
 :class: important
 
 Diversity is core to the pyOpenSci mission. As such, it's important to have an
-editorial team with diverse backgrounds. Standard reviews usually involve an editor plus two reviewers, while publication fast-track reviews may use one reviewer.
+editorial team with diverse backgrounds.
 
 In your search for reviewers, please ensure that there is diversity
 in the team supporting package review. Reviewers should have [different backgrounds and different gender identities](reviewer-diversity) whenever possible. pyOpenSci [supports mentoring new reviewers if needed!](review-mentorship)
