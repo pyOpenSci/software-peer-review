@@ -1,8 +1,6 @@
-<<<<<<< HEAD
-# pyOpenSci Software Review Editor
-=======
+
 # pyOpenSci Software Review Editor Guide
->>>>>>> 251b187 (splitting up editors guide, reorg pages)
+
 
 Thank you for your time in serving as an editor for a pyOpenSci package! Below, you will find some
 information about the role that editors have in the
