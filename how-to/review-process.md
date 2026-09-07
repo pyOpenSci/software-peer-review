@@ -84,7 +84,7 @@ Authors may opt to submit to JOSS after a successful PyOpenSci submission. If th
 
 ### ✔️ 3. Identify reviewers for the Python package
 
-There are more details in the [finding reviewers](finding-reviewers.md) page. In general:
+There are more details on the [Finding Reviewers](finding-reviewers.md) page. In general:
 
 - Standard reviews should have at least two reviewers, one with Python and scientific domain expertise, and one with focus on package's usability, accessibility, and packaging infrastructure.
 - Packages eligible for the publication fast-track pathway may proceed with one reviewer.
