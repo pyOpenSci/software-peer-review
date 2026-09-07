@@ -1,6 +1,6 @@
 # Review Process
 
-This page walks through the process of leading a package for pyOpenSci
+This page walks through the process of leading a package review for pyOpenSci.
 
 ## Editor checklist: Get Started With Leading a Package Review
 
