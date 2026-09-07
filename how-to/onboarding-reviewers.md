@@ -1,11 +1,9 @@
 # Onboarding Reviewers
 
-The pyOpenSci open peer review process is driven and led by volunteer editors
-and reviewers. Finding new volunteers to take on editorial and reviewer roles
-can sometimes be the trickiest part of the review process. However, we have
-resources available to help you in that effort!
+Since the pyOpenSci open peer review process is driven and led by volunteers, it
+is important that they are successfully onboarded.
 
-For finding reviewers please look at the [finding-reviewers](finding-reviewers.md) guide
+For finding reviewers, please read the [Finding reviewers](finding-reviewers.md) guide
 
 Below, we discuss processes for onboarding reviewers and making sure they are supported during the peer review process.
 

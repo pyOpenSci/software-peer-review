@@ -1,15 +1,6 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
 # Review Process
 
-Below will go through the process of a review for pyOpenSci
-=======
->>>>>>> 251b187 (splitting up editors guide, reorg pages)
-=======
-# Review Process
-
-Below will go through the process of a review for pyOpenSci
->>>>>>> 8f3ae2c (rebased with main)
+This page walks through the process of leading a package for pyOpenSci
 
 ## Editor checklist: Get Started With Leading a Package Review
 
@@ -95,7 +86,7 @@ Authors may opt to submit to JOSS after a successful PyOpenSci submission. If th
 
 There are more details in the [finding reviewers](finding-reviewers.md) page. In general:
 
-- Standard reviews should have at least two reviewers, one with Python and scientific domain expertiese, and one with focused on package's usability, accessibility, and packaging infrastructure.
+- Standard reviews should have at least two reviewers, one with Python and scientific domain expertise, and one with focus on package's usability, accessibility, and packaging infrastructure.
 - Packages eligible for the publication fast-track pathway may proceed with one reviewer.
 - Find reviewers within **two weeks of responding to the issue as the editor**
 
@@ -128,7 +119,7 @@ Make sure to ask the reviewers for their preferred means of contact or a reliabl
 
 ### ✔️ 4. Onboard reviewers
 
-See [onboarding-reviewers](onboarding-reviewers.md) to learn more about inviting reviewers and providing support.
+See [onboarding reviewers](onboarding-reviewers.md) to learn more about inviting reviewers and providing support.
 
 Once reviewers have been identified:
 
