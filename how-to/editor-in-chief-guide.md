@@ -213,7 +213,7 @@ Follow the [onboarding guide](onboarding-guide.md), and complete the full
 
 [Share this document with any new editor to help them get started.](https://docs.google.com/document/d/1UfG1Fe5wSiEAObvqNMT4etZ5sx7QXzW0f8mozKyK1NE/edit?tab=t.0)
 
-See the [editor guide](editors-guide.md) for more on an editor’s responsibilities. Once the editor is assigned, your
+See the [editor description](editor-description.md) for more on an editor’s responsibilities. Once the editor is assigned, your
 work on the review is complete, and they will now begin identifying reviewers.
 
 :::

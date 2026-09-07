@@ -5,7 +5,7 @@ and reviewers. Finding new volunteers to take on editorial and reviewer roles
 can sometimes be the trickiest part of the review process. However, we have
 resources available to help you in that effort!
 
-Below, we discuss processes for finding, onboarding, and offboarding volunteers in our
+Below, we discuss processes for finding, onboarding, and offboarding editors in our
 peer review process.
 
 ## About the Editorial Board
