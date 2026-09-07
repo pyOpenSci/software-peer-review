@@ -89,7 +89,7 @@ Each review needs reviewers assigned before it can proceed.
 - Standard reviews should have at least two reviewers, one with Python and scientific domain expertise, and one with focus on package's usability, accessibility, and packaging infrastructure.
 - Packages eligible for the publication fast-track pathway may proceed with one reviewer.
 - Find reviewers within **two weeks of responding to the issue as the editor**.
-
+- See [Finding Reviewers](finding-reviewers.md) for tips on where to look and template language for keeping the author up-to-date.
 ```{admonition} Diversity in the editorial & reviewer team is important
 :class: important
 
