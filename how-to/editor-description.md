@@ -1,5 +1,4 @@
-
-# pyOpenSci Software Review Editor Guide
+# Editor Role Description
 
 
 Thank you for your time in serving as an editor for a pyOpenSci package! Below, you will find some
