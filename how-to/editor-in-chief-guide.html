@@ -68,7 +68,7 @@
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Editorial Review Triage Team" href="review-triage-team.html" />
-    <link rel="prev" title="pyOpenSci Software Review Editor Guide" href="editors-guide.html" />
+    <link rel="prev" title="Guide for Reviewers" href="reviewer-guide.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   <meta name="docsearch:version" content="" />
@@ -408,15 +408,17 @@
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="author-guide.html">Author Guide</a></li>
 <li class="toctree-l1"><a class="reference internal" href="reviewer-guide.html">Reviewer Guide</a></li>
-<li class="toctree-l1"><a class="reference internal" href="editors-guide.html">Editor Guide</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Editor-in-Chief Guide</a></li>
 <li class="toctree-l1"><a class="reference internal" href="review-triage-team.html">Triage Team Guide</a></li>
 <li class="toctree-l1"><a class="reference internal" href="peer-review-lead.html">Peer Review Lead</a></li>
 </ul>
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Onboarding Editors &amp; Reviewers</span></p>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Editor Guide</span></p>
 <ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="editor-description.html">Position Description</a></li>
 <li class="toctree-l1"><a class="reference internal" href="onboarding-guide.html">Finding &amp; Onboarding Editors</a></li>
-<li class="toctree-l1"><a class="reference internal" href="finding-reviewers.html">Finding &amp; Onboarding Reviewers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="review-process.html">Review Process</a></li>
+<li class="toctree-l1"><a class="reference internal" href="finding-reviewers.html">Finding Reviewers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="onboarding-reviewers.html">Onboarding Reviewers</a></li>
 </ul>
 </div>
 </nav></div>
@@ -658,10 +660,10 @@ below.
 <span class="k">- [ ]</span> <span class="gs">**Installation**</span> The package can be installed from a community repository such as PyPI (preferred), and/or a community channel on conda (for example, conda-forge, bioconda).
 <span class="w">  </span><span class="k">- [ ]</span> The package imports properly into a standard Python environment <span class="sb">`import package`</span>.
 <span class="k">- [ ]</span> <span class="gs">**Fit**</span> The package meets criteria for [<span class="nt">fit</span>](<span class="na">https://www.pyopensci.org/software-peer-review/about/package-scope.html#what-types-of-packages-does-pyopensci-review</span>) and [<span class="nt">overlap</span>](<span class="na">https://www.pyopensci.org/software-peer-review/about/package-scope.html#package-overlap</span>).
-<span class="k">- [ ]</span> <span class="gs">**Documentation**</span> The package has sufficient online documentation to allow us to evaluate the package&#39;s function and scope <span class="ge">*without installing the package*</span>. This includes:
+<span class="k">- [ ]</span> <span class="gs">**Documentation**</span> The package has sufficient online documentation to allow us to evaluate the package's function and scope <span class="ge">*without installing the package*</span>. This includes:
 <span class="w">  </span><span class="k">- [ ]</span> User-facing documentation that overviews how to install and start using the package.
 <span class="w">  </span><span class="k">- [ ]</span> Short, quickstart tutorials that help a user understand how to use the package and what it can do for them.
-<span class="w">  </span><span class="k">- [ ]</span> API documentation (documentation for your code&#39;s functions, classes, methods, and attributes): this includes clearly written docstrings with variables defined using a standard docstring format.
+<span class="w">  </span><span class="k">- [ ]</span> API documentation (documentation for your code's functions, classes, methods, and attributes): this includes clearly written docstrings with variables defined using a standard docstring format.
 <span class="k">- [ ]</span> Core GitHub repository Files
 <span class="w">  </span><span class="k">- [ ]</span> <span class="gs">**README**</span> The package has a <span class="sb">`README.md`</span> file with a clear explanation of what the package does, instructions on how to install it, and a link to development instructions.
 <span class="w">  </span><span class="k">- [ ]</span> <span class="gs">**Contributing File**</span> The package has a <span class="sb">`CONTRIBUTING.md`</span> file that details how to install and contribute to the package.
@@ -671,7 +673,7 @@ NOTE: We prefer that you have development instructions in your documentation too
 <span class="k">- [ ]</span> <span class="gs">**Issue Submission Documentation**</span> All of the information is filled out in the <span class="sb">`YAML`</span> header of the issue (located at the top of the issue template).
 <span class="k">- [ ]</span> <span class="gs">**Automated tests**</span> Package has a testing suite and is tested via a Continuous Integration service.
 <span class="k">- [ ]</span> <span class="gs">**Repository**</span> The repository link resolves correctly.
-<span class="k">- [ ]</span> <span class="gs">**Package overlap**</span> The package doesn&#39;t entirely overlap with the functionality of other packages that have already been submitted to pyOpenSci.
+<span class="k">- [ ]</span> <span class="gs">**Package overlap**</span> The package doesn't entirely overlap with the functionality of other packages that have already been submitted to pyOpenSci.
 <span class="k">- [ ]</span> <span class="gs">**Archive**</span> (JOSS only, may be post-review): The repository DOI resolves correctly.
 <span class="k">- [ ]</span> <span class="gs">**Version**</span> (JOSS only, may be post-review): Does the release version given match the GitHub release (v1.0.0)?
 <span class="k">- [ ]</span> The package authors have disclosed the use of Generative AI tools in the development and/or maintenance of their package.
@@ -682,7 +684,7 @@ NOTE: We prefer that you have development instructions in your documentation too
 <span class="k">- [ ]</span> <span class="gs">**Type checking**</span> The package includes type hints and uses a type checker (e.g., [<span class="nt">mypy</span>](<span class="na">https://mypy-lang.org/</span>)) to catch type-related issues, ideally integrated with CI.
 <span class="k">- [ ]</span> <span class="gs">**Modern tooling**</span> The package uses modern Python development tools (e.g., [<span class="nt">uv</span>](<span class="na">https://docs.astral.sh/uv/</span>) for dependency management) and [<span class="nt">Hatch</span>](<span class="na">https://www.pyopensci.org/python-package-guide/package-structure-code/python-package-build-tools.html#about-hatch</span>) for building publishing and running development tasks to streamline development workflows. See the pyOpenSci packaging guide for more on [<span class="nt">modern packaging tools</span>](<span class="na">https://www.pyopensci.org/python-package-guide/package-structure-code/python-package-build-tools.html</span>).
 
-<span class="gs">**Optional:**</span> Let projects know that it&#39;s a great idea for projects to have a .github repository for the project organization where they can host a commonly used LICENSE, Code of Conduct, and even a YAML file with label definitions. These items will then be automatically applied to every repository in the organization to ensure consistency (but can be customized within repos too). The [<span class="nt">SunPy project</span>](<span class="na">https://github.com/sunpy/.github/</span>) has a great example of this.
+<span class="gs">**Optional:**</span> Let projects know that it's a great idea for projects to have a .github repository for the project organization where they can host a commonly used LICENSE, Code of Conduct, and even a YAML file with label definitions. These items will then be automatically applied to every repository in the organization to ensure consistency (but can be customized within repos too). The [<span class="nt">SunPy project</span>](<span class="na">https://github.com/sunpy/.github/</span>) has a great example of this.
 
 ---
 <span class="k">- [ ]</span> [<span class="nt">Initial onboarding survey was filled out </span>](<span class="na">https://forms.gle/F9mou7S3jhe8DMJ16</span>)
@@ -729,7 +731,7 @@ Review Lead</a> to recruit a guest editor or onboard someone new.</p>
 <li><p>Everything needed to manage the review</p></li>
 </ul>
 <p><a class="reference external" href="https://docs.google.com/document/d/1UfG1Fe5wSiEAObvqNMT4etZ5sx7QXzW0f8mozKyK1NE/edit?tab=t.0">Share this document with any new editor to help them get started.</a></p>
-<p>See the <a class="reference internal" href="editors-guide.html"><span class="std std-doc">editor guide</span></a> for more on an editor’s responsibilities. Once the editor is assigned, your
+<p>See the <a class="reference internal" href="editor-description.html"><span class="std std-doc">editor description</span></a> for more on an editor’s responsibilities. Once the editor is assigned, your
 work on the review is complete, and they will now begin identifying reviewers.</p>
 </div>
 <div class="important admonition">
@@ -737,7 +739,7 @@ work on the review is complete, and they will now begin identifying reviewers.</
 <p>Inclusion is core to the pyOpenSci mission. It’s important to have an
 editorial team with diverse backgrounds and identities to enrich the review process. Standard reviews usually involve an editor plus two reviewers, while publication fast-track reviews may use one reviewer.</p>
 <p>As you select an editor (and guide that editor in finding reviewers),
-seek diversity in the team supporting package review. <a class="reference internal" href="finding-reviewers.html#reviewer-diversity"><span class="std std-ref">Specifically, reviewers and the editor should have a mix of gender identities whenever possible</span></a>. pyOpenSci <a class="reference internal" href="finding-reviewers.html#review-mentorship"><span class="std std-ref">also supports mentoring new reviewers and editors if needed!</span></a></p>
+seek diversity in the team supporting package review. <a class="reference internal" href="finding-reviewers.html#reviewer-diversity"><span class="std std-ref">Specifically, reviewers and the editor should have a mix of gender identities whenever possible</span></a>. pyOpenSci <a class="reference internal" href="onboarding-reviewers.html#review-mentorship"><span class="std std-ref">also supports mentoring new reviewers and editors if needed!</span></a></p>
 </div>
 </section>
 <section id="update-the-yaml-header">
@@ -778,7 +780,7 @@ and core functionality.
 
 &lt;optional&gt;
 If your package overlaps with others, please explain in the README and in
-this issue how your package is &quot;best in class.&quot; You can refer to our
+this issue how your package is "best in class." You can refer to our
 [<span class="nt">guidance on package overlap</span>](<span class="na">https://www.pyopensci.org/software-peer-review/about/package-scope.html#package-overlap</span>).
 &lt;/optional&gt;
 </pre></div>
@@ -816,7 +818,7 @@ this issue how your package is &quot;best in class.&quot; You can refer to our
 <p>If you need to find a new editor, the <a class="reference external" href="https://www.pyopensci.org/metrics/peer-review/current-review-status.html#editors-available-for-a-review">editors available for a review</a> lists editors that are not currently running a review.</p>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
-<p>If the editor is struggling with reviewers not responding, see <a class="reference internal" href="editors-guide.html#reviewer-response-time"><span class="std std-ref">the editor guide for more information on how to manage this</span></a></p>
+<p>If the editor is struggling with reviewers not responding, see <a class="reference internal" href="review-process.html#reviewer-response-time"><span class="std std-ref">the editor guide for more information on how to manage this</span></a></p>
 </div>
 </section>
 </section>
@@ -864,7 +866,7 @@ the peer review lead directly.</p>
 <span class="k">- [ ]</span> Set calendar reminder 3 weeks before term end
 <span class="k">- [ ]</span> Contact peer review lead about successor
 <span class="k">- [ ]</span> Document active reviews and their status
-<span class="k">- [ ]</span> Hand off any reviews you&#39;re personally handling
+<span class="k">- [ ]</span> Hand off any reviews you're personally handling
 <span class="k">- [ ]</span> Write reflection summary
 <span class="k">- [ ]</span> Schedule handoff meeting with incoming EiC
 </pre></div>
@@ -884,12 +886,12 @@ the peer review lead directly.</p>
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="editors-guide.html"
+       href="reviewer-guide.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">pyOpenSci Software Review Editor Guide</p>
+        <p class="prev-next-title">Guide for Reviewers</p>
       </div>
     </a>
     <a class="right-next"

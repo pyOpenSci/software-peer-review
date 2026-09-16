@@ -60,7 +60,7 @@ Learn how to submit a package for peer review with pyOpenSci.
 ::::
 
 ::::{grid-item-card} {octicon}`pencil;1.5em;sd-mr-1` Editors Guide
-:link: how-to/editors-guide
+:link: how-to/editor-description
 :link-type: doc
 :class-header: bg-light
 
