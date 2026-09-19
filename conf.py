@@ -45,7 +45,7 @@ extensions = [
 ]
 
 redirects = {
-    "how-to/editors-guide": "../review-process.html",
+    "how-to/editors-guide": "review-process.html",
 }
 
 # colon fence for card support in md
