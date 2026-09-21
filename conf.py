@@ -41,7 +41,12 @@ extensions = [
     "sphinxext.opengraph",
     "sphinx_copybutton",
     "sphinx.ext.todo",
+    "sphinx_reredirects",
 ]
+
+redirects = {
+    "how-to/editors-guide": "review-process.html",
+}
 
 # colon fence for card support in md
 myst_enable_extensions = ["colon_fence"]

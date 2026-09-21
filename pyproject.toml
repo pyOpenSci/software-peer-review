@@ -16,6 +16,7 @@ dependencies = [
     "sphinx-design",
     "sphinx-favicon",
     "sphinx-togglebutton",
+    "sphinx-reredirects",
     # XML feed for analytics
     "sphinx-sitemap",
     # Support for social / adds meta tags
