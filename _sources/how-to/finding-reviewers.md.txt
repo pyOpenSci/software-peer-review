@@ -18,7 +18,7 @@ When the above doesn't work and you still need to find a reviewer:
 
 * Check our reviewer sign-up spreadsheet for names of people who have already
   volunteered to review for pyOpenSci. The link for this document is pinned to
-  the pyOpenSci Slack `#private-editorial-channel`.
+  the pyOpenSci Slack `#private-editorial-team`.
 * Ping other editors for ideas.
 * Post in the pyOpenSci Slack `#software-review` channel.
 * Look for users of the package or the data source/upstream service the
