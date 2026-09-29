@@ -16,10 +16,10 @@ Peer Review Lead <peer-review-lead>
 :caption: Editor Guide
 
 Position Description <editor-description>
-Finding & Onboarding Editors <onboarding-guide>
+Finding & Onboarding Editors <onboard-editors>
 Review Process <review-process>
 Finding Reviewers <finding-reviewers>
-Onboarding Reviewers <onboarding-reviewers>
+Onboarding Reviewers <onboard-reviewers>
 ```
 
 Are you considering submitting a package for review with pyOpenSci? You've

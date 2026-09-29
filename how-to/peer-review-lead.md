@@ -15,7 +15,7 @@ The Peer Review Lead is responsible for keeping the software review process movi
 
 * Keeping the review process moving forward by checking in on stalled reviews and supporting the editorial team.
 * Ensuring a diverse and active editorial board.
-* Onboarding and offboarding editors (see the [Onboarding & Offboarding Guide](onboarding-guide)).
+* Onboarding and offboarding editors (see the [Onboarding & Offboarding Guide](onboard-editors)).
 * Making updates to the [pyOpenSci Software Peer Review Guide](https://www.pyopensci.org/software-peer-review/) as needed.
 * Updating [software peer review policies](https://www.pyopensci.org/software-peer-review/our-process/policies.html) as needed.
 * Helping editors find reviewers as necessary.
@@ -76,4 +76,4 @@ Once a year, the Peer Review Lead should check in with the editorial team to ens
 * Posting in the `#private-editorial-team` Slack channel, or
 * Opening a GitHub issue in the private editorial repository
 
-Ask editors to confirm they are still able to participate and manage reviews. If an editor is no longer engaged or available, work with them to gracefully offboard them following the process in the [Onboarding & Offboarding Guide](onboarding-guide).
+Ask editors to confirm they are still able to participate and manage reviews. If an editor is no longer engaged or available, work with them to gracefully offboard them following the process in the [Onboarding & Offboarding Guide](onboard-editors).

@@ -119,7 +119,7 @@ Make sure to ask the reviewers for their preferred means of contact or a reliabl
 
 ### ✔️ 4. Onboard reviewers
 
-See [onboarding reviewers](onboarding-reviewers.md) to learn more about inviting reviewers and providing support.
+See [onboarding reviewers](onboard-reviewers.md) to learn more about inviting reviewers and providing support.
 
 Once reviewers have been identified:
 

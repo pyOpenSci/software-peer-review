@@ -56,7 +56,7 @@ There could be certain situations when an editor is onboarded with less experien
 ## What does an editor do? (Responsibilities)
 
 An editor is usually recruited by the Editor in Chief, other editors on the
-board, or the software review lead. [More on recruiting editors can be found here](onboarding-guide.md).
+board, or the software review lead. [More on recruiting editors can be found here](onboard-editors.md).
 
 An editor is responsible for:
 
