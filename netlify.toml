@@ -1,0 +1,10 @@
+# Netlify deploy previews for the pyOpenSci peer review guide (Sphinx).
+# Production remains GitHub Pages: https://www.pyopensci.org/software-peer-review/
+
+[build]
+  command = "bash scripts/netlify-build.sh"
+  publish = "_build/html"
+
+[build.environment]
+  PYTHON_VERSION = "3.13"
+  MPLBACKEND = "Agg"
