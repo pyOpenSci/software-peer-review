@@ -41,6 +41,7 @@ extensions = [
     "sphinxext.opengraph",
     "sphinx_copybutton",
     "sphinx.ext.todo",
+    "sphinxcontrib.mermaid",
 ]
 
 # colon fence for card support in md

@@ -20,6 +20,7 @@ dependencies = [
     "sphinx-sitemap",
     # Support for social / adds meta tags
     "sphinxext-opengraph",
+    "sphinxcontrib-mermaid",
     "sphinx-inline-tabs",
     # for project cards
     "matplotlib",

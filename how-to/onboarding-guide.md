@@ -111,7 +111,6 @@ to them either in a private Slack message or via email, at
 [media@pyopensci.org](mailto:media@pyopensci.org).
 :::
 
-
 ## Starting the editorial search
 
 To begin, first post in our `private-editorial-team` slack channel to see if any of our existing [Editorial Team](https://www.pyopensci.org/about-peer-review/index.html#meet-our-editorial-board) members can identify past reviewers or other people they know that might be a good editorial candidate.
@@ -120,7 +119,6 @@ If there is a discussion around specific candidates, be sure to:
 
 * Start a private group message for discussion about particular candidates. This ensures there is not a visible history in a public channel that a new editor may see in the future (this could be awkward for someone to see!)
 * Ping editors using @here to be sure they get a notification, as this is an important topic.
-
 
 **IMPORTANT:** Provide up to a week of time for editors to chime in before onboarding a new editor.
 
@@ -154,10 +152,6 @@ an individual Direct Message (DM) because:
 
 Our Community Manager engages with the broader community and partner communities, frequently interacting with individuals interested in joining our pyOpenSci review team. The Community Manager may, from time to time, meet community members who might make great editors or reviewers. In those cases, they will share that information with the current Editor in Chief and Software Review Lead.
 
-:::{todo}
-pyOpenSci anticipates being able to send targeted emails to community members that meet certain criteria related to domain expertise by the Fall of 2024. Please reach out to the pyOpenSci Community Manager with any questions about this process!
-:::
-
 :::{note}
 
 It is important that a new reviewer or a new editor fill out the appropriate form prior to onboarding.
@@ -166,7 +160,6 @@ It is important that a new reviewer or a new editor fill out the appropriate for
 * [editor signup form](https://docs.google.com/forms/d/17NW0P_h8gpmzf7Fr0cAd8aEbIUWPljPfg4d7Rjs1UIE/edit)
 
 :::
-
 
 ## On-boarding a new editor
 
@@ -180,7 +173,6 @@ When the EIC has identified an editor who is not currently part of the pyOpenSci
 :::{note}
 The Community Manager will ensure that any new member who joins our Slack workspace is welcomed and set up with anything they need in our pyOpenSci Slack workspace.
 :::
-
 
 ## Process for inviting a new editor
 
@@ -238,55 +230,50 @@ To onboard a new editor:
 
 * Ask the new editor to turn on [two-factor authentication (2FA) for GitHub](https://docs.github.com/en/authentication/securing-your-account-with-two-factor-authentication-2fa) if they haven't already done so.
 
-* Give editors permissions they will need on GitHub to manage reviews:
-  * For ad-hoc guest editors: invite the editor to the `software-submission` repository
-    with "maintain" permissions.
-  * For new editors (not ad-hoc): invite editors to the pyOpenSci GitHub organization
-    as a member of the [`editorial-board`](https://github.com/orgs/pyOpenSci/teams/editorial-board) team. This will give them appropriate permissions and allow them to get team-specific notifications.
-
 * Add the new editor to the pyOpenSci Slack workspace and specifically the `private-editorial` channel.
 
 * Post a welcome message for the new editor in the editor channel, pinging all editors.
-* Update the [website contributors.yml](https://github.com/pyOpenSci/pyopensci.github.io/blob/main/_data/contributors.yml) file with the name of the new editor.
+
+### GitHub access
+
+The Editor in Chief or peer review lead adds someone to GitHub. That person needs permission to invite members to the pyOpenSci organization and to add or remove people on editorial teams. To update the website listing before the weekly run, they also need permission to run a workflow and merge a pull request on [pyopensci.github.io](https://github.com/pyOpenSci/pyopensci.github.io).
+
+Repository access comes from the editorial teams. Add the person to the team. Do not grant access only on a single repository.
+
+* **Guest editors** (a new editor during their first review, or an ad hoc editor for one review): add them to the [`editorial-board`](https://github.com/orgs/pyOpenSci/teams/editorial-board) team for the duration of that editorial work. The team grants the repository access they need and lists them on the website while they are editing. When that work ends, remove them from the team. Do not add them to an emeritus team unless they later serve on the board and then step down.
+
+* **Board editors:** add them to every team that matches their role. Being on the parent [`peer-review-team`](https://github.com/orgs/pyOpenSci/teams/peer-review-team) alone does not list them.
+
+  * [`editorial-board`](https://github.com/orgs/pyOpenSci/teams/editorial-board) for a current editor
+  * [`eic-team`](https://github.com/orgs/pyOpenSci/teams/eic-team) for a current Editor in Chief
+  * [`peer-review-lead`](https://github.com/orgs/pyOpenSci/teams/peer-review-lead) for a current peer review lead
+  * [`triage-team`](https://github.com/orgs/pyOpenSci/teams/triage-team) for a current triage volunteer
+
+Adding someone who is not already in the organization also invites them. They are not on the team, and not listed on the website, until they accept that invitation.
 
 :::{note}
-We have a bi-weekly cron job that parses through existing issues and grabs the names of editors, reviewers and authors. However, if you want the editors name to be listed on the website prior to a review beginning and/or sooner than the cron job might pick up their name, then we suggest that you add their name, and GitHub username and title to the contributors.yml file through a pull request.
-
-You do not need to fill out all of the elements of the YAML file - only the name, GitHub user field and the `editorial_board: true` key:value pair.
-
+If someone cannot join the organization, add them in [`data/manual-editorial-roster.yml`](https://github.com/pyOpenSci/pyopensci.github.io/blob/main/data/manual-editorial-roster.yml) instead of a team. That is the only editorial file to hand-edit.
 :::
 
-```yaml
-- name: FirstName LastName
-  github_username: ghuser
-  github_image_id: 1234566
-  title:
-    - Editor # Title to be listed under their name
-  # ..... #
-  editorial_board: true # Be sure editorial_board is set to true
-  emeritus_editor: false # Emeritus is initially set to false
-  # ..... #
-  contributor_type:
-    - editor # This field will be automatically updated after their first review
-    - guidebook-contrib
-    - reviewer
-```
+:::{note}
+**Update editorial board** runs every Wednesday. It reads these GitHub teams and opens a pull request that updates the website listing. **Update Contribs & reviewers** also refreshes those same files each Monday. Do not hand-edit `editorial-board.yml`, `emeritus-editors.yml`, or editorial flags in `contributors.yml`.
+
+To list someone before the next weekly run, open the [pyopensci.github.io](https://github.com/pyOpenSci/pyopensci.github.io) repository, run **Update editorial board**, and merge the pull request it opens.
+:::
+
+:::{mermaid}
+flowchart LR
+  Membership[Update GitHub Team] --> Cron[Cron job runs on  website repo and updates editorial team yml file]
+  Cron --> Live[Editorial team updated on the website ✨]
+:::
 
 ## Off-boarding an editor
 
-When it is time for an editor to step down, do the following:
+When a board editor steps down, do the following. A guest who has finished their review is only removed from `editorial-board`. They are not added to an emeritus team.
 
 * Thank them for their work!
-* Announce that they are stepping down, and than them in the private editors-only Slack channel. Then, remove them from the editors-only Slack channel.
-* Remove them from the [Editorial-Board GitHub team](https://github.com/orgs/pyOpenSci/teams/editorial-board).
-* Move them to `emeritus-editor` on the [pyOpenSci website](https://github.com/pyOpenSci/pyopensci.github.io/blob/main/_data/contributors.yml) by editing the yaml file as follows:
+* Announce that they are stepping down, and thank them in the private editors-only Slack channel. Then, remove them from the editors-only Slack channel.
+* Remove them from every active editorial team (`editorial-board`, and `eic-team`, `peer-review-lead`, or `triage-team` if they were on those teams).
+* Add them to [`emeritus-editors`](https://github.com/orgs/pyOpenSci/teams/emeritus-editors). If they held a specialty role, also add them to the matching emeritus team: [`emeritus-editor-in-chief`](https://github.com/orgs/pyOpenSci/teams/emeritus-editor-in-chief), [`emeritus-peer-review-lead`](https://github.com/orgs/pyOpenSci/teams/emeritus-peer-review-lead), or [`emeritus-triage-team`](https://github.com/orgs/pyOpenSci/teams/emeritus-triage-team).
 
-```yaml
-- name: FirstName LastName
-  github_username: ghuser
-  github_image_id: 1234566
-  # ..... more here ... #
-  editorial_board: false # Be sure editorial_board is set to FALSE
-  emeritus_editor: true # Emeritus is now true if they've served as an editor
-  # .. #
-```
+The same **Update editorial board** workflow updates the website after the team change. Run it and merge the pull request if they should move to the emeritus list before the next weekly run.
