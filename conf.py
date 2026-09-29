@@ -42,6 +42,7 @@ extensions = [
     "sphinx_copybutton",
     "sphinx.ext.todo",
     "sphinx_reredirects",
+    "sphinxcontrib.mermaid",
 ]
 
 redirects = {
