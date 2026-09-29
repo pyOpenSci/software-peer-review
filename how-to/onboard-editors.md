@@ -1,104 +1,151 @@
-# Onboarding & Offboarding Editors
+# Onboarding and offboarding editors
 
-The pyOpenSci open peer review process is driven and led by volunteer editors
-and reviewers. Finding new volunteers to take on editorial and reviewer roles
-can sometimes be the trickiest part of the review process. However, we have
-resources available to help you in that effort!
+pyOpenSci peer review runs on volunteer editors and reviewers. Finding new
+volunteers is often the trickiest part of the process, so we've built
+resources to help you. This page is for you if you're the Editor in Chief
+(EiC) or the Software Review Lead. It walks you through finding, inviting,
+onboarding, and offboarding editors.
 
-Below, we discuss processes for finding, onboarding, and offboarding editors in our
-peer review process.
+## How we support you
 
-## About the Editorial Board
+You don't have to do this alone. Here's what's in place:
 
-The success of our peer review process is dependent upon a well-balanced
-editorial board. Our board needs to have combined expertise in:
+* **Your editorial board.** Ask them first. They often know great candidates.
+* **Our Community Manager.** They can post open calls, write blog posts, and
+  introduce you to people they meet in the community.
+* **Our contributor pool.** Past authors, reviewers, and guest editors are
+  all people who already know us.
+* **Editor mentorship.** New editors without prior experience get paired with
+  a seasoned editor for their first review(s).
+* **Automated website updates.** Add someone to the right GitHub team and the
+  website listing updates for you.
 
-* A suite of specific science domains that fall within the scope of our peer
-  review process
-* Technical expertise in Python packaging
-* Awareness of the importance of documentation and package usability
-* Awareness of the importance of CI/test suites to ensure robust software
-  development
+## About the editorial board
 
-We also strive to ensure our editorial team is diverse and comprised of people
-from different backgrounds, cultures, genders, and domains.
+Our peer review process depends on a well-balanced editorial board. As you
+recruit, look for combined expertise in:
+
+* Science domains that fall within the scope of our peer review process
+* Python packaging
+* Documentation and package usability
+* CI and test suites for robust software development
+
+We also work to build a board with people from different backgrounds,
+cultures, genders, and domains.
 
 ### Types of editors
 
-#### New editors start as "Guests"
+#### New editors start as guests
 
-A new editor will be considered a guest editor for the first 3 months of their
-tenure and/or until they have completed their first review. Once a Guest Editor has
-completed a review, they are considered a full editor as deemed appropriate
-by the Software Review Lead and the current editorial board.
+A new editor is a guest editor for their first 3 months, or until they
+complete their first review. After that review, you and the current
+editorial board decide whether they become a full editor.
 
-#### _ad hoc_ guest editors
+#### Ad hoc guest editors
 
-An ad hoc editor has specific skill sets that are required to lead
-a single review. Examples of when pyOpenSci needs an _ad hoc_ editor
-include:
+An ad hoc editor has the specific skills needed to lead a single review.
+You might need one when:
 
-* If there is a conflict of interest between a package submitter and the
+* There's a conflict of interest between a package submitter and the
   editorial team (for example, a close colleague of everyone on the team)
-* If the editorial board is at capacity, handling the current review load
-* If a very specialized skill set is needed (in a one-off type of situation)
+* The editorial board is at capacity with the current review load
+* A review needs a very specialized skill set (a one-off situation)
 
-In this case, you may consider using our internal reviewer sign-up list to see
-if someone who signed up to be a reviewer wants to serve as an editor.
+In these cases, try our internal reviewer sign-up list. Someone who signed up
+to review may be happy to serve as an editor.
 
-### Experience required to be an editor
+### Experience and mentorship
 
-We prefer that editors have some experience with reviewing software. This
-experience could come from a previous review they worked on with pyOpenSci,
-rOpenSci, or JOSS.
+We prefer editors who have some experience reviewing software, such as a
+previous review with pyOpenSci, rOpenSci, or JOSS.
 
-### Editorial mentorship
+If a volunteer doesn't have that experience, that's okay. Our **mentorship
+process** pairs them with an experienced editor who guides them through their
+first review(s).
 
-If a potential volunteer does not have prior software editorial experience, we
-offer a **mentorship process**. Editor mentorship is where someone with
-existing editorial experience mentors the new editor through their first
-review(s).
+### Who does the recruiting
 
-### Recruiting new editors
+Recruiting new editors and keeping the board well-balanced is the
+responsibility of the
+[Software Review Lead](https://www.pyopensci.org/handbook/governance/structure.html#software-review-lead),
+with support and advice from the editorial in chief team.
 
-Recruiting new editors and maintaining a sufficient and well-balanced
-editorial board is the responsibility of the
-[Software Review Lead](https://www.pyopensci.org/handbook/governance/structure.html#software-review-lead)
-with support and advice from the editorial board.
+## Find new editors
+
+The Editor and Chief team and Software Review Lead work together to find and
+onboard editors, especially in scientific areas where we have gaps.
+
+### Start with your network
+
+Good candidates to be editors can come from:
+
+* Our existing reviewer pool!!
+* Your professional network. You may know people in a specific domain who
+  would be a great fit.
+* Our
+  [contributor pool](https://www.pyopensci.org/our-community/index.html#pyopensci-community-contributors),
+  which includes:
+  * Package authors and maintainers who have submitted a package for review
+  * Reviewers who have led reviews for pyOpenSci
+  * Past guest editors
+* Colleagues who have reviewed for the Journal of Open Source Software (JOSS)
+  or rOpenSci and have Python expertise
+* Community members in the pyOpenSci Slack (post a call in
+  `#software-review`)
+
+### Ask the editorial board
+
+Post in the `private-editorial-team` Slack channel. Ask whether any
+[editors](https://www.pyopensci.org/about-peer-review/index.html#meet-our-editorial-board)
+can suggest past reviewers or other people who might be a good fit.
+
+If the conversation turns to specific candidates:
+
+* Start a private group message to discuss them. This keeps names out of a
+  channel history that a future editor might stumble on (awkward for
+  everyone!).
+* Ping editors with @here so they get a notification. This is an important
+  topic.
+
+**IMPORTANT:** Give editors up to a week to chime in before you onboard a new
+editor.
+
+### Ask the Community Manager for help
+
+If those options don't turn up a candidate, our Community Manager can help.
+They can:
+
+* Post about the opening on our
+  [social media channels](https://www.pyopensci.org/handbook/community/social.html)
+  with a link to our editorial board sign-up form
+* Write a
+  [call for editors blog post](https://www.pyopensci.org/blog/pyos-call-for-editors-may-2024.html)
+  about our current needs
 
 :::{note}
-For the time being, the Software Review Lead role is being filled by the
-Executive Director with support from the Editor in Chief as we define our
-process and track the volume of submissions that we need to support. In the
-future, we will find someone with interest in leading peer review for
-pyOpenSci.
+[Here's an example of a social post recruiting editors](https://fosstodon.org/@pyOpenSci/112497485980274296).
+We've also run a blog post and call-outs in our monthly and weekly
+newsletters.
 :::
 
-## Where to find new editors
+To request this support, post in the public `#software-review` Slack channel
+and ping the Community Manager. Include:
 
-Typically the Editor in Chief will work with the Software Review Lead to find and
-onboard new editors in scientific topical areas where pyOpenSci has existing
-gaps.
+* That you're looking for editors
+* Any specific domains or technical skills you need, or note that it's a
+  general call
+* Any specific packages that need an editor (link to the submission the new
+  editor would lead, if possible)
 
-You might find good candidates to be an editor through:
+:::{tip}
+Post in `#software-review` rather than sending a DM. Other editors can see
+what expertise you need and that this support exists, and community members
+who know potential editors can respond.
+:::
 
-* Your professional network: you may know people in a specific domain that
-  might be a good fit to be an editor for pyOpenSci.
-* Our [pyOpenSci list of contributor pool](https://www.pyopensci.org/our-community/index.html#pyopensci-community-contributors) which includes:
-  * Package authors and maintainers who have already submitted a package for
-    review to pyOpenSci
-  * Reviewers who have already led reviews for pyOpenSci
-  * Past guest editors
-* Colleagues that you know who have reviewed for the Journal of Open Source
-  Software (JOSS) or rOpenSci who have Python expertise
-* Community members in the pyOpenSci Slack (please post a call in our
-  `#software-review` channel)
-
-When all of the above fails to return a good new editor candidate, you can find
-support from our pyOpenSci Community Manager who will post an open call on our
-[social media channels](https://www.pyopensci.org/handbook/community/social.html)
-with a link to our editorial board sign-up form. Using our online network will
-allow you to cast an even wider net to find new interested editors.
+The Community Manager also meets people through the broader community and
+partner communities who may make great editors or reviewers. When that
+happens, they'll pass the names along to you.
 
 :::{todo}
 Ideally, we want to have an online interface for the editors / EiC to own the
@@ -111,85 +158,23 @@ to them either in a private Slack message or via email, at
 [media@pyopensci.org](mailto:media@pyopensci.org).
 :::
 
-
-## Starting the editorial search
-
-To begin, first post in our `private-editorial-team` slack channel to see if any of our existing [Editorial Team](https://www.pyopensci.org/about-peer-review/index.html#meet-our-editorial-board) members can identify past reviewers or other people they know that might be a good editorial candidate.
-
-If there is a discussion around specific candidates, be sure to:
-
-* Start a private group message for discussion about particular candidates. This ensures there is not a visible history in a public channel that a new editor may see in the future (this could be awkward for someone to see!)
-* Ping editors using @here to be sure they get a notification, as this is an important topic.
-
-
-**IMPORTANT:** Provide up to a week of time for editors to chime in before onboarding a new editor.
-
-### Leverage pyOpenSci social channels to find editors
-
-If you have tried all of the above and still aren't able to find a new
-candidate, then the pyOpenSci Community Manager can assist you by:
-
-* Posting on our social media channels about the position.
-* Writing a [call for editors blog post](https://www.pyopensci.org/blog/pyos-call-for-editors-may-2024.html) about our current editorial needs.
-
 :::{note}
-[See an example here of a post that seeks to recruit editors](https://fosstodon.org/@pyOpenSci/112497485980274296), a blog post, and call-outs in both our monthly and weekly newsletters.
+Before onboarding, make sure the new reviewer or editor has filled out the
+right form:
+
+* [Reviewer signup form](https://docs.google.com/forms/d/e/1FAIpQLSeVf-L_1-jYeO84OvEE8UemEoCmIiD5ddP_aO8S90vb7srADQ/viewform)
+* [Editor signup form](https://docs.google.com/forms/d/17NW0P_h8gpmzf7Fr0cAd8aEbIUWPljPfg4d7Rjs1UIE/edit)
 :::
 
-To get support from the Community Manager in recruiting editors (or reviewers) follow the process below:
+## Invite a new editor to the board
 
-* Post in our public `#software-review` slack channel pinging the community manager (`@username`). In your post, include the following details:
+Most editors start as guest editors. After 3 months or their first review
+(whichever comes first), you and the EiC assess how it went. Invite other
+editors to weigh in too.
 
-  * That you’re looking for editors.
-  * Any specific domains or technical skills you need an editor to have, or if it’s a general call for editors.
-  * Any specific packages that need an editor (include links to a package submission that they would lead if possible).
-
-:::{tip}
-It's helpful to post in our `#software-review` channel rather than
-an individual Direct Message (DM) because:
-
-* It allows other editors to see the type of expertise that you are requesting and that we offer this support from our Community Manager.
-* It allows other community members who may know of potential editors to see the request and potentially respond.
-:::
-
-Our Community Manager engages with the broader community and partner communities, frequently interacting with individuals interested in joining our pyOpenSci review team. The Community Manager may, from time to time, meet community members who might make great editors or reviewers. In those cases, they will share that information with the current Editor in Chief and Software Review Lead.
-
-:::{todo}
-pyOpenSci anticipates being able to send targeted emails to community members that meet certain criteria related to domain expertise by the Fall of 2024. Please reach out to the pyOpenSci Community Manager with any questions about this process!
-:::
-
-:::{note}
-
-It is important that a new reviewer or a new editor fill out the appropriate form prior to onboarding.
-
-* [reviewer signup form](https://docs.google.com/forms/d/e/1FAIpQLSeVf-L_1-jYeO84OvEE8UemEoCmIiD5ddP_aO8S90vb7srADQ/viewform)
-* [editor signup form](https://docs.google.com/forms/d/17NW0P_h8gpmzf7Fr0cAd8aEbIUWPljPfg4d7Rjs1UIE/edit)
-
-:::
-
-
-## On-boarding a new editor
-
-The Editor in Chief, working closely with the Software Review Lead, is responsible for inviting and onboarding a new editor to our peer review process.
-
-When the EIC has identified an editor who is not currently part of the pyOpenSci community, they should:
-
-* Extend a Slack invitation to the individual (or ask our Community Manager to do so)
-* Welcome the individual in Slack, and provide them with access to the `#private-editorial-team` and any other channels as needed.
-
-:::{note}
-The Community Manager will ensure that any new member who joins our Slack workspace is welcomed and set up with anything they need in our pyOpenSci Slack workspace.
-:::
-
-
-## Process for inviting a new editor
-
-* Editorial board candidates most often start as guest editors.
-* After 3 months or their first review (whichever comes first), the Software Review Lead working with the EiC will assess how the
-review process went. Allow other editors to provide input as well.
-* Once it is determined that the guest editor is committed to supporting the pyOpenSci
-review process, you can email them to participate on the editorial board
-using the template below.
+Once you're confident the guest editor is committed to supporting our review
+process, email them an invitation to join the editorial board using the
+template below.
 
 ```
 Hi [NAME HERE]:
@@ -230,58 +215,131 @@ Best,
 ```
 
 (onboarding-a-new-editor)=
-## Onboarding a new editor
+## Onboard a new editor
 
-To onboard a new editor:
+As a member of the Editor in Chief team, you work closely with the Software Review Lead to invite and
+onboard new editors. Here's how to get someone set up.
 
-* Message the pyOpenSci Community Manager and the new editor in Slack, introducing them to one another. The Community Manager will collaborate with the new editor to create a blog post introducing them, which will in turn get posted on the pyOpenSci blog, promoted on social media, and included in an upcoming newsletter.
+### Slack
 
-* Ask the new editor to turn on [two-factor authentication (2FA) for GitHub](https://docs.github.com/en/authentication/securing-your-account-with-two-factor-authentication-2fa) if they haven't already done so.
+* If they're new to the pyOpenSci community, send them a Slack invitation (or
+  ask the Community Manager to do so).
+* Welcome them in Slack and give them access to `#private-editorial-team` and
+  any other channels they need.
+* Post a welcome message in the editor channel and ping all editors.
 
-* Add the new editor to the pyOpenSci Slack workspace and specifically the `private-editorial` channel.
+### Introduce them to the Community Manager
 
-* Post a welcome message for the new editor in the editor channel, pinging all editors.
+Message the Community Manager and the new editor in Slack to introduce them.
+The Community Manager makes sure new members are welcomed and have what they
+need in Slack. They'll also work with the new editor on an introductory blog
+post, which gets published on the pyOpenSci blog, shared on social media, and
+included in an upcoming newsletter.
+
+### Security
+
+Ask the new editor to turn on
+[two-factor authentication (2FA) for GitHub](https://docs.github.com/en/authentication/securing-your-account-with-two-factor-authentication-2fa)
+if they haven't already as it's required to join our GitHub organization..
 
 ### GitHub access
 
-The Editor in Chief or peer review lead adds someone to GitHub. That person needs permission to invite members to the pyOpenSci organization and to add or remove people on editorial teams. To update the website listing before the weekly run, they also need permission to run a workflow and merge a pull request on [pyopensci.github.io](https://github.com/pyOpenSci/pyopensci.github.io).
+You (as the EiC or peer review lead) add editors to our GitHub organization.
+Todo so you'll need
+permission to:
 
-Repository access comes from the editorial teams. Add the person to the team. Do not grant access only on a single repository.
+* Invite members to the pyOpenSci organization
+* Add or remove people on editorial teams
+* Run a workflow and merge a pull request on
+  [pyopensci.github.io](https://github.com/pyOpenSci/pyopensci.github.io)
+  (only needed if you want to update the website listing before the weekly
+  run)
 
-* **Guest editors** (a new editor during their first review, or an ad hoc editor for one review): add them to the [`editorial-board`](https://github.com/orgs/pyOpenSci/teams/editorial-board) team for the duration of that editorial work. The team grants the repository access they need and lists them on the website while they are editing. When that work ends, remove them from the team. Do not add them to an emeritus team unless they later serve on the board and then step down.
+GitHub repository access is managed using GitHub teams. Add the person to a
+team and they will have access to the repositories that are needed for that team.
 
-* **Board editors:** add them to every team that matches their role. Being on the parent [`peer-review-team`](https://github.com/orgs/pyOpenSci/teams/peer-review-team) alone does not list them.
+**Guest editors** (a new editor during their first review, or an ad hoc
+editor for one review):
 
-  * [`editorial-board`](https://github.com/orgs/pyOpenSci/teams/editorial-board) for a current editor
-  * [`eic-team`](https://github.com/orgs/pyOpenSci/teams/eic-team) for a current Editor in Chief
-  * [`peer-review-lead`](https://github.com/orgs/pyOpenSci/teams/peer-review-lead) for a current peer review lead
-  * [`triage-team`](https://github.com/orgs/pyOpenSci/teams/triage-team) for a current triage volunteer
+* Add them to the
+  [`editorial-board`](https://github.com/orgs/pyOpenSci/teams/editorial-board)
+  team for the duration of their editorial work. The team grants the
+  repository access they need and lists them on the website while they're
+  editing.
+* When that work ends, remove them from the team. Don't add them to an
+  emeritus team unless they later serve on the board and then step down.
 
-Adding someone who is not already in the organization also invites them. They are not on the team, and not listed on the website, until they accept that invitation.
+**Board editors:** add them to every team that matches their role. Being on
+the parent
+[`peer-review-team`](https://github.com/orgs/pyOpenSci/teams/peer-review-team)
+alone doesn't list them.
+
+* [`editorial-board`](https://github.com/orgs/pyOpenSci/teams/editorial-board):
+  a current editor
+* [`eic-team`](https://github.com/orgs/pyOpenSci/teams/eic-team): a current
+  Editor in Chief
+* [`peer-review-lead`](https://github.com/orgs/pyOpenSci/teams/peer-review-lead):
+  a current peer review lead
+* [`triage-team`](https://github.com/orgs/pyOpenSci/teams/triage-team): a
+  current triage volunteer
+
+If you add someone who isn't already in the organization, GitHub also invites
+them. They won't be on the team, or listed on the website, until they accept
+the organization invitation.
 
 :::{note}
-If someone cannot join the organization, add them in [`data/manual-editorial-roster.yml`](https://github.com/pyOpenSci/pyopensci.github.io/blob/main/data/manual-editorial-roster.yml) instead of a team. That is the only editorial file to hand-edit.
+If someone can't join the organization, add them to the
+[`data/manual-editorial-roster.yml`](https://github.com/pyOpenSci/pyopensci.github.io/blob/main/data/manual-editorial-roster.yml) within the website repository
+file instead of a GitHUb team. That's the only editorial file you should ever edit by hand.
 :::
 
-:::{note}
-**Update editorial board** runs every Wednesday. It reads these GitHub teams and opens a pull request that updates the website listing. **Update Contribs & reviewers** also refreshes those same files each Monday. Do not hand-edit `editorial-board.yml`, `emeritus-editors.yml`, or editorial flags in `contributors.yml`.
+### How the website updates
 
-To list someone before the next weekly run, open the [pyopensci.github.io](https://github.com/pyOpenSci/pyopensci.github.io) repository, run **Update editorial board**, and merge the pull request it opens.
+The **Update editorial board** GitHUb actions, located in the pyopensci.githib.io
+repository has a cron job that runs every Wednesday. It reads the teams in the pyOpenSci organization and opens a pull request that updates the editorial yml files.
+
+:::{tip}
+**Note:** **Update Contribs & reviewers** also refreshes those files each Monday.
+But the editorial workflow is faster and so you can always run it when you
+add someone new to a team so they get added to the website immediately (once
+you merge the pull request that the job creates).
 :::
+
+Don't hand-edit `editorial-board.yml`, `emeritus-editors.yml`, or editorial
+flags in `contributors.yml`. These files will always be updated automatically
+by our cron job.
 
 :::{mermaid}
 flowchart LR
-  Membership[Update GitHub Team] --> Cron[Cron job runs on the website repo and updates the editorial team YAML file]
+  Membership[Update GitHub team] --> Cron[Cron job updates editorial YAML]
   Cron --> Live[Editorial team updated on the website ✨]
 :::
 
-## Off-boarding an editor
+:::{note}
+Need someone listed before the next weekly run? Open the
+[pyopensci.github.io](https://github.com/pyOpenSci/pyopensci.github.io)
+repository, run **Update editorial board**, and merge the pull request it
+opens.
+:::
 
-When a board editor steps down, do the following. A guest who has finished their review is only removed from `editorial-board`. They are not added to an emeritus team.
+## Offboard an editor
+
+When a board editor steps down, here's what to do. A guest editor who has
+finished their review is only removed from `editorial-board`. Then move them
+to emeritus editors team. Then:
 
 * Thank them for their work!
-* Announce that they are stepping down, and thank them in the private editors-only Slack channel. Then, remove them from the editors-only Slack channel.
-* Remove them from every active editorial team (`editorial-board`, and `eic-team`, `peer-review-lead`, or `triage-team` if they were on those teams).
-* Add them to [`emeritus-editors`](https://github.com/orgs/pyOpenSci/teams/emeritus-editors). If they held a specialty role, also add them to the matching emeritus team: [`emeritus-editor-in-chief`](https://github.com/orgs/pyOpenSci/teams/emeritus-editor-in-chief), [`emeritus-peer-review-lead`](https://github.com/orgs/pyOpenSci/teams/emeritus-peer-review-lead), or [`emeritus-triage-team`](https://github.com/orgs/pyOpenSci/teams/emeritus-triage-team).
+* Announce that they're stepping down, and thank them, in the #software-review
+  Slack channel. Then remove them from the private-editorial-team channel.
+* Remove them from every active editorial team: `editorial-board`, plus
+  `eic-team`, `peer-review-lead`, or `triage-team` if they were on those.
+* Add them to
+  [`emeritus-editors`](https://github.com/orgs/pyOpenSci/teams/emeritus-editors).
+  If they held a specialty role, also add them to the matching emeritus team:
+  * [`emeritus-editor-in-chief`](https://github.com/orgs/pyOpenSci/teams/emeritus-editor-in-chief)
+  * [`emeritus-peer-review-lead`](https://github.com/orgs/pyOpenSci/teams/emeritus-peer-review-lead)
+  * [`emeritus-triage-team`](https://github.com/orgs/pyOpenSci/teams/emeritus-triage-team)
 
-The same **Update editorial board** workflow updates the website after the team change. Run it and merge the pull request if they should move to the emeritus list before the next weekly run.
+The **Update editorial board** workflow will update the website either during
+the next weekly cron job run or if you trigger it again manually and merge
+the pr that it creates.
