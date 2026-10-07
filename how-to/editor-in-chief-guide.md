@@ -96,7 +96,7 @@ responding to out-of-scope pre-submissions.
 If the EiC has limited time to handle [pre-review checks](pre-review-checks) for a package, a conflict of interest, or lacks relevant expertise, they may ask another editor to perform initial checks on a package at any time.
 :::
 
-## Editor in Chief pre-review submission checklist
+## EiC pre-submission inquiry checklist
 
 The EiC is also responsible for determining the scope of packages submitted via a pre-submission inquiry.
 
