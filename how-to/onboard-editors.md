@@ -204,7 +204,11 @@ add editors to our GitHub organization. To do so, you'll need permission to:
   run)
 
 GitHub repository access is managed using GitHub teams. Add the person to a
-team and they will have access to the repositories that team needs.
+team and they will have access to the repositories that team needs. The
+handbook's
+[editorial teams](https://www.pyopensci.org/handbook/community/infrastructure/editorial-teams.html)
+page has a table of every team, what it grants, and how a guest editor can
+join without a team.
 
 **Guest editors** (a new editor during their first review, or an ad hoc
 editor for one review):
