@@ -164,7 +164,9 @@
       "contributions": [
         "review",
         "code",
-        "design"
+        "design",
+        "doc",
+        "bug"
       ]
     },
     {
