@@ -25,6 +25,8 @@ A linter is a tool that automatically scans source code for style issues, format
 As a reviewer, you don't need to run the linter yourself. Here's what to check:
 
 - Does the repo include a linting config? Look for `pyproject.toml`, `.flake8`, or `ruff.toml`.
+
+[Learn more about the pyproject.toml file here. ](https://www.pyopensci.org/python-package-guide/package-structure-code/pyproject-toml-python-package-metadata.html)
 - Does CI (GitHub Actions or similar) run the linter automatically on pull requests?
 - Is the same linting tool used consistently across the whole project?
 - Are there obvious style issues — very long lines, inconsistent spacing, or imports out of order?
