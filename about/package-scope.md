@@ -306,7 +306,7 @@ To be in technical scope for a pyOpenSci review, your package:
 - Should declare vendor dependencies using standard approaches rather than including code from other packages within your repository.
 - Should not have an exceedingly complex structure. Others should be able to contribute and/or take over maintenance if needed.
 
-See our [policy for use of generative AI / LLMs](../our-process/generative-ai-policy.md) for additional expectations regarding AI-generated code and documentation.
+See our [policy for use of generative AI / LLMs](generative-ai-policy) for additional expectations regarding AI-generated code and documentation.
 
 :::{admonition} pyOpenSci's goal is to support long(er) term maintenance
 pyOpenSci has a goal of supporting long term maintenance of open source

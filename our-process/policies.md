@@ -37,7 +37,7 @@ largely machine-generated codebases.
 
 This page provides a high-level overview of our review policies. For detailed
 guidance on expectations, disclosure, and examples related to Generative AI and
-LLMs, please see our dedicated [generative AI policy](generative-ai-policy.md).
+LLMs, please see our dedicated [generative AI policy](generative-ai-policy).
 
 (submission-volume)=
 ## Submission volume and maintainer overlap
