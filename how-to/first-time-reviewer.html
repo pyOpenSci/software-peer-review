@@ -1,0 +1,724 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta property="og:title" content="A guide for first-time reviewers" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="how-to/first-time-reviewer.html" />
+<meta property="og:site_name" content="pyOpenSci Python Package Guide" />
+<meta property="og:description" content="Thank you for taking the time to review a package for pyOpenSci! This supplement to the main reviewer guide covers three topics — linting, documentation, and Sphinx — that first-time reviewers ofte..." />
+<meta property="og:image:width" content="1146" />
+<meta property="og:image:height" content="600" />
+<meta property="og:image" content="_images/social_previews/summary_how-to_first-time-reviewer_e1525b50.png" />
+<meta property="og:image:alt" content="Thank you for taking the time to review a package for pyOpenSci! This supplement to the main reviewer guide covers three topics — linting, documentation, and Sphinx — that first-time reviewers ofte..." />
+<meta name="description" content="Thank you for taking the time to review a package for pyOpenSci! This supplement to the main reviewer guide covers three topics — linting, documentation, and Sphinx — that first-time reviewers ofte..." />
+<meta name="twitter:card" content="summary_large_image" />
+
+    <title>A guide for first-time reviewers &#8212; Software Peer Review Guide</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!-- 
+    this give us a css class that will be invisible only if js is disabled 
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=26a4bc78f4c0ddb94549" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=26a4bc78f4c0ddb94549" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=8f2a1f02" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/pyos-sphinx-theme.css?v=fb569b27" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.11b39860a7a0cbfd473a3ad8a317855267ff0bd372690045ca344a6b62be495e.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Itim&family=Poppins:wght@400;700&family=Work+Sans:wght@400;700" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="../_static/pyos.css?v=d6812f4d" />
+  
+  <!-- So that users can add custom icons -->
+  <script src="../_static/scripts/fontawesome.js?digest=26a4bc78f4c0ddb94549"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=26a4bc78f4c0ddb94549" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=26a4bc78f4c0ddb94549" />
+
+    <script src="../_static/documentation_options.js?v=ff44e7b3"></script>
+    <script src="../_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="../_static/sphinx_highlight.js?v=6ffebe34"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/design-tabs.js?v=f930bc37"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'how-to/first-time-reviewer';</script>
+    <script src="../_static/matomo.js?v=918da087"></script>
+    <link rel="canonical" href="https://www.pyopensci.org/software-peer-review/how-to/first-time-reviewer.html" />
+    <link rel="icon" href="https://www.pyopensci.org/images/favicon.ico"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search the docs ..."
+         aria-label="Search the docs ..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+<aside class="bd-header-announcement" aria-label="Announcement">
+  <div class="bd-header-announcement__content"><p><a href='https://www.github.com/pyopensci/software-submission/'>Submit Your Python Package for Peer Review!</a></p></div>
+</aside>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+<div class="bd-header__inner bd-page-width">
+  <button class="pst-navbar-icon sidebar-toggle primary-toggle" aria-label="Site navigation">
+    <span class="fa-solid fa-bars"></span>
+  </button>
+  
+  
+  <div class=" navbar-header-items__start">
+    
+      <div class="navbar-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../index.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/logo-light-mode.png" class="logo__image only-light" alt="pyOpenSci Software Peer Review Guide. The pyOpenSci logo is a purple flower with pyOpenSci under it. The o in open sci is the center of the flower"/>
+    <img src="../_static/logo-dark-mode.png" class="logo__image only-dark pst-js-only" alt="pyOpenSci Software Peer Review Guide. The pyOpenSci logo is a purple flower with pyOpenSci under it. The o in open sci is the center of the flower"/>
+  
+  
+    <p class="title logo__title">Peer Review Guide</p>
+  
+</a></div>
+    
+  </div>
+  
+  <div class=" navbar-header-items">
+    
+    <div class="me-auto navbar-header-items__center">
+      
+        <div class="navbar-item">
+<nav>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../about/intro.html">
+    About
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../partners/scientific-communities.html">
+    Partnerships
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="author-guide.html">
+    Review Guides
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-external" href="https://www.pyopensci.org">
+    pyOpenSci Website
+  </a>
+</li>
+
+            <li class="nav-item dropdown">
+                <button class="btn dropdown-toggle nav-item" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-controls="pst-nav-more-links">
+                    More
+                </button>
+                <ul id="pst-nav-more-links" class="dropdown-menu">
+                    
+<li class=" ">
+  <a class="nav-link dropdown-item nav-external" href="https://www.pyopensci.org/python-package-guide">
+    Python Packaging Guide
+  </a>
+</li>
+
+
+<li class=" ">
+  <a class="nav-link dropdown-item nav-external" href="https://pyopensci.org/handbook">
+    Handbook
+  </a>
+</li>
+
+                </ul>
+            </li>
+            
+  </ul>
+</nav></div>
+      
+    </div>
+    
+    
+    <div class="navbar-header-items__end">
+      
+        <div class="navbar-item navbar-persistent--container">
+          
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+        </div>
+      
+      
+        <div class="navbar-item">
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button></div>
+      
+        <div class="navbar-item"><ul class="navbar-icon-links"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/pyOpenSci/software-peer-review" title="GitHub" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-square-github fa-lg" aria-hidden="true"></i>
+            <span class="sr-only">GitHub</span></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://fosstodon.org/@pyOpenSci" title="Mastodon" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-mastodon fa-lg" aria-hidden="true"></i>
+            <span class="sr-only">Mastodon</span></a>
+        </li>
+</ul></div>
+      
+    </div>
+    
+  </div>
+  
+  
+    <div class="navbar-persistent--mobile">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+    </div>
+  
+
+  
+    <button class="pst-navbar-icon sidebar-toggle secondary-toggle" aria-label="On this page">
+      <span class="fa-solid fa-outdent"></span>
+    </button>
+  
+</div>
+
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+        
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar hide-on-wide">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+      <div class="sidebar-header-items__center">
+        
+          
+          
+            <div class="navbar-item">
+<nav>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../about/intro.html">
+    About
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../partners/scientific-communities.html">
+    Partnerships
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="author-guide.html">
+    Review Guides
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-external" href="https://www.pyopensci.org">
+    pyOpenSci Website
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-external" href="https://www.pyopensci.org/python-package-guide">
+    Python Packaging Guide
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-external" href="https://pyopensci.org/handbook">
+    Handbook
+  </a>
+</li>
+
+  </ul>
+</nav></div>
+          
+        
+      </div>
+    
+    
+    
+      <div class="sidebar-header-items__end">
+        
+          <div class="navbar-item">
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button></div>
+        
+          <div class="navbar-item"><ul class="navbar-icon-links"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/pyOpenSci/software-peer-review" title="GitHub" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-square-github fa-lg" aria-hidden="true"></i>
+            <span class="sr-only">GitHub</span></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://fosstodon.org/@pyOpenSci" title="Mastodon" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-mastodon fa-lg" aria-hidden="true"></i>
+            <span class="sr-only">Mastodon</span></a>
+        </li>
+</ul></div>
+        
+      </div>
+    
+  </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item">
+
+<nav aria-label="Breadcrumb" class="d-print-none">
+  <ul class="bd-breadcrumbs">
+    
+    <li class="breadcrumb-item breadcrumb-home">
+      <a href="../index.html" class="nav-link" aria-label="Home">
+        <i class="fa-solid fa-home"></i>
+      </a>
+    </li>
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">A guide for first-time reviewers</span></li>
+  </ul>
+</nav>
+</div>
+      
+    </div>
+  
+  
+</div>
+</div>
+              
+              
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="a-guide-for-first-time-reviewers">
+<h1>A guide for first-time reviewers<a class="headerlink" href="#a-guide-for-first-time-reviewers" title="Link to this heading">#</a></h1>
+<p>Thank you for taking the time to review a package for pyOpenSci! This supplement to the <a class="reference external" href="https://www.pyopensci.org/software-peer-review/how-to/reviewer-guide.html">main reviewer guide</a> covers three topics — linting, documentation, and Sphinx — that first-time reviewers often find unfamiliar. You don’t need to be an expert in any of these areas to give a useful review. We welcome reviewers from a diversity of backgrounds and with varying levels of Python experience.</p>
+<hr class="docutils" />
+<section id="linting-and-code-style">
+<h2>Linting and code style<a class="headerlink" href="#linting-and-code-style" title="Link to this heading">#</a></h2>
+<p>Checking for consistent, readable code.</p>
+<p>A linter is a tool that automatically scans source code for style issues, formatting inconsistencies, and common errors — without running the code. Think of it as a spell-checker for Python. pyOpenSci asks that packages follow standard <a class="reference external" href="https://peps.python.org/pep-0008/">PEP 8</a> formatting rules as closely as possible, though we don’t require a specific tool to enforce this. What we look for is consistency and readability across the codebase.</p>
+<blockquote>
+<div><p><strong>Why this matters</strong>
+Consistent style makes code easier to read and maintain for the whole community. Linters also catch real bugs — undefined variables, unused imports, and unreachable code are all things they flag. You can read more about pyOpenSci’s expectations in the <a class="reference external" href="https://www.pyopensci.org/python-package-guide/package-structure-code/code-style-linting-format.html">packaging guide’s code style section</a>.</p>
+</div></blockquote>
+<section id="common-tools-you-ll-see-in-pyopensci-packages">
+<h3>Common tools you’ll see in pyOpenSci packages<a class="headerlink" href="#common-tools-you-ll-see-in-pyopensci-packages" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>ruff</strong> — A fast, modern linter and formatter gaining wide adoption in the scientific Python community. (<a class="reference external" href="https://docs.astral.sh/ruff/">docs.astral.sh/ruff</a>)</p></li>
+<li><p><strong>flake8</strong> — Checks PEP 8 rules and common errors. Long-established and still widely used. (<a class="reference external" href="https://flake8.pycqa.org/">flake8.pycqa.org</a>)</p></li>
+<li><p><strong>black</strong> — An opinionated auto-formatter. If a project uses black, formatting style is non-negotiable. (<a class="reference external" href="https://black.readthedocs.io/">black.readthedocs.io</a>)</p></li>
+<li><p><strong>pre-commit</strong> — Runs linters automatically before each commit. A good sign a project takes code quality seriously. (<a class="reference external" href="https://pre-commit.com/">pre-commit.com</a>)</p></li>
+</ul>
+</section>
+<section id="what-to-look-for-as-a-reviewer">
+<h3>What to look for as a reviewer<a class="headerlink" href="#what-to-look-for-as-a-reviewer" title="Link to this heading">#</a></h3>
+<p>As a reviewer, you don’t need to run the linter yourself. Here’s what to check:</p>
+<ul class="simple">
+<li><p>Does the repo include a linting config? Look for <code class="docutils literal notranslate"><span class="pre">pyproject.toml</span></code>, <code class="docutils literal notranslate"><span class="pre">.flake8</span></code>, or <code class="docutils literal notranslate"><span class="pre">ruff.toml</span></code>.</p></li>
+</ul>
+<p><a class="reference external" href="https://www.pyopensci.org/python-package-guide/package-structure-code/pyproject-toml-python-package-metadata.html">Learn more about the pyproject.toml file here. </a></p>
+<ul class="simple">
+<li><p>Does CI (GitHub Actions or similar) run the linter automatically on pull requests?</p></li>
+<li><p>Is the same linting tool used consistently across the whole project?</p></li>
+<li><p>Are there obvious style issues — very long lines, inconsistent spacing, or imports out of order?</p></li>
+</ul>
+<blockquote>
+<div><p><strong>Keep in mind</strong>
+pyOpenSci does not require a specific linting tool — just consistency and readability. If a package uses a non-standard tool, that’s fine as long as it works and is clearly configured. You can flag it as a question rather than a blocker.</p>
+</div></blockquote>
+</section>
+<section id="example-configuration">
+<h3>Example configuration<a class="headerlink" href="#example-configuration" title="Link to this heading">#</a></h3>
+<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="c1"># Example: ruff config in pyproject.toml</span>
+<span class="k">[tool.ruff]</span>
+<span class="n">line-length</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">88</span>
+<span class="n">select</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">"E"</span><span class="p">,</span><span class="w"> </span><span class="s2">"F"</span><span class="p">,</span><span class="w"> </span><span class="s2">"W"</span><span class="p">]</span>
+</pre></div>
+</div>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="c1"># Example: pre-commit hook running ruff</span>
+<span class="nt">repos</span><span class="p">:</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">repo</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">https://github.com/astral-sh/ruff-pre-commit</span>
+<span class="w">    </span><span class="nt">hooks</span><span class="p">:</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">id</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ruff</span>
+</pre></div>
+</div>
+</section>
+</section>
+<hr class="docutils" />
+<section id="documentation">
+<h2>Documentation<a class="headerlink" href="#documentation" title="Link to this heading">#</a></h2>
+<p>Docstrings, READMEs, and user-facing guides.</p>
+<p>Documentation is as important to the success of a Python open source package as the code itself. If users can’t understand how to use a package in their workflows, they won’t use it. In the pyOpenSci review, we look for documentation that supports both new users and potential contributors. You can read pyOpenSci’s full documentation expectations in the <a class="reference external" href="https://www.pyopensci.org/python-package-guide/documentation/index.html">packaging guide’s documentation section</a>.</p>
+<section id="levels-of-documentation-to-evaluate">
+<h3>Levels of documentation to evaluate<a class="headerlink" href="#levels-of-documentation-to-evaluate" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>README</strong> — Is there a clear description of what the package does, who it’s for, and how to install it? This is often the first thing a user encounters.</p></li>
+<li><p><strong>Installation instructions</strong> — Can a new user install and run the package without asking for help? Try following the instructions yourself.</p></li>
+<li><p><strong>Docstrings</strong> — Do all public functions, classes, and methods have docstrings that describe what they do, their parameters, and their return values?</p></li>
+<li><p><strong>Tutorials or vignettes</strong> — Are there worked examples showing the package being used on a realistic problem? These are especially important for scientific tools.</p></li>
+<li><p><strong>API reference</strong> — Is there documentation listing all public functions and classes, ideally auto-generated from the docstrings?</p></li>
+<li><p><strong>Contributing guide</strong> — Is there guidance for potential contributors on how to submit bug reports, fixes, or new features?</p></li>
+</ul>
+<blockquote>
+<div><p><strong>Docstring formats</strong>
+Python docstrings can be written in different styles — the most common in scientific Python are <a class="reference external" href="https://numpydoc.readthedocs.io/en/latest/format.html">NumPy style</a> and <a class="reference external" href="https://google.github.io/styleguide/pyguide.html#38-comments-and-docstrings">Google style</a>. The style used is less important than whether a consistent style is used throughout and whether the content is accurate and complete.</p>
+</div></blockquote>
+</section>
+<section id="example-numpy-style-docstring">
+<h3>Example: NumPy-style docstring<a class="headerlink" href="#example-numpy-style-docstring" title="Link to this heading">#</a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># NumPy-style docstring — common in scientific Python</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">calculate_ndvi</span><span class="p">(</span><span class="n">red</span><span class="p">,</span> <span class="n">nir</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">"""</span>
+<span class="sd">    Calculate the Normalized Difference Vegetation Index.</span>
+
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    red : array-like</span>
+<span class="sd">        Red band reflectance values.</span>
+<span class="sd">    nir : array-like</span>
+<span class="sd">        Near-infrared band reflectance values.</span>
+
+<span class="sd">    Returns</span>
+<span class="sd">    -------</span>
+<span class="sd">    ndarray</span>
+<span class="sd">        NDVI values in the range [-1, 1].</span>
+<span class="sd">    """</span>
+</pre></div>
+</div>
+<p>pyOpenSci also recommends that documentation follow the principle of <em>multiple points of entry</em> — each page of documentation should make sense on its own, because any page may be the first thing a user encounters.</p>
+</section>
+<section id="further-reading">
+<h3>Further reading<a class="headerlink" href="#further-reading" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p><a class="reference external" href="https://www.pyopensci.org/python-package-guide/documentation/write-user-documentation/get-started.html">User-facing documentation guide</a> — pyOpenSci packaging guide</p></li>
+<li><p><a class="reference external" href="https://numpydoc.readthedocs.io/en/latest/format.html">NumPy docstring format</a> — numpydoc documentation</p></li>
+<li><p><a class="reference external" href="https://google.github.io/styleguide/pyguide.html#38-comments-and-docstrings">Google docstring format</a> — Google Python style guide</p></li>
+</ul>
+</section>
+</section>
+<hr class="docutils" />
+<section id="sphinx">
+<h2>Sphinx<a class="headerlink" href="#sphinx" title="Link to this heading">#</a></h2>
+<p>Building and hosting documentation.</p>
+<p>Sphinx is the most widely used tool in the scientific Python ecosystem for turning docstrings and written guides into a polished documentation website. If you’ve browsed docs on <em>readthedocs.io</em>, you’ve likely seen Sphinx output. While pyOpenSci doesn’t require Sphinx — tools like <a class="reference external" href="https://www.mkdocs.org/">MkDocs</a> are also acceptable — it’s by far the most common choice. You can read more in the <a class="reference external" href="https://www.pyopensci.org/python-package-guide/documentation/hosting-tools/sphinx-python-package-documentation-tools.html">pyOpenSci Sphinx guide</a>.</p>
+<section id="key-sphinx-concepts">
+<h3>Key Sphinx concepts<a class="headerlink" href="#key-sphinx-concepts" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>conf.py</strong> — The main config file. Sets the theme, extensions, and project metadata. Lives in the <code class="docutils literal notranslate"><span class="pre">docs/</span></code> folder.</p></li>
+<li><p><strong>autodoc / autoapi</strong> — Extensions that pull docstrings directly from source code so the API reference stays in sync automatically.</p></li>
+<li><p><strong>MyST parser</strong> — An extension that lets authors write Sphinx docs in Markdown instead of reStructuredText (RST). Increasingly common. (<a class="reference external" href="https://myst-parser.readthedocs.io/">myst-parser.readthedocs.io</a>)</p></li>
+<li><p><strong>Read the Docs</strong> — A hosting service that builds and deploys Sphinx docs automatically on each commit. Look for a <code class="docutils literal notranslate"><span class="pre">.readthedocs.yaml</span></code> in the repo root. (<a class="reference external" href="https://readthedocs.org/">readthedocs.org</a>)</p></li>
+</ul>
+</section>
+<section id="id1">
+<h3>What to look for as a reviewer<a class="headerlink" href="#id1" title="Link to this heading">#</a></h3>
+<p>As a reviewer you won’t need to build the docs locally. Here’s what to check:</p>
+<ul class="simple">
+<li><p>Is there a <code class="docutils literal notranslate"><span class="pre">docs/</span></code> folder with a <code class="docutils literal notranslate"><span class="pre">conf.py</span></code> and at least one index file?</p></li>
+<li><p>Does the project have a live documentation site linked from the README or repository?</p></li>
+<li><p>Does the live site render without broken pages, missing API entries, or obvious build errors?</p></li>
+<li><p>Is <code class="docutils literal notranslate"><span class="pre">sphinx.ext.autodoc</span></code> or <code class="docutils literal notranslate"><span class="pre">autoapi</span></code> used so the API reference is generated from docstrings?</p></li>
+<li><p>Are CI build logs free of Sphinx warnings about broken cross-references or missing docstrings?</p></li>
+</ul>
+<blockquote>
+<div><p><strong>Common issue to flag</strong>
+If a public function appears in the source code but is missing from the API docs site, it usually means the docstring is absent or the function isn’t included in the <code class="docutils literal notranslate"><span class="pre">autodoc</span></code> directives. This is worth raising as a review comment — it’s a common oversight and easy for the author to fix.</p>
+</div></blockquote>
+</section>
+<section id="id2">
+<h3>Example configuration<a class="headerlink" href="#id2" title="Link to this heading">#</a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># A minimal docs/conf.py</span>
+<span class="n">extensions</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="s2">"sphinx.ext.autodoc"</span><span class="p">,</span>   <span class="c1"># pulls docstrings into the API reference</span>
+    <span class="s2">"sphinx.ext.napoleon"</span><span class="p">,</span>  <span class="c1"># supports NumPy and Google style docstrings</span>
+    <span class="s2">"myst_parser"</span><span class="p">,</span>          <span class="c1"># lets you write docs in Markdown</span>
+<span class="p">]</span>
+<span class="n">html_theme</span> <span class="o">=</span> <span class="s2">"pydata_sphinx_theme"</span>
+</pre></div>
+</div>
+</section>
+<section id="id3">
+<h3>Further reading<a class="headerlink" href="#id3" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p><a class="reference external" href="https://www.pyopensci.org/python-package-guide/documentation/hosting-tools/sphinx-python-package-documentation-tools.html">Using Sphinx to build Python package documentation</a> — pyOpenSci packaging guide</p></li>
+<li><p><a class="reference external" href="https://www.pyopensci.org/python-package-guide/documentation/hosting-tools/intro.html">Tools to build and host your documentation</a> — pyOpenSci packaging guide</p></li>
+<li><p><a class="reference external" href="https://www.sphinx-doc.org/en/master/">Sphinx documentation</a> — sphinx-doc.org</p></li>
+<li><p><a class="reference external" href="https://sphinx-autoapi.readthedocs.io/">sphinx-autoapi</a> — an alternative to autodoc for generating API docs</p></li>
+</ul>
+</section>
+</section>
+</section>
+
+
+                </article>
+              
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+<div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> On this page
+  </div>
+  <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#linting-and-code-style">Linting and code style</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#common-tools-you-ll-see-in-pyopensci-packages">Common tools you’ll see in pyOpenSci packages</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#what-to-look-for-as-a-reviewer">What to look for as a reviewer</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-configuration">Example configuration</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#documentation">Documentation</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#levels-of-documentation-to-evaluate">Levels of documentation to evaluate</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-numpy-style-docstring">Example: NumPy-style docstring</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#further-reading">Further reading</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sphinx">Sphinx</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#key-sphinx-concepts">Key Sphinx concepts</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">What to look for as a reviewer</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Example configuration</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Further reading</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+  <div class="sidebar-secondary-item">
+
+  
+  <div class="tocsection editthispage">
+    <a href="https://github.com/pyopensci/software-peer-review/edit/main/how-to/first-time-reviewer.md">
+      <i class="fa-solid fa-pencil"></i>
+      
+      
+        
+          Edit on GitHub
+        
+      
+    </a>
+  </div>
+</div>
+
+  <div class="sidebar-secondary-item">
+
+  <div class="tocsection sourcelink">
+    <a href="../_sources/how-to/first-time-reviewer.md.txt">
+      <i class="fa-solid fa-file-lines"></i> Show Source
+    </a>
+  </div>
+</div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+          </footer>
+        
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="../_static/scripts/bootstrap.js?digest=26a4bc78f4c0ddb94549"></script>
+<script defer src="../_static/scripts/pydata-sphinx-theme.js?digest=26a4bc78f4c0ddb94549"></script>
+
+  <footer class="bd-footer">
+<div class="bd-footer__inner bd-page-width">
+  
+    <div class="footer-items__start">
+      
+        <div class="footer-item">
+
+  <p class="copyright">
+    
+      © Copyright 2026, pyOpenSci.
+      <br/>
+    
+  </p>
+</div>
+      
+    </div>
+  
+  
+  
+</div>
+
+  </footer>
+  </body>
+</html>
