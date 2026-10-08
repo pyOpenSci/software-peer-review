@@ -161,7 +161,7 @@ for Python packaging, including discussions of:
 ```
 
 :::{important}
-Given the increased use of Generative AI tools (LLMs), we have developed a disclosure policy for all packages submitted to pyOpenSci (generative-ai-policy). Please review this before submitting to us.
+Given the increased use of Generative AI tools (LLMs), we have developed a [disclosure policy](generative-ai-policy) for all packages submitted to pyOpenSci. Please review this before submitting to us.
 :::
 
 ```{hint}
