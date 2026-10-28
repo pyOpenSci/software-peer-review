@@ -39,7 +39,7 @@ cultures, genders, and domains.
 #### New editors start as guests
 
 A new editor is a guest editor for their first 3 months, or until they
-complete their first review. After that review, you and the current
+complete leading their first review process from start to finish. After that review process is complete, you and the current
 editorial board decide whether they become a full editor.
 
 #### Ad hoc guest editors
