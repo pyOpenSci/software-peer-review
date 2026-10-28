@@ -415,10 +415,10 @@
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Editor Guide</span></p>
 <ul class="nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="editor-description.html">Position Description</a></li>
-<li class="toctree-l1"><a class="reference internal" href="onboarding-guide.html">Finding &amp; Onboarding Editors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="onboard-editors.html">Finding &amp; Onboarding Editors</a></li>
 <li class="toctree-l1"><a class="reference internal" href="review-process.html">Review Process</a></li>
 <li class="toctree-l1"><a class="reference internal" href="finding-reviewers.html">Finding Reviewers</a></li>
-<li class="toctree-l1"><a class="reference internal" href="onboarding-reviewers.html">Onboarding Reviewers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="onboard-reviewers.html">Onboarding Reviewers</a></li>
 </ul>
 </div>
 </nav></div>
@@ -511,11 +511,13 @@ we offer a mentorship program where we will pair you up with someone
 who has more experience reviewing code. From this experience you can
 learn more and empower yourself with code review skills. Software review skills
 are generally useful in data science, so they are skills worth investing in!</p>
-</div>
+<p class="rubric" id="finding-a-package-to-review">Finding a Package to Review</p>
+<p>We’re always looking for people to review packages. Editors usually pair two reviewers: one closer to the scientific domain, and one focused on packaging, usability, and software quality. Reviewers can volunteer for either role!</p>
+<p>To find a package, you can check out <a class="reference external" href="https://github.com/pyOpenSci/software-submission/issues?q=is%3Aissue+state%3Aopen+label%3A2%2Fseeking-reviewers">this Github issues filtered view</a>. Look for the editor assigned to the package, and reach out to them on Slack. Alternatively, you can respond to posts from editors in this #software-review channel asking for reviewers.</p>
+<p>Be sure to share with the editor a bit about your background so they can assess if you’re a good fit as a reviewer for this particular package. If the editor agrees you’re a good fit, they’ll assign the package to you, and you can get started!</p>
 <p>If this is your first review with us, please check out the <a class="reference internal" href="first-time-reviewer.html"><span class="std std-doc">first-time reviewer guide</span></a>.</p>
-</section>
-<section id="get-started-with-your-review">
-<h2>Get Started With Your Review<a class="headerlink" href="#get-started-with-your-review" title="Link to this heading">#</a></h2>
+<p>If this is your first review with us, please check out the <a class="reference internal" href="first-time-reviewer.html"><span class="std std-doc">first-time reviewer guide</span></a>.</p>
+<p class="rubric" id="get-started-with-your-review">Get Started With Your Review</p>
 <p>As a new reviewer you should start by installing the package that you are
 reviewing locally to test it out.</p>
 <p>To install the package, you can either:</p>
@@ -533,6 +535,7 @@ be found at the top of the review issue. In the example below you can
 see that <code class="docutils literal notranslate"><span class="pre">pyrolite</span></code> version 0.2.5
 was submitted for review.</p>
 <p>That is the version that you should install!</p>
+</div>
 </div>
 <p>Example header of a peer review submission issue on GitHub:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Submitting</span> <span class="n">Author</span><span class="p">:</span> <span class="n">Name</span> <span class="p">(</span><span class="nd">@morganjwilliams</span><span class="p">)</span>
@@ -776,8 +779,7 @@ offer.”</p>
   </div>
   <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#a-guide-for-new-reviewers">A guide for new reviewers</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#get-started-with-your-review">Get Started With Your Review</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#a-guide-for-new-reviewers">A guide for new reviewers</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#general-guidelines-for-reviewing-a-python-package-for-pyopensci">General Guidelines For Reviewing A Python Package for PyOpenSci</a></li>
 </ul>
 </li>

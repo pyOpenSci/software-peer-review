@@ -27,6 +27,11 @@ drive open science.
 
 ::::
 
+:::{important}
+We have updated our policies around the use of AI tools in packages that are submitted to pyOpenSci.
+[Read our generative AI policy here](generative-ai-policy).
+:::
+
 :::::{grid} 1 2 3 3
 :class-container: text-center
 :gutter: 3

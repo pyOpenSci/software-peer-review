@@ -45,7 +45,16 @@ we offer a mentorship program where we will pair you up with someone
 who has more experience reviewing code. From this experience you can
 learn more and empower yourself with code review skills. Software review skills
 are generally useful in data science, so they are skills worth investing in!
-```
+
+## Finding a Package to Review
+
+We’re always looking for people to review packages. Editors usually pair two reviewers: one closer to the scientific domain, and one focused on packaging, usability, and software quality. Reviewers can volunteer for either role!
+
+To find a package, you can check out [this Github issues filtered view](https://github.com/pyOpenSci/software-submission/issues?q=is%3Aissue+state%3Aopen+label%3A2%2Fseeking-reviewers). Look for the editor assigned to the package, and reach out to them on Slack. Alternatively, you can respond to posts from editors in this #software-review channel asking for reviewers.
+
+Be sure to share with the editor a bit about your background so they can assess if you're a good fit as a reviewer for this particular package. If the editor agrees you're a good fit, they'll assign the package to you, and you can get started!
+
+If this is your first review with us, please check out the [first-time reviewer guide](first-time-reviewer.md).
 
 If this is your first review with us, please check out the [first-time reviewer guide](first-time-reviewer.md).
 

@@ -67,7 +67,7 @@
     <link rel="icon" href="https://www.pyopensci.org/images/favicon.ico"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="pyOpenSci Code of Conduct" href="../code-of-conduct.html" />
+    <link rel="next" title="Policy for use of generative AI / AI Tools / LLMs" href="generative-ai-policy.html" />
     <link rel="prev" title="An Overview Of the Peer Review Process" href="review-timeline.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -417,6 +417,7 @@
 <li class="toctree-l1"><a class="reference internal" href="how-review-works.html">How Review Works</a></li>
 <li class="toctree-l1"><a class="reference internal" href="review-timeline.html">Review Timeline</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Peer Review Policies</a></li>
+<li class="toctree-l1"><a class="reference internal" href="generative-ai-policy.html">Generative AI policy</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../code-of-conduct.html">Code of Conduct</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Appendices</span></p>
@@ -514,7 +515,7 @@ sustained, human-driven design and maintenance, rather than short-lived or
 largely machine-generated codebases.</p>
 <p>This page provides a high-level overview of our review policies. For detailed
 guidance on expectations, disclosure, and examples related to Generative AI and
-LLMs, please see our dedicated <a class="reference internal" href="#generative-ai-policy"><span class="std std-ref">generative-ai-policy</span></a>.</p>
+LLMs, please see our dedicated <a class="reference internal" href="generative-ai-policy.html#generative-ai-policy"><span class="std std-ref">generative AI policy</span></a>.</p>
 </section>
 <section id="submission-volume-and-maintainer-overlap">
 <span id="submission-volume"></span><h2>Submission volume and maintainer overlap<a class="headerlink" href="#submission-volume-and-maintainer-overlap" title="Link to this heading">#</a></h2>
@@ -693,80 +694,8 @@ thesis students/advisors, or mentors.</p></li>
 <p>In the case where none of the associate editors can serve as editor, an
 external guest editor will be recruited to lead the package review.</p>
 </section>
-<section id="policy-for-use-of-generative-ai-llms">
-<span id="generative-ai-policy"></span><h2>Policy for use of generative AI / LLMs<a class="headerlink" href="#policy-for-use-of-generative-ai-llms" title="Link to this heading">#</a></h2>
-<div class="important admonition">
-<p class="admonition-title">How this policy was developed</p>
-<p>The Generative AI policy below was co-developed by the pyOpenSci community. Its goals are:</p>
-<ul class="simple">
-<li><p>To <strong>acknowledge the widespread use of Generative AI tools</strong> (LLMs) and promote transparency and responsible use that ensures better software outputs that support sound open source development practices.</p></li>
-<li><p><strong>Ensure equitable balance of effort in peer review</strong> — authors are responsible for human review of AI-generated content before submission; our volunteer reviewers are not responsible for identifying and/or correcting machine-generated errors or issues.</p></li>
-<li><p><strong>Protect volunteer reviewers</strong> from being the first line of review for generated code.</p></li>
-<li><p>Give reviewers and editors the information they need to make informed decisions about what they choose to review.</p></li>
-<li><p><strong>Support and promote packages that follow sustainable software practices</strong> that enable future discovery and uphold the foundational principles of scientific open source.</p></li>
-<li><p>Raise awareness of the broader challenges Generative AI presents to the scientific open source community.</p></li>
-<li><p>To promote transparency and privacy in user data</p></li>
-</ul>
-<p><a class="reference external" href="https://github.com/pyOpenSci/software-peer-review/issues/331">Please see this GitHub issue for a discussion of the topic.</a></p>
-<p>In generating our Generative AI policy, we acknowledge some of the other policies in the open source ecosystem that inspired our work here, including:</p>
-<ul class="simple">
-<li><p><a class="reference external" href="https://fastapi.tiangolo.com/contributing/#automated-code-and-ai">FastAPI docs</a></p></li>
-<li><p><a class="reference external" href="https://blog.joss.theoj.org/2026/01/preparing-joss-for-a-generative-ai-future">JOSS AI Policy</a></p></li>
-<li><p><a class="reference external" href="https://scikit-learn.org/dev/developers/contributing.html#automated-contributions-policy">Scikit-Learn Policy</a></p></li>
-<li><p><a class="reference external" href="https://github.com/melissawm/open-source-ai-contribution-policies">Melissa Mendonça’s Collection of GenAI Policies</a></p></li>
-</ul>
-</div>
-</section>
-<section id="generative-ai-and-open-source-development">
-<h2>Generative AI and open source development<a class="headerlink" href="#generative-ai-and-open-source-development" title="Link to this heading">#</a></h2>
-<p>We understand and support your use of Generative AI tools to improve software development workflows and to make your developer workflows more efficient. We want you to use them thoughtfully and effectively, and in ways that improve both the open source ecosystem and your development trajectory.</p>
-<p>We expect that all code and documentation submitted to our peer review process should have meaningful human review, intervention, judgment, and context. We understand that the use of current Generative AI tools is often tightly woven into development workflows, making disclosure challenging. But <strong>we still require disclosure</strong> to support both transparency and to allow reviewers and editors to understand what they are reviewing.</p>
-<p>The policies below support adherence to thoughtful open source development best practices. A pyOpenSci package submission should demonstrate both need and sustained value to the research community. <strong>Short-lived, single-use codebases are out of scope for pyOpenSci.</strong></p>
-</section>
-<section id="communication-in-review-issues">
-<h2>Communication in review issues<a class="headerlink" href="#communication-in-review-issues" title="Link to this heading">#</a></h2>
-<ul class="simple">
-<li><p>We prefer that all communication in our software review issues are written by a human. We embrace the use of LLMs for translation and grammar correction. We prefer honest interactions over ones that prioritize perfect language and grammar. As little aid from an LLM as possible.</p></li>
-<li><p>We will block accounts that spam our repositories or burden our volunteers with repeated, automated comments that aren’t directly related to and in support of productive conversations in a review.</p></li>
-</ul>
-</section>
-<section id="package-development-and-design-approach">
-<h2>Package development and design approach<a class="headerlink" href="#package-development-and-design-approach" title="Link to this heading">#</a></h2>
-<ul class="simple">
-<li><p><strong>Development History Timeline:</strong> Projects should have at least <strong>3-6 months of public development history</strong>, with evidence of releases, public issues, and pull requests that reflect <strong>iterative, thoughtful development</strong> rather than rapid and recent code generation.</p></li>
-<li><p>If the human effort put into the package is less than the effort required to review it, please don’t submit the package.</p></li>
-<li><p>Software should be developed openly, rather than developed in private and then moved to a public repository with an OSI-approved license to meet minimal open source requirements.</p></li>
-<li><p><strong>Development History Approach:</strong> We encourage thoughtful development history and patterns, including tightly scoped commits with clear commit messages that follow iterative development best practices, rather than large commits that address multiple issues in a package and affect large volumes of files throughout the package. These workflows signal careful design and development, and changes to a codebase that could be reviewed by a human.</p></li>
-<li><p>Projects with very short, rapid development timelines will face higher scrutiny by our review teams than those that have a significant development history (more than 6 months)</p></li>
-<li><p><strong>Package Scope &amp; Design:</strong> We value packages with a thoughtful, well-scoped design. When submitting, we will ask you to describe the key design decisions behind your package — the tradeoffs you considered and why you built it the way you did.</p></li>
-<li><p>We place greater value on packages that have been adopted or used by a wide user base, since this demonstrates that the package has design and performance characteristics that meet multiple use cases.</p></li>
-<li><p>Be sure to situate your package within the broader Python ecosystem: identify related tools, explain how your package differs from them, and explain how it complements, extends, or builds upon them.</p></li>
-<li><p>We particularly value <strong>work that builds upon or extends existing tools rather than reinventing solutions</strong> where quality alternatives already exist.</p></li>
-</ul>
-<p>Below is the checklist that you will need to respond to in our submission form:</p>
-<div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span><span class="k">- [ ]</span> This package has a public development history spanning 3-6 months, with commits distributed over time that reflect <span class="gs">**iterative, thoughtful development.**</span>
-<span class="k">- [ ]</span> All code in this package has been <span class="gs">**carefully reviewed by a human**</span>. Its implementation is also understood by the authors submitting the package.
-<span class="k">- [ ]</span> All communication on this issue will be written by a human (someone on your maintainer team). We embrace the use of LLMs for translation and grammar correction. We prefer honest interactions over ones that prioritize perfect language and grammar.  Use as little aid from a LLM as possible.
-<span class="k">- [ ]</span> <span class="gs">**Generative AI tools were used to develop and maintain this package.**</span>
-
-<span class="gs">**Please list the tools and frameworks that you used below.**</span>
-If you checked the first box above, please describe the tools and frameworks that you used below including:
-
-<span class="k">-</span><span class="w"> </span><span class="gs">**Which parts**</span> of the submission were generated (e.g., documentation, tests, code). In addition to a general description, please specifically indicate any substantial portions of code (classes, modules, subpackages) that were wholly or primarily generated by AI.
-
-
-<span class="k">-</span><span class="w"> </span><span class="gs">**The approximate scale**</span> of the generated portions (e.g., "all of the tests were generated and then checked by a human," "small routines were generated and copied into the code").
-
-
-<span class="k">-</span><span class="w"> </span><span class="gs">**How the generative AI was used**</span> (e.g., line completion, help with translation, queried separately and integrated, agentic workflow).
-
-If you have a policy around generative AI use in your project, please provide a link to it below:
-
-<span class="k">-</span><span class="w"> </span><span class="ge">_Your link here (remove this line if you don't have a link)_</span>
-</pre></div>
-</div>
 <section id="telemetry-user-informed-consent">
-<span id="telemetry"></span><h3>Telemetry &amp; user-informed consent<a class="headerlink" href="#telemetry-user-informed-consent" title="Link to this heading">#</a></h3>
+<span id="telemetry"></span><h2>Telemetry &amp; user-informed consent<a class="headerlink" href="#telemetry-user-informed-consent" title="Link to this heading">#</a></h2>
 <p>Your package should not collect usage analytics without first informing your users about what data are being collected and what is being done with that data. With that in mind, we understand that package-use data can be invaluable for the development process. If the package collects such data, it should do so by prioritizing user-informed consent. This means that before any data are collected, the user understands:</p>
 <ol class="arabic simple">
 <li><p>What data are collected</p></li>
@@ -776,7 +705,6 @@ If you have a policy around generative AI use in your project, please provide a 
 </ol>
 <p>Once the user is informed of what will be collected and how that data will be handled, stored and used, you can implement opt-in consent. opt-in means that the user agrees to usage-data collection prior to it being collected (rather than having to opt-out when using your package).</p>
 <p>We will evaluate usage data collected by packages on a case-by-case basis and reserve the right not to review a package if the data collection is overly invasive.</p>
-</section>
 </section>
 <section id="review-timelines-and-on-hold-reviews">
 <h2>Review timelines and on-hold reviews<a class="headerlink" href="#review-timelines-and-on-hold-reviews" title="Link to this heading">#</a></h2>
@@ -897,11 +825,11 @@ educational purposes.</p>
       </div>
     </a>
     <a class="right-next"
-       href="../code-of-conduct.html"
+       href="generative-ai-policy.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">pyOpenSci Code of Conduct</p>
+        <p class="prev-next-title">Policy for use of generative AI / AI Tools / LLMs</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -946,13 +874,7 @@ educational purposes.</p>
 </ul>
 </li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#conflict-of-interest-for-reviews-and-editors">Conflict of interest for reviews and editors</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#policy-for-use-of-generative-ai-llms">Policy for use of generative AI / LLMs</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#generative-ai-and-open-source-development">Generative AI and open source development</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#communication-in-review-issues">Communication in review issues</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#package-development-and-design-approach">Package development and design approach</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#telemetry-user-informed-consent">Telemetry &amp; user-informed consent</a></li>
-</ul>
-</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#telemetry-user-informed-consent">Telemetry &amp; user-informed consent</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#review-timelines-and-on-hold-reviews">Review timelines and on-hold reviews</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#after-acceptance-package-ownership-and-maintenance">After acceptance: package ownership and maintenance</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#maintenance-tracking">Maintenance tracking</a></li>

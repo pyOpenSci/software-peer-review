@@ -1,0 +1,1362 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta property="og:title" content="Onboarding and offboarding editors" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="how-to/onboard-editors.html" />
+<meta property="og:site_name" content="pyOpenSci Python Package Guide" />
+<meta property="og:description" content="pyOpenSci peer review runs on volunteer editors and reviewers. Finding new volunteers is often the trickiest part of the process, so we’ve built resources to help you. This page is for you if you’r..." />
+<meta property="og:image:width" content="1146" />
+<meta property="og:image:height" content="600" />
+<meta property="og:image" content="_images/social_previews/summary_how-to_onboard-editors_5a8a87f1.png" />
+<meta property="og:image:alt" content="pyOpenSci peer review runs on volunteer editors and reviewers. Finding new volunteers is often the trickiest part of the process, so we’ve built resources to help you. This page is for you if you’r..." />
+<meta name="description" content="pyOpenSci peer review runs on volunteer editors and reviewers. Finding new volunteers is often the trickiest part of the process, so we’ve built resources to help you. This page is for you if you’r..." />
+<meta name="twitter:card" content="summary_large_image" />
+
+    <title>Onboarding and offboarding editors &#8212; Software Peer Review Guide</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!-- 
+    this give us a css class that will be invisible only if js is disabled 
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=26a4bc78f4c0ddb94549" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=26a4bc78f4c0ddb94549" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=8f2a1f02" />
+    <link rel="stylesheet" type="text/css" href="../_static/styles/pyos-sphinx-theme.css?v=fb569b27" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.11b39860a7a0cbfd473a3ad8a317855267ff0bd372690045ca344a6b62be495e.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Itim&family=Poppins:wght@400;700&family=Work+Sans:wght@400;700" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="../_static/pyos.css?v=d6812f4d" />
+  
+  <!-- So that users can add custom icons -->
+  <script src="../_static/scripts/fontawesome.js?digest=26a4bc78f4c0ddb94549"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=26a4bc78f4c0ddb94549" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=26a4bc78f4c0ddb94549" />
+
+    <script src="../_static/documentation_options.js?v=ff44e7b3"></script>
+    <script src="../_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="../_static/sphinx_highlight.js?v=6ffebe34"></script>
+    <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../_static/copybutton.js?v=f281be69"></script>
+    <script src="../_static/design-tabs.js?v=f930bc37"></script>
+    <script type="module">import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@11.12.1/dist/mermaid.esm.min.mjs";
+
+
+
+
+
+const initStyles = () => {
+    const defaultStyle = document.createElement('style');
+    defaultStyle.textContent = "pre.mermaid {\n    /* Same as .mermaid-container > pre */\n    display: block;\n    width: 100%;\n}\n\npre.mermaid > svg {\n    /* Same as .mermaid-container > pre > svg */\n    height: 500px;\n    width: 100%;\n    max-width: 100% !important;\n}";
+    document.head.appendChild(defaultStyle);
+
+    const fullscreenStyle = document.createElement('style');
+    fullscreenStyle.textContent = ".mermaid-container {\n    position: relative;\n    display: flex;\n    flex-direction: row;\n    width: 100%;\n}\n\n.mermaid-container > pre {\n    display: block;\n    width: 100%;\n}\n\n.mermaid-container > pre > svg {\n    height: 500px;\n    width: 100%;\n    max-width: 100% !important;\n}\n\n.mermaid-fullscreen-btn {\n    position: absolute;\n    width: 28px;\n    height: 28px;\n    background: rgba(255, 255, 255, 0.95);\n    border: 1px solid rgba(0, 0, 0, 0.3);\n    border-radius: 4px;\n    cursor: pointer;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    transition: all 0.2s;\n    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);\n    font-size: 14px;\n    line-height: 1;\n    padding: 0;\n    color: #333;\n}\n\n.mermaid-fullscreen-btn:hover {\n    opacity: 100% !important;\n    background: rgba(255, 255, 255, 1);\n    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);\n    transform: scale(1.1);\n}\n\n.mermaid-fullscreen-btn.dark-theme {\n    background: rgba(50, 50, 50, 0.95);\n    border: 1px solid rgba(255, 255, 255, 0.3);\n    color: #e0e0e0;\n}\n\n.mermaid-fullscreen-btn.dark-theme:hover {\n    background: rgba(60, 60, 60, 1);\n    box-shadow: 0 3px 10px rgba(255, 255, 255, 0.2);\n}\n\n.mermaid-fullscreen-modal {\n    display: none;\n    position: fixed !important;\n    top: 0 !important;\n    left: 0 !important;\n    width: 95vw;\n    height: 100vh;\n    background: rgba(255, 255, 255, 0.98);\n    z-index: 9999;\n    padding: 20px;\n    overflow: auto;\n}\n\n.mermaid-fullscreen-modal.dark-theme {\n    background: rgba(0, 0, 0, 0.98);\n}\n\n.mermaid-fullscreen-modal.active {\n    display: flex;\n    align-items: center;\n    justify-content: center;\n}\n\n.mermaid-container-fullscreen {\n    position: relative;\n    width: 95vw;\n    height: 90vh;\n    max-width: 95vw;\n    max-height: 90vh;\n    background: white;\n    border-radius: 8px;\n    padding: 20px;\n    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);\n    overflow: auto;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n}\n\n.mermaid-container-fullscreen.dark-theme {\n    background: #1a1a1a;\n    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.8);\n}\n\n.mermaid-container-fullscreen pre.mermaid {\n    width: 100%;\n    height: 100%;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n}\n\n.mermaid-container-fullscreen .mermaid svg {\n    height: 100% !important;\n    width: 100% !important;\n    cursor: grab;\n}\n\n.mermaid-fullscreen-close {\n    position: fixed !important;\n    top: 20px !important;\n    right: 20px !important;\n    width: 40px;\n    height: 40px;\n    background: rgba(255, 255, 255, 0.95);\n    border: 1px solid rgba(0, 0, 0, 0.2);\n    border-radius: 50%;\n    cursor: pointer;\n    z-index: 10000;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);\n    transition: all 0.2s;\n    font-size: 24px;\n    line-height: 1;\n    color: #333;\n}\n\n.mermaid-fullscreen-close:hover {\n    background: white;\n    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);\n    transform: scale(1.1);\n}\n\n.mermaid-fullscreen-close.dark-theme {\n    background: rgba(50, 50, 50, 0.95);\n    border: 1px solid rgba(255, 255, 255, 0.2);\n    color: #e0e0e0;\n}\n\n.mermaid-fullscreen-close.dark-theme:hover {\n    background: rgba(60, 60, 60, 1);\n    box-shadow: 0 6px 16px rgba(255, 255, 255, 0.2);\n}\n\n.mermaid-fullscreen-modal .mermaid-fullscreen-btn {\n    display: none !important;\n}";
+    document.head.appendChild(fullscreenStyle);
+}
+
+// Detect if page has dark background
+const isDarkTheme = () => {
+    // We use a set of heuristics:
+    // 1. Check for common dark mode classes or attributes
+    // 2. Check computed background color brightness
+    if (document.documentElement.classList.contains('dark') ||
+        document.documentElement.getAttribute('data-theme') === 'dark' ||
+        document.body.classList.contains('dark') ||
+        document.body.getAttribute('data-theme') === 'dark') {
+        // console.log("Dark theme detected via class/attribute");
+        return true;
+    }
+    if (document.documentElement.classList.contains('light') ||
+        document.documentElement.getAttribute('data-theme') === 'light' ||
+        document.body.classList.contains('light') ||
+        document.body.getAttribute('data-theme') === 'light') {
+        // console.log("Light theme detected via class/attribute");
+        return false;
+    }
+    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        // console.log("Dark theme detected via prefers-color-scheme");
+        return true;
+    }
+    const bgColor = window.getComputedStyle(document.body).backgroundColor;
+    const match = bgColor.match(/rgb\((\d+),\s*(\d+),\s*(\d+)/);
+    if (match) {
+        const r = parseInt(match[1]);
+        const g = parseInt(match[2]);
+        const b = parseInt(match[3]);
+        const brightness = (r * 299 + g * 587 + b * 114) / 1000;
+        // console.log("Background color brightness:", brightness);
+        return brightness < 128;
+    }
+    // console.log("No dark or light theme detected, defaulting to light theme");
+    return false;
+};
+
+let darkTheme = isDarkTheme();
+let modal = null;
+let modalContent = null;
+let previousScrollOffset = [window.scrollX, window.scrollY];
+let _lazyObserver = null;
+let _renderQueue = Promise.resolve();
+let closeModal = () => {};
+
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && modal?.classList.contains('active')) {
+        closeModal();
+    }
+});
+
+// Apply d3 zoom to each SVG. Idempotent: an SVG already wrapped is skipped,
+// so this is safe to call both for the initial batch and for diagrams that
+// render lazily once they become visible.
+const addZoomToSvgs = (svgs) => {
+    svgs.each(function() {
+        if (this.getAttribute('data-zoom-applied') === 'true') return;
+        var svg = d3.select(this);
+        svg.html("<g class='wrapper'>" + svg.html() + "</g>");
+        var inner = svg.select("g");
+        var zoom = d3.zoom().on("zoom", function(event) {
+            inner.attr("transform", event.transform);
+        });
+        svg.call(zoom);
+        this.setAttribute('data-zoom-applied', 'true');
+    });
+};
+
+const runMermaid = async (rerun) => {
+    console.log("Running mermaid diagrams, rerun =", rerun);
+    // clear all existing mermaid charts
+    let all_mermaids = document.querySelectorAll(".mermaid");
+
+    if (rerun) {
+        // Disconnect any previous lazy rendering observer
+        if (_lazyObserver) {
+            _lazyObserver.disconnect();
+            _lazyObserver = null;
+        }
+
+        all_mermaids.forEach((el) => {
+            el.removeAttribute('data-mermaid-deferred');
+            el.removeAttribute('data-mermaid-render-failed');
+            if(!el.hasAttribute("data-original-code")) {
+                // store original code
+                // console.log(`Storing original code for first run: `, el.innerHTML);
+                el.setAttribute('data-original-code', el.innerHTML);
+            }
+            if(el.getAttribute("data-processed") === "true") {
+                // remove and restore original
+                el.removeAttribute("data-processed");
+                // console.log(`Restoring original code for re-run: `, el.getAttribute('data-original-code'));
+                el.innerHTML = el.getAttribute('data-original-code');
+            } else {
+                // store original code
+                // console.log(`Storing original code for re-run: `, el.innerHTML);
+                el.setAttribute('data-original-code', el.innerHTML);
+            }
+        });
+
+        // Separate visible and hidden elements. Mermaid's layout engine measures
+        // text dimensions via the DOM, which fails for elements hidden by a parent
+        // (e.g., Reveal.js non-active slides, sphinx-design unopened tabs),
+        // producing broken SVGs. Render visible elements now, defer hidden ones.
+        const visible = [];
+        const hidden = [];
+        all_mermaids.forEach((el) => {
+            // offsetParent is null for display:none ancestors.
+            // getClientRects().length > 0 catches position:fixed elements
+            // (which also have null offsetParent but are still visible).
+            if (el.offsetParent !== null || el.getClientRects().length > 0) {
+                visible.push(el);
+            } else {
+                hidden.push(el);
+                el.setAttribute('data-mermaid-deferred', 'true');
+            }
+        });
+
+        if (visible.length > 0) {
+            try {
+                await mermaid.run({ nodes: visible });
+            } catch (e) {
+                console.error("Mermaid rendering failed:", e);
+            }
+        }
+
+        // Lazily render hidden elements when they become visible.
+        // Uses a promise chain (_renderQueue) to serialize rendering,
+        // since IntersectionObserver may report multiple entries at once
+        // and mermaid.run() is not safe to call concurrently.
+        if (hidden.length > 0) {
+            if (typeof IntersectionObserver === 'undefined') {
+                console.warn("IntersectionObserver not available; hidden mermaid diagrams will not render.");
+            } else {
+                _renderQueue = Promise.resolve();
+                _lazyObserver = new IntersectionObserver((entries) => {
+                    for (const entry of entries) {
+                        if (entry.isIntersecting && entry.target.getAttribute("data-processed") !== "true") {
+                            _lazyObserver.unobserve(entry.target);
+                            const el = entry.target;
+                            _renderQueue = _renderQueue.then(async () => {
+                                try {
+                                    await mermaid.run({ nodes: [el] });
+                                    el.removeAttribute('data-mermaid-deferred');
+                                    // Apply zoom to the now-rendered diagram, matching
+                                    // the decoration visible diagrams receive.
+                                    if (false) {
+                                        addZoomToSvgs(d3.selectAll("").select(function() {
+                                            return this.querySelector("svg");
+                                        }));
+                                    }
+                                } catch (e) {
+                                    console.error("Mermaid deferred rendering failed:", e);
+                                    el.removeAttribute('data-mermaid-deferred');
+                                    el.setAttribute('data-mermaid-render-failed', 'true');
+                                }
+                            });
+                        }
+                    }
+                });
+                hidden.forEach((el) => _lazyObserver.observe(el));
+            }
+        }
+    }
+
+    all_mermaids = document.querySelectorAll(".mermaid");
+    // Exclude deferred (hidden) and render-failed elements from completion checks
+    const mermaids_active = document.querySelectorAll(".mermaid:not([data-mermaid-deferred]):not([data-mermaid-render-failed])");
+    const mermaids_processed = document.querySelectorAll(".mermaid:not([data-mermaid-deferred]):not([data-mermaid-render-failed])[data-processed='true']");
+
+    if (false) {
+        const mermaids_to_add_zoom = 0 === -1 ? mermaids_active.length : 0;
+        if(mermaids_to_add_zoom > 0) {
+            var svgs = d3.selectAll("").select(function() {
+                return this.querySelector("svg");
+            });
+            // Wait until every active (visible) diagram has rendered. Deferred
+            // diagrams are excluded, so a fixed d3_node_count that counts a
+            // hidden diagram no longer loops forever waiting for its SVG.
+            if(mermaids_active.length !== mermaids_processed.length) {
+                setTimeout(() => runMermaid(false), 200);
+                return;
+            }
+            addZoomToSvgs(svgs);
+        }
+    } else if(mermaids_active.length !== mermaids_processed.length) {
+        // Wait for mermaid to process all diagrams
+        setTimeout(() => runMermaid(false), 200);
+        return;
+    }
+
+    // Stop here if not adding fullscreen capability
+    if (!true) return;
+
+    if (modal !== null ) {
+        // Destroy existing modal
+        modal.remove();
+        modal = null;
+        modalContent = null;
+    }
+
+    modal = document.createElement('div');
+    modal.className = 'mermaid-fullscreen-modal' + (darkTheme ? ' dark-theme' : '');
+    modal.setAttribute('role', 'dialog');
+    modal.setAttribute('aria-modal', 'true');
+    modal.setAttribute('aria-label', 'Fullscreen diagram viewer');
+    modal.innerHTML = `
+        <button class="mermaid-fullscreen-close${darkTheme ? ' dark-theme' : ''}" aria-label="Close fullscreen">✕</button>
+        <div class="mermaid-container-fullscreen${darkTheme ? ' dark-theme' : ''}"></div>
+    `;
+    document.body.appendChild(modal);
+
+    modalContent = modal.querySelector('.mermaid-container-fullscreen');
+    const closeBtn = modal.querySelector('.mermaid-fullscreen-close');
+
+    closeModal = () => {
+        modal.classList.remove('active');
+        modalContent.innerHTML = '';
+        document.body.style.overflow = ''
+        window.scrollTo({left: previousScrollOffset[0], top: previousScrollOffset[1], behavior: 'instant'});
+    };
+
+    closeBtn.addEventListener('click', closeModal);
+    modal.addEventListener('click', (e) => {
+        if (e.target === modal) closeModal();
+    });
+    document.querySelectorAll('.mermaid').forEach((mermaidDiv) => {
+        if (mermaidDiv.parentNode.classList.contains('mermaid-container') ||
+            mermaidDiv.closest('.mermaid-fullscreen-modal')) {
+            // Already processed, adjust button class if needed
+            const existingBtn = mermaidDiv.parentNode.querySelector('.mermaid-fullscreen-btn');
+            if (existingBtn) {
+                existingBtn.className = 'mermaid-fullscreen-btn' + (darkTheme ? ' dark-theme' : '');
+            }
+            return;
+        }
+
+        const container = document.createElement('div');
+        container.className = 'mermaid-container';
+        mermaidDiv.parentNode.insertBefore(container, mermaidDiv);
+        container.appendChild(mermaidDiv);
+
+        const fullscreenBtn = document.createElement('button');
+        fullscreenBtn.className = 'mermaid-fullscreen-btn' + (darkTheme ? ' dark-theme' : '');
+        fullscreenBtn.setAttribute('aria-label', 'View diagram in fullscreen');
+        fullscreenBtn.textContent = "\u26f6";
+        fullscreenBtn.style.opacity = "50%";
+
+        // Calculate dynamic position based on diagram's margin and padding
+        const diagramStyle = window.getComputedStyle(mermaidDiv);
+        const marginTop = parseFloat(diagramStyle.marginTop) || 0;
+        const marginRight = parseFloat(diagramStyle.marginRight) || 0;
+        const paddingTop = parseFloat(diagramStyle.paddingTop) || 0;
+        const paddingRight = parseFloat(diagramStyle.paddingRight) || 0;
+        fullscreenBtn.style.top = `${marginTop + paddingTop + 4}px`;
+        fullscreenBtn.style.right = `${marginRight + paddingRight + 4}px`;
+
+        fullscreenBtn.addEventListener('click', () => {
+            previousScrollOffset = [window.scrollX, window.scrollY];
+            const clone = mermaidDiv.cloneNode(true);
+            modalContent.innerHTML = '';
+            modalContent.appendChild(clone);
+
+            const svg = clone.querySelector('svg');
+            if (svg) {
+                svg.removeAttribute('width');
+                svg.removeAttribute('height');
+                svg.style.width = '100%';
+                svg.style.height = 'auto';
+                svg.style.maxWidth = '100%';
+                svg.style.display = 'block';
+
+                if (false) {
+                    setTimeout(() => {
+                        const g = svg.querySelector('g');
+                        if (g) {
+                            var svgD3 = d3.select(svg);
+                            svgD3.html("<g class='wrapper'>" + svgD3.html() + "</g>");
+                            var inner = svgD3.select("g");
+                            var zoom = d3.zoom().on("zoom", function(event) {
+                                inner.attr("transform", event.transform);
+                            });
+                            svgD3.call(zoom);
+                        }
+                    }, 100);
+                }
+            }
+
+            modal.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        });
+        container.appendChild(fullscreenBtn);
+    });
+};
+
+
+
+const load = async () => {
+    initStyles();
+
+
+    await runMermaid(true);
+
+    const reRunIfThemeChanges = async () => {
+        const newDarkTheme = isDarkTheme();
+        if (newDarkTheme !== darkTheme) {
+            darkTheme = newDarkTheme;
+            console.log("Theme change detected, re-running mermaid with", darkTheme ? "dark" : "default", "theme");
+            await mermaid.initialize(
+                {...{"startOnLoad": false},
+                ...{ darkMode: darkTheme, theme: darkTheme ? "dark" : "default" },
+                }
+            );
+            await runMermaid(true);
+        }
+    };
+
+    // Update theme classes when theme changes
+    const themeObserver = new MutationObserver(reRunIfThemeChanges);
+    themeObserver.observe(document.documentElement, {
+        attributes: true,
+        attributeFilter: ['class', 'style', 'data-theme']
+    });
+    themeObserver.observe(document.body, {
+        attributes: true,
+        attributeFilter: ['class', 'style', 'data-theme']
+    });
+};
+
+
+
+
+
+console.log("Initializing mermaid with", darkTheme ? "dark" : "default", "theme");
+mermaid.initialize(
+    {...{"startOnLoad": false},
+    ...{ darkMode: darkTheme, theme: darkTheme ? "dark" : "default" },
+    }
+);
+
+window.addEventListener("load", load);
+window.runMermaid = runMermaid;</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'how-to/onboard-editors';</script>
+    <script src="../_static/matomo.js?v=918da087"></script>
+    <link rel="canonical" href="https://www.pyopensci.org/software-peer-review/how-to/onboard-editors.html" />
+    <link rel="icon" href="https://www.pyopensci.org/images/favicon.ico"/>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Review Process" href="review-process.html" />
+    <link rel="prev" title="Editor Role Description" href="editor-description.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="" />
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search the docs ..."
+         aria-label="Search the docs ..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+<aside class="bd-header-announcement" aria-label="Announcement">
+  <div class="bd-header-announcement__content"><p><a href='https://www.github.com/pyopensci/software-submission/'>Submit Your Python Package for Peer Review!</a></p></div>
+</aside>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+<div class="bd-header__inner bd-page-width">
+  <button class="pst-navbar-icon sidebar-toggle primary-toggle" aria-label="Site navigation">
+    <span class="fa-solid fa-bars"></span>
+  </button>
+  
+  
+  <div class=" navbar-header-items__start">
+    
+      <div class="navbar-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../index.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/logo-light-mode.png" class="logo__image only-light" alt="pyOpenSci Software Peer Review Guide. The pyOpenSci logo is a purple flower with pyOpenSci under it. The o in open sci is the center of the flower"/>
+    <img src="../_static/logo-dark-mode.png" class="logo__image only-dark pst-js-only" alt="pyOpenSci Software Peer Review Guide. The pyOpenSci logo is a purple flower with pyOpenSci under it. The o in open sci is the center of the flower"/>
+  
+  
+    <p class="title logo__title">Peer Review Guide</p>
+  
+</a></div>
+    
+  </div>
+  
+  <div class=" navbar-header-items">
+    
+    <div class="me-auto navbar-header-items__center">
+      
+        <div class="navbar-item">
+<nav>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../about/intro.html">
+    About
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../partners/scientific-communities.html">
+    Partnerships
+  </a>
+</li>
+
+
+<li class="nav-item current active">
+  <a class="nav-link nav-internal" href="author-guide.html">
+    Review Guides
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-external" href="https://www.pyopensci.org">
+    pyOpenSci Website
+  </a>
+</li>
+
+            <li class="nav-item dropdown">
+                <button class="btn dropdown-toggle nav-item" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-controls="pst-nav-more-links">
+                    More
+                </button>
+                <ul id="pst-nav-more-links" class="dropdown-menu">
+                    
+<li class=" ">
+  <a class="nav-link dropdown-item nav-external" href="https://www.pyopensci.org/python-package-guide">
+    Python Packaging Guide
+  </a>
+</li>
+
+
+<li class=" ">
+  <a class="nav-link dropdown-item nav-external" href="https://pyopensci.org/handbook">
+    Handbook
+  </a>
+</li>
+
+                </ul>
+            </li>
+            
+  </ul>
+</nav></div>
+      
+    </div>
+    
+    
+    <div class="navbar-header-items__end">
+      
+        <div class="navbar-item navbar-persistent--container">
+          
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+        </div>
+      
+      
+        <div class="navbar-item">
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button></div>
+      
+        <div class="navbar-item"><ul class="navbar-icon-links"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/pyOpenSci/software-peer-review" title="GitHub" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-square-github fa-lg" aria-hidden="true"></i>
+            <span class="sr-only">GitHub</span></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://fosstodon.org/@pyOpenSci" title="Mastodon" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-mastodon fa-lg" aria-hidden="true"></i>
+            <span class="sr-only">Mastodon</span></a>
+        </li>
+</ul></div>
+      
+    </div>
+    
+  </div>
+  
+  
+    <div class="navbar-persistent--mobile">
+
+<button class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+    </div>
+  
+
+  
+    <button class="pst-navbar-icon sidebar-toggle secondary-toggle" aria-label="On this page">
+      <span class="fa-solid fa-outdent"></span>
+    </button>
+  
+</div>
+
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+      <div class="sidebar-header-items__center">
+        
+          
+          
+            <div class="navbar-item">
+<nav>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../about/intro.html">
+    About
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../partners/scientific-communities.html">
+    Partnerships
+  </a>
+</li>
+
+
+<li class="nav-item current active">
+  <a class="nav-link nav-internal" href="author-guide.html">
+    Review Guides
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-external" href="https://www.pyopensci.org">
+    pyOpenSci Website
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-external" href="https://www.pyopensci.org/python-package-guide">
+    Python Packaging Guide
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-external" href="https://pyopensci.org/handbook">
+    Handbook
+  </a>
+</li>
+
+  </ul>
+</nav></div>
+          
+        
+      </div>
+    
+    
+    
+      <div class="sidebar-header-items__end">
+        
+          <div class="navbar-item">
+
+<button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button pst-js-only" aria-label="Color mode" data-bs-title="Color mode"  data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <i class="theme-switch fa-solid fa-sun                fa-lg" data-mode="light" title="Light"></i>
+  <i class="theme-switch fa-solid fa-moon               fa-lg" data-mode="dark"  title="Dark"></i>
+  <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"  title="System Settings"></i>
+</button></div>
+        
+          <div class="navbar-item"><ul class="navbar-icon-links"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/pyOpenSci/software-peer-review" title="GitHub" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-square-github fa-lg" aria-hidden="true"></i>
+            <span class="sr-only">GitHub</span></a>
+        </li>
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://fosstodon.org/@pyOpenSci" title="Mastodon" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-mastodon fa-lg" aria-hidden="true"></i>
+            <span class="sr-only">Mastodon</span></a>
+        </li>
+</ul></div>
+        
+      </div>
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+<nav class="bd-docs-nav bd-links"
+     aria-label="Section Navigation">
+  <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
+  <div class="bd-toc-item navbar-nav"><p aria-level="2" class="caption" role="heading"><span class="caption-text">How To Guides</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="author-guide.html">Author Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reviewer-guide.html">Reviewer Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="editor-in-chief-guide.html">Editor-in-Chief Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="review-triage-team.html">Triage Team Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="peer-review-lead.html">Peer Review Lead</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Editor Guide</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="editor-description.html">Position Description</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Finding &amp; Onboarding Editors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="review-process.html">Review Process</a></li>
+<li class="toctree-l1"><a class="reference internal" href="finding-reviewers.html">Finding Reviewers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="onboard-reviewers.html">Onboarding Reviewers</a></li>
+</ul>
+</div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item">
+
+<nav aria-label="Breadcrumb" class="d-print-none">
+  <ul class="bd-breadcrumbs">
+    
+    <li class="breadcrumb-item breadcrumb-home">
+      <a href="../index.html" class="nav-link" aria-label="Home">
+        <i class="fa-solid fa-home"></i>
+      </a>
+    </li>
+    
+    <li class="breadcrumb-item"><a href="author-guide.html" class="nav-link">Guide for Python Package Authors &amp; Maintainers</a></li>
+    
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">Onboarding and offboarding editors</span></li>
+  </ul>
+</nav>
+</div>
+      
+    </div>
+  
+  
+</div>
+</div>
+              
+              
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="onboarding-and-offboarding-editors">
+<h1>Onboarding and offboarding editors<a class="headerlink" href="#onboarding-and-offboarding-editors" title="Link to this heading">#</a></h1>
+<p>pyOpenSci peer review runs on volunteer editors and reviewers. Finding new
+volunteers is often the trickiest part of the process, so we’ve built
+resources to help you. This page is for you if you’re the Editor in Chief
+(EiC) or the Software Review Lead. It walks you through finding, onboarding,
+inviting to the board, and offboarding editors.</p>
+<section id="how-we-support-you">
+<h2>How we support you<a class="headerlink" href="#how-we-support-you" title="Link to this heading">#</a></h2>
+<p>You don’t have to do this alone. Here’s what’s in place:</p>
+<ul class="simple">
+<li><p><strong>Your editorial board.</strong> Ask them first. They often know great candidates.</p></li>
+<li><p><strong>Our Community Manager.</strong> They can post open calls, write blog posts, and
+introduce you to people they meet in the community.</p></li>
+<li><p><strong>Our contributor pool.</strong> Past authors, reviewers, and guest editors are
+all people who already know us.</p></li>
+<li><p><strong>Editor mentorship.</strong> New editors without prior experience get paired with
+a seasoned editor for their first review(s).</p></li>
+<li><p><strong>Automated website updates.</strong> Add someone to the right GitHub team, run one
+workflow, and merge the pull request it opens. The website listing updates
+once the data are updated. See <a class="reference internal" href="#how-the-website-updates">how the website updates</a>.</p></li>
+</ul>
+</section>
+<section id="about-the-editorial-board">
+<h2>About the editorial board<a class="headerlink" href="#about-the-editorial-board" title="Link to this heading">#</a></h2>
+<p>Our peer review process depends on a well-balanced editorial board. As you
+recruit, look for combined expertise in:</p>
+<ul class="simple">
+<li><p>Science domains that fall within the scope of our peer review process</p></li>
+<li><p>Python packaging</p></li>
+<li><p>Documentation and package usability</p></li>
+<li><p>CI and test suites for robust software development</p></li>
+</ul>
+<p>We also work to build a board with people from different backgrounds,
+cultures, genders, and domains.</p>
+<section id="types-of-editors">
+<h3>Types of editors<a class="headerlink" href="#types-of-editors" title="Link to this heading">#</a></h3>
+<section id="new-editors-start-as-guests">
+<h4>New editors start as guests<a class="headerlink" href="#new-editors-start-as-guests" title="Link to this heading">#</a></h4>
+<p>A new editor is a guest editor for their first 3 months, or until they
+complete leading their first review process from start to finish. After that review process is complete, you and the current
+editorial board decide whether they become a full editor.</p>
+</section>
+<section id="ad-hoc-guest-editors">
+<h4>Ad hoc guest editors<a class="headerlink" href="#ad-hoc-guest-editors" title="Link to this heading">#</a></h4>
+<p>An ad hoc editor has the specific skills needed to lead a single review.
+You might need one when:</p>
+<ul class="simple">
+<li><p>There’s a conflict of interest between a package submitter and the
+editorial team (for example, a close colleague of everyone on the team)</p></li>
+<li><p>The editorial board is at capacity with the current review load</p></li>
+<li><p>A review needs a very specialized skill set (a one-off situation)</p></li>
+</ul>
+<p>In these cases, try our internal reviewer sign-up list. Someone who signed up
+to review may be happy to serve as an editor.</p>
+</section>
+</section>
+<section id="experience-and-mentorship">
+<h3>Experience and mentorship<a class="headerlink" href="#experience-and-mentorship" title="Link to this heading">#</a></h3>
+<p>We prefer editors who have some experience reviewing software, such as a
+previous review with pyOpenSci, rOpenSci, or JOSS.</p>
+<p>If a volunteer doesn’t have that experience, that’s okay. Our <strong>mentorship
+process</strong> pairs them with an experienced editor who guides them through their
+first review(s).</p>
+</section>
+<section id="who-does-the-recruiting">
+<h3>Who does the recruiting<a class="headerlink" href="#who-does-the-recruiting" title="Link to this heading">#</a></h3>
+<p>Recruiting new editors and keeping the board well-balanced is the
+responsibility of the
+<a class="reference external" href="https://www.pyopensci.org/handbook/governance/structure.html#software-review-lead">Software Review Lead</a>,
+with support and advice from the EiC team.</p>
+</section>
+</section>
+<section id="find-new-editors">
+<h2>Find new editors<a class="headerlink" href="#find-new-editors" title="Link to this heading">#</a></h2>
+<p>The Editor in Chief team and Software Review Lead work together to find and
+onboard editors, especially in scientific areas where we have gaps.</p>
+<section id="start-with-your-network">
+<h3>Start with your network<a class="headerlink" href="#start-with-your-network" title="Link to this heading">#</a></h3>
+<p>Good candidates to be editors can come from:</p>
+<ul class="simple">
+<li><p>Our existing reviewer pool</p></li>
+<li><p>Your professional network. You may know people in a specific domain who
+would be a great fit.</p></li>
+<li><p>Our
+<a class="reference external" href="https://www.pyopensci.org/our-community/index.html#pyopensci-community-contributors">contributor pool</a>,
+which includes:</p>
+<ul>
+<li><p>Package authors and maintainers who have submitted a package for review</p></li>
+<li><p>Reviewers who have led reviews for pyOpenSci</p></li>
+<li><p>Past guest editors</p></li>
+</ul>
+</li>
+<li><p>Colleagues who have reviewed for the Journal of Open Source Software (JOSS)
+or rOpenSci and have Python expertise</p></li>
+<li><p>Community members in the pyOpenSci Slack (post a call in
+<code class="docutils literal notranslate"><span class="pre">#software-review</span></code>)</p></li>
+</ul>
+</section>
+<section id="ask-the-editorial-board">
+<h3>Ask the editorial board<a class="headerlink" href="#ask-the-editorial-board" title="Link to this heading">#</a></h3>
+<p>Post in the <code class="docutils literal notranslate"><span class="pre">private-editorial-team</span></code> Slack channel. Ask whether any
+<a class="reference external" href="https://www.pyopensci.org/about-peer-review/index.html#meet-our-editorial-board">editors</a>
+can suggest past reviewers or other people who might be a good fit.</p>
+<p>If the conversation turns to specific candidates:</p>
+<ul class="simple">
+<li><p>Start a private group message to discuss them. This keeps names out of a
+channel history that a future editor might stumble on (awkward for
+everyone!).</p></li>
+<li><p>Ping editors with &#64;here so they get a notification. This is an important
+topic.</p></li>
+</ul>
+<p><strong>IMPORTANT:</strong> Give editors up to a week to chime in before you onboard a new
+editor.</p>
+</section>
+<section id="ask-the-community-manager-for-help">
+<h3>Ask the Community Manager for help<a class="headerlink" href="#ask-the-community-manager-for-help" title="Link to this heading">#</a></h3>
+<p>If those options don’t turn up a candidate, our Community Manager can help.
+They can:</p>
+<ul class="simple">
+<li><p>Post about the opening on our
+<a class="reference external" href="https://www.pyopensci.org/handbook/community/social.html">social media channels</a>
+with a link to our editorial board sign-up form</p></li>
+<li><p>Write a
+<a class="reference external" href="https://www.pyopensci.org/blog/pyos-call-for-editors-may-2024.html">call for editors blog post</a>
+about our current needs</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><a class="reference external" href="https://fosstodon.org/&#64;pyOpenSci/112497485980274296">Here’s an example of a social post recruiting editors</a>.
+We’ve also run a blog post and call-outs in our monthly and weekly
+newsletters.</p>
+</div>
+<p>To request this support, post in the public <code class="docutils literal notranslate"><span class="pre">#software-review</span></code> Slack channel
+and ping the Community Manager. Include:</p>
+<ul class="simple">
+<li><p>That you’re looking for editors</p></li>
+<li><p>Any specific domains or technical skills you need, or note that it’s a
+general call</p></li>
+<li><p>Any specific packages that need an editor (link to the submission the new
+editor would lead, if possible)</p></li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Post in <code class="docutils literal notranslate"><span class="pre">#software-review</span></code> rather than sending a DM. Other editors can see
+what expertise you need and that this support exists, and community members
+who know potential editors can respond.</p>
+</div>
+<p>The Community Manager also meets people through the broader community and
+partner communities who may make great editors or reviewers. When that
+happens, they’ll pass the names along to you.</p>
+<p>pyOpenSci also maintains a database of contributors, and the Community
+Manager can help you find people who may be a good fit. Reach out in a private
+Slack message or by email at
+<a class="reference external" href="mailto:media&#37;&#52;&#48;pyopensci&#46;org">media<span>&#64;</span>pyopensci<span>&#46;</span>org</a>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Before onboarding, make sure the new reviewer or editor has filled out the
+right form:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://docs.google.com/forms/d/e/1FAIpQLSeVf-L_1-jYeO84OvEE8UemEoCmIiD5ddP_aO8S90vb7srADQ/viewform">Reviewer signup form</a></p></li>
+<li><p><a class="reference external" href="https://docs.google.com/forms/d/17NW0P_h8gpmzf7Fr0cAd8aEbIUWPljPfg4d7Rjs1UIE/edit">Editor signup form</a></p></li>
+</ul>
+</div>
+</section>
+</section>
+<section id="onboard-a-new-editor">
+<span id="onboarding-a-new-editor"></span><h2>Onboard a new editor<a class="headerlink" href="#onboard-a-new-editor" title="Link to this heading">#</a></h2>
+<p>New editors usually start as guest editors. As a member of the Editor in Chief
+team, you work with the Software Review Lead to get them set up. Most of it is
+Slack and a warm welcome. GitHub is the only technical part.</p>
+<section id="slack">
+<h3>Slack<a class="headerlink" href="#slack" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>If they’re new to the pyOpenSci community, send them a Slack invitation (or
+ask the Community Manager to do so).</p></li>
+<li><p>Welcome them in Slack and give them access to <code class="docutils literal notranslate"><span class="pre">#private-editorial-team</span></code> and
+any other channels they need.</p></li>
+<li><p>Post a welcome message in the editor channel and ping all editors.</p></li>
+</ul>
+</section>
+<section id="introduce-them-to-the-community-manager">
+<h3>Introduce them to the Community Manager<a class="headerlink" href="#introduce-them-to-the-community-manager" title="Link to this heading">#</a></h3>
+<p>Message the Community Manager and the new editor in Slack to introduce them.
+The Community Manager makes sure new members are welcomed and have what they
+need in Slack. They’ll also work with the new editor on an introductory blog
+post, which gets published on the pyOpenSci blog, shared on social media, and
+included in an upcoming newsletter.</p>
+</section>
+<section id="security">
+<h3>Security<a class="headerlink" href="#security" title="Link to this heading">#</a></h3>
+<p>Ask the new editor to turn on
+<a class="reference external" href="https://docs.github.com/en/authentication/securing-your-account-with-two-factor-authentication-2fa">two-factor authentication (2FA) for GitHub</a>
+if they haven’t already. It’s required to join our GitHub organization.</p>
+</section>
+<section id="github-access">
+<h3>GitHub access<a class="headerlink" href="#github-access" title="Link to this heading">#</a></h3>
+<p>You (as the EiC or
+<a class="reference external" href="https://www.pyopensci.org/handbook/governance/structure.html#software-review-lead">Software Review Lead</a>)
+add editors to our GitHub organization. To do so, you’ll need permission to:</p>
+<ul class="simple">
+<li><p>Invite members to the pyOpenSci organization</p></li>
+<li><p>Add or remove people on editorial teams</p></li>
+<li><p>Run a workflow and merge a pull request on
+<a class="reference external" href="https://github.com/pyOpenSci/pyopensci.github.io">pyopensci.github.io</a>
+(only needed if you want to update the website listing before the weekly
+run)</p></li>
+</ul>
+<p>GitHub repository access is managed using GitHub teams. Add the person to a
+team and they will have access to the repositories that team needs. The
+handbook’s
+<a class="reference external" href="https://www.pyopensci.org/handbook/community/infrastructure/editorial-teams.html">editorial teams</a>
+page has a table of every team, what it grants, and how a guest editor can
+join without a team.</p>
+<p><strong>Guest editors</strong> (a new editor during their first review, or an ad hoc
+editor for one review):</p>
+<ul class="simple">
+<li><p>Add them to the
+<a class="reference external" href="https://github.com/orgs/pyOpenSci/teams/editorial-board"><code class="docutils literal notranslate"><span class="pre">editorial-board</span></code></a>
+team for the duration of their editorial work. The team grants the
+repository access they need and lists them on the website while they’re
+editing.</p></li>
+<li><p>When that work ends, remove them from the team. Don’t add them to an
+emeritus team unless they later serve on the board and then step down.</p></li>
+</ul>
+<p><strong>Board editors:</strong> add them to every team that matches their role. Being on
+the parent
+<a class="reference external" href="https://github.com/orgs/pyOpenSci/teams/peer-review-team"><code class="docutils literal notranslate"><span class="pre">peer-review-team</span></code></a>
+alone doesn’t list them.</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/orgs/pyOpenSci/teams/editorial-board"><code class="docutils literal notranslate"><span class="pre">editorial-board</span></code></a>:
+a current editor</p></li>
+<li><p><a class="reference external" href="https://github.com/orgs/pyOpenSci/teams/eic-team"><code class="docutils literal notranslate"><span class="pre">eic-team</span></code></a>: a current
+Editor in Chief</p></li>
+<li><p><a class="reference external" href="https://github.com/orgs/pyOpenSci/teams/peer-review-lead"><code class="docutils literal notranslate"><span class="pre">peer-review-lead</span></code></a>:
+a current Software Review Lead</p></li>
+<li><p><a class="reference external" href="https://github.com/orgs/pyOpenSci/teams/triage-team"><code class="docutils literal notranslate"><span class="pre">triage-team</span></code></a>: a
+current triage volunteer</p></li>
+</ul>
+<p>If you add someone who isn’t already in the organization, GitHub also invites
+them. They won’t be on the team, or listed on the website, until they accept
+the organization invitation.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If someone can’t join the organization, add them to
+<a class="reference external" href="https://github.com/pyOpenSci/pyopensci.github.io/blob/main/data/manual-editorial-roster.yml"><code class="docutils literal notranslate"><span class="pre">data/manual-editorial-roster.yml</span></code></a>
+in the website repository instead of a GitHub team. That’s the only editorial
+file you should ever edit by hand.</p>
+</div>
+</section>
+<section id="how-the-website-updates">
+<h3>How the website updates<a class="headerlink" href="#how-the-website-updates" title="Link to this heading">#</a></h3>
+<p>Two workflows in the
+<a class="reference external" href="https://github.com/pyOpenSci/pyopensci.github.io">pyopensci.github.io</a>
+repository read the GitHub teams and open a pull request that updates the
+editorial YAML files. The website listing changes once you merge that pull
+request.</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/pyOpenSci/pyopensci.github.io/actions/workflows/update-editorial-board.yml"><strong>Update editorial board</strong></a>
+runs every Wednesday. It only checks team membership, so it finishes quickly
+and opens a small pull request.</p></li>
+<li><p><a class="reference external" href="https://github.com/pyOpenSci/pyopensci.github.io/actions/workflows/update-contribs-reviews.yml"><strong>Update Contribs &amp; reviewers</strong></a>
+runs every Monday. It also refreshes the editorial files, but only after
+re-scanning every repository and review issue. That makes it slower and its
+pull request much larger.</p></li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>After you change a team, don’t wait for the next scheduled run. Go to the
+<strong>Actions</strong> tab in <code class="docutils literal notranslate"><span class="pre">pyopensci.github.io</span></code>, choose <strong>Update editorial board</strong>,
+select <strong>Run workflow</strong>, and merge the pull request it opens. Use this one
+rather than <strong>Update Contribs &amp; reviewers</strong>. It’s the fast one.</p>
+</div>
+<pre  class="mermaid">
+        flowchart LR
+  Membership[Update GitHub team] --&gt; Cron[Run Update editorial board]
+  Cron --&gt; PR[Merge the pull request]
+  PR --&gt; Live[Editorial team updated on the website ✨]
+    </pre><p>Don’t hand-edit <code class="docutils literal notranslate"><span class="pre">editorial-board.yml</span></code>, <code class="docutils literal notranslate"><span class="pre">emeritus-editors.yml</span></code>, or editorial
+flags in <code class="docutils literal notranslate"><span class="pre">contributors.yml</span></code>. The workflows update them automatically, and hand
+edits can be overwritten. For the bigger picture, see
+<a class="reference external" href="https://www.pyopensci.org/handbook/community/infrastructure/data-process.html">how pyOpenSci data flows</a>
+and the
+<a class="reference external" href="https://www.pyopensci.org/handbook/community/infrastructure/intro.html">infrastructure overview</a>
+in the handbook.</p>
+</section>
+<section id="check-that-it-worked">
+<h3>Check that it worked<a class="headerlink" href="#check-that-it-worked" title="Link to this heading">#</a></h3>
+<p>Once the person has accepted the organization invitation and you’ve merged the
+pull request, they should appear on the
+<a class="reference external" href="https://www.pyopensci.org/about-peer-review/index.html#meet-our-editorial-board">editorial board page</a>.
+If they don’t, check that they accepted the invite and that they’re on the
+right team.</p>
+</section>
+</section>
+<section id="invite-a-guest-editor-to-join-the-board">
+<h2>Invite a guest editor to join the board<a class="headerlink" href="#invite-a-guest-editor-to-join-the-board" title="Link to this heading">#</a></h2>
+<p>After 3 months or their first review (whichever comes first), you and the EiC
+assess how it went. Invite other editors to weigh in too.</p>
+<p>Once you’re confident the guest editor is committed to supporting our review
+process, email them an invitation to join the editorial board using the
+template below.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>Hi [NAME HERE]:
+
+We would like to formally invite you to join the pyOpenSci editorial board as a full
+member. [*SPECIFIC REASONS FOR INVITATION (mention contributions to pyOpenSci)*].
+We think you will make a wonderful addition to our pyOpenSci open review team!
+
+[Here is an onboarding document to help you navigate your first weeks in this role.](https://docs.google.com/document/d/1UfG1Fe5wSiEAObvqNMT4etZ5sx7QXzW0f8mozKyK1NE/edit?tab=t.0)
+
+[IF GUEST EDITOR: You are familiar with the editor's role, as you've been a guest editor]. We aim for editors to handle reviews for four packages per year
+([IF GUEST EDITOR including the one that you just finished!]).
+We ask that editors make an informal commitment to serve for two years and
+re-evaluate their participation after that.
+On a short-term basis, any editor can decline to handle a package or say,
+"I'm pretty busy, I can't handle a new package for a few weeks."
+
+In addition to handling packages, editors weigh in on group editorial decisions,
+such as whether a package is in scope, and support updates to our policies.
+We generally do this through Slack, which we expect editors to be able to check
+regularly. We have editorial board calls annually.
+
+Every 3-6 months, the Editor-in-Chief's responsibilities rotate to a new editor.
+You'll have the opportunity to enter this rotation once you have been on the
+editorial board for at least 6 months.
+
+OPTIONAL: Some editors also take on bigger projects to support pyOpenSci and
+improve the peer-review process. This is entirely optional, but please let us
+know if you are interested in additional activities that support the organization.
+
+We hope that you'll join our growing editorial board!
+
+Please give this some thought, ask us any questions you have, and let us know
+whether you can join us.
+
+Best,
+[your-name-here], on behalf of the pyOpenSci Editorial Board
+</pre></div>
+</div>
+<section id="when-they-say-yes">
+<h3>When they say yes<a class="headerlink" href="#when-they-say-yes" title="Link to this heading">#</a></h3>
+<p>A guest editor is already on the <code class="docutils literal notranslate"><span class="pre">editorial-board</span></code> team, so promoting them
+doesn’t require a team change. If they take on a specialty role (Editor in
+Chief, Software Review Lead, or triage), add them to the matching team from
+<a class="reference internal" href="#github-access">GitHub access</a>, then update the website using
+<a class="reference internal" href="#how-the-website-updates">how the website updates</a>. Announce the good news in
+<code class="docutils literal notranslate"><span class="pre">#private-editorial-team</span></code>.</p>
+</section>
+</section>
+<section id="offboard-an-editor">
+<h2>Offboard an editor<a class="headerlink" href="#offboard-an-editor" title="Link to this heading">#</a></h2>
+<p>When an editor steps down, thank them for their work first. Then update
+Slack, GitHub, and the website.</p>
+<p><strong>Guest editors</strong> who have finished their review:</p>
+<ul class="simple">
+<li><p>Remove them from
+<a class="reference external" href="https://github.com/orgs/pyOpenSci/teams/editorial-board"><code class="docutils literal notranslate"><span class="pre">editorial-board</span></code></a>.</p></li>
+<li><p>Don’t add them to an emeritus team. That’s only for people who served on
+the board.</p></li>
+</ul>
+<p><strong>Board editors:</strong></p>
+<ul class="simple">
+<li><p>Announce that they’re stepping down, and thank them, in the <code class="docutils literal notranslate"><span class="pre">#software-review</span></code>
+Slack channel. Then remove them from the <code class="docutils literal notranslate"><span class="pre">#private-editorial-team</span></code> channel.</p></li>
+<li><p>Remove them from every active editorial team: <code class="docutils literal notranslate"><span class="pre">editorial-board</span></code>, plus
+<code class="docutils literal notranslate"><span class="pre">eic-team</span></code>, <code class="docutils literal notranslate"><span class="pre">peer-review-lead</span></code>, or <code class="docutils literal notranslate"><span class="pre">triage-team</span></code> if they were on those.</p></li>
+<li><p>Add them to
+<a class="reference external" href="https://github.com/orgs/pyOpenSci/teams/emeritus-editors"><code class="docutils literal notranslate"><span class="pre">emeritus-editors</span></code></a>.
+If they held a specialty role, also add them to the matching emeritus team:</p>
+<ul>
+<li><p><a class="reference external" href="https://github.com/orgs/pyOpenSci/teams/emeritus-editor-in-chief"><code class="docutils literal notranslate"><span class="pre">emeritus-editor-in-chief</span></code></a></p></li>
+<li><p><a class="reference external" href="https://github.com/orgs/pyOpenSci/teams/emeritus-peer-review-lead"><code class="docutils literal notranslate"><span class="pre">emeritus-peer-review-lead</span></code></a></p></li>
+<li><p><a class="reference external" href="https://github.com/orgs/pyOpenSci/teams/emeritus-triage-team"><code class="docutils literal notranslate"><span class="pre">emeritus-triage-team</span></code></a></p></li>
+</ul>
+</li>
+</ul>
+<p>Then update the website the same way as when you add someone. Follow
+<a class="reference internal" href="#how-the-website-updates">how the website updates</a>: run <strong>Update editorial
+board</strong> and merge the pull request.</p>
+</section>
+</section>
+
+
+                </article>
+              
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="editor-description.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Editor Role Description</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="review-process.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Review Process</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+<div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> On this page
+  </div>
+  <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#how-we-support-you">How we support you</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#about-the-editorial-board">About the editorial board</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#types-of-editors">Types of editors</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#new-editors-start-as-guests">New editors start as guests</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#ad-hoc-guest-editors">Ad hoc guest editors</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#experience-and-mentorship">Experience and mentorship</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#who-does-the-recruiting">Who does the recruiting</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#find-new-editors">Find new editors</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#start-with-your-network">Start with your network</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ask-the-editorial-board">Ask the editorial board</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ask-the-community-manager-for-help">Ask the Community Manager for help</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#onboard-a-new-editor">Onboard a new editor</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#slack">Slack</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#introduce-them-to-the-community-manager">Introduce them to the Community Manager</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#security">Security</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#github-access">GitHub access</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#how-the-website-updates">How the website updates</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#check-that-it-worked">Check that it worked</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#invite-a-guest-editor-to-join-the-board">Invite a guest editor to join the board</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#when-they-say-yes">When they say yes</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#offboard-an-editor">Offboard an editor</a></li>
+</ul>
+  </nav></div>
+
+  <div class="sidebar-secondary-item">
+
+  
+  <div class="tocsection editthispage">
+    <a href="https://github.com/pyopensci/software-peer-review/edit/main/how-to/onboard-editors.md">
+      <i class="fa-solid fa-pencil"></i>
+      
+      
+        
+          Edit on GitHub
+        
+      
+    </a>
+  </div>
+</div>
+
+  <div class="sidebar-secondary-item">
+
+  <div class="tocsection sourcelink">
+    <a href="../_sources/how-to/onboard-editors.md.txt">
+      <i class="fa-solid fa-file-lines"></i> Show Source
+    </a>
+  </div>
+</div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+          </footer>
+        
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="../_static/scripts/bootstrap.js?digest=26a4bc78f4c0ddb94549"></script>
+<script defer src="../_static/scripts/pydata-sphinx-theme.js?digest=26a4bc78f4c0ddb94549"></script>
+
+  <footer class="bd-footer">
+<div class="bd-footer__inner bd-page-width">
+  
+    <div class="footer-items__start">
+      
+        <div class="footer-item">
+
+  <p class="copyright">
+    
+      © Copyright 2026, pyOpenSci.
+      <br/>
+    
+  </p>
+</div>
+      
+    </div>
+  
+  
+  
+</div>
+
+  </footer>
+  </body>
+</html>

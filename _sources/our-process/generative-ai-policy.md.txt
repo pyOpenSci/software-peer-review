@@ -1,4 +1,5 @@
-# Policy for use of generative AI / LLMs
+(generative-ai-policy)=
+# Policy for use of generative AI / AI Tools / LLMs
 
 ::::{admonition} How this policy was developed
 ::class: important

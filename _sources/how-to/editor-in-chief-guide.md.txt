@@ -204,7 +204,7 @@ Once you’ve selected an editor:
 If there isn't an available editor with relevant expertise for a review, work with the [Peer
 Review Lead](https://www.pyopensci.org/handbook/governance/structure.html#peer-review-lead) to recruit a guest editor or onboard someone new.
 
-Follow the [onboarding guide](onboarding-guide.md), and complete the full
+Follow the [onboarding guide](onboard-editors.md), and complete the full
 [onboarding process](onboarding-a-new-editor) to ensure they have:
 
 * GitHub access
